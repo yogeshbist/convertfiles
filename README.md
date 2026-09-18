@@ -194,8 +194,12 @@ MIME type, timing, options and timestamp).
 
 The **Your files** tab shows them as a gallery — a thumbnail for images, a
 format badge for everything else — with Download and Delete on every card, a
-search box, and the browser's storage usage. Image and PDF thumbnails open in a
-new tab on click. The raw record is deliberately not shown in the UI; open the
+search box, and the browser's storage usage. Clicking any card opens a preview
+inside the page (browsers block `window.open` on blob URLs, so a new tab is not
+an option): images, PDF, audio, video and text formats render directly, and
+formats with no browser viewer — Word, Excel, ODT, EPUB, RTF — are rendered by
+converting them to HTML in memory with the same engine, shown in a sandboxed
+frame. Anything genuinely unviewable says so and offers Download. The raw record is deliberately not shown in the UI; open the
 browser's DevTools → Application → IndexedDB if you ever need to see it.
 
 ## Layout

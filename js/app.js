@@ -597,11 +597,13 @@
       var card = el('article', 'card' + (r.id === state.fresh ? ' fresh' : ''));
       var pv = el('div', 'card-prev');
       pv.appendChild(preview(r));
-      if (IMG_PREVIEW.test(r.targetExt) || r.targetExt === 'pdf') {
-        pv.classList.add('openable');
-        pv.title = 'Open';
-        pv.onclick = function () { window.open(URL.createObjectURL(r.blob), '_blank'); };
-      }
+      // every card opens a preview; what it can show depends on the format
+      pv.classList.add('openable');
+      pv.title = 'Preview ' + r.name;
+      pv.setAttribute('role', 'button');
+      pv.tabIndex = 0;
+      pv.onclick = function () { openPreview(r); };
+      pv.onkeydown = function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPreview(r); } };
       card.appendChild(pv);
 
       var body = el('div', 'card-body');
@@ -665,6 +667,104 @@
     var q = $('#formats-q').value.trim().toLowerCase();
     Array.prototype.forEach.call($('#matrix').children, function (row) {
       row.hidden = !!q && row.dataset.k.indexOf(q) < 0;
+    });
+  }
+
+  /* ---------------------------------------------------- preview overlay */
+  // Browsers block window.open on blob: URLs, so previews open in the page.
+  var TEXTY = /^(txt|md|markdown|html|htm|json|jsonl|ndjson|yaml|yml|xml|toml|sql|csv|tsv|prn|dif|slk|svg|obj|ply|stl|gltf|tex|rtf|log)$/;
+  var modalUrls = [];
+  function closePreview() {
+    $('#modal').hidden = true;
+    $('#modal-body').innerHTML = '';
+    modalUrls.forEach(function (u) { URL.revokeObjectURL(u); });
+    modalUrls = [];
+    document.body.style.overflow = '';
+  }
+  function objectUrl(blob) { var u = URL.createObjectURL(blob); modalUrls.push(u); return u; }
+  function note(title, text) {
+    var n = el('div', 'modal-note');
+    n.appendChild(el('b', null, title));
+    n.appendChild(el('span', null, text));
+    return n;
+  }
+  function openPreview(rec) {
+    var box = $('#modal'), body = $('#modal-body');
+    modalUrls.forEach(function (u) { URL.revokeObjectURL(u); });
+    modalUrls = [];
+    box.hidden = false;
+    document.body.style.overflow = 'hidden';
+    $('#modal-name').textContent = rec.name;
+    $('#modal-meta').textContent = F.bytes(rec.size) + '  ·  ' + (rec.mime || F.meta(rec.targetExt).mime) + '  ·  from ' + rec.sourceName;
+    $('#modal-dl').onclick = function () { download(rec.blob, rec.name); };
+    body.innerHTML = '';
+    var ext = rec.targetExt;
+
+    if (IMG_PREVIEW.test(ext) || ext === 'tif' || ext === 'tiff' || ext === 'jxl') {
+      var img = el('img');
+      img.alt = rec.name;
+      img.onerror = function () { body.innerHTML = ''; body.appendChild(note('This browser cannot display ' + ext.toUpperCase(), 'The file is fine — your browser just has no decoder for it. Download it to open in an image app.')); };
+      img.src = objectUrl(rec.blob);
+      body.appendChild(img);
+      return;
+    }
+    if (ext === 'pdf') {
+      var f = el('iframe');
+      f.title = rec.name;
+      f.src = objectUrl(rec.blob);
+      body.appendChild(f);
+      return;
+    }
+    if (/^(mp3|wav|m4a|aac|ogg|opus|flac|weba)$/.test(ext)) {
+      var a = document.createElement('audio');
+      a.controls = true; a.src = objectUrl(rec.blob);
+      body.appendChild(a);
+      return;
+    }
+    if (/^(mp4|webm|m4v|mov|ogv)$/.test(ext)) {
+      var v = document.createElement('video');
+      v.controls = true; v.src = objectUrl(rec.blob);
+      body.appendChild(v);
+      return;
+    }
+    if (ext === 'html' || ext === 'htm') { showHtml(body, rec.blob); return; }
+    if (TEXTY.test(ext)) {
+      var pre = el('pre', null, 'Reading…');
+      body.appendChild(pre);
+      rec.blob.slice(0, 300000).text().then(function (t) {
+        pre.textContent = t + (rec.blob.size > 300000 ? '\n\n… truncated at 300 KB' : '');
+      });
+      return;
+    }
+    // Word, Excel, EPUB and friends: no browser viewer, but this app can render
+    // them as HTML with the same engine it uses to convert them.
+    if (C.rule(ext, 'html')) {
+      var spin = el('div', 'modal-spin');
+      spin.appendChild(el('i'));
+      spin.appendChild(el('span', null, 'Building a preview of this ' + ext.toUpperCase() + '…'));
+      body.appendChild(spin);
+      var file = new File([rec.blob], rec.name, { type: rec.mime || F.meta(ext).mime });
+      C.run(file, ext, 'html', {}, { log: function () {}, progress: function () {} }).then(function (res) {
+        if (box.hidden) return;
+        body.innerHTML = '';
+        showHtml(body, res.blob);
+      }, function (e) {
+        if (box.hidden) return;
+        body.innerHTML = '';
+        body.appendChild(note('No preview for .' + ext, 'This format has no viewer in the browser, and the preview could not be built (' + e.message + '). Download it to open in its own app.'));
+      });
+      return;
+    }
+    body.appendChild(note('No preview for .' + ext, 'Browsers cannot display this format. Download it to open in the app it belongs to.'));
+  }
+  // Rendered in a sandboxed frame: no scripts, no navigation away from the page.
+  function showHtml(body, blob) {
+    blob.text().then(function (html) {
+      var f = el('iframe');
+      f.setAttribute('sandbox', '');
+      f.title = 'Preview';
+      f.srcdoc = html;
+      body.appendChild(f);
     });
   }
 
@@ -985,6 +1085,9 @@
     $('#o-scale').oninput = function (e) { $('#o-scale-v').textContent = e.target.value + 'x'; };
     $('#go').onclick = convert;
 
+    $('#modal-close').onclick = closePreview;
+    $('#modal').onclick = function (e) { if (e.target === $('#modal')) closePreview(); };
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !$('#modal').hidden) closePreview(); });
     $('#files-q').oninput = paintCards;
     $('#files-clear').onclick = function () {
       if (!cache.length) return;

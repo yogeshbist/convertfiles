@@ -12,6 +12,28 @@
     clearTimeout(toast._t); toast._t = setTimeout(function () { t.classList.remove('on'); }, 2600);
   }
   function fmt(n) { return String(n == null ? 0 : n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+  function dur(sec) {
+    sec = Math.round(sec || 0);
+    if (!sec) return '—';
+    if (sec < 60) return sec + 's';
+    var m = Math.floor(sec / 60), s2 = sec % 60;
+    if (m < 60) return m + 'm ' + (s2 ? s2 + 's' : '').trim();
+    var h = Math.floor(m / 60);
+    return h + 'h ' + (m % 60) + 'm';
+  }
+  // a 2-letter code maps to its flag by offsetting into the regional-indicator block
+  function flag(cc) {
+    if (!/^[A-Za-z]{2}$/.test(cc || '')) return '🏳';
+    return String.fromCodePoint.apply(null, cc.toUpperCase().split('').map(function (c) { return 0x1F1E6 + c.charCodeAt(0) - 65; }));
+  }
+  var names = null;
+  function countryName(cc) {
+    if (!cc) return 'Unknown';
+    try {
+      if (!names && typeof Intl !== 'undefined' && Intl.DisplayNames) names = new Intl.DisplayNames(['en'], { type: 'region' });
+      return (names && names.of(cc)) || cc;
+    } catch (e) { return cc; }
+  }
   function api(path, opts) {
     opts = opts || {};
     var h = { 'Content-Type': 'application/json' };
@@ -51,14 +73,18 @@
     api('/stats?days=' + days).then(function (s) {
       $('#dash-sub').textContent = 'Live counts from the site, updated ' + new Date(s.generated).toLocaleTimeString() + '. Nothing personal is collected.';
       var k = $('#d-kpis'); k.innerHTML = '';
+      var dw = s.dwell || { avg: 0, sessions: 0 };
       [[fmt(s.today.views), 'views today', fmt(s.today.uniq) + ' visitors · ' + fmt(s.today.conv) + ' conversions'],
        [fmt(s.last7.views), 'views, last 7 days', fmt(s.last7.uniq) + ' visitors · ' + fmt(s.last7.conv) + ' conversions'],
        [fmt(s.last30.views), 'views, last 30 days', fmt(s.last30.uniq) + ' visitors · ' + fmt(s.last30.conv) + ' conversions'],
-       [fmt(s.totals.conv), 'files converted, all time', fmt(s.totals.views) + ' views · ' + fmt(s.totals.uniq) + ' visitors · ' + fmt(s.totals.fail) + ' failed']
+       [fmt(s.totals.conv), 'files converted, all time', fmt(s.totals.views) + ' views · ' + fmt(s.totals.uniq) + ' visitors · ' + fmt(s.totals.fail) + ' failed'],
+       [dur(dw.avg), 'average time on the site', fmt(dw.sessions) + ' sessions measured · ' + dur(dw.seconds) + ' in total']
       ].forEach(function (x) { var d = el('div', 'kpi'); d.appendChild(el('b', null, x[0])); d.appendChild(el('span', null, x[1])); d.appendChild(el('small', null, x[2])); k.appendChild(d); });
       chart($('#d-chart'), s.daily);
       table($('#d-pairs'), s.pairs, function (r) { return r.key.replace('>', ' → '); });
       table($('#d-pages'), s.pages, function (r) { return r.key; });
+      table($('#d-countries'), s.countries, function (r) { return flag(r.key) + '  ' + countryName(r.key); }, 'No visits recorded yet');
+      table($('#d-regions'), s.regions, function (r) { return r.region + (r.country ? ', ' + countryName(r.country) : ''); }, 'No visits recorded yet');
       table($('#d-refs'), s.referrers, function (r) { return r.key; }, 'Only direct visits so far');
       table($('#d-devices'), s.devices, function (r) { return r.key; });
       table($('#d-fails'), s.failures, function (r) { return r.key.replace('>', ' → '); }, 'No failures — good');

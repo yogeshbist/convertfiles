@@ -1010,6 +1010,31 @@
       fetch(SITE.api + '/event', { method: 'POST', headers: { 'content-type': 'text/plain' }, body: JSON.stringify(ev), keepalive: true, credentials: 'omit' }).catch(function () {});
     } catch (e) {}
   }
+  // Time the page is actually visible, reported in increments. Nothing identifies
+  // the visitor: the server only adds the seconds up and counts sessions.
+  var seenSince = Date.now(), pending = 0, reportedOnce = false;
+  function flushTime() {
+    if (!document.hidden) { pending += Date.now() - seenSince; seenSince = Date.now(); }
+    if (pending < 1000 || trackingOff()) { pending = 0; return; }
+    var body = JSON.stringify({ t: 'time', ms: pending, first: !reportedOnce });
+    pending = 0; reportedOnce = true;
+    try {
+      // sendBeacon survives the page being closed; fetch is the fallback
+      if (navigator.sendBeacon) navigator.sendBeacon(SITE.api + '/event', new Blob([body], { type: 'text/plain' }));
+      else fetch(SITE.api + '/event', { method: 'POST', headers: { 'content-type': 'text/plain' }, body: body, keepalive: true, credentials: 'omit' }).catch(function () {});
+    } catch (e) {}
+  }
+  function watchTime() {
+    if (trackingOff()) return;
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) flushTime();
+      else seenSince = Date.now();
+    });
+    window.addEventListener('pagehide', flushTime);
+    // long reads still get counted, in case the tab is never hidden or closed cleanly
+    setInterval(function () { if (!document.hidden) flushTime(); }, 60000);
+  }
+
   function trackView() {
     var today = new Date().toISOString().slice(0, 10), first = lsGet('cf.lastVisit') !== today;
     lsSet('cf.lastVisit', today);
@@ -1044,6 +1069,7 @@
     route();
     pagePreset();
     trackView();
+    watchTime();
     $('#files-go').onclick = function () { show('convert'); $('#file').click(); };
 
     var drop = $('#drop');

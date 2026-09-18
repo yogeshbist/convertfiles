@@ -59,9 +59,29 @@ async function event(request, env) {
   const day = today(), rows = [];
   const add = (metric, key = '') => rows.push(env.DB.prepare(
     'INSERT INTO daily (day, metric, key, n) VALUES (?1, ?2, ?3, 1) ON CONFLICT(day, metric, key) DO UPDATE SET n = n + 1').bind(day, metric, key));
+  if (ev.t === 'time') {
+    // Time actually spent looking at the page, in whole seconds. Capped so a tab
+    // left open overnight cannot skew the average. No session is identified.
+    var secs = Math.min(1800, Math.max(1, Math.round((+ev.ms || 0) / 1000)));
+    if (!secs) return new Response(null, { status: 204 });
+    rows.push(env.DB.prepare(
+      'INSERT INTO daily (day, metric, key, n) VALUES (?1, ?2, ?3, ?4) ON CONFLICT(day, metric, key) DO UPDATE SET n = n + ?4').bind(day, 'dwell', '', secs));
+    if (ev.first === true) add('dwellN');
+    await env.DB.batch(rows);
+    return new Response(null, { status: 204 });
+  }
   if (ev.t === 'view') {
     add('views');
     if (ev.first === true) add('uniq');
+    // Cloudflare resolves these at the edge from the connection. We store only
+    // the daily count per place — the IP address itself is never read or kept.
+    var cf = request.cf || {};
+    var country = /^[A-Z]{2}$/.test(String(cf.country || '')) ? cf.country : '';
+    if (country) {
+      add('country', country);
+      var region = clean(cf.region || '', 40);
+      if (region) add('region', country + '|' + region);
+    }
     let path = clean(ev.p) || '/';
     if (!path.startsWith('/')) path = '/';
     add('page', path);
@@ -118,11 +138,12 @@ async function stats(url, env) {
   const days = Math.max(1, Math.min(365, parseInt(url.searchParams.get('days') || '30', 10)));
   const since = new Date(Date.now() - (days - 1) * 86400000).toISOString().slice(0, 10);
   const since7 = new Date(Date.now() - 6 * 86400000).toISOString().slice(0, 10);
-  const [totals, series, pairs, pages, devices, refs, fails, pairDays] = await Promise.all([
+  const [totals, series, pairs, pages, devices, refs, fails, pairDays, countries, regions] = await Promise.all([
     env.DB.prepare("SELECT metric, SUM(n) AS n FROM daily WHERE key = '' GROUP BY metric").all(),
     env.DB.prepare("SELECT day, metric, SUM(n) AS n FROM daily WHERE key = '' AND day >= ?1 GROUP BY day, metric ORDER BY day").bind(since).all(),
     top(env, 'pair', since, 20), top(env, 'page', since, 20), top(env, 'device', since, 5), top(env, 'ref', since, 20), top(env, 'failpair', since, 10),
     env.DB.prepare("SELECT day, key, SUM(n) AS n FROM daily WHERE metric = 'pair' AND day >= ?1 GROUP BY day, key").bind(since7).all(),
+    top(env, 'country', since, 30), top(env, 'region', since, 30),
   ]);
   // heatmap: the last 7 days x the 8 busiest conversion pairs of that week
   const heatDays = [];
@@ -153,6 +174,12 @@ async function stats(url, env) {
     daily,
     pairs: pairs.results, pages: pages.results, devices: devices.results, referrers: refs.results, failures: fails.results,
     heat: { days: heatDays, pairs: heatPairs },
+    countries: countries.results,
+    regions: regions.results.map(r => {
+      const i = r.key.indexOf('|');
+      return { country: i < 0 ? '' : r.key.slice(0, i), region: i < 0 ? r.key : r.key.slice(i + 1), n: r.n };
+    }),
+    dwell: { seconds: t.dwell || 0, sessions: t.dwellN || 0, avg: t.dwellN ? Math.round((t.dwell || 0) / t.dwellN) : 0 },
   });
 }
 function top(env, metric, since, limit) {

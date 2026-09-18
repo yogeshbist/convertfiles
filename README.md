@@ -151,6 +151,24 @@ needs, all rendered from `js/content.js` in the same visual system:
 There is no sign-in, sign-up, pricing or account anywhere; the site is free
 and public by design.
 
+## Admin panel, usage counts and the Android app
+
+- **convertfiles.in/admin** — sign in with the admin password. Dashboard:
+  views, unique visitors and conversions for today / 7 / 30 / 90 days, a daily
+  chart, top conversions, top pages, referrers, devices, failed conversions.
+  Content: editors for every file in `content/` plus `site.json`; "Save &
+  publish" commits through the API and the site rebuilds itself (GitHub
+  Actions, about a minute).
+- **api/** — a Cloudflare Worker with a D1 database, deployed at
+  `https://convertfiles-api.convertfiles.workers.dev`. It stores daily
+  counters only (see `api/schema.sql`): no files, no names, no IPs, no
+  identifiers. The site sends a `view` event on page load and a `convert` /
+  `fail` event after a conversion, and skips both when the browser sends Do Not
+  Track. Deploy with `api/deploy.sh`; secrets with `api/set-secrets.sh`.
+- **tools/convertfiles_admin** — the Flutter app "Convert Files Admin"
+  (Android). Sign in with the same password; same dashboard, pull to refresh.
+  Build: `flutter build apk --release --split-per-abi`.
+
 ## Your files
 
 Every conversion is kept in the browser (IndexedDB database `format-bench` — the

@@ -1,0 +1,162 @@
+# Convert Files
+
+A local file-conversion site. Pick a file, pick a source format and a target
+format from the two dropdowns, convert. Every result is written into the
+browser's IndexedDB so you can inspect the stored record afterwards.
+
+Nothing is uploaded. All conversion happens in the browser tab.
+
+## Run it
+
+```bash
+python3 tools/file-converter/serve.py
+```
+
+Then open <http://localhost:8777>. `serve.py` is the standard library server
+with caching switched off, so edits show on a plain reload; `python3 -m
+http.server 8777 --directory tools/file-converter` works as well. (There is
+also a `.claude/launch.json` entry named `convert-files`.) A plain `file://`
+open mostly works too, but PDF rendering needs the page served over HTTP.
+
+When a conversion finishes the result card appears in place, with a preview
+and a **Download** button; the same button sits on every card in Your files.
+
+An internet connection is needed on first use: conversion libraries (pdf.js,
+jsPDF, SheetJS, JSZip, mammoth, marked, js-yaml, UTIF, lamejs) are pulled from
+CDN on demand and cached by the browser. Nothing else leaves the machine.
+
+## What it converts
+
+**About 1,600 conversion pairs across 81 source formats** in Chrome. The exact
+number depends on the browser — at load the app probes for WebP encoding,
+`CompressionStream` and the WebCodecs AAC/Opus/H.264/VP9 encoders, and removes
+any target the browser cannot actually produce rather than offering an option
+that is guaranteed to fail. The "Formats" tab lists the live graph.
+
+Both format pickers are searchable: type an extension (`docx`), a format name
+(`spreadsheet`) or a plain word (`word`, `excel`, `photo`, `iphone`,
+`quicktime`). The From list shows how many targets each format has.
+
+| Group | In | Out |
+|---|---|---|
+| Images | png jpg webp gif bmp avif jxl svg ico tif heic heif ppm pgm pbm | png jpg webp avif jxl bmp gif ico icns svg tif tga ppm pgm pbm · pdf · docx odt html epub rtf md (picture embedded) |
+| Documents | txt log md html docx odt rtf pdf epub | txt md html pdf docx odt rtf epub tex · png jpg webp (page renders) |
+| Spreadsheets | xlsx xls xlsm xlsb ods fods csv tsv dif dbf prn slk | xlsx xls xlsm xlsb ods fods csv tsv dif dbf prn slk html rtf · pdf docx odt epub tex (real tables) · json jsonl yaml xml toml sql md txt |
+| Data | json jsonl ndjson yaml yml xml toml | json jsonl yaml xml toml sql · every spreadsheet format · txt md html pdf docx odt tex |
+| Audio | mp3 wav m4a aac ogg oga opus flac weba aiff | wav mp3 m4a aac ogg opus |
+| Video | mp4 m4v webm mov ogv | **mp4 (H.264 + AAC) · webm (VP9 + Opus)** — a real re-encode · gif · png jpg webp avif jxl bmp tga (single frame) · wav mp3 m4a aac ogg opus (audio track) |
+| Archives | zip tar gz tgz | zip tar gz tgz |
+| 3D / AR | obj stl ply gltf glb | obj stl ply gltf glb |
+| Fonts | ttf otf woff | woff · ttf otf |
+| Anything else | any file | zip tar gz tgz |
+
+Every document pair goes through one shared model (`js/docmodel.js`) that
+carries headings, bold/italic runs, links, lists, quotes, code, **tables and
+embedded images**, so a Word file with a picture and a table still has both
+after becoming PDF, ODT, EPUB, RTF or HTML.
+
+Audio and video re-encoding use the browser's own WebCodecs encoders; the
+containers are written by `mp4-muxer` / `webm-muxer`, except Ogg Opus, ADTS,
+WOFF, GIF, BMP, TGA, ICNS, Netpbm and TAR, which are written by hand in
+`js/encoders.js` and `js/convert.js`.
+
+### Size caps
+
+Set per family in `js/formats.js`, sized for what a browser tab can hold:
+images 80 MB, documents 60 MB, spreadsheets 60 MB, data 120 MB, audio 250 MB,
+3D 250 MB, fonts 40 MB, video 600 MB, archives 800 MB. Video re-encoding is
+additionally limited to 15 minutes of footage, and output is capped at 1920 px
+wide unless a width is set. The picker shows the cap and blocks anything over
+it.
+
+## What it cannot do
+
+- **Video re-encoding runs at roughly real time or faster** for 1080p on a
+  recent laptop, because every frame is decoded by the `<video>` element and
+  re-encoded by WebCodecs; a ten-minute clip takes a few minutes. Keep the tab
+  open — Chrome suspends video decoding in background tabs.
+- **HEIC and JPEG XL need a one-time download outside Safari** (1.3 MB and
+  ~1 MB WebAssembly decoders); AVIF/JXL encoding likewise.
+- **WOFF2 cannot be unpacked** — it uses Brotli, which browsers expose for
+  fetches but not to page scripts.
+- **`.ai`, `.psd`, `.sketch` and friends are not inputs.** They are proprietary
+  containers with no browser decoder.
+- **Raster to SVG is not a trace**; it embeds the bitmap inside an SVG wrapper.
+- **PDF text extraction is text only.** A scanned PDF has no text layer.
+- **3D conversions carry geometry only.** Materials, textures, animations and
+  Draco-compressed meshes are not carried across; USDZ is not written.
+
+## Site content
+
+Below the converter the home page carries the editorial material a public site
+needs, all rendered from `js/content.js` in the same visual system:
+
+- **At a glance** — live numbers: conversions available and formats in/out
+  (computed from the graph in that browser), files converted *on this device*
+  (a counter in `localStorage`, seeded from Your files), and "0 files
+  uploaded". There is deliberately no invented global total: with no server
+  there is nothing to count.
+- **How it works** — three steps.
+- **Popular conversions** — 32 curated pairs; each tile presets From/To and
+  opens the file picker. Pairs the browser cannot do are hidden.
+- **Your most used** — the pairs converted most on this device.
+- **Guides** — seven short articles (HEIC, PDF↔Word, image formats, MOV→MP4,
+  3D→GLB, privacy, CSV vs Excel) with a "try it" button. Linkable as
+  `#guide:<slug>`; the list is `#guides`.
+- **About** and a nine-question **FAQ**.
+- **Support** — a UPI tip section: the QR (`assets/upi-qr.png`, cleaned to pure
+  black/white so it scans and weighs 1.3 KB), the UPI ID with a Copy button,
+  and on phones an "Open in UPI app" button (`upi://pay` deep link). After a
+  conversion the result card carries a quiet "Leave a tip" link. Below it sits a
+  single **sponsor slot**: fill `SPONSOR` in `js/content.js` (name, url,
+  tagline) and it renders "Sponsored by …"; leave it empty and it shows the
+  open slot. `SUPPORT.upiId` / `payeeName` / `qr` live in the same file.
+
+There is no sign-in, sign-up, pricing or account anywhere; the site is free
+and public by design.
+
+## Your files
+
+Every conversion is kept in the browser (IndexedDB database `format-bench` — the
+internal name is unchanged so files converted earlier stay visible — store
+`conversions`, keyed by an auto-increment `id`, indexed on `createdAt` and
+`targetExt`; each record holds the output `Blob` plus name, source, sizes,
+MIME type, timing, options and timestamp).
+
+The **Your files** tab shows them as a gallery — a thumbnail for images, a
+format badge for everything else — with Download and Delete on every card, a
+search box, and the browser's storage usage. Image and PDF thumbnails open in a
+new tab on click. The raw record is deliberately not shown in the UI; open the
+browser's DevTools → Application → IndexedDB if you ever need to see it.
+
+## Layout
+
+```
+index.html          markup, option controls, the format picker
+serve.py            local dev server (no-cache headers)
+css/app.css         theme tokens, light and dark
+js/formats.js       extension metadata, family size caps, lazy CDN loader
+js/encoders.js      hand-written binary writers: GIF (median cut + LZW), BMP, ICO, ICNS, TGA, Netpbm, WAV, TAR, Ogg Opus
+js/docmodel.js      the shared document model: 8 parsers, 9 writers, images and tables
+js/convert.js       the conversion graph, one rule per from-set -> to-set
+js/db.js            IndexedDB wrapper
+js/content.js       popular conversions, guides, FAQ and about copy
+js/app.js           UI
+test/run.sh         headless tests
+```
+
+## Tests
+
+```bash
+tools/file-converter/test/run.sh
+```
+
+145 checks covering the parts no library provides: the GIF encoder is verified
+by decoding its own output with an independent LZW decoder (exact round trip on
+indexed colour, bounded error on gradients, animation delays, the NETSCAPE loop
+block, transparency), plus BMP row padding and alpha compositing, WAV headers
+and sample scaling, TAR checksums and round trips, OBJ/STL/PLY parsing and
+writing, glTF building and parsing (including node transforms), GLB packing,
+Ogg page CRCs and lacing, TGA/Netpbm/ICNS layout, the SQL writer and the
+sfnt/WOFF table directory. Runs on macOS JavaScriptCore via `osascript`,
+so it needs no node or npm.

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /test/
+Disallow: /pages/
+
+Sitemap: https://convertfiles.in/sitemap.xml

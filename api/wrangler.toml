@@ -5,7 +5,7 @@ compatibility_date = "2026-09-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "convertfiles"
-database_id = "00000000-0000-0000-0000-000000000000"
+database_id = "57b6d275-abaf-4981-8cd7-94e26607c318"
 
 [vars]
 ALLOWED_ORIGINS = "https://convertfiles.in,https://www.convertfiles.in,http://localhost:8777"

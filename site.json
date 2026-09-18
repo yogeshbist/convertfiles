@@ -10,5 +10,5 @@
     "article": ""
   },
   "ga4_measurement_id": "",
-  "api_base": ""
+  "api_base": "https://convertfiles-api.convertfiles.workers.dev"
 }

@@ -159,7 +159,7 @@
     $('#picker-q').value = '';
     $('#picker-q').placeholder = which === 'from' ? 'Search ' + picker.items.length + ' source formats' : 'Search ' + picker.items.length + ' targets for .' + state.from;
     paintPicker();
-    $('#picker-q').focus();
+    if (!TOUCH) $('#picker-q').focus();
   }
   function closePicker() {
     if (!picker.open) return;
@@ -1078,7 +1078,15 @@
       if ($('#picker').contains(e.target) || $('#tile-' + picker.open).contains(e.target)) return;
       closePicker();
     });
-    window.addEventListener('resize', closePicker);
+    // Only a width change (rotation, or a resized desktop window) invalidates the
+    // picker's position. Opening the on-screen keyboard changes the height only,
+    // and must not close it.
+    var lastW = window.innerWidth;
+    window.addEventListener('resize', function () {
+      if (window.innerWidth === lastW) return;
+      lastW = window.innerWidth;
+      closePicker();
+    });
     // on desktop the popover is anchored to the tile, so page scroll closes it; on phones it is a fixed bottom sheet
     window.addEventListener('scroll', function () { if (picker.open && !sheetMode()) closePicker(); }, { passive: true });
     $('#o-quality').oninput = function (e) { $('#o-quality-v').textContent = e.target.value + '%'; };

@@ -150,8 +150,10 @@ body:has(.sticky:not([hidden])) main{padding-bottom:150px}
 @media (max-width:600px){
   .picker{left:0!important;right:0;bottom:0!important;top:auto!important;width:100%!important;border-radius:20px 20px 0 0;box-shadow:0 -12px 40px rgba(0,0,0,.25)}
   .picker-list{max-height:60vh}
-  .picker-q input{font-size:16px}
   .picker-i{padding:11px 12px}
+  /* 16px or larger, or iOS zooms the page in when a field takes focus */
+  input,select,textarea{font-size:16px}
+  .footer{justify-content:flex-start}
 }
 .picker-empty b{color:var(--ink)}
 .arrow{display:grid;place-items:center;color:var(--pop)}
@@ -339,7 +341,7 @@ body:has(.sticky:not([hidden])) main{padding-bottom:150px}
 .article .nav-back{margin-bottom:6px}
 .footer{max-width:1040px;margin:72px auto 0;padding:22px 24px 40px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 20px;align-items:center;justify-content:space-between;color:var(--muted);font-size:13px}
 .footer b{color:var(--ink)}
-.footer-links{display:flex;gap:18px}
+.footer-links{display:flex;gap:10px 18px;flex-wrap:wrap}
 .footer-links a{color:var(--muted);text-decoration:none;font-weight:600}
 .footer-links a:hover{color:var(--accent)}
 

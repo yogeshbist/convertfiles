@@ -174,6 +174,9 @@ and public by design.
   Content: editors for every file in `content/` plus `site.json`; "Save &
   publish" commits through the API and the site rebuilds itself (GitHub
   Actions, about a minute).
+  Countries and states/regions come from what Cloudflare resolves at its edge
+  (the IP is never read or stored, only a daily count per place), and average
+  time on the site from the seconds each page was actually visible.
 - **api/** — a Cloudflare Worker with a D1 database, deployed at
   `https://convertfiles-api.convertfiles.workers.dev`. It stores daily
   counters only (see `api/schema.sql`): no files, no names, no IPs, no

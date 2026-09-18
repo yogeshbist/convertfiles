@@ -122,6 +122,21 @@ it.
 - **3D conversions carry geometry only.** Materials, textures, animations and
   Draco-compressed meshes are not carried across; USDZ is not written.
 
+## Several files at once
+
+Pick as many files as you like (drop, browse, or "Add more"). With one file
+the From tile can be overridden; with several, each file keeps its own type and
+the To list is the intersection of what every type can become (mixed PNG + MD
++ CSV still share PDF, DOCX, HTML, EPUB, ODT, RTF and the archive formats).
+One tap converts them all in sequence with a running "3 of 8" status; the
+result card lists every file with its own Download plus **Download all as
+.zip**, and failures are shown per file without stopping the batch. Every
+output is stored in Your files and counted once. Up to 200 files per batch.
+
+On phones (coarse pointer) the wording switches to "Choose files", a sticky
+Convert bar follows the page once files are chosen, and the format picker
+opens as a bottom sheet.
+
 ## Site content
 
 Below the converter the home page carries the editorial material a public site

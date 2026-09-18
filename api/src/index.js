@@ -117,11 +117,21 @@ async function guard(request, env, fn) {
 async function stats(url, env) {
   const days = Math.max(1, Math.min(365, parseInt(url.searchParams.get('days') || '30', 10)));
   const since = new Date(Date.now() - (days - 1) * 86400000).toISOString().slice(0, 10);
-  const [totals, series, pairs, pages, devices, refs, fails] = await Promise.all([
+  const since7 = new Date(Date.now() - 6 * 86400000).toISOString().slice(0, 10);
+  const [totals, series, pairs, pages, devices, refs, fails, pairDays] = await Promise.all([
     env.DB.prepare("SELECT metric, SUM(n) AS n FROM daily WHERE key = '' GROUP BY metric").all(),
     env.DB.prepare("SELECT day, metric, SUM(n) AS n FROM daily WHERE key = '' AND day >= ?1 GROUP BY day, metric ORDER BY day").bind(since).all(),
     top(env, 'pair', since, 20), top(env, 'page', since, 20), top(env, 'device', since, 5), top(env, 'ref', since, 20), top(env, 'failpair', since, 10),
+    env.DB.prepare("SELECT day, key, SUM(n) AS n FROM daily WHERE metric = 'pair' AND day >= ?1 GROUP BY day, key").bind(since7).all(),
   ]);
+  // heatmap: the last 7 days x the 8 busiest conversion pairs of that week
+  const heatDays = [];
+  for (let i = 6; i >= 0; i--) heatDays.push(new Date(Date.now() - i * 86400000).toISOString().slice(0, 10));
+  const perPair = {};
+  for (const r of pairDays.results) { (perPair[r.key] = perPair[r.key] || {})[r.day] = r.n; }
+  const heatPairs = Object.keys(perPair)
+    .map(k => ({ key: k, total: Object.values(perPair[k]).reduce((a, b) => a + b, 0), cells: heatDays.map(d => perPair[k][d] || 0) }))
+    .sort((a, b) => b.total - a.total).slice(0, 8);
   const t = {};
   for (const r of totals.results) t[r.metric] = r.n;
   const byDay = {};
@@ -142,6 +152,7 @@ async function stats(url, env) {
     last30: { views: sum(window(30), 'views'), uniq: sum(window(30), 'uniq'), conv: sum(window(30), 'conv') },
     daily,
     pairs: pairs.results, pages: pages.results, devices: devices.results, referrers: refs.results, failures: fails.results,
+    heat: { days: heatDays, pairs: heatPairs },
   });
 }
 function top(env, metric, since, limit) {

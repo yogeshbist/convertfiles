@@ -3,7 +3,9 @@
   'use strict';
   var F = root.Formats, C = root.Convert, DB = root.DB;
   var $ = function (s) { return document.querySelector(s); };
-  var state = { file: null, from: 'png', to: 'jpg', last: null, fresh: null };
+  var state = { files: [], from: 'png', to: 'jpg', last: null, fresh: null, batch: null };
+  var TOUCH = matchMedia('(pointer: coarse)').matches || 'ontouchstart' in window;
+  var uid = 0;
   var FAM_VAR = { image: 'var(--f-image)', doc: 'var(--f-doc)', table: 'var(--f-table)', data: 'var(--f-data)',
                   audio: 'var(--f-audio)', video: 'var(--f-video)', archive: 'var(--f-archive)', model3d: 'var(--f-model3d)', any: 'var(--f-any)' };
   var IMG_PREVIEW = /^(png|jpg|jpeg|jfif|webp|gif|bmp|svg|ico|avif)$/;
@@ -95,7 +97,6 @@
     if (!C.rule(from, to)) return;
     state.from = from; state.to = to;
     refreshTargets();
-    if (state.file) paintPicked();
     show('convert');
     closeGuide();
     $('#file').click();
@@ -129,8 +130,9 @@
     }).filter(function (it) { return it.count > 0; });
   }
   function targetItems() {
-    return C.targetsFor(state.from).filter(function (t) { return t !== '*'; }).map(function (t) {
-      var r = C.rule(state.from, t);
+    var src = state.files.length > 1 ? sourceExts()[0] : state.from;
+    return currentTargets().map(function (t) {
+      var r = C.rule(src, t);
       return { ext: t, fam: famOfExt(t), name: F.meta(t).name, extra: r && r.note ? r.note : '' };
     });
   }
@@ -138,19 +140,22 @@
 
   function openPicker(which) {
     var tile = $('#tile-' + which);
-    if (which === 'to' && tile.classList.contains('locked')) return;
+    if (tile.classList.contains('locked')) { if (which === 'from') toast('Each file keeps its own type — remove files to change this'); return; }
     closePicker();
     picker.open = which;
     picker.items = which === 'from' ? sourceItems() : targetItems();
     tile.setAttribute('aria-expanded', 'true');
     var box = $('#picker'), r = tile.getBoundingClientRect();
     box.hidden = false;
-    var w = Math.min(440, window.innerWidth - 32), left = Math.min(Math.max(16, r.left), window.innerWidth - w - 16);
-    var below = r.bottom + 8, spaceBelow = window.innerHeight - below;
-    box.style.left = left + 'px';
-    box.style.width = w + 'px';
-    if (spaceBelow < 320 && r.top > 360) { box.style.top = 'auto'; box.style.bottom = (window.innerHeight - r.top + 8) + 'px'; }
-    else { box.style.bottom = 'auto'; box.style.top = below + 'px'; }
+    if (sheetMode()) { box.style.left = box.style.width = box.style.top = box.style.bottom = ''; }
+    else {
+      var w = Math.min(440, window.innerWidth - 32), left = Math.min(Math.max(16, r.left), window.innerWidth - w - 16);
+      var below = r.bottom + 8, spaceBelow = window.innerHeight - below;
+      box.style.left = left + 'px';
+      box.style.width = w + 'px';
+      if (spaceBelow < 320 && r.top > 360) { box.style.top = 'auto'; box.style.bottom = (window.innerHeight - r.top + 8) + 'px'; }
+      else { box.style.bottom = 'auto'; box.style.top = below + 'px'; }
+    }
     $('#picker-q').value = '';
     $('#picker-q').placeholder = which === 'from' ? 'Search ' + picker.items.length + ' source formats' : 'Search ' + picker.items.length + ' targets for .' + state.from;
     paintPicker();
@@ -166,6 +171,7 @@
     var q = $('#picker-q').value.trim().toLowerCase(), list = $('#picker-list');
     var terms = q.split(/\s+/).filter(Boolean);
     var current = picker.open === 'from' ? state.from : state.to;
+    if (picker.open === 'to') picker.items = targetItems();
     var shown = picker.items.filter(function (it) {
       if (!terms.length) return true;
       var h = haystack(it);
@@ -206,10 +212,15 @@
     picker.active = i;
     Array.prototype.forEach.call($('#picker-list').querySelectorAll('.picker-i'), function (r) { r.classList.toggle('active', +r.dataset.i === i); });
   }
+  // scroll the list itself, never the page (scrolling the page would close the picker)
   function scrollActiveIntoView() {
-    var r = $('#picker-list').querySelector('.picker-i.active');
-    if (r && r.scrollIntoView) r.scrollIntoView({ block: 'nearest' });
+    var list = $('#picker-list'), r = list.querySelector('.picker-i.active');
+    if (!r) return;
+    var top = r.offsetTop - list.offsetTop, bottom = top + r.offsetHeight;
+    if (top < list.scrollTop) list.scrollTop = top - 6;
+    else if (bottom > list.scrollTop + list.clientHeight) list.scrollTop = bottom - list.clientHeight + 6;
   }
+  function sheetMode() { return window.innerWidth <= 600; }
   function choose(ext) {
     var which = picker.open;
     closePicker();
@@ -217,30 +228,56 @@
       state.from = ext;
       state.to = C.defaultTarget(ext);
       refreshTargets();
-      if (state.file) paintPicked();
-    } else {
+      } else {
       state.to = ext;
       paintTiles();
       syncOptions();
     }
     $('#tile-' + which).focus();
   }
+  function fileExt(f) { var e = F.extOf(f.name); return C.targetsFor(e).length ? e : '*'; }
+  function sourceExts() {
+    var seen = {}, out = [];
+    state.files.forEach(function (f) { var e = fileExt(f); if (!seen[e]) { seen[e] = 1; out.push(e); } });
+    return out;
+  }
+  // With one file the From tile can be overridden; with several, each file uses its own type
+  // and only targets every type can reach are offered.
+  function currentTargets() {
+    if (state.files.length < 2) return C.targetsFor(state.from).filter(function (t) { return t !== '*'; });
+    return sourceExts().map(function (e) { return C.targetsFor(e).filter(function (t) { return t !== '*'; }); })
+      .reduce(function (a, b) { return a.filter(function (t) { return b.indexOf(t) > -1; }); });
+  }
   function refreshTargets() {
-    var targets = C.targetsFor(state.from).filter(function (t) { return t !== '*'; });
+    var targets = currentTargets();
     var tile = $('#tile-to');
     tile.classList.toggle('locked', !targets.length);
+    $('#tile-from').classList.toggle('locked', state.files.length > 1);
     if (!targets.length) state.to = '';
-    else if (targets.indexOf(state.to) < 0) state.to = C.defaultTarget(state.from) || targets[0];
-    $('#target-count').textContent = targets.length ? targets.length + ' possible target' + (targets.length === 1 ? '' : 's') : 'no targets';
+    else if (targets.indexOf(state.to) < 0) state.to = C.defaultTarget(state.files.length > 1 ? sourceExts()[0] : state.from) || targets[0];
+    if (state.to && targets.indexOf(state.to) < 0) state.to = targets[0];
+    $('#target-count').textContent = targets.length ? targets.length + ' possible target' + (targets.length === 1 ? '' : 's') : (state.files.length > 1 ? 'no format all these files can become' : 'no targets');
     paintTiles();
     syncOptions();
   }
   function paintTiles() {
-    $('#from-ext').textContent = state.from === '*' ? 'Any' : '.' + state.from;
-    $('#from-name').textContent = state.from === '*' ? 'any other file type' : F.meta(state.from).name;
+    var exts = sourceExts(), n = state.files.length;
+    if (n > 1) {
+      $('#from-ext').textContent = exts.map(function (e) { return e === '*' ? 'other' : '.' + e; }).slice(0, 3).join(' + ') + (exts.length > 3 ? ' …' : '');
+      $('#from-name').textContent = n + ' files' + (exts.length > 1 ? ', ' + exts.length + ' types' : '');
+    } else {
+      $('#from-ext').textContent = state.from === '*' ? 'Any' : '.' + state.from;
+      $('#from-name').textContent = state.from === '*' ? 'any other file type' : F.meta(state.from).name;
+    }
     $('#to-ext').textContent = state.to ? '.' + state.to : '—';
-    $('#to-name').textContent = state.to ? F.meta(state.to).name : 'nothing available';
-    $('#go-label').textContent = !state.file ? 'Choose a file to start' : 'Convert to .' + state.to;
+    $('#to-name').textContent = state.to ? F.meta(state.to).name : (n > 1 ? 'no common format' : 'nothing available');
+    var label = !n ? (TOUCH ? 'Choose files to start' : 'Choose a file to start')
+      : !state.to ? 'These files share no target format'
+      : (n === 1 ? 'Convert to .' + state.to : 'Convert ' + n + ' files to .' + state.to);
+    $('#go-label').textContent = label;
+    $('#sticky-label').textContent = label;
+    $('#go').disabled = !n || !state.to || state.files.some(function (f) { return f.size > F.capFor(fileExt(f)); });
+    $('#sticky').hidden = !(n && TOUCH);
   }
 
   /* ------------------------------------------------------------- options */
@@ -281,84 +318,188 @@
     };
   }
 
-  /* ----------------------------------------------------------- the file */
-  function setFile(file) {
-    if (!file) return;
-    state.file = file;
-    var ext = F.extOf(file.name);
-    state.from = C.targetsFor(ext).length ? ext : '*';
-    state.to = C.defaultTarget(state.from);
+  /* ---------------------------------------------------------- the files */
+  function addFiles(list, replace) {
+    var incoming = Array.prototype.slice.call(list || []);
+    if (!incoming.length) return;
+    if (replace) state.files = [];
+    incoming.forEach(function (f) {
+      if (state.files.some(function (g) { return g.name === f.name && g.size === f.size && g.lastModified === f.lastModified; })) return;
+      f._id = ++uid;
+      state.files.push(f);
+    });
+    if (state.files.length > 200) { state.files = state.files.slice(0, 200); toast('Up to 200 files at a time'); }
+    if (state.files.length === 1) { state.from = fileExt(state.files[0]); state.to = C.defaultTarget(state.from); }
+    else if (state.files.length > 1 && !state.to) state.to = C.defaultTarget(sourceExts()[0]);
     refreshTargets();
     paintPicked();
     $('#done').hidden = true;
     $('#progress').hidden = true;
   }
+  function removeFile(id) {
+    state.files = state.files.filter(function (f) { return f._id !== id; });
+    if (state.files.length === 1) { state.from = fileExt(state.files[0]); }
+    refreshTargets();
+    paintPicked();
+  }
   function paintPicked() {
-    var f = state.file, box = $('#picked');
-    box.hidden = false;
-    var th = $('#picked-thumb');
-    th.innerHTML = '';
-    if (/^image\//.test(f.type) && !/svg|hei[cf]/.test(f.type) && !/\.hei[cf]$/i.test(f.name)) {
-      var img = el('img');
-      img.src = URL.createObjectURL(f);
-      img.onload = function () { URL.revokeObjectURL(img.src); };
-      th.appendChild(img);
-    } else {
-      th.appendChild(badge(state.from === '*' ? 'file' : state.from, true));
-    }
-    $('#picked-name').textContent = f.name;
-    var cap = F.capFor(state.from), over = f.size > cap, big = !over && f.size > 100 * 1024 * 1024;
-    var meta = $('#picked-meta');
-    meta.className = 'meta' + (over ? ' bad' : '');
-    meta.textContent = F.bytes(f.size) + (over ? '  —  over the ' + F.bytes(cap) + ' limit' : '');
+    var box = $('#picked');
+    box.innerHTML = '';
+    box.hidden = !state.files.length;
+    $('#warn').hidden = true;
+    if (!state.files.length) { paintTiles(); return; }
+    var over = [], big = 0;
+    state.files.forEach(function (f) { var cap = F.capFor(fileExt(f)); if (f.size > cap) over.push(f); else if (f.size > 100 * 1024 * 1024) big++; });
+    var list = el('div', 'picked-list' + (state.files.length > 4 ? ' many' : ''));
+    state.files.forEach(function (f) {
+      var row = el('div', 'picked-row');
+      var th = el('div', 'thumb');
+      if (/^image\//.test(f.type) && !/svg|hei[cf]/.test(f.type) && !/\.hei[cf]$/i.test(f.name)) {
+        var img = el('img'); img.src = URL.createObjectURL(f); img.onload = function () { URL.revokeObjectURL(img.src); }; th.appendChild(img);
+      } else th.appendChild(badge(fileExt(f) === '*' ? 'file' : fileExt(f), true));
+      row.appendChild(th);
+      var info = el('div', 'info');
+      info.appendChild(el('div', 'name', f.name));
+      var bad = f.size > F.capFor(fileExt(f));
+      var meta = el('div', 'meta' + (bad ? ' bad' : ''), F.bytes(f.size) + (bad ? '  —  over the ' + F.bytes(F.capFor(fileExt(f))) + ' limit' : ''));
+      info.appendChild(meta);
+      row.appendChild(info);
+      var rm = el('button', 'btn icon'); rm.type = 'button'; rm.setAttribute('aria-label', 'Remove ' + f.name); rm.title = 'Remove'; rm.appendChild(icon('trash'));
+      rm.onclick = function () { removeFile(f._id); };
+      row.appendChild(rm);
+      list.appendChild(row);
+    });
+    box.appendChild(list);
+    var foot = el('div', 'picked-foot');
+    foot.appendChild(el('span', 'meta', state.files.length + ' file' + (state.files.length === 1 ? '' : 's') + ' · ' + F.bytes(state.files.reduce(function (a, f) { return a + f.size; }, 0))));
+    var add = btn('Add more', 'sm'); add.onclick = function () { $('#file').click(); };
+    var clear = btn('Clear', 'sm'); clear.onclick = function () { state.files = []; refreshTargets(); paintPicked(); };
+    foot.appendChild(add); foot.appendChild(clear);
+    box.appendChild(foot);
     var warn = $('#warn');
-    warn.hidden = !(over || big);
-    warn.className = 'warn' + (big ? ' soft' : '');
-    warn.textContent = over
-      ? 'This file is too large. ' + F.FAMILY[famOf(state.from)].label + ' files are capped at ' + F.bytes(cap) + ' because the conversion happens inside this browser tab.'
-      : 'Large file — this will work, but it may take a while since everything runs in your browser.';
-    $('#go').disabled = over;
+    if (over.length) {
+      warn.hidden = false; warn.className = 'warn';
+      warn.textContent = (over.length === 1 ? over[0].name + ' is' : over.length + ' files are') + ' over the size limit — remove ' + (over.length === 1 ? 'it' : 'them') + ' to continue. Everything runs inside this browser tab, so very large files cannot be held in memory.';
+    } else if (big) {
+      warn.hidden = false; warn.className = 'warn soft';
+      warn.textContent = big + ' large file' + (big === 1 ? '' : 's') + ' — this will work, but it may take a while since everything runs in your browser.';
+    }
     paintTiles();
   }
 
   /* ------------------------------------------------------------- convert */
   function setStatus(msg) { $('#status').textContent = msg; }
-  function convert() {
-    if (!state.file || !state.to) return;
-    var opts = readOptions(), started = Date.now(), file = state.file, from = state.from, to = state.to;
-    $('#go').disabled = true;
-    $('#done').hidden = true;
-    $('#progress').hidden = false;
-    $('#bar').style.width = '8%';
-    setStatus('Converting ' + file.name + ' to .' + to + '…');
-
-    C.run(file, from, to, opts, {
-      log: function (m) { setStatus(m); },
-      progress: function (p, m) { $('#bar').style.width = Math.max(8, Math.round(p * 100)) + '%'; if (m) setStatus(m); }
-    }).then(function (res) {
-      $('#bar').style.width = '100%';
+  function convertOne(file, from, to, opts, onProgress) {
+    var started = Date.now();
+    return C.run(file, from, to, opts, { log: onProgress, progress: function (p, m) { if (m) onProgress(m); } }).then(function (res) {
       var rec = {
         name: res.name, sourceName: file.name, sourceExt: from, targetExt: res.ext,
         sourceSize: file.size, size: res.blob.size, mime: res.blob.type || F.meta(res.ext).mime,
         durationMs: Date.now() - started, options: opts, createdAt: Date.now(), blob: res.blob
       };
       return DB.put(rec).then(function (id) { rec.id = id; return rec; }, function () { return rec; });
-    }).then(function (rec) {
-      state.last = rec; state.fresh = rec.id || null;
-      track({ t: 'convert', from: from, to: rec.targetExt, ms: rec.durationMs });
-      paintDone(rec);
-      adUnit('ad-result', 'result');
-      bumpCounter();
+    });
+  }
+  function convert() {
+    if (!state.files.length || !state.to) return;
+    var opts = readOptions(), to = state.to, files = state.files.slice(), total = files.length, results = [];
+    $('#go').disabled = true; $('#sticky-go').disabled = true;
+    $('#done').hidden = true;
+    $('#progress').hidden = false;
+    $('#bar').style.width = '4%';
+    var i = 0;
+    function step() {
+      if (i >= total) return finish();
+      var f = files[i], from = total === 1 ? state.from : fileExt(f), n = i + 1;
+      var prefix = total > 1 ? n + ' of ' + total + ' — ' : '';
+      setStatus(prefix + 'Converting ' + f.name + ' to .' + to + '…');
+      $('#bar').style.width = Math.max(4, Math.round((i / total) * 100)) + '%';
+      return convertOne(f, from, to, opts, function (m) { setStatus(prefix + m); }).then(function (rec) {
+        results.push({ file: f, rec: rec });
+        track({ t: 'convert', from: from, to: rec.targetExt, ms: rec.durationMs });
+        bumpCounter();
+      }, function (e) {
+        results.push({ file: f, error: e.message || String(e) });
+        track({ t: 'fail', from: from, to: to });
+      }).then(function () { i++; return step(); });
+    }
+    function finish() {
+      $('#bar').style.width = '100%';
+      var ok = results.filter(function (r) { return r.rec; });
+      state.fresh = ok.length ? ok[ok.length - 1].rec.id || null : null;
+      if (total === 1) {
+        if (ok.length) { state.last = ok[0].rec; paintDone(ok[0].rec); adUnit('ad-result', 'result'); toast(ok[0].rec.id ? 'Saved to Your files' : 'Converted', 'check'); }
+        else paintError(results[0].error);
+      } else {
+        state.batch = results;
+        paintDoneMulti(results, to);
+        adUnit('ad-result', 'result');
+        toast(ok.length + ' of ' + total + ' converted', 'check');
+      }
       refreshCount();
       renderHome();
-      toast(rec.id ? 'Saved to Your files' : 'Converted', 'check');
-    }).catch(function (e) {
-      track({ t: 'fail', from: from, to: to });
-      paintError(e.message || String(e));
-    }).then(function () {
-      $('#go').disabled = false;
+      $('#go').disabled = false; $('#sticky-go').disabled = false;
       setTimeout(function () { $('#progress').hidden = true; $('#bar').style.width = '0'; }, 400);
+    }
+    step();
+  }
+
+  // Every result in one card, each with its own Download, plus one zip of them all.
+  function paintDoneMulti(results, to) {
+    revokeAll();
+    var box = $('#done'), ok = results.filter(function (r) { return r.rec; }), failed = results.length - ok.length;
+    box.className = 'done multi'; box.hidden = false; box.innerHTML = '';
+    var body = el('div', 'done-body');
+    var k = el('span', 'done-k' + (ok.length ? '' : ' bad'));
+    k.appendChild(icon(ok.length ? 'check' : 'bolt'));
+    k.appendChild(el('span', null, ok.length === results.length ? 'All done' : (ok.length ? 'Done, with ' + failed + ' failed' : 'Could not convert')));
+    body.appendChild(k);
+    body.appendChild(el('div', 'done-name', ok.length + ' of ' + results.length + ' files converted to .' + to));
+    var meta = el('div', 'done-meta');
+    meta.appendChild(el('span', null, F.bytes(ok.reduce(function (a, r) { return a + r.rec.size; }, 0)) + ' in total  ·  ' + (ok.reduce(function (a, r) { return a + r.rec.durationMs; }, 0) / 1000).toFixed(1) + ' s'));
+    body.appendChild(meta);
+    var acts = el('div', 'done-acts');
+    if (ok.length > 1) {
+      var zipBtn = btn('Download all as .zip', 'primary lg', 'download');
+      zipBtn.onclick = function () {
+        zipBtn.disabled = true; zipBtn.querySelector('span').textContent = 'Zipping…';
+        F.need('jszip').then(function (JSZip) {
+          var z = new JSZip(), names = {};
+          ok.forEach(function (r) { var nm = r.rec.name; if (names[nm]) nm = nm.replace(/(\.[^.]+)$/, '-' + (++names[r.rec.name]) + '$1'); else names[nm] = 1; z.file(nm, r.rec.blob); });
+          return z.generateAsync({ type: 'blob', compression: 'DEFLATE' });
+        }).then(function (blob) { download(blob, 'converted-' + to + '-' + ok.length + '-files.zip'); })
+          .catch(function (e) { toast('Could not build the zip: ' + e.message); })
+          .then(function () { zipBtn.disabled = false; zipBtn.querySelector('span').textContent = 'Download all as .zip'; });
+      };
+      acts.appendChild(zipBtn);
+    } else if (ok.length === 1) {
+      var one = btn('Download ' + ok[0].rec.name, 'primary lg', 'download'); one.onclick = function () { download(ok[0].rec.blob, ok[0].rec.name); }; acts.appendChild(one);
+    }
+    var again = btn('Convert more', 'lg'); again.onclick = function () { $('#file').click(); }; acts.appendChild(again);
+    body.appendChild(acts);
+    var list = el('div', 'done-list');
+    results.forEach(function (r) {
+      var row = el('div', 'done-row' + (r.rec ? '' : ' failed'));
+      var th = el('div', 'thumb');
+      th.appendChild(r.rec ? preview(r.rec, true) : badge(fileExt(r.file) === '*' ? 'file' : fileExt(r.file), true));
+      row.appendChild(th);
+      var info = el('div', 'info');
+      info.appendChild(el('div', 'name', r.rec ? r.rec.name : r.file.name));
+      info.appendChild(el('div', 'meta' + (r.rec ? '' : ' bad'), r.rec ? F.bytes(r.rec.size) + ' · from ' + r.file.name : r.error));
+      row.appendChild(info);
+      if (r.rec) { var d = btn('Download', 'sm primary', 'download'); d.onclick = function () { download(r.rec.blob, r.rec.name); }; row.appendChild(d); }
+      list.appendChild(row);
     });
+    body.appendChild(list);
+    var saved = el('div', 'done-saved');
+    saved.appendChild(document.createTextNode('Also kept in '));
+    var a = el('a', null, 'Your files'); a.href = '#'; a.onclick = function (e) { e.preventDefault(); show('files'); }; saved.appendChild(a);
+    saved.appendChild(document.createTextNode(' so you can download them again later. '));
+    var tip = el('a', 'tip-link'); tip.href = '#support'; tip.appendChild(icon('heart')); tip.appendChild(el('span', null, 'Found it useful? Leave a tip'));
+    tip.onclick = function (e) { e.preventDefault(); goSupport(); }; saved.appendChild(tip);
+    body.appendChild(saved);
+    box.appendChild(body);
+    box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
 
   function paintDone(rec) {
@@ -810,11 +951,12 @@
     drop.onkeydown = function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); $('#file').click(); } };
     ['dragenter', 'dragover'].forEach(function (ev) { drop.addEventListener(ev, function (e) { e.preventDefault(); drop.classList.add('over'); }); });
     ['dragleave', 'drop'].forEach(function (ev) { drop.addEventListener(ev, function (e) { e.preventDefault(); drop.classList.remove('over'); }); });
-    drop.addEventListener('drop', function (e) { if (e.dataTransfer.files && e.dataTransfer.files[0]) setFile(e.dataTransfer.files[0]); });
+    drop.addEventListener('drop', function (e) { if (e.dataTransfer.files && e.dataTransfer.files.length) addFiles(e.dataTransfer.files, false); });
     document.addEventListener('dragover', function (e) { e.preventDefault(); });
     document.addEventListener('drop', function (e) { e.preventDefault(); });
-    $('#file').onchange = function (e) { if (e.target.files[0]) setFile(e.target.files[0]); e.target.value = ''; };
-    $('#picked-change').onclick = function () { $('#file').click(); };
+    $('#file').onchange = function (e) { addFiles(e.target.files, false); e.target.value = ''; };
+    $('#sticky-go').onclick = function () { $('#go').scrollIntoView({ block: 'center' }); convert(); };
+    if (TOUCH) { $('#drop h2').textContent = 'Choose files'; $('#drop p').innerHTML = 'Tap to pick one or more files &mdash; images, documents, spreadsheets, audio, video, archives, 3D models'; }
 
     $('#tile-from').onclick = function () { picker.open === 'from' ? closePicker() : openPicker('from'); };
     $('#tile-to').onclick = function () { picker.open === 'to' ? closePicker() : openPicker('to'); };
@@ -837,7 +979,8 @@
       closePicker();
     });
     window.addEventListener('resize', closePicker);
-    window.addEventListener('scroll', function () { if (picker.open) closePicker(); }, { passive: true });
+    // on desktop the popover is anchored to the tile, so page scroll closes it; on phones it is a fixed bottom sheet
+    window.addEventListener('scroll', function () { if (picker.open && !sheetMode()) closePicker(); }, { passive: true });
     $('#o-quality').oninput = function (e) { $('#o-quality-v').textContent = e.target.value + '%'; };
     $('#o-scale').oninput = function (e) { $('#o-scale-v').textContent = e.target.value + 'x'; };
     $('#go').onclick = convert;

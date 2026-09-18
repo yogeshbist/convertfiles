@@ -22,7 +22,7 @@
 <meta name="theme-color" content="#0E7C86">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
-<link rel="stylesheet" href="/css/app.css?v=5f075ad0">
+<link rel="stylesheet" href="/css/app.css?v=7831cae3">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -67,19 +67,12 @@
 
       <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose a file to convert">
         <div class="drop-ic"><svg><use href="#i-upload"/></svg></div>
-        <h2>Drop a file here</h2>
-        <p>or <span class="browse">browse your device</span> &mdash; images, documents, spreadsheets, audio, video, archives, 3D models</p>
+        <h2>Drop files here</h2>
+        <p>or <span class="browse">browse your device</span> &mdash; one file or many; images, documents, spreadsheets, audio, video, archives, 3D models</p>
       </div>
-      <input type="file" id="file" hidden>
+      <input type="file" id="file" multiple hidden>
 
-      <div class="picked" id="picked" hidden>
-        <div class="thumb" id="picked-thumb"></div>
-        <div class="info">
-          <div class="name" id="picked-name"></div>
-          <div class="meta" id="picked-meta"></div>
-        </div>
-        <button class="btn sm" id="picked-change">Change file</button>
-      </div>
+      <div class="picked" id="picked" hidden></div>
       <div class="warn" id="warn" hidden></div>
     </div>
 
@@ -241,6 +234,10 @@
   <span class="footer-links"><a href="/#guides" id="f-guides">Guides</a><a href="/#formats" id="f-formats">Formats</a><a href="/#about" id="f-about">About</a><a href="/#support" id="f-support">Support</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></span>
 </footer>
 
+<div class="sticky" id="sticky" hidden>
+  <button class="cta" id="sticky-go"><svg><use href="#i-bolt"/></svg><span id="sticky-label">Convert</span></button>
+</div>
+
 <div class="picker" id="picker" hidden>
   <div class="picker-q"><svg><use href="#i-search"/></svg><input type="text" id="picker-q" placeholder="Type to search formats" autocomplete="off" spellcheck="false" aria-label="Search formats"><span class="picker-hint" id="picker-hint"></span></div>
   <div class="picker-list" id="picker-list" role="listbox"></div>
@@ -248,12 +245,12 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script src="/js/formats.js?v=5f075ad0"></script>
-<script src="/js/encoders.js?v=5f075ad0"></script>
-<script src="/js/docmodel.js?v=5f075ad0"></script>
-<script src="/js/convert.js?v=5f075ad0"></script>
-<script src="/js/db.js?v=5f075ad0"></script>
-<script src="/js/content.js?v=5f075ad0"></script>
-<script src="/js/app.js?v=5f075ad0"></script>
+<script src="/js/formats.js?v=7831cae3"></script>
+<script src="/js/encoders.js?v=7831cae3"></script>
+<script src="/js/docmodel.js?v=7831cae3"></script>
+<script src="/js/convert.js?v=7831cae3"></script>
+<script src="/js/db.js?v=7831cae3"></script>
+<script src="/js/content.js?v=7831cae3"></script>
+<script src="/js/app.js?v=7831cae3"></script>
 </body>
 </html>

@@ -418,6 +418,7 @@
         results.push({ file: f, rec: rec });
         track({ t: 'convert', from: from, to: rec.targetExt, ms: rec.durationMs });
         bumpCounter();
+        if (globalTotals) globalTotals.conv++;
       }, function (e) {
         results.push({ file: f, error: e.message || String(e) });
         track({ t: 'fail', from: from, to: to });
@@ -801,16 +802,29 @@
     var words = gd.body.join(' ').replace(/<[^>]+>/g, '').split(/\s+/).length;
     return Math.max(2, Math.round(words / 200));
   }
-  var homeStatic = false;
+  var homeStatic = false, globalTotals = null, askedTotals = false;
+  // The public counter: how many files everyone has converted, from the API.
+  function loadTotals() {
+    if (askedTotals || !SITE.api) return;
+    askedTotals = true;
+    fetch(SITE.api + '/public', { credentials: 'omit' })
+      .then(function (r) { return r.json(); })
+      .then(function (t) { if (t && typeof t.conv === 'number') { globalTotals = t; renderHome(); } })
+      .catch(function () {});
+  }
   function renderHome() {
     // live numbers
     var kp = $('#kpis'); kp.innerHTML = '';
     var here = parseInt(lsGet('cf.converted'), 10) || 0, since = parseInt(lsGet('cf.since'), 10);
     var sources = C.sourcesList(), targets = {};
     sources.forEach(function (f) { C.targetsFor(f).forEach(function (t) { if (t !== '*') targets[t] = 1; }); });
+    // Prefer the real worldwide total; fall back to this device's count offline.
+    var convTile = globalTotals
+      ? [fmtInt(globalTotals.conv), 'files converted', here ? fmtInt(here) + ' of them by you on this device' : 'by everyone using Convert Files']
+      : [fmtInt(here), 'files converted here', since ? 'on this device since ' + new Date(since).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }) : 'on this device'];
     [[fmtInt(C.pairCount()), 'conversions available', 'in this browser, right now'],
      [fmtInt(sources.length - 1) + ' / ' + fmtInt(Object.keys(targets).length), 'formats in / out', 'plus any file to zip, tar or gz'],
-     [fmtInt(here), 'files converted here', since ? 'on this device since ' + new Date(since).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' }) : 'on this device'],
+     convTile,
      ['0', 'files uploaded', 'everything runs on your computer']
     ].forEach(function (k) {
       var d = el('div', 'kpi');
@@ -1065,6 +1079,7 @@
     if (lsGet('cf.converted') === null) DB.all().then(function (rows) { if (rows.length && lsGet('cf.converted') === null) { lsSet('cf.converted', String(rows.length)); lsSet('cf.since', String(rows[rows.length - 1].createdAt || Date.now())); renderHome(); } }, function () {});
     C.ready.then(renderHome);
     renderHome();
+    loadTotals();
     adUnit('ad-home', 'home');
     route();
     pagePreset();

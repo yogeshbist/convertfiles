@@ -21,6 +21,7 @@ export default {
       let res;
       if (url.pathname === '/health') res = json({ ok: true, time: new Date().toISOString() });
       else if (url.pathname === '/event' && request.method === 'POST') res = await event(request, env);
+      else if (url.pathname === '/public' && request.method === 'GET') res = await publicTotals(env);
       else if (url.pathname === '/login' && request.method === 'POST') res = await login(request, env);
       else if (url.pathname === '/stats' && request.method === 'GET') res = await guard(request, env, () => stats(url, env));
       else if (url.pathname.startsWith('/content/')) res = await guard(request, env, () => content(request, url, env));
@@ -98,6 +99,19 @@ async function event(request, env) {
   }
   await env.DB.batch(rows);
   return new Response(null, { status: 204 });
+}
+
+/* ------------------------------------------- public totals (no auth) */
+// Two numbers the site shows on its home page. Nothing here is personal, and the
+// edge caches it for a minute so a busy day does not hit the database per visit.
+async function publicTotals(env) {
+  const r = await env.DB.prepare("SELECT metric, SUM(n) AS n FROM daily WHERE key = '' AND metric IN ('conv', 'views') GROUP BY metric").all();
+  const t = {};
+  for (const row of r.results) t[row.metric] = row.n;
+  const first = await env.DB.prepare('SELECT MIN(day) AS d FROM daily').first();
+  const res = json({ conv: t.conv || 0, views: t.views || 0, since: (first && first.d) || null });
+  res.headers.set('cache-control', 'public, max-age=60');
+  return res;
 }
 
 /* -------------------------------------------------------------- auth */

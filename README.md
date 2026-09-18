@@ -143,10 +143,10 @@ Below the converter the home page carries the editorial material a public site
 needs, all rendered from `js/content.js` in the same visual system:
 
 - **At a glance** — live numbers: conversions available and formats in/out
-  (computed from the graph in that browser), files converted *on this device*
-  (a counter in `localStorage`, seeded from Your files), and "0 files
-  uploaded". There is deliberately no invented global total: with no server
-  there is nothing to count.
+  (computed from the graph in that browser), **files converted worldwide** (the
+  real total from `GET /public` on the analytics API, cached a minute at the
+  edge, with this device's share as the subtitle), and "0 files uploaded". If
+  the API cannot be reached the tile falls back to this device's own count.
 - **How it works** — three steps.
 - **Popular conversions** — 32 curated pairs; each tile presets From/To and
   opens the file picker. Pairs the browser cannot do are hidden.

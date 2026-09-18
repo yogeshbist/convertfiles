@@ -1,0 +1,139 @@
+[
+  {
+    "slug": "heic-to-jpg",
+    "cat": "image",
+    "fam": "image",
+    "title": "HEIC to JPG: why iPhone photos will not open on Windows and Android",
+    "teaser": "Since iOS 11 the iPhone saves photos as HEIC. Here is why other devices choke on them, and how to fix it in one step.",
+    "body": [
+      "p:Every photo an iPhone has taken since 2017 is stored as HEIC unless you changed a setting. It is a good format — roughly half the size of a JPG at the same quality — but it is licensed, so Windows, Android and every browser except Safari refuse to open it. You share a photo, the other person sees a broken icon.",
+      "h:The one-step fix",
+      "p:Convert the HEIC to JPG. JPG opens on everything made in the last twenty-five years. Drop the file on Convert Files, leave the target on <code>.jpg</code> (it is the default for HEIC), press Convert. The first time in Chrome a small decoder is fetched; after that it is instant.",
+      "p:For a photo you plan to edit further, choose <code>.png</code> instead: it is lossless, so nothing is thrown away before your edits. For a photo going into a document, choose <code>.docx</code> and you get a Word file with the picture already placed.",
+      "h:Stopping it at the source",
+      "p:If you would rather the phone never made HEIC files at all: Settings › Camera › Formats › Most Compatible. Photos will take about twice the space, which is the trade-off.",
+      "h:What about quality?",
+      "p:HEIC to JPG is lossy to lossy, so keep the quality slider at 90% or above. At that setting the difference is invisible; the file is simply a bit larger than the HEIC was."
+    ],
+    "tryFrom": "heic",
+    "tryTo": "jpg"
+  },
+  {
+    "slug": "pdf-to-word",
+    "cat": "documents",
+    "fam": "doc",
+    "title": "PDF to Word, honestly: what survives the trip and what does not",
+    "teaser": "A PDF is a picture of a page; a Word file is a description of one. That difference explains every conversion quirk.",
+    "body": [
+      "p:A PDF records where each letter sits on the page. A Word document records paragraphs, headings and lists and lets Word decide where they land. Converting between them means guessing the structure back from the positions, which is why no PDF-to-Word converter is perfect — including this one.",
+      "h:What comes across well",
+      "p:Running text, paragraph breaks, and page breaks. Convert Files reads the text layer of each page, groups lines into paragraphs by spacing and punctuation, and writes a clean Word file you can edit immediately.",
+      "h:What does not",
+      "p:Images, columns, tables and exact fonts. A PDF made from a scan has no text layer at all, so nothing can be extracted; you would need OCR first. Two-column layouts may come out interleaved.",
+      "h:The other direction is much better",
+      "p:Word to PDF keeps everything — headings, bold and italic, lists, quotes, tables and pictures — because it goes from structure to layout, which is the easy way round. If you have the original Word file, always convert from that.",
+      "p:Tip: if you only need the words, choose <code>.txt</code> or <code>.md</code> as the target. It is faster and there is no layout to get wrong."
+    ],
+    "tryFrom": "pdf",
+    "tryTo": "docx"
+  },
+  {
+    "slug": "which-image-format",
+    "cat": "image",
+    "fam": "image",
+    "title": "JPG, PNG, WebP or AVIF — which image format should you use?",
+    "teaser": "Four formats cover almost every job. Pick by what the picture is and where it is going, not by habit.",
+    "body": [
+      "p:There are dozens of image formats, and four of them cover almost every real job.",
+      "h:JPG — photographs going anywhere",
+      "p:Small, universal, lossy. Right for photos sent by email or message, uploaded to a shop, or printed. Wrong for screenshots, logos and anything with sharp text, where the compression leaves smudges. Keep quality at 85–92%.",
+      "h:PNG — screenshots, logos, transparency",
+      "p:Lossless and supports transparent backgrounds. Files are bigger than JPG for photos, but perfect for anything with flat colour, text or a cut-out background.",
+      "h:WebP — the web, when you control the site",
+      "p:About 30% smaller than JPG at the same quality, supports transparency, and every current browser opens it. Wrong for sending to people: many desktop apps still cannot open a WebP, which is why “WebP to PNG” is one of the most common conversions there is.",
+      "h:AVIF — smallest of all, least compatible",
+      "p:Roughly half the size of JPG. Browsers display it, but most other software does not yet. Use it for websites you build; convert it to JPG or PNG for anything else.",
+      "h:A quick rule",
+      "ul:Photo to a person → JPG|Screenshot, logo or transparent image → PNG|Image on a website you run → WebP (or AVIF)|Anything you received that will not open → PNG"
+    ],
+    "tryFrom": "webp",
+    "tryTo": "png"
+  },
+  {
+    "slug": "mov-to-mp4",
+    "cat": "video",
+    "fam": "video",
+    "title": "MOV to MP4: making iPhone and Mac videos play everywhere",
+    "teaser": "QuickTime MOV and MP4 are near-identical containers, so why does one play everywhere and the other not?",
+    "body": [
+      "p:A MOV file and an MP4 file are almost the same thing: both are boxes of the same shape holding video and audio streams. The difference is what is inside. iPhones and Macs often put HEVC (H.265) video into a MOV, and HEVC is what Windows, Android and most web players refuse.",
+      "h:What the conversion does",
+      "p:Convert Files re-encodes the video to H.264 and the audio to AAC, then writes an MP4. That pair plays on essentially every device, TV, browser and messaging app. It is a real re-encode: every frame is decoded and encoded again inside your browser, so a two-minute clip takes a minute or two and the tab has to stay open.",
+      "h:Settings that matter",
+      "ul:Width — leave at 0 to keep the size, or set 1280 for a much smaller file that still looks good on a phone|Frames per second — 30 is right for almost everything; 60 doubles the work for sports and games footage|Quality — 85% is the sweet spot; lower if the file must be tiny",
+      "h:WebM instead?",
+      "p:If the video is going onto a website you build, <code>.webm</code> (VP9 + Opus) is usually smaller than MP4 at the same quality and is supported by all modern browsers. For anything else, MP4.",
+      "p:Only the audio? Choose <code>.mp3</code> or <code>.m4a</code> as the target and the video track is dropped entirely."
+    ],
+    "tryFrom": "mov",
+    "tryTo": "mp4"
+  },
+  {
+    "slug": "3d-model-to-glb",
+    "cat": "3d & ar",
+    "fam": "model3d",
+    "title": "Getting a 3D model into AR: OBJ and STL to GLB",
+    "teaser": "Android Scene Viewer, web AR and most engines want glTF. Here is how the older formats map onto it.",
+    "body": [
+      "p:If you have a model from a CAD tool or a 3D printer workflow, it is probably an OBJ or an STL. Augmented-reality viewers — Android’s Scene Viewer, model-viewer on the web, Unity and three.js pipelines — want glTF, and specifically its single-file binary form, GLB.",
+      "h:What GLB is",
+      "p:glTF is a JSON description of a scene (meshes, materials, nodes) plus a binary buffer of vertex data. GLB packs both into one file so nothing can go missing. It is small, loads fast and is the format the AR ecosystem has standardised on.",
+      "h:What converts, and what does not",
+      "p:Convert Files carries the geometry: every vertex and triangle, with node transforms applied so the model sits where it should. It does not carry materials, textures or animations — an OBJ’s <code>.mtl</code> file and its texture images are not read. The result is a clean grey mesh, which is exactly what you want as a starting point for assigning your own material in a viewer or engine.",
+      "h:Units and scale",
+      "p:glTF is in metres. STL files are unitless and often exported in millimetres, so a 20 mm ring becomes a 20 m ring in AR. Check the scale in your viewer; most let you set it in one field. Convert Files does not rescale, because it cannot know which unit the source used.",
+      "h:Going the other way",
+      "p:GLB to STL is useful for printing a model that only exists as a glTF. Node transforms are baked in, so the printed part comes out at the pose you see in the viewer."
+    ],
+    "tryFrom": "obj",
+    "tryTo": "glb"
+  },
+  {
+    "slug": "is-it-safe",
+    "cat": "privacy",
+    "fam": "archive",
+    "title": "Is it safe to convert files online? What “nothing is uploaded” means here",
+    "teaser": "Most converters upload your file to a server. This one never does. Here is how you can check that yourself.",
+    "body": [
+      "p:When you use a typical online converter, your file travels to a server, sits there while it is converted, and often stays for hours or days afterwards. For a holiday photo that is a minor annoyance. For a contract, a medical record or a client’s design it is a real problem.",
+      "h:How Convert Files is different",
+      "p:There is no server-side conversion at all. The page downloads a converter into your browser — a PDF renderer, an image encoder, an audio codec — and runs it on your computer. The file is read from your disk into the browser’s memory and the result is written back to your disk. That is the entire path.",
+      "h:How to verify it",
+      "p:Open your browser’s developer tools (F12), go to the Network tab, and convert something. You will see the converter libraries being fetched the first time, and nothing else: no upload, no request carrying your file. Or go further and disconnect from the internet after the first conversion of each type; it keeps working.",
+      "h:What is stored",
+      "p:Only what you can see in the Your files tab, which lives in your own browser’s storage on your own device. Clear all removes it. Nothing about you or your files is sent to us, because there is no “us” receiving anything."
+    ],
+    "tryFrom": "pdf",
+    "tryTo": "png"
+  },
+  {
+    "slug": "csv-vs-excel",
+    "cat": "spreadsheets",
+    "fam": "table",
+    "title": "CSV vs Excel: when to convert, and the three things that go wrong",
+    "teaser": "CSV is the universal spreadsheet language and Excel is the universal spreadsheet app. Moving between them is easy — with three traps.",
+    "body": [
+      "p:CSV is just text: one row per line, cells separated by commas. Every system exports it and every system imports it. XLSX is Microsoft’s format: multiple sheets, formatting, formulas, dates that know they are dates. Converting between them is a daily task, and three things regularly go wrong.",
+      "h:1. Leading zeros disappear",
+      "p:A postcode like 02139 or a product code like 000451 becomes 2139 and 451 when Excel decides the column is numeric. If the codes matter, keep them as text before converting, or fix the column type after.",
+      "h:2. Dates change shape",
+      "p:CSV has no idea what a date is; it is just characters. 03/04/2026 is 3 April in most of the world and 4 March in the US. Convert Files keeps the text exactly as it was, so what you see is what was written — but check the convention before you trust a column.",
+      "h:3. Only the first sheet is exported",
+      "p:CSV can hold one table. Converting a workbook with five sheets to CSV gives you the first one. If you need all of them, convert to <code>.pdf</code> or <code>.docx</code> instead, which puts every sheet in as its own table.",
+      "h:Beyond Excel",
+      "p:The same data also converts to JSON for developers, to SQL insert statements for a database, to Markdown for documentation, and to ODS for LibreOffice."
+    ],
+    "tryFrom": "csv",
+    "tryTo": "xlsx"
+  }
+]

@@ -1,0 +1,18 @@
+name = "convertfiles-api"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "convertfiles"
+database_id = "00000000-0000-0000-0000-000000000000"
+
+[vars]
+ALLOWED_ORIGINS = "https://convertfiles.in,https://www.convertfiles.in,http://localhost:8777"
+GITHUB_REPO = "yogeshbist/convertfiles"
+GITHUB_BRANCH = "main"
+
+# Secrets (set with `wrangler secret put NAME`, never committed):
+#   ADMIN_PASSWORD  - the admin panel / app password
+#   TOKEN_SECRET    - random string used to sign login tokens
+#   GITHUB_TOKEN    - fine-grained PAT with Contents: read & write on the repo

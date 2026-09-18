@@ -1,0 +1,38 @@
+[
+  {
+    "q": "Is Convert Files free?",
+    "a": "Yes, completely. There is no premium tier, no daily limit, no watermark and no account. It is free for anyone to use."
+  },
+  {
+    "q": "Do I need to sign up?",
+    "a": "No. There is no sign-in or sign-up anywhere on the site. Open the page, drop a file, download the result."
+  },
+  {
+    "q": "Are my files uploaded anywhere?",
+    "a": "No. Every conversion runs inside your own browser using your computer’s processor. The file never leaves your device, which is also why there is nothing to delete afterwards — nothing was ever sent."
+  },
+  {
+    "q": "Why does the first conversion of a new type take a moment?",
+    "a": "The converter for that family (PDF, spreadsheets, HEIC, AAC and so on) is fetched the first time it is needed and then cached by your browser. Later conversions of the same kind start instantly."
+  },
+  {
+    "q": "What is the file size limit?",
+    "a": "It depends on the type, because everything has to fit in the browser’s memory: images 80 MB, documents 60 MB, spreadsheets 60 MB, audio 250 MB, 3D models 250 MB, video 600 MB and archives 800 MB. Video re-encoding is limited to 15 minutes of footage."
+  },
+  {
+    "q": "Where do converted files go?",
+    "a": "To your Downloads folder when you press Download, and to the Your files tab, which keeps a copy in this browser’s storage so you can download it again later. Clear all removes them."
+  },
+  {
+    "q": "Why is a format missing from the To list?",
+    "a": "Because that particular pair would not produce a meaningful result, or because your browser cannot encode it. A video cannot honestly become a Word document, and Chrome cannot write AVIF without extra help. The Formats tab shows exactly what your browser can do."
+  },
+  {
+    "q": "Does it work offline?",
+    "a": "Once the converters you use have been cached, yes for those types. The first use of each converter needs an internet connection."
+  },
+  {
+    "q": "Which browser works best?",
+    "a": "A current Chrome or Edge has the widest support, including video re-encoding and HEIC. Safari and Firefox handle images, documents, spreadsheets, audio and 3D; they lack some of the video encoders."
+  }
+]

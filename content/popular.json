@@ -1,0 +1,162 @@
+[
+  {
+    "from": "pdf",
+    "to": "docx",
+    "label": "PDF to Word"
+  },
+  {
+    "from": "docx",
+    "to": "pdf",
+    "label": "Word to PDF"
+  },
+  {
+    "from": "jpg",
+    "to": "pdf",
+    "label": "JPG to PDF"
+  },
+  {
+    "from": "pdf",
+    "to": "jpg",
+    "label": "PDF to JPG"
+  },
+  {
+    "from": "heic",
+    "to": "jpg",
+    "label": "HEIC to JPG"
+  },
+  {
+    "from": "png",
+    "to": "jpg",
+    "label": "PNG to JPG"
+  },
+  {
+    "from": "jpg",
+    "to": "png",
+    "label": "JPG to PNG"
+  },
+  {
+    "from": "webp",
+    "to": "png",
+    "label": "WebP to PNG"
+  },
+  {
+    "from": "mov",
+    "to": "mp4",
+    "label": "MOV to MP4"
+  },
+  {
+    "from": "mp4",
+    "to": "mp3",
+    "label": "MP4 to MP3"
+  },
+  {
+    "from": "mp4",
+    "to": "gif",
+    "label": "MP4 to GIF"
+  },
+  {
+    "from": "mp4",
+    "to": "webm",
+    "label": "MP4 to WebM"
+  },
+  {
+    "from": "wav",
+    "to": "mp3",
+    "label": "WAV to MP3"
+  },
+  {
+    "from": "m4a",
+    "to": "mp3",
+    "label": "M4A to MP3"
+  },
+  {
+    "from": "mp3",
+    "to": "wav",
+    "label": "MP3 to WAV"
+  },
+  {
+    "from": "ogg",
+    "to": "mp3",
+    "label": "OGG to MP3"
+  },
+  {
+    "from": "csv",
+    "to": "xlsx",
+    "label": "CSV to Excel"
+  },
+  {
+    "from": "xlsx",
+    "to": "csv",
+    "label": "Excel to CSV"
+  },
+  {
+    "from": "json",
+    "to": "csv",
+    "label": "JSON to CSV"
+  },
+  {
+    "from": "xlsx",
+    "to": "pdf",
+    "label": "Excel to PDF"
+  },
+  {
+    "from": "md",
+    "to": "pdf",
+    "label": "Markdown to PDF"
+  },
+  {
+    "from": "html",
+    "to": "pdf",
+    "label": "HTML to PDF"
+  },
+  {
+    "from": "epub",
+    "to": "pdf",
+    "label": "EPUB to PDF"
+  },
+  {
+    "from": "docx",
+    "to": "txt",
+    "label": "Word to text"
+  },
+  {
+    "from": "svg",
+    "to": "png",
+    "label": "SVG to PNG"
+  },
+  {
+    "from": "png",
+    "to": "ico",
+    "label": "PNG to ICO"
+  },
+  {
+    "from": "png",
+    "to": "webp",
+    "label": "PNG to WebP"
+  },
+  {
+    "from": "tiff",
+    "to": "jpg",
+    "label": "TIFF to JPG"
+  },
+  {
+    "from": "obj",
+    "to": "glb",
+    "label": "OBJ to GLB"
+  },
+  {
+    "from": "stl",
+    "to": "glb",
+    "label": "STL to GLB"
+  },
+  {
+    "from": "glb",
+    "to": "stl",
+    "label": "GLB to STL"
+  },
+  {
+    "from": "ttf",
+    "to": "woff",
+    "label": "TTF to WOFF"
+  }
+]

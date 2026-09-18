@@ -1,0 +1,14 @@
+{
+  "intro": [
+    "Convert Files is a free file converter that runs entirely in your browser. There is no server doing the work, no upload, no queue and no account — the page you are looking at is the whole product.",
+    "Most online converters send your file to a machine you will never see, convert it there and keep a copy for a while. This one does the opposite: it brings the converter to you. Images are decoded and re-encoded by your browser’s own engines, documents are rebuilt from their structure, audio and video are re-encoded with the codecs already inside Chrome, and every result is written straight to your disk.",
+    "That design is the reason it can be free and public. Nothing is stored, nothing is metered, and there is no cost that has to be recovered from you."
+  ],
+  "points": [
+    "Free, with no limits on how many files you convert",
+    "No sign-in, sign-up, email or payment details — ever",
+    "Your file never leaves your device",
+    "Works on Mac, Windows, Linux, iPad and Android in a modern browser",
+    "Honest about what it cannot do: every pair offered is one that actually works"
+  ]
+}

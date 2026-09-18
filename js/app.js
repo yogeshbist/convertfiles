@@ -345,6 +345,7 @@
       return DB.put(rec).then(function (id) { rec.id = id; return rec; }, function () { return rec; });
     }).then(function (rec) {
       state.last = rec; state.fresh = rec.id || null;
+      track({ t: 'convert', from: from, to: rec.targetExt, ms: rec.durationMs });
       paintDone(rec);
       adUnit('ad-result', 'result');
       bumpCounter();
@@ -352,6 +353,7 @@
       renderHome();
       toast(rec.id ? 'Saved to Your files' : 'Converted', 'check');
     }).catch(function (e) {
+      track({ t: 'fail', from: from, to: to });
       paintError(e.message || String(e));
     }).then(function () {
       $('#go').disabled = false;
@@ -753,6 +755,29 @@
     if (g && g.content) openGuide(g.content);
   }
 
+  /* ------------------------------------------- anonymous usage counts */
+  // Two events, both without file names, contents, sizes or anything personal:
+  // a page was viewed, and a conversion from X to Y finished (or failed).
+  // Sent only when site.json has an api_base; skipped when Do Not Track is on.
+  function trackingOff() {
+    return !SITE.api || navigator.doNotTrack === '1' || root.doNotTrack === '1' || navigator.globalPrivacyControl === true;
+  }
+  function track(ev) {
+    if (trackingOff()) return;
+    try {
+      // text/plain keeps it a "simple" request (no CORS preflight, works with keepalive)
+      fetch(SITE.api + '/event', { method: 'POST', headers: { 'content-type': 'text/plain' }, body: JSON.stringify(ev), keepalive: true, credentials: 'omit' }).catch(function () {});
+    } catch (e) {}
+  }
+  function trackView() {
+    var today = new Date().toISOString().slice(0, 10), first = lsGet('cf.lastVisit') !== today;
+    lsSet('cf.lastVisit', today);
+    var ref = '';
+    try { ref = document.referrer ? new URL(document.referrer).hostname.replace(/^www\./, '') : ''; } catch (e) {}
+    if (ref === location.hostname.replace(/^www\./, '')) ref = '';
+    track({ t: 'view', p: location.pathname, first: first, ref: ref, d: /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent) ? 'mobile' : 'desktop' });
+  }
+
   /* ---------------------------------------------------------------- wire */
   function init() {
     state.to = C.defaultTarget(state.from);
@@ -777,6 +802,7 @@
     adUnit('ad-home', 'home');
     route();
     pagePreset();
+    trackView();
     $('#files-go').onclick = function () { show('convert'); $('#file').click(); };
 
     var drop = $('#drop');

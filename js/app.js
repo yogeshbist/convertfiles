@@ -86,7 +86,7 @@
   }
   function show(name, keepScroll) {
     ['convert', 'files', 'formats', 'guides'].forEach(function (v) {
-      $('#nav-' + v).setAttribute('aria-selected', String(v === name));
+      if (v === name) $('#nav-' + v).setAttribute('aria-current', 'page'); else $('#nav-' + v).removeAttribute('aria-current');
       $('#view-' + v).hidden = v !== name;
     });
     if (name === 'files') renderFiles();

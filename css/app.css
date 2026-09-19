@@ -1,3 +1,7 @@
+/* self-hosted, latin subset, variable weight — generated from Google Fonts */
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500 600;font-display:swap;src:url(/assets/fonts/jetbrains-mono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/manrope-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Sora';font-style:normal;font-weight:600 700;font-display:swap;src:url(/assets/fonts/sora-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 /* Convert Files — visual system
    Light first. Every colour is a token on :root; dark redefines tokens only. */
 :root{
@@ -61,7 +65,7 @@ a{color:var(--accent)}
 .tabs{display:flex;gap:4px;background:var(--surface-2);padding:4px;border-radius:12px}
 .tab{border:0;background:transparent;padding:7px 14px;border-radius:9px;font-weight:600;font-size:13.5px;color:var(--muted);display:flex;align-items:center;gap:7px}
 .tab:hover{color:var(--ink)}
-.tab[aria-selected="true"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
+.tab[aria-current="page"]{background:var(--surface);color:var(--ink);box-shadow:var(--shadow)}
 .tab .pill{font-size:11px;font-weight:700;background:var(--accent);color:var(--accent-ink);border-radius:99px;padding:1px 7px;line-height:1.5}
 .tab .pill:empty{display:none}
 .tab{white-space:nowrap}

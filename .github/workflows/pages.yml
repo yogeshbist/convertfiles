@@ -28,7 +28,19 @@ jobs:
         run: |
           mkdir -p _site
           rsync -a --exclude '_site' --exclude '.git' --exclude '.github' --exclude 'api' --exclude 'test' \
-                   --exclude 'pages' --exclude 'build.py' --exclude 'serve.py' --exclude 'README.md' ./ _site/
+                   --exclude 'pages' --exclude 'seo' --exclude 'content' --exclude 'build.py' --exclude 'serve.py' --exclude 'README.md' ./ _site/
+      - name: Minify the published JS and CSS (sources in the repo stay readable)
+        run: |
+          pip install --quiet rjsmin rcssmin
+          python3 - <<'PY'
+          import pathlib, rjsmin, rcssmin
+          n = 0
+          for f in pathlib.Path('_site/js').glob('*.js'):
+              f.write_text(rjsmin.jsmin(f.read_text())); n += 1
+          for f in list(pathlib.Path('_site/css').glob('*.css')) + list(pathlib.Path('_site/admin').glob('*.css')):
+              f.write_text(rcssmin.cssmin(f.read_text())); n += 1
+          print('minified', n, 'files')
+          PY
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

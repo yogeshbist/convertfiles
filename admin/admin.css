@@ -1,3 +1,7 @@
+/* self-hosted, latin subset, variable weight — generated from Google Fonts */
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500 600;font-display:swap;src:url(/assets/fonts/jetbrains-mono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Manrope';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/manrope-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Sora';font-style:normal;font-weight:600 700;font-display:swap;src:url(/assets/fonts/sora-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
 .adm-tag{font-family:var(--mono);font-size:11px;font-weight:600;color:var(--accent);background:var(--accent-soft);padding:2px 8px;border-radius:99px;margin-left:8px}
 .adm-login{display:grid;place-items:center;padding:60px 0}
 .adm-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow-lg);padding:32px;width:min(420px,100%);text-align:center}

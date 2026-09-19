@@ -26,9 +26,9 @@
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta name="theme-color" content="#0E7C86">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
-<link rel="stylesheet" href="/css/app.css?v=d3df7c37">
+<link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/app.css?v=3f88fb32">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -52,10 +52,10 @@
 
 <header class="nav">
   <div class="nav-in">
-    <a class="brand" href="/" id="brand"><span class="mark"><svg><use href="#i-swap"/></svg></span><b>Convert Files</b></a>
-    <nav class="tabs" role="tablist" aria-label="Sections">
-      <a class="tab" id="nav-convert" href="/" role="tab" aria-selected="true">Convert</a>
-      <button class="tab" id="nav-files" role="tab" aria-selected="false">Your files <span class="pill" id="files-count"></span></button>
+    <a class="brand" href="/" id="brand" aria-label="Convert Files home"><span class="mark"><svg><use href="#i-swap"/></svg></span><b>Convert Files</b></a>
+    <nav class="tabs" aria-label="Sections">
+      <a class="tab" id="nav-convert" href="/" aria-current="page">Convert</a>
+      <button class="tab" id="nav-files">Your files <span class="pill" id="files-count"></span></button>
       <a class="tab" id="nav-formats" href="/formats/">Formats</a>
       <a class="tab" id="nav-guides" href="/guides/">Guides</a>
     </nav>
@@ -65,13 +65,13 @@
 <main>
 
   <!-- ================================================= CONVERT -->
-  <section class="view" id="view-convert" role="tabpanel">
+  <section class="view" id="view-convert">
     <div class="hero">
       <span class="eyebrow"><svg><use href="#i-bolt"/></svg>Convert your files in seconds</span>
       <h1>Convert HEIC to AVIF</h1>
       <p>Free, in your browser, in seconds &mdash; HEIC image (iPhone) to AVIF image with nothing uploaded anywhere.</p>
 
-      <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose a file to convert">
+      <div class="drop" id="drop" tabindex="0" role="button" aria-label="Drop files here or browse your device to choose a file">
         <div class="drop-ic"><svg><use href="#i-upload"/></svg></div>
         <h2>Drop files here</h2>
         <p>or <span class="browse">browse your device</span> &mdash; one file or many; images, documents, spreadsheets, audio, video, archives, 3D models</p>
@@ -85,14 +85,14 @@
     <div class="section">
       <div class="section-h"><h3>Choose the formats</h3><span id="target-count"></span></div>
       <div class="pipe">
-        <button type="button" class="tile" id="tile-from" aria-haspopup="listbox" aria-expanded="false" aria-label="Source format">
+        <button type="button" class="tile" id="tile-from" aria-haspopup="listbox" aria-expanded="false">
           <span class="k">From</span>
           <span class="ext" id="from-ext">.png</span>
           <span class="n" id="from-name">PNG image</span>
           <span class="caret"><svg><use href="#i-search"/></svg></span>
         </button>
         <div class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></div>
-        <button type="button" class="tile" id="tile-to" aria-haspopup="listbox" aria-expanded="false" aria-label="Target format">
+        <button type="button" class="tile" id="tile-to" aria-haspopup="listbox" aria-expanded="false">
           <span class="k">To</span>
           <span class="ext" id="to-ext">.jpg</span>
           <span class="n" id="to-name">JPEG image</span>
@@ -147,7 +147,7 @@
 <dt>Should I keep the original HEIC file?</dt><dd>Yes — keep it, converting never touches it. The reason to make a copy in another format is that an iPhone saves photos as HEIC, and Windows, Android and most websites simply refuse to open them.</dd>
 <dt>Why can my computer not open HEIC files?</dt><dd>HEIC is patent-encumbered, so Windows, Android and most browsers do not include a decoder. Safari on Apple devices is the exception. Convert Files carries its own decoder, so it works in any browser.</dd>
 </dl>
-<h2>Related conversions</h2><div class="rel"><a href="/heic-to-gif/">HEIC to GIF</a><a href="/heic-to-jpg/">HEIC to JPG</a><a href="/heic-to-svg/">HEIC to SVG</a><a href="/heic-to-pdf/">HEIC to PDF</a><a href="/heic-to-docx/">HEIC to DOCX</a><a href="/heic-to-tiff/">HEIC to TIFF</a><a href="/heic-to-webp/">HEIC to WEBP</a><a href="/heic-to-tga/">HEIC to TGA</a><a href="/heic-to-bmp/">HEIC to BMP</a><a href="/heic-to-png/">HEIC to PNG</a><a href="/heic-to-ico/">HEIC to ICO</a><a href="/heic-to-icns/">HEIC to ICNS</a></div>
+<h2>Related conversions</h2><div class="rel"><a href="/heic-to-png/">HEIC to PNG</a><a href="/heic-to-docx/">HEIC to DOCX</a><a href="/heic-to-ico/">HEIC to ICO</a><a href="/heic-to-pdf/">HEIC to PDF</a><a href="/heic-to-webp/">HEIC to WEBP</a><a href="/heic-to-icns/">HEIC to ICNS</a><a href="/heic-to-jpg/">HEIC to JPG</a><a href="/heic-to-tiff/">HEIC to TIFF</a><a href="/heic-to-bmp/">HEIC to BMP</a><a href="/heic-to-svg/">HEIC to SVG</a><a href="/heic-to-tga/">HEIC to TGA</a><a href="/heic-to-gif/">HEIC to GIF</a></div>
 <p class="seo-more"><a href="/formats/">See all 399 conversions</a> &middot; <a href="/guides/">Read the guides</a></p>
 </section>
 <!-- /page:body -->
@@ -157,7 +157,7 @@
   </section>
 
   <!-- ================================================= YOUR FILES -->
-  <section class="view" id="view-files" role="tabpanel" hidden>
+  <section class="view" id="view-files" hidden>
     <div class="page-h">
       <div><h2 class="view-title">Your files</h2><p>Everything you have converted, kept in this browser. Download any of them again, any time.</p></div>
       <button class="btn danger sm" id="files-clear">Clear all</button>
@@ -176,7 +176,7 @@
   </section>
 
   <!-- ================================================= FORMATS -->
-  <section class="view" id="view-formats" role="tabpanel" hidden>
+  <section class="view" id="view-formats" hidden>
     <div class="page-h">
       <div><h2 class="view-title">Formats</h2><p>Every conversion this browser can do. Pairs that would not genuinely work are simply not offered.</p></div>
     </div>
@@ -192,7 +192,7 @@
   </section>
 
   <!-- ================================================= GUIDES -->
-  <section class="view" id="view-guides" role="tabpanel" hidden>
+  <section class="view" id="view-guides" hidden>
     <div id="guides-list">
       <div class="page-h">
         <div><h2 class="view-title">Guides</h2><p>Practical, plain-language answers about file formats and the conversions people ask about most.</p></div>
@@ -231,12 +231,12 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script src="/js/formats.js?v=d3df7c37"></script>
-<script src="/js/encoders.js?v=d3df7c37"></script>
-<script src="/js/docmodel.js?v=d3df7c37"></script>
-<script src="/js/convert.js?v=d3df7c37"></script>
-<script src="/js/db.js?v=d3df7c37"></script>
-<script src="/js/content.js?v=d3df7c37"></script>
-<script src="/js/app.js?v=d3df7c37"></script>
+<script defer src="/js/formats.js?v=3f88fb32"></script>
+<script defer src="/js/encoders.js?v=3f88fb32"></script>
+<script defer src="/js/docmodel.js?v=3f88fb32"></script>
+<script defer src="/js/convert.js?v=3f88fb32"></script>
+<script defer src="/js/db.js?v=3f88fb32"></script>
+<script defer src="/js/content.js?v=3f88fb32"></script>
+<script defer src="/js/app.js?v=3f88fb32"></script>
 </body>
 </html>

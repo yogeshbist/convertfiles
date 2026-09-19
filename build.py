@@ -389,8 +389,8 @@ for gd in CONTENT['GUIDES']:
                         '<p class="lede">Convert any file, right here.</p>')
     page = replace_block(page, 'page:body', '')
     # pre-render the article for crawlers; the app takes over on load
-    page = page.replace('<section class="view" id="view-convert" role="tabpanel">', '<section class="view" id="view-convert" role="tabpanel" hidden>')
-    page = page.replace('<section class="view" id="view-guides" role="tabpanel" hidden>', '<section class="view" id="view-guides" role="tabpanel">')
+    page = page.replace('<section class="view" id="view-convert">', '<section class="view" id="view-convert" hidden>')
+    page = page.replace('<section class="view" id="view-guides" hidden>', '<section class="view" id="view-guides">')
     page = page.replace('<div id="guides-list">', '<div id="guides-list" hidden>')
     page = page.replace('<article class="article" id="article" hidden></article>', '<article class="article" id="article">' + '\n'.join(article) + '</article>')
     page = page.replace('id="nav-convert" role="tab" aria-selected="true"', 'id="nav-convert" role="tab" aria-selected="false"')

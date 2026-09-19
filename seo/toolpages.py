@@ -11,8 +11,8 @@ NOTHING = 'Nothing is uploaded: the work happens inside your browser, on your ow
 
 TOOLS = [
     dict(slug='compress-image', group='image', name='Compress image to a size',
-         title='Compress Image to 50 KB, 100 KB or 200 KB — Free Online',
-         h1='Compress image to an exact size',
+         title='Free Image Compressor — to 50 KB, 100 KB, 200 KB Online',
+         h1='Free image compressor: to an exact KB size',
          desc='Compress a JPG or PNG to 20 KB, 50 KB, 100 KB or any size you need for a form. Free, in your browser, nothing uploaded.',
          intro='Type the size a form asks for — 50 KB, 100 KB, 200 KB — and get a picture at or under it. The tool finds the highest quality that fits, shrinking the pixels only when it has to. ' + NOTHING,
          steps=[('Drop your photo', 'JPG, PNG, WebP, HEIC and most other image formats work. You can add several at once.'),
@@ -26,8 +26,8 @@ TOOLS = [
          related=['resize-image', 'passport-photo', 'compress-pdf', 'crop-image']),
 
     dict(slug='compress-pdf', group='pdf', name='Compress PDF to a size',
-         title='Compress PDF to 100 KB, 200 KB or 500 KB — Free Online',
-         h1='Compress PDF to an exact size',
+         title='Free PDF Compressor — to 100 KB, 200 KB, 500 KB Online',
+         h1='Free PDF compressor: to an exact KB size',
          desc='Compress a PDF to 100 KB, 200 KB, 500 KB or 1 MB for an upload limit. Free, in your browser, nothing uploaded.',
          intro='Forms and portals reject PDFs over a limit. Set the size you need and get a PDF under it. Strong compression re-renders pages as pictures, which is what makes big reductions possible; light compression keeps the text selectable. ' + NOTHING,
          steps=[('Drop the PDF', 'Scanned documents, photo PDFs and ordinary text PDFs all work.'),
@@ -41,8 +41,8 @@ TOOLS = [
          related=['compress-image', 'merge-pdf', 'split-pdf', 'images-to-pdf']),
 
     dict(slug='passport-photo', group='image', name='Passport photo maker',
-         title='Passport Size Photo Maker — 35×45 mm, 2×2 in, Free Online',
-         h1='Passport size photo maker',
+         title='Free Passport Size Photo Maker — 35×45 mm, 2×2 in Online',
+         h1='Free passport size photo maker',
          desc='Make a passport size photo online: crop to 35×45 mm, 2×2 inch or any size, under 50 KB if needed, plus a printable 4×6 sheet. Free, nothing uploaded.',
          intro='Crop any photo to the exact passport, visa or exam-form size, at print resolution, with a guide for where the head should sit. Get the single photo for online forms and a 4×6 inch sheet of copies for printing. ' + NOTHING,
          steps=[('Drop a photo', 'A phone picture against a plain, light wall is ideal. Face the camera straight on with a neutral expression.'),
@@ -56,8 +56,8 @@ TOOLS = [
          related=['compress-image', 'crop-image', 'resize-image', 'remove-exif']),
 
     dict(slug='resize-image', group='image', name='Resize image',
-         title='Resize Image Online — Pixels, Percent or Presets, Free',
-         h1='Resize image online',
+         title='Free Image Resizer Online — Pixels, Percent or Presets',
+         h1='Free image resizer',
          desc='Resize an image to exact pixels, a percentage, or a preset like Instagram, YouTube thumbnail or passport size. Free, in your browser, nothing uploaded.',
          intro='Set a width, a height, a percentage or a preset. Fit inside the size, fill it exactly, rotate or mirror on the way. Several images at once, all done on your device. ' + NOTHING,
          steps=[('Drop the images', 'One or many. Every common format is fine, including HEIC from an iPhone.'),
@@ -70,8 +70,8 @@ TOOLS = [
          related=['crop-image', 'compress-image', 'passport-photo']),
 
     dict(slug='crop-image', group='image', name='Crop image',
-         title='Crop Image Online — Square, 16:9, 4:3 or Custom, Free',
-         h1='Crop image online',
+         title='Free Image Cropper Online — Square, 16:9, 4:3 or Custom',
+         h1='Free image cropper',
          desc='Crop an image to a square, 16:9, 4:3, 9:16 or any ratio by dragging. Free, in your browser, nothing uploaded.',
          intro='Choose a ratio, drag the picture into the frame, zoom, and download the crop. ' + NOTHING,
          steps=[('Drop an image', 'Any format, any size.'), ('Frame the crop', 'Pick a ratio, drag to position, zoom with the slider or the mouse wheel.'), ('Download', 'The cropped area at its original pixels, or scaled to a width you set.')],
@@ -81,8 +81,8 @@ TOOLS = [
          related=['resize-image', 'passport-photo', 'compress-image']),
 
     dict(slug='merge-pdf', group='pdf', name='Merge PDF',
-         title='Merge PDF Files Online — Free, Nothing Uploaded',
-         h1='Merge PDF files',
+         title='Free PDF Merger Online — Combine PDFs, Nothing Uploaded',
+         h1='Free PDF merger',
          desc='Combine several PDFs into one, in the order you choose. Free, no limits, in your browser — nothing uploaded.',
          intro='Drop the PDFs, put them in order, press Merge. The pages are copied into one new file without being re-rendered, so text, links and quality are untouched. ' + NOTHING,
          steps=[('Drop two or more PDFs', 'Add as many as you need.'), ('Set the order', 'Use the arrows on each row.'), ('Merge and download', 'One PDF, pages in that order.')],
@@ -93,8 +93,8 @@ TOOLS = [
          related=['split-pdf', 'organize-pdf', 'images-to-pdf', 'compress-pdf']),
 
     dict(slug='split-pdf', group='pdf', name='Split PDF',
-         title='Split PDF Online — by Pages or Ranges, Free',
-         h1='Split a PDF',
+         title='Free PDF Splitter Online — by Pages or Ranges',
+         h1='Free PDF splitter',
          desc='Split a PDF into single pages, page ranges or fixed chunks. Free, in your browser, nothing uploaded.',
          intro='Every page as its own file, the ranges you type, or chunks of a fixed length. ' + NOTHING,
          steps=[('Drop the PDF', ''), ('Choose how to split', 'Every page, ranges like 1-3, 5, 8-10, or chunks of N pages.'), ('Download', 'Several files come as one zip.')],
@@ -104,8 +104,8 @@ TOOLS = [
          related=['merge-pdf', 'organize-pdf', 'rotate-pdf', 'compress-pdf']),
 
     dict(slug='rotate-pdf', group='pdf', name='Rotate PDF',
-         title='Rotate PDF Online — All Pages or Some, Free',
-         h1='Rotate PDF pages',
+         title='Free PDF Rotator Online — All Pages or Some',
+         h1='Free PDF rotator',
          desc='Rotate every page of a PDF, or only the pages you choose, by 90 or 180 degrees. Free, in your browser, nothing uploaded.',
          intro='Rotate the whole document, or type the pages that came out sideways. The rotation is saved in the file, so it opens the right way up everywhere. ' + NOTHING,
          steps=[('Drop the PDF', 'Several at once if you like.'), ('Choose the angle and pages', 'Leave pages empty to rotate everything.'), ('Download', '')],
@@ -115,8 +115,8 @@ TOOLS = [
          related=['organize-pdf', 'split-pdf', 'merge-pdf']),
 
     dict(slug='organize-pdf', group='pdf', name='Organise PDF pages',
-         title='Reorder, Rotate or Delete PDF Pages Online — Free',
-         h1='Reorder, rotate or delete PDF pages',
+         title='Free PDF Page Organizer — Reorder, Rotate, Delete Online',
+         h1='Free PDF page organiser: reorder, rotate, delete',
          desc='See every page as a thumbnail, then move, rotate or delete pages and save a new PDF. Free, in your browser, nothing uploaded.',
          intro='Every page appears as a thumbnail. Move pages with the arrows, rotate the sideways ones, cross out the ones to delete, and save. ' + NOTHING,
          steps=[('Drop the PDF', ''), ('Arrange the pages', 'Arrows move, the circle rotates, the cross deletes (press again to keep).'), ('Save the new PDF', '')],
@@ -126,8 +126,8 @@ TOOLS = [
          related=['delete-pdf-pages', 'split-pdf', 'merge-pdf', 'rotate-pdf']),
 
     dict(slug='delete-pdf-pages', group='pdf', name='Delete PDF pages',
-         title='Delete Pages from a PDF Online — Free, Nothing Uploaded',
-         h1='Delete pages from a PDF',
+         title='Delete Pages from a PDF — Free Online Tool, No Upload',
+         h1='Free tool to delete pages from a PDF',
          desc='Remove pages from a PDF by clicking their thumbnails, then save. Free, in your browser, nothing uploaded.',
          intro='Drop the PDF, cross out the pages you do not want, save. You can reorder and rotate the rest at the same time. ' + NOTHING,
          steps=[('Drop the PDF', ''), ('Cross out pages', 'Press the cross on each page to remove; press again to keep it.'), ('Save', '')],
@@ -136,8 +136,8 @@ TOOLS = [
          related=['organize-pdf', 'split-pdf', 'merge-pdf']),
 
     dict(slug='images-to-pdf', group='pdf', name='Images to one PDF',
-         title='Combine Images into One PDF Online — Free',
-         h1='Combine images into one PDF',
+         title='Free Images to PDF Converter Online — Combine Photos',
+         h1='Free images to PDF converter',
          desc='Turn several JPG, PNG or HEIC images into a single PDF, one page each, in the order you choose. Free, nothing uploaded.',
          intro='Photos of a document, scans from a phone, screenshots — drop them all and get one PDF with a page per image, on A4, Letter or pages that match the pictures. ' + NOTHING,
          steps=[('Drop the images', 'In any order; fix it with the arrows.'), ('Pick the page size and margin', 'A4 is right for most forms. "Same size as each image" keeps every pixel.'), ('Make the PDF', '')],
@@ -147,8 +147,8 @@ TOOLS = [
          related=['compress-pdf', 'merge-pdf', 'pdf-to-jpg']),
 
     dict(slug='image-to-text', group='other', name='Image to text (OCR)',
-         title='Image to Text Converter — OCR Online, Free, Nothing Uploaded',
-         h1='Image to text (OCR)',
+         title='Free Image to Text Converter — OCR Online, No Upload',
+         h1='Free image to text converter (OCR)',
          desc='Extract text from a photo, screenshot or scanned PDF in your browser. English, Hindi and 18 more languages. Free, nothing uploaded.',
          intro='Read the words out of a picture or a scan and copy them as text. The recognition runs on your device, so a private document stays private. ' + NOTHING,
          steps=[('Drop images or a scanned PDF', 'Straight, sharp, well-lit pictures read best.'), ('Choose the language', 'English is the default; Hindi and other Indian languages are available.'), ('Read and copy', 'The text appears in a box you can copy from or download.')],
@@ -160,8 +160,8 @@ TOOLS = [
          related=['pdf-ocr', 'pdf-to-txt', 'compress-image']),
 
     dict(slug='pdf-ocr', group='other', name='PDF OCR',
-         title='PDF OCR Online — Extract Text from a Scanned PDF, Free',
-         h1='Extract text from a scanned PDF (OCR)',
+         title='Free PDF OCR Online — Extract Text from a Scanned PDF',
+         h1='Free PDF OCR: text from a scanned PDF',
          desc='Read the text in a scanned PDF and copy it, in your browser. English, Hindi and more. Free, nothing uploaded.',
          intro='A scanned PDF is a picture of a page. This reads the words off it, page by page, on your device. ' + NOTHING,
          steps=[('Drop the scanned PDF', 'Up to 50 pages at a time.'), ('Choose the language', ''), ('Read, copy or download', 'Page breaks are marked in the text.')],
@@ -171,8 +171,8 @@ TOOLS = [
          related=['image-to-text', 'pdf-to-txt', 'pdf-to-docx']),
 
     dict(slug='trim-video', group='media', name='Trim video',
-         title='Trim Video Online — Free, No Watermark, Nothing Uploaded',
-         h1='Trim video online',
+         title='Free Video Trimmer Online — No Watermark, No Upload',
+         h1='Free video trimmer, no watermark',
          desc='Cut a video to the part you want, with no watermark and no upload. Save as MP4 or WebM, in your browser.',
          intro='Pick the start and end, preview the selection, save it as MP4. No watermark, no sign-up, and the video never leaves your device. ' + NOTHING,
          steps=[('Drop the video', 'MP4, MOV from an iPhone, WebM and most others.'), ('Set the start and end', 'Play to a point and press "Start here" or "End here", or type the times.'), ('Trim and save', 'The selection is re-encoded on your device.')],
@@ -184,8 +184,8 @@ TOOLS = [
          related=['mp4-to-gif', 'mov-to-mp4', 'mp3-cutter', 'mp4-to-mp3']),
 
     dict(slug='mp3-cutter', group='media', name='MP3 cutter',
-         title='MP3 Cutter Online — Cut Audio, Make a Ringtone, Free',
-         h1='MP3 cutter and ringtone maker',
+         title='Free MP3 Cutter Online — Cut Audio, Make a Ringtone',
+         h1='Free MP3 cutter and ringtone maker',
          desc='Cut an MP3 or any audio to the part you want, add a fade, save as MP3 or WAV. Free, in your browser, nothing uploaded.',
          intro='Drag the handles on the waveform, play the selection, add a fade in or out, save. Works with MP3, M4A, WAV, FLAC and the sound from a video. ' + NOTHING,
          steps=[('Drop the audio', 'Or a video — only its sound is used.'), ('Select the part', 'Drag the yellow handles or type the times. "30 s ringtone" sets a 30-second selection.'), ('Cut and save', 'MP3 at the bitrate you choose, or WAV.')],
@@ -195,8 +195,8 @@ TOOLS = [
          related=['ringtone-maker', 'trim-video', 'mp4-to-mp3', 'wav-to-mp3']),
 
     dict(slug='ringtone-maker', group='media', name='Ringtone maker',
-         title='Ringtone Maker Online — Cut Any Song to 30 s, Free',
-         h1='Ringtone maker',
+         title='Free Ringtone Maker Online — Cut Any Song to 30 s',
+         h1='Free ringtone maker',
          desc='Cut any song to a 30-second ringtone, add a fade, save as MP3. Free, in your browser, nothing uploaded.',
          intro='Drop a song, move the selection to the part you like, press the 30-second button, save. ' + NOTHING,
          steps=[('Drop the song', ''), ('Choose the 30 seconds', 'Drag the start handle to where the good part begins and press "30 s ringtone".'), ('Save as MP3', '')],
@@ -205,8 +205,8 @@ TOOLS = [
          related=['mp3-cutter', 'trim-video', 'mp4-to-mp3']),
 
     dict(slug='remove-exif', group='image', name='Remove EXIF / metadata',
-         title='Remove EXIF Data from Photos Online — Free, Private',
-         h1='View and remove photo metadata (EXIF)',
+         title='Free EXIF Remover — Strip Photo Metadata Online, Private',
+         h1='Free EXIF remover: view and strip photo metadata',
          desc='See the hidden metadata in a photo — camera, date, GPS location — and remove it without re-encoding. Free, in your browser, nothing uploaded.',
          intro='Photos carry the camera model, the date and often the exact GPS location of where they were taken. See what yours reveal, then strip it. JPEG, PNG and WebP are cleaned without touching the picture itself. ' + NOTHING,
          steps=[('Drop the photos', 'The metadata is shown at once, including any location.'), ('Check what is there', 'A red GPS line means the photo says where it was taken.'), ('Remove and download', 'The picture is identical; the data is gone.')],
@@ -217,8 +217,8 @@ TOOLS = [
          related=['view-metadata', 'compress-image', 'heic-to-jpg']),
 
     dict(slug='view-metadata', group='image', name='View photo metadata',
-         title='View Photo Metadata Online — EXIF, GPS, Camera, Free',
-         h1='View photo metadata',
+         title='Free Photo Metadata Viewer — EXIF, GPS, Camera Online',
+         h1='Free photo metadata viewer',
          desc='See the EXIF data in a photo: camera, lens, settings, date and GPS location. In your browser, nothing uploaded.',
          intro='Drop a photo and see everything it records about itself. Remove it in one click if you like. ' + NOTHING,
          steps=[('Drop a photo', ''), ('Read the data', 'Camera, lens, exposure, date, software and location if present.'), ('Optionally remove it', '')],
@@ -227,8 +227,8 @@ TOOLS = [
          related=['remove-exif', 'compress-image']),
 
     dict(slug='qr-code-generator', group='other', name='QR code generator',
-         title='QR Code Generator — Free, No Sign-up, UPI, Wi-Fi, vCard',
-         h1='QR code generator',
+         title='Free QR Code Generator — UPI, Wi-Fi, vCard, No Sign-up',
+         h1='Free QR code generator',
          desc='Make a QR code for a link, UPI payment, Wi-Fi network, contact card, email or phone. Download as PNG or SVG. Free, no sign-up, no tracking.',
          intro='Type what the code should hold and it appears as you type. Download a sharp PNG or an SVG for print. Codes are made in your browser; nothing is stored, and the code never expires because there is no redirect service behind it. ' + NOTHING,
          steps=[('Choose what kind of code', 'Link, UPI payment, Wi-Fi, contact card, email, phone or SMS.'), ('Fill in the details', 'The preview updates live.'), ('Download', 'PNG at the size you choose, or SVG.')],
@@ -240,8 +240,8 @@ TOOLS = [
          related=['compress-image', 'png-to-svg']),
 
     dict(slug='unzip', group='other', name='Unzip online',
-         title='Unzip Files Online — Open ZIP, TAR, GZ in Your Browser, Free',
-         h1='Unzip files online',
+         title='Free Online Unzip — Open ZIP, TAR, GZ in Your Browser',
+         h1='Free online unzip tool',
          desc='Open a ZIP, TAR or GZ archive in your browser, see what is inside and download the files you want. Free, nothing uploaded.',
          intro='Drop the archive, tick the files, download them one by one or as a smaller zip. Nothing is extracted on a server — it all happens on your device. ' + NOTHING,
          steps=[('Drop the archive', '.zip, .tar, .tgz or .gz.'), ('Pick the files', 'Everything is ticked by default.'), ('Download', 'A single file directly; several as a zip of just those.')],
@@ -252,8 +252,8 @@ TOOLS = [
          related=['zip-to-tar', 'tar-to-zip', 'compress-pdf']),
 
     dict(slug='sign-pdf', group='pdf', name='Sign PDF',
-         title='Sign a PDF Online — Draw or Type a Signature, Free',
-         h1='Sign a PDF',
+         title='Free PDF Signer Online — Draw or Type a Signature',
+         h1='Free PDF signer',
          desc='Draw, type or upload a signature and place it on any page of a PDF. Free, in your browser — the document is never uploaded.',
          intro='Draw your signature with a mouse or finger, type it, or upload a picture of it; drag it into place on the page; save. The contract, form or letter stays on your device throughout. ' + NOTHING,
          steps=[('Drop the PDF', ''), ('Make your signature', 'Draw it, type your name, or upload a photo of your signature on white paper.'), ('Place it and save', 'Choose the page, drag the signature where it belongs, adjust the size, save.')],
@@ -317,8 +317,8 @@ def kb_page(base, kb):
     d['preset'] = {'kb': kb}
     d['parent'] = base['slug']
     if kind == 'image':
-        d['title'] = 'Compress Image to %s Online — Free, Nothing Uploaded' % lab
-        d['h1'] = 'Compress image to %s' % lab
+        d['title'] = 'Compress Image to %s — Free Online Tool, No Upload' % lab
+        d['h1'] = 'Free image compressor to %s' % lab
         d['desc'] = 'Reduce a JPG or PNG to under %s for a form or upload, at the best quality that fits. Free, in your browser, nothing uploaded.' % lab
         d['intro'] = ('Drop the picture and it comes back under %s — the target is already set. The tool keeps the highest quality that fits and only '
                       'shrinks the pixels if it has to. ' % lab) + NOTHING
@@ -332,8 +332,8 @@ def kb_page(base, kb):
                     ('Is the picture uploaded?', 'No. Everything runs in your browser.')]
         d['related'] = [base['slug'] + ('-to-%s' % ('1mb' if k == 1024 else '%dkb' % k)) for k in KB_PAGES['compress-image'] if k != kb] + ['passport-photo', 'resize-image']
     else:
-        d['title'] = 'Compress PDF to %s Online — Free, Nothing Uploaded' % lab
-        d['h1'] = 'Compress PDF to %s' % lab
+        d['title'] = 'Compress PDF to %s — Free Online Tool, No Upload' % lab
+        d['h1'] = 'Free PDF compressor to %s' % lab
         d['desc'] = 'Shrink a PDF to under %s for an upload limit, in your browser. Free, nothing uploaded.' % lab
         d['intro'] = ('Drop the PDF and get it back under %s — the target is preset. Strong compression redraws pages to fit; light compression keeps the text selectable. ' % lab) + NOTHING
         d['faq'] = [('How do I compress a PDF to %s?' % lab, 'Drop it above with %s already set, keep Strong compression for scans and picture PDFs, press the button and download.' % lab),

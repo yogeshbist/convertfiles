@@ -218,7 +218,7 @@ home_jsonld = {
     'description': 'Free online file converter that runs entirely in your browser. Images, PDF, Word, Excel, audio, video, fonts and 3D models. Nothing is uploaded.'
 }
 index = replace_block(index, 'page:meta', page_meta(
-    'Free Online File Converter \u2014 Nothing Uploaded | Convert Files',
+    'Free Online File Converter \u2014 No Upload | Convert Files',
     'Free online file converter for images, PDF, Word, Excel, audio, video, fonts and 3D models \u2014 converted in your browser in seconds. No upload, no account.',
     '', jsonld=home_jsonld))
 index = replace_block(index, 'page:body', '')
@@ -238,7 +238,7 @@ for _p in load_json('popular'):
 index = replace_block(index, 'popular:tiles', ''.join(_pop))
 
 # every tool, one per row, most wanted first; app.js reorders by real usage
-_rail = ['<div class="rail-h"><h2>Tools</h2><span class="rail-tag">Most used</span></div><ol class="rail-list">']
+_rail = ['<div class="rail-h"><h2>Free tools</h2><span class="rail-tag">Most used</span></div><ol class="rail-list">']
 _by = {x['slug']: x for x in TOOLPAGES.TOOLS}
 for _i, _slug in enumerate(TOOLPAGES.RAIL_ORDER):
     _t = _by[_slug]
@@ -287,7 +287,7 @@ SEO_PAIRS = SEO.seo_pairs(GRAPH)
 # shared by the tool pages, the guides and the hubs
 TOOL_BY_SLUG = {t['slug']: t for t in TOOLPAGES.all_pages()}
 LANDING_SLUGS = set('%s-to-%s' % p for p in SEO_PAIRS)
-HERO_P = '<p>Convert any file, right here &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>'
+HERO_P = '<p>Free, no sign-up &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>'
 PAIR_SET = set(SEO_PAIRS)
 
 
@@ -311,9 +311,9 @@ for f, t in SEO_PAIRS:
     group_title, group_fam = PAGES.group_of(f)
 
     SF, ST = KW.search_name(f), KW.search_name(t)               # "Word", not "DOCX"
-    title = '%s to %s Converter \u2014 free, online, nothing uploaded' % (SF, ST)
-    # the H1 carries the exact extension too, so "PDF to Word (DOCX) converter"
-    h1 = '%s to %s converter' % (SF + (' (%s)' % F if SF != F else ''), ST + (' (%s)' % T if ST != T else ''))
+    title = 'Free %s to %s Converter \u2014 Online, Nothing Uploaded' % (SF, ST)
+    # the H1 carries the exact extension too, so "Free PDF to Word (DOCX) converter"
+    h1 = 'Free %s to %s converter' % (SF + (' (%s)' % F if SF != F else ''), ST + (' (%s)' % T if ST != T else ''))
     desc = meta_desc(F, T, why, what)
     crumb_html, crumb_ld = crumbs([('Home', '/'), (group_title, '/formats/'), ('%s to %s' % (F, T), None)])
 
@@ -367,7 +367,7 @@ for f, t in SEO_PAIRS:
     page = replace_block(BASE, 'page:meta', meta)
     page = replace_block(page, 'page:body', '\n'.join(body))
     page = page.replace('<h1>Free Online File Converter</h1>', '<h1>%s</h1>' % esc(h1))
-    page = page.replace('<p>Convert any file, right here &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>',
+    page = page.replace('<p>Free, no sign-up &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>',
                         '<p>Convert %s to %s free, in your browser, in seconds &mdash; nothing uploaded anywhere.</p>' % (esc(fname), esc(tname)))
     write(path + 'index.html', strip_home(page))
 
@@ -392,11 +392,11 @@ for group_title, fam, members in SEO.GROUPS:
                          for tt in sorted(by_source[src]))))
 hub.append('</section>')
 hub_page = replace_block(BASE, 'page:meta', page_meta(
-    'All file conversions \u2014 %d free converters, nothing uploaded' % len(SEO_PAIRS),
+    'Free File Converters \u2014 All %d Conversions, Nothing Uploaded' % len(SEO_PAIRS),
     'Every conversion Convert Files supports — PNG to JPG, PDF to Word, MOV to MP4 and 396 more, each with its own guide. Free, nothing uploaded.', 'formats/', jsonld=[hub_crumb_ld]))
 hub_page = replace_block(hub_page, 'page:body', '\n'.join(hub))
-hub_page = hub_page.replace('<h1>Free Online File Converter</h1>', '<h1>All conversions</h1>')
-hub_page = hub_page.replace('<p>Convert any file, right here &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>',
+hub_page = hub_page.replace('<h1>Free Online File Converter</h1>', '<h1>All free conversions</h1>')
+hub_page = hub_page.replace('<p>Free, no sign-up &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>',
                             '<p>%d conversions, each with its own page. Pick the one you need and convert it there.</p>' % len(SEO_PAIRS))
 write('formats/index.html', hide_converter(strip_home(hub_page)))
 
@@ -487,7 +487,7 @@ gi_page = replace_block(BASE, 'page:meta', page_meta(
     'privacy when converting files online.', 'guides/', jsonld=[gi_crumb_ld]))
 gi_page = replace_block(gi_page, 'page:body', '\n'.join(gi))
 gi_page = gi_page.replace('<h1>Free Online File Converter</h1>', '<h1>Guides</h1>')
-gi_page = gi_page.replace('<p>Convert any file, right here &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>',
+gi_page = gi_page.replace('<p>Free, no sign-up &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>',
                           '<p>%d guides to the formats people ask about most.</p>' % len(EN_GUIDES))
 write('guides/index.html', hide_converter(strip_home(gi_page)))
 
@@ -587,7 +587,7 @@ th_page = replace_block(BASE, 'page:meta', page_meta(
     'Free browser tools: compress an image or PDF to a size, passport photo, merge and split PDF, OCR, trim video, cut MP3, QR codes, unzip. Nothing uploaded.',
     'tools/', jsonld=[th_crumb_ld]))
 th_page = replace_block(th_page, 'page:body', '\n'.join(th))
-th_page = th_page.replace('<h1>Free Online File Converter</h1>', '<h1>Tools</h1>')
+th_page = th_page.replace('<h1>Free Online File Converter</h1>', '<h1>Free online tools</h1>')
 th_page = th_page.replace(HERO_P, '<p>%d tools that work on your device. Pick one below.</p>' % len(TOOLPAGES.TOOLS))
 write('tools/index.html', hide_converter(strip_home(th_page)))
 
@@ -624,7 +624,7 @@ wd_page = replace_block(BASE, 'page:meta', page_meta('Free File Converter Widget
                                                     'Embed a free, private file converter on your website with one iframe. Files never leave the visitor’s browser. No cost, no sign-up.',
                                                     'widget/', jsonld=[wd_crumb_ld]))
 wd_page = replace_block(wd_page, 'page:body', '\n'.join(wd))
-wd_page = wd_page.replace('<h1>Free Online File Converter</h1>', '<h1>Put a file converter on your website</h1>')
+wd_page = wd_page.replace('<h1>Free Online File Converter</h1>', '<h1>Put a free file converter on your website</h1>')
 wd_page = wd_page.replace(HERO_P, '<p>One line of HTML. Free. Your visitors’ files stay in their browser.</p>')
 write('widget/index.html', hide_converter(strip_home(wd_page)))
 

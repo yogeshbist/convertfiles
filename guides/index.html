@@ -68,7 +68,7 @@
       <h1>Guides</h1>
       <p>7 guides to the formats people ask about most.</p>
 
-      <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose a file to convert">
+      <div class="drop" id="drop" hidden tabindex="0" role="button" aria-label="Choose a file to convert">
         <div class="drop-ic"><svg><use href="#i-upload"/></svg></div>
         <h2>Drop files here</h2>
         <p>or <span class="browse">browse your device</span> &mdash; one file or many; images, documents, spreadsheets, audio, video, archives, 3D models</p>
@@ -79,7 +79,7 @@
       <div class="warn" id="warn" hidden></div>
     </div>
 
-    <div class="section">
+    <div class="section" hidden>
       <div class="section-h"><h3>Choose the formats</h3><span id="target-count"></span></div>
       <div class="pipe">
         <button type="button" class="tile" id="tile-from" aria-haspopup="listbox" aria-expanded="false" aria-label="Source format">

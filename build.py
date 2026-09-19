@@ -168,6 +168,16 @@ def meta_desc(F, T, why, what):
     return (head + tail).strip()
 
 
+def hide_converter(page):
+    """A hub page lists what you can convert; it is not itself a converter.
+    The markup stays (app.js expects every one of these elements to exist) but
+    the file picker and the format chooser are not shown."""
+    out = page.replace('<div class="drop" id="drop"', '<div class="drop" id="drop" hidden')
+    out = out.replace('<div class="section">', '<div class="section" hidden>', 1)
+    assert out != page, 'converter markup not found'
+    return out
+
+
 def strip_home(page):
     """Generated pages keep the converter and their own content, not the home
     page's editorial blocks — 400 copies of the same FAQ helps nobody."""
@@ -335,8 +345,8 @@ hub_page = replace_block(BASE, 'page:meta', page_meta(
 hub_page = replace_block(hub_page, 'page:body', '\n'.join(hub))
 hub_page = hub_page.replace('<h1>Convert any file, right here.</h1>', '<h1>All conversions</h1>')
 hub_page = hub_page.replace('<p>Pick a file, choose what it should become, download the result. Everything runs inside your browser &mdash; nothing is uploaded.</p>',
-                            '<p>%d conversions, each with its own page. Pick one, or drop a file above.</p>' % len(SEO_PAIRS))
-write('formats/index.html', strip_home(hub_page))
+                            '<p>%d conversions, each with its own page. Pick the one you need and convert it there.</p>' % len(SEO_PAIRS))
+write('formats/index.html', hide_converter(strip_home(hub_page)))
 
 # ------------------------------------------------------------- guide pages
 def render_body(lines):
@@ -399,7 +409,7 @@ gi_page = replace_block(gi_page, 'page:body', '\n'.join(gi))
 gi_page = gi_page.replace('<h1>Convert any file, right here.</h1>', '<h1>Guides</h1>')
 gi_page = gi_page.replace('<p>Pick a file, choose what it should become, download the result. Everything runs inside your browser &mdash; nothing is uploaded.</p>',
                           '<p>%d guides to the formats people ask about most.</p>' % len(CONTENT['GUIDES']))
-write('guides/index.html', strip_home(gi_page))
+write('guides/index.html', hide_converter(strip_home(gi_page)))
 
 # -------------------------------------------------------------- legal pages
 shell = open('pages/_shell.html').read()

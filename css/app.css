@@ -457,7 +457,7 @@ main:has(.convert-grid.two){max-width:1240px}
 .convert-grid.two .drop,.convert-grid.two .section{max-width:none}
 
 /* the services carousel: a banner strip above the hero */
-.promo{position:relative;margin-top:32px;background:linear-gradient(135deg,var(--accent-soft) 0%,color-mix(in srgb,var(--accent-soft) 50%,transparent) 100%);border:1px solid color-mix(in srgb,var(--accent) 15%,transparent);border-radius:12px;padding:16px 20px;min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px;overflow:hidden}
+.promo{position:relative;margin:28px 0 22px;background:linear-gradient(135deg,var(--accent-soft) 0%,color-mix(in srgb,var(--accent-soft) 50%,transparent) 100%);border:1px solid color-mix(in srgb,var(--accent) 15%,transparent);border-radius:12px;padding:16px 20px;min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px;overflow:hidden}
 .promo-track{position:relative;flex:1;min-height:38px}
 .promo-slide{position:absolute;inset:0;display:flex;align-items:center;gap:12px;opacity:0;transform:translateX(30px);transition:opacity .45s ease-out,transform .45s ease-out;pointer-events:none;color:inherit;text-decoration:none;border-radius:8px}
 .promo-slide:hover b{text-decoration:underline}
@@ -476,7 +476,7 @@ main:has(.convert-grid.two){max-width:1240px}
 @media (prefers-reduced-motion:reduce){.promo-slide{transition:none}}
 
 /* the tools card */
-.tools-rail{position:sticky;top:76px;margin-top:32px;max-height:calc(100vh - 92px);display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.tools-rail{position:sticky;top:76px;margin-top:6px;max-height:calc(100vh - 92px);display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .rail-h{padding:18px 18px 14px;border-bottom:1px solid var(--line)}
 .rail-h h2{font-family:var(--display);font-size:16px;font-weight:700;margin:0 0 4px}
 .rail-tag{font-size:11px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.03em}
@@ -504,6 +504,7 @@ main:has(.convert-grid.two){max-width:1240px}
   .convert-grid.two .hero h1{max-width:none}
   .convert-grid.two .hero p{margin-left:auto}
   .tools-rail{position:static;max-height:none;margin-top:22px}
+  .promo{margin-bottom:10px}
   .rail-list{display:grid;grid-template-columns:1fr 1fr}
 }
 @media (max-width:560px){.rail-list{grid-template-columns:1fr}.promo{padding:14px 16px}.promo-count,.promo-bar{display:none}}

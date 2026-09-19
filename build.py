@@ -243,11 +243,12 @@ _by = {x['slug']: x for x in TOOLPAGES.TOOLS}
 for _i, _slug in enumerate(TOOLPAGES.RAIL_ORDER):
     _t = _by[_slug]
     _hint, _icon = TOOLPAGES.RAIL_META[_slug]
-    _rail.append('<li><a href="/%s/" data-tool="%s"><span class="rk">%02d</span>'
+    _rail.append('<li%s><a href="/%s/" data-tool="%s"><span class="rk">%02d</span>'
                  '<span class="ic" style="--fam:var(--f-%s)"><svg><use href="#t-%s"/></svg></span>'
                  '<span class="tx"><b>%s</b><small>%s</small></span><b class="cnt" hidden></b></a></li>'
-                 % (_slug, _slug, _i + 1, TOOLPAGES.GROUP_FAM[_t['group']], _icon, esc(_t['name']), esc(_hint)))
-_rail.append('</ol><a class="rail-all" href="/tools/">All %d tools <span>&rarr;</span></a>' % len(TOOLPAGES.TOOLS))
+                 % (' class="more"' if _i >= 11 else '', _slug, _slug, _i + 1, TOOLPAGES.GROUP_FAM[_t['group']], _icon, esc(_t['name']), esc(_hint)))
+_rail.append('</ol><button type="button" class="rail-more" id="rail-more" aria-expanded="false">Show all %d tools</button>'
+             '<a class="rail-all" href="/tools/">Open the tools page <span>&rarr;</span></a>' % len(TOOLPAGES.TOOLS))
 index = replace_block(index, 'rail:list', ''.join(_rail))
 _gc = []
 for _g in [g for g in CONTENT['GUIDES'] if g.get('lang') != 'hi'][:3]:

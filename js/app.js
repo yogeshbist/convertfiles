@@ -839,6 +839,34 @@
       list.appendChild(li);
     });
   }
+  // The services carousel beside the converter: four slides, one every four
+  // seconds, paused while the pointer is over it, still while reduced motion is on.
+  function promo() {
+    var box = $('#promo');
+    if (!box) return;
+    var slides = box.querySelectorAll('.promo-slide'), dots = box.querySelector('.promo-dots'), i = 0, timer = null;
+    var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    slides.forEach(function (_, k) {
+      var d = el('button', 'promo-dot' + (k === 0 ? ' on' : '')); d.type = 'button'; d.setAttribute('role', 'tab'); d.setAttribute('aria-label', 'Slide ' + (k + 1));
+      d.onclick = function () { go(k); restart(); };
+      dots.appendChild(d);
+    });
+    function go(n) {
+      i = (n + slides.length) % slides.length;
+      slides.forEach(function (s, k) { s.classList.toggle('on', k === i); });
+      dots.querySelectorAll('.promo-dot').forEach(function (d, k) { d.classList.toggle('on', k === i); d.setAttribute('aria-selected', String(k === i)); });
+    }
+    function restart() { clearInterval(timer); if (!still) timer = setInterval(function () { go(i + 1); }, 4000); }
+    box.addEventListener('mouseenter', function () { clearInterval(timer); });
+    box.addEventListener('mouseleave', restart);
+    restart();
+    var more = $('#rail-more');
+    if (more) more.onclick = function () {
+      var open = $('#tools-rail').classList.toggle('open');
+      more.setAttribute('aria-expanded', String(open));
+      more.textContent = open ? 'Show fewer' : 'Show all ' + $('#tools-rail .rail-list').children.length + ' tools';
+    };
+  }
   function renderHome() {
     // Generated landing and guide pages carry the converter but not the home
     // page's editorial blocks, so there is nothing here to paint.
@@ -1270,6 +1298,7 @@
     installApp();
     takeSharedFiles();
     loadFeedback();
+    promo();
     $('#files-go').onclick = function () { if (!isHome() && document.querySelector('meta[name="cf-tool"]')) { location.href = '/'; return; } show('convert'); $('#file').click(); };
 
     // On a tool page (/compress-image/ and friends) tools.js owns the drop

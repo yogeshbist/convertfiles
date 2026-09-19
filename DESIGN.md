@@ -108,7 +108,9 @@ Where each piece lives, and who creates its markup.
 | Convert button, privacy line | `index.html` | `.cta #go .private` |
 | Progress, result panel | `index.html` + **app.js** | `.progress .bar .status .done .done-row .done-list .picked-foot` |
 | Sticky convert bar (phones) | `index.html` | `.sticky` |
-| Tools rail (home only) | `index.html` markers + **build.py** | `.tools-rail .rail-h .rail-tag .rail-list .rk .ic .tx .cnt .rail-all` |
+| Services carousel (home only) | `index.html` (`promo:only` markers) + app.js rotation | `.promo .promo-track .promo-slide .promo-ic .promo-dots .promo-dot` |
+| Tools rail (home only) | `index.html` markers + **build.py** | `.tools-rail .rail-h .rail-tag .rail-list .ic .tx .rk .cnt .rail-foot .rail-more` |
+| Tools hub cards | **build.py** | `.tools-hub .tgrid .tcard .ttag .tools-foot` |
 | Home: numbers, steps, popular tiles, guide cards, FAQ, support, feedback | `index.html` + **app.js** | `.home .kpis .steps .pop .guides .gcard .faq #support .fb-*` |
 | Tool page panel | **tools.js** | `.tool .t-opts .t-chip .t-stage .t-pages .t-page .t-trim .t-wave .t-meta .t-files .t-sigpad .t-done` |
 | SEO body on landing/tool pages | **build.py** | `.seo .crumbs .lead .howto .faq-list .rel .seo-more` |
@@ -128,7 +130,7 @@ The JavaScript finds elements by id and the build finds blocks by marker.
 
 - **Keep every `id="…"`** in `index.html`. Move them, restyle them, wrap them — but keep them.
 - **Keep the marker comments** exactly: `<!-- site:head -->`, `<!-- page:meta -->`,
-  `<!-- page:body -->`, `<!-- home:only -->`, `<!-- rail:only -->`,
+  `<!-- page:body -->`, `<!-- home:only -->`, `<!-- rail:only -->`, `<!-- promo:only -->`,
   `<!-- popular:tiles -->`, `<!-- home:guides -->`, `<!-- rail:list -->` (each with its closing twin).
 - Keep the hero `<h1>Free Online File Converter</h1>` and the paragraph after it
   as they are — build.py swaps their text per page by matching the exact string.

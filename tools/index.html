@@ -26,7 +26,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=d0b200a3">
+<link rel="stylesheet" href="/css/app.css?v=88c54763">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -88,15 +88,17 @@
   <section class="view" id="view-convert">
     <div class="convert-grid">
     <div class="convert-main">
+    
     <div class="hero">
       <span class="eyebrow"><svg><use href="#i-bolt"/></svg>Convert your files in seconds</span>
-      <h1>Free online tools</h1>
+      <h1>Tools</h1>
       <p>21 tools that work on your device. Pick one below.</p>
 
       <div class="drop" id="drop" hidden tabindex="0" role="button">
         <div class="drop-ic"><svg><use href="#i-upload"/></svg></div>
         <h2>Drop files here</h2>
         <p>or <span class="browse">browse your device</span> &mdash; one file or many; images, documents, spreadsheets, audio, video, archives, 3D models</p>
+        <span class="btn browse-btn" aria-hidden="true">Browse files</span>
       </div>
       <input type="file" id="file" multiple hidden>
 
@@ -152,34 +154,39 @@
     </div>
 
     <!-- page:body -->
-<section class="seo hub">
+<section class="seo hub tools-hub">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <span>Tools</span></nav>
-<p class="lead">Compress, resize and crop pictures, make a passport photo, merge, split, sign and shrink PDFs, read text out of a scan, trim a video, cut a ringtone, remove the hidden data from a photo, make a QR code, open a zip. Every one of them runs inside your browser: nothing is uploaded, nothing is watermarked, nothing costs anything.</p>
-<h2>Image tools</h2>
-<article class="hub-guide"><h3><a href="/compress-image/">Compress image to a size</a></h3><p>Compress a JPG or PNG to 20 KB, 50 KB, 100 KB or any size you need for a form. Free, in your browser, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/passport-photo/">Passport photo maker</a></h3><p>Make a passport size photo online: crop to 35×45 mm, 2×2 inch or any size, under 50 KB if needed, plus a printable 4×6 sheet. Free, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/resize-image/">Resize image</a></h3><p>Resize an image to exact pixels, a percentage, or a preset like Instagram, YouTube thumbnail or passport size. Free, in your browser, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/crop-image/">Crop image</a></h3><p>Crop an image to a square, 16:9, 4:3, 9:16 or any ratio by dragging. Free, in your browser, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/remove-exif/">Remove EXIF / metadata</a></h3><p>See the hidden metadata in a photo — camera, date, GPS location — and remove it without re-encoding. Free, in your browser, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/view-metadata/">View photo metadata</a></h3><p>See the EXIF data in a photo: camera, lens, settings, date and GPS location. In your browser, nothing uploaded.</p></article>
-<h2>PDF tools</h2>
-<article class="hub-guide"><h3><a href="/compress-pdf/">Compress PDF to a size</a></h3><p>Compress a PDF to 100 KB, 200 KB, 500 KB or 1 MB for an upload limit. Free, in your browser, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/merge-pdf/">Merge PDF</a></h3><p>Combine several PDFs into one, in the order you choose. Free, no limits, in your browser — nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/split-pdf/">Split PDF</a></h3><p>Split a PDF into single pages, page ranges or fixed chunks. Free, in your browser, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/rotate-pdf/">Rotate PDF</a></h3><p>Rotate every page of a PDF, or only the pages you choose, by 90 or 180 degrees. Free, in your browser, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/organize-pdf/">Organise PDF pages</a></h3><p>See every page as a thumbnail, then move, rotate or delete pages and save a new PDF. Free, in your browser, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/delete-pdf-pages/">Delete PDF pages</a></h3><p>Remove pages from a PDF by clicking their thumbnails, then save. Free, in your browser, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/images-to-pdf/">Images to one PDF</a></h3><p>Turn several JPG, PNG or HEIC images into a single PDF, one page each, in the order you choose. Free, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/sign-pdf/">Sign PDF</a></h3><p>Draw, type or upload a signature and place it on any page of a PDF. Free, in your browser — the document is never uploaded.</p></article>
-<h2>Audio & video</h2>
-<article class="hub-guide"><h3><a href="/trim-video/">Trim video</a></h3><p>Cut a video to the part you want, with no watermark and no upload. Save as MP4 or WebM, in your browser.</p></article>
-<article class="hub-guide"><h3><a href="/mp3-cutter/">MP3 cutter</a></h3><p>Cut an MP3 or any audio to the part you want, add a fade, save as MP3 or WAV. Free, in your browser, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/ringtone-maker/">Ringtone maker</a></h3><p>Cut any song to a 30-second ringtone, add a fade, save as MP3. Free, in your browser, nothing uploaded.</p></article>
-<h2>Other tools</h2>
-<article class="hub-guide"><h3><a href="/image-to-text/">Image to text (OCR)</a></h3><p>Extract text from a photo, screenshot or scanned PDF in your browser. English, Hindi and 18 more languages. Free, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/pdf-ocr/">PDF OCR</a></h3><p>Read the text in a scanned PDF and copy it, in your browser. English, Hindi and more. Free, nothing uploaded.</p></article>
-<article class="hub-guide"><h3><a href="/qr-code-generator/">QR code generator</a></h3><p>Make a QR code for a link, UPI payment, Wi-Fi network, contact card, email or phone. Download as PNG or SVG. Free, no sign-up, no tracking.</p></article>
-<article class="hub-guide"><h3><a href="/unzip/">Unzip online</a></h3><p>Open a ZIP, TAR or GZ archive in your browser, see what is inside and download the files you want. Free, nothing uploaded.</p></article>
+<p class="lead">All the file tools you need in one place. From compression to conversion, image editing to PDF management — everything runs in your browser, and nothing is uploaded.</p>
+<h2>Image tools</h2><div class="tgrid">
+<a class="tcard" href="/compress-image/"><span class="ic" style="--fam:var(--f-image)"><svg><use href="#t-compress"/></svg></span><h3>Compress image to a size</h3><p>Down to 20–500 KB for any form</p><span class="ttag">Most used</span></a>
+<a class="tcard" href="/passport-photo/"><span class="ic" style="--fam:var(--f-image)"><svg><use href="#t-portrait"/></svg></span><h3>Passport photo maker</h3><p>35×45 mm, print sheet, under 50 KB</p><span class="ttag">Popular</span></a>
+<a class="tcard" href="/resize-image/"><span class="ic" style="--fam:var(--f-image)"><svg><use href="#t-resize"/></svg></span><h3>Resize image</h3><p>Pixels, percent or social presets</p></a>
+<a class="tcard" href="/crop-image/"><span class="ic" style="--fam:var(--f-image)"><svg><use href="#t-crop"/></svg></span><h3>Crop image</h3><p>Square, 16:9, 9:16 or custom</p></a>
+<a class="tcard" href="/remove-exif/"><span class="ic" style="--fam:var(--f-image)"><svg><use href="#t-shield"/></svg></span><h3>Remove EXIF / metadata</h3><p>Strip camera and GPS data</p></a>
+<a class="tcard" href="/view-metadata/"><span class="ic" style="--fam:var(--f-image)"><svg><use href="#t-shield"/></svg></span><h3>View photo metadata</h3><p>See what a photo reveals</p></a>
+</div>
+<h2>PDF tools</h2><div class="tgrid">
+<a class="tcard" href="/compress-pdf/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-pdf"/></svg></span><h3>Compress PDF to a size</h3><p>Under 100 KB to 1 MB limits</p><span class="ttag">Most used</span></a>
+<a class="tcard" href="/merge-pdf/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-merge"/></svg></span><h3>Merge PDF</h3><p>Several PDFs into one</p></a>
+<a class="tcard" href="/split-pdf/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-split"/></svg></span><h3>Split PDF</h3><p>Pages or ranges into files</p></a>
+<a class="tcard" href="/rotate-pdf/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-rotate"/></svg></span><h3>Rotate PDF</h3><p>Fix sideways pages</p></a>
+<a class="tcard" href="/organize-pdf/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-grid"/></svg></span><h3>Organise PDF pages</h3><p>Move, rotate, delete pages</p></a>
+<a class="tcard" href="/delete-pdf-pages/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-grid"/></svg></span><h3>Delete PDF pages</h3><p>Remove pages by thumbnail</p></a>
+<a class="tcard" href="/images-to-pdf/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-stack"/></svg></span><h3>Images to one PDF</h3><p>Photos into one PDF</p></a>
+<a class="tcard" href="/sign-pdf/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-pen"/></svg></span><h3>Sign PDF</h3><p>Draw or type, place, save</p></a>
+</div>
+<h2>Audio & video</h2><div class="tgrid">
+<a class="tcard" href="/trim-video/"><span class="ic" style="--fam:var(--f-video)"><svg><use href="#t-video"/></svg></span><h3>Trim video</h3><p>Cut a clip, no watermark</p></a>
+<a class="tcard" href="/mp3-cutter/"><span class="ic" style="--fam:var(--f-video)"><svg><use href="#t-audio"/></svg></span><h3>MP3 cutter</h3><p>Cut audio, add a fade</p></a>
+<a class="tcard" href="/ringtone-maker/"><span class="ic" style="--fam:var(--f-video)"><svg><use href="#t-audio"/></svg></span><h3>Ringtone maker</h3><p>30-second clip from a song</p></a>
+</div>
+<h2>Other tools</h2><div class="tgrid">
+<a class="tcard" href="/image-to-text/"><span class="ic" style="--fam:var(--f-data)"><svg><use href="#t-scan"/></svg></span><h3>Image to text (OCR)</h3><p>Copy text from a photo</p></a>
+<a class="tcard" href="/pdf-ocr/"><span class="ic" style="--fam:var(--f-data)"><svg><use href="#t-scan"/></svg></span><h3>PDF OCR</h3><p>Text from a scanned PDF</p></a>
+<a class="tcard" href="/qr-code-generator/"><span class="ic" style="--fam:var(--f-data)"><svg><use href="#t-qr"/></svg></span><h3>QR code generator</h3><p>Link, UPI, Wi‑Fi, vCard</p></a>
+<a class="tcard" href="/unzip/"><span class="ic" style="--fam:var(--f-data)"><svg><use href="#t-box"/></svg></span><h3>Unzip online</h3><p>Open ZIP or TAR, pick files</p></a>
+</div>
+<div class="tools-foot"><p>21 tools available &bull; No signup required &bull; No file limits</p><a class="btn primary" href="/">Start converting <span>&rarr;</span></a></div>
 <h2>Fixed sizes</h2><div class="rel"><a href="/compress-image-to-20kb/">Compress image to 20 KB</a><a href="/compress-image-to-50kb/">Compress image to 50 KB</a><a href="/compress-image-to-100kb/">Compress image to 100 KB</a><a href="/compress-image-to-200kb/">Compress image to 200 KB</a><a href="/compress-image-to-500kb/">Compress image to 500 KB</a><a href="/compress-pdf-to-100kb/">Compress PDF to 100 KB</a><a href="/compress-pdf-to-200kb/">Compress PDF to 200 KB</a><a href="/compress-pdf-to-500kb/">Compress PDF to 500 KB</a><a href="/compress-pdf-to-1mb/">Compress PDF to 1 MB</a></div>
 </section>
 <!-- /page:body -->
@@ -263,12 +270,12 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script defer src="/js/formats.js?v=d0b200a3"></script>
-<script defer src="/js/encoders.js?v=d0b200a3"></script>
-<script defer src="/js/docmodel.js?v=d0b200a3"></script>
-<script defer src="/js/convert.js?v=d0b200a3"></script>
-<script defer src="/js/db.js?v=d0b200a3"></script>
-<script defer src="/js/content.js?v=d0b200a3"></script>
-<script defer src="/js/app.js?v=d0b200a3"></script>
+<script defer src="/js/formats.js?v=88c54763"></script>
+<script defer src="/js/encoders.js?v=88c54763"></script>
+<script defer src="/js/docmodel.js?v=88c54763"></script>
+<script defer src="/js/convert.js?v=88c54763"></script>
+<script defer src="/js/db.js?v=88c54763"></script>
+<script defer src="/js/content.js?v=88c54763"></script>
+<script defer src="/js/app.js?v=88c54763"></script>
 </body>
 </html>

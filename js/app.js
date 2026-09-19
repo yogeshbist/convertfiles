@@ -835,7 +835,7 @@
     items.sort(function (a, b) { return (b._n - a._n) || (a._i - b._i); });
     items.forEach(function (li) {
       var c = li.querySelector('.cnt');
-      if (c) { c.hidden = !li._n; c.textContent = li._n ? fmtInt(li._n) : ''; c.title = li._n ? 'used ' + fmtInt(li._n) + ' times' : ''; }
+      if (c) { c.hidden = !li._n; c.textContent = li._n ? ' \u00b7 ' + fmtInt(li._n) + ' uses' : ''; }
       list.appendChild(li);
     });
   }
@@ -864,7 +864,7 @@
     if (more) more.onclick = function () {
       var open = $('#tools-rail').classList.toggle('open');
       more.setAttribute('aria-expanded', String(open));
-      more.textContent = open ? 'Show fewer' : 'Show all ' + $('#tools-rail .rail-list').children.length + ' tools';
+      more.textContent = open ? 'Show fewer' : 'View all ' + $('#tools-rail .rail-list').children.length + ' tools';
     };
   }
   function renderHome() {

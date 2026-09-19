@@ -192,7 +192,7 @@ def strip_home(page):
     """Generated pages keep the converter and their own content, not the home
     page's editorial blocks — 400 copies of the same FAQ helps nobody. The
     tools rail beside the converter is the home page's too."""
-    for start, end in (('<!-- home:only -->', '<!-- /home:only -->'), ('<!-- rail:only -->', '<!-- /rail:only -->')):
+    for start, end in (('<!-- home:only -->', '<!-- /home:only -->'), ('<!-- rail:only -->', '<!-- /rail:only -->'), ('<!-- promo:only -->', '<!-- /promo:only -->')):
         a, b = page.find(start), page.find(end)
         if a >= 0 and b >= 0:
             page = page[:a] + page[b + len(end):]
@@ -238,17 +238,16 @@ for _p in load_json('popular'):
 index = replace_block(index, 'popular:tiles', ''.join(_pop))
 
 # every tool, one per row, most wanted first; app.js reorders by real usage
-_rail = ['<div class="rail-h"><h2>Tools</h2><span class="rail-tag">most used first</span></div><ol class="rail-list">']
+_rail = ['<div class="rail-h"><h2>Tools</h2><span class="rail-tag">Most used</span></div><ol class="rail-list">']
 _by = {x['slug']: x for x in TOOLPAGES.TOOLS}
 for _i, _slug in enumerate(TOOLPAGES.RAIL_ORDER):
     _t = _by[_slug]
     _hint, _icon = TOOLPAGES.RAIL_META[_slug]
-    _rail.append('<li%s><a href="/%s/" data-tool="%s"><span class="rk">%02d</span>'
+    _rail.append('<li%s><a href="/%s/" data-tool="%s">'
                  '<span class="ic" style="--fam:var(--f-%s)"><svg><use href="#t-%s"/></svg></span>'
-                 '<span class="tx"><b>%s</b><small>%s</small></span><b class="cnt" hidden></b></a></li>'
-                 % (' class="more"' if _i >= 11 else '', _slug, _slug, _i + 1, TOOLPAGES.GROUP_FAM[_t['group']], _icon, esc(_t['name']), esc(_hint)))
-_rail.append('</ol><button type="button" class="rail-more" id="rail-more" aria-expanded="false">Show all %d tools</button>'
-             '<a class="rail-all" href="/tools/">Open the tools page <span>&rarr;</span></a>' % len(TOOLPAGES.TOOLS))
+                 '<span class="tx"><b>%s</b><small>%s<i class="cnt" hidden></i></small></span><span class="rk">%02d</span></a></li>'
+                 % (' class="more"' if _i >= 11 else '', _slug, _slug, TOOLPAGES.GROUP_FAM[_t['group']], _icon, esc(_t['name']), esc(_hint), _i + 1))
+_rail.append('</ol><div class="rail-foot"><button type="button" class="rail-more" id="rail-more" aria-expanded="false">View all %d tools</button></div>' % len(TOOLPAGES.TOOLS))
 index = replace_block(index, 'rail:list', ''.join(_rail))
 _gc = []
 for _g in [g for g in CONTENT['GUIDES'] if g.get('lang') != 'hi'][:3]:
@@ -545,26 +544,32 @@ for t in TOOLPAGES.all_pages():
     write(path + 'index.html', strip_home(page))
 
 # ---- /tools/ hub
-th = ['<section class="seo hub">']
+th = ['<section class="seo hub tools-hub">']
 th_crumb, th_crumb_ld = crumbs([('Home', '/'), ('Tools', None)])
 th.append(th_crumb)
-th.append('<p class="lead">Compress, resize and crop pictures, make a passport photo, merge, split, sign and shrink PDFs, read text out of '
-          'a scan, trim a video, cut a ringtone, remove the hidden data from a photo, make a QR code, open a zip. Every one of them runs '
-          'inside your browser: nothing is uploaded, nothing is watermarked, nothing costs anything.</p>')
+th.append('<p class="lead">All the file tools you need in one place. From compression to conversion, image editing to PDF '
+          'management \u2014 everything runs in your browser, and nothing is uploaded.</p>')
+_tags = {TOOLPAGES.RAIL_ORDER[0]: 'Most used', TOOLPAGES.RAIL_ORDER[1]: 'Most used', TOOLPAGES.RAIL_ORDER[2]: 'Popular'}
 for gid, gname in TOOLPAGES.GROUPS:
-    members = [t for t in TOOLPAGES.TOOLS if t['group'] == gid]
-    th.append('<h2>%s</h2>' % gname)
-    for t in members:
-        th.append('<article class="hub-guide"><h3><a href="/%s/">%s</a></h3><p>%s</p></article>' % (t['slug'], esc(t['name']), esc(t['desc'])))
+    members = [x for x in TOOLPAGES.TOOLS if x['group'] == gid]
+    th.append('<h2>%s</h2><div class="tgrid">' % gname)
+    for x in members:
+        _hint, _icon = TOOLPAGES.RAIL_META[x['slug']]
+        th.append('<a class="tcard" href="/%s/"><span class="ic" style="--fam:var(--f-%s)"><svg><use href="#t-%s"/></svg></span>'
+                  '<h3>%s</h3><p>%s</p>%s</a>'
+                  % (x['slug'], TOOLPAGES.GROUP_FAM[gid], _icon, esc(x['name']), esc(_hint),
+                     ('<span class="ttag">%s</span>' % _tags[x['slug']]) if x['slug'] in _tags else ''))
+    th.append('</div>')
+th.append('<div class="tools-foot"><p>%d tools available &bull; No signup required &bull; No file limits</p><a class="btn primary" href="/">Start converting <span>&rarr;</span></a></div>' % len(TOOLPAGES.TOOLS))
 th.append('<h2>Fixed sizes</h2><div class="rel">%s</div>' % ''.join(
     '<a href="/%s/">%s</a>' % (p['slug'], esc(p['h1'])) for p in TOOLPAGES.all_pages() if p.get('parent')))
 th.append('</section>')
 th_page = replace_block(BASE, 'page:meta', page_meta(
-    'Free Online Tools — Compress, PDF, OCR, QR, Nothing Uploaded',
+    'Free Online Tools \u2014 Compress, PDF, OCR, QR, Nothing Uploaded',
     'Free browser tools: compress an image or PDF to a size, passport photo, merge and split PDF, OCR, trim video, cut MP3, QR codes, unzip. Nothing uploaded.',
     'tools/', jsonld=[th_crumb_ld]))
 th_page = replace_block(th_page, 'page:body', '\n'.join(th))
-th_page = th_page.replace('<h1>Free Online File Converter</h1>', '<h1>Free online tools</h1>')
+th_page = th_page.replace('<h1>Free Online File Converter</h1>', '<h1>Tools</h1>')
 th_page = th_page.replace(HERO_P, '<p>%d tools that work on your device. Pick one below.</p>' % len(TOOLPAGES.TOOLS))
 write('tools/index.html', hide_converter(strip_home(th_page)))
 

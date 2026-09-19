@@ -57,7 +57,7 @@ a{color:var(--accent)}
 
 /* ---------- nav ---------- */
 .nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav-in{max-width:1240px;margin-inline:auto;padding:0 32px;height:60px;display:flex;align-items:center;gap:20px}
+.nav-in{max-width:none;margin-inline:auto;padding:0 32px;height:60px;display:flex;align-items:center;gap:20px}
 .brand{display:flex;align-items:center;gap:10px;margin-right:auto;text-decoration:none;color:var(--ink)}
 .mark{width:32px;height:32px;border-radius:8px;background:var(--accent);display:grid;place-items:center;color:#fff;flex:none}
 .mark svg{width:18px;height:18px}
@@ -448,8 +448,9 @@ pre.snippet{background:var(--surface-2);border:1px solid var(--line);border-radi
 
 /* home page: converter on the left, every tool listed on the right */
 .convert-grid{display:grid;grid-template-columns:minmax(0,1fr)}
-.convert-grid.two{grid-template-columns:minmax(0,1fr) 420px;gap:28px;align-items:start}
-main:has(.convert-grid.two){max-width:1240px}
+.convert-grid.two{grid-template-columns:minmax(0,1fr) 420px;gap:48px;align-items:start}
+main:has(.convert-grid.two){max-width:none;padding-left:32px;padding-right:32px}
+@media (min-width:1600px){.convert-grid.two{grid-template-columns:minmax(0,1fr) 480px;gap:64px}}
 .convert-grid.two .hero{text-align:left;padding-top:6px}
 .convert-grid.two .hero h1{max-width:14ch}
 .convert-grid.two .hero p{margin-left:0}

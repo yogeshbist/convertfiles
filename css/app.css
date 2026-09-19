@@ -76,7 +76,7 @@ main{max-width:1040px;margin-inline:auto;padding:0 24px 96px}
   background:radial-gradient(640px 320px at 30% 0%,var(--accent-soft),transparent 70%),radial-gradient(520px 280px at 78% 8%,var(--pop-soft),transparent 70%)}
 .eyebrow{display:inline-flex;align-items:center;gap:7px;background:var(--accent-soft);color:var(--accent);font-weight:700;font-size:13px;letter-spacing:.01em;padding:7px 14px 7px 11px;border-radius:99px;margin-bottom:16px}
 .eyebrow svg{width:15px;height:15px}
-.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(30px,5vw,44px);line-height:1.08;letter-spacing:-.03em;margin:0;text-wrap:balance}
+.hero h1,.hero .lede{font-family:var(--display);font-weight:700;font-size:clamp(30px,5vw,44px);line-height:1.08;letter-spacing:-.03em;margin:0;text-wrap:balance}
 .hero p{margin:12px auto 0;max-width:46ch;color:var(--ink-2);font-size:16px}
 .drop{margin:30px auto 0;max-width:760px;background:var(--surface);border:2px dashed var(--line-2);border-radius:var(--r-lg);padding:46px 28px;text-align:center;cursor:pointer;box-shadow:var(--shadow);transition:border-color .15s,transform .15s,box-shadow .15s}
 .drop:hover,.drop.over{border-color:var(--accent);box-shadow:var(--shadow-lg);transform:translateY(-1px)}
@@ -224,7 +224,7 @@ body:has(.sticky:not([hidden])) main{padding-bottom:150px}
 
 /* ---------- Your files ---------- */
 .page-h{padding:44px 0 20px;display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.page-h h1{font-family:var(--display);font-weight:700;font-size:30px;letter-spacing:-.03em;margin:0}
+.page-h h1,.page-h .view-title{font-family:var(--display);font-weight:700;font-size:30px;letter-spacing:-.03em;margin:0}
 .page-h p{margin:6px 0 0;color:var(--muted);font-size:14px}
 .toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:20px}
 .search{flex:1;min-width:220px;position:relative}
@@ -331,7 +331,7 @@ body:has(.sticky:not([hidden])) main{padding-bottom:150px}
 .article h1{font-family:var(--display);font-weight:700;font-size:32px;letter-spacing:-.03em;line-height:1.15;margin:8px 0 10px;text-wrap:balance}
 .article .meta{font-size:13px;color:var(--muted);margin-bottom:24px}
 .article .body{font-size:16px;line-height:1.7}
-.article .body h3{font-family:var(--display);font-weight:600;font-size:19px;margin:28px 0 8px;letter-spacing:-.01em}
+.article .body h2,.article .body h3{font-family:var(--display);font-weight:600;font-size:19px;margin:28px 0 8px;letter-spacing:-.01em}
 .article .body p{margin:0 0 14px;color:var(--ink-2)}
 .article .body ul{margin:0 0 14px;padding-left:20px;color:var(--ink-2)}
 .article .body li{margin-bottom:5px}
@@ -421,3 +421,4 @@ ol.howto li strong{color:var(--ink)}
 #toast svg{width:16px;height:16px}
 #toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+

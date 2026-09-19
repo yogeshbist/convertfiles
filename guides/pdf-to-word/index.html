@@ -27,7 +27,7 @@
 <meta name="theme-color" content="#0E7C86">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
-<link rel="stylesheet" href="/css/app.css?v=b488e765">
+<link rel="stylesheet" href="/css/app.css?v=7355183b">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -67,7 +67,7 @@
   <section class="view" id="view-convert" role="tabpanel" hidden>
     <div class="hero">
       <span class="eyebrow"><svg><use href="#i-bolt"/></svg>Convert your files in seconds</span>
-      <h1>Convert any file, right here.</h1>
+      <p class="lede">Convert any file, right here.</p>
       <p>Pick a file, choose what it should become, download the result. Everything runs inside your browser &mdash; nothing is uploaded.</p>
 
       <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose a file to convert">
@@ -136,7 +136,7 @@
   <!-- ================================================= YOUR FILES -->
   <section class="view" id="view-files" role="tabpanel" hidden>
     <div class="page-h">
-      <div><h1>Your files</h1><p>Everything you have converted, kept in this browser. Download any of them again, any time.</p></div>
+      <div><h2 class="view-title">Your files</h2><p>Everything you have converted, kept in this browser. Download any of them again, any time.</p></div>
       <button class="btn danger sm" id="files-clear">Clear all</button>
     </div>
     <div class="toolbar">
@@ -155,7 +155,7 @@
   <!-- ================================================= FORMATS -->
   <section class="view" id="view-formats" role="tabpanel" hidden>
     <div class="page-h">
-      <div><h1>Formats</h1><p>Every conversion this browser can do. Pairs that would not genuinely work are simply not offered.</p></div>
+      <div><h2 class="view-title">Formats</h2><p>Every conversion this browser can do. Pairs that would not genuinely work are simply not offered.</p></div>
     </div>
     <div class="stats">
       <div class="stat"><b id="m-pairs">0</b><span>conversion pairs</span></div>
@@ -172,21 +172,34 @@
   <section class="view" id="view-guides" role="tabpanel">
     <div id="guides-list" hidden>
       <div class="page-h">
-        <div><h1>Guides</h1><p>Practical, plain-language answers about file formats and the conversions people ask about most.</p></div>
+        <div><h2 class="view-title">Guides</h2><p>Practical, plain-language answers about file formats and the conversions people ask about most.</p></div>
       </div>
       <div class="guides" id="guides-grid"></div>
     </div>
     <article class="article" id="article"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <a href="/guides/">Guides</a> <span aria-hidden="true">&rsaquo;</span> <span>PDF to Word, honestly: what survives the trip and what does not</span></nav><div class="cat">documents</div>
 <h1>PDF to Word, honestly: what survives the trip and what does not</h1>
-<div class="meta">2 min read · Convert Files guides</div>
+<div class="meta">4 min read · Convert Files guides</div>
 <div class="body"><p>A PDF records where each letter sits on the page. A Word document records paragraphs, headings and lists and lets Word decide where they land. Converting between them means guessing the structure back from the positions, which is why no PDF-to-Word converter is perfect — including this one.</p>
-<h3>What comes across well</h3>
+<h2>What comes across well</h2>
 <p>Running text, paragraph breaks, and page breaks. Convert Files reads the text layer of each page, groups lines into paragraphs by spacing and punctuation, and writes a clean Word file you can edit immediately.</p>
-<h3>What does not</h3>
+<h2>What does not</h2>
 <p>Images, columns, tables and exact fonts. A PDF made from a scan has no text layer at all, so nothing can be extracted; you would need OCR first. Two-column layouts may come out interleaved.</p>
-<h3>The other direction is much better</h3>
+<h2>The other direction is much better</h2>
 <p>Word to PDF keeps everything — headings, bold and italic, lists, quotes, tables and pictures — because it goes from structure to layout, which is the easy way round. If you have the original Word file, always convert from that.</p>
-<p>Tip: if you only need the words, choose <code>.txt</code> or <code>.md</code> as the target. It is faster and there is no layout to get wrong.</p></div>
+<p>Tip: if you only need the words, choose <code>.txt</code> or <code>.md</code> as the target. It is faster and there is no layout to get wrong.</p>
+<h2>Why the layout moves when you convert</h2>
+<p>A Word document says “here is a heading, then a paragraph, then a table” and lets the program decide where the words land. A PDF says “put the glyph A at 72.4 points from the left and 690.1 points from the bottom in 11pt Helvetica” and says it again for every character on the page. There is no paragraph in a PDF, only characters that happen to sit next to each other.</p>
+<p>Converting means reading those positions and inferring the structure back: characters close together are a word, words on a line are a line, lines with matching spacing and indentation are a paragraph, a run of larger bold text is probably a heading. Most of the time this is right. Where it goes wrong is exactly where you would expect &mdash; multi-column layouts, text flowing around an image, tables drawn as lines rather than marked up as tables, and headers and footers that reappear mid-document.</p>
+<h2>If your PDF is a scan, there is nothing to convert</h2>
+<p>This is the single most common disappointment. A PDF produced by a scanner or a phone camera contains a photograph of a page. There is no text in it at all &mdash; not hidden, not compressed, not locked. Converting it gives you a document with a picture in it, because that is genuinely all there was.</p>
+<p>Getting text out of a scan requires OCR, which recognises letter shapes in an image and guesses the words. Convert Files does not do OCR; it converts what is in the file rather than inventing what might have been. A quick way to tell which kind of PDF you have: open it and try to select a sentence with the mouse. If the selection highlights individual words, there is real text. If you get a blue box over the whole page, it is a scan.</p>
+<h2>What survives and what does not</h2>
+<p>Carried across: headings, paragraphs, bold and italic, bulleted and numbered lists, block quotes, hyperlinks, embedded images, and tables where the PDF marked them as tables. Not carried across: exact page geometry, fonts that were not embedded, multi-column flow, footnote positioning, form fields, annotations and comments, and anything drawn as a vector diagram rather than written as text.</p>
+<p>A useful way to think about it: you are getting the content back so you can edit it, not getting a pixel-perfect replica you can print. If you need the replica, keep the PDF.</p>
+<h2>Sometimes a different target is the better answer</h2>
+<p>If all you want is the words &mdash; to paste into an email, search, or feed to something else &mdash; converting to TXT is faster and cannot go wrong in the ways DOCX can. If you want the structure but not Word, Markdown keeps headings, lists and emphasis as plain text that stays readable in any editor for ever. If you want to put it on a website, HTML preserves the most structure of the three.</p>
+<h2>Getting a cleaner result</h2>
+<p>PDFs exported from Word, Google Docs or a web page convert far better than PDFs exported from InDesign, LaTeX or a design tool, because the first group started life with the structure the converter is trying to rebuild. If you have any choice about where the PDF comes from, that is the choice that matters most. Failing that, expect to spend a few minutes fixing headings and table borders &mdash; which is still considerably less time than retyping it.</p></div>
 <div class="try"><span class="t">Try it: convert a .pdf to .docx — free, in your browser.</span><a class="btn primary" href="/pdf-to-docx/">Convert .pdf to .docx</a></div></article>
   </section>
 
@@ -219,12 +232,12 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script src="/js/formats.js?v=b488e765"></script>
-<script src="/js/encoders.js?v=b488e765"></script>
-<script src="/js/docmodel.js?v=b488e765"></script>
-<script src="/js/convert.js?v=b488e765"></script>
-<script src="/js/db.js?v=b488e765"></script>
-<script src="/js/content.js?v=b488e765"></script>
-<script src="/js/app.js?v=b488e765"></script>
+<script src="/js/formats.js?v=7355183b"></script>
+<script src="/js/encoders.js?v=7355183b"></script>
+<script src="/js/docmodel.js?v=7355183b"></script>
+<script src="/js/convert.js?v=7355183b"></script>
+<script src="/js/db.js?v=7355183b"></script>
+<script src="/js/content.js?v=7355183b"></script>
+<script src="/js/app.js?v=7355183b"></script>
 </body>
 </html>

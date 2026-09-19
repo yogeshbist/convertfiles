@@ -27,7 +27,7 @@
 <meta name="theme-color" content="#0E7C86">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
-<link rel="stylesheet" href="/css/app.css?v=b488e765">
+<link rel="stylesheet" href="/css/app.css?v=7355183b">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -67,7 +67,7 @@
   <section class="view" id="view-convert" role="tabpanel" hidden>
     <div class="hero">
       <span class="eyebrow"><svg><use href="#i-bolt"/></svg>Convert your files in seconds</span>
-      <h1>Convert any file, right here.</h1>
+      <p class="lede">Convert any file, right here.</p>
       <p>Pick a file, choose what it should become, download the result. Everything runs inside your browser &mdash; nothing is uploaded.</p>
 
       <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose a file to convert">
@@ -136,7 +136,7 @@
   <!-- ================================================= YOUR FILES -->
   <section class="view" id="view-files" role="tabpanel" hidden>
     <div class="page-h">
-      <div><h1>Your files</h1><p>Everything you have converted, kept in this browser. Download any of them again, any time.</p></div>
+      <div><h2 class="view-title">Your files</h2><p>Everything you have converted, kept in this browser. Download any of them again, any time.</p></div>
       <button class="btn danger sm" id="files-clear">Clear all</button>
     </div>
     <div class="toolbar">
@@ -155,7 +155,7 @@
   <!-- ================================================= FORMATS -->
   <section class="view" id="view-formats" role="tabpanel" hidden>
     <div class="page-h">
-      <div><h1>Formats</h1><p>Every conversion this browser can do. Pairs that would not genuinely work are simply not offered.</p></div>
+      <div><h2 class="view-title">Formats</h2><p>Every conversion this browser can do. Pairs that would not genuinely work are simply not offered.</p></div>
     </div>
     <div class="stats">
       <div class="stat"><b id="m-pairs">0</b><span>conversion pairs</span></div>
@@ -172,22 +172,34 @@
   <section class="view" id="view-guides" role="tabpanel">
     <div id="guides-list" hidden>
       <div class="page-h">
-        <div><h1>Guides</h1><p>Practical, plain-language answers about file formats and the conversions people ask about most.</p></div>
+        <div><h2 class="view-title">Guides</h2><p>Practical, plain-language answers about file formats and the conversions people ask about most.</p></div>
       </div>
       <div class="guides" id="guides-grid"></div>
     </div>
     <article class="article" id="article"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <a href="/guides/">Guides</a> <span aria-hidden="true">&rsaquo;</span> <span>Getting a 3D model into AR: OBJ and STL to GLB</span></nav><div class="cat">3d &amp; ar</div>
 <h1>Getting a 3D model into AR: OBJ and STL to GLB</h1>
-<div class="meta">2 min read · Convert Files guides</div>
+<div class="meta">4 min read · Convert Files guides</div>
 <div class="body"><p>If you have a model from a CAD tool or a 3D printer workflow, it is probably an OBJ or an STL. Augmented-reality viewers — Android’s Scene Viewer, model-viewer on the web, Unity and three.js pipelines — want glTF, and specifically its single-file binary form, GLB.</p>
-<h3>What GLB is</h3>
+<h2>What GLB is</h2>
 <p>glTF is a JSON description of a scene (meshes, materials, nodes) plus a binary buffer of vertex data. GLB packs both into one file so nothing can go missing. It is small, loads fast and is the format the AR ecosystem has standardised on.</p>
-<h3>What converts, and what does not</h3>
+<h2>What converts, and what does not</h2>
 <p>Convert Files carries the geometry: every vertex and triangle, with node transforms applied so the model sits where it should. It does not carry materials, textures or animations — an OBJ’s <code>.mtl</code> file and its texture images are not read. The result is a clean grey mesh, which is exactly what you want as a starting point for assigning your own material in a viewer or engine.</p>
-<h3>Units and scale</h3>
+<h2>Units and scale</h2>
 <p>glTF is in metres. STL files are unitless and often exported in millimetres, so a 20 mm ring becomes a 20 m ring in AR. Check the scale in your viewer; most let you set it in one field. Convert Files does not rescale, because it cannot know which unit the source used.</p>
-<h3>Going the other way</h3>
-<p>GLB to STL is useful for printing a model that only exists as a glTF. Node transforms are baked in, so the printed part comes out at the pose you see in the viewer.</p></div>
+<h2>Going the other way</h2>
+<p>GLB to STL is useful for printing a model that only exists as a glTF. Node transforms are baked in, so the printed part comes out at the pose you see in the viewer.</p>
+<h2>What each format actually carries</h2>
+<p>STL is the simplest: an unordered pile of triangles, with no colour, no texture, no material, no units and no scene structure. It exists because 3D printers need a watertight shape and nothing else. OBJ adds names, groups, texture coordinates and a reference to a separate .mtl file for materials, which in turn references image files &mdash; three files that must travel together and frequently do not. PLY comes out of 3D scanners and photogrammetry and usually carries per-vertex colour, which is a different thing from a texture.</p>
+<p>glTF was designed for the opposite problem: shipping a finished scene to a viewer. It carries meshes, a node hierarchy, physically-based materials, textures, skins and animation, in JSON with binary buffers alongside. GLB is that same scene packed into one binary file, so there is nothing to lose in transit. This is why it has become the format AR asks for.</p>
+<h2>What AR viewers want</h2>
+<p>Android's Scene Viewer takes glTF and GLB. The web, via the model-viewer element and essentially every WebGL engine, takes GLB. Apple's Quick Look on iOS is the exception &mdash; it wants USDZ, a different lineage entirely, so an iOS-native AR experience needs that conversion separately. If you are publishing one file for the widest reach, GLB is the answer, with USDZ added for iOS if you need it.</p>
+<h2>Scale is where models go wrong</h2>
+<p>glTF defines its units as metres, Y-up, right-handed. STL has no unit convention at all, and the 3D printing world has simply agreed to treat the numbers as millimetres. The arithmetic follows: a model authored for printing usually arrives in an AR viewer a thousand times too large, and the first thing you see is the inside of a triangle. If your converted model appears vast, or vanishes entirely, scale is almost always why &mdash; not the conversion.</p>
+<h2>Materials, textures and what gets dropped</h2>
+<p>Converting up the chain adds nothing that was not there. An STL has no colour, so its GLB has no colour; you get clean geometry with a default material, which is the correct result rather than a failure. An OBJ's materials live in a .mtl file that is not read here, so geometry converts and materials do not. A PLY's per-vertex colours are kept where the target supports them.</p>
+<p>Going the other way &mdash; GLB or glTF down to STL &mdash; deliberately throws away everything except the shape, which is exactly what a slicer wants.</p>
+<h2>Before you send it to a printer</h2>
+<p>Geometry that looks right in a viewer is not automatically printable. Slicers want a closed, manifold surface: no holes, no faces pointing the wrong way, no edges shared by three triangles. A model built for display often fails all three, because none of it matters when you are only ever looking at the outside. Convert first, then check in the slicer, and repair there rather than blaming the conversion.</p></div>
 <div class="try"><span class="t">Try it: convert a .obj to .glb — free, in your browser.</span><a class="btn primary" href="/obj-to-glb/">Convert .obj to .glb</a></div></article>
   </section>
 
@@ -220,12 +232,12 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script src="/js/formats.js?v=b488e765"></script>
-<script src="/js/encoders.js?v=b488e765"></script>
-<script src="/js/docmodel.js?v=b488e765"></script>
-<script src="/js/convert.js?v=b488e765"></script>
-<script src="/js/db.js?v=b488e765"></script>
-<script src="/js/content.js?v=b488e765"></script>
-<script src="/js/app.js?v=b488e765"></script>
+<script src="/js/formats.js?v=7355183b"></script>
+<script src="/js/encoders.js?v=7355183b"></script>
+<script src="/js/docmodel.js?v=7355183b"></script>
+<script src="/js/convert.js?v=7355183b"></script>
+<script src="/js/db.js?v=7355183b"></script>
+<script src="/js/content.js?v=7355183b"></script>
+<script src="/js/app.js?v=7355183b"></script>
 </body>
 </html>

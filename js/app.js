@@ -224,6 +224,7 @@
   function choose(ext) {
     var which = picker.open;
     closePicker();
+    state.preset = null;
     if (which === 'from') {
       state.from = ext;
       state.to = C.defaultTarget(ext);
@@ -329,7 +330,13 @@
       state.files.push(f);
     });
     if (state.files.length > 200) { state.files = state.files.slice(0, 200); toast('Up to 200 files at a time'); }
-    if (state.files.length === 1) { state.from = fileExt(state.files[0]); state.to = C.defaultTarget(state.from); }
+    if (state.files.length === 1) {
+      state.from = fileExt(state.files[0]);
+      // On a /x-to-y/ page, picking an .x file should keep .y as the target
+      // rather than snapping back to that format's usual default.
+      var pre = state.preset;
+      state.to = (pre && pre.from === state.from && C.rule(state.from, pre.to)) ? pre.to : C.defaultTarget(state.from);
+    }
     else if (state.files.length > 1 && !state.to) state.to = C.defaultTarget(sourceExts()[0]);
     refreshTargets();
     paintPicked();
@@ -814,8 +821,11 @@
       .catch(function () {});
   }
   function renderHome() {
-    // live numbers
-    var kp = $('#kpis'); kp.innerHTML = '';
+    // Generated landing and guide pages carry the converter but not the home
+    // page's editorial blocks, so there is nothing here to paint.
+    var kp = $('#kpis');
+    if (!kp) return;
+    kp.innerHTML = '';
     var here = parseInt(lsGet('cf.converted'), 10) || 0, since = parseInt(lsGet('cf.since'), 10);
     var sources = C.sourcesList(), targets = {};
     sources.forEach(function (f) { C.targetsFor(f).forEach(function (t) { if (t !== '*') targets[t] = 1; }); });
@@ -915,9 +925,11 @@
     }
   }
   function goSupport() {
+    var t = $('#support');
+    if (!t) { location.href = '/#support'; return; }
     show('convert', true);
     closeGuide();
-    $('#support').scrollIntoView({ block: 'start', behavior: 'smooth' });
+    t.scrollIntoView({ block: 'start', behavior: 'smooth' });
   }
 
   /* ------------------------------------------------------------- guides */
@@ -941,7 +953,7 @@
     var body = el('div', 'body');
     gd.body.forEach(function (line) {
       var kind = line.slice(0, 1), text = line.slice(2);
-      if (kind === 'h') body.appendChild(el('h3', null, text));
+      if (kind === 'h') body.appendChild(el('h2', null, text));
       else if (kind === 'ul') { var ul = el('ul'); text.split('|').forEach(function (t) { var li = el('li'); li.innerHTML = t; ul.appendChild(li); }); body.appendChild(ul); }
       else { var pp = el('p'); pp.innerHTML = text; body.appendChild(pp); }
     });
@@ -1003,7 +1015,7 @@
     var m = document.querySelector('meta[name="cf-preset"]');
     if (m && /^[a-z0-9]+>[a-z0-9]+$/.test(m.content)) {
       var pr = m.content.split('>');
-      if (C.rule(pr[0], pr[1])) { state.from = pr[0]; state.to = pr[1]; refreshTargets(); }
+      if (C.rule(pr[0], pr[1])) { state.preset = { from: pr[0], to: pr[1] }; state.from = pr[0]; state.to = pr[1]; refreshTargets(); }
     }
     var g = document.querySelector('meta[name="cf-guide"]');
     if (g && g.content) openGuide(g.content);
@@ -1066,7 +1078,11 @@
     $('#nav-convert').onclick = function () { show('convert'); };
     $('#nav-files').onclick = function () { show('files'); };
     $('#brand').onclick = function (e) { if (location.pathname === '/' || /index\.html$/.test(location.pathname)) { e.preventDefault(); show('convert'); } };
-    $('#f-about').onclick = function (e) { e.preventDefault(); show('convert', true); $('#about').scrollIntoView({ block: 'start' }); };
+    $('#f-about').onclick = function (e) {
+      var t = $('#about');
+      if (!t) return;            // not the home page: follow the href to /#about
+      e.preventDefault(); show('convert', true); t.scrollIntoView({ block: 'start' });
+    };
     $('#f-support').onclick = function (e) { e.preventDefault(); goSupport(); };
     window.addEventListener('hashchange', route);
     // seed the on-device counter for people who converted before it existed

@@ -346,7 +346,7 @@ def render_body(lines):
         if line.startswith('ul:'):
             out.append('<ul>' + ''.join('<li>%s</li>' % t for t in line[3:].split('|')) + '</ul>')
         elif kind == 'h':
-            out.append('<h3>%s</h3>' % text)
+            out.append('<h2>%s</h2>' % text)
         else:
             out.append('<p>%s</p>' % text)
     return '\n'.join(out)
@@ -367,6 +367,8 @@ for gd in CONTENT['GUIDES']:
               'mainEntityOfPage': DOMAIN + '/' + path, 'image': DOMAIN + '/assets/og.png'}]
     page = replace_block(BASE, 'page:meta', page_meta(gd.get('seo_title', gd['title']) + ' \u00b7 Convert Files', gd['teaser'], path, kind='article',
                                                        extra_meta='<meta name="cf-guide" content="%s">' % gd['slug'], jsonld=jsonld))
+    page = page.replace('<h1>Convert any file, right here.</h1>',
+                        '<p class="lede">Convert any file, right here.</p>')
     page = replace_block(page, 'page:body', '')
     # pre-render the article for crawlers; the app takes over on load
     page = page.replace('<section class="view" id="view-convert" role="tabpanel">', '<section class="view" id="view-convert" role="tabpanel" hidden>')

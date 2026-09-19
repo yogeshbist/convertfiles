@@ -27,7 +27,7 @@
 <meta name="theme-color" content="#0E7C86">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
-<link rel="stylesheet" href="/css/app.css?v=b488e765">
+<link rel="stylesheet" href="/css/app.css?v=7355183b">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -67,7 +67,7 @@
   <section class="view" id="view-convert" role="tabpanel" hidden>
     <div class="hero">
       <span class="eyebrow"><svg><use href="#i-bolt"/></svg>Convert your files in seconds</span>
-      <h1>Convert any file, right here.</h1>
+      <p class="lede">Convert any file, right here.</p>
       <p>Pick a file, choose what it should become, download the result. Everything runs inside your browser &mdash; nothing is uploaded.</p>
 
       <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose a file to convert">
@@ -136,7 +136,7 @@
   <!-- ================================================= YOUR FILES -->
   <section class="view" id="view-files" role="tabpanel" hidden>
     <div class="page-h">
-      <div><h1>Your files</h1><p>Everything you have converted, kept in this browser. Download any of them again, any time.</p></div>
+      <div><h2 class="view-title">Your files</h2><p>Everything you have converted, kept in this browser. Download any of them again, any time.</p></div>
       <button class="btn danger sm" id="files-clear">Clear all</button>
     </div>
     <div class="toolbar">
@@ -155,7 +155,7 @@
   <!-- ================================================= FORMATS -->
   <section class="view" id="view-formats" role="tabpanel" hidden>
     <div class="page-h">
-      <div><h1>Formats</h1><p>Every conversion this browser can do. Pairs that would not genuinely work are simply not offered.</p></div>
+      <div><h2 class="view-title">Formats</h2><p>Every conversion this browser can do. Pairs that would not genuinely work are simply not offered.</p></div>
     </div>
     <div class="stats">
       <div class="stat"><b id="m-pairs">0</b><span>conversion pairs</span></div>
@@ -172,22 +172,36 @@
   <section class="view" id="view-guides" role="tabpanel">
     <div id="guides-list" hidden>
       <div class="page-h">
-        <div><h1>Guides</h1><p>Practical, plain-language answers about file formats and the conversions people ask about most.</p></div>
+        <div><h2 class="view-title">Guides</h2><p>Practical, plain-language answers about file formats and the conversions people ask about most.</p></div>
       </div>
       <div class="guides" id="guides-grid"></div>
     </div>
     <article class="article" id="article"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <a href="/guides/">Guides</a> <span aria-hidden="true">&rsaquo;</span> <span>CSV vs Excel: when to convert, and the three things that go wrong</span></nav><div class="cat">spreadsheets</div>
 <h1>CSV vs Excel: when to convert, and the three things that go wrong</h1>
-<div class="meta">2 min read · Convert Files guides</div>
+<div class="meta">4 min read · Convert Files guides</div>
 <div class="body"><p>CSV is just text: one row per line, cells separated by commas. Every system exports it and every system imports it. XLSX is Microsoft’s format: multiple sheets, formatting, formulas, dates that know they are dates. Converting between them is a daily task, and three things regularly go wrong.</p>
-<h3>1. Leading zeros disappear</h3>
+<h2>1. Leading zeros disappear</h2>
 <p>A postcode like 02139 or a product code like 000451 becomes 2139 and 451 when Excel decides the column is numeric. If the codes matter, keep them as text before converting, or fix the column type after.</p>
-<h3>2. Dates change shape</h3>
+<h2>2. Dates change shape</h2>
 <p>CSV has no idea what a date is; it is just characters. 03/04/2026 is 3 April in most of the world and 4 March in the US. Convert Files keeps the text exactly as it was, so what you see is what was written — but check the convention before you trust a column.</p>
-<h3>3. Only the first sheet is exported</h3>
+<h2>3. Only the first sheet is exported</h2>
 <p>CSV can hold one table. Converting a workbook with five sheets to CSV gives you the first one. If you need all of them, convert to <code>.pdf</code> or <code>.docx</code> instead, which puts every sheet in as its own table.</p>
-<h3>Beyond Excel</h3>
-<p>The same data also converts to JSON for developers, to SQL insert statements for a database, to Markdown for documentation, and to ODS for LibreOffice.</p></div>
+<h2>Beyond Excel</h2>
+<p>The same data also converts to JSON for developers, to SQL insert statements for a database, to Markdown for documentation, and to ODS for LibreOffice.</p>
+<h2>The leading zero problem</h2>
+<p>Open a CSV of postcodes, product codes, or phone numbers in Excel and watch the zeros disappear. 01234 becomes 1234, because the column looked numeric and Excel helpfully made it a number. The data in the file was never wrong; the interpretation on opening was. And if you then save, the corrected version is written back over the original.</p>
+<p>The fix is to import rather than open &mdash; Data &rsaquo; From Text/CSV &mdash; and set the column type to Text before the data lands. Converting the CSV to XLSX first has the same effect, because the cell types are then recorded in the file instead of guessed at open time.</p>
+<h2>The date problem, which is worse</h2>
+<p>Excel converts anything date-shaped into a date. A part number like 3-10 becomes 3 October. A ratio written 1/2 becomes a date in January. The famous case is genetics: gene names such as SEPT2 and MARCH1 were being silently turned into dates so persistently that in 2020 the naming committee renamed the genes rather than keep fighting the spreadsheet.</p>
+<p>This one is genuinely destructive, because the original text is gone once it has become a date serial number. There is no undo after saving. Import as Text, every time, for any column that is an identifier rather than a quantity.</p>
+<h2>The encoding problem</h2>
+<p>A CSV is text, and text needs an encoding. Write one in UTF-8 &mdash; which anything modern does &mdash; and open it in Excel without a byte order mark, and accented characters, currency symbols and anything non-English arrive as mojibake: é as Ã©, and so on. The file is correct. Excel simply guessed the wrong encoding. Either save with a BOM or use the import dialogue and choose UTF-8 explicitly.</p>
+<h2>Delimiters are not always commas</h2>
+<p>In locales where the comma is the decimal separator &mdash; most of Europe &mdash; Excel writes and expects semicolons in its CSVs. A file exported in Germany and opened in the United States lands entirely in column A, and vice versa. It is not corrupt, it is punctuated for a different audience. This is also the strongest argument for TSV: a tab almost never appears inside a real value, so nothing has to be quoted or escaped and the ambiguity disappears.</p>
+<h2>What a CSV cannot hold at all</h2>
+<p>Formulas, formatting, colours, column widths, charts, pivot tables, comments, frozen panes, more than one sheet, and cell types. Converting XLSX to CSV keeps the values you can see and drops every one of those, permanently. That is not a flaw &mdash; it is the entire point of the format &mdash; but it is worth knowing before it is your only copy.</p>
+<h2>So when do you use which?</h2>
+<p>Use CSV to move data between systems: imports, exports, databases, scripts, anything where another program is the reader. Use XLSX when a person is the reader, or when formulas, multiple sheets or formatting carry meaning. Use TSV when the data itself is full of commas and quoting keeps going wrong. And keep the spreadsheet as the master copy, exporting CSV when something needs it, rather than the other way round.</p></div>
 <div class="try"><span class="t">Try it: convert a .csv to .xlsx — free, in your browser.</span><a class="btn primary" href="/csv-to-xlsx/">Convert .csv to .xlsx</a></div></article>
   </section>
 
@@ -220,12 +234,12 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script src="/js/formats.js?v=b488e765"></script>
-<script src="/js/encoders.js?v=b488e765"></script>
-<script src="/js/docmodel.js?v=b488e765"></script>
-<script src="/js/convert.js?v=b488e765"></script>
-<script src="/js/db.js?v=b488e765"></script>
-<script src="/js/content.js?v=b488e765"></script>
-<script src="/js/app.js?v=b488e765"></script>
+<script src="/js/formats.js?v=7355183b"></script>
+<script src="/js/encoders.js?v=7355183b"></script>
+<script src="/js/docmodel.js?v=7355183b"></script>
+<script src="/js/convert.js?v=7355183b"></script>
+<script src="/js/db.js?v=7355183b"></script>
+<script src="/js/content.js?v=7355183b"></script>
+<script src="/js/app.js?v=7355183b"></script>
 </body>
 </html>

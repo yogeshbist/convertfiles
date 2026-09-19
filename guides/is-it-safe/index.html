@@ -27,7 +27,7 @@
 <meta name="theme-color" content="#0E7C86">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
-<link rel="stylesheet" href="/css/app.css?v=b488e765">
+<link rel="stylesheet" href="/css/app.css?v=7355183b">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -67,7 +67,7 @@
   <section class="view" id="view-convert" role="tabpanel" hidden>
     <div class="hero">
       <span class="eyebrow"><svg><use href="#i-bolt"/></svg>Convert your files in seconds</span>
-      <h1>Convert any file, right here.</h1>
+      <p class="lede">Convert any file, right here.</p>
       <p>Pick a file, choose what it should become, download the result. Everything runs inside your browser &mdash; nothing is uploaded.</p>
 
       <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose a file to convert">
@@ -136,7 +136,7 @@
   <!-- ================================================= YOUR FILES -->
   <section class="view" id="view-files" role="tabpanel" hidden>
     <div class="page-h">
-      <div><h1>Your files</h1><p>Everything you have converted, kept in this browser. Download any of them again, any time.</p></div>
+      <div><h2 class="view-title">Your files</h2><p>Everything you have converted, kept in this browser. Download any of them again, any time.</p></div>
       <button class="btn danger sm" id="files-clear">Clear all</button>
     </div>
     <div class="toolbar">
@@ -155,7 +155,7 @@
   <!-- ================================================= FORMATS -->
   <section class="view" id="view-formats" role="tabpanel" hidden>
     <div class="page-h">
-      <div><h1>Formats</h1><p>Every conversion this browser can do. Pairs that would not genuinely work are simply not offered.</p></div>
+      <div><h2 class="view-title">Formats</h2><p>Every conversion this browser can do. Pairs that would not genuinely work are simply not offered.</p></div>
     </div>
     <div class="stats">
       <div class="stat"><b id="m-pairs">0</b><span>conversion pairs</span></div>
@@ -172,20 +172,33 @@
   <section class="view" id="view-guides" role="tabpanel">
     <div id="guides-list" hidden>
       <div class="page-h">
-        <div><h1>Guides</h1><p>Practical, plain-language answers about file formats and the conversions people ask about most.</p></div>
+        <div><h2 class="view-title">Guides</h2><p>Practical, plain-language answers about file formats and the conversions people ask about most.</p></div>
       </div>
       <div class="guides" id="guides-grid"></div>
     </div>
     <article class="article" id="article"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <a href="/guides/">Guides</a> <span aria-hidden="true">&rsaquo;</span> <span>Is it safe to convert files online? What “nothing is uploaded” means here</span></nav><div class="cat">privacy</div>
 <h1>Is it safe to convert files online? What “nothing is uploaded” means here</h1>
-<div class="meta">2 min read · Convert Files guides</div>
+<div class="meta">4 min read · Convert Files guides</div>
 <div class="body"><p>When you use a typical online converter, your file travels to a server, sits there while it is converted, and often stays for hours or days afterwards. For a holiday photo that is a minor annoyance. For a contract, a medical record or a client’s design it is a real problem.</p>
-<h3>How Convert Files is different</h3>
+<h2>How Convert Files is different</h2>
 <p>There is no server-side conversion at all. The page downloads a converter into your browser — a PDF renderer, an image encoder, an audio codec — and runs it on your computer. The file is read from your disk into the browser’s memory and the result is written back to your disk. That is the entire path.</p>
-<h3>How to verify it</h3>
+<h2>How to verify it</h2>
 <p>Open your browser’s developer tools (F12), go to the Network tab, and convert something. You will see the converter libraries being fetched the first time, and nothing else: no upload, no request carrying your file. Or go further and disconnect from the internet after the first conversion of each type; it keeps working.</p>
-<h3>What is stored</h3>
-<p>Only what you can see in the Your files tab, which lives in your own browser’s storage on your own device. Clear all removes it. Nothing about you or your files is sent to us, because there is no “us” receiving anything.</p></div>
+<h2>What is stored</h2>
+<p>Only what you can see in the Your files tab, which lives in your own browser’s storage on your own device. Clear all removes it. Nothing about you or your files is sent to us, because there is no “us” receiving anything.</p>
+<h2>How to check for yourself, in about thirty seconds</h2>
+<p>Do not take anyone's word for this, including ours. Open your browser's developer tools before you convert &mdash; F12 on Windows, or Cmd&#8209;Option&#8209;I on a Mac &mdash; and select the Network tab. Then convert a file and watch. You will see the page's own scripts load, and you will see nothing carrying your file out. No upload request, no POST with a body the size of your document, nothing. The conversion happens between the file picker and the download, and never crosses the network.</p>
+<p>There is a second test. Load the page, then switch off your wi-fi, then convert an image. It still works, because everything needed is already in the browser. This holds for conversions the page can do on its own; a few formats fetch a decoder library the first time you use them, and those need the network for that one download rather than for your file.</p>
+<h2>What “in the browser” actually means</h2>
+<p>Modern browsers can do genuinely serious work. Canvas decodes and re-encodes images. WebCodecs gives access to the same video and audio encoders the browser uses for video calls. WebAssembly runs compiled C libraries at close to native speed. CompressionStream does gzip. None of this needs a server &mdash; servers were doing it only because browsers could not, and that stopped being true some years ago.</p>
+<p>The practical consequence is that your file is read from disk into memory, transformed in memory, and written back to disk. The page has no way to send it anywhere without making a network request, and you can watch for that request yourself.</p>
+<h2>What is collected, precisely</h2>
+<p>Two things, both counts. That a page was viewed, and that a conversion from one format to another finished or failed. No file names, no file contents, no file sizes, no identifiers that follow you between visits. The numbers on the home page are the total of those counts. If your browser sends Do Not Track or Global Privacy Control, even the counts are skipped.</p>
+<h2>What to look for on other converters</h2>
+<p>Most online converters do upload. That is not automatically sinister &mdash; it is how the technology worked for twenty years &mdash; but it changes the question from “do I trust this page” to “do I trust this company, its hosting, its staff, its retention policy and whoever eventually buys it”. Read the privacy policy for a retention period. Look for a stated deletion window. Be more careful the more the document matters: a holiday photo and a signed contract deserve different levels of suspicion.</p>
+<p>The Network tab test works on any site, not just this one. If you are curious whether a converter uploads, spend the thirty seconds.</p>
+<h2>Where a server genuinely is required</h2>
+<p>Honesty demands the limits. Some conversions are impractical in a browser today: very large video files that exceed available memory, formats whose only implementation is a large native application, and anything needing OCR or a licensed codec. Where that is the case here, the conversion is simply not offered, rather than quietly shipped somewhere else. A pair that is missing is a pair that does not work &mdash; not a pair that works differently.</p></div>
 <div class="try"><span class="t">Try it: convert a .pdf to .png — free, in your browser.</span><a class="btn primary" href="/pdf-to-png/">Convert .pdf to .png</a></div></article>
   </section>
 
@@ -218,12 +231,12 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script src="/js/formats.js?v=b488e765"></script>
-<script src="/js/encoders.js?v=b488e765"></script>
-<script src="/js/docmodel.js?v=b488e765"></script>
-<script src="/js/convert.js?v=b488e765"></script>
-<script src="/js/db.js?v=b488e765"></script>
-<script src="/js/content.js?v=b488e765"></script>
-<script src="/js/app.js?v=b488e765"></script>
+<script src="/js/formats.js?v=7355183b"></script>
+<script src="/js/encoders.js?v=7355183b"></script>
+<script src="/js/docmodel.js?v=7355183b"></script>
+<script src="/js/convert.js?v=7355183b"></script>
+<script src="/js/db.js?v=7355183b"></script>
+<script src="/js/content.js?v=7355183b"></script>
+<script src="/js/app.js?v=7355183b"></script>
 </body>
 </html>

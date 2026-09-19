@@ -1279,6 +1279,7 @@
     foot.appendChild(again);
     foot.appendChild(el('span', 'meta', 'Also kept in My files so you can download it again later.'));
     done.appendChild(foot);
+    if (U.feedbackDue && U.feedbackDue()) done.appendChild(U.feedbackForm({ compact: true, page: location.pathname }));
     done.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   }
 })(window);

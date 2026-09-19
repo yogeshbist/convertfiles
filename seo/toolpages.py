@@ -272,6 +272,30 @@ RAIL_ORDER = ['compress-image', 'compress-pdf', 'passport-photo', 'merge-pdf', '
               'images-to-pdf', 'split-pdf', 'sign-pdf', 'crop-image', 'qr-code-generator', 'remove-exif', 'trim-video',
               'mp3-cutter', 'pdf-ocr', 'organize-pdf', 'delete-pdf-pages', 'rotate-pdf', 'unzip', 'ringtone-maker', 'view-metadata']
 GROUP_FAM = {'image': 'image', 'pdf': 'doc', 'media': 'video', 'other': 'data'}
+# one line under the name in the rail, and the glyph beside it (sprite ids in index.html)
+RAIL_META = {
+    'compress-image':    ('Down to 20\u2013500 KB for any form', 'compress'),
+    'compress-pdf':      ('Under 100 KB to 1 MB limits', 'pdf'),
+    'passport-photo':    ('35\u00d745 mm, print sheet, under 50 KB', 'portrait'),
+    'resize-image':      ('Pixels, percent or social presets', 'resize'),
+    'crop-image':        ('Square, 16:9, 9:16 or custom', 'crop'),
+    'merge-pdf':         ('Several PDFs into one', 'merge'),
+    'split-pdf':         ('Pages or ranges into files', 'split'),
+    'rotate-pdf':        ('Fix sideways pages', 'rotate'),
+    'organize-pdf':      ('Move, rotate, delete pages', 'grid'),
+    'delete-pdf-pages':  ('Remove pages by thumbnail', 'grid'),
+    'images-to-pdf':     ('Photos into one PDF', 'stack'),
+    'image-to-text':     ('Copy text from a photo', 'scan'),
+    'pdf-ocr':           ('Text from a scanned PDF', 'scan'),
+    'trim-video':        ('Cut a clip, no watermark', 'video'),
+    'mp3-cutter':        ('Cut audio, add a fade', 'audio'),
+    'ringtone-maker':    ('30-second clip from a song', 'audio'),
+    'remove-exif':       ('Strip camera and GPS data', 'shield'),
+    'view-metadata':     ('See what a photo reveals', 'shield'),
+    'qr-code-generator': ('Link, UPI, Wi\u2011Fi, vCard', 'qr'),
+    'unzip':             ('Open ZIP or TAR, pick files', 'box'),
+    'sign-pdf':          ('Draw or type, place, save', 'pen'),
+}
 
 # /compress-image-to-50kb/ and friends: the same tool, preset, with its own copy
 KB_PAGES = {

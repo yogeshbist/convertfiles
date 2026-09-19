@@ -1,5 +1,10 @@
 /* Convert Files analytics + admin API (Cloudflare Worker, D1).
-   Public:   POST /event            anonymous counters (view / convert / fail)
+   Public:   POST /event            anonymous counters (view / convert / fail / tool)
+             GET  /public           site totals and per-tool usage
+             GET  /feedback         ratings summary + recent comments
+             POST /feedback         {stars, text?, name?, page?} leave a rating (3 per visitor per day)
+   Admin:    GET  /feedback/all     every rating, hidden ones included
+             POST /feedback/hide    {id, hidden}
    Admin:    POST /login            {password} -> {token}
              GET  /stats?days=30    totals, daily series, top lists
              GET  /content/:name    read a content JSON file from the GitHub repo
@@ -22,6 +27,10 @@ export default {
       if (url.pathname === '/health') res = json({ ok: true, time: new Date().toISOString() });
       else if (url.pathname === '/event' && request.method === 'POST') res = await event(request, env);
       else if (url.pathname === '/public' && request.method === 'GET') res = await publicTotals(env);
+      else if (url.pathname === '/feedback' && request.method === 'GET') res = await feedbackPublic(env);
+      else if (url.pathname === '/feedback' && request.method === 'POST') res = await feedbackPost(request, env);
+      else if (url.pathname === '/feedback/all' && request.method === 'GET') res = await guard(request, env, () => feedbackAll(url, env));
+      else if (url.pathname === '/feedback/hide' && request.method === 'POST') res = await guard(request, env, () => feedbackHide(request, env));
       else if (url.pathname === '/login' && request.method === 'POST') res = await login(request, env);
       else if (url.pathname === '/stats' && request.method === 'GET') res = await guard(request, env, () => stats(url, env));
       else if (url.pathname.startsWith('/content/')) res = await guard(request, env, () => content(request, url, env));
@@ -121,6 +130,56 @@ async function publicTotals(env) {
   const res = json({ conv: t.conv || 0, views: t.views || 0, since: (first && first.d) || null, tools });
   res.headers.set('cache-control', 'public, max-age=60');
   return res;
+}
+
+/* ---------------------------------------------------------- feedback */
+// Text keeps letters in any script (Hindi included) and drops control characters.
+function cleanText(s, max) { return String(s || '').replace(/[\u0000-\u0008\u000b-\u001f\u007f]/g, '').replace(/\s+/g, ' ').trim().slice(0, max); }
+async function sha256hex(s) {
+  const d = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(s));
+  return [...new Uint8Array(d)].map(b => b.toString(16).padStart(2, '0')).join('');
+}
+async function feedbackPost(request, env) {
+  let body;
+  try { body = await request.json(); } catch (e) { return json({ error: 'bad json' }, 400); }
+  if (body.website) return new Response(null, { status: 204 });          // honeypot: bots fill every field
+  const stars = parseInt(body.stars, 10);
+  if (!(stars >= 1 && stars <= 5)) return json({ error: 'stars must be 1 to 5' }, 400);
+  const text = cleanText(body.text, 300), name = cleanText(body.name, 40);
+  let page = clean(body.page, 80); if (!page.startsWith('/')) page = '/';
+  const ip = request.headers.get('CF-Connecting-IP') || '';
+  const day = new Date().toISOString().slice(0, 10);
+  const iph = (await sha256hex(ip + ':' + day + ':' + (env.TOKEN_SECRET || 'salt'))).slice(0, 24);
+  const today = await env.DB.prepare('SELECT COUNT(*) AS n FROM feedback WHERE iph = ?1 AND ts > ?2').bind(iph, Date.now() - 86400000).first();
+  if (today && today.n >= 3) return json({ error: 'that is enough for one day — thank you' }, 429);
+  // links in a comment are almost always spam; they go in hidden and the admin can unhide
+  const hidden = /https?:\/\/|www\.|\.(com|in|net|org|io)\b/i.test(text) ? 1 : 0;
+  await env.DB.prepare('INSERT INTO feedback (ts, stars, text, name, page, hidden, iph) VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)')
+    .bind(Date.now(), stars, text, name, page, hidden, iph).run();
+  return json({ ok: true, hidden: !!hidden });
+}
+async function feedbackPublic(env) {
+  const agg = await env.DB.prepare('SELECT stars, COUNT(*) AS n FROM feedback WHERE hidden = 0 GROUP BY stars').all();
+  const dist = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+  let count = 0, sum = 0;
+  for (const r of agg.results) { dist[r.stars] = r.n; count += r.n; sum += r.stars * r.n; }
+  const recent = await env.DB.prepare("SELECT id, ts, stars, text, name, page FROM feedback WHERE hidden = 0 AND text != '' ORDER BY ts DESC LIMIT 12").all();
+  const res = json({ count, avg: count ? Math.round(sum / count * 10) / 10 : 0, dist, recent: recent.results });
+  res.headers.set('cache-control', 'public, max-age=60');
+  return res;
+}
+async function feedbackAll(url, env) {
+  const limit = Math.max(1, Math.min(500, parseInt(url.searchParams.get('limit') || '200', 10)));
+  const r = await env.DB.prepare('SELECT id, ts, stars, text, name, page, hidden FROM feedback ORDER BY ts DESC LIMIT ?1').bind(limit).all();
+  return json({ rows: r.results });
+}
+async function feedbackHide(request, env) {
+  let body;
+  try { body = await request.json(); } catch (e) { return json({ error: 'bad json' }, 400); }
+  const id = parseInt(body.id, 10);
+  if (!(id > 0)) return json({ error: 'bad id' }, 400);
+  await env.DB.prepare('UPDATE feedback SET hidden = ?1 WHERE id = ?2').bind(body.hidden ? 1 : 0, id).run();
+  return json({ ok: true });
 }
 
 /* -------------------------------------------------------------- auth */

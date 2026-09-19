@@ -509,6 +509,7 @@
     var tip = el('a', 'tip-link'); tip.href = '#support'; tip.appendChild(icon('heart')); tip.appendChild(el('span', null, 'Found it useful? Leave a tip'));
     tip.onclick = function (e) { e.preventDefault(); goSupport(); }; saved.appendChild(tip);
     body.appendChild(saved);
+    if (feedbackDue()) body.appendChild(feedbackForm({ compact: true, page: location.pathname }));
     box.appendChild(body);
     box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
@@ -552,6 +553,7 @@
       saved.textContent = 'Download it now — this browser could not keep a copy.';
     }
     body.appendChild(saved);
+    if (feedbackDue()) body.appendChild(feedbackForm({ compact: true, page: location.pathname }));
     box.appendChild(body);
     box.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
@@ -1011,6 +1013,7 @@
     else if (h === '#files') show('files');
     else if (h === '#about') { show('convert', true); var t = $('#about'); if (t) t.scrollIntoView({ block: 'start' }); }
     else if (h === '#support') goSupport();
+    else if (h === '#feedback') { show('convert', true); var fbt = $('#feedback'); if (fbt) fbt.scrollIntoView({ block: 'start' }); }
   }
 
   /* ------------------------------------------------ ads (site.json) */
@@ -1093,6 +1096,109 @@
   }
 
   /* ---------------------------------------------------------------- wire */
+  /* ------------------------------------------------------------ feedback */
+  // Ratings go to the site's own API: the stars, optional words, an optional
+  // name and the page. The home page shows them as they come in.
+  var FB = { data: null };
+  function feedbackDue() { var last = parseInt(lsGet('cf.fb.t'), 10) || 0; return Date.now() - last > 7 * 86400000; }
+  function starRow(n, cls) {
+    var w = el('span', 'stars' + (cls ? ' ' + cls : '')); w.setAttribute('aria-label', n + ' out of 5');
+    for (var i = 1; i <= 5; i++) { var s = icon('star'); if (i <= Math.round(n)) s.classList.add('on'); w.appendChild(s); }
+    return w;
+  }
+  function feedbackForm(ctx) {
+    ctx = ctx || {};
+    var box = el('div', 'fb-form' + (ctx.compact ? ' compact' : ''));
+    var head = el('div', 'fb-q', ctx.compact ? 'How did it go?' : 'Rate Convert Files');
+    box.appendChild(head);
+    var picker = el('div', 'fb-pick'); picker.setAttribute('role', 'group'); picker.setAttribute('aria-label', 'Your rating');
+    var chosen = 0, labels = ['', 'Poor', 'Not great', 'Okay', 'Good', 'Excellent'], btns = [];
+    var hint = el('span', 'fb-hint', '');
+    function paint(n) { btns.forEach(function (b, k) { b.classList.toggle('on', k < n); }); }
+    for (var i = 1; i <= 5; i++) (function (i) {
+      var b = el('button', 'fb-star'); b.type = 'button'; b.setAttribute('aria-label', i + (i === 1 ? ' star' : ' stars')); b.appendChild(icon('star'));
+      b.onmouseenter = function () { paint(i); hint.textContent = labels[i]; };
+      b.onmouseleave = function () { paint(chosen); hint.textContent = labels[chosen]; };
+      b.onclick = function () { chosen = i; paint(i); hint.textContent = labels[i]; more.hidden = false; send.disabled = false; if (!TOUCH) ta.focus(); };
+      btns.push(b); picker.appendChild(b);
+    })(i);
+    picker.appendChild(hint);
+    box.appendChild(picker);
+    var more = el('div', 'fb-more'); more.hidden = true;
+    var ta = el('textarea', 'fb-text'); ta.maxLength = 300; ta.placeholder = 'What worked, what did not? (optional)'; ta.rows = ctx.compact ? 2 : 3; ta.setAttribute('aria-label', 'Your comment');
+    var name = el('input', 'fb-name'); name.type = 'text'; name.maxLength = 40; name.placeholder = 'Your name (optional)'; name.setAttribute('aria-label', 'Your name');
+    var hp = el('input', 'fb-hp'); hp.type = 'text'; hp.name = 'website'; hp.tabIndex = -1; hp.autocomplete = 'off'; hp.setAttribute('aria-hidden', 'true');
+    var send = btn('Send', 'primary sm', 'check'); send.disabled = true;
+    more.appendChild(ta);
+    var row = el('div', 'fb-row'); row.appendChild(name); row.appendChild(hp); row.appendChild(send); more.appendChild(row);
+    box.appendChild(more);
+    var thanks = el('div', 'fb-thanks'); thanks.hidden = true; box.appendChild(thanks);
+    send.onclick = function () {
+      if (!chosen || !SITE.api) return;
+      send.disabled = true;
+      var payload = { stars: chosen, text: ta.value, name: name.value, page: ctx.page || location.pathname, website: hp.value };
+      fetch(SITE.api + '/feedback', { method: 'POST', headers: { 'content-type': 'text/plain' }, body: JSON.stringify(payload), credentials: 'omit' })
+        .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { if (!r.ok) throw new Error(j.error || 'could not send'); return j; }); })
+        .then(function (j) {
+          lsSet('cf.fb.t', String(Date.now()));
+          head.hidden = true; picker.hidden = true; more.hidden = true;
+          thanks.hidden = false;
+          thanks.textContent = j.hidden ? 'Thank you. Comments with links are checked before they appear.' : 'Thank you — that helps.';
+          if (FB.data && !j.hidden) {
+            FB.data.count++; FB.data.dist[chosen] = (FB.data.dist[chosen] || 0) + 1;
+            FB.data.avg = Math.round(((FB.data.avg * (FB.data.count - 1)) + chosen) / FB.data.count * 10) / 10;
+            if (ta.value.trim()) FB.data.recent.unshift({ stars: chosen, text: ta.value.trim(), name: name.value.trim(), ts: Date.now(), page: payload.page });
+            renderFeedback();
+          }
+        }, function (e) { send.disabled = false; toast(e.message, 'lock'); });
+    };
+    return box;
+  }
+  function pageLabel(p) { return (p || '').replace(/^\/|\/$/g, '').replace(/-/g, ' ') || 'home page'; }
+  function loadFeedback() {
+    var box = $('#fb-summary');
+    if (!box || !SITE.api) return;
+    $('#fb-form').appendChild(feedbackForm({ page: '/' }));
+    fetch(SITE.api + '/feedback', { credentials: 'omit' }).then(function (r) { return r.json(); })
+      .then(function (d) { FB.data = d; renderFeedback(); }, function () { box.innerHTML = ''; box.appendChild(el('p', 'fb-empty', 'Ratings are not available right now.')); });
+  }
+  function renderFeedback() {
+    var d = FB.data, box = $('#fb-summary'), list = $('#fb-list'), cnt = $('#fb-count');
+    if (!d || !box) return;
+    box.innerHTML = ''; list.innerHTML = '';
+    if (!d.count) { box.appendChild(el('p', 'fb-empty', 'No ratings yet — be the first.')); cnt.textContent = ''; return; }
+    var big = el('div', 'fb-big');
+    big.appendChild(el('b', null, d.avg.toFixed(1)));
+    var side = el('div', 'fb-side'); side.appendChild(starRow(d.avg, 'lg')); side.appendChild(el('span', 'u', 'from ' + fmtInt(d.count) + ' rating' + (d.count === 1 ? '' : 's'))); big.appendChild(side);
+    box.appendChild(big);
+    var bars = el('div', 'fb-bars');
+    for (var st = 5; st >= 1; st--) {
+      var row = el('div', 'fb-bar'); row.appendChild(el('span', 'k', st + '★'));
+      var track = el('span', 'track'), fill = el('i'); fill.style.width = Math.round((d.dist[st] || 0) / d.count * 100) + '%'; track.appendChild(fill);
+      row.appendChild(track); row.appendChild(el('span', 'n', fmtInt(d.dist[st] || 0))); bars.appendChild(row);
+    }
+    box.appendChild(bars);
+    cnt.textContent = d.avg.toFixed(1) + ' ★ · ' + fmtInt(d.count) + ' rating' + (d.count === 1 ? '' : 's');
+    (d.recent || []).forEach(function (r) {
+      var card = el('article', 'fb-card'); card.appendChild(starRow(r.stars));
+      card.appendChild(el('p', null, r.text));
+      var meta = el('div', 'fb-meta'); meta.appendChild(el('b', null, r.name || 'Anonymous'));
+      meta.appendChild(el('span', null, when(r.ts) + (r.page && r.page !== '/' ? ' · ' + pageLabel(r.page) : '')));
+      card.appendChild(meta); list.appendChild(card);
+    });
+    // the average joins the page's structured data, so search results can show it
+    var scripts = document.querySelectorAll('script[type="application/ld+json"]');
+    for (var i = 0; i < scripts.length; i++) {
+      if (scripts[i].textContent.indexOf('"WebApplication"') < 0) continue;
+      try {
+        var ld = JSON.parse(scripts[i].textContent);
+        ld.aggregateRating = { '@type': 'AggregateRating', ratingValue: d.avg, ratingCount: d.count, bestRating: 5, worstRating: 1 };
+        scripts[i].textContent = JSON.stringify(ld);
+      } catch (e) {}
+      break;
+    }
+  }
+
   /* ------------------------------------------------ install as an app */
   // The service worker caches the shell and the libraries a format needed, so
   // the converter keeps working with no connection; the manifest lets Chrome
@@ -1145,6 +1251,11 @@
       e.preventDefault(); show('convert', true); t.scrollIntoView({ block: 'start' });
     };
     $('#f-support').onclick = function (e) { e.preventDefault(); goSupport(); };
+    $('#f-feedback').onclick = function (e) {
+      var t = $('#feedback');
+      if (!t) return;                       // not the home page: the href goes to /#feedback
+      e.preventDefault(); show('convert', true); t.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    };
     window.addEventListener('hashchange', route);
     // seed the on-device counter for people who converted before it existed
     if (lsGet('cf.converted') === null) DB.all().then(function (rows) { if (rows.length && lsGet('cf.converted') === null) { lsSet('cf.converted', String(rows.length)); lsSet('cf.since', String(rows[rows.length - 1].createdAt || Date.now())); renderHome(); } }, function () {});
@@ -1158,6 +1269,7 @@
     watchTime();
     installApp();
     takeSharedFiles();
+    loadFeedback();
     $('#files-go').onclick = function () { if (!isHome() && document.querySelector('meta[name="cf-tool"]')) { location.href = '/'; return; } show('convert'); $('#file').click(); };
 
     // On a tool page (/compress-image/ and friends) tools.js owns the drop
@@ -1224,7 +1336,7 @@
     refreshCount();
   }
 
-  root.UI = { el: el, icon: icon, btn: btn, toast: toast, download: download, chip: chip, when: when, show: show, track: track };
+  root.UI = { el: el, icon: icon, btn: btn, toast: toast, download: download, chip: chip, when: when, show: show, track: track, feedbackForm: feedbackForm, feedbackDue: feedbackDue };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();

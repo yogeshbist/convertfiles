@@ -44,3 +44,9 @@
 .adm-status{font-size:13px;color:var(--muted)}
 .adm-status.ok{color:var(--ok)}
 .adm-status.err{color:var(--err)}
+
+.adm-table{width:100%;border-collapse:collapse;font-size:13.5px}
+.adm-table td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.adm-table td.stars{white-space:nowrap;color:#F0A800;font-size:15px}
+.adm-table tr.dim{opacity:.5}
+.adm-table small{display:block;margin-top:4px}

@@ -1,7 +1,8 @@
 /* tools.css — only loaded on tool pages. Everything shares app.css tokens. */
 .tool{margin-top:6px}
 .t-picked{margin-top:0}
-.t-opts{margin-top:14px;flex-direction:column;align-items:stretch;gap:0}
+.t-opts{margin-top:14px;flex-direction:column;align-items:stretch;gap:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:6px 18px 10px;box-shadow:var(--shadow)}
+.t-opts::before{content:"Options";display:block;font-family:var(--display);font-weight:700;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding:10px 0 0}
 .t-opts .opt{flex-wrap:wrap}
 .t-opts input[type=text]{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:6px 9px;font-weight:600;font-family:inherit;color:var(--ink)}
 .t-opts input[type=color]{width:38px;height:30px;border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:2px}
@@ -19,7 +20,7 @@
 .t-text{width:100%;min-height:160px;margin:10px 0 8px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:13px/1.5 var(--mono);color:var(--ink);resize:vertical}
 
 /* stage: the interactive area a tool puts between the file list and the options */
-.t-stage{margin-top:14px;background:var(--surface-2);border-radius:var(--r);padding:14px 16px}
+.t-stage{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:14px 16px;box-shadow:var(--shadow)}
 .t-stage h4{margin:8px 0 8px;font-family:var(--display);font-size:14px;color:var(--ink-2)}
 .t-stage-box{display:flex;flex-direction:column;align-items:center;gap:10px}
 .t-stage-canvas{max-width:100%;height:auto;border-radius:12px;cursor:grab;background:#0b0f14;box-shadow:var(--shadow)}

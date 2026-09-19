@@ -196,7 +196,7 @@ def strip_home(page):
         a, b = page.find(start), page.find(end)
         if a >= 0 and b >= 0:
             page = page[:a] + page[b + len(end):]
-    return page
+    return page.replace('<div class="convert-grid two">', '<div class="convert-grid">', 1)
 
 
 def write(path, text):
@@ -235,25 +235,27 @@ _pop = []
 for _p in load_json('popular'):
     _pop.append('<a href="/%s-to-%s/">%s<span style="color:var(--pop)">&rarr;</span>%s<span class="lbl">%s</span></a>'
                 % (_p['from'], _p['to'], chip_html(_p['from']), chip_html(_p['to']), esc(_p['label'])))
-index = index.replace('<div class="pop" id="popular"></div>', '<div class="pop" id="popular">%s</div>' % ''.join(_pop))
+index = replace_block(index, 'popular:tiles', ''.join(_pop))
 
-# every tool, one line each, most wanted first; app.js reorders by real usage
-_rail = ['<h2 class="rail-h">Tools <span class="u">most used first</span></h2><ol class="rail-list">']
-_by = {t['slug']: t for t in TOOLPAGES.TOOLS}
-for _slug in TOOLPAGES.RAIL_ORDER:
+# every tool, one per row, most wanted first; app.js reorders by real usage
+_rail = ['<div class="rail-h"><h2>Tools</h2><span class="rail-tag">most used first</span></div><ol class="rail-list">']
+_by = {x['slug']: x for x in TOOLPAGES.TOOLS}
+for _i, _slug in enumerate(TOOLPAGES.RAIL_ORDER):
     _t = _by[_slug]
-    _rail.append('<li><a href="/%s/" data-tool="%s"><i class="dot" style="--fam:var(--f-%s)"></i><span>%s</span><b class="cnt" hidden></b></a></li>'
-                 % (_slug, _slug, TOOLPAGES.GROUP_FAM[_t['group']], esc(_t['name'])))
-_rail.append('</ol><a class="rail-all" href="/tools/">All %d tools &rarr;</a>' % len(TOOLPAGES.TOOLS))
-index = index.replace('<!-- rail:list -->', ''.join(_rail))
-index = index.replace('<div class="convert-grid">', '<div class="convert-grid two">', 1)
+    _hint, _icon = TOOLPAGES.RAIL_META[_slug]
+    _rail.append('<li><a href="/%s/" data-tool="%s"><span class="rk">%02d</span>'
+                 '<span class="ic" style="--fam:var(--f-%s)"><svg><use href="#t-%s"/></svg></span>'
+                 '<span class="tx"><b>%s</b><small>%s</small></span><b class="cnt" hidden></b></a></li>'
+                 % (_slug, _slug, _i + 1, TOOLPAGES.GROUP_FAM[_t['group']], _icon, esc(_t['name']), esc(_hint)))
+_rail.append('</ol><a class="rail-all" href="/tools/">All %d tools <span>&rarr;</span></a>' % len(TOOLPAGES.TOOLS))
+index = replace_block(index, 'rail:list', ''.join(_rail))
 _gc = []
 for _g in [g for g in CONTENT['GUIDES'] if g.get('lang') != 'hi'][:3]:
     _words = len(re.sub(r'<[^>]+>', '', ' '.join(_g['body'])).split())
     _gc.append('<a class="gcard" href="/guides/%s/"><span class="cat" style="--fam:var(--f-%s)">%s</span>'
                '<h3>%s</h3><p>%s</p><span class="rt">%d min read</span></a>'
                % (_g['slug'], _g['fam'], esc(_g['cat']), esc(_g['title']), esc(_g['teaser']), max(2, round(_words / 200))))
-index = index.replace('<div class="guides" id="home-guides"></div>', '<div class="guides" id="home-guides">%s</div>' % ''.join(_gc))
+index = replace_block(index, 'home:guides', ''.join(_gc))
 open('index.html', 'w').write(index)
 GENERATED.append('index.html')
 BASE = index

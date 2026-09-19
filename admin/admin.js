@@ -44,11 +44,12 @@
 
   /* ------------------------------------------------------------ views */
   function show(v) {
-    ['login', 'dash', 'content', 'settings'].forEach(function (x) { $('#v-' + x).hidden = x !== v; });
+    ['login', 'dash', 'content', 'feedback', 'settings'].forEach(function (x) { $('#v-' + x).hidden = x !== v; });
     document.querySelectorAll('#adm-tabs .tab').forEach(function (t) { t.setAttribute('aria-selected', String(t.dataset.v === v)); });
     $('#adm-tabs').hidden = v === 'login'; $('#logout').hidden = v === 'login';
     if (v === 'dash') loadDash();
     if (v === 'content') renderFiles();
+    if (v === 'feedback') loadFeedback();
     if (v === 'settings') openFile('site', $('#s-editor'));
   }
   function signOut() { token = null; try { sessionStorage.removeItem('cf.admin.token'); } catch (e) {} show('login'); }
@@ -68,6 +69,24 @@
   document.querySelectorAll('#adm-tabs .tab').forEach(function (t) { t.onclick = function () { show(t.dataset.v); }; });
 
   /* -------------------------------------------------------- dashboard */
+  function loadFeedback() {
+    var box = $('#fb-rows'); box.innerHTML = ''; box.appendChild(el('p', 'u', 'Loading…'));
+    api('/feedback/all?limit=300').then(function (r) {
+      box.innerHTML = '';
+      if (!r.rows.length) { box.appendChild(el('p', 'u', 'No ratings yet.')); return; }
+      var t = el('table', 'adm-table');
+      r.rows.forEach(function (row) {
+        var tr = el('tr'); if (row.hidden) tr.className = 'dim';
+        tr.appendChild(el('td', 'stars', '\u2605'.repeat(row.stars) + '\u2606'.repeat(5 - row.stars)));
+        var td = el('td'); td.appendChild(el('div', null, row.text || '(no comment)')); td.appendChild(el('small', 'u', (row.name || 'Anonymous') + ' · ' + row.page + ' · ' + new Date(row.ts).toLocaleString())); tr.appendChild(td);
+        var act = el('td'); var b = el('button', 'btn sm', row.hidden ? 'Show' : 'Hide');
+        b.onclick = function () { b.disabled = true; api('/feedback/hide', { method: 'POST', body: { id: row.id, hidden: !row.hidden } }).then(function () { loadFeedback(); }, function (e) { toast(e.message); b.disabled = false; }); };
+        act.appendChild(b); tr.appendChild(act);
+        t.appendChild(tr);
+      });
+      box.appendChild(t);
+    }, function (e) { box.innerHTML = ''; box.appendChild(el('p', 'u', e.message)); });
+  }
   function loadDash() {
     $('#dash-sub').textContent = 'Loading…';
     api('/stats?days=' + days).then(function (s) {

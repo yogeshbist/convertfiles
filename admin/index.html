@@ -8,8 +8,8 @@
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=a448435e">
-<link rel="stylesheet" href="/admin/admin.css?v=a448435e">
+<link rel="stylesheet" href="/css/app.css?v=db626c61">
+<link rel="stylesheet" href="/admin/admin.css?v=db626c61">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -25,6 +25,7 @@
     <nav class="tabs" id="adm-tabs" hidden>
       <button class="tab" data-v="dash" aria-selected="true">Dashboard</button>
       <button class="tab" data-v="content" aria-selected="false">Content</button>
+      <button class="tab" data-v="feedback" aria-selected="false">Feedback</button>
       <button class="tab" data-v="settings" aria-selected="false">Settings</button>
     </nav>
     <button class="btn sm" id="logout" hidden>Sign out</button>
@@ -70,6 +71,14 @@
     </div>
   </section>
 
+  <section id="v-feedback" hidden>
+    <div class="card">
+      <h2>Feedback</h2>
+      <p class="u">Every rating people left. Hidden ones do not show on the site. Comments containing links arrive hidden.</p>
+      <div id="fb-rows"></div>
+    </div>
+  </section>
+
   <section id="v-settings" hidden>
     <div class="page-h"><div><h1>Settings</h1><p>Domain, contact email, AdSense and analytics ids. These live in <code>site.json</code>.</p></div></div>
     <div class="adm-editor" id="s-editor"></div>
@@ -77,6 +86,6 @@
 
 </main>
 <div id="toast" role="status" aria-live="polite"></div>
-<script src="/admin/admin.js?v=a448435e"></script>
+<script src="/admin/admin.js?v=db626c61"></script>
 </body>
 </html>

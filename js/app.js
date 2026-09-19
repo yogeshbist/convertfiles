@@ -839,27 +839,25 @@
       list.appendChild(li);
     });
   }
-  // The services carousel beside the converter: four slides, one every four
-  // seconds, paused while the pointer is over it, still while reduced motion is on.
+  // The banner rotates through the site's services — one every two seconds,
+  // paused while the pointer is over it, still when reduced motion is on.
   function promo() {
     var box = $('#promo');
     if (!box) return;
-    var slides = box.querySelectorAll('.promo-slide'), dots = box.querySelector('.promo-dots'), i = 0, timer = null;
-    var still = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    slides.forEach(function (_, k) {
-      var d = el('button', 'promo-dot' + (k === 0 ? ' on' : '')); d.type = 'button'; d.setAttribute('role', 'tab'); d.setAttribute('aria-label', 'Slide ' + (k + 1));
-      d.onclick = function () { go(k); restart(); };
-      dots.appendChild(d);
-    });
+    var slides = box.querySelectorAll('.promo-slide'), count = $('#promo-count'), bar = $('#promo-bar'), i = 0, timer = null;
+    var still = matchMedia('(prefers-reduced-motion: reduce)').matches, STEP = 2000;
     function go(n) {
       i = (n + slides.length) % slides.length;
-      slides.forEach(function (s, k) { s.classList.toggle('on', k === i); });
-      dots.querySelectorAll('.promo-dot').forEach(function (d, k) { d.classList.toggle('on', k === i); d.setAttribute('aria-selected', String(k === i)); });
+      slides.forEach(function (s, k) { s.classList.toggle('on', k === i); s.setAttribute('aria-hidden', String(k !== i)); });
+      if (count) count.textContent = (i + 1) + ' / ' + slides.length;
+      if (bar) { bar.style.animation = 'none'; void bar.offsetWidth; bar.style.animation = still ? 'none' : 'promo-fill ' + STEP + 'ms linear'; }
     }
-    function restart() { clearInterval(timer); if (!still) timer = setInterval(function () { go(i + 1); }, 4000); }
-    box.addEventListener('mouseenter', function () { clearInterval(timer); });
-    box.addEventListener('mouseleave', restart);
-    restart();
+    function restart() { clearInterval(timer); if (!still) timer = setInterval(function () { go(i + 1); }, STEP); }
+    box.addEventListener('mouseenter', function () { clearInterval(timer); if (bar) bar.style.animationPlayState = 'paused'; });
+    box.addEventListener('mouseleave', function () { if (bar) bar.style.animationPlayState = 'running'; restart(); });
+    var next = $('#promo-next');
+    if (next) next.onclick = function () { go(i + 1); restart(); };
+    go(0); restart();
     var more = $('#rail-more');
     if (more) more.onclick = function () {
       var open = $('#tools-rail').classList.toggle('open');

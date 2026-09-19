@@ -249,6 +249,24 @@ for _i, _slug in enumerate(TOOLPAGES.RAIL_ORDER):
                  % (' class="more"' if _i >= 11 else '', _slug, _slug, TOOLPAGES.GROUP_FAM[_t['group']], _icon, esc(_t['name']), esc(_hint), _i + 1))
 _rail.append('</ol><div class="rail-foot"><button type="button" class="rail-more" id="rail-more" aria-expanded="false">View all %d tools</button></div>' % len(TOOLPAGES.TOOLS))
 index = replace_block(index, 'rail:list', ''.join(_rail))
+
+# the banner rotates through what the site does: popular conversions and tools, interleaved
+_conv = [(p['from'], p['to'], p['label']) for p in load_json('popular')]
+_tools = [(sl, _by[sl]) for sl in TOOLPAGES.RAIL_ORDER]
+_slides, _ci, _ti = [], 0, 0
+while _ci < len(_conv) or _ti < len(_tools):
+    if _ci < len(_conv):
+        f, tt, lab = _conv[_ci]; _ci += 1
+        _slides.append('<a class="promo-slide%s" href="/%s-to-%s/"><span class="promo-ic" style="--fam:var(--f-%s)"><svg><use href="#i-swap"/></svg></span>'
+                       '<div><b>%s</b><p>Convert %s to %s free, in your browser &mdash; nothing uploaded</p></div></a>'
+                       % (' on' if not _slides else '', f, tt, family(f), esc(lab), f.upper(), tt.upper()))
+    if _ti < len(_tools):
+        sl, tool = _tools[_ti]; _ti += 1
+        _hint, _icon = TOOLPAGES.RAIL_META[sl]
+        _slides.append('<a class="promo-slide%s" href="/%s/"><span class="promo-ic" style="--fam:var(--f-%s)"><svg><use href="#t-%s"/></svg></span>'
+                       '<div><b>%s</b><p>%s &mdash; free, nothing uploaded</p></div></a>'
+                       % (' on' if not _slides else '', sl, TOOLPAGES.GROUP_FAM[tool['group']], _icon, esc(tool['name']), esc(_hint)))
+index = replace_block(index, 'promo:slides', ''.join(_slides))
 _gc = []
 for _g in [g for g in CONTENT['GUIDES'] if g.get('lang') != 'hi'][:3]:
     _words = len(re.sub(r'<[^>]+>', '', ' '.join(_g['body'])).split())

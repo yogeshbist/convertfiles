@@ -108,7 +108,7 @@ Where each piece lives, and who creates its markup.
 | Convert button, privacy line | `index.html` | `.cta #go .private` |
 | Progress, result panel | `index.html` + **app.js** | `.progress .bar .status .done .done-row .done-list .picked-foot` |
 | Sticky convert bar (phones) | `index.html` | `.sticky` |
-| Services carousel (home only) | `index.html` (`promo:only` markers) + app.js rotation | `.promo .promo-track .promo-slide .promo-ic .promo-dots .promo-dot` |
+| Services banner (home only) | `index.html` (`promo:only` + `promo:slides` markers) + **build.py** slides + app.js rotation | `.promo .promo-track .promo-slide .promo-ic .promo-side .promo-count .promo-bar .promo-next` |
 | Tools rail (home only) | `index.html` markers + **build.py** | `.tools-rail .rail-h .rail-tag .rail-list .ic .tx .rk .cnt .rail-foot .rail-more` |
 | Tools hub cards | **build.py** | `.tools-hub .tgrid .tcard .ttag .tools-foot` |
 | Home: numbers, steps, popular tiles, guide cards, FAQ, support, feedback | `index.html` + **app.js** | `.home .kpis .steps .pop .guides .gcard .faq #support .fb-*` |
@@ -131,7 +131,7 @@ The JavaScript finds elements by id and the build finds blocks by marker.
 - **Keep every `id="…"`** in `index.html`. Move them, restyle them, wrap them — but keep them.
 - **Keep the marker comments** exactly: `<!-- site:head -->`, `<!-- page:meta -->`,
   `<!-- page:body -->`, `<!-- home:only -->`, `<!-- rail:only -->`, `<!-- promo:only -->`,
-  `<!-- popular:tiles -->`, `<!-- home:guides -->`, `<!-- rail:list -->` (each with its closing twin).
+  `<!-- popular:tiles -->`, `<!-- home:guides -->`, `<!-- rail:list -->`, `<!-- promo:slides -->` (each with its closing twin).
 - Keep the hero `<h1>Free Online File Converter</h1>` and the paragraph after it
   as they are — build.py swaps their text per page by matching the exact string.
 - Keep the four `<section class="view" id="view-…">` sections; the app shows one at a time.

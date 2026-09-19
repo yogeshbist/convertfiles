@@ -94,6 +94,14 @@ def site_head():
     cfg = {'domain': DOMAIN, 'contact': SITE.get('contact_email', ''), 'api': SITE.get('api_base', '').rstrip('/'),
            'ads': {'client': ads, 'slots': SITE.get('adsense_slots', {})} if ads else None}
     lines = ['<script>window.SITE = ' + json.dumps(cfg) + ';</script>']
+    # Search Console / Bing Webmaster verification. Paste the content value of
+    # the <meta> tag they give you into site.json and rebuild.
+    gsv = SITE.get('google_site_verification', '').strip()
+    if gsv:
+        lines.insert(0, '<meta name="google-site-verification" content="%s">' % esc(gsv))
+    bsv = SITE.get('bing_site_verification', '').strip()
+    if bsv:
+        lines.insert(0, '<meta name="msvalidate.01" content="%s">' % esc(bsv))
     if ads:
         lines.append('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=%s" crossorigin="anonymous"></script>' % ads)
     if ga:

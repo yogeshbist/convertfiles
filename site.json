@@ -10,5 +10,7 @@
     "article": ""
   },
   "ga4_measurement_id": "",
-  "api_base": "https://convertfiles-api.convertfiles.workers.dev"
+  "api_base": "https://convertfiles-api.convertfiles.workers.dev",
+  "google_site_verification": "",
+  "bing_site_verification": ""
 }

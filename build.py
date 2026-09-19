@@ -17,6 +17,7 @@ import datetime, hashlib, json, os, re, sys, html
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'seo'))
 import formats as SEO          # noqa: E402
 import pages as PAGES          # noqa: E402
+import keywords as KW          # noqa: E402
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
@@ -211,11 +212,11 @@ home_jsonld = {
     '@context': 'https://schema.org', '@type': 'WebApplication', 'name': 'Convert Files', 'url': DOMAIN + '/',
     'applicationCategory': 'UtilitiesApplication', 'operatingSystem': 'Any', 'browserRequirements': 'Requires a modern browser',
     'offers': {'@type': 'Offer', 'price': '0', 'priceCurrency': 'INR'},
-    'description': 'Free file converter that runs entirely in your browser. Images, PDF, Word, Excel, audio, video, fonts and 3D models. Nothing is uploaded.'
+    'description': 'Free online file converter that runs entirely in your browser. Images, PDF, Word, Excel, audio, video, fonts and 3D models. Nothing is uploaded.'
 }
 index = replace_block(index, 'page:meta', page_meta(
-    'Convert Files — free online file converter, nothing uploaded',
-    'Convert your files in seconds — free, no account, nothing uploaded. Images, PDF, Word, Excel, audio, video and 3D models, converted in your browser.',
+    'Free Online File Converter \u2014 Nothing Uploaded | Convert Files',
+    'Free online file converter for images, PDF, Word, Excel, audio, video, fonts and 3D models \u2014 converted in your browser in seconds. No upload, no account.',
     '', jsonld=home_jsonld))
 index = replace_block(index, 'page:body', '')
 
@@ -269,7 +270,10 @@ for f, t in SEO_PAIRS:
     qa = PAGES.faqs(f, t, EXT)
     group_title, group_fam = PAGES.group_of(f)
 
-    title = 'Convert %s to %s \u2014 free, online, nothing uploaded' % (F, T)
+    SF, ST = KW.search_name(f), KW.search_name(t)               # "Word", not "DOCX"
+    title = '%s to %s Converter \u2014 free, online, nothing uploaded' % (SF, ST)
+    # the H1 carries the exact extension too, so "PDF to Word (DOCX) converter"
+    h1 = '%s to %s converter' % (SF + (' (%s)' % F if SF != F else ''), ST + (' (%s)' % T if ST != T else ''))
     desc = meta_desc(F, T, why, what)
     crumb_html, crumb_ld = crumbs([('Home', '/'), (group_title, '/formats/'), ('%s to %s' % (F, T), None)])
 
@@ -322,9 +326,9 @@ for f, t in SEO_PAIRS:
                      jsonld=[crumb_ld, howto_ld, faq_ld])
     page = replace_block(BASE, 'page:meta', meta)
     page = replace_block(page, 'page:body', '\n'.join(body))
-    page = page.replace('<h1>Convert any file, right here.</h1>', '<h1>Convert %s to %s</h1>' % (F, T))
-    page = page.replace('<p>Pick a file, choose what it should become, download the result. Everything runs inside your browser &mdash; nothing is uploaded.</p>',
-                        '<p>Free, in your browser, in seconds &mdash; %s to %s with nothing uploaded anywhere.</p>' % (fname, tname))
+    page = page.replace('<h1>Free Online File Converter</h1>', '<h1>%s</h1>' % esc(h1))
+    page = page.replace('<p>Convert any file, right here &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>',
+                        '<p>Convert %s to %s free, in your browser, in seconds &mdash; nothing uploaded anywhere.</p>' % (esc(fname), esc(tname)))
     write(path + 'index.html', strip_home(page))
 
 
@@ -351,8 +355,8 @@ hub_page = replace_block(BASE, 'page:meta', page_meta(
     'All file conversions \u2014 %d free converters, nothing uploaded' % len(SEO_PAIRS),
     'Every conversion Convert Files supports — PNG to JPG, PDF to Word, MOV to MP4 and 396 more, each with its own guide. Free, nothing uploaded.', 'formats/', jsonld=[hub_crumb_ld]))
 hub_page = replace_block(hub_page, 'page:body', '\n'.join(hub))
-hub_page = hub_page.replace('<h1>Convert any file, right here.</h1>', '<h1>All conversions</h1>')
-hub_page = hub_page.replace('<p>Pick a file, choose what it should become, download the result. Everything runs inside your browser &mdash; nothing is uploaded.</p>',
+hub_page = hub_page.replace('<h1>Free Online File Converter</h1>', '<h1>All conversions</h1>')
+hub_page = hub_page.replace('<p>Convert any file, right here &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>',
                             '<p>%d conversions, each with its own page. Pick the one you need and convert it there.</p>' % len(SEO_PAIRS))
 write('formats/index.html', hide_converter(strip_home(hub_page)))
 
@@ -385,7 +389,7 @@ for gd in CONTENT['GUIDES']:
               'mainEntityOfPage': DOMAIN + '/' + path, 'image': DOMAIN + '/assets/og.png'}]
     page = replace_block(BASE, 'page:meta', page_meta(gd.get('seo_title', gd['title']) + ' \u00b7 Convert Files', gd['teaser'], path, kind='article',
                                                        extra_meta='<meta name="cf-guide" content="%s">' % gd['slug'], jsonld=jsonld))
-    page = page.replace('<h1>Convert any file, right here.</h1>',
+    page = page.replace('<h1>Free Online File Converter</h1>',
                         '<p class="lede">Convert any file, right here.</p>')
     page = replace_block(page, 'page:body', '')
     # pre-render the article for crawlers; the app takes over on load
@@ -414,8 +418,8 @@ gi_page = replace_block(BASE, 'page:meta', page_meta(
     'Short, practical guides to HEIC, PDF and Word, image formats, video for the web, 3D models for AR, spreadsheets and '
     'privacy when converting files online.', 'guides/', jsonld=[gi_crumb_ld]))
 gi_page = replace_block(gi_page, 'page:body', '\n'.join(gi))
-gi_page = gi_page.replace('<h1>Convert any file, right here.</h1>', '<h1>Guides</h1>')
-gi_page = gi_page.replace('<p>Pick a file, choose what it should become, download the result. Everything runs inside your browser &mdash; nothing is uploaded.</p>',
+gi_page = gi_page.replace('<h1>Free Online File Converter</h1>', '<h1>Guides</h1>')
+gi_page = gi_page.replace('<p>Convert any file, right here &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>',
                           '<p>%d guides to the formats people ask about most.</p>' % len(CONTENT['GUIDES']))
 write('guides/index.html', hide_converter(strip_home(gi_page)))
 
@@ -465,7 +469,7 @@ for u in urls:
     sitemap.append('  <url><loc>%s</loc><lastmod>%s</lastmod></url>' % (esc(u), today))
 sitemap.append('</urlset>')
 write('sitemap.xml', '\n'.join(sitemap) + '\n')
-write('robots.txt', 'User-agent: *\nAllow: /\nDisallow: /admin/\nDisallow: /test/\nDisallow: /pages/\nDisallow: /api/\n\nSitemap: %s/sitemap.xml\n' % DOMAIN)
+write('robots.txt', 'User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n' % DOMAIN)
 client = SITE.get('adsense_client', '').strip()
 write('ads.txt', ('google.com, %s, DIRECT, f08c47fec0942fa0\n' % client.replace('ca-', '')) if client else '# Add your AdSense line here after approval, e.g.\n# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0\n')
 write('CNAME', HOST + '\n')

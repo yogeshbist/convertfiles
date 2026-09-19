@@ -1,4 +1,4 @@
-/* app.js — UI: pick a file, choose from/to, convert, download, browse Your files. */
+/* app.js — UI: pick a file, choose from/to, convert, download, browse My files. */
 (function (root) {
   'use strict';
   var F = root.Formats, C = root.Convert, DB = root.DB;
@@ -439,7 +439,7 @@
       var ok = results.filter(function (r) { return r.rec; });
       state.fresh = ok.length ? ok[ok.length - 1].rec.id || null : null;
       if (total === 1) {
-        if (ok.length) { state.last = ok[0].rec; paintDone(ok[0].rec); adUnit('ad-result', 'result'); toast(ok[0].rec.id ? 'Saved to Your files' : 'Converted', 'check'); }
+        if (ok.length) { state.last = ok[0].rec; paintDone(ok[0].rec); adUnit('ad-result', 'result'); toast(ok[0].rec.id ? 'Saved to My files' : 'Converted', 'check'); }
         else paintError(results[0].error);
       } else {
         state.batch = results;
@@ -504,7 +504,7 @@
     body.appendChild(list);
     var saved = el('div', 'done-saved');
     saved.appendChild(document.createTextNode('Also kept in '));
-    var a = el('a', null, 'Your files'); a.href = '#'; a.onclick = function (e) { e.preventDefault(); show('files'); }; saved.appendChild(a);
+    var a = el('a', null, 'My files'); a.href = '#'; a.onclick = function (e) { e.preventDefault(); show('files'); }; saved.appendChild(a);
     saved.appendChild(document.createTextNode(' so you can download them again later. '));
     var tip = el('a', 'tip-link'); tip.href = '#support'; tip.appendChild(icon('heart')); tip.appendChild(el('span', null, 'Found it useful? Leave a tip'));
     tip.onclick = function (e) { e.preventDefault(); goSupport(); }; saved.appendChild(tip);
@@ -541,7 +541,7 @@
     var saved = el('div', 'done-saved');
     if (rec.id) {
       saved.appendChild(document.createTextNode('Also kept in '));
-      var a = el('a', null, 'Your files'); a.href = '#';
+      var a = el('a', null, 'My files'); a.href = '#';
       a.onclick = function (e) { e.preventDefault(); show('files'); };
       saved.appendChild(a);
       saved.appendChild(document.createTextNode(' so you can download it again later. '));

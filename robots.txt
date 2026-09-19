@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /test/
-Disallow: /pages/
-Disallow: /api/
 
 Sitemap: https://convertfiles.in/sitemap.xml

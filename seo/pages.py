@@ -4,6 +4,10 @@ try:
     from . import traits as TRAITS
 except ImportError:  # loaded as a plain module by build.py
     import traits as TRAITS
+try:
+    from . import keywords as KW
+except ImportError:
+    import keywords as KW
 import html as _html
 import json
 
@@ -156,25 +160,76 @@ def _expect(f, t, ext_table):
     return "The conversion runs entirely in your browser and the file never leaves your device."
 
 
+NO_ALPHA = {'jpg', 'jpeg', 'bmp', 'tga', 'pdf'}
+HAS_ALPHA = {'png', 'webp', 'avif', 'gif', 'ico', 'icns', 'tiff', 'svg', 'jxl'}
+# the tool people would otherwise script this with, per family
+SCRIPT_TOOL = {'image': 'ImageMagick', 'audio': 'FFmpeg', 'video': 'FFmpeg', 'model3d': 'Blender',
+               'data': 'Python', 'table': 'Python', 'doc': 'Pandoc or LibreOffice', 'font': 'FontForge',
+               'archive': 'the command line'}
+
+
 def faqs(f, t, ext_table):
+    """Questions phrased the way people actually search for this pair.
+
+    The base four apply everywhere. The rest are added only when Google's
+    autocomplete for this pair shows that intent (content/suggest.json), so a
+    HEIC page answers "on iPhone?" and an STL page answers "without Blender?"
+    rather than every page answering everything."""
     F, T = f.upper(), t.upper()
+    SF, ST = KW.search_name(f), KW.search_name(t)
+    mods = KW.modifiers(f, t)
+    ff, ft = family(f, ext_table), family(t, ext_table)
     out = [
-        ("Is converting %s to %s free?" % (F, T),
+        ("Is this %s to %s converter free?" % (SF, ST),
          "Yes, completely. There is no account, no daily limit, no watermark and no premium tier."),
         ("Is my %s file uploaded to a server?" % F,
          "No. The conversion runs inside your own browser using your device's processor. The file is read from your disk, "
-         "converted in memory and saved back to your disk — nothing is transmitted, so there is nothing for anyone to store."),
-        ("What happens to the quality?", expect(f, t, ext_table)),
-        ("Can I convert several %s files at once?" % F,
-         "Yes. Select as many files as you like and they are converted one after another in a single tap, with a download "
-         "for each and a zip of all of them."),
+         "converted in memory and saved back to your disk \u2014 nothing is transmitted, so there is nothing for anyone to store."),
     ]
+    if 'online' in mods or 'download' in mods:
+        out.append(("Can I convert %s to %s online without downloading software?" % (SF, ST),
+                    "Yes. This is an online %s to %s converter that runs in your browser, so there is nothing to install "
+                    "and no app to trust with your files. It works the same on a phone." % (SF, ST)))
+    out.append(("Does converting %s to %s lose quality?" % (SF, ST) if 'quality' in mods else "What happens to the quality?",
+                expect(f, t, ext_table)))
+    if 'transparent' in mods and t in NO_ALPHA:
+        out.append(("Does %s to %s keep a transparent background?" % (SF, ST),
+                    "No. %s cannot store transparency, so any transparent area is flattened onto a solid colour \u2014 "
+                    "white unless you choose another. Pick PNG or WebP as the target if the transparency matters." % T))
+    elif 'transparent' in mods and t in HAS_ALPHA:
+        out.append(("Does %s to %s keep a transparent background?" % (SF, ST),
+                    "Yes. %s supports a real alpha channel, and transparent areas come through exactly as they were." % T))
+    if 'editable' in mods and ft == 'doc':
+        out.append(("Will the %s file be editable?" % ST,
+                    "Yes. The text comes across as real, editable text with headings, lists, links and tables, not as a "
+                    "picture of the page. Exact page layout and fonts are the part that may need tidying afterwards."))
+    if 'ocr' in mods or (ff == 'doc' and f == 'pdf'):
+        out.append(("Does this %s to %s converter do OCR?" % (SF, ST),
+                    "No. It converts the text that is already in the file. A scanned %s holds a picture of a page rather "
+                    "than text, so it comes out as an image; OCR software is needed to read the words off a scan." % F))
+    if 'windows' in mods or 'mac' in mods or 'linux' in mods:
+        out.append(("How do I convert %s to %s on Windows, Mac or Linux?" % (SF, ST),
+                    "The same way on all three: open this page in Chrome, Edge, Firefox or Safari, drop the %s file, "
+                    "press Convert and download the %s. Nothing is installed and no admin permission is needed." % (F, T)))
+    if 'iphone' in mods or 'android' in mods:
+        out.append(("Can I convert %s to %s on an iPhone or Android phone?" % (SF, ST),
+                    "Yes. Open this page in Safari or Chrome on the phone, pick the file from Photos or Files, tap Convert "
+                    "and save the result. The conversion runs on the phone itself, so it works on mobile data without "
+                    "uploading anything."))
+    out.append(("Can I batch convert several %s files to %s at once?" % (F, T) if 'bulk' in mods else "Can I convert several %s files at once?" % F,
+                "Yes. Select as many files as you like and they are converted one after another in a single tap, with a "
+                "download for each and a zip of all of them."))
+    if 'code' in mods:
+        tool = SCRIPT_TOOL.get(ff, 'a script')
+        out.append(("Can I convert %s to %s without %s or a script?" % (SF, ST, tool),
+                    "Yes \u2014 that is what this page is for. %s does the same job well if you already have it set up "
+                    "and thousands of files to process; for one file, or a handful, the browser is faster than "
+                    "installing anything." % tool))
     src = TRAITS.LEAVING.get(f)
     if src:
         out.append(("Should I keep the original %s file?" % F,
                     "Yes \u2014 keep it, converting never touches it. The reason to make a copy in another format is that "
                     "%s." % src))
-    ff = family(f, ext_table)
     if ff == 'video':
         out.append(("How long does it take?",
                     "Roughly as long as the clip itself for high-definition video, because every frame is decoded and "
@@ -183,10 +238,6 @@ def faqs(f, t, ext_table):
         out.append(("Why can my computer not open HEIC files?",
                     "HEIC is patent-encumbered, so Windows, Android and most browsers do not include a decoder. Safari on "
                     "Apple devices is the exception. Convert Files carries its own decoder, so it works in any browser."))
-    if ff == 'doc' and f == 'pdf':
-        out.append(("My PDF is a scan and nothing came out. Why?",
-                    "A scanned PDF contains a picture of a page, not text. There is nothing to extract without OCR "
-                    "(optical character recognition), which this tool does not perform."))
     return out
 
 

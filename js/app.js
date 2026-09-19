@@ -820,8 +820,22 @@
     askedTotals = true;
     fetch(SITE.api + '/public', { credentials: 'omit' })
       .then(function (r) { return r.json(); })
-      .then(function (t) { if (t && typeof t.conv === 'number') { globalTotals = t; renderHome(); } })
+      .then(function (t) { if (t && typeof t.conv === 'number') { globalTotals = t; renderHome(); orderRail(t.tools); } })
       .catch(function () {});
+  }
+  // The tools list beside the converter: most used first, by the site's own
+  // counters. Ties keep the built-in order, so nothing jumps around on a new site.
+  function orderRail(counts) {
+    var list = $('#tools-rail .rail-list');
+    if (!list || !counts) return;
+    var items = Array.prototype.slice.call(list.children);
+    items.forEach(function (li, i) { li._n = counts[li.firstElementChild.getAttribute('data-tool')] || 0; li._i = i; });
+    items.sort(function (a, b) { return (b._n - a._n) || (a._i - b._i); });
+    items.forEach(function (li) {
+      var c = li.querySelector('.cnt');
+      if (c) { c.hidden = !li._n; c.textContent = li._n ? fmtInt(li._n) : ''; c.title = li._n ? 'used ' + fmtInt(li._n) + ' times' : ''; }
+      list.appendChild(li);
+    });
   }
   function renderHome() {
     // Generated landing and guide pages carry the converter but not the home

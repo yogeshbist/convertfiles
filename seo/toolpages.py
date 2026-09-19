@@ -266,6 +266,13 @@ TOOLS = [
 
 GROUPS = [('image', 'Image tools'), ('pdf', 'PDF tools'), ('media', 'Audio & video'), ('other', 'Other tools')]
 
+# The home page lists every tool, most used first. Until the counters have
+# something to say, this is the order — by search demand, most to least.
+RAIL_ORDER = ['compress-image', 'compress-pdf', 'passport-photo', 'merge-pdf', 'image-to-text', 'resize-image',
+              'images-to-pdf', 'split-pdf', 'sign-pdf', 'crop-image', 'qr-code-generator', 'remove-exif', 'trim-video',
+              'mp3-cutter', 'pdf-ocr', 'organize-pdf', 'delete-pdf-pages', 'rotate-pdf', 'unzip', 'ringtone-maker', 'view-metadata']
+GROUP_FAM = {'image': 'image', 'pdf': 'doc', 'media': 'video', 'other': 'data'}
+
 # /compress-image-to-50kb/ and friends: the same tool, preset, with its own copy
 KB_PAGES = {
     'compress-image': [20, 50, 100, 200, 500],

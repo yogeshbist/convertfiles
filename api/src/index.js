@@ -114,7 +114,11 @@ async function publicTotals(env) {
   const t = {};
   for (const row of r.results) t[row.metric] = row.n;
   const first = await env.DB.prepare('SELECT MIN(day) AS d FROM daily').first();
-  const res = json({ conv: t.conv || 0, views: t.views || 0, since: (first && first.d) || null });
+  // how often each tool has been used, so the home page can list the popular ones first
+  const tr = await env.DB.prepare("SELECT key, SUM(n) AS n FROM daily WHERE metric = 'tool' GROUP BY key").all();
+  const tools = {};
+  for (const row of tr.results) if (row.key) tools[row.key] = row.n;
+  const res = json({ conv: t.conv || 0, views: t.views || 0, since: (first && first.d) || null, tools });
   res.headers.set('cache-control', 'public, max-age=60');
   return res;
 }

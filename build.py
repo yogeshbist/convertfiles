@@ -190,11 +190,13 @@ def hide_converter(page):
 
 def strip_home(page):
     """Generated pages keep the converter and their own content, not the home
-    page's editorial blocks — 400 copies of the same FAQ helps nobody."""
-    a, b = page.find('<!-- home:only -->'), page.find('<!-- /home:only -->')
-    if a < 0 or b < 0:
-        return page
-    return page[:a] + page[b + len('<!-- /home:only -->'):]
+    page's editorial blocks — 400 copies of the same FAQ helps nobody. The
+    tools rail beside the converter is the home page's too."""
+    for start, end in (('<!-- home:only -->', '<!-- /home:only -->'), ('<!-- rail:only -->', '<!-- /rail:only -->')):
+        a, b = page.find(start), page.find(end)
+        if a >= 0 and b >= 0:
+            page = page[:a] + page[b + len(end):]
+    return page
 
 
 def write(path, text):
@@ -234,6 +236,17 @@ for _p in load_json('popular'):
     _pop.append('<a href="/%s-to-%s/">%s<span style="color:var(--pop)">&rarr;</span>%s<span class="lbl">%s</span></a>'
                 % (_p['from'], _p['to'], chip_html(_p['from']), chip_html(_p['to']), esc(_p['label'])))
 index = index.replace('<div class="pop" id="popular"></div>', '<div class="pop" id="popular">%s</div>' % ''.join(_pop))
+
+# every tool, one line each, most wanted first; app.js reorders by real usage
+_rail = ['<h2 class="rail-h">Tools <span class="u">most used first</span></h2><ol class="rail-list">']
+_by = {t['slug']: t for t in TOOLPAGES.TOOLS}
+for _slug in TOOLPAGES.RAIL_ORDER:
+    _t = _by[_slug]
+    _rail.append('<li><a href="/%s/" data-tool="%s"><i class="dot" style="--fam:var(--f-%s)"></i><span>%s</span><b class="cnt" hidden></b></a></li>'
+                 % (_slug, _slug, TOOLPAGES.GROUP_FAM[_t['group']], esc(_t['name'])))
+_rail.append('</ol><a class="rail-all" href="/tools/">All %d tools &rarr;</a>' % len(TOOLPAGES.TOOLS))
+index = index.replace('<!-- rail:list -->', ''.join(_rail))
+index = index.replace('<div class="convert-grid">', '<div class="convert-grid two">', 1)
 _gc = []
 for _g in [g for g in CONTENT['GUIDES'] if g.get('lang') != 'hi'][:3]:
     _words = len(re.sub(r'<[^>]+>', '', ' '.join(_g['body'])).split())

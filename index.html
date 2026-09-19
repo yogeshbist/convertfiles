@@ -26,7 +26,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=70c35bb6">
+<link rel="stylesheet" href="/css/app.css?v=a448435e">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -66,6 +66,8 @@
 
   <!-- ================================================= CONVERT -->
   <section class="view" id="view-convert">
+    <div class="convert-grid two">
+    <div class="convert-main">
     <div class="hero">
       <span class="eyebrow"><svg><use href="#i-bolt"/></svg>Convert your files in seconds</span>
       <h1>Free Online File Converter</h1>
@@ -124,6 +126,11 @@
 
       <div class="done" id="done" hidden></div>
       <div class="ad" id="ad-result" hidden></div>
+    </div>
+    </div>
+    <!-- rail:only -->
+    <aside class="tools-rail" id="tools-rail" aria-label="Tools, most used first"><h2 class="rail-h">Tools <span class="u">most used first</span></h2><ol class="rail-list"><li><a href="/compress-image/" data-tool="compress-image"><i class="dot" style="--fam:var(--f-image)"></i><span>Compress image to a size</span><b class="cnt" hidden></b></a></li><li><a href="/compress-pdf/" data-tool="compress-pdf"><i class="dot" style="--fam:var(--f-doc)"></i><span>Compress PDF to a size</span><b class="cnt" hidden></b></a></li><li><a href="/passport-photo/" data-tool="passport-photo"><i class="dot" style="--fam:var(--f-image)"></i><span>Passport photo maker</span><b class="cnt" hidden></b></a></li><li><a href="/merge-pdf/" data-tool="merge-pdf"><i class="dot" style="--fam:var(--f-doc)"></i><span>Merge PDF</span><b class="cnt" hidden></b></a></li><li><a href="/image-to-text/" data-tool="image-to-text"><i class="dot" style="--fam:var(--f-data)"></i><span>Image to text (OCR)</span><b class="cnt" hidden></b></a></li><li><a href="/resize-image/" data-tool="resize-image"><i class="dot" style="--fam:var(--f-image)"></i><span>Resize image</span><b class="cnt" hidden></b></a></li><li><a href="/images-to-pdf/" data-tool="images-to-pdf"><i class="dot" style="--fam:var(--f-doc)"></i><span>Images to one PDF</span><b class="cnt" hidden></b></a></li><li><a href="/split-pdf/" data-tool="split-pdf"><i class="dot" style="--fam:var(--f-doc)"></i><span>Split PDF</span><b class="cnt" hidden></b></a></li><li><a href="/sign-pdf/" data-tool="sign-pdf"><i class="dot" style="--fam:var(--f-doc)"></i><span>Sign PDF</span><b class="cnt" hidden></b></a></li><li><a href="/crop-image/" data-tool="crop-image"><i class="dot" style="--fam:var(--f-image)"></i><span>Crop image</span><b class="cnt" hidden></b></a></li><li><a href="/qr-code-generator/" data-tool="qr-code-generator"><i class="dot" style="--fam:var(--f-data)"></i><span>QR code generator</span><b class="cnt" hidden></b></a></li><li><a href="/remove-exif/" data-tool="remove-exif"><i class="dot" style="--fam:var(--f-image)"></i><span>Remove EXIF / metadata</span><b class="cnt" hidden></b></a></li><li><a href="/trim-video/" data-tool="trim-video"><i class="dot" style="--fam:var(--f-video)"></i><span>Trim video</span><b class="cnt" hidden></b></a></li><li><a href="/mp3-cutter/" data-tool="mp3-cutter"><i class="dot" style="--fam:var(--f-video)"></i><span>MP3 cutter</span><b class="cnt" hidden></b></a></li><li><a href="/pdf-ocr/" data-tool="pdf-ocr"><i class="dot" style="--fam:var(--f-data)"></i><span>PDF OCR</span><b class="cnt" hidden></b></a></li><li><a href="/organize-pdf/" data-tool="organize-pdf"><i class="dot" style="--fam:var(--f-doc)"></i><span>Organise PDF pages</span><b class="cnt" hidden></b></a></li><li><a href="/delete-pdf-pages/" data-tool="delete-pdf-pages"><i class="dot" style="--fam:var(--f-doc)"></i><span>Delete PDF pages</span><b class="cnt" hidden></b></a></li><li><a href="/rotate-pdf/" data-tool="rotate-pdf"><i class="dot" style="--fam:var(--f-doc)"></i><span>Rotate PDF</span><b class="cnt" hidden></b></a></li><li><a href="/unzip/" data-tool="unzip"><i class="dot" style="--fam:var(--f-data)"></i><span>Unzip online</span><b class="cnt" hidden></b></a></li><li><a href="/ringtone-maker/" data-tool="ringtone-maker"><i class="dot" style="--fam:var(--f-video)"></i><span>Ringtone maker</span><b class="cnt" hidden></b></a></li><li><a href="/view-metadata/" data-tool="view-metadata"><i class="dot" style="--fam:var(--f-image)"></i><span>View photo metadata</span><b class="cnt" hidden></b></a></li></ol><a class="rail-all" href="/tools/">All 21 tools &rarr;</a></aside>
+    <!-- /rail:only -->
     </div>
 
     <!-- page:body -->
@@ -254,12 +261,12 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script defer src="/js/formats.js?v=70c35bb6"></script>
-<script defer src="/js/encoders.js?v=70c35bb6"></script>
-<script defer src="/js/docmodel.js?v=70c35bb6"></script>
-<script defer src="/js/convert.js?v=70c35bb6"></script>
-<script defer src="/js/db.js?v=70c35bb6"></script>
-<script defer src="/js/content.js?v=70c35bb6"></script>
-<script defer src="/js/app.js?v=70c35bb6"></script>
+<script defer src="/js/formats.js?v=a448435e"></script>
+<script defer src="/js/encoders.js?v=a448435e"></script>
+<script defer src="/js/docmodel.js?v=a448435e"></script>
+<script defer src="/js/convert.js?v=a448435e"></script>
+<script defer src="/js/db.js?v=a448435e"></script>
+<script defer src="/js/content.js?v=a448435e"></script>
+<script defer src="/js/app.js?v=a448435e"></script>
 </body>
 </html>

@@ -516,6 +516,16 @@
       return new Blob(out, { type: 'audio/mpeg' });
     });
   }
+  // The [t0, t1) window of an AudioBuffer as a new buffer (whole buffer if the window covers it).
+  function sliceBuffer(buf, t0, t1) {
+    var a = Math.max(0, Math.floor((t0 || 0) * buf.sampleRate));
+    var b = Math.min(buf.length, Math.ceil((t1 == null ? buf.duration : t1) * buf.sampleRate));
+    if (a === 0 && b === buf.length) return buf;
+    var AC = root.OfflineAudioContext || root.webkitOfflineAudioContext;
+    var out = new AC(buf.numberOfChannels, Math.max(1, b - a), buf.sampleRate).createBuffer(buf.numberOfChannels, Math.max(1, b - a), buf.sampleRate);
+    for (var c = 0; c < buf.numberOfChannels; c++) out.copyToChannel(buf.getChannelData(c).subarray(a, b), c);
+    return out;
+  }
   function resampleBuffer(buf, rate, channels) {
     var frames = Math.ceil(buf.duration * rate);
     var oac = new OfflineAudioContext(channels, frames, rate);
@@ -598,11 +608,26 @@
       }
       v.preload = 'auto'; v.muted = true; v.playsInline = true;
       v.src = URL.createObjectURL(file);
-      v.onloadedmetadata = function () { if (!settled) { settled = true; res(v); } };
+      v.onloadedmetadata = function () { if (settled) return; trueDuration(v, file).then(function () { if (!settled) { settled = true; res(v); } }); };
       v.onerror = function () { fail('this browser cannot decode that video container/codec'); };
       // metadata can silently never arrive (unsupported codec, background tab),
       // so give up rather than leaving the conversion spinning forever.
       setTimeout(function () { fail('gave up waiting for the video to open — try a different container, or keep this tab in the foreground'); }, 20000);
+    });
+  }
+  // A WebM straight out of MediaRecorder (screen and camera recordings) carries
+  // no duration, or only that of its first chunk. Seeking past the end makes the
+  // browser scan the file and report the real one.
+  function trueDuration(v, file) {
+    var looksWebm = /webm|matroska|mkv/i.test((file && (file.type + ' ' + file.name)) || '');
+    if (isFinite(v.duration) && v.duration > 0 && !looksWebm) return Promise.resolve(v.duration);
+    return new Promise(function (res) {
+      var done = false;
+      function finish() { if (done) return; done = true; v.removeEventListener('durationchange', finish); v.removeEventListener('seeked', finish); try { v.currentTime = 0; } catch (e) {} res(v.duration); }
+      v.addEventListener('durationchange', finish);
+      v.addEventListener('seeked', finish);
+      try { v.currentTime = 1e101; } catch (e) { finish(); }
+      setTimeout(finish, 4000);
     });
   }
   function seek(v, t) {
@@ -652,7 +677,7 @@
   // Re-encode any browser-decodable video into MP4 (H.264 + AAC) or WebM (VP9 + Opus).
   function transcodeVideo(ctx, container) {
     if (typeof root.VideoEncoder !== 'function') return Promise.reject(new Error('this browser has no WebCodecs video encoder'));
-    var v, W, H, fps, total, muxer, target, M, hasAudio = false, audioBuf = null, ch = 2;
+    var v, W, H, fps, total, muxer, target, M, hasAudio = false, audioBuf = null, ch = 2, t0 = 0, t1 = 0;
     var isMp4 = container === 'mp4';
     return loadVideo(ctx.file).then(function (vid) {
       v = vid;
@@ -662,9 +687,14 @@
       var maxW = ctx.opts.width || Math.min(srcW, 1920);
       var s = Math.min(1, maxW / srcW);
       W = even(srcW * s); H = even(srcH * s);
-      total = Math.max(1, Math.round((v.duration || 0) * fps));
+      // an optional trim window; the whole clip by default
+      t0 = Math.max(0, ctx.opts.start || 0);
+      t1 = Math.min(v.duration || 0, ctx.opts.end || v.duration || 0);
+      if (t1 <= t0) throw new Error('the end of the trim must come after its start');
+      total = Math.max(1, Math.round((t1 - t0) * fps));
       ctx.log('source ' + srcW + 'x' + srcH + ', ' + (v.duration || 0).toFixed(1) + ' s — output ' + W + 'x' + H + ' @ ' + fps + ' fps');
-      return decodeAudio(ctx.file).then(function (b) { audioBuf = b; hasAudio = true; ch = Math.min(2, b.numberOfChannels); },
+      if (ctx.opts.mute) { ctx.log('audio track dropped'); return; }
+      return decodeAudio(ctx.file).then(function (b) { audioBuf = sliceBuffer(b, t0, t1); hasAudio = true; ch = Math.min(2, b.numberOfChannels); },
                                         function () { ctx.log('no decodable audio track — video only'); });
     }).then(function () {
       return need(isMp4 ? 'mp4muxer' : 'webmmuxer');
@@ -694,7 +724,7 @@
         var i = 0;
         function step() {
           if (i >= total) { enc.flush().then(function () { enc.close(); res(); }, rej); return; }
-          seek(v, i / fps).then(function () {
+          seek(v, t0 + i / fps).then(function () {
             var ts = Math.round(i * 1e6 / fps), src = v;
             if (scaled) { g.drawImage(v, 0, 0, W, H); src = scaled; }
             var frame = new root.VideoFrame(src, { timestamp: ts, duration: Math.round(1e6 / fps) });
@@ -1413,6 +1443,13 @@
     graph: G, run: run, rule: rule, targetsFor: targetsFor, sourcesList: sourcesList,
     pairCount: pairCount, baseName: baseName, gzipSupported: gzipSupported,
     defaultTarget: defaultTarget, ready: ready,
+    // shared machinery for the stand-alone tools in tools.js
+    _kit: {
+      decodeImage: decodeImage, canvasOf: canvasOf, toBlob: toBlob, loadImg: loadImg, need: need,
+      loadVideo: loadVideo, seek: seek, trueDuration: trueDuration, transcodeVideo: transcodeVideo, nextTick: nextTick,
+      decodeAudio: decodeAudio, bufferToMp3: bufferToMp3, bufferToWav: bufferToWav, sliceBuffer: sliceBuffer, resampleBuffer: resampleBuffer,
+      zipEntries: zipEntries, entriesToZip: entriesToZip, gunzip: gunzip
+    },
     // pure helpers exposed for the headless test harness in test/
     _pure: {
       parseObj: parseObj, parseStl: parseStl, parsePly: parsePly,

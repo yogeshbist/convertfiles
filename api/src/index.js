@@ -89,6 +89,11 @@ async function event(request, env) {
     add('device', ev.d === 'mobile' ? 'mobile' : 'desktop');
     const ref = clean(ev.ref).toLowerCase();
     if (ref) add('ref', ref);
+  } else if (ev.t === 'tool') {
+    const tool = clean(ev.tool, 40).toLowerCase();
+    if (!/^[a-z0-9-]{2,40}$/.test(tool)) return json({ error: 'bad tool' }, 400);
+    add('conv');                       // a tool run is a conversion in the site's own total
+    add('tool', tool);
   } else if (ev.t === 'convert' || ev.t === 'fail') {
     const from = clean(ev.from, 12).toLowerCase(), to = clean(ev.to, 12).toLowerCase();
     if (!/^[a-z0-9*]{1,12}$/.test(from) || !/^[a-z0-9]{1,12}$/.test(to)) return json({ error: 'bad pair' }, 400);

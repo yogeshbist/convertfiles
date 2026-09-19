@@ -1,0 +1,85 @@
+/* tools.css — only loaded on tool pages. Everything shares app.css tokens. */
+.tool{margin-top:6px}
+.t-picked{margin-top:0}
+.t-opts{margin-top:14px;flex-direction:column;align-items:stretch;gap:0}
+.t-opts .opt{flex-wrap:wrap}
+.t-opts input[type=text]{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:6px 9px;font-weight:600;font-family:inherit;color:var(--ink)}
+.t-opts input[type=color]{width:38px;height:30px;border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:2px}
+.t-note{margin:6px 0 4px;line-height:1.5;font-size:12.5px;max-width:70ch}
+.t-presets{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:6px 0}
+.t-chips{display:flex;flex-wrap:wrap;gap:8px;padding:8px 0}
+.t-chip{border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.t-chip:hover{border-color:var(--accent);color:var(--ink)}
+.t-chip.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.t-done{display:block;padding:18px}
+.t-done .done-row{gap:14px}
+.t-done .done-row .info{min-width:0}
+.t-done .picked-foot{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.tbadge{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.02em}
+.t-text{width:100%;min-height:160px;margin:10px 0 8px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:13px/1.5 var(--mono);color:var(--ink);resize:vertical}
+
+/* stage: the interactive area a tool puts between the file list and the options */
+.t-stage{margin-top:14px;background:var(--surface-2);border-radius:var(--r);padding:14px 16px}
+.t-stage h4{margin:8px 0 8px;font-family:var(--display);font-size:14px;color:var(--ink-2)}
+.t-stage-box{display:flex;flex-direction:column;align-items:center;gap:10px}
+.t-stage-canvas{max-width:100%;height:auto;border-radius:12px;cursor:grab;background:#0b0f14;box-shadow:var(--shadow)}
+.t-stage-canvas:active{cursor:grabbing}
+.t-stage-tools{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:13px;color:var(--ink-2)}
+.t-stage-tools input[type=range]{width:160px}
+
+/* PDF page thumbnails */
+.t-pages{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:12px;margin-top:10px}
+.t-pages.small{grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:8px}
+.t-page{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center;transition:opacity .15s,border-color .15s}
+.t-page.del{opacity:.38}
+.t-page.del .t-page-th::after{content:"deleted";position:absolute;inset:0;display:grid;place-items:center;color:var(--err);font-weight:700;font-size:12px;background:color-mix(in srgb,var(--err) 10%,transparent)}
+.t-page.sel{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 35%,transparent)}
+.t-pages.small .t-page{padding:5px;cursor:pointer}
+.t-page-th{position:relative;display:grid;place-items:center;overflow:hidden;background:#fff;border-radius:6px;aspect-ratio:3/4}
+.t-page-th canvas{max-width:100%;max-height:100%;transition:transform .2s}
+.t-page-n{margin:6px 0 4px;font-size:12px;color:var(--muted);font-weight:600}
+.t-page-acts{display:flex;justify-content:center;gap:4px}
+.t-page-acts .btn.icon{width:30px;height:30px;padding:4px;color:var(--ink-2)}
+.t-page-acts .btn.icon:hover{color:var(--accent);border-color:var(--accent)}
+
+/* trim / cut controls */
+.t-video{width:100%;max-height:360px;border-radius:12px;background:#000}
+.t-trim{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin-top:10px;font-size:13px;color:var(--ink-2)}
+.t-trim label{font-weight:600}
+.t-trim input[type=text]{width:84px;background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:6px 9px;font-weight:600;font-family:var(--mono);color:var(--ink)}
+.t-trim input[type=range]{width:150px}
+.t-wave{width:100%;height:120px;border-radius:12px;cursor:ew-resize;touch-action:none}
+
+/* metadata */
+.t-meta{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:10px}
+.t-meta h4{margin:0 0 8px;font-size:13.5px;word-break:break-all}
+.t-meta-table{border-collapse:collapse;font-size:13px;width:100%}
+.t-meta-table th{text-align:left;color:var(--muted);font-weight:600;padding:4px 12px 4px 0;white-space:nowrap;vertical-align:top;width:130px}
+.t-meta-table td{padding:4px 0;color:var(--ink);word-break:break-word}
+.t-meta-table tr.gps td a{color:var(--err);font-weight:600}
+
+/* QR */
+.t-qr-forms{display:flex;flex-direction:column}
+.t-qr-preview{display:flex;flex-direction:column;align-items:center;gap:10px}
+.t-qr-preview canvas{border-radius:10px;box-shadow:var(--shadow);background:#fff;max-width:100%;height:auto}
+
+/* archive listing */
+.t-files{width:100%;border-collapse:collapse;margin-top:10px;font-size:13.5px}
+.t-files th{text-align:left;color:var(--muted);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line)}
+.t-files td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+.t-files td.name{word-break:break-all;font-weight:500}
+.t-files .btn.icon{width:32px;height:32px;padding:4px}
+
+/* signing */
+.t-sig{margin-bottom:10px}
+.t-sigpad{width:100%;max-width:600px;height:auto;background:#fff;border:1px dashed var(--line-2);border-radius:12px;cursor:crosshair;touch-action:none;display:block}
+.t-place{position:relative;display:inline-block;max-width:100%;margin-top:8px;box-shadow:var(--shadow-lg);border-radius:6px;overflow:hidden;background:#fff}
+.t-page-canvas{display:block;max-width:100%;height:auto}
+.t-sig-overlay{position:absolute;left:0;top:0;cursor:move;outline:2px dashed var(--accent);outline-offset:2px;touch-action:none;user-select:none}
+.t-sig-overlay img{display:block;width:100%;height:100%;pointer-events:none}
+
+@media (max-width:640px){
+  .t-stage{padding:12px}
+  .t-pages{grid-template-columns:repeat(auto-fill,minmax(104px,1fr))}
+  .t-opts .opt{padding:8px 0}
+}

@@ -18,6 +18,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'seo
 import formats as SEO          # noqa: E402
 import pages as PAGES          # noqa: E402
 import keywords as KW          # noqa: E402
+import toolpages as TOOLPAGES  # noqa: E402
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
@@ -79,7 +80,7 @@ def family(ext):
 # ------------------------------------------------------------- asset version
 def asset_version():
     h = hashlib.sha1()
-    for f in sorted(os.listdir('js')) + ['app.css']:
+    for f in sorted(os.listdir('js')) + ['app.css', 'tools.css']:
         p = os.path.join('js', f) if f.endswith('.js') else os.path.join('css', f)
         h.update(open(p, 'rb').read())
     return h.hexdigest()[:8]
@@ -234,7 +235,7 @@ for _p in load_json('popular'):
                 % (_p['from'], _p['to'], chip_html(_p['from']), chip_html(_p['to']), esc(_p['label'])))
 index = index.replace('<div class="pop" id="popular"></div>', '<div class="pop" id="popular">%s</div>' % ''.join(_pop))
 _gc = []
-for _g in CONTENT['GUIDES'][:3]:
+for _g in [g for g in CONTENT['GUIDES'] if g.get('lang') != 'hi'][:3]:
     _words = len(re.sub(r'<[^>]+>', '', ' '.join(_g['body'])).split())
     _gc.append('<a class="gcard" href="/guides/%s/"><span class="cat" style="--fam:var(--f-%s)">%s</span>'
                '<h3>%s</h3><p>%s</p><span class="rt">%d min read</span></a>'
@@ -245,9 +246,15 @@ GENERATED.append('index.html')
 BASE = index
 
 
+
 # ---------------------------------------------------------- landing pages
 GRAPH = json.load(open('content/pairs.json'))['graph']
 SEO_PAIRS = SEO.seo_pairs(GRAPH)
+
+# shared by the tool pages, the guides and the hubs
+TOOL_BY_SLUG = {t['slug']: t for t in TOOLPAGES.all_pages()}
+LANDING_SLUGS = set('%s-to-%s' % p for p in SEO_PAIRS)
+HERO_P = '<p>Convert any file, right here &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>'
 PAIR_SET = set(SEO_PAIRS)
 
 
@@ -374,21 +381,46 @@ def render_body(lines):
     return '\n'.join(out)
 
 
+GUIDE_BY_SLUG = {g['slug']: g for g in CONTENT['GUIDES']}
+
+
+def guide_path(g):
+    return ('hi/guides/%s/' if g.get('lang') == 'hi' else 'guides/%s/') % g['slug']
+
+
+def hreflang_links(g):
+    """<link rel=alternate> pairs when a guide exists in both languages."""
+    other = GUIDE_BY_SLUG.get(g.get('alt') or '')
+    if not other:
+        return ''
+    en, hi = (other, g) if g.get('lang') == 'hi' else (g, other)
+    return ('<link rel="alternate" hreflang="en" href="%s/%s">' % (DOMAIN, guide_path(en)) +
+            '<link rel="alternate" hreflang="hi" href="%s/%s">' % (DOMAIN, guide_path(hi)) +
+            '<link rel="alternate" hreflang="x-default" href="%s/%s">' % (DOMAIN, guide_path(en)))
+
+
 for gd in CONTENT['GUIDES']:
-    path = 'guides/%s/' % gd['slug']
+    path = guide_path(gd)
+    hindi = gd.get('lang') == 'hi'
     words = len(re.sub(r'<[^>]+>', '', ' '.join(gd['body'])).split())
     article = ['<div class="cat">%s</div>' % esc(gd['cat']), '<h1>%s</h1>' % esc(gd['title']),
-               '<div class="meta">%d min read · Convert Files guides</div>' % max(2, round(words / 200)),
+               '<div class="meta">%s</div>' % (('%d मिनट में पढ़ें · Convert Files' % max(2, round(words / 180))) if hindi else ('%d min read · Convert Files guides' % max(2, round(words / 200)))),
                '<div class="body">' + render_body(gd['body']) + '</div>']
-    if gd.get('tryFrom'):
-        article.append('<div class="try"><span class="t">Try it: convert a .%s to .%s — free, in your browser.</span><a class="btn primary" href="/%s-to-%s/">Convert .%s to .%s</a></div>'
-                       % (gd['tryFrom'], gd['tryTo'], gd['tryFrom'], gd['tryTo'], gd['tryFrom'], gd['tryTo']))
-    _, gcrumb_ld = crumbs([('Home', '/'), ('Guides', '/guides/'), (gd['title'], None)])
+    if gd.get('tryTool'):
+        article.append('<div class="try"><span class="t">%s</span><a class="btn primary" href="/%s/">%s</a></div>'
+                       % (esc(gd.get('tryLabel') or 'Try it — free, in your browser.'), gd['tryTool'], esc(TOOL_BY_SLUG[gd['tryTool']]['name'] if gd['tryTool'] in TOOL_BY_SLUG else gd['tryTool'])))
+    elif gd.get('tryFrom'):
+        article.append('<div class="try"><span class="t">%s</span><a class="btn primary" href="/%s-to-%s/">Convert .%s to .%s</a></div>'
+                       % (esc(gd.get('tryLabel') or ('Try it: convert a .%s to .%s — free, in your browser.' % (gd['tryFrom'], gd['tryTo']))), gd['tryFrom'], gd['tryTo'], gd['tryFrom'], gd['tryTo']))
+    guides_crumb = ('हिन्दी गाइड', '/hi/guides/') if hindi else ('Guides', '/guides/')
+    _, gcrumb_ld = crumbs([('Home', '/'), guides_crumb, (gd['title'], None)])
     jsonld = [gcrumb_ld, {'@context': 'https://schema.org', '@type': 'Article', 'headline': gd['title'], 'description': gd['teaser'],
               'author': {'@type': 'Organization', 'name': 'Convert Files'}, 'publisher': {'@type': 'Organization', 'name': 'Convert Files'},
               'mainEntityOfPage': DOMAIN + '/' + path, 'image': DOMAIN + '/assets/og.png'}]
     page = replace_block(BASE, 'page:meta', page_meta(gd.get('seo_title', gd['title']) + ' \u00b7 Convert Files', gd['teaser'], path, kind='article',
-                                                       extra_meta='<meta name="cf-guide" content="%s">' % gd['slug'], jsonld=jsonld))
+                                                       extra_meta='<meta name="cf-guide" content="%s">' % gd['slug'] + hreflang_links(gd), jsonld=jsonld))
+    if hindi:
+        page = page.replace('<html lang="en">', '<html lang="hi">', 1)
     page = page.replace('<h1>Free Online File Converter</h1>',
                         '<p class="lede">Convert any file, right here.</p>')
     page = replace_block(page, 'page:body', '')
@@ -398,7 +430,7 @@ for gd in CONTENT['GUIDES']:
     page = page.replace('<div id="guides-list">', '<div id="guides-list" hidden>')
     page = page.replace('<article class="article" id="article" hidden></article>', '<article class="article" id="article">' + '\n'.join(article) + '</article>')
     page = page.replace('id="nav-convert" role="tab" aria-selected="true"', 'id="nav-convert" role="tab" aria-selected="false"')
-    gc_html, gc_ld = crumbs([('Home', '/'), ('Guides', '/guides/'), (gd['title'], None)])
+    gc_html, gc_ld = crumbs([('Home', '/'), guides_crumb, (gd['title'], None)])
     page = page.replace('<article class="article" id="article">', '<article class="article" id="article">' + gc_html)
     write(path + 'index.html', strip_home(page))
 
@@ -409,9 +441,12 @@ gi_crumb, gi_crumb_ld = crumbs([('Home', '/'), ('Guides', None)])
 gi.append(gi_crumb)
 gi.append('<p class="lead">Plain-language explanations of the file formats people wrestle with most, and what actually '
           'happens when you convert between them.</p>')
-for gd in CONTENT['GUIDES']:
+EN_GUIDES = [g for g in CONTENT['GUIDES'] if g.get('lang') != 'hi']
+HI_GUIDES = [g for g in CONTENT['GUIDES'] if g.get('lang') == 'hi']
+for gd in EN_GUIDES:
     gi.append('<article class="hub-guide"><h2><a href="/guides/%s/">%s</a></h2><p>%s</p></article>'
               % (gd['slug'], esc(gd['title']), esc(gd['teaser'])))
+gi.append('<p class="seo-more"><a href="/hi/guides/" lang="hi">हिन्दी में गाइड पढ़ें</a></p>')
 gi.append('</section>')
 gi_page = replace_block(BASE, 'page:meta', page_meta(
     'Guides \u2014 file formats explained without the jargon',
@@ -420,8 +455,159 @@ gi_page = replace_block(BASE, 'page:meta', page_meta(
 gi_page = replace_block(gi_page, 'page:body', '\n'.join(gi))
 gi_page = gi_page.replace('<h1>Free Online File Converter</h1>', '<h1>Guides</h1>')
 gi_page = gi_page.replace('<p>Convert any file, right here &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>',
-                          '<p>%d guides to the formats people ask about most.</p>' % len(CONTENT['GUIDES']))
+                          '<p>%d guides to the formats people ask about most.</p>' % len(EN_GUIDES))
 write('guides/index.html', hide_converter(strip_home(gi_page)))
+
+# ---- /hi/guides/: the Hindi index
+hg = ['<section class="seo">']
+hg_crumb, hg_crumb_ld = crumbs([('Home', '/'), ('हिन्दी गाइड', None)])
+hg.append(hg_crumb)
+hg.append('<p class="lead">फोटो और PDF का साइज़ कम करना, पासपोर्ट फोटो बनाना, iPhone की फोटो खोलना — आसान हिन्दी में, बिना किसी ऐप के। सब कुछ आपके फोन या कंप्यूटर के ब्राउज़र में होता है; कोई फाइल अपलोड नहीं होती।</p>')
+for gd in HI_GUIDES:
+    hg.append('<article class="hub-guide"><h2><a href="/hi/guides/%s/">%s</a></h2><p>%s</p></article>' % (gd['slug'], esc(gd['title']), esc(gd['teaser'])))
+hg.append('<p class="seo-more"><a href="/guides/">Guides in English</a> &middot; <a href="/tools/">सभी टूल</a></p>')
+hg.append('</section>')
+hg_page = replace_block(BASE, 'page:meta', page_meta('हिन्दी गाइड — फोटो, PDF और फाइल कन्वर्ट करने के आसान तरीके',
+                                                    'फोटो का साइज़ कम करना, PDF छोटी करना, पासपोर्ट साइज़ फोटो बनाना और HEIC को JPG में बदलना — हिन्दी में, फ्री, बिना अपलोड।',
+                                                    'hi/guides/', jsonld=[hg_crumb_ld],
+                                                    extra_meta='<link rel="alternate" hreflang="en" href="%s/guides/"><link rel="alternate" hreflang="hi" href="%s/hi/guides/">' % (DOMAIN, DOMAIN)))
+hg_page = hg_page.replace('<html lang="en">', '<html lang="hi">', 1)
+hg_page = replace_block(hg_page, 'page:body', '\n'.join(hg))
+hg_page = hg_page.replace('<h1>Free Online File Converter</h1>', '<h1>हिन्दी गाइड</h1>')
+hg_page = hg_page.replace(HERO_P, '<p>%d गाइड, आसान हिन्दी में।</p>' % len(HI_GUIDES))
+write('hi/guides/index.html', hide_converter(strip_home(hg_page)))
+
+# ------------------------------------------------------------- tool pages
+# /compress-image/, /merge-pdf/ and friends: the converter's shell, the drop
+# zone, and <meta name="cf-tool"> so tools.js knows which tool to run.
+TOOL_CSS = '<style>' + open('css/tools.css').read().replace('</style>', '') + '</style>'
+TOOL_JS = '<script defer src="/js/tools.js?v=%s"></script>' % VER
+
+
+def related_links(slugs):
+    out = []
+    for s in slugs:
+        if s in TOOL_BY_SLUG:
+            out.append('<a href="/%s/">%s</a>' % (s, esc(TOOL_BY_SLUG[s]['h1'] if TOOL_BY_SLUG[s].get('parent') else TOOL_BY_SLUG[s]['name'])))
+        elif s in LANDING_SLUGS:
+            f, t = s.split('-to-')
+            out.append('<a href="/%s/">%s to %s</a>' % (s, f.upper(), t.upper()))
+    return ''.join(out)
+
+
+for t in TOOLPAGES.all_pages():
+    path = t['slug'] + '/'
+    tool_id = t.get('parent') or t['slug']
+    extra = '<meta name="cf-tool" content="%s">' % tool_id
+    if t.get('preset'):
+        extra += '<meta name="cf-tool-preset" content="%s">' % esc(json.dumps(t['preset']))
+    extra += '\n' + TOOL_CSS
+    crumb_html, crumb_ld = crumbs([('Home', '/'), ('Tools', '/tools/'), (t['h1'], None)])
+    steps = [s for s in t['steps'] if s[0]]
+    howto_ld = {'@context': 'https://schema.org', '@type': 'HowTo', 'name': t['h1'], 'description': t['desc'],
+                'tool': {'@type': 'HowToTool', 'name': 'Convert Files (any modern browser)'},
+                'step': [{'@type': 'HowToStep', 'position': i + 1, 'name': s[0], 'text': s[1] or s[0]} for i, s in enumerate(steps)]}
+    faq_ld = {'@context': 'https://schema.org', '@type': 'FAQPage',
+              'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in t['faq']]}
+    app_ld = {'@context': 'https://schema.org', '@type': 'SoftwareApplication', 'name': t['h1'], 'applicationCategory': 'UtilitiesApplication',
+              'operatingSystem': 'Any', 'browserRequirements': 'Requires a modern browser', 'url': DOMAIN + '/' + path,
+              'offers': {'@type': 'Offer', 'price': '0', 'priceCurrency': 'INR'}, 'description': t['desc']}
+    body = ['<section class="tool" id="tool" aria-label="%s"></section>' % esc(t['h1']),
+            '<section class="seo">', crumb_html,
+            '<p class="lead">%s</p>' % esc(t['intro']),
+            '<h2>How to use it</h2><ol class="howto">' + ''.join('<li><b>%s</b>%s</li>' % (esc(s[0]), (' ' + esc(s[1])) if s[1] else '') for s in steps) + '</ol>',
+            '<h2>Questions</h2><dl class="faq-list">' + ''.join('<dt>%s</dt><dd>%s</dd>' % (esc(q), esc(a)) for q, a in t['faq']) + '</dl>',
+            '<h2>Related tools</h2><div class="rel">%s</div>' % related_links(t.get('related', [])),
+            '<p class="seo-more"><a href="/tools/">All tools</a> &middot; <a href="/formats/">All %d conversions</a></p>' % len(SEO_PAIRS),
+            '</section>']
+    page = replace_block(BASE, 'page:meta', page_meta(t['title'], t['desc'], path, extra_meta=extra, jsonld=[crumb_ld, howto_ld, faq_ld, app_ld]))
+    page = replace_block(page, 'page:body', '\n'.join(body))
+    page = page.replace('<h1>Free Online File Converter</h1>', '<h1>%s</h1>' % esc(t['h1']))
+    page = page.replace(HERO_P, '<p>%s</p>' % esc(t['desc']))
+    page = page.replace('<div class="section">', '<div class="section" hidden>', 1)          # the format chooser is the converter's, not ours
+    page = page.replace('</body>', TOOL_JS + '\n</body>')
+    write(path + 'index.html', strip_home(page))
+
+# ---- /tools/ hub
+th = ['<section class="seo hub">']
+th_crumb, th_crumb_ld = crumbs([('Home', '/'), ('Tools', None)])
+th.append(th_crumb)
+th.append('<p class="lead">Compress, resize and crop pictures, make a passport photo, merge, split, sign and shrink PDFs, read text out of '
+          'a scan, trim a video, cut a ringtone, remove the hidden data from a photo, make a QR code, open a zip. Every one of them runs '
+          'inside your browser: nothing is uploaded, nothing is watermarked, nothing costs anything.</p>')
+for gid, gname in TOOLPAGES.GROUPS:
+    members = [t for t in TOOLPAGES.TOOLS if t['group'] == gid]
+    th.append('<h2>%s</h2>' % gname)
+    for t in members:
+        th.append('<article class="hub-guide"><h3><a href="/%s/">%s</a></h3><p>%s</p></article>' % (t['slug'], esc(t['name']), esc(t['desc'])))
+th.append('<h2>Fixed sizes</h2><div class="rel">%s</div>' % ''.join(
+    '<a href="/%s/">%s</a>' % (p['slug'], esc(p['h1'])) for p in TOOLPAGES.all_pages() if p.get('parent')))
+th.append('</section>')
+th_page = replace_block(BASE, 'page:meta', page_meta(
+    'Free Online Tools — Compress, PDF, OCR, QR, Nothing Uploaded',
+    'Free browser tools: compress an image or PDF to a size, passport photo, merge and split PDF, OCR, trim video, cut MP3, QR codes, unzip. Nothing uploaded.',
+    'tools/', jsonld=[th_crumb_ld]))
+th_page = replace_block(th_page, 'page:body', '\n'.join(th))
+th_page = th_page.replace('<h1>Free Online File Converter</h1>', '<h1>Free online tools</h1>')
+th_page = th_page.replace(HERO_P, '<p>%d tools that work on your device. Pick one below.</p>' % len(TOOLPAGES.TOOLS))
+write('tools/index.html', hide_converter(strip_home(th_page)))
+
+# ---- /embed/: the converter alone, for other sites to put in an iframe
+emb = BASE
+emb = re.sub(r'(?s)<header class="nav">.*?</header>', '', emb, count=1)
+emb = re.sub(r'(?s)<footer class="footer">.*?</footer>', '', emb, count=1)
+emb = emb.replace('<body>', '<body class="embed">', 1)
+emb = replace_block(emb, 'page:meta', page_meta('Convert Files widget', 'Embedded file converter.', 'embed/',
+                                              extra_meta='<meta name="robots" content="noindex,nofollow">'))
+emb = replace_block(emb, 'page:body', '<p class="powered">Powered by <a href="%s/?ref=widget" target="_blank" rel="noopener">Convert Files</a> — free file converter, nothing uploaded</p>' % DOMAIN)
+emb = emb.replace(HERO_P, '<p>Pick a file, choose what it should become, download the result. Nothing is uploaded.</p>')
+os.makedirs('embed', exist_ok=True)
+open('embed/index.html', 'w').write(strip_home(emb))      # noindex: kept out of the sitemap on purpose
+
+# ---- /widget/: how to embed it
+snippet = ('<iframe src="%s/embed/" title="Convert Files — free file converter" width="100%%" height="620" '
+           'style="border:0;border-radius:12px" loading="lazy" allow="clipboard-write"></iframe>') % DOMAIN
+wd = ['<section class="seo">']
+wd_crumb, wd_crumb_ld = crumbs([('Home', '/'), ('Widget', None)])
+wd.append(wd_crumb)
+wd.append('<p class="lead">Put a working file converter on your own website with one line of HTML. It is free, carries no ads of ours, '
+          'and your visitors’ files never leave their browser — they are not sent to you, and not to us.</p>')
+wd.append('<h2>The code</h2><p>Paste this where you want the converter to appear:</p><pre class="snippet">%s</pre>' % esc(snippet))
+wd.append('<h2>What it looks like</h2><div class="widget-demo">%s</div>' % snippet)
+wd.append('<h2>Questions</h2><dl class="faq-list">'
+          '<dt>Does it cost anything?</dt><dd>No. Use it on any site, commercial or not.</dd>'
+          '<dt>Do my visitors’ files go through your server?</dt><dd>No. The widget is the same browser-side converter as the site: files are read, converted and downloaded on the visitor’s own device.</dd>'
+          '<dt>Can I change the look?</dt><dd>The width and height are yours to set. The colours follow the visitor’s light or dark setting.</dd>'
+          '<dt>What do you get out of it?</dt><dd>A small “Powered by Convert Files” line under the converter, linking here. Please keep it.</dd>'
+          '</dl>')
+wd.append('</section>')
+wd_page = replace_block(BASE, 'page:meta', page_meta('Free File Converter Widget for Your Site — One Line of HTML',
+                                                    'Embed a free, private file converter on your website with one iframe. Files never leave the visitor’s browser. No cost, no sign-up.',
+                                                    'widget/', jsonld=[wd_crumb_ld]))
+wd_page = replace_block(wd_page, 'page:body', '\n'.join(wd))
+wd_page = wd_page.replace('<h1>Free Online File Converter</h1>', '<h1>Put a file converter on your website</h1>')
+wd_page = wd_page.replace(HERO_P, '<p>One line of HTML. Free. Your visitors’ files stay in their browser.</p>')
+write('widget/index.html', hide_converter(strip_home(wd_page)))
+
+# ---- PWA: manifest and service worker (the shell is precached with this build's version)
+manifest = {
+    'name': 'Convert Files', 'short_name': 'Convert Files', 'id': '/', 'start_url': '/?source=pwa', 'scope': '/',
+    'display': 'standalone', 'background_color': '#0e141c', 'theme_color': '#0E7C86',
+    'description': 'Free file converter that runs entirely on your device. Nothing is uploaded.',
+    'icons': [{'src': '/assets/icon-192.png', 'sizes': '192x192', 'type': 'image/png', 'purpose': 'any'},
+              {'src': '/assets/icon-512.png', 'sizes': '512x512', 'type': 'image/png', 'purpose': 'any maskable'}],
+    'share_target': {'action': '/share/', 'method': 'POST', 'enctype': 'multipart/form-data',
+                     'params': {'files': [{'name': 'files', 'accept': ['image/*', 'video/*', 'audio/*', 'application/pdf', 'application/zip',
+                                                                       '.docx', '.xlsx', '.pptx', '.csv', '.txt', '.md', '.json', '.xml', '.epub', '.heic', '.stl', '.obj', '.glb']}]}},
+    'shortcuts': [{'name': 'Compress image', 'url': '/compress-image/?source=pwa'}, {'name': 'Merge PDF', 'url': '/merge-pdf/?source=pwa'},
+                  {'name': 'HEIC to JPG', 'url': '/heic-to-jpg/?source=pwa'}]
+}
+open('manifest.webmanifest', 'w').write(json.dumps(manifest, indent=1) + '\n')
+sw = open('pages/sw.js').read()
+shell = ['/', '/css/app.css?v=%s' % VER] + ['/js/%s?v=%s' % (f, VER) for f in sorted(os.listdir('js')) if f.endswith('.js')] + \
+        ['/assets/fonts/manrope-latin.woff2', '/assets/fonts/sora-latin.woff2', '/assets/fonts/jetbrains-mono-latin.woff2', '/assets/favicon.svg', '/manifest.webmanifest']
+open('sw.js', 'w').write(sw.replace('{{VER}}', VER).replace('{{SHELL}}', json.dumps(shell)))
+
 
 # ------------------------------------------------------------- IndexNow key
 # Bing, Yandex, DuckDuckGo and Yahoo accept URL submissions signed by a key the

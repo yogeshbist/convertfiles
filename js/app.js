@@ -868,7 +868,7 @@
     var pop = $('#popular');
     if (!pop.children.length) K.POPULAR.forEach(function (pr) { if (C.rule(pr[0], pr[1])) pop.appendChild(popTile(pr[0], pr[1], pr[2])); });
     var hg = $('#home-guides');
-    if (!hg.children.length) K.GUIDES.slice(0, 3).forEach(function (gd) { hg.appendChild(guideCard(gd)); });
+    if (!hg.children.length) K.GUIDES.filter(function (g) { return g.lang !== 'hi'; }).slice(0, 3).forEach(function (gd) { hg.appendChild(guideCard(gd)); });
     var ab = $('#about-box'), left = el('div'), right = el('ul');
     K.ABOUT.intro.forEach(function (t) { left.appendChild(el('p', null, t)); });
     K.ABOUT.points.forEach(function (t) { var li = el('li'); li.appendChild(icon('check')); li.appendChild(el('span', null, t)); right.appendChild(li); });
@@ -941,7 +941,7 @@
     if (guidesBuilt) return;
     guidesBuilt = true;
     var grid = $('#guides-grid');
-    K.GUIDES.forEach(function (gd) { grid.appendChild(guideCard(gd)); });
+    K.GUIDES.filter(function (g) { return g.lang !== 'hi'; }).forEach(function (gd) { grid.appendChild(guideCard(gd)); });
   }
   function openGuide(slug) {
     var gd = K.GUIDES.filter(function (g) { return g.slug === slug; })[0];
@@ -949,10 +949,11 @@
     show('guides');
     $('#guides-list').hidden = true;
     var a = $('#article'); a.hidden = false; a.innerHTML = '';
-    var back = el('a', 'btn sm nav-back'); back.href = '/guides/'; back.appendChild(el('span', null, 'All guides')); a.appendChild(back);
+    var hindi = gd.lang === 'hi';
+    var back = el('a', 'btn sm nav-back'); back.href = hindi ? '/hi/guides/' : '/guides/'; back.appendChild(el('span', null, hindi ? 'सभी गाइड' : 'All guides')); a.appendChild(back);
     var cat = el('div', 'cat', gd.cat); cat.style.setProperty('--fam', FAM_VAR[gd.fam] || 'var(--accent)'); a.appendChild(cat);
     a.appendChild(el('h1', null, gd.title));
-    a.appendChild(el('div', 'meta', readTime(gd) + ' min read · Convert Files guides'));
+    a.appendChild(el('div', 'meta', hindi ? (readTime(gd) + ' मिनट में पढ़ें · Convert Files') : (readTime(gd) + ' min read · Convert Files guides')));
     var body = el('div', 'body');
     gd.body.forEach(function (line) {
       var kind = line.slice(0, 1), text = line.slice(2);
@@ -969,9 +970,14 @@
         adUnit('ad-article', 'article');
       }
     }
-    if (gd.tryFrom && C.rule(gd.tryFrom, gd.tryTo)) {
+    if (gd.tryTool) {
+      var tt = el('div', 'try');
+      tt.appendChild(el('span', 't', gd.tryLabel || 'Try it — free, in your browser.'));
+      var tgo = el('a', 'btn primary'); tgo.href = '/' + gd.tryTool + '/'; tgo.appendChild(icon('bolt')); tgo.appendChild(el('span', null, gd.tryLabel || gd.tryTool)); tt.appendChild(tgo);
+      a.appendChild(tt);
+    } else if (gd.tryFrom && C.rule(gd.tryFrom, gd.tryTo)) {
       var t = el('div', 'try');
-      t.appendChild(el('span', 't', 'Try it: convert a .' + gd.tryFrom + ' to .' + gd.tryTo + ' — free, in your browser.'));
+      t.appendChild(el('span', 't', gd.tryLabel || ('Try it: convert a .' + gd.tryFrom + ' to .' + gd.tryTo + ' — free, in your browser.')));
       var go = btn('Convert .' + gd.tryFrom + ' to .' + gd.tryTo, 'primary', 'bolt');
       go.onclick = function () { preset(gd.tryFrom, gd.tryTo); };
       t.appendChild(go);
@@ -1073,6 +1079,39 @@
   }
 
   /* ---------------------------------------------------------------- wire */
+  /* ------------------------------------------------ install as an app */
+  // The service worker caches the shell and the libraries a format needed, so
+  // the converter keeps working with no connection; the manifest lets Chrome
+  // and Safari install it, and puts it in Android's share sheet.
+  function installApp() {
+    if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol) && !/^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.search.indexOf('sw=1') > -1) {
+      navigator.serviceWorker.register('/sw.js').catch(function () {});
+    }
+    var b = $('#install'), deferred = null;
+    if (!b) return;
+    window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); deferred = e; b.hidden = false; });
+    b.onclick = function () {
+      if (!deferred) return;
+      deferred.prompt();
+      deferred.userChoice.then(function () { deferred = null; b.hidden = true; });
+    };
+    window.addEventListener('appinstalled', function () { b.hidden = true; toast('Installed — find Convert Files with your other apps', 'check'); });
+  }
+  function takeSharedFiles() {
+    if (location.search.indexOf('shared=1') < 0 || !root.indexedDB) return;
+    var r = indexedDB.open('cf-share', 1);
+    r.onupgradeneeded = function () { r.result.createObjectStore('files', { autoIncrement: true }); };
+    r.onsuccess = function () {
+      var db = r.result, tx = db.transaction('files', 'readwrite'), st = tx.objectStore('files'), got = st.getAll();
+      got.onsuccess = function () {
+        var files = (got.result || []).filter(function (f) { return f && f.size !== undefined; });
+        st.clear();
+        if (files.length && !document.querySelector('meta[name="cf-tool"]')) { show('convert'); addFiles(files, false); toast(files.length + ' file' + (files.length === 1 ? '' : 's') + ' received', 'check'); }
+      };
+      tx.oncomplete = function () { history.replaceState(null, '', location.pathname); };
+    };
+  }
+
   function init() {
     state.to = C.defaultTarget(state.from);
     refreshTargets();
@@ -1103,8 +1142,13 @@
     pagePreset();
     trackView();
     watchTime();
-    $('#files-go').onclick = function () { show('convert'); $('#file').click(); };
+    installApp();
+    takeSharedFiles();
+    $('#files-go').onclick = function () { if (!isHome() && document.querySelector('meta[name="cf-tool"]')) { location.href = '/'; return; } show('convert'); $('#file').click(); };
 
+    // On a tool page (/compress-image/ and friends) tools.js owns the drop
+    // zone and the file input; the converter's own wiring must stay out.
+    if (!document.querySelector('meta[name="cf-tool"]')) {
     var drop = $('#drop');
     drop.onclick = function () { $('#file').click(); };
     drop.onkeydown = function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); $('#file').click(); } };
@@ -1151,6 +1195,7 @@
     $('#o-quality').oninput = function (e) { $('#o-quality-v').textContent = e.target.value + '%'; };
     $('#o-scale').oninput = function (e) { $('#o-scale-v').textContent = e.target.value + 'x'; };
     $('#go').onclick = convert;
+    }
 
     $('#modal-close').onclick = closePreview;
     $('#modal').onclick = function (e) { if (e.target === $('#modal')) closePreview(); };
@@ -1164,6 +1209,8 @@
     $('#formats-q').oninput = filterFormats;
     refreshCount();
   }
+
+  root.UI = { el: el, icon: icon, btn: btn, toast: toast, download: download, chip: chip, when: when, show: show, track: track };
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();

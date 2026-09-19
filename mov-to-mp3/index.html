@@ -26,9 +26,10 @@
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta name="theme-color" content="#0E7C86">
+<link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=a5ec5923">
+<link rel="stylesheet" href="/css/app.css?v=70c35bb6">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -58,7 +59,9 @@
       <button class="tab" id="nav-files">My files <span class="pill" id="files-count"></span></button>
       <a class="tab" id="nav-formats" href="/formats/">Formats</a>
       <a class="tab" id="nav-guides" href="/guides/">Guides</a>
+      <a class="tab" id="nav-tools" href="/tools/">Tools</a>
     </nav>
+    <button class="btn sm install" id="install" hidden aria-label="Install Convert Files as an app"><svg><use href="#i-download"/></svg><span>Install app</span></button>
   </div>
 </header>
 
@@ -150,7 +153,7 @@
 <dt>Should I keep the original MOV file?</dt><dd>Yes — keep it, converting never touches it. The reason to make a copy in another format is that MOV is QuickTime’s container, which iPhones and Macs produce and other devices frequently will not play.</dd>
 <dt>How long does it take?</dt><dd>Roughly as long as the clip itself for high-definition video, because every frame is decoded and re-encoded on your own machine. Keep the tab in the foreground while it works.</dd>
 </dl>
-<h2>Related conversions</h2><div class="rel"><a href="/mov-to-webm/">MOV to WEBM</a><a href="/mov-to-mp4/">MOV to MP4</a><a href="/mov-to-m4a/">MOV to M4A</a><a href="/mov-to-aac/">MOV to AAC</a><a href="/mov-to-wav/">MOV to WAV</a><a href="/mov-to-jpg/">MOV to JPG</a><a href="/mov-to-gif/">MOV to GIF</a><a href="/mov-to-ogg/">MOV to OGG</a><a href="/mov-to-opus/">MOV to OPUS</a><a href="/mov-to-png/">MOV to PNG</a><a href="/wav-to-mp3/">WAV to MP3</a><a href="/aac-to-mp3/">AAC to MP3</a></div>
+<h2>Related conversions</h2><div class="rel"><a href="/mov-to-png/">MOV to PNG</a><a href="/mov-to-wav/">MOV to WAV</a><a href="/mov-to-mp4/">MOV to MP4</a><a href="/mov-to-webm/">MOV to WEBM</a><a href="/mov-to-m4a/">MOV to M4A</a><a href="/mov-to-gif/">MOV to GIF</a><a href="/mov-to-opus/">MOV to OPUS</a><a href="/mov-to-ogg/">MOV to OGG</a><a href="/mov-to-aac/">MOV to AAC</a><a href="/mov-to-jpg/">MOV to JPG</a><a href="/m4a-to-mp3/">M4A to MP3</a><a href="/mp4-to-mp3/">MP4 to MP3</a></div>
 <p class="seo-more"><a href="/formats/">See all 399 conversions</a> &middot; <a href="/guides/">Read the guides</a></p>
 </section>
 <!-- /page:body -->
@@ -209,7 +212,7 @@
 
 <footer class="footer">
   <span><b>Convert Files</b> &mdash; free, no account, nothing leaves your device.</span>
-  <span class="footer-links"><a href="/formats/">All conversions</a><a href="/guides/">Guides</a><a href="/#about" id="f-about">About</a><a href="/#support" id="f-support">Support</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></span>
+  <span class="footer-links"><a href="/formats/">All conversions</a><a href="/tools/">Tools</a><a href="/guides/">Guides</a><a href="/hi/guides/" lang="hi">हिन्दी गाइड</a><a href="/widget/">Widget</a><a href="/#about" id="f-about">About</a><a href="/#support" id="f-support">Support</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></span>
 </footer>
 
 <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-name">
@@ -234,12 +237,12 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script defer src="/js/formats.js?v=a5ec5923"></script>
-<script defer src="/js/encoders.js?v=a5ec5923"></script>
-<script defer src="/js/docmodel.js?v=a5ec5923"></script>
-<script defer src="/js/convert.js?v=a5ec5923"></script>
-<script defer src="/js/db.js?v=a5ec5923"></script>
-<script defer src="/js/content.js?v=a5ec5923"></script>
-<script defer src="/js/app.js?v=a5ec5923"></script>
+<script defer src="/js/formats.js?v=70c35bb6"></script>
+<script defer src="/js/encoders.js?v=70c35bb6"></script>
+<script defer src="/js/docmodel.js?v=70c35bb6"></script>
+<script defer src="/js/convert.js?v=70c35bb6"></script>
+<script defer src="/js/db.js?v=70c35bb6"></script>
+<script defer src="/js/content.js?v=70c35bb6"></script>
+<script defer src="/js/app.js?v=70c35bb6"></script>
 </body>
 </html>

@@ -121,6 +121,13 @@
     // itself cannot decode HEIC, i.e. Chrome, Edge and Firefox.
     heic2any: { g: 'heic2any', u: ['https://cdn.jsdelivr.net/npm/heic2any@0.0.4/dist/heic2any.min.js',
                                    'https://unpkg.com/heic2any@0.0.4/dist/heic2any.min.js'] },
+    // used only by the stand-alone tools (merge/split/sign PDF, OCR, QR codes, metadata)
+    pdflib:   { g: 'PDFLib',  u: ['https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js',
+                                  'https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js'] },
+    tesseract:{ g: 'Tesseract', u: ['https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js'] },
+    qrcode:   { g: 'QRCode',  u: ['https://cdnjs.cloudflare.com/ajax/libs/qrcode/1.5.1/qrcode.min.js',
+                                  'https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js'] },
+    exifr:    { g: 'exifr',   u: ['https://cdn.jsdelivr.net/npm/exifr@7.1.3/dist/full.umd.js'] },
     // ES modules, loaded with a dynamic import()
     toml:      { esm: 'https://cdn.jsdelivr.net/npm/smol-toml@1.3.1/+esm' },
     mp4muxer:  { esm: 'https://cdn.jsdelivr.net/npm/mp4-muxer@5.1.5/+esm' },

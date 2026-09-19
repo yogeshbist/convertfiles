@@ -23,9 +23,10 @@
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta name="theme-color" content="#0E7C86">
+<link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=a5ec5923">
+<link rel="stylesheet" href="/css/app.css?v=70c35bb6">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -55,7 +56,9 @@
       <button class="tab" id="nav-files">My files <span class="pill" id="files-count"></span></button>
       <a class="tab" id="nav-formats" href="/formats/">Formats</a>
       <a class="tab" id="nav-guides" href="/guides/">Guides</a>
+      <a class="tab" id="nav-tools" href="/tools/">Tools</a>
     </nav>
+    <button class="btn sm install" id="install" hidden aria-label="Install Convert Files as an app"><svg><use href="#i-download"/></svg><span>Install app</span></button>
   </div>
 </header>
 
@@ -134,6 +137,7 @@
 <article class="hub-guide"><h2><a href="/guides/3d-model-to-glb/">Getting a 3D model into AR: OBJ and STL to GLB</a></h2><p>Android Scene Viewer, web AR and most engines want glTF. Here is how the older formats map onto it.</p></article>
 <article class="hub-guide"><h2><a href="/guides/is-it-safe/">Is it safe to convert files online? What “nothing is uploaded” means here</a></h2><p>Most converters upload your file to a server. This one never does. Here is how you can check that yourself.</p></article>
 <article class="hub-guide"><h2><a href="/guides/csv-vs-excel/">CSV vs Excel: when to convert, and the three things that go wrong</a></h2><p>CSV is the universal spreadsheet language and Excel is the universal spreadsheet app. Moving between them is easy — with three traps.</p></article>
+<p class="seo-more"><a href="/hi/guides/" lang="hi">हिन्दी में गाइड पढ़ें</a></p>
 </section>
 <!-- /page:body -->
 
@@ -191,7 +195,7 @@
 
 <footer class="footer">
   <span><b>Convert Files</b> &mdash; free, no account, nothing leaves your device.</span>
-  <span class="footer-links"><a href="/formats/">All conversions</a><a href="/guides/">Guides</a><a href="/#about" id="f-about">About</a><a href="/#support" id="f-support">Support</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></span>
+  <span class="footer-links"><a href="/formats/">All conversions</a><a href="/tools/">Tools</a><a href="/guides/">Guides</a><a href="/hi/guides/" lang="hi">हिन्दी गाइड</a><a href="/widget/">Widget</a><a href="/#about" id="f-about">About</a><a href="/#support" id="f-support">Support</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></span>
 </footer>
 
 <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-name">
@@ -216,12 +220,12 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script defer src="/js/formats.js?v=a5ec5923"></script>
-<script defer src="/js/encoders.js?v=a5ec5923"></script>
-<script defer src="/js/docmodel.js?v=a5ec5923"></script>
-<script defer src="/js/convert.js?v=a5ec5923"></script>
-<script defer src="/js/db.js?v=a5ec5923"></script>
-<script defer src="/js/content.js?v=a5ec5923"></script>
-<script defer src="/js/app.js?v=a5ec5923"></script>
+<script defer src="/js/formats.js?v=70c35bb6"></script>
+<script defer src="/js/encoders.js?v=70c35bb6"></script>
+<script defer src="/js/docmodel.js?v=70c35bb6"></script>
+<script defer src="/js/convert.js?v=70c35bb6"></script>
+<script defer src="/js/db.js?v=70c35bb6"></script>
+<script defer src="/js/content.js?v=70c35bb6"></script>
+<script defer src="/js/app.js?v=70c35bb6"></script>
 </body>
 </html>

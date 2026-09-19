@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- page:meta -->
+<title>Unzip Files Online — Open ZIP, TAR, GZ in Your Browser, Free</title>
+<meta name="description" content="Open a ZIP, TAR or GZ archive in your browser, see what is inside and download the files you want. Free, nothing uploaded.">
+<link rel="canonical" href="https://convertfiles.in/unzip/">
+<meta property="og:title" content="Unzip Files Online — Open ZIP, TAR, GZ in Your Browser, Free">
+<meta property="og:description" content="Open a ZIP, TAR or GZ archive in your browser, see what is inside and download the files you want. Free, nothing uploaded.">
+<meta property="og:url" content="https://convertfiles.in/unzip/">
+<meta property="og:image" content="https://convertfiles.in/assets/og.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Convert Files">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Unzip Files Online — Open ZIP, TAR, GZ in Your Browser, Free">
+<meta name="twitter:description" content="Open a ZIP, TAR or GZ archive in your browser, see what is inside and download the files you want. Free, nothing uploaded.">
+<meta name="twitter:image" content="https://convertfiles.in/assets/og.png">
+<meta name="twitter:image:alt" content="Convert Files — free file converter that runs in your browser">
+<meta name="cf-tool" content="unzip">
+<style>/* tools.css — only loaded on tool pages. Everything shares app.css tokens. */
+.tool{margin-top:6px}
+.t-picked{margin-top:0}
+.t-opts{margin-top:14px;flex-direction:column;align-items:stretch;gap:0}
+.t-opts .opt{flex-wrap:wrap}
+.t-opts input[type=text]{background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:6px 9px;font-weight:600;font-family:inherit;color:var(--ink)}
+.t-opts input[type=color]{width:38px;height:30px;border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:2px}
+.t-note{margin:6px 0 4px;line-height:1.5;font-size:12.5px;max-width:70ch}
+.t-presets{display:flex;flex-wrap:wrap;gap:8px;align-items:center;padding:6px 0}
+.t-chips{display:flex;flex-wrap:wrap;gap:8px;padding:8px 0}
+.t-chip{border:1px solid var(--line-2);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.t-chip:hover{border-color:var(--accent);color:var(--ink)}
+.t-chip.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.t-done{display:block;padding:18px}
+.t-done .done-row{gap:14px}
+.t-done .done-row .info{min-width:0}
+.t-done .picked-foot{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px;padding-top:14px;border-top:1px solid var(--line)}
+.tbadge{font-family:var(--mono);font-size:11px;font-weight:700;color:var(--muted);letter-spacing:.02em}
+.t-text{width:100%;min-height:160px;margin:10px 0 8px;background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:13px/1.5 var(--mono);color:var(--ink);resize:vertical}
+
+/* stage: the interactive area a tool puts between the file list and the options */
+.t-stage{margin-top:14px;background:var(--surface-2);border-radius:var(--r);padding:14px 16px}
+.t-stage h4{margin:8px 0 8px;font-family:var(--display);font-size:14px;color:var(--ink-2)}
+.t-stage-box{display:flex;flex-direction:column;align-items:center;gap:10px}
+.t-stage-canvas{max-width:100%;height:auto;border-radius:12px;cursor:grab;background:#0b0f14;box-shadow:var(--shadow)}
+.t-stage-canvas:active{cursor:grabbing}
+.t-stage-tools{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:13px;color:var(--ink-2)}
+.t-stage-tools input[type=range]{width:160px}
+
+/* PDF page thumbnails */
+.t-pages{display:grid;grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:12px;margin-top:10px}
+.t-pages.small{grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:8px}
+.t-page{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px;text-align:center;transition:opacity .15s,border-color .15s}
+.t-page.del{opacity:.38}
+.t-page.del .t-page-th::after{content:"deleted";position:absolute;inset:0;display:grid;place-items:center;color:var(--err);font-weight:700;font-size:12px;background:color-mix(in srgb,var(--err) 10%,transparent)}
+.t-page.sel{border-color:var(--accent);box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 35%,transparent)}
+.t-pages.small .t-page{padding:5px;cursor:pointer}
+.t-page-th{position:relative;display:grid;place-items:center;overflow:hidden;background:#fff;border-radius:6px;aspect-ratio:3/4}
+.t-page-th canvas{max-width:100%;max-height:100%;transition:transform .2s}
+.t-page-n{margin:6px 0 4px;font-size:12px;color:var(--muted);font-weight:600}
+.t-page-acts{display:flex;justify-content:center;gap:4px}
+.t-page-acts .btn.icon{width:30px;height:30px;padding:4px;color:var(--ink-2)}
+.t-page-acts .btn.icon:hover{color:var(--accent);border-color:var(--accent)}
+
+/* trim / cut controls */
+.t-video{width:100%;max-height:360px;border-radius:12px;background:#000}
+.t-trim{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin-top:10px;font-size:13px;color:var(--ink-2)}
+.t-trim label{font-weight:600}
+.t-trim input[type=text]{width:84px;background:var(--surface);border:1px solid var(--line);border-radius:9px;padding:6px 9px;font-weight:600;font-family:var(--mono);color:var(--ink)}
+.t-trim input[type=range]{width:150px}
+.t-wave{width:100%;height:120px;border-radius:12px;cursor:ew-resize;touch-action:none}
+
+/* metadata */
+.t-meta{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:10px}
+.t-meta h4{margin:0 0 8px;font-size:13.5px;word-break:break-all}
+.t-meta-table{border-collapse:collapse;font-size:13px;width:100%}
+.t-meta-table th{text-align:left;color:var(--muted);font-weight:600;padding:4px 12px 4px 0;white-space:nowrap;vertical-align:top;width:130px}
+.t-meta-table td{padding:4px 0;color:var(--ink);word-break:break-word}
+.t-meta-table tr.gps td a{color:var(--err);font-weight:600}
+
+/* QR */
+.t-qr-forms{display:flex;flex-direction:column}
+.t-qr-preview{display:flex;flex-direction:column;align-items:center;gap:10px}
+.t-qr-preview canvas{border-radius:10px;box-shadow:var(--shadow);background:#fff;max-width:100%;height:auto}
+
+/* archive listing */
+.t-files{width:100%;border-collapse:collapse;margin-top:10px;font-size:13.5px}
+.t-files th{text-align:left;color:var(--muted);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line)}
+.t-files td{padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+.t-files td.name{word-break:break-all;font-weight:500}
+.t-files .btn.icon{width:32px;height:32px;padding:4px}
+
+/* signing */
+.t-sig{margin-bottom:10px}
+.t-sigpad{width:100%;max-width:600px;height:auto;background:#fff;border:1px dashed var(--line-2);border-radius:12px;cursor:crosshair;touch-action:none;display:block}
+.t-place{position:relative;display:inline-block;max-width:100%;margin-top:8px;box-shadow:var(--shadow-lg);border-radius:6px;overflow:hidden;background:#fff}
+.t-page-canvas{display:block;max-width:100%;height:auto}
+.t-sig-overlay{position:absolute;left:0;top:0;cursor:move;outline:2px dashed var(--accent);outline-offset:2px;touch-action:none;user-select:none}
+.t-sig-overlay img{display:block;width:100%;height:100%;pointer-events:none}
+
+@media (max-width:640px){
+  .t-stage{padding:12px}
+  .t-pages{grid-template-columns:repeat(auto-fill,minmax(104px,1fr))}
+  .t-opts .opt{padding:8px 0}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://convertfiles.in/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://convertfiles.in/tools/"}, {"@type": "ListItem", "position": 3, "name": "Unzip files online"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "Unzip files online", "description": "Open a ZIP, TAR or GZ archive in your browser, see what is inside and download the files you want. Free, nothing uploaded.", "tool": {"@type": "HowToTool", "name": "Convert Files (any modern browser)"}, "step": [{"@type": "HowToStep", "position": 1, "name": "Drop the archive", "text": ".zip, .tar, .tgz or .gz."}, {"@type": "HowToStep", "position": 2, "name": "Pick the files", "text": "Everything is ticked by default."}, {"@type": "HowToStep", "position": 3, "name": "Download", "text": "A single file directly; several as a zip of just those."}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I open a zip on my phone with this?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Open this page in the phone’s browser, choose the zip from Files, and download what you need."}}, {"@type": "Question", "name": "Is there a size limit?", "acceptedAnswer": {"@type": "Answer", "text": "Whatever your device can hold in memory — a few hundred megabytes is fine on most phones and laptops."}}, {"@type": "Question", "name": "Does it handle password-protected zips?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet."}}, {"@type": "Question", "name": "Is the archive uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is opened in your browser."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "Unzip files online", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "browserRequirements": "Requires a modern browser", "url": "https://convertfiles.in/unzip/", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}, "description": "Open a ZIP, TAR or GZ archive in your browser, see what is inside and download the files you want. Free, nothing uploaded."}</script>
+<!-- /page:meta -->
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta name="theme-color" content="#0E7C86">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/app.css?v=70c35bb6">
+<!-- site:head -->
+<script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
+<!-- /site:head -->
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-swap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h13l-3-3"/><path d="M20 17H7l3 3"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+  <symbol id="i-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v12"/><path d="m7 11 5 5 5-5"/><path d="M4 20h16"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 5 5L20 7"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M6 7l1 13h10l1-13"/><path d="M9 7V4h6v3"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 21s-7.5-4.6-9.5-9.2C1.2 8.5 3.3 5 6.8 5c2 0 3.4 1.1 5.2 3 1.8-1.9 3.2-3 5.2-3 3.5 0 5.6 3.5 4.3 6.8C19.5 16.4 12 21 12 21z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="nav-in">
+    <a class="brand" href="/" id="brand" aria-label="Convert Files home"><span class="mark"><svg><use href="#i-swap"/></svg></span><b>Convert Files</b></a>
+    <nav class="tabs" aria-label="Sections">
+      <a class="tab" id="nav-convert" href="/" aria-current="page">Convert</a>
+      <button class="tab" id="nav-files">My files <span class="pill" id="files-count"></span></button>
+      <a class="tab" id="nav-formats" href="/formats/">Formats</a>
+      <a class="tab" id="nav-guides" href="/guides/">Guides</a>
+      <a class="tab" id="nav-tools" href="/tools/">Tools</a>
+    </nav>
+    <button class="btn sm install" id="install" hidden aria-label="Install Convert Files as an app"><svg><use href="#i-download"/></svg><span>Install app</span></button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================================================= CONVERT -->
+  <section class="view" id="view-convert">
+    <div class="hero">
+      <span class="eyebrow"><svg><use href="#i-bolt"/></svg>Convert your files in seconds</span>
+      <h1>Unzip files online</h1>
+      <p>Open a ZIP, TAR or GZ archive in your browser, see what is inside and download the files you want. Free, nothing uploaded.</p>
+
+      <div class="drop" id="drop" tabindex="0" role="button">
+        <div class="drop-ic"><svg><use href="#i-upload"/></svg></div>
+        <h2>Drop files here</h2>
+        <p>or <span class="browse">browse your device</span> &mdash; one file or many; images, documents, spreadsheets, audio, video, archives, 3D models</p>
+      </div>
+      <input type="file" id="file" multiple hidden>
+
+      <div class="picked" id="picked" hidden></div>
+      <div class="warn" id="warn" hidden></div>
+    </div>
+
+    <div class="section" hidden>
+      <div class="section-h"><h3>Choose the formats</h3><span id="target-count"></span></div>
+      <div class="pipe">
+        <button type="button" class="tile" id="tile-from" aria-haspopup="listbox" aria-expanded="false">
+          <span class="k">From</span>
+          <span class="ext" id="from-ext">.png</span>
+          <span class="n" id="from-name">PNG image</span>
+          <span class="caret"><svg><use href="#i-search"/></svg></span>
+        </button>
+        <div class="arrow" aria-hidden="true"><svg><use href="#i-arrow"/></svg></div>
+        <button type="button" class="tile" id="tile-to" aria-haspopup="listbox" aria-expanded="false">
+          <span class="k">To</span>
+          <span class="ext" id="to-ext">.jpg</span>
+          <span class="n" id="to-name">JPEG image</span>
+          <span class="caret"><svg><use href="#i-search"/></svg></span>
+        </button>
+      </div>
+      <p class="hint" id="rulenote" hidden></p>
+
+      <div class="opts" id="opts" hidden>
+        <div class="opt" id="opt-width"><label for="o-width">Width</label><input type="number" id="o-width" min="0" max="10000" step="10" value="0"><span class="u" id="o-width-hint">px &middot; 0 keeps original</span></div>
+        <div class="opt" id="opt-quality"><label for="o-quality">Quality</label><input type="range" id="o-quality" min="50" max="100" step="1" value="92"><b id="o-quality-v">92%</b></div>
+        <div class="opt" id="opt-scale"><label for="o-scale">Render scale</label><input type="range" id="o-scale" min="1" max="4" step="0.5" value="2"><b id="o-scale-v">2x</b></div>
+        <div class="opt" id="opt-fps"><label for="o-fps">Frames / sec</label><input type="number" id="o-fps" min="1" max="24" step="1" value="10" data-mode="gif"></div>
+        <div class="opt" id="opt-maxSeconds"><label for="o-maxSeconds">Length</label><input type="number" id="o-maxSeconds" min="0.5" max="30" step="0.5" value="5"><span class="u">seconds</span></div>
+        <div class="opt" id="opt-time"><label for="o-time">Start at</label><input type="number" id="o-time" min="0" step="0.5" value="0"><span class="u">seconds</span></div>
+        <div class="opt" id="opt-bitrate"><label for="o-bitrate">Audio bitrate</label><select id="o-bitrate"><option value="128">128 kbps</option><option value="192" selected>192 kbps</option><option value="256">256 kbps</option><option value="320">320 kbps</option></select></div>
+        <div class="opt" id="opt-pageSize"><label for="o-pageSize">Page</label><select id="o-pageSize"><option value="a4" selected>A4</option><option value="letter">Letter</option></select></div>
+        <div class="opt" id="opt-dither"><input type="checkbox" id="o-dither" checked><label for="o-dither">Dither for smoother colour</label></div>
+        <div class="opt" id="opt-allPages"><input type="checkbox" id="o-allPages" checked><label for="o-allPages">Every page (multi-page output arrives as a zip)</label></div>
+      </div>
+
+      <button class="cta" id="go" disabled><svg><use href="#i-bolt"/></svg><span id="go-label">Choose a file to start</span></button>
+      <p class="private"><svg><use href="#i-lock"/></svg>Your file never leaves this device.</p>
+
+      <div class="progress" id="progress" hidden>
+        <div class="bar"><i id="bar"></i></div>
+        <div class="status"><span class="spin"></span><span id="status">Working&hellip;</span></div>
+      </div>
+
+      <div class="done" id="done" hidden></div>
+      <div class="ad" id="ad-result" hidden></div>
+    </div>
+
+    <!-- page:body -->
+<section class="tool" id="tool" aria-label="Unzip files online"></section>
+<section class="seo">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <a href="/tools/">Tools</a> <span aria-hidden="true">&rsaquo;</span> <span>Unzip files online</span></nav>
+<p class="lead">Drop the archive, tick the files, download them one by one or as a smaller zip. Nothing is extracted on a server — it all happens on your device. Nothing is uploaded: the work happens inside your browser, on your own device.</p>
+<h2>How to use it</h2><ol class="howto"><li><b>Drop the archive</b> .zip, .tar, .tgz or .gz.</li><li><b>Pick the files</b> Everything is ticked by default.</li><li><b>Download</b> A single file directly; several as a zip of just those.</li></ol>
+<h2>Questions</h2><dl class="faq-list"><dt>Can I open a zip on my phone with this?</dt><dd>Yes. Open this page in the phone’s browser, choose the zip from Files, and download what you need.</dd><dt>Is there a size limit?</dt><dd>Whatever your device can hold in memory — a few hundred megabytes is fine on most phones and laptops.</dd><dt>Does it handle password-protected zips?</dt><dd>Not yet.</dd><dt>Is the archive uploaded?</dt><dd>No. It is opened in your browser.</dd></dl>
+<h2>Related tools</h2><div class="rel"><a href="/zip-to-tar/">ZIP to TAR</a><a href="/tar-to-zip/">TAR to ZIP</a><a href="/compress-pdf/">Compress PDF to a size</a></div>
+<p class="seo-more"><a href="/tools/">All tools</a> &middot; <a href="/formats/">All 399 conversions</a></p>
+</section>
+<!-- /page:body -->
+
+    <!-- ---- editorial sections ---- -->
+    
+  </section>
+
+  <!-- ================================================= YOUR FILES -->
+  <section class="view" id="view-files" hidden>
+    <div class="page-h">
+      <div><h2 class="view-title">My files</h2><p>Everything you have converted, kept in this browser. Download any of them again, any time.</p></div>
+      <button class="btn danger sm" id="files-clear">Clear all</button>
+    </div>
+    <div class="toolbar">
+      <div class="search"><svg><use href="#i-search"/></svg><input type="text" id="files-q" placeholder="Search by name or format"></div>
+      <span class="usage" id="files-usage"></span>
+    </div>
+    <div class="grid" id="files-grid"></div>
+    <div class="empty" id="files-empty" hidden>
+      <div class="badge" style="--fam:var(--f-image)">.jpg</div>
+      <h3>Nothing here yet</h3>
+      <p>Convert a file and it will appear here, ready to download again.</p>
+      <button class="btn primary" id="files-go">Convert a file</button>
+    </div>
+  </section>
+
+  <!-- ================================================= FORMATS -->
+  <section class="view" id="view-formats" hidden>
+    <div class="page-h">
+      <div><h2 class="view-title">Formats</h2><p>Every conversion this browser can do. Pairs that would not genuinely work are simply not offered.</p></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><b id="m-pairs">0</b><span>conversion pairs</span></div>
+      <div class="stat"><b id="m-sources">0</b><span>source formats</span></div>
+      <div class="stat"><b id="m-targets">0</b><span>target formats</span></div>
+    </div>
+    <div class="toolbar">
+      <div class="search"><svg><use href="#i-search"/></svg><input type="text" id="formats-q" placeholder="Search a format, e.g. docx"></div>
+    </div>
+    <div class="mx" id="matrix"></div>
+  </section>
+
+  <!-- ================================================= GUIDES -->
+  <section class="view" id="view-guides" hidden>
+    <div id="guides-list">
+      <div class="page-h">
+        <div><h2 class="view-title">Guides</h2><p>Practical, plain-language answers about file formats and the conversions people ask about most.</p></div>
+      </div>
+      <div class="guides" id="guides-grid"></div>
+    </div>
+    <article class="article" id="article" hidden></article>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span><b>Convert Files</b> &mdash; free, no account, nothing leaves your device.</span>
+  <span class="footer-links"><a href="/formats/">All conversions</a><a href="/tools/">Tools</a><a href="/guides/">Guides</a><a href="/hi/guides/" lang="hi">हिन्दी गाइड</a><a href="/widget/">Widget</a><a href="/#about" id="f-about">About</a><a href="/#support" id="f-support">Support</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></span>
+</footer>
+
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-name">
+  <div class="modal-box" id="modal-box">
+    <div class="modal-head">
+      <div class="modal-title"><div class="name" id="modal-name"></div><div class="meta" id="modal-meta"></div></div>
+      <button class="btn primary sm" id="modal-dl"><svg><use href="#i-download"/></svg><span>Download</span></button>
+      <button class="btn icon" id="modal-close" aria-label="Close preview">&times;</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<div class="sticky" id="sticky" hidden>
+  <button class="cta" id="sticky-go"><svg><use href="#i-bolt"/></svg><span id="sticky-label">Convert</span></button>
+</div>
+
+<div class="picker" id="picker" hidden>
+  <div class="picker-q"><svg><use href="#i-search"/></svg><input type="text" id="picker-q" placeholder="Type to search formats" autocomplete="off" spellcheck="false" aria-label="Search formats"><span class="picker-hint" id="picker-hint"></span></div>
+  <div class="picker-list" id="picker-list" role="listbox"></div>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script defer src="/js/formats.js?v=70c35bb6"></script>
+<script defer src="/js/encoders.js?v=70c35bb6"></script>
+<script defer src="/js/docmodel.js?v=70c35bb6"></script>
+<script defer src="/js/convert.js?v=70c35bb6"></script>
+<script defer src="/js/db.js?v=70c35bb6"></script>
+<script defer src="/js/content.js?v=70c35bb6"></script>
+<script defer src="/js/app.js?v=70c35bb6"></script>
+<script defer src="/js/tools.js?v=70c35bb6"></script>
+</body>
+</html>

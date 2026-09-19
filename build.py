@@ -424,7 +424,7 @@ write('guides/index.html', hide_converter(strip_home(gi_page)))
 # site hosts at /<key>.txt. seo/indexnow.py does the submitting.
 _ink = SITE.get('indexnow_key', '').strip()
 if _ink:
-    write(_ink + '.txt', _ink)
+    open(_ink + '.txt', 'w').write(_ink)   # not write(): it is not a page for the sitemap
 
 # -------------------------------------------------------------- legal pages
 shell = open('pages/_shell.html').read()

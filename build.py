@@ -419,6 +419,13 @@ gi_page = gi_page.replace('<p>Pick a file, choose what it should become, downloa
                           '<p>%d guides to the formats people ask about most.</p>' % len(CONTENT['GUIDES']))
 write('guides/index.html', hide_converter(strip_home(gi_page)))
 
+# ------------------------------------------------------------- IndexNow key
+# Bing, Yandex, DuckDuckGo and Yahoo accept URL submissions signed by a key the
+# site hosts at /<key>.txt. seo/indexnow.py does the submitting.
+_ink = SITE.get('indexnow_key', '').strip()
+if _ink:
+    write(_ink + '.txt', _ink)
+
 # -------------------------------------------------------------- legal pages
 shell = open('pages/_shell.html').read()
 for name in ['privacy', 'terms', 'contact']:

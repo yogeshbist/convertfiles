@@ -6,7 +6,8 @@
    Admin:    GET  /feedback/all     every rating, hidden ones included
              POST /feedback/hide    {id, hidden}
    Admin:    POST /login            {password} -> {token}
-             GET  /stats?days=30    totals, daily series, top lists
+             GET  /stats?days=30&scope=genuine|own|all   totals, daily series, top lists
+             POST /reset            {confirm:'RESET'} wipes the counters
              GET  /content/:name    read a content JSON file from the GitHub repo
              PUT  /content/:name    write it (commits; GitHub Actions rebuilds the site)
              GET  /health                                                          */
@@ -33,6 +34,7 @@ export default {
       else if (url.pathname === '/feedback/hide' && request.method === 'POST') res = await guard(request, env, () => feedbackHide(request, env));
       else if (url.pathname === '/login' && request.method === 'POST') res = await login(request, env);
       else if (url.pathname === '/stats' && request.method === 'GET') res = await guard(request, env, () => stats(url, env));
+      else if (url.pathname === '/reset' && request.method === 'POST') res = await guard(request, env, () => resetCounters(request, env));
       else if (url.pathname.startsWith('/content/')) res = await guard(request, env, () => content(request, url, env));
       else res = json({ error: 'not found' }, 404);
       for (const [k, v] of Object.entries(cors)) res.headers.set(k, v);
@@ -67,15 +69,18 @@ async function event(request, env) {
   let ev;
   try { ev = JSON.parse(await request.text()); } catch { return json({ error: 'bad body' }, 400); }
   const day = today(), rows = [];
+  // A device that has signed into the admin panel marks its events as its own;
+  // they are kept apart so the dashboard can show genuine visitors alone.
+  const P = ev.own === 1 || ev.own === true ? 'own:' : '';
   const add = (metric, key = '') => rows.push(env.DB.prepare(
-    'INSERT INTO daily (day, metric, key, n) VALUES (?1, ?2, ?3, 1) ON CONFLICT(day, metric, key) DO UPDATE SET n = n + 1').bind(day, metric, key));
+    'INSERT INTO daily (day, metric, key, n) VALUES (?1, ?2, ?3, 1) ON CONFLICT(day, metric, key) DO UPDATE SET n = n + 1').bind(day, P + metric, key));
   if (ev.t === 'time') {
     // Time actually spent looking at the page, in whole seconds. Capped so a tab
     // left open overnight cannot skew the average. No session is identified.
     var secs = Math.min(1800, Math.max(1, Math.round((+ev.ms || 0) / 1000)));
     if (!secs) return new Response(null, { status: 204 });
     rows.push(env.DB.prepare(
-      'INSERT INTO daily (day, metric, key, n) VALUES (?1, ?2, ?3, ?4) ON CONFLICT(day, metric, key) DO UPDATE SET n = n + ?4').bind(day, 'dwell', '', secs));
+      'INSERT INTO daily (day, metric, key, n) VALUES (?1, ?2, ?3, ?4) ON CONFLICT(day, metric, key) DO UPDATE SET n = n + ?4').bind(day, P + 'dwell', '', secs));
     if (ev.first === true) add('dwellN');
     await env.DB.batch(rows);
     return new Response(null, { status: 204 });
@@ -216,16 +221,27 @@ async function guard(request, env, fn) {
 }
 
 /* ------------------------------------------------------------- stats */
+// Which rows a dashboard view counts: genuine visitors (default), the owner's
+// own devices, or everything together. Owner rows carry an "own:" prefix.
+function scopeOf(url) { const s = url.searchParams.get('scope'); return s === 'own' || s === 'all' ? s : 'genuine'; }
+function scopeSql(scope) {
+  if (scope === 'own') return { m: 'SUBSTR(metric, 5)', where: "metric LIKE 'own:%'" };
+  if (scope === 'all') return { m: "REPLACE(metric, 'own:', '')", where: '1 = 1' };
+  return { m: 'metric', where: "metric NOT LIKE 'own:%'" };
+}
+function names(scope, metric) { return scope === 'own' ? [`own:${metric}`] : scope === 'all' ? [metric, `own:${metric}`] : [metric]; }
 async function stats(url, env) {
   const days = Math.max(1, Math.min(365, parseInt(url.searchParams.get('days') || '30', 10)));
+  const scope = scopeOf(url), sq = scopeSql(scope);
   const since = new Date(Date.now() - (days - 1) * 86400000).toISOString().slice(0, 10);
   const since7 = new Date(Date.now() - 6 * 86400000).toISOString().slice(0, 10);
+  const pairNames = names(scope, 'pair');
   const [totals, series, pairs, pages, devices, refs, fails, pairDays, countries, regions] = await Promise.all([
-    env.DB.prepare("SELECT metric, SUM(n) AS n FROM daily WHERE key = '' GROUP BY metric").all(),
-    env.DB.prepare("SELECT day, metric, SUM(n) AS n FROM daily WHERE key = '' AND day >= ?1 GROUP BY day, metric ORDER BY day").bind(since).all(),
-    top(env, 'pair', since, 20), top(env, 'page', since, 20), top(env, 'device', since, 5), top(env, 'ref', since, 20), top(env, 'failpair', since, 10),
-    env.DB.prepare("SELECT day, key, SUM(n) AS n FROM daily WHERE metric = 'pair' AND day >= ?1 GROUP BY day, key").bind(since7).all(),
-    top(env, 'country', since, 30), top(env, 'region', since, 30),
+    env.DB.prepare(`SELECT ${sq.m} AS metric, SUM(n) AS n FROM daily WHERE key = '' AND ${sq.where} GROUP BY 1`).all(),
+    env.DB.prepare(`SELECT day, ${sq.m} AS metric, SUM(n) AS n FROM daily WHERE key = '' AND day >= ?1 AND ${sq.where} GROUP BY day, 2 ORDER BY day`).bind(since).all(),
+    top(env, 'pair', since, 20, scope), top(env, 'page', since, 20, scope), top(env, 'device', since, 5, scope), top(env, 'ref', since, 20, scope), top(env, 'failpair', since, 10, scope),
+    env.DB.prepare(`SELECT day, key, SUM(n) AS n FROM daily WHERE metric IN (${pairNames.map(() => '?').join(',')}) AND day >= ?${pairNames.length + 1} GROUP BY day, key`).bind(...pairNames, since7).all(),
+    top(env, 'country', since, 30, scope), top(env, 'region', since, 30, scope),
   ]);
   // heatmap: the last 7 days x the 8 busiest conversion pairs of that week
   const heatDays = [];
@@ -247,7 +263,7 @@ async function stats(url, env) {
   const sum = (arr, k) => arr.reduce((a, r) => a + (r[k] || 0), 0);
   const window = n => daily.slice(-n);
   return json({
-    generated: new Date().toISOString(), days,
+    generated: new Date().toISOString(), days, scope,
     totals: { views: t.views || 0, uniq: t.uniq || 0, conv: t.conv || 0, fail: t.fail || 0 },
     today: daily[daily.length - 1],
     yesterday: daily[daily.length - 2] || null,
@@ -264,8 +280,17 @@ async function stats(url, env) {
     dwell: { seconds: t.dwell || 0, sessions: t.dwellN || 0, avg: t.dwellN ? Math.round((t.dwell || 0) / t.dwellN) : 0 },
   });
 }
-function top(env, metric, since, limit) {
-  return env.DB.prepare('SELECT key, SUM(n) AS n FROM daily WHERE metric = ?1 AND day >= ?2 GROUP BY key ORDER BY n DESC LIMIT ?3').bind(metric, since, limit).all();
+function top(env, metric, since, limit, scope) {
+  const ms = names(scope || 'genuine', metric);
+  return env.DB.prepare(`SELECT key, SUM(n) AS n FROM daily WHERE metric IN (${ms.map(() => '?').join(',')}) AND day >= ? GROUP BY key ORDER BY n DESC LIMIT ?`).bind(...ms, since, limit).all();
+}
+// Wipe every counter (not the feedback). The admin asks twice before calling this.
+async function resetCounters(request, env) {
+  let body;
+  try { body = await request.json(); } catch (e) { return json({ error: 'bad json' }, 400); }
+  if (body.confirm !== 'RESET') return json({ error: 'send {"confirm":"RESET"}' }, 400);
+  await env.DB.prepare('DELETE FROM daily').run();
+  return json({ ok: true });
 }
 
 /* ----------------------------------------------------------- content */

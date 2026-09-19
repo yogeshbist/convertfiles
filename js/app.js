@@ -1080,8 +1080,12 @@
   function trackingOff() {
     return !SITE.api || navigator.doNotTrack === '1' || root.doNotTrack === '1' || navigator.globalPrivacyControl === true;
   }
+  // A device that has signed into the admin panel (or opened /?stats=off) is
+  // one of the owner's; its traffic is counted apart from real visitors.
+  function ownerDevice() { return lsGet('cf.owner') === '1'; }
   function track(ev) {
     if (trackingOff()) return;
+    if (ownerDevice()) ev.own = 1;
     try {
       // text/plain keeps it a "simple" request (no CORS preflight, works with keepalive)
       fetch(SITE.api + '/event', { method: 'POST', headers: { 'content-type': 'text/plain' }, body: JSON.stringify(ev), keepalive: true, credentials: 'omit' }).catch(function () {});
@@ -1093,7 +1097,7 @@
   function flushTime() {
     if (!document.hidden) { pending += Date.now() - seenSince; seenSince = Date.now(); }
     if (pending < 1000 || trackingOff()) { pending = 0; return; }
-    var body = JSON.stringify({ t: 'time', ms: pending, first: !reportedOnce });
+    var body = JSON.stringify(ownerDevice() ? { t: 'time', ms: pending, first: !reportedOnce, own: 1 } : { t: 'time', ms: pending, first: !reportedOnce });
     pending = 0; reportedOnce = true;
     try {
       // sendBeacon survives the page being closed; fetch is the fallback
@@ -1285,6 +1289,9 @@
     adUnit('ad-home', 'home');
     route();
     pagePreset();
+    // /?stats=off marks this device as the owner's, /?stats=on undoes it
+    if (/[?&]stats=off\b/.test(location.search)) { lsSet('cf.owner', '1'); toast('This device is now left out of the statistics', 'check'); history.replaceState(null, '', location.pathname); }
+    else if (/[?&]stats=on\b/.test(location.search)) { try { localStorage.removeItem('cf.owner'); } catch (e) {} toast('This device counts as a visitor again', 'check'); history.replaceState(null, '', location.pathname); }
     trackView();
     watchTime();
     installApp();

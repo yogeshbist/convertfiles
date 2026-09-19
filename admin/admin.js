@@ -3,7 +3,7 @@
   'use strict';
   var SITE = window.SITE || {}, API = SITE.api || '';
   var $ = function (s) { return document.querySelector(s); };
-  var token = null, days = 30, cache = {};
+  var token = null, days = 30, scope = 'genuine', cache = {};
   try { token = sessionStorage.getItem('cf.admin.token'); } catch (e) {}
 
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; }
@@ -50,7 +50,7 @@
     if (v === 'dash') loadDash();
     if (v === 'content') renderFiles();
     if (v === 'feedback') loadFeedback();
-    if (v === 'settings') openFile('site', $('#s-editor'));
+    if (v === 'settings') { ownState(); openFile('site', $('#s-editor')); }
   }
   function signOut() { token = null; try { sessionStorage.removeItem('cf.admin.token'); } catch (e) {} show('login'); }
 
@@ -61,6 +61,7 @@
     $('#login-err').hidden = true; $('#login-btn').disabled = true;
     api('/login', { method: 'POST', body: { password: $('#pw').value } }).then(function (r) {
       token = r.token; try { sessionStorage.setItem('cf.admin.token', token); } catch (x) {}
+      try { localStorage.setItem('cf.owner', '1'); } catch (e) {}
       $('#pw').value = ''; show('dash');
     }).catch(function (err) { $('#login-err').textContent = err.message; $('#login-err').hidden = false; })
       .then(function () { $('#login-btn').disabled = false; });
@@ -89,8 +90,9 @@
   }
   function loadDash() {
     $('#dash-sub').textContent = 'Loading…';
-    api('/stats?days=' + days).then(function (s) {
-      $('#dash-sub').textContent = 'Live counts from the site, updated ' + new Date(s.generated).toLocaleTimeString() + '. Nothing personal is collected.';
+    api('/stats?days=' + days + '&scope=' + scope).then(function (s) {
+      var who = { genuine: 'Genuine visitors only — your own devices are left out.', own: 'Your own devices only.', all: 'Everything, your own devices included.' }[scope];
+      $('#dash-sub').textContent = who + ' Updated ' + new Date(s.generated).toLocaleTimeString() + '. Nothing personal is collected.';
       var k = $('#d-kpis'); k.innerHTML = '';
       var dw = s.dwell || { avg: 0, sessions: 0 };
       [[fmt(s.today.views), 'views today', fmt(s.today.uniq) + ' visitors · ' + fmt(s.today.conv) + ' conversions'],
@@ -133,6 +135,20 @@
     s += '<text x="' + (W - P) + '" y="14" font-size="10" text-anchor="end" fill="var(--muted)">light = views · dark = conversions</text></svg>';
     box.innerHTML = s;
   }
+  document.querySelectorAll('.adm-scope [data-scope]').forEach(function (b) {
+    b.onclick = function () { scope = b.dataset.scope; document.querySelectorAll('.adm-scope [data-scope]').forEach(function (x) { x.classList.toggle('primary', x === b); }); loadDash(); };
+  });
+  function ownState() {
+    var on = false; try { on = localStorage.getItem('cf.owner') === '1'; } catch (e) {}
+    $('#own-state').textContent = on ? 'This device is marked as yours and left out of the genuine numbers.' : 'This device currently counts as a visitor.';
+    $('#own-toggle').textContent = on ? 'Count this device as a visitor' : 'Mark this device as mine';
+    $('#own-toggle').onclick = function () { try { if (on) localStorage.removeItem('cf.owner'); else localStorage.setItem('cf.owner', '1'); } catch (e) {} ownState(); };
+  }
+  $('#reset-btn').onclick = function () {
+    if (!confirm('Reset every view and conversion count to zero? Feedback is kept. This cannot be undone.')) return;
+    if (prompt('Type RESET to confirm') !== 'RESET') return;
+    api('/reset', { method: 'POST', body: { confirm: 'RESET' } }).then(function () { toast('Counters reset'); cache = {}; loadDash(); }, function (e) { toast(e.message); });
+  };
   document.querySelectorAll('.adm-range [data-days]').forEach(function (b) {
     b.onclick = function () { days = +b.dataset.days; document.querySelectorAll('.adm-range [data-days]').forEach(function (x) { x.classList.toggle('primary', x === b); }); loadDash(); };
   });

@@ -1233,15 +1233,9 @@
     if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol) && !/^(localhost|127\.0\.0\.1)$/.test(location.hostname) || location.search.indexOf('sw=1') > -1) {
       navigator.serviceWorker.register('/sw.js').catch(function () {});
     }
-    var b = $('#install'), deferred = null;
-    if (!b) return;
-    window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); deferred = e; b.hidden = false; });
-    b.onclick = function () {
-      if (!deferred) return;
-      deferred.prompt();
-      deferred.userChoice.then(function () { deferred = null; b.hidden = true; });
-    };
-    window.addEventListener('appinstalled', function () { b.hidden = true; toast('Installed — find Convert Files with your other apps', 'check'); });
+    // No install button on the site. Swallowing the browser's own prompt also
+    // keeps Android's "add to home screen" bar from popping up on its own.
+    window.addEventListener('beforeinstallprompt', function (e) { e.preventDefault(); });
   }
   function takeSharedFiles() {
     if (location.search.indexOf('shared=1') < 0 || !root.indexedDB) return;

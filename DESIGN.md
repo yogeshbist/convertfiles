@@ -98,7 +98,7 @@ Where each piece lives, and who creates its markup.
 
 | Component | Markup lives in | Classes / ids |
 |---|---|---|
-| Header, nav, install button | `index.html` | `.nav .nav-in .brand .tabs .tab #install` |
+| Header, nav | `index.html` | `.nav .nav-in .brand .tabs .tab` |
 | Hero (eyebrow, h1, lead) | `index.html` | `.hero .eyebrow` — build.py **replaces the `<h1>` text and the `<p>` text** on every generated page, so keep them as single elements |
 | Drop zone | `index.html` | `#drop .drop .drop-ic .browse` |
 | Picked files list | **app.js / tools.js** | `.picked .picked-list .picked-row .thumb .info .name .meta` |

@@ -433,10 +433,7 @@ ol.howto li strong{color:var(--ink)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 
 
-/* install button (PWA) and the embeddable widget page */
-.install{margin-left:auto;white-space:nowrap}
-.install svg{width:15px;height:15px}
-@media (max-width:640px){.install span{display:none}.install{padding:8px}}
+/* the embeddable widget page */
 body.embed .nav,body.embed .footer,body.embed .sticky{display:none}
 body.embed main{padding-top:14px}
 body.embed .hero{padding-top:4px}

@@ -81,6 +81,9 @@
   function revokeAll() { liveUrls.forEach(function (u) { URL.revokeObjectURL(u); }); liveUrls = []; }
 
   /* --------------------------------------------------------------- views */
+  function isHome() {
+    return location.pathname === '/' || /index\.html$/.test(location.pathname);
+  }
   function show(name, keepScroll) {
     ['convert', 'files', 'formats', 'guides'].forEach(function (v) {
       $('#nav-' + v).setAttribute('aria-selected', String(v === name));
@@ -1075,9 +1078,14 @@
     refreshTargets();
     document.addEventListener('formats-changed', function () { refreshTargets(); if (picker.open === 'to') { picker.items = targetItems(); paintPicker(); } });
 
-    $('#nav-convert').onclick = function () { show('convert'); };
+    // Convert goes to the converter itself. On the home page that is just a
+    // view switch; from a hub, guide or landing page it is a real navigation.
+    $('#nav-convert').onclick = function (e) {
+      if (!isHome()) return;
+      e.preventDefault(); show('convert');
+    };
     $('#nav-files').onclick = function () { show('files'); };
-    $('#brand').onclick = function (e) { if (location.pathname === '/' || /index\.html$/.test(location.pathname)) { e.preventDefault(); show('convert'); } };
+    $('#brand').onclick = function (e) { if (isHome()) { e.preventDefault(); show('convert'); } };
     $('#f-about').onclick = function (e) {
       var t = $('#about');
       if (!t) return;            // not the home page: follow the href to /#about

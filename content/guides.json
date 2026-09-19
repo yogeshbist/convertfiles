@@ -16,7 +16,8 @@
       "p:HEIC to JPG is lossy to lossy, so keep the quality slider at 90% or above. At that setting the difference is invisible; the file is simply a bit larger than the HEIC was."
     ],
     "tryFrom": "heic",
-    "tryTo": "jpg"
+    "tryTo": "jpg",
+    "seo_title": "HEIC to JPG: why iPhone photos will not open"
   },
   {
     "slug": "pdf-to-word",
@@ -35,7 +36,8 @@
       "p:Tip: if you only need the words, choose <code>.txt</code> or <code>.md</code> as the target. It is faster and there is no layout to get wrong."
     ],
     "tryFrom": "pdf",
-    "tryTo": "docx"
+    "tryTo": "docx",
+    "seo_title": "PDF to Word: what survives the trip"
   },
   {
     "slug": "which-image-format",
@@ -57,7 +59,8 @@
       "ul:Photo to a person → JPG|Screenshot, logo or transparent image → PNG|Image on a website you run → WebP (or AVIF)|Anything you received that will not open → PNG"
     ],
     "tryFrom": "webp",
-    "tryTo": "png"
+    "tryTo": "png",
+    "seo_title": "JPG, PNG, WebP or AVIF: which to use"
   },
   {
     "slug": "mov-to-mp4",
@@ -76,7 +79,8 @@
       "p:Only the audio? Choose <code>.mp3</code> or <code>.m4a</code> as the target and the video track is dropped entirely."
     ],
     "tryFrom": "mov",
-    "tryTo": "mp4"
+    "tryTo": "mp4",
+    "seo_title": "MOV to MP4: play iPhone video anywhere"
   },
   {
     "slug": "3d-model-to-glb",
@@ -96,7 +100,8 @@
       "p:GLB to STL is useful for printing a model that only exists as a glTF. Node transforms are baked in, so the printed part comes out at the pose you see in the viewer."
     ],
     "tryFrom": "obj",
-    "tryTo": "glb"
+    "tryTo": "glb",
+    "seo_title": "OBJ and STL to GLB for AR"
   },
   {
     "slug": "is-it-safe",
@@ -114,7 +119,8 @@
       "p:Only what you can see in the Your files tab, which lives in your own browser’s storage on your own device. Clear all removes it. Nothing about you or your files is sent to us, because there is no “us” receiving anything."
     ],
     "tryFrom": "pdf",
-    "tryTo": "png"
+    "tryTo": "png",
+    "seo_title": "Is it safe to convert files online?"
   },
   {
     "slug": "csv-vs-excel",
@@ -134,6 +140,7 @@
       "p:The same data also converts to JSON for developers, to SQL insert statements for a database, to Markdown for documentation, and to ODS for LibreOffice."
     ],
     "tryFrom": "csv",
-    "tryTo": "xlsx"
+    "tryTo": "xlsx",
+    "seo_title": "CSV vs Excel: when to convert"
   }
 ]

@@ -4,25 +4,31 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- page:meta -->
-<title>Convert JSON to CSV online — free, in your browser</title>
-<meta name="description" content="JSON to CSV in seconds. Free, no account, nothing uploaded: the file is converted inside your browser and never leaves your device.">
+<title>Convert JSON to CSV — free, online, nothing uploaded</title>
+<meta name="description" content="Convert JSON to CSV free in your browser. Nothing is uploaded. A spreadsheet is far easier to read, sort and hand to a colleague than a wall of nested JSON.">
 <link rel="canonical" href="https://convertfiles.in/json-to-csv/">
-<meta property="og:title" content="Convert JSON to CSV online — free, in your browser">
-<meta property="og:description" content="JSON to CSV in seconds. Free, no account, nothing uploaded: the file is converted inside your browser and never leaves your device.">
+<meta property="og:title" content="Convert JSON to CSV — free, online, nothing uploaded">
+<meta property="og:description" content="Convert JSON to CSV free in your browser. Nothing is uploaded. A spreadsheet is far easier to read, sort and hand to a colleague than a wall of nested JSON.">
 <meta property="og:url" content="https://convertfiles.in/json-to-csv/">
 <meta property="og:image" content="https://convertfiles.in/assets/og.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Convert Files">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Convert JSON to CSV — free, online, nothing uploaded">
+<meta name="twitter:description" content="Convert JSON to CSV free in your browser. Nothing is uploaded. A spreadsheet is far easier to read, sort and hand to a colleague than a wall of nested JSON.">
+<meta name="twitter:image" content="https://convertfiles.in/assets/og.png">
+<meta name="twitter:image:alt" content="Convert Files — free file converter that runs in your browser">
 <meta name="cf-preset" content="json>csv">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is JSON to CSV conversion free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Convert Files is free, with no account, no limits and no watermark."}}, {"@type": "Question", "name": "Is my JSON file uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "No. The conversion runs inside your browser. The file is read from your device, converted in memory and saved back to your device. Nothing is sent to a server."}}, {"@type": "Question", "name": "What happens to the quality?", "acceptedAnswer": {"@type": "Answer", "text": "Cell values are carried across exactly as text. Formulas become their results, and only the first sheet is used for single-table formats like CSV."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://convertfiles.in/"}, {"@type": "ListItem", "position": 2, "name": "Data converters", "item": "https://convertfiles.in/formats/"}, {"@type": "ListItem", "position": 3, "name": "JSON to CSV"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "How to convert JSON to CSV", "description": "Convert a JSON file to CSV in a browser, without uploading it anywhere.", "totalTime": "PT1M", "supply": [{"@type": "HowToSupply", "name": "A JSON file"}], "tool": [{"@type": "HowToTool", "name": "A web browser"}], "step": [{"@type": "HowToStep", "position": 1, "name": "Choose your JSON file", "text": "Drop it on the box above, or tap to browse. You can pick several files at once.", "url": "https://convertfiles.in/json-to-csv/#step1"}, {"@type": "HowToStep", "position": 2, "name": "Confirm the target is .csv", "text": "It is already selected. Adjust quality, size or the other options if you want to.", "url": "https://convertfiles.in/json-to-csv/#step2"}, {"@type": "HowToStep", "position": 3, "name": "Convert and download", "text": "Press Convert, then Download. Your file stays on your device the whole time.", "url": "https://convertfiles.in/json-to-csv/#step3"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is converting JSON to CSV free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, completely. There is no account, no daily limit, no watermark and no premium tier."}}, {"@type": "Question", "name": "Is my JSON file uploaded to a server?", "acceptedAnswer": {"@type": "Answer", "text": "No. The conversion runs inside your own browser using your device's processor. The file is read from your disk, converted in memory and saved back to your disk — nothing is transmitted, so there is nothing for anyone to store."}}, {"@type": "Question", "name": "What happens to the quality?", "acceptedAnswer": {"@type": "Answer", "text": "Cell values are carried across exactly as they appear. Formulas become their calculated results, and formats that hold only one table — CSV and TSV — take the first sheet of a multi-sheet workbook. Nested objects are flattened into columns using dotted names, so nothing is silently dropped. A CSV holds one sheet of values, so formulas, formatting and extra sheets do not come across."}}, {"@type": "Question", "name": "Can I convert several JSON files at once?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Select as many files as you like and they are converted one after another in a single tap, with a download for each and a zip of all of them."}}, {"@type": "Question", "name": "Should I keep the original JSON file?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — keep it, converting never touches it. The reason to make a copy in another format is that JSON is written for programs to parse, not for people to read."}}]}</script>
 <!-- /page:meta -->
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 <meta name="theme-color" content="#0E7C86">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
-<link rel="stylesheet" href="/css/app.css?v=8e02aeb9">
+<link rel="stylesheet" href="/css/app.css?v=b488e765">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -50,8 +56,8 @@
     <nav class="tabs" role="tablist" aria-label="Sections">
       <button class="tab" id="nav-convert" role="tab" aria-selected="true">Convert</button>
       <button class="tab" id="nav-files" role="tab" aria-selected="false">Your files <span class="pill" id="files-count"></span></button>
-      <button class="tab" id="nav-formats" role="tab" aria-selected="false">Formats</button>
-      <button class="tab" id="nav-guides" role="tab" aria-selected="false">Guides</button>
+      <a class="tab" id="nav-formats" href="/formats/">Formats</a>
+      <a class="tab" id="nav-guides" href="/guides/">Guides</a>
     </nav>
   </div>
 </header>
@@ -63,7 +69,7 @@
     <div class="hero">
       <span class="eyebrow"><svg><use href="#i-bolt"/></svg>Convert your files in seconds</span>
       <h1>Convert JSON to CSV</h1>
-      <p>JSON to CSV. Free, in your browser, in seconds &mdash; nothing is uploaded.</p>
+      <p>Free, in your browser, in seconds &mdash; JSON to Comma-separated values with nothing uploaded anywhere.</p>
 
       <div class="drop" id="drop" tabindex="0" role="button" aria-label="Choose a file to convert">
         <div class="drop-ic"><svg><use href="#i-upload"/></svg></div>
@@ -121,67 +127,32 @@
     </div>
 
     <!-- page:body -->
-<section class="seo" id="about-pair">
-<h2>How to convert JSON to CSV</h2>
-<ol><li>Drop your <code>.json</code> file above, or click the box to browse for it.</li>
-<li>The target is already set to <code>.csv</code>. Change any option you like.</li>
-<li>Press <strong>Convert</strong>, then <strong>Download</strong>. The file stays on your device the whole time.</li></ol>
-<h2>About JSON</h2><p>JSON is the data format of the web: nested objects and lists in plain text, read and written by every programming language and API.</p>
-<h2>About Comma-separated values</h2><p>CSV is a plain-text table: one row per line, values separated by commas. Every spreadsheet, database and programming language can read and write it.</p>
-<h2>What to expect</h2><p>Cell values are carried across exactly as text. Formulas become their results, and only the first sheet is used for single-table formats like CSV.</p>
-<h2>Questions</h2>
-<p><strong>Is JSON to CSV conversion free?</strong><br>Yes. Convert Files is free, with no account, no limits and no watermark.</p>
-<p><strong>Is my JSON file uploaded?</strong><br>No. The conversion runs inside your browser. The file is read from your device, converted in memory and saved back to your device. Nothing is sent to a server.</p>
-<p><strong>What happens to the quality?</strong><br>Cell values are carried across exactly as text. Formulas become their results, and only the first sheet is used for single-table formats like CSV.</p>
-<h2>Related conversions</h2><div class="rel"><a href="/csv-to-xlsx/">CSV to Excel</a><a href="/xlsx-to-csv/">Excel to CSV</a></div>
+<section class="seo">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <a href="/formats/">Data converters</a> <span aria-hidden="true">&rsaquo;</span> <span>JSON to CSV</span></nav>
+<h2>Why convert JSON to CSV?</h2><p>A spreadsheet is far easier to read, sort and hand to a colleague than a wall of nested JSON.</p>
+<h2>How to convert JSON to CSV</h2><ol class="howto">
+<li><strong>Choose your JSON file.</strong> Drop it on the box above, or tap to browse. You can pick several files at once.</li>
+<li><strong>Confirm the target is .csv.</strong> It is already selected. Adjust quality, size or the other options if you want to.</li>
+<li><strong>Convert and download.</strong> Press Convert, then Download. Your file stays on your device the whole time.</li>
+</ol>
+<h2>What is a .json file?</h2><p>JSON is the data format of the modern web: nested objects and lists written as readable text. Every programming language and virtually every API speaks it, which makes it the usual destination when data has to leave a spreadsheet and enter a program.</p>
+<h2>What is a .csv file?</h2><p>CSV is a table written as plain text: one row per line, values separated by commas. Every spreadsheet, database and programming language on earth can read and write it, which is why it remains the default way to move data between systems — at the cost of storing no formatting, no formulas and no idea what a date is.</p>
+<h2>What to expect from this conversion</h2><p>Cell values are carried across exactly as they appear. Formulas become their calculated results, and formats that hold only one table — CSV and TSV — take the first sheet of a multi-sheet workbook. Nested objects are flattened into columns using dotted names, so nothing is silently dropped. A CSV holds one sheet of values, so formulas, formatting and extra sheets do not come across.</p>
+<h2>Is it private?</h2><p>Yes, by design. Every conversion happens inside your own browser using your device’s processor — there is no server that receives your JSON file, so there is nothing for anyone to store, scan or leak. You can confirm it yourself: open your browser’s developer tools, watch the Network tab while you convert, and you will see no upload.</p>
+<h2>Questions about JSON to CSV</h2><dl class="faq-list">
+<dt>Is converting JSON to CSV free?</dt><dd>Yes, completely. There is no account, no daily limit, no watermark and no premium tier.</dd>
+<dt>Is my JSON file uploaded to a server?</dt><dd>No. The conversion runs inside your own browser using your device&#x27;s processor. The file is read from your disk, converted in memory and saved back to your disk — nothing is transmitted, so there is nothing for anyone to store.</dd>
+<dt>What happens to the quality?</dt><dd>Cell values are carried across exactly as they appear. Formulas become their calculated results, and formats that hold only one table — CSV and TSV — take the first sheet of a multi-sheet workbook. Nested objects are flattened into columns using dotted names, so nothing is silently dropped. A CSV holds one sheet of values, so formulas, formatting and extra sheets do not come across.</dd>
+<dt>Can I convert several JSON files at once?</dt><dd>Yes. Select as many files as you like and they are converted one after another in a single tap, with a download for each and a zip of all of them.</dd>
+<dt>Should I keep the original JSON file?</dt><dd>Yes — keep it, converting never touches it. The reason to make a copy in another format is that JSON is written for programs to parse, not for people to read.</dd>
+</dl>
+<h2>Related conversions</h2><div class="rel"><a href="/csv-to-json/">CSV to JSON</a><a href="/json-to-pdf/">JSON to PDF</a><a href="/json-to-xml/">JSON to XML</a><a href="/json-to-xlsx/">JSON to XLSX</a><a href="/json-to-sql/">JSON to SQL</a><a href="/json-to-toml/">JSON to TOML</a><a href="/json-to-yaml/">JSON to YAML</a><a href="/yaml-to-csv/">YAML to CSV</a><a href="/xls-to-csv/">XLS to CSV</a><a href="/xlsx-to-csv/">XLSX to CSV</a><a href="/tsv-to-csv/">TSV to CSV</a><a href="/ods-to-csv/">ODS to CSV</a></div>
+<p class="seo-more"><a href="/formats/">See all 399 conversions</a> &middot; <a href="/guides/">Read the guides</a></p>
 </section>
 <!-- /page:body -->
 
     <!-- ---- editorial sections ---- -->
-    <section class="home" aria-label="At a glance"><div class="kpis" id="kpis"></div></section>
-
-    <section class="home">
-      <h2>How it works</h2>
-      <p class="lead">Three steps, no account, nothing uploaded.</p>
-      <div class="steps" id="steps"></div>
-    </section>
-
-    <section class="home">
-      <h2>Popular conversions</h2>
-      <p class="lead">The pairs people reach for most. Click one and the converter is set up for it.</p>
-      <div class="pop" id="popular"></div>
-    </section>
-
-    <div class="ad home" id="ad-home" hidden></div>
-
-    <section class="home" id="home-recent" hidden>
-      <h2>Your most used</h2>
-      <p class="lead">Based on the files you have converted on this device.</p>
-      <div class="pop" id="recent"></div>
-    </section>
-
-    <section class="home">
-      <div class="home-h"><h2>Guides</h2><button class="btn sm" id="home-all-guides">All guides</button></div>
-      <p class="lead">Short, practical explanations of the conversions people ask about most.</p>
-      <div class="guides" id="home-guides"></div>
-    </section>
-
-    <section class="home" id="about">
-      <h2>About Convert Files</h2>
-      <div class="about" id="about-box"></div>
-    </section>
-
-    <section class="home" id="support">
-      <h2>Support Convert Files</h2>
-      <p class="lead">Free for everyone, funded by the people who find it useful.</p>
-      <div class="support" id="support-box"></div>
-      <div class="sponsor" id="sponsor-box"></div>
-    </section>
-
-    <section class="home">
-      <h2>Questions people ask</h2>
-      <div class="faq" id="faq"></div>
-    </section>
+    
   </section>
 
   <!-- ================================================= YOUR FILES -->
@@ -234,7 +205,7 @@
 
 <footer class="footer">
   <span><b>Convert Files</b> &mdash; free, no account, nothing leaves your device.</span>
-  <span class="footer-links"><a href="/#guides" id="f-guides">Guides</a><a href="/#formats" id="f-formats">Formats</a><a href="/#about" id="f-about">About</a><a href="/#support" id="f-support">Support</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></span>
+  <span class="footer-links"><a href="/formats/">All conversions</a><a href="/guides/">Guides</a><a href="/#about" id="f-about">About</a><a href="/#support" id="f-support">Support</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></span>
 </footer>
 
 <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-name">
@@ -259,12 +230,12 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script src="/js/formats.js?v=8e02aeb9"></script>
-<script src="/js/encoders.js?v=8e02aeb9"></script>
-<script src="/js/docmodel.js?v=8e02aeb9"></script>
-<script src="/js/convert.js?v=8e02aeb9"></script>
-<script src="/js/db.js?v=8e02aeb9"></script>
-<script src="/js/content.js?v=8e02aeb9"></script>
-<script src="/js/app.js?v=8e02aeb9"></script>
+<script src="/js/formats.js?v=b488e765"></script>
+<script src="/js/encoders.js?v=b488e765"></script>
+<script src="/js/docmodel.js?v=b488e765"></script>
+<script src="/js/convert.js?v=b488e765"></script>
+<script src="/js/db.js?v=b488e765"></script>
+<script src="/js/content.js?v=b488e765"></script>
+<script src="/js/app.js?v=b488e765"></script>
 </body>
 </html>

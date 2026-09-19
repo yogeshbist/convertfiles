@@ -778,24 +778,25 @@
     if (!lsGet('cf.since')) lsSet('cf.since', String(Date.now()));
   }
   function fmtInt(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+  // A real link, so a search engine can follow it to that conversion's own page.
   function popTile(from, to, label, count) {
-    var b = el('button'); b.type = 'button';
+    var b = el('a');
+    b.href = '/' + from + '-to-' + to + '/';
     b.appendChild(chip(from));
     var arr = el('span', null, '→'); arr.style.color = 'var(--pop)'; b.appendChild(arr);
     b.appendChild(chip(to));
     b.appendChild(el('span', 'lbl', label));
     if (count) b.appendChild(el('span', 'cnt', count + '×'));
-    b.onclick = function () { preset(from, to); };
     return b;
   }
   function guideCard(gd) {
-    var c = el('button', 'gcard'); c.type = 'button';
+    var c = el('a', 'gcard');
+    c.href = '/guides/' + gd.slug + '/';
     var cat = el('span', 'cat', gd.cat); cat.style.setProperty('--fam', FAM_VAR[gd.fam] || 'var(--accent)');
     c.appendChild(cat);
     c.appendChild(el('h3', null, gd.title));
     c.appendChild(el('p', null, gd.teaser));
     c.appendChild(el('span', 'rt', readTime(gd) + ' min read'));
-    c.onclick = function () { openGuide(gd.slug); };
     return c;
   }
   function readTime(gd) {
@@ -852,9 +853,9 @@
       st.appendChild(d);
     });
     var pop = $('#popular');
-    K.POPULAR.forEach(function (pr) { if (C.rule(pr[0], pr[1])) pop.appendChild(popTile(pr[0], pr[1], pr[2])); });
+    if (!pop.children.length) K.POPULAR.forEach(function (pr) { if (C.rule(pr[0], pr[1])) pop.appendChild(popTile(pr[0], pr[1], pr[2])); });
     var hg = $('#home-guides');
-    K.GUIDES.slice(0, 3).forEach(function (gd) { hg.appendChild(guideCard(gd)); });
+    if (!hg.children.length) K.GUIDES.slice(0, 3).forEach(function (gd) { hg.appendChild(guideCard(gd)); });
     var ab = $('#about-box'), left = el('div'), right = el('ul');
     K.ABOUT.intro.forEach(function (t) { left.appendChild(el('p', null, t)); });
     K.ABOUT.points.forEach(function (t) { var li = el('li'); li.appendChild(icon('check')); li.appendChild(el('span', null, t)); right.appendChild(li); });
@@ -933,7 +934,7 @@
     show('guides');
     $('#guides-list').hidden = true;
     var a = $('#article'); a.hidden = false; a.innerHTML = '';
-    var back = btn('All guides', 'sm nav-back'); back.onclick = closeGuide; a.appendChild(back);
+    var back = el('a', 'btn sm nav-back'); back.href = '/guides/'; back.appendChild(el('span', null, 'All guides')); a.appendChild(back);
     var cat = el('div', 'cat', gd.cat); cat.style.setProperty('--fam', FAM_VAR[gd.fam] || 'var(--accent)'); a.appendChild(cat);
     a.appendChild(el('h1', null, gd.title));
     a.appendChild(el('div', 'meta', readTime(gd) + ' min read · Convert Files guides'));
@@ -972,8 +973,6 @@
   function route() {
     var h = location.hash;
     if (/^#guide:/.test(h)) openGuide(h.slice(7));
-    else if (h === '#guides') { show('guides'); closeGuide(); }
-    else if (h === '#formats') show('formats');
     else if (h === '#files') show('files');
     else if (h === '#about') { show('convert', true); var t = $('#about'); if (t) t.scrollIntoView({ block: 'start' }); }
     else if (h === '#support') goSupport();
@@ -1066,12 +1065,7 @@
 
     $('#nav-convert').onclick = function () { show('convert'); };
     $('#nav-files').onclick = function () { show('files'); };
-    $('#nav-formats').onclick = function () { show('formats'); };
-    $('#nav-guides').onclick = function () { show('guides'); closeGuide(); };
     $('#brand').onclick = function (e) { if (location.pathname === '/' || /index\.html$/.test(location.pathname)) { e.preventDefault(); show('convert'); } };
-    $('#home-all-guides').onclick = function () { show('guides'); closeGuide(); };
-    $('#f-guides').onclick = function (e) { e.preventDefault(); show('guides'); closeGuide(); };
-    $('#f-formats').onclick = function (e) { e.preventDefault(); show('formats'); };
     $('#f-about').onclick = function (e) { e.preventDefault(); show('convert', true); $('#about').scrollIntoView({ block: 'start' }); };
     $('#f-support').onclick = function (e) { e.preventDefault(); goSupport(); };
     window.addEventListener('hashchange', route);

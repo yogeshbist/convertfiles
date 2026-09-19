@@ -14,6 +14,10 @@ Everything is idempotent: run it again after any edit, then commit.
 """
 import datetime, hashlib, json, os, re, sys, html
 
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'seo'))
+import formats as SEO          # noqa: E402
+import pages as PAGES          # noqa: E402
+
 ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
 SITE = json.load(open('site.json'))
@@ -115,12 +119,62 @@ def page_meta(title, description, path, kind='website', extra_meta='', jsonld=No
          '<meta property="og:image" content="%s/assets/og.png">' % DOMAIN,
          '<meta property="og:type" content="%s">' % kind,
          '<meta property="og:site_name" content="Convert Files">',
-         '<meta name="twitter:card" content="summary_large_image">']
+         '<meta name="twitter:card" content="summary_large_image">',
+         '<meta name="twitter:title" content="%s">' % esc(title),
+         '<meta name="twitter:description" content="%s">' % esc(description),
+         '<meta name="twitter:image" content="%s/assets/og.png">' % DOMAIN,
+         '<meta name="twitter:image:alt" content="Convert Files — free file converter that runs in your browser">']
     if extra_meta:
         m.append(extra_meta)
-    if jsonld:
-        m.append('<script type="application/ld+json">' + json.dumps(jsonld, ensure_ascii=False) + '</script>')
+    for block in (jsonld if isinstance(jsonld, list) else [jsonld] if jsonld else []):
+        m.append('<script type="application/ld+json">' + json.dumps(block, ensure_ascii=False) + '</script>')
     return '\n'.join(m)
+
+
+def clip(text, budget):
+    """Trim to `budget` characters on a word boundary — never mid-word."""
+    text = ' '.join(text.split())
+    if len(text) <= budget:
+        return text
+    cut = text[:budget + 1]
+    sp = cut.rfind(' ')
+    return cut[:sp].rstrip(' ,;:-\u2014') if sp > 0 else ''
+
+
+def meta_desc(F, T, why, what):
+    """A unique <=158-char description per pair: fixed promise + a whole
+    sentence of pair-specific copy that fits, rather than a truncated one."""
+    head = 'Convert %s to %s free in your browser. Nothing is uploaded. ' % (F, T)
+    budget = 157 - len(head)
+    cands = []
+    for sentence in re.split(r'(?<=[.!?])\s+', why):
+        sentence = sentence.strip()
+        if not sentence:
+            continue
+        cands.append(sentence)
+        # ...and the halves of a two-clause "because A, while B." sentence,
+        # either of which stands on its own in a search snippet.
+        for part in re.split(r',\s+while\s+', sentence):
+            part = part.strip().rstrip('.')
+            part = re.sub(r'^People convert \S+ to \S+ because ', '', part)
+            if part:
+                cands.append(part[0].upper() + part[1:] + '.')
+    cands.sort(key=lambda c: -len(c))
+    # `what` is shared by every pair in the family, so it is only a last resort
+    cands += sorted((x.strip() for x in re.split(r'(?<=[.!?])\s+', what) if x.strip()), key=lambda c: -len(c))
+    tail = next((c for c in cands if len(c) <= budget), '')
+    if not tail and cands:
+        tail = (clip(cands[0].split(',')[0], budget - 1) + '.').strip()
+    return (head + tail).strip()
+
+
+def strip_home(page):
+    """Generated pages keep the converter and their own content, not the home
+    page's editorial blocks — 400 copies of the same FAQ helps nobody."""
+    a, b = page.find('<!-- home:only -->'), page.find('<!-- /home:only -->')
+    if a < 0 or b < 0:
+        return page
+    return page[:a] + page[b + len('<!-- /home:only -->'):]
 
 
 def write(path, text):
@@ -143,114 +197,146 @@ home_jsonld = {
 }
 index = replace_block(index, 'page:meta', page_meta(
     'Convert Files — free online file converter, nothing uploaded',
-    'Convert your files in seconds — free, no account, nothing uploaded. Images, PDF, Word, Excel, audio, video, fonts and 3D models, converted inside your browser.',
+    'Convert your files in seconds — free, no account, nothing uploaded. Images, PDF, Word, Excel, audio, video and 3D models, converted in your browser.',
     '', jsonld=home_jsonld))
 index = replace_block(index, 'page:body', '')
+
+
+def chip_html(ext):
+    fam = family(ext)
+    return '<span class="chip" style="--fam:var(--f-%s)">.%s</span>' % (fam, ext)
+
+
+# Static, crawlable versions of the two link lists the app would otherwise build
+# in JavaScript. The app leaves them alone when they are already filled.
+_pop = []
+for _p in load_json('popular'):
+    _pop.append('<a href="/%s-to-%s/">%s<span style="color:var(--pop)">&rarr;</span>%s<span class="lbl">%s</span></a>'
+                % (_p['from'], _p['to'], chip_html(_p['from']), chip_html(_p['to']), esc(_p['label'])))
+index = index.replace('<div class="pop" id="popular"></div>', '<div class="pop" id="popular">%s</div>' % ''.join(_pop))
+_gc = []
+for _g in CONTENT['GUIDES'][:3]:
+    _words = len(re.sub(r'<[^>]+>', '', ' '.join(_g['body'])).split())
+    _gc.append('<a class="gcard" href="/guides/%s/"><span class="cat" style="--fam:var(--f-%s)">%s</span>'
+               '<h3>%s</h3><p>%s</p><span class="rt">%d min read</span></a>'
+               % (_g['slug'], _g['fam'], esc(_g['cat']), esc(_g['title']), esc(_g['teaser']), max(2, round(_words / 200))))
+index = index.replace('<div class="guides" id="home-guides"></div>', '<div class="guides" id="home-guides">%s</div>' % ''.join(_gc))
 open('index.html', 'w').write(index)
 GENERATED.append('index.html')
 BASE = index
 
 
 # ---------------------------------------------------------- landing pages
-BLURB = {
-    'pdf': 'PDF fixes a document to the page exactly as it was laid out, which is why it is the format for sharing and printing. It is also why it is hard to edit: the text is placed, not flowed.',
-    'docx': 'DOCX is Microsoft Word’s format. It describes a document by its structure — paragraphs, headings, lists, tables and pictures — and lets Word lay it out, which makes it the right format for anything that will still be edited.',
-    'jpg': 'JPG (JPEG) is the universal photo format: small files, opened by every device made in the last twenty-five years. It is lossy, so it is best for photographs rather than screenshots, logos or text.',
-    'jpeg': 'JPEG is the universal photo format: small files, opened by every device. It is lossy, so it suits photographs rather than screenshots, logos or text.',
-    'png': 'PNG is lossless and supports transparency. It is the format for screenshots, logos, diagrams and anything with sharp edges or a cut-out background; photos come out larger than JPG.',
-    'heic': 'HEIC is the format iPhones have used for photos since iOS 11. It stores a photo in about half the space of a JPG, but Windows, Android and most browsers cannot open it without help.',
-    'webp': 'WebP is Google’s web image format: around 30% smaller than JPG at the same quality, with transparency. Every browser shows it; many desktop programs still cannot open it.',
-    'mov': 'MOV is Apple’s QuickTime container, used by iPhones and Macs for recorded video. It often holds HEVC video, which many Windows and Android devices refuse to play.',
-    'mp4': 'MP4 with H.264 video and AAC audio is the one video format that plays everywhere: phones, TVs, browsers, messaging apps and editing software.',
-    'mp3': 'MP3 is the audio format everything understands. It is lossy but at 192 kbps or above the difference from the original is inaudible to most listeners.',
-    'gif': 'GIF is a short, silent, looping animation with at most 256 colours. It plays inline everywhere, which keeps it popular for reactions and quick demos despite its large files.',
-    'webm': 'WebM (VP9 video, Opus audio) is the open web video format. It is usually smaller than MP4 at the same quality and plays in every modern browser.',
-    'wav': 'WAV is uncompressed audio: exactly the recorded samples, with no quality loss and large files. It is the format for editing and archiving, not for sharing.',
-    'm4a': 'M4A is AAC audio in an MP4 container — the format of iTunes and Apple Music purchases and of voice memos. It sounds better than MP3 at the same bitrate but is less universally supported.',
-    'ogg': 'OGG (Opus) is an open audio format with excellent quality at low bitrates. It is common in games, voice chat and open-source software, and plays in all modern browsers.',
-    'csv': 'CSV is a plain-text table: one row per line, values separated by commas. Every spreadsheet, database and programming language can read and write it.',
-    'xlsx': 'XLSX is Microsoft Excel’s workbook format: multiple sheets, formatting, formulas and real dates. It is what most people mean by “a spreadsheet”.',
-    'json': 'JSON is the data format of the web: nested objects and lists in plain text, read and written by every programming language and API.',
-    'md': 'Markdown is plain text with light formatting marks — # for headings, ** for bold. It is the format of READMEs, notes apps and documentation.',
-    'html': 'HTML is the language of web pages. As a document format it is readable by any browser and carries headings, links, tables and images.',
-    'epub': 'EPUB is the open ebook format used by every reader except the Kindle. It reflows text to fit the screen, unlike a PDF.',
-    'txt': 'Plain text is the simplest format there is: just the words, with no formatting. It opens everywhere and never goes out of date.',
-    'svg': 'SVG is a vector format: shapes described mathematically, so a logo or icon stays sharp at any size. Browsers, design tools and many apps open it.',
-    'ico': 'ICO is the Windows icon format, used for favicons and application icons. It can hold several sizes of the same image in one file.',
-    'tiff': 'TIFF is a lossless image format used by scanners, print workflows and archives. Files are large and not every app or browser opens them.',
-    'obj': 'OBJ is a plain-text 3D mesh format from the 1990s that almost every 3D program can read and write. It carries geometry and, through a companion .mtl file, materials.',
-    'stl': 'STL describes a 3D surface as triangles and nothing else — no colour, no texture. It is the standard format for 3D printing.',
-    'glb': 'GLB is the binary form of glTF, the 3D format used by web viewers, Android’s AR Scene Viewer and modern game engines. One file holds the whole scene.',
-    'ttf': 'TTF is the TrueType font format used by Windows, macOS and most applications for installed fonts.',
-    'woff': 'WOFF is the web font format: the same font tables as TTF or OTF, compressed for downloading with a web page.',
-}
-LOSSY = {'jpg', 'jpeg', 'webp', 'avif', 'jxl', 'heic', 'mp3', 'm4a', 'aac', 'ogg', 'opus', 'mp4', 'webm', 'gif'}
+GRAPH = json.load(open('content/pairs.json'))['graph']
+SEO_PAIRS = SEO.seo_pairs(GRAPH)
+PAIR_SET = set(SEO_PAIRS)
 
 
-def expect(f, t):
-    ff, ft = family(f), family(t)
-    if ff == 'image' and ft == 'image':
-        if t in LOSSY:
-            return 'The image is re-encoded, so keep the quality setting at 85% or higher; at that level the difference is invisible. Transparency is flattened to white for JPG.'
-        return 'The target is lossless, so every pixel of the decoded image is kept. The file may be larger than the source.'
-    if ff == 'image' and ft == 'pdf':
-        return 'The picture is placed on a page sized to fit it. Several images can be combined by converting each and merging in any PDF tool.'
-    if ff == 'video' and ft == 'video':
-        return 'Every frame is decoded and re-encoded inside your browser, so a long clip takes a while and the tab must stay open. Set a width of 1280 for a much smaller file that still looks sharp on a phone.'
-    if ff == 'video' and ft == 'audio':
-        return 'The video track is dropped and only the sound is kept, encoded at the bitrate you choose.'
-    if ff == 'video' and ft == 'image':
-        return 'Pick the point in the clip to sample; for GIF also the length and frames per second. GIFs are limited to 256 colours, so dithering is on by default.'
-    if ff == 'audio':
-        return 'The audio is decoded and re-encoded with the codec of the target format. Choose 192 kbps or more for music.'
-    if ff == 'doc' or ft == 'doc':
-        return 'Headings, paragraphs, bold and italic text, lists, tables and embedded pictures are carried across. Exact page layout, fonts and columns are not; a scanned PDF has no text to extract.'
-    if ff == 'table' or ft == 'table':
-        return 'Cell values are carried across exactly as text. Formulas become their results, and only the first sheet is used for single-table formats like CSV.'
-    if ff == 'model3d':
-        return 'Geometry is converted exactly, with node transforms applied. Materials, textures and animations are not carried; check the scale in your viewer, since STL files are unitless.'
-    if ff == 'font':
-        return 'The font tables are unchanged; only the container differs. The result renders identically.'
-    return 'The conversion runs in your browser and the file never leaves your device.'
+def crumbs(items):
+    """Visible breadcrumb trail plus its structured data."""
+    trail = ' <span aria-hidden="true">&rsaquo;</span> '.join(
+        ('<a href="%s">%s</a>' % (esc(u), esc(n))) if u else ('<span>%s</span>' % esc(n)) for n, u in items)
+    ld = {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+        {'@type': 'ListItem', 'position': i + 1, 'name': n, **({'item': DOMAIN + u} if u else {})}
+        for i, (n, u) in enumerate(items)]}
+    return '<nav class="crumbs" aria-label="Breadcrumb">%s</nav>' % trail, ld
 
 
-POPULAR = CONTENT['POPULAR']
-for f, t, label in POPULAR:
+for f, t in SEO_PAIRS:
+    F, T = f.upper(), t.upper()
     path = '%s-to-%s/' % (f, t)
-    title = 'Convert %s to %s online — free, in your browser' % (f.upper(), t.upper())
-    desc = '%s to %s in seconds. Free, no account, nothing uploaded: the file is converted inside your browser and never leaves your device.' % (f.upper(), t.upper())
-    related = [(a, b, l) for a, b, l in POPULAR if (a == f or b == t or a == t or b == f) and not (a == f and b == t)][:8]
-    faq = [
-        ('Is %s to %s conversion free?' % (f.upper(), t.upper()), 'Yes. Convert Files is free, with no account, no limits and no watermark.'),
-        ('Is my %s file uploaded?' % f.upper(), 'No. The conversion runs inside your browser. The file is read from your device, converted in memory and saved back to your device. Nothing is sent to a server.'),
-        ('What happens to the quality?', expect(f, t)),
-    ]
-    body = ['<section class="seo" id="about-pair">',
-            '<h2>How to convert %s to %s</h2>' % (f.upper(), t.upper()),
-            '<ol><li>Drop your <code>.%s</code> file above, or click the box to browse for it.</li>' % f,
-            '<li>The target is already set to <code>.%s</code>. Change any option you like.</li>' % t,
-            '<li>Press <strong>Convert</strong>, then <strong>Download</strong>. The file stays on your device the whole time.</li></ol>']
-    if f in BLURB:
-        body.append('<h2>About %s</h2><p>%s</p>' % (fmt_name(f), esc(BLURB[f])))
-    if t in BLURB:
-        body.append('<h2>About %s</h2><p>%s</p>' % (fmt_name(t), esc(BLURB[t])))
-    body.append('<h2>What to expect</h2><p>%s</p>' % esc(expect(f, t)))
-    body.append('<h2>Questions</h2>')
-    for q, a in faq:
-        body.append('<p><strong>%s</strong><br>%s</p>' % (esc(q), esc(a)))
-    if related:
-        body.append('<h2>Related conversions</h2><div class="rel">' + ''.join(
-            '<a href="/%s-to-%s/">%s</a>' % (a, b, esc(l)) for a, b, l in related) + '</div>')
-    body.append('</section>')
-    jsonld = {'@context': 'https://schema.org', '@type': 'FAQPage',
-              'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faq]}
-    page = replace_block(BASE, 'page:meta', page_meta(title, desc, path, extra_meta='<meta name="cf-preset" content="%s>%s">' % (f, t), jsonld=jsonld))
-    page = replace_block(page, 'page:body', '\n'.join(body))
-    page = page.replace('<h1>Convert any file, right here.</h1>', '<h1>Convert %s to %s</h1>' % (f.upper(), t.upper()))
-    page = page.replace('<p>Pick a file, choose what it should become, download the result. Everything runs inside your browser &mdash; nothing is uploaded.</p>',
-                        '<p>%s. Free, in your browser, in seconds &mdash; nothing is uploaded.</p>' % esc(label))
-    write(path + 'index.html', page)
+    fname, tname = PAGES.name_of(f, EXT), PAGES.name_of(t, EXT)
+    why = PAGES.reason(f, t, EXT)
+    what = PAGES.expect(f, t, EXT)
+    qa = PAGES.faqs(f, t, EXT)
+    group_title, group_fam = PAGES.group_of(f)
 
+    title = 'Convert %s to %s \u2014 free, online, nothing uploaded' % (F, T)
+    desc = meta_desc(F, T, why, what)
+    crumb_html, crumb_ld = crumbs([('Home', '/'), (group_title, '/formats/'), ('%s to %s' % (F, T), None)])
+
+    steps = [
+        ('Choose your %s file' % F, 'Drop it on the box above, or tap to browse. You can pick several files at once.'),
+        ('Confirm the target is .%s' % t, 'It is already selected. Adjust quality, size or the other options if you want to.'),
+        ('Convert and download', 'Press Convert, then Download. Your file stays on your device the whole time.'),
+    ]
+
+    body = ['<section class="seo">', crumb_html,
+            '<h2>Why convert %s to %s?</h2><p>%s</p>' % (F, T, esc(why)),
+            '<h2>How to convert %s to %s</h2><ol class="howto">' % (F, T)]
+    for st, sd in steps:
+        body.append('<li><strong>%s.</strong> %s</li>' % (esc(st), esc(sd)))
+    body.append('</ol>')
+    for ext_ in (f, t):
+        info = SEO.FORMATS.get(ext_)
+        if info:
+            body.append('<h2>What is a .%s file?</h2><p>%s</p>' % (ext_, esc(info['blurb'])))
+    body.append('<h2>What to expect from this conversion</h2><p>%s</p>' % esc(what))
+    body.append('<h2>Is it private?</h2><p>Yes, by design. Every conversion happens inside your own browser using your '
+                'device\u2019s processor \u2014 there is no server that receives your %s file, so there is nothing for anyone '
+                'to store, scan or leak. You can confirm it yourself: open your browser\u2019s developer tools, watch the '
+                'Network tab while you convert, and you will see no upload.</p>' % F)
+    body.append('<h2>Questions about %s to %s</h2><dl class="faq-list">' % (F, T))
+    for q, a in qa:
+        body.append('<dt>%s</dt><dd>%s</dd>' % (esc(q), esc(a)))
+    body.append('</dl>')
+
+    rel = PAGES.related(f, t, PAIR_SET)
+    if rel:
+        body.append('<h2>Related conversions</h2><div class="rel">' + ''.join(
+            '<a href="/%s-to-%s/">%s to %s</a>' % (a, b, a.upper(), b.upper()) for a, b in rel) + '</div>')
+    body.append('<p class="seo-more"><a href="/formats/">See all %s conversions</a> &middot; '
+                '<a href="/guides/">Read the guides</a></p>' % len(SEO_PAIRS))
+    body.append('</section>')
+
+    howto_ld = {'@context': 'https://schema.org', '@type': 'HowTo',
+                'name': 'How to convert %s to %s' % (F, T),
+                'description': 'Convert a %s file to %s in a browser, without uploading it anywhere.' % (F, T),
+                'totalTime': 'PT1M', 'supply': [{'@type': 'HowToSupply', 'name': 'A %s file' % F}],
+                'tool': [{'@type': 'HowToTool', 'name': 'A web browser'}],
+                'step': [{'@type': 'HowToStep', 'position': i + 1, 'name': st, 'text': sd,
+                          'url': '%s/%s#step%d' % (DOMAIN, path, i + 1)} for i, (st, sd) in enumerate(steps)]}
+    faq_ld = {'@context': 'https://schema.org', '@type': 'FAQPage',
+              'mainEntity': [{'@type': 'Question', 'name': q,
+                              'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in qa]}
+    meta = page_meta(title, desc, path,
+                     extra_meta='<meta name="cf-preset" content="%s>%s">' % (f, t),
+                     jsonld=[crumb_ld, howto_ld, faq_ld])
+    page = replace_block(BASE, 'page:meta', meta)
+    page = replace_block(page, 'page:body', '\n'.join(body))
+    page = page.replace('<h1>Convert any file, right here.</h1>', '<h1>Convert %s to %s</h1>' % (F, T))
+    page = page.replace('<p>Pick a file, choose what it should become, download the result. Everything runs inside your browser &mdash; nothing is uploaded.</p>',
+                        '<p>Free, in your browser, in seconds &mdash; %s to %s with nothing uploaded anywhere.</p>' % (fname, tname))
+    write(path + 'index.html', strip_home(page))
+
+
+# ------------------------------------------------------------- hub page
+hub = ['<section class="seo hub">']
+hub_crumb, hub_crumb_ld = crumbs([('Home', '/'), ('All conversions', None)])
+hub.append(hub_crumb)
+hub.append('<p class="lead">Every conversion below has its own page with step-by-step instructions, an explanation of both '
+           'formats and answers to the questions people ask. All of them run inside your browser \u2014 nothing is uploaded.</p>')
+by_source = {}
+for f, t in SEO_PAIRS:
+    by_source.setdefault(f, []).append(t)
+for group_title, fam, members in SEO.GROUPS:
+    present = [m for m in members if m in by_source]
+    if not present:
+        continue
+    hub.append('<h2 id="%s">%s</h2>' % (fam, group_title))
+    for src in present:
+        hub.append('<div class="hub-row"><b>From .%s</b><div class="rel">%s</div></div>' % (
+            src, ''.join('<a href="/%s-to-%s/">%s to %s</a>' % (src, tt, src.upper(), tt.upper())
+                         for tt in sorted(by_source[src]))))
+hub.append('</section>')
+hub_page = replace_block(BASE, 'page:meta', page_meta(
+    'All file conversions \u2014 %d free converters, nothing uploaded' % len(SEO_PAIRS),
+    'Every conversion Convert Files supports — PNG to JPG, PDF to Word, MOV to MP4 and 396 more, each with its own guide. Free, nothing uploaded.', 'formats/', jsonld=[hub_crumb_ld]))
+hub_page = replace_block(hub_page, 'page:body', '\n'.join(hub))
+hub_page = hub_page.replace('<h1>Convert any file, right here.</h1>', '<h1>All conversions</h1>')
+hub_page = hub_page.replace('<p>Pick a file, choose what it should become, download the result. Everything runs inside your browser &mdash; nothing is uploaded.</p>',
+                            '<p>%d conversions, each with its own page. Pick one, or drop a file above.</p>' % len(SEO_PAIRS))
+write('formats/index.html', strip_home(hub_page))
 
 # ------------------------------------------------------------- guide pages
 def render_body(lines):
@@ -275,10 +361,11 @@ for gd in CONTENT['GUIDES']:
     if gd.get('tryFrom'):
         article.append('<div class="try"><span class="t">Try it: convert a .%s to .%s — free, in your browser.</span><a class="btn primary" href="/%s-to-%s/">Convert .%s to .%s</a></div>'
                        % (gd['tryFrom'], gd['tryTo'], gd['tryFrom'], gd['tryTo'], gd['tryFrom'], gd['tryTo']))
-    jsonld = {'@context': 'https://schema.org', '@type': 'Article', 'headline': gd['title'], 'description': gd['teaser'],
+    _, gcrumb_ld = crumbs([('Home', '/'), ('Guides', '/guides/'), (gd['title'], None)])
+    jsonld = [gcrumb_ld, {'@context': 'https://schema.org', '@type': 'Article', 'headline': gd['title'], 'description': gd['teaser'],
               'author': {'@type': 'Organization', 'name': 'Convert Files'}, 'publisher': {'@type': 'Organization', 'name': 'Convert Files'},
-              'mainEntityOfPage': DOMAIN + '/' + path, 'image': DOMAIN + '/assets/og.png'}
-    page = replace_block(BASE, 'page:meta', page_meta(gd['title'] + ' · Convert Files', gd['teaser'], path, kind='article',
+              'mainEntityOfPage': DOMAIN + '/' + path, 'image': DOMAIN + '/assets/og.png'}]
+    page = replace_block(BASE, 'page:meta', page_meta(gd.get('seo_title', gd['title']) + ' \u00b7 Convert Files', gd['teaser'], path, kind='article',
                                                        extra_meta='<meta name="cf-guide" content="%s">' % gd['slug'], jsonld=jsonld))
     page = replace_block(page, 'page:body', '')
     # pre-render the article for crawlers; the app takes over on load
@@ -287,9 +374,30 @@ for gd in CONTENT['GUIDES']:
     page = page.replace('<div id="guides-list">', '<div id="guides-list" hidden>')
     page = page.replace('<article class="article" id="article" hidden></article>', '<article class="article" id="article">' + '\n'.join(article) + '</article>')
     page = page.replace('id="nav-convert" role="tab" aria-selected="true"', 'id="nav-convert" role="tab" aria-selected="false"')
-    page = page.replace('id="nav-guides" role="tab" aria-selected="false"', 'id="nav-guides" role="tab" aria-selected="true"')
-    write(path + 'index.html', page)
+    gc_html, gc_ld = crumbs([('Home', '/'), ('Guides', '/guides/'), (gd['title'], None)])
+    page = page.replace('<article class="article" id="article">', '<article class="article" id="article">' + gc_html)
+    write(path + 'index.html', strip_home(page))
 
+
+# ------------------------------------------------------------ guides index
+gi = ['<section class="seo">']
+gi_crumb, gi_crumb_ld = crumbs([('Home', '/'), ('Guides', None)])
+gi.append(gi_crumb)
+gi.append('<p class="lead">Plain-language explanations of the file formats people wrestle with most, and what actually '
+          'happens when you convert between them.</p>')
+for gd in CONTENT['GUIDES']:
+    gi.append('<article class="hub-guide"><h2><a href="/guides/%s/">%s</a></h2><p>%s</p></article>'
+              % (gd['slug'], esc(gd['title']), esc(gd['teaser'])))
+gi.append('</section>')
+gi_page = replace_block(BASE, 'page:meta', page_meta(
+    'Guides \u2014 file formats explained without the jargon',
+    'Short, practical guides to HEIC, PDF and Word, image formats, video for the web, 3D models for AR, spreadsheets and '
+    'privacy when converting files online.', 'guides/', jsonld=[gi_crumb_ld]))
+gi_page = replace_block(gi_page, 'page:body', '\n'.join(gi))
+gi_page = gi_page.replace('<h1>Convert any file, right here.</h1>', '<h1>Guides</h1>')
+gi_page = gi_page.replace('<p>Pick a file, choose what it should become, download the result. Everything runs inside your browser &mdash; nothing is uploaded.</p>',
+                          '<p>%d guides to the formats people ask about most.</p>' % len(CONTENT['GUIDES']))
+write('guides/index.html', strip_home(gi_page))
 
 # -------------------------------------------------------------- legal pages
 shell = open('pages/_shell.html').read()
@@ -301,7 +409,7 @@ for name in ['privacy', 'terms', 'contact']:
     ga = SITE.get('ga4_measurement_id', '').strip()
     content = re.sub(r'\{\{#ga\}\}(.*?)\{\{/ga\}\}', (r'\1' if ga else ''), content, flags=re.S)
     page = shell
-    for k, v in {'title': title, 'description': desc, 'path': name + '.html', 'domain': DOMAIN, 'v': VER,
+    for k, v in {'title': title, 'description': desc, 'path': name + '.html', 'domain': DOMAIN, 'v': VER, 'robots': '',
                  'head': site_head(), 'content': content}.items():
         page = page.replace('{{%s}}' % k, v)
     for k, v in {'email': SITE.get('contact_email', ''), 'date': TODAY, 'host': HOST}.items():
@@ -309,7 +417,8 @@ for name in ['privacy', 'terms', 'contact']:
     write(name + '.html', page)
 
 nf = shell
-for k, v in {'title': 'Page not found', 'description': 'That page does not exist.', 'path': '404.html', 'domain': DOMAIN, 'v': VER, 'head': site_head(),
+for k, v in {'title': 'Page not found', 'description': 'That link does not go anywhere. Head back to Convert Files to convert images, PDF, Word, Excel, audio, video and 3D models for free.', 'path': '404.html', 'domain': DOMAIN, 'v': VER, 'head': site_head(),
+             'robots': '\n<meta name="robots" content="noindex,follow">',
              'content': '<h1>Page not found</h1><p class="upd">That link does not go anywhere.</p><p><a class="btn primary" href="/">Back to the converter</a></p>'}.items():
     nf = nf.replace('{{%s}}' % k, v)
 write('404.html', nf)

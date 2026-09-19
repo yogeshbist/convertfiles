@@ -4,17 +4,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- page:meta -->
-<title>MOV to MP4: making iPhone and Mac videos play everywhere · Convert Files</title>
+<title>MOV to MP4: play iPhone video anywhere · Convert Files</title>
 <meta name="description" content="QuickTime MOV and MP4 are near-identical containers, so why does one play everywhere and the other not?">
 <link rel="canonical" href="https://convertfiles.in/guides/mov-to-mp4/">
-<meta property="og:title" content="MOV to MP4: making iPhone and Mac videos play everywhere · Convert Files">
+<meta property="og:title" content="MOV to MP4: play iPhone video anywhere · Convert Files">
 <meta property="og:description" content="QuickTime MOV and MP4 are near-identical containers, so why does one play everywhere and the other not?">
 <meta property="og:url" content="https://convertfiles.in/guides/mov-to-mp4/">
 <meta property="og:image" content="https://convertfiles.in/assets/og.png">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Convert Files">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MOV to MP4: play iPhone video anywhere · Convert Files">
+<meta name="twitter:description" content="QuickTime MOV and MP4 are near-identical containers, so why does one play everywhere and the other not?">
+<meta name="twitter:image" content="https://convertfiles.in/assets/og.png">
+<meta name="twitter:image:alt" content="Convert Files — free file converter that runs in your browser">
 <meta name="cf-guide" content="mov-to-mp4">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://convertfiles.in/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://convertfiles.in/guides/"}, {"@type": "ListItem", "position": 3, "name": "MOV to MP4: making iPhone and Mac videos play everywhere"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "MOV to MP4: making iPhone and Mac videos play everywhere", "description": "QuickTime MOV and MP4 are near-identical containers, so why does one play everywhere and the other not?", "author": {"@type": "Organization", "name": "Convert Files"}, "publisher": {"@type": "Organization", "name": "Convert Files"}, "mainEntityOfPage": "https://convertfiles.in/guides/mov-to-mp4/", "image": "https://convertfiles.in/assets/og.png"}</script>
 <!-- /page:meta -->
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
@@ -22,7 +27,7 @@
 <meta name="theme-color" content="#0E7C86">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
-<link rel="stylesheet" href="/css/app.css?v=8e02aeb9">
+<link rel="stylesheet" href="/css/app.css?v=b488e765">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -50,8 +55,8 @@
     <nav class="tabs" role="tablist" aria-label="Sections">
       <button class="tab" id="nav-convert" role="tab" aria-selected="false">Convert</button>
       <button class="tab" id="nav-files" role="tab" aria-selected="false">Your files <span class="pill" id="files-count"></span></button>
-      <button class="tab" id="nav-formats" role="tab" aria-selected="false">Formats</button>
-      <button class="tab" id="nav-guides" role="tab" aria-selected="true">Guides</button>
+      <a class="tab" id="nav-formats" href="/formats/">Formats</a>
+      <a class="tab" id="nav-guides" href="/guides/">Guides</a>
     </nav>
   </div>
 </header>
@@ -125,50 +130,7 @@
 <!-- /page:body -->
 
     <!-- ---- editorial sections ---- -->
-    <section class="home" aria-label="At a glance"><div class="kpis" id="kpis"></div></section>
-
-    <section class="home">
-      <h2>How it works</h2>
-      <p class="lead">Three steps, no account, nothing uploaded.</p>
-      <div class="steps" id="steps"></div>
-    </section>
-
-    <section class="home">
-      <h2>Popular conversions</h2>
-      <p class="lead">The pairs people reach for most. Click one and the converter is set up for it.</p>
-      <div class="pop" id="popular"></div>
-    </section>
-
-    <div class="ad home" id="ad-home" hidden></div>
-
-    <section class="home" id="home-recent" hidden>
-      <h2>Your most used</h2>
-      <p class="lead">Based on the files you have converted on this device.</p>
-      <div class="pop" id="recent"></div>
-    </section>
-
-    <section class="home">
-      <div class="home-h"><h2>Guides</h2><button class="btn sm" id="home-all-guides">All guides</button></div>
-      <p class="lead">Short, practical explanations of the conversions people ask about most.</p>
-      <div class="guides" id="home-guides"></div>
-    </section>
-
-    <section class="home" id="about">
-      <h2>About Convert Files</h2>
-      <div class="about" id="about-box"></div>
-    </section>
-
-    <section class="home" id="support">
-      <h2>Support Convert Files</h2>
-      <p class="lead">Free for everyone, funded by the people who find it useful.</p>
-      <div class="support" id="support-box"></div>
-      <div class="sponsor" id="sponsor-box"></div>
-    </section>
-
-    <section class="home">
-      <h2>Questions people ask</h2>
-      <div class="faq" id="faq"></div>
-    </section>
+    
   </section>
 
   <!-- ================================================= YOUR FILES -->
@@ -214,7 +176,7 @@
       </div>
       <div class="guides" id="guides-grid"></div>
     </div>
-    <article class="article" id="article"><div class="cat">video</div>
+    <article class="article" id="article"><nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">&rsaquo;</span> <a href="/guides/">Guides</a> <span aria-hidden="true">&rsaquo;</span> <span>MOV to MP4: making iPhone and Mac videos play everywhere</span></nav><div class="cat">video</div>
 <h1>MOV to MP4: making iPhone and Mac videos play everywhere</h1>
 <div class="meta">2 min read · Convert Files guides</div>
 <div class="body"><p>A MOV file and an MP4 file are almost the same thing: both are boxes of the same shape holding video and audio streams. The difference is what is inside. iPhones and Macs often put HEVC (H.265) video into a MOV, and HEVC is what Windows, Android and most web players refuse.</p>
@@ -232,7 +194,7 @@
 
 <footer class="footer">
   <span><b>Convert Files</b> &mdash; free, no account, nothing leaves your device.</span>
-  <span class="footer-links"><a href="/#guides" id="f-guides">Guides</a><a href="/#formats" id="f-formats">Formats</a><a href="/#about" id="f-about">About</a><a href="/#support" id="f-support">Support</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></span>
+  <span class="footer-links"><a href="/formats/">All conversions</a><a href="/guides/">Guides</a><a href="/#about" id="f-about">About</a><a href="/#support" id="f-support">Support</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></span>
 </footer>
 
 <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="modal-name">
@@ -257,12 +219,12 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script src="/js/formats.js?v=8e02aeb9"></script>
-<script src="/js/encoders.js?v=8e02aeb9"></script>
-<script src="/js/docmodel.js?v=8e02aeb9"></script>
-<script src="/js/convert.js?v=8e02aeb9"></script>
-<script src="/js/db.js?v=8e02aeb9"></script>
-<script src="/js/content.js?v=8e02aeb9"></script>
-<script src="/js/app.js?v=8e02aeb9"></script>
+<script src="/js/formats.js?v=b488e765"></script>
+<script src="/js/encoders.js?v=b488e765"></script>
+<script src="/js/docmodel.js?v=b488e765"></script>
+<script src="/js/convert.js?v=b488e765"></script>
+<script src="/js/db.js?v=b488e765"></script>
+<script src="/js/content.js?v=b488e765"></script>
+<script src="/js/app.js?v=b488e765"></script>
 </body>
 </html>

@@ -1,10 +1,29 @@
-# Convert Files
+# Convert Files — free file converter, nothing uploaded
 
-A local file-conversion site. Pick a file, pick a source format and a target
-format from the two dropdowns, convert. Every result is written into the
-browser's IndexedDB so you can inspect the stored record afterwards.
+**Live at [convertfiles.in](https://convertfiles.in)** — a free online file
+converter and a set of file tools that run entirely in the browser. Nothing is
+uploaded: the file is read, converted and downloaded on the visitor's own device.
 
-Nothing is uploaded. All conversion happens in the browser tab.
+- **399 conversions**, each with its own page — [all of them](https://convertfiles.in/formats/).
+  Popular: [HEIC to JPG](https://convertfiles.in/heic-to-jpg/), [PDF to Word](https://convertfiles.in/pdf-to-docx/),
+  [Word to PDF](https://convertfiles.in/docx-to-pdf/), [JPG to PDF](https://convertfiles.in/jpg-to-pdf/),
+  [PNG to JPG](https://convertfiles.in/png-to-jpg/), [MOV to MP4](https://convertfiles.in/mov-to-mp4/),
+  [MP4 to MP3](https://convertfiles.in/mp4-to-mp3/), [WebP to PNG](https://convertfiles.in/webp-to-png/),
+  [CSV to Excel](https://convertfiles.in/csv-to-xlsx/), [STL to GLB](https://convertfiles.in/stl-to-glb/).
+- **21 free tools** — [all of them](https://convertfiles.in/tools/).
+  [Compress image to a size](https://convertfiles.in/compress-image/) (20–500 KB for forms),
+  [Compress PDF](https://convertfiles.in/compress-pdf/), [Passport photo maker](https://convertfiles.in/passport-photo/),
+  [Merge PDF](https://convertfiles.in/merge-pdf/), [Split PDF](https://convertfiles.in/split-pdf/),
+  [Sign PDF](https://convertfiles.in/sign-pdf/), [Image to text (OCR)](https://convertfiles.in/image-to-text/),
+  [Resize image](https://convertfiles.in/resize-image/), [Trim video](https://convertfiles.in/trim-video/),
+  [MP3 cutter](https://convertfiles.in/mp3-cutter/), [Remove EXIF](https://convertfiles.in/remove-exif/),
+  [QR code generator](https://convertfiles.in/qr-code-generator/), [Unzip online](https://convertfiles.in/unzip/).
+- **Guides** in [English](https://convertfiles.in/guides/) and [Hindi](https://convertfiles.in/hi/guides/).
+- **Embed it** on your own site with one line: [the widget](https://convertfiles.in/widget/).
+
+How it works technically: Canvas and WebCodecs for images, audio and video;
+pdf.js, pdf-lib and jsPDF for PDFs; Tesseract (WebAssembly) for OCR; hand-written
+encoders for GIF, BMP, ICO, WAV, TAR and glTF. No server touches a file.
 
 ## Going live (convertfiles.in on GitHub Pages)
 

@@ -514,7 +514,8 @@ write('hi/guides/index.html', hide_converter(strip_home(hg_page)))
 # /compress-image/, /merge-pdf/ and friends: the converter's shell, the drop
 # zone, and <meta name="cf-tool"> so tools.js knows which tool to run.
 TOOL_CSS = '<style>' + open('css/tools.css').read().replace('</style>', '') + '</style>'
-TOOL_JS = '<script defer src="/js/tools.js?v=%s"></script>' % VER
+TOOL_JS = ('<script defer src="/js/imaging.js?v=%s"></script>\n'
+           '<script defer src="/js/tools.js?v=%s"></script>') % (VER, VER)
 
 
 def related_links(slugs):

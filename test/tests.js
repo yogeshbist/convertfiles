@@ -456,4 +456,61 @@ function makeImage(w, h, fn) {
   REPORT.push('  --   graph: ' + Convert.pairCount() + ' pairs across ' + Convert.sourcesList().length + ' source formats (headless: no webp/audio/video probes)');
 })();
 
+
+/* the resolution a form checks for: it has to be in the bytes, not just on screen */
+(function () {
+  var I = this.Imaging || Imaging;
+
+  // the smallest valid JPEG head: SOI + a JFIF APP0 that records nothing
+  function jpegHead(units, dens) {
+    return new Uint8Array([0xFF, 0xD8, 0xFF, 0xE0, 0x00, 0x10, 0x4A, 0x46, 0x49, 0x46, 0x00,
+                           0x01, 0x01, units, dens >> 8, dens & 0xFF, dens >> 8, dens & 0xFF, 0x00, 0x00,
+                           0xFF, 0xDA, 0x00, 0x02]);
+  }
+  eq('dpi: a canvas-style JPEG reports nothing', I.readDpi(jpegHead(0, 1)), null);
+  eq('dpi: a JPEG that records 72 is read back', I.readDpi(jpegHead(1, 72)).x, 72);
+  var stamped = I.setDpi(jpegHead(0, 1), 300);
+  eq('dpi: writing 300 into a JPEG', I.readDpi(stamped).x, 300);
+  eq('dpi: the JPEG keeps its length', stamped.length, jpegHead(0, 1).length);
+  eq('dpi: centimetre units are converted to inches', I.readDpi(jpegHead(2, 118)).x, 300);
+
+  // a JPEG with no JFIF header at all still ends up carrying one
+  var bare = new Uint8Array([0xFF, 0xD8, 0xFF, 0xDB, 0x00, 0x02, 0xFF, 0xDA, 0x00, 0x02]);
+  var fixed = I.setDpi(bare, 200);
+  eq('dpi: a JFIF header is added when one is missing', I.readDpi(fixed).x, 200);
+  ok('dpi: adding that header grew the file by 18 bytes', fixed.length === bare.length + 18,
+     'grew by ' + (fixed.length - bare.length));
+
+  // PNG: a pHYs chunk, in pixels per metre
+  function png(chunks) {
+    var head = [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A];
+    return new Uint8Array(head.concat(chunks));
+  }
+  function chunk(type, len) {
+    var out = [0, 0, 0, len];
+    for (var i = 0; i < 4; i++) out.push(type.charCodeAt(i));
+    for (i = 0; i < len; i++) out.push(0);
+    return out.concat([0, 0, 0, 0]);
+  }
+  var p = png(chunk('IHDR', 13).concat(chunk('IDAT', 4), chunk('IEND', 0)));
+  eq('dpi: a plain PNG reports nothing', I.readDpi(p), null);
+  var pstamped = I.setDpi(p, 300);
+  eq('dpi: writing 300 into a PNG', I.readDpi(pstamped).x, 300);
+  ok('dpi: the pHYs chunk is 21 bytes', pstamped.length === p.length + 21,
+     'grew by ' + (pstamped.length - p.length));
+  var twice = I.setDpi(pstamped, 600);
+  eq('dpi: rewriting a PNG replaces the chunk rather than adding one', twice.length, pstamped.length);
+  eq('dpi: and the new number is the one read back', I.readDpi(twice).x, 600);
+
+  // the shape of a straightened page
+  var quad = [[0, 0], [400, 20], [390, 300], [10, 280]];
+  var s = I.sizeFor(quad, 2600);
+  ok('scan: the straightened page follows the longest edges', s.w >= 390 && s.h >= 280,
+     s.w + 'x' + s.h);
+  var capped = I.sizeFor([[0, 0], [8000, 0], [8000, 6000], [0, 6000]], 2600);
+  ok('scan: an enormous photo is capped', Math.max(capped.w, capped.h) === 2600,
+     capped.w + 'x' + capped.h);
+  eq('scan: four points enclose the area they should', Math.round(I.polyArea([[0, 0], [10, 0], [10, 10], [0, 10]])), 100);
+})();
+
 REPORT.join('\n') + '\n\n' + (FAIL.length ? FAIL.length + ' FAILED, ' + PASS + ' passed' : 'all ' + PASS + ' checks passed');

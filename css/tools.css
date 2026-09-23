@@ -84,3 +84,17 @@
   .t-pages{grid-template-columns:repeat(auto-fill,minmax(104px,1fr))}
   .t-opts .opt{padding:8px 0}
 }
+
+/* scanning a photographed page */
+.t-scan{display:flex;flex-direction:column;align-items:center;gap:8px}
+.t-scan-canvas{max-width:100%;height:auto;border-radius:12px;background:#0b0f14;box-shadow:var(--shadow);touch-action:none;cursor:grab}
+.t-scan-canvas:active{cursor:grabbing}
+.t-scan-strip{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:10px;justify-content:center}
+.t-scan-strip .btn.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+
+/* what the resolution tool is about to do, file by file */
+.t-dpi{display:flex;flex-direction:column;gap:8px}
+.t-dpi-row{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.t-dpi-row .name{font-weight:700;font-size:13.5px;color:var(--ink);word-break:break-all}
+.t-dpi-row .meta{font-size:12.5px;color:var(--muted);margin-top:2px}
+.t-dpi-row .to{font-family:var(--mono);font-size:12.5px;font-weight:600;color:var(--accent);margin-top:4px}

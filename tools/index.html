@@ -26,7 +26,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=c18b358d">
+<link rel="stylesheet" href="/css/app.css?v=6da86f65">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -40,7 +40,7 @@
   <symbol id="t-compress" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v6H3"/><path d="M15 21v-6h6"/><path d="M3 21l6-6"/><path d="M21 3l-6 6"/></symbol>
   <symbol id="t-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 15h6"/><path d="M9 11h2"/></symbol>
   <symbol id="t-portrait" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2.5" width="16" height="19" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M7.5 18.5a4.5 4.5 0 0 1 9 0"/></symbol>
-  <symbol id="t-resize" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M21 3l-7 7"/><path d="M9 21H3v-6"/><path d="M3 21l7-7"/></symbol>
+  <symbol id="t-dpi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 7v4"/><path d="M10 7v6"/><path d="M14 7v4"/><path d="M18 7v6"/></symbol><symbol id="t-resize" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M21 3l-7 7"/><path d="M9 21H3v-6"/><path d="M3 21l7-7"/></symbol>
   <symbol id="t-crop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v14a2 2 0 0 0 2 2h14"/><path d="M18 22V8a2 2 0 0 0-2-2H2"/></symbol>
   <symbol id="t-merge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v5a5 5 0 0 0 5 5 5 5 0 0 0 5-5V3"/><path d="M12 13v8"/><path d="M9 18l3 3 3-3"/></symbol>
   <symbol id="t-split" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v7"/><path d="M12 10l-5 5v6"/><path d="M12 10l5 5v6"/></symbol>
@@ -91,7 +91,7 @@
     <div class="hero">
       <span class="eyebrow"><svg><use href="#i-bolt"/></svg>Convert your files in seconds</span>
       <h1>Free online tools</h1>
-      <p>21 tools that work on your device. Pick one below.</p>
+      <p>23 tools that work on your device. Pick one below.</p>
 
       <div class="drop" id="drop" hidden tabindex="0" role="button">
         <div class="drop-ic"><svg><use href="#i-upload"/></svg></div>
@@ -163,6 +163,7 @@
 <a class="tcard" href="/crop-image/"><span class="ic" style="--fam:var(--f-image)"><svg><use href="#t-crop"/></svg></span><h3>Crop image</h3><p>Square, 16:9, 9:16 or custom</p></a>
 <a class="tcard" href="/remove-exif/"><span class="ic" style="--fam:var(--f-image)"><svg><use href="#t-shield"/></svg></span><h3>Remove EXIF / metadata</h3><p>Strip camera and GPS data</p></a>
 <a class="tcard" href="/view-metadata/"><span class="ic" style="--fam:var(--f-image)"><svg><use href="#t-shield"/></svg></span><h3>View photo metadata</h3><p>See what a photo reveals</p></a>
+<a class="tcard" href="/change-dpi/"><span class="ic" style="--fam:var(--f-image)"><svg><use href="#t-dpi"/></svg></span><h3>Change image DPI</h3><p>200 or 300 dpi for exam forms</p></a>
 </div>
 <h2>PDF tools</h2><div class="tgrid">
 <a class="tcard" href="/compress-pdf/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-pdf"/></svg></span><h3>Compress PDF to a size</h3><p>Under 100 KB to 1 MB limits</p><span class="ttag">Most used</span></a>
@@ -172,6 +173,7 @@
 <a class="tcard" href="/organize-pdf/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-grid"/></svg></span><h3>Organise PDF pages</h3><p>Move, rotate, delete pages</p></a>
 <a class="tcard" href="/delete-pdf-pages/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-grid"/></svg></span><h3>Delete PDF pages</h3><p>Remove pages by thumbnail</p></a>
 <a class="tcard" href="/images-to-pdf/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-stack"/></svg></span><h3>Images to one PDF</h3><p>Photos into one PDF</p></a>
+<a class="tcard" href="/scan-document/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-scan"/></svg></span><h3>Document scanner</h3><p>Photo of a page → clean PDF</p></a>
 <a class="tcard" href="/sign-pdf/"><span class="ic" style="--fam:var(--f-doc)"><svg><use href="#t-pen"/></svg></span><h3>Sign PDF</h3><p>Draw or type, place, save</p></a>
 </div>
 <h2>Audio & video</h2><div class="tgrid">
@@ -185,8 +187,8 @@
 <a class="tcard" href="/qr-code-generator/"><span class="ic" style="--fam:var(--f-data)"><svg><use href="#t-qr"/></svg></span><h3>QR code generator</h3><p>Link, UPI, Wi‑Fi, vCard</p></a>
 <a class="tcard" href="/unzip/"><span class="ic" style="--fam:var(--f-data)"><svg><use href="#t-box"/></svg></span><h3>Unzip online</h3><p>Open ZIP or TAR, pick files</p></a>
 </div>
-<div class="tools-foot"><p>21 tools available &bull; No signup required &bull; No file limits</p><a class="btn primary" href="/">Start converting <span>&rarr;</span></a></div>
-<h2>Fixed sizes</h2><div class="rel"><a href="/compress-image-to-20kb/">Free image compressor to 20 KB</a><a href="/compress-image-to-50kb/">Free image compressor to 50 KB</a><a href="/compress-image-to-100kb/">Free image compressor to 100 KB</a><a href="/compress-image-to-200kb/">Free image compressor to 200 KB</a><a href="/compress-image-to-500kb/">Free image compressor to 500 KB</a><a href="/compress-pdf-to-100kb/">Free PDF compressor to 100 KB</a><a href="/compress-pdf-to-200kb/">Free PDF compressor to 200 KB</a><a href="/compress-pdf-to-500kb/">Free PDF compressor to 500 KB</a><a href="/compress-pdf-to-1mb/">Free PDF compressor to 1 MB</a></div>
+<div class="tools-foot"><p>23 tools available &bull; No signup required &bull; No file limits</p><a class="btn primary" href="/">Start converting <span>&rarr;</span></a></div>
+<h2>Fixed sizes</h2><div class="rel"><a href="/compress-image-to-20kb/">Free image compressor to 20 KB</a><a href="/compress-image-to-50kb/">Free image compressor to 50 KB</a><a href="/compress-image-to-100kb/">Free image compressor to 100 KB</a><a href="/compress-image-to-200kb/">Free image compressor to 200 KB</a><a href="/compress-image-to-500kb/">Free image compressor to 500 KB</a><a href="/compress-pdf-to-100kb/">Free PDF compressor to 100 KB</a><a href="/compress-pdf-to-200kb/">Free PDF compressor to 200 KB</a><a href="/compress-pdf-to-500kb/">Free PDF compressor to 500 KB</a><a href="/compress-pdf-to-1mb/">Free PDF compressor to 1 MB</a><a href="/200-dpi-converter/">Free 200 dpi converter</a><a href="/300-dpi-converter/">Free 300 dpi converter</a><a href="/600-dpi-converter/">Free 600 dpi converter</a></div>
 </section>
 <!-- /page:body -->
 
@@ -269,12 +271,12 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script defer src="/js/formats.js?v=c18b358d"></script>
-<script defer src="/js/encoders.js?v=c18b358d"></script>
-<script defer src="/js/docmodel.js?v=c18b358d"></script>
-<script defer src="/js/convert.js?v=c18b358d"></script>
-<script defer src="/js/db.js?v=c18b358d"></script>
-<script defer src="/js/content.js?v=c18b358d"></script>
-<script defer src="/js/app.js?v=c18b358d"></script>
+<script defer src="/js/formats.js?v=6da86f65"></script>
+<script defer src="/js/encoders.js?v=6da86f65"></script>
+<script defer src="/js/docmodel.js?v=6da86f65"></script>
+<script defer src="/js/convert.js?v=6da86f65"></script>
+<script defer src="/js/db.js?v=6da86f65"></script>
+<script defer src="/js/content.js?v=6da86f65"></script>
+<script defer src="/js/app.js?v=6da86f65"></script>
 </body>
 </html>

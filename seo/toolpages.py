@@ -226,6 +226,57 @@ TOOLS = [
               ('Can I edit the metadata?', 'Not here — only view and remove.')],
          related=['remove-exif', 'compress-image']),
 
+    dict(slug='scan-document', group='pdf', name='Document scanner',
+         title='Free Document Scanner \u2014 Photo to Clean PDF, No Upload',
+         h1='Free document scanner',
+         desc='Photograph a page and get a straight, clean scan back as a PDF or a JPG. The corners are found for you, the shadow is removed, and nothing is uploaded.',
+         intro=('A photograph of a document is not a scan. It leans, the lamp puts a grey gradient down one side, and the paper is never quite white. '
+                'This tool fixes all three: it finds the four corners of the page, pulls the picture flat so the edges are square again, divides out the '
+                'shadow so the paper goes white and the ink goes black, and saves the result as a PDF or an image with a real resolution written into it. '
+                'Photograph several pages and they become one PDF, in the order you dropped them. ') + NOTHING,
+         steps=[('Photograph the page', 'Lay it on a surface that is not the same colour as the paper, and get all four corners in the frame. Straight overhead is best but an angle is fine \u2014 that is what the straightening is for.'),
+                ('Check the corners', 'Four circles appear on the page it found. Drag any that sat in the wrong place; on a busy background you may want to place all four yourself.'),
+                ('Pick the finish', 'Colour removes the shadow and keeps the ink as it is. Black & white is the crispest and the smallest for plain text. Greyscale sits between them.'),
+                ('Save it', 'One PDF for a multi-page document, or JPG and PNG images. The resolution you choose is written into the file, so a form that checks for 300 dpi is satisfied.')],
+         faq=[('How do I scan a document with my phone for free?',
+               'Photograph the page, drop it here and the page is found, straightened and cleaned automatically. There is no app to install, no account, no watermark, and the photograph never leaves your phone \u2014 the whole thing runs in the browser.'),
+              ('Can I scan several pages into one PDF?',
+               'Yes. Drop all the photographs at once, or add them one at a time; each becomes a page in a single PDF in the order shown. Use the page buttons to check the corners on each one.'),
+              ('The corners are in the wrong place. Can I fix them?',
+               'Drag them. Automatic detection looks for the largest pale shape, which is the page in most photographs but not on a white table or a patterned cloth. Drag each circle onto a corner and the result is exactly as good.'),
+              ('Why does my scan look better than the photograph?',
+               'Two reasons. The page is pulled flat with a projective transform, so an edge photographed at an angle becomes straight rather than merely cropped. Then the tool divides the picture by a blurred copy of itself, which removes the uneven light a lamp or a window leaves behind, and stretches what is left so paper reads as white.'),
+              ('Is this a free CamScanner alternative?',
+               'It does the same job \u2014 detect, straighten, clean, save as PDF \u2014 with no app, no sign-up, no watermark and no page limit, and it does not upload your documents to anyone.'),
+              ('What resolution should I choose?',
+               '300 dpi for anything going to print or to an office. 200 dpi is enough for a form upload and makes a noticeably smaller file. 600 dpi only helps if you will enlarge the page or run text recognition on very small print.')],
+         related=['images-to-pdf', 'pdf-ocr', 'compress-pdf', 'change-dpi']),
+
+    dict(slug='change-dpi', group='image', name='Change image DPI',
+         title='Free DPI Converter \u2014 Set a Photo to 200 or 300 DPI',
+         h1='Free image DPI converter',
+         desc='Set a photo or signature to 200 dpi, 300 dpi or any resolution an exam form asks for, and see the printed size as you type. Free, nothing uploaded.',
+         intro=('Forms ask for dots per inch because they are really asking how big the picture is on paper. A 600 by 600 photo at 300 dpi prints two inches '
+                'across; the same photo at 200 dpi prints three. This tool writes that number into the file where a checker reads it \u2014 the JFIF header of a JPG, '
+                'the pHYs chunk of a PNG \u2014 and can resize the pixels at the same time so the printed size comes out exactly as the form demands. '
+                'It also tells you what your file says today, which for anything made by a phone or a web tool is usually nothing at all. ') + NOTHING,
+         steps=[('Drop the photo or signature', 'JPG, PNG, WebP and HEIC all work, and several at once is fine.'),
+                ('Type the resolution', '200 and 300 are one tap away. The line underneath shows what the file says now and what it will say afterwards, with the printed size in centimetres.'),
+                ('Choose what should change', 'Writing only the number keeps every pixel and changes the printed size. Keeping the printed size resizes the pixels instead. The third option gives you an exact size in centimetres at that resolution \u2014 what a form like CCC means by "3.5 \u00d7 4.5 cm at 200 dpi".'),
+                ('Save it', 'Add a KB limit if the form has one, and the result is compressed to fit with the resolution still written in.')],
+         faq=[('How do I change the DPI of an image to 200 or 300?',
+               'Drop it above, tap 200 dpi or 300 dpi, and press Set the DPI. The number is written into the file itself, so Photoshop, a print shop or a form validator all read it back correctly.'),
+              ('My CCC form wants a 200 dpi photo. What do I do?',
+               'Choose "Make it an exact printed size", set 3.5 by 4.5 cm and 200 dpi, and add the KB limit the form states. You get a 276 by 354 pixel JPG that says 200 dpi and fits the size limit \u2014 which is exactly what the form is checking.'),
+              ('Does changing the DPI make my photo sharper?',
+               'On its own, no. Dots per inch is a label saying how large to print the pixels you already have. If you ask to keep the printed size, the tool does resize the picture, but enlarging cannot invent detail that was never photographed \u2014 start from the largest original you have.'),
+              ('Why does my photo say 96 dpi, or nothing at all?',
+               'Because most phones and web tools never write the field. A picture with no resolution recorded is usually assumed to be 96 dpi by Windows and 72 dpi by older Mac software, which is why the same file prints at different sizes in different places. Writing the number removes the guesswork.'),
+              ('What is the difference between DPI and pixels?',
+               'Pixels are how much picture there is; dpi is how tightly they are packed when printed. 1200 pixels at 300 dpi is four inches of paper. Forms usually state both, because together they fix the printed size.'),
+              ('Is the photo uploaded anywhere?', 'No. The file is read, edited and saved on your own device.')],
+         related=['resize-image', 'compress-image', 'passport-photo', 'scan-document']),
+
     dict(slug='qr-code-generator', group='other', name='QR code generator',
          title='Free QR Code Generator — UPI, Wi-Fi, vCard, No Sign-up',
          h1='Free QR code generator',
@@ -268,7 +319,7 @@ GROUPS = [('image', 'Image tools'), ('pdf', 'PDF tools'), ('media', 'Audio & vid
 
 # The home page lists every tool, most used first. Until the counters have
 # something to say, this is the order — by search demand, most to least.
-RAIL_ORDER = ['compress-image', 'compress-pdf', 'passport-photo', 'merge-pdf', 'image-to-text', 'resize-image',
+RAIL_ORDER = ['compress-image', 'compress-pdf', 'passport-photo', 'scan-document', 'merge-pdf', 'image-to-text', 'change-dpi', 'resize-image',
               'images-to-pdf', 'split-pdf', 'sign-pdf', 'crop-image', 'qr-code-generator', 'remove-exif', 'trim-video',
               'mp3-cutter', 'pdf-ocr', 'organize-pdf', 'delete-pdf-pages', 'rotate-pdf', 'unzip', 'ringtone-maker', 'view-metadata']
 GROUP_FAM = {'image': 'image', 'pdf': 'doc', 'media': 'video', 'other': 'data'}
@@ -292,6 +343,8 @@ RAIL_META = {
     'ringtone-maker':    ('30-second clip from a song', 'audio'),
     'remove-exif':       ('Strip camera and GPS data', 'shield'),
     'view-metadata':     ('See what a photo reveals', 'shield'),
+    'scan-document':     ('Photo of a page \u2192 clean PDF', 'scan'),
+    'change-dpi':        ('200 or 300 dpi for exam forms', 'dpi'),
     'qr-code-generator': ('Link, UPI, Wi\u2011Fi, vCard', 'qr'),
     'unzip':             ('Open ZIP or TAR, pick files', 'box'),
     'sign-pdf':          ('Draw or type, place, save', 'pen'),
@@ -344,6 +397,35 @@ def kb_page(base, kb):
     return d
 
 
+DPI_PAGES = [200, 300, 600]
+
+
+def dpi_page(base, dpi):
+    """A landing page for one fixed resolution."""
+    d = dict(base)
+    d['slug'] = '%d-dpi-converter' % dpi
+    d['preset'] = {'dpi': dpi}
+    d['parent'] = base['slug']
+    d['title'] = 'Free %d DPI Converter \u2014 Set Any Photo to %d DPI' % (dpi, dpi)
+    d['h1'] = 'Free %d dpi converter' % dpi
+    d['desc'] = ('Set a photo or signature to %d dpi for a form or a print, with the printed size shown as you type. '
+                 'Free, in your browser, nothing uploaded.' % dpi)
+    d['intro'] = (('Drop the picture and it comes back saying %d dpi \u2014 the number is already filled in. You can also fix the printed size '
+                   'in centimetres, so the result is exactly what the form asks for rather than merely close. ' % dpi) + NOTHING)
+    use = {200: 'what most Indian exam forms ask for, CCC among them',
+           300: 'the usual requirement for printing and for office documents',
+           600: 'for fine print, archival scans and anything that will be enlarged'}[dpi]
+    d['faq'] = [('How do I make an image %d dpi?' % dpi,
+                 'Drop it above \u2014 %d dpi is already set \u2014 and press the button. The number is written into the file, not just displayed, so whatever checks it reads %d.' % (dpi, dpi)),
+                ('Why %d dpi?' % dpi, 'It is %s.' % use),
+                ('Can I also set the size in centimetres?',
+                 'Yes. Choose "Make it an exact printed size", type the centimetres the form states, and the pixel count is worked out for you at %d dpi.' % dpi),
+                ('Can I keep it under a KB limit too?',
+                 'Type the limit in the max file size box. The picture is compressed to fit and still carries %d dpi.' % dpi)]
+    d['related'] = ['%d-dpi-converter' % k for k in DPI_PAGES if k != dpi] + ['change-dpi', 'resize-image', 'passport-photo']
+    return d
+
+
 def all_pages():
     out = []
     by = {t['slug']: t for t in TOOLS}
@@ -351,4 +433,7 @@ def all_pages():
         out.append(t)
         for kb in KB_PAGES.get(t['slug'], []):
             out.append(kb_page(t, kb))
+        if t['slug'] == 'change-dpi':
+            for dpi in DPI_PAGES:
+                out.append(dpi_page(t, dpi))
     return out

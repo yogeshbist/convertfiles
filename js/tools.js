@@ -9,6 +9,7 @@
 (function (root) {
   'use strict';
   var F = root.Formats, C = root.Convert, K = C._kit, U = root.UI, DB = root.DB, Enc = root.Enc;
+  var Imaging = root.Imaging;
   var need = F.need;
   var $ = function (s) { return document.querySelector(s); };
   var el = U.el, icon = U.icon, btn = U.btn, toast = U.toast, download = U.download;
@@ -448,7 +449,8 @@
     run: function (files, o, prog) {
       var mmToPx = o.dpi / 25.4, W = Math.round(o.size.w * mmToPx), H = Math.round(o.size.h * mmToPx);
       var photo = o.stage.export(W, H), out = [];
-      var one = o.kb ? compressToTarget(photo, o.kb * 1024, { mime: 'image/jpeg', keepSize: true, minQ: 0.4 }, prog).then(function (r) { return r.blob; }) : canvasToBlob(photo, 'image/jpeg', 0.92);
+      var one = (o.kb ? compressToTarget(photo, o.kb * 1024, { mime: 'image/jpeg', keepSize: true, minQ: 0.4 }, prog).then(function (r) { return r.blob; }) : canvasToBlob(photo, 'image/jpeg', 0.92))
+        .then(function (b) { return Imaging.blobWithDpi(b, o.dpi); });
       return one.then(function (b) {
         out.push({ blob: b, name: 'passport-photo-' + o.size.w + 'x' + o.size.h + 'mm.jpg', src: files[0], note: W + '×' + H + ' px · ' + o.size.w + '×' + o.size.h + ' mm at ' + o.dpi + ' dpi · ' + F.bytes(b.size) });
         if (!o.sheet) return out;
@@ -460,7 +462,11 @@
         for (var r = 0; r < rows; r++) for (var c = 0; c < cols; c++) g.drawImage(photo, x0 + c * (W + gap), y0 + r * (H + gap), W, H);
         g.strokeStyle = '#bbb'; g.lineWidth = 1;
         for (var r2 = 0; r2 < rows; r2++) for (var c2 = 0; c2 < cols; c2++) g.strokeRect(x0 + c2 * (W + gap) + 0.5, y0 + r2 * (H + gap) + 0.5, W - 1, H - 1);
-        return canvasToBlob(sheet, 'image/jpeg', 0.92).then(function (b2) {
+        // the sheet is the thing that gets printed, so it needs the resolution
+        // written in even more than the single photo does
+        return canvasToBlob(sheet, 'image/jpeg', 0.92)
+          .then(function (b2) { return Imaging.blobWithDpi(b2, o.dpi); })
+          .then(function (b2) {
           out.push({ blob: b2, name: 'passport-photo-sheet-4x6in.jpg', src: files[0], note: cols * rows + ' copies on a 4×6 in sheet · print at 100%, cut along the grey lines' });
           return out;
         });
@@ -1165,6 +1171,425 @@
       }
     }
   };
+
+
+  /* ------------------------------------------------- scan a document */
+
+  // Four draggable corners over the photograph. Detection puts them on the
+  // page automatically; dragging is there for when it guesses wrong, which a
+  // photo taken over a patterned tablecloth certainly will.
+  function ScanStage(src, quad) {
+    var wrap = el('div', 't-scan');
+    var cv = el('canvas', 't-scan-canvas');
+    var view = Math.min(520, src.width);
+    var scale = view / src.width;
+    cv.width = Math.round(src.width * scale);
+    cv.height = Math.round(src.height * scale);
+    wrap.appendChild(cv);
+    var g = cv.getContext('2d');
+    var pts = quad.map(function (p) { return [p[0], p[1]]; });   // source pixels
+    var dragging = -1;
+
+    function toView(p) { return [p[0] * scale, p[1] * scale]; }
+    function draw() {
+      g.clearRect(0, 0, cv.width, cv.height);
+      g.drawImage(src, 0, 0, cv.width, cv.height);
+      g.save();
+      // everything outside the page dimmed, so the crop reads at a glance
+      g.beginPath();
+      g.rect(0, 0, cv.width, cv.height);
+      pts.forEach(function (p, i) {
+        var v = toView(p);
+        if (i === 0) g.moveTo(v[0], v[1]); else g.lineTo(v[0], v[1]);
+      });
+      g.closePath();
+      g.fillStyle = 'rgba(8,14,20,.55)';
+      g.fill('evenodd');
+      g.restore();
+
+      g.beginPath();
+      pts.forEach(function (p, i) {
+        var v = toView(p);
+        if (i === 0) g.moveTo(v[0], v[1]); else g.lineTo(v[0], v[1]);
+      });
+      g.closePath();
+      g.strokeStyle = '#2FB7C2'; g.lineWidth = 2; g.stroke();
+
+      pts.forEach(function (p) {
+        var v = toView(p);
+        g.beginPath(); g.arc(v[0], v[1], 11, 0, Math.PI * 2);
+        g.fillStyle = 'rgba(255,255,255,.92)'; g.fill();
+        g.strokeStyle = '#0E7C86'; g.lineWidth = 2.5; g.stroke();
+      });
+    }
+
+    function at(ev) {
+      var r = cv.getBoundingClientRect();
+      var t = ev.touches ? ev.touches[0] : ev;
+      return [(t.clientX - r.left) / r.width * cv.width, (t.clientY - r.top) / r.height * cv.height];
+    }
+    function nearest(v) {
+      var best = -1, bestD = 26;
+      pts.forEach(function (p, i) {
+        var pv = toView(p), d = Math.hypot(pv[0] - v[0], pv[1] - v[1]);
+        if (d < bestD) { bestD = d; best = i; }
+      });
+      return best;
+    }
+    function down(ev) {
+      var v = at(ev);
+      dragging = nearest(v);
+      if (dragging >= 0) { ev.preventDefault(); move(ev); }
+    }
+    function move(ev) {
+      if (dragging < 0) return;
+      ev.preventDefault();
+      var v = at(ev);
+      pts[dragging] = [
+        Math.max(0, Math.min(src.width, v[0] / scale)),
+        Math.max(0, Math.min(src.height, v[1] / scale))
+      ];
+      draw();
+    }
+    function up() { dragging = -1; }
+
+    cv.addEventListener('pointerdown', down);
+    cv.addEventListener('pointermove', move);
+    cv.addEventListener('pointerup', up);
+    cv.addEventListener('pointercancel', up);
+    cv.addEventListener('pointerleave', up);
+    draw();
+
+    return {
+      el: wrap,
+      quad: function () { return pts.map(function (p) { return [p[0], p[1]]; }); },
+      reset: function (q) { pts = q.map(function (p) { return [p[0], p[1]]; }); draw(); },
+      full: function () {
+        pts = [[0, 0], [src.width, 0], [src.width, src.height], [0, src.height]];
+        draw();
+      }
+    };
+  }
+
+  // How big the straightened page should be. "As photographed" keeps the
+  // proportions the corners imply; naming the paper overrides them, because a
+  // photograph on its own cannot tell you how tall a page really is.
+  function scanSize(quad, page, cap) {
+    var s = Imaging.sizeFor(quad, cap);
+    if (page !== 'a4' && page !== 'letter') return s;
+    var ratio = page === 'a4' ? 297 / 210 : 279.4 / 215.9;
+    if (s.w > s.h) return { w: Math.round(s.h * ratio), h: s.h };
+    return { w: s.w, h: Math.round(s.w * ratio) };
+  }
+
+  // An image export of a named paper size gets that paper's real pixel count,
+  // so "A4 at 300 dpi" is a file that actually prints A4 at 300 dpi rather
+  // than one merely shaped like it.
+  function scanSizeExact(quad, page, dpi, cap) {
+    if (page !== 'a4' && page !== 'letter') return scanSize(quad, page, cap);
+    var mm = page === 'a4' ? [210, 297] : [215.9, 279.4];
+    var natural = Imaging.sizeFor(quad, cap);
+    var landscape = natural.w > natural.h;
+    var w = Math.round((landscape ? mm[1] : mm[0]) / 25.4 * dpi);
+    var h = Math.round((landscape ? mm[0] : mm[1]) / 25.4 * dpi);
+    var big = Math.max(w, h);
+    if (big > 6000) { var k = 6000 / big; w = Math.round(w * k); h = Math.round(h * k); }
+    return { w: w, h: h };
+  }
+
+  var SCAN_MODES = [
+    { value: 'colour', label: 'Colour' },
+    { value: 'grey', label: 'Greyscale' },
+    { value: 'bw', label: 'Black & white' },
+    { value: 'original', label: 'No clean-up' }
+  ];
+
+  TOOLS['scan-document'] = {
+    accept: 'image/*,.heic,.heif,.tif,.tiff,.avif', kinds: 'image', multiple: true,
+    hint: 'Photograph the page, then drop it here — add several for a multi-page scan',
+    label: 'Scan', stage: true, orderable: true,
+    setup: function (panel, o) {
+      o.mode = 'colour'; o.out = 'pdf'; o.q = 0.85; o.page = 'fit'; o.dpi = 300;
+      o.quads = {}; o.pages = []; o.at = 0;
+      panel.appendChild(chips(SCAN_MODES, 'colour', function (v) { o.mode = v; }));
+      panel.appendChild(el('p', 'u t-note', 'Colour removes the shadow and lifts the paper to white. Black & white is the smallest and the crispest for plain text.'));
+      var out = sel([['pdf', 'One PDF'], ['jpg', 'JPG images'], ['png', 'PNG images']], 'pdf');
+      out.onchange = function () { o.out = out.value; };
+      panel.appendChild(field('Save as', out));
+      var pg = sel([['fit', 'As photographed'], ['a4', 'A4'], ['letter', 'Letter']], 'fit');
+      pg.onchange = function () { o.page = pg.value; };
+      panel.appendChild(field('Page shape', pg, 'a page photographed at an angle cannot say how tall it really is \u2014 name the paper and it comes out in those proportions'));
+      var dpi = sel([['300', '300 dpi (print quality)'], ['200', '200 dpi (smaller file)'], ['150', '150 dpi'], ['600', '600 dpi']], '300');
+      dpi.onchange = function () { o.dpi = +dpi.value; };
+      panel.appendChild(field('Resolution', dpi, 'written into the file, so a form that checks it is satisfied'));
+      var q = range(85, 50, 100, 1), qv = el('b', null, '85%');
+      q.oninput = function () { o.q = +q.value / 100; qv.textContent = q.value + '%'; };
+      var qrow = field('Quality', q); qrow.appendChild(qv);
+      panel.appendChild(qrow);
+    },
+    onFiles: function (files, o, stageBox) {
+      stageBox.innerHTML = ''; stageBox.hidden = false;
+      o.pages = []; o.at = 0;
+      var strip = el('div', 't-scan-strip');
+      var holder = el('div');
+      var tools = el('div', 't-stage-tools');
+      var auto = btn('Detect the page again', 'sm', 'search');
+      var whole = btn('Use the whole picture', 'sm', 'swap');
+      tools.appendChild(auto); tools.appendChild(whole);
+
+      return files.reduce(function (chain, f, i) {
+        return chain.then(function () {
+          return decode(f).then(function (c) {
+            var found = Imaging.detectQuad(c);
+            o.pages.push({ canvas: c, found: found, name: f.name });
+            o.quads[i] = found || [[0, 0], [c.width, 0], [c.width, c.height], [0, c.height]];
+          });
+        });
+      }, Promise.resolve()).then(function () {
+        function show(i) {
+          o.at = i;
+          holder.innerHTML = '';
+          var page = o.pages[i];
+          var stage = ScanStage(page.canvas, o.quads[i]);
+          page.stage = stage;
+          holder.appendChild(stage.el);
+          auto.onclick = function () { stage.reset(page.found || o.quads[i]); };
+          whole.onclick = function () { stage.full(); };
+          Array.prototype.forEach.call(strip.children, function (b, k) {
+            b.classList.toggle('on', k === i);
+          });
+        }
+        // remember every page's corners as they are dragged, not only the last
+        function capture() {
+          o.pages.forEach(function (p, k) { if (p.stage) o.quads[k] = p.stage.quad(); });
+        }
+        if (o.pages.length > 1) {
+          o.pages.forEach(function (p, i) {
+            var b = btn('Page ' + (i + 1), 'sm');
+            b.onclick = function () { capture(); show(i); };
+            strip.appendChild(b);
+          });
+          stageBox.appendChild(strip);
+        }
+        stageBox.appendChild(holder);
+        stageBox.appendChild(tools);
+        stageBox.appendChild(el('p', 'u t-note', 'Drag the four circles onto the corners of the page. Everything outside them is thrown away and the page is straightened, so a photo taken at an angle still comes out square.'));
+        o.capture = capture;
+        show(0);
+      });
+    },
+    run: function (files, o, prog) {
+      if (o.capture) o.capture();
+      var mime = o.out === 'png' ? 'image/png' : 'image/jpeg';
+      var pages = [];
+      var chain = o.pages.reduce(function (c, page, i) {
+        return c.then(function () {
+          prog(i / o.pages.length, 'straightening page ' + (i + 1));
+          return K.nextTick().then(function () {
+            var quad = o.quads[i];
+            // a PDF places the picture on a real page, so it only needs the
+            // detail the photograph has; an image has to be the page itself
+            var size = o.out === 'pdf'
+              ? scanSize(quad, o.page, 2600)
+              : scanSizeExact(quad, o.page, o.dpi, 2600);
+            var flat = Imaging.warpQuad(page.canvas, quad, size.w, size.h);
+            prog((i + 0.5) / o.pages.length, 'cleaning page ' + (i + 1));
+            return K.nextTick().then(function () {
+              pages.push(Imaging.enhance(flat, o.mode));
+            });
+          });
+        });
+      }, Promise.resolve());
+
+      return chain.then(function () {
+        if (o.out !== 'pdf') {
+          return Promise.all(pages.map(function (c, i) {
+            return canvasToBlob(c, mime, mime === 'image/png' ? undefined : o.q)
+              .then(function (b) { return Imaging.blobWithDpi(b, o.dpi); })
+              .then(function (b) {
+                return {
+                  blob: b,
+                  name: base(o.pages[i].name) + '-scan.' + (o.out === 'png' ? 'png' : 'jpg'),
+                  src: files[i],
+                  note: c.width + '×' + c.height + ' px · ' + o.dpi + ' dpi · ' + F.bytes(b.size)
+                };
+              });
+          }));
+        }
+        return need('jspdf').then(function (m) {
+          var jsPDF = m.jsPDF, pdf = null;
+          pages.forEach(function (c, i) {
+            var img = flatten(c, '#fff').toDataURL('image/jpeg', o.q);
+            // the picture is already the right shape, so the page is simply
+            // that picture at the resolution the person chose
+            var pw = c.width / o.dpi * 25.4, ph = c.height / o.dpi * 25.4;
+            if (o.page === 'a4') { pw = 210; ph = 297; }
+            else if (o.page === 'letter') { pw = 215.9; ph = 279.4; }
+            var landscape = c.width > c.height;
+            var fmt = [Math.min(pw, ph), Math.max(pw, ph)];
+            if (!pdf) pdf = new jsPDF({ orientation: landscape ? 'l' : 'p', unit: 'mm', format: fmt });
+            else pdf.addPage(fmt, landscape ? 'l' : 'p');
+            var W = pdf.internal.pageSize.getWidth(), H = pdf.internal.pageSize.getHeight();
+            var r = Math.min(W / c.width, H / c.height);
+            var dw = c.width * r, dh = c.height * r;
+            pdf.addImage(img, 'JPEG', (W - dw) / 2, (H - dh) / 2, dw, dh, undefined, 'FAST');
+          });
+          var blob = pdf.output('blob');
+          return [{
+            blob: blob,
+            name: base(o.pages[0].name) + '-scan.pdf',
+            src: files[0],
+            note: pages.length + (pages.length === 1 ? ' page · ' : ' pages · ') + F.bytes(blob.size)
+          }];
+        });
+      });
+    }
+  };
+
+  /* --------------------------------------------------- set the resolution */
+
+  var DPI_PRESETS = [
+    { value: '200', label: '200 dpi' }, { value: '300', label: '300 dpi' },
+    { value: '150', label: '150 dpi' }, { value: '96', label: '96 dpi' },
+    { value: '600', label: '600 dpi' }
+  ];
+
+  TOOLS['change-dpi'] = {
+    accept: 'image/*,.heic,.heif,.tif,.tiff', kinds: 'image', multiple: true,
+    hint: 'Drop a photo or signature here', label: 'Set the DPI', stage: true,
+    setup: function (panel, o) {
+      // a landing page like /200-dpi-converter/ arrives with its number set
+      o.dpi = +PRESET.dpi || 300;
+      o.mode = 'tag'; o.cmW = 3.5; o.cmH = 4.5; o.unit = 'cm';
+      o.kb = 0; o.fmt = 'same';
+      var d = num(o.dpi, 1, 4800, 1, '92px');
+      var quick = chips(DPI_PRESETS, String(o.dpi), function (v) { d.value = v; o.dpi = +v; report(); });
+      d.oninput = function () { o.dpi = +d.value || 300; report(); };
+      panel.appendChild(field('Resolution', d, 'dpi — dots per inch'));
+      panel.appendChild(quick);
+
+      var mode = sel([
+        ['tag', 'Only write the number — keep every pixel'],
+        ['keep', 'Keep the printed size — resize the pixels to match'],
+        ['size', 'Make it an exact printed size']
+      ], 'tag');
+      mode.onchange = function () { o.mode = mode.value; sizeRow.hidden = mode.value !== 'size'; report(); };
+      panel.appendChild(field('What to change', mode));
+
+      var cw = num(3.5, 0.1, 200, 0.1, '76px'), ch2 = num(4.5, 0.1, 200, 0.1, '76px');
+      var unit = sel([['cm', 'cm'], ['in', 'inches'], ['mm', 'mm']], 'cm');
+      var sizeRow = field('Printed size', cw, '×');
+      ch2.setAttribute('aria-label', 'Height');
+      sizeRow.appendChild(ch2); sizeRow.appendChild(unit);
+      sizeRow.hidden = true;
+      cw.oninput = ch2.oninput = unit.onchange = function () {
+        o.cmW = +cw.value || 3.5; o.cmH = +ch2.value || 4.5; o.unit = unit.value; report();
+      };
+      panel.appendChild(sizeRow);
+
+      var kb = num(0, 0, 5000, 5, '84px');
+      kb.oninput = function () { o.kb = +kb.value || 0; };
+      panel.appendChild(field('Max file size', kb, 'KB · 0 = no limit'));
+      var fmt = sel([['same', 'Same as the original'], ['jpeg', 'JPG'], ['png', 'PNG']], 'same');
+      fmt.onchange = function () { o.fmt = fmt.value; };
+      panel.appendChild(field('Output', fmt));
+
+      o.report = report;
+      function report() { if (o.paint) o.paint(); }
+    },
+    onFiles: function (files, o, stageBox) {
+      stageBox.innerHTML = ''; stageBox.hidden = false;
+      var box = el('div', 't-dpi');
+      stageBox.appendChild(box);
+      return files.reduce(function (chain, f) {
+        return chain.then(function (acc) {
+          return f.arrayBuffer().then(function (ab) {
+            var had = Imaging.readDpi(new Uint8Array(ab));
+            return decode(f).then(function (c) {
+              acc.push({ name: f.name, w: c.width, h: c.height, had: had });
+              return acc;
+            });
+          });
+        });
+      }, Promise.resolve([])).then(function (info) {
+        o.info = info;
+        o.paint = function () {
+          box.innerHTML = '';
+          info.forEach(function (it) {
+            var row = el('div', 't-dpi-row');
+            row.appendChild(el('div', 'name', it.name));
+            var out = outSize(it, o);
+            var was = it.had ? it.had.x + ' dpi' : 'no resolution recorded';
+            row.appendChild(el('div', 'meta',
+              it.w + '×' + it.h + ' px · ' + was));
+            row.appendChild(el('div', 'to',
+              '→ ' + out.w + '×' + out.h + ' px at ' + o.dpi + ' dpi = ' +
+              fmtIn(out.w / o.dpi) + ' × ' + fmtIn(out.h / o.dpi)));
+            box.appendChild(row);
+          });
+        };
+        o.paint();
+      });
+    },
+    run: function (files, o, prog) {
+      return files.reduce(function (chain, f, i) {
+        return chain.then(function (acc) {
+          prog(i / files.length, f.name);
+          return decode(f).then(function (c) {
+            var it = o.info[i], want = outSize(it, o);
+            var canvas = c;
+            if (want.w !== c.width || want.h !== c.height) {
+              canvas = K.canvasOf(want.w, want.h);
+              var g = canvas.getContext('2d');
+              g.imageSmoothingQuality = 'high';
+              g.drawImage(c, 0, 0, want.w, want.h);
+            }
+            var e = ext(f) === 'jpeg' ? 'jpg' : ext(f);
+            var fmt = o.fmt === 'same' ? (/^(jpg|png)$/.test(e) ? e : (hasAlpha(canvas) ? 'png' : 'jpg')) : (o.fmt === 'jpeg' ? 'jpg' : o.fmt);
+            var mime = fmt === 'png' ? 'image/png' : 'image/jpeg';
+            if (mime === 'image/jpeg' && hasAlpha(canvas)) canvas = flatten(canvas, '#fff');
+            var made = o.kb
+              ? compressToTarget(canvas, o.kb * 1024, { mime: mime, keepSize: true, minQ: 0.4 }, prog).then(function (r) { return r.blob; })
+              : canvasToBlob(canvas, mime, mime === 'image/png' ? undefined : 0.92);
+            return made.then(function (b) { return Imaging.blobWithDpi(b, o.dpi); }).then(function (b) {
+              acc.push({
+                blob: b,
+                name: base(f.name) + '-' + o.dpi + 'dpi.' + fmt,
+                src: f,
+                note: want.w + '×' + want.h + ' px · ' + o.dpi + ' dpi · ' +
+                      fmtIn(want.w / o.dpi) + ' × ' + fmtIn(want.h / o.dpi) + ' · ' + F.bytes(b.size)
+              });
+              return acc;
+            });
+          });
+        });
+      }, Promise.resolve([]));
+    }
+  };
+
+  // inches -> a line a person reading a form can check
+  function fmtIn(inches) {
+    var cm = inches * 2.54;
+    return cm.toFixed(cm < 10 ? 1 : 0) + ' cm';
+  }
+
+  // how many pixels the result should have, given what was asked for
+  function outSize(it, o) {
+    if (o.mode === 'size') {
+      var f = o.unit === 'in' ? 1 : (o.unit === 'mm' ? 1 / 25.4 : 1 / 2.54);
+      return {
+        w: Math.max(1, Math.round(o.cmW * f * o.dpi)),
+        h: Math.max(1, Math.round(o.cmH * f * o.dpi))
+      };
+    }
+    if (o.mode === 'keep') {
+      // the printed size it claims today, held steady at the new number
+      var was = (it.had && it.had.x) || 96;
+      var k = o.dpi / was;
+      return { w: Math.max(1, Math.round(it.w * k)), h: Math.max(1, Math.round(it.h * k)) };
+    }
+    return { w: it.w, h: it.h };
+  }
 
   /* -------------------------------------------------------- the shell */
   var def = TOOLS[TOOL];

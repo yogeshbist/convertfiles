@@ -105,6 +105,20 @@
   .t-pages{grid-template-columns:repeat(auto-fill,minmax(104px,1fr))}
   .t-opts .opt{padding:8px 0}
 }
+
+/* scanning a photographed page */
+.t-scan{display:flex;flex-direction:column;align-items:center;gap:8px}
+.t-scan-canvas{max-width:100%;height:auto;border-radius:12px;background:#0b0f14;box-shadow:var(--shadow);touch-action:none;cursor:grab}
+.t-scan-canvas:active{cursor:grabbing}
+.t-scan-strip{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:10px;justify-content:center}
+.t-scan-strip .btn.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+
+/* what the resolution tool is about to do, file by file */
+.t-dpi{display:flex;flex-direction:column;gap:8px}
+.t-dpi-row{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.t-dpi-row .name{font-weight:700;font-size:13.5px;color:var(--ink);word-break:break-all}
+.t-dpi-row .meta{font-size:12.5px;color:var(--muted);margin-top:2px}
+.t-dpi-row .to{font-family:var(--mono);font-size:12.5px;font-weight:600;color:var(--accent);margin-top:4px}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://convertfiles.in/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://convertfiles.in/tools/"}, {"@type": "ListItem", "position": 3, "name": "Free EXIF remover: view and strip photo metadata"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "HowTo", "name": "Free EXIF remover: view and strip photo metadata", "description": "See the hidden metadata in a photo — camera, date, GPS location — and remove it without re-encoding. Free, in your browser, nothing uploaded.", "tool": {"@type": "HowToTool", "name": "Convert Files (any modern browser)"}, "step": [{"@type": "HowToStep", "position": 1, "name": "Drop the photos", "text": "The metadata is shown at once, including any location."}, {"@type": "HowToStep", "position": 2, "name": "Check what is there", "text": "A red GPS line means the photo says where it was taken."}, {"@type": "HowToStep", "position": 3, "name": "Remove and download", "text": "The picture is identical; the data is gone."}]}</script>
@@ -117,7 +131,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=c18b358d">
+<link rel="stylesheet" href="/css/app.css?v=6da86f65">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": null};</script>
 <!-- /site:head -->
@@ -131,7 +145,7 @@
   <symbol id="t-compress" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v6H3"/><path d="M15 21v-6h6"/><path d="M3 21l6-6"/><path d="M21 3l-6 6"/></symbol>
   <symbol id="t-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 15h6"/><path d="M9 11h2"/></symbol>
   <symbol id="t-portrait" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2.5" width="16" height="19" rx="2"/><circle cx="12" cy="10" r="3"/><path d="M7.5 18.5a4.5 4.5 0 0 1 9 0"/></symbol>
-  <symbol id="t-resize" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M21 3l-7 7"/><path d="M9 21H3v-6"/><path d="M3 21l7-7"/></symbol>
+  <symbol id="t-dpi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 7v4"/><path d="M10 7v6"/><path d="M14 7v4"/><path d="M18 7v6"/></symbol><symbol id="t-resize" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M21 3l-7 7"/><path d="M9 21H3v-6"/><path d="M3 21l7-7"/></symbol>
   <symbol id="t-crop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2v14a2 2 0 0 0 2 2h14"/><path d="M18 22V8a2 2 0 0 0-2-2H2"/></symbol>
   <symbol id="t-merge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v5a5 5 0 0 0 5 5 5 5 0 0 0 5-5V3"/><path d="M12 13v8"/><path d="M9 18l3 3 3-3"/></symbol>
   <symbol id="t-split" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v7"/><path d="M12 10l-5 5v6"/><path d="M12 10l5 5v6"/></symbol>
@@ -334,13 +348,14 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script defer src="/js/formats.js?v=c18b358d"></script>
-<script defer src="/js/encoders.js?v=c18b358d"></script>
-<script defer src="/js/docmodel.js?v=c18b358d"></script>
-<script defer src="/js/convert.js?v=c18b358d"></script>
-<script defer src="/js/db.js?v=c18b358d"></script>
-<script defer src="/js/content.js?v=c18b358d"></script>
-<script defer src="/js/app.js?v=c18b358d"></script>
-<script defer src="/js/tools.js?v=c18b358d"></script>
+<script defer src="/js/formats.js?v=6da86f65"></script>
+<script defer src="/js/encoders.js?v=6da86f65"></script>
+<script defer src="/js/docmodel.js?v=6da86f65"></script>
+<script defer src="/js/convert.js?v=6da86f65"></script>
+<script defer src="/js/db.js?v=6da86f65"></script>
+<script defer src="/js/content.js?v=6da86f65"></script>
+<script defer src="/js/app.js?v=6da86f65"></script>
+<script defer src="/js/imaging.js?v=6da86f65"></script>
+<script defer src="/js/tools.js?v=6da86f65"></script>
 </body>
 </html>

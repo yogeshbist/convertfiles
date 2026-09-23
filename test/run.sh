@@ -8,6 +8,7 @@ out=$(mktemp -t convertfiles).js
 cat "$here/shims.js" \
     "$root/js/formats.js" \
     "$root/js/encoders.js" \
+    "$root/js/imaging.js" \
     "$root/js/docmodel.js" \
     "$root/js/convert.js" \
     "$here/tests.js" > "$out"

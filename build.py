@@ -695,7 +695,48 @@ for u in urls:
     sitemap.append('  <url><loc>%s</loc><lastmod>%s</lastmod></url>' % (esc(u), today))
 sitemap.append('</urlset>')
 write('sitemap.xml', '\n'.join(sitemap) + '\n')
-write('robots.txt', 'User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n' % DOMAIN)
+# Everything is open, and the assistants are named explicitly rather than left
+# to the wildcard: being quotable in an AI answer is how a tool site gets found
+# now, and a crawler that cannot read the page cannot cite it. /admin/ and
+# /embed/ stay out of search through their own noindex tags, which hold even
+# when a URL is linked from somewhere else — a Disallow here would not.
+ROBOTS = """User-agent: *
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+Disallow: /cgi-bin/
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+Sitemap: %s/sitemap.xml
+"""
+write('robots.txt', ROBOTS % DOMAIN)
 client = SITE.get('adsense_client', '').strip()
 write('ads.txt', ('google.com, %s, DIRECT, f08c47fec0942fa0\n' % client.replace('ca-', '')) if client else '# Add your AdSense line here after approval, e.g.\n# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0\n')
 write('CNAME', HOST + '\n')

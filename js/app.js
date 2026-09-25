@@ -846,16 +846,26 @@
     if (!box) return;
     var slides = box.querySelectorAll('.promo-slide'), count = $('#promo-count'), bar = $('#promo-bar'), i = 0, timer = null;
     var still = matchMedia('(prefers-reduced-motion: reduce)').matches, STEP = 2000;
+    // Every slide starts hidden and out of the tab order; only the one on
+    // screen is put back. Doing this once, and then touching just the two
+    // slides that change, keeps a tick at two DOM writes instead of a
+    // hundred and ten — this runs every two seconds for as long as the page
+    // is open.
+    slides.forEach(function (s) { s.setAttribute('aria-hidden', 'true'); s.setAttribute('tabindex', '-1'); });
     function go(n) {
+      var prev = slides[i];
       i = (n + slides.length) % slides.length;
-      slides.forEach(function (s, k) {
-        var showing = k === i;
-        s.classList.toggle('on', showing);
-        s.setAttribute('aria-hidden', String(!showing));
-        // out of the tab order too, or the keyboard stops on a slide that
-        // screen readers have been told is not there
-        if (showing) s.removeAttribute('tabindex'); else s.setAttribute('tabindex', '-1');
-      });
+      var now = slides[i];
+      if (prev && prev !== now) {
+        prev.classList.remove('on');
+        prev.setAttribute('aria-hidden', 'true');
+        prev.setAttribute('tabindex', '-1');
+      }
+      if (now) {
+        now.classList.add('on');
+        now.setAttribute('aria-hidden', 'false');
+        now.removeAttribute('tabindex');
+      }
       if (count) count.textContent = (i + 1) + ' / ' + slides.length;
       if (bar) { bar.style.animation = 'none'; void bar.offsetWidth; bar.style.animation = still ? 'none' : 'promo-fill ' + STEP + 'ms linear'; }
     }

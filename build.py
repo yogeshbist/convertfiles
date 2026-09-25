@@ -233,7 +233,7 @@ def chip_html(ext):
 # in JavaScript. The app leaves them alone when they are already filled.
 _pop = []
 for _p in load_json('popular'):
-    _pop.append('<a href="/%s-to-%s/">%s<span style="color:var(--pop)">&rarr;</span>%s<span class="lbl">%s</span></a>'
+    _pop.append('<a href="/%s-to-%s/">%s<span style="color:var(--muted)">&rarr;</span>%s<span class="lbl">%s</span></a>'
                 % (_p['from'], _p['to'], chip_html(_p['from']), chip_html(_p['to']), esc(_p['label'])))
 index = replace_block(index, 'popular:tiles', ''.join(_pop))
 

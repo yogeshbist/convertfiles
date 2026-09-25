@@ -848,7 +848,14 @@
     var still = matchMedia('(prefers-reduced-motion: reduce)').matches, STEP = 2000;
     function go(n) {
       i = (n + slides.length) % slides.length;
-      slides.forEach(function (s, k) { s.classList.toggle('on', k === i); s.setAttribute('aria-hidden', String(k !== i)); });
+      slides.forEach(function (s, k) {
+        var showing = k === i;
+        s.classList.toggle('on', showing);
+        s.setAttribute('aria-hidden', String(!showing));
+        // out of the tab order too, or the keyboard stops on a slide that
+        // screen readers have been told is not there
+        if (showing) s.removeAttribute('tabindex'); else s.setAttribute('tabindex', '-1');
+      });
       if (count) count.textContent = (i + 1) + ' / ' + slides.length;
       if (bar) { bar.style.animation = 'none'; void bar.offsetWidth; bar.style.animation = still ? 'none' : 'promo-fill ' + STEP + 'ms linear'; }
     }
@@ -1132,7 +1139,9 @@
   var FB = { data: null };
   function feedbackDue() { var last = parseInt(lsGet('cf.fb.t'), 10) || 0; return Date.now() - last > 7 * 86400000; }
   function starRow(n, cls) {
-    var w = el('span', 'stars' + (cls ? ' ' + cls : '')); w.setAttribute('aria-label', n + ' out of 5');
+    var w = el('span', 'stars' + (cls ? ' ' + cls : ''));
+    w.setAttribute('role', 'img');
+    w.setAttribute('aria-label', n + ' out of 5');
     for (var i = 1; i <= 5; i++) { var s = icon('star'); if (i <= Math.round(n)) s.classList.add('on'); w.appendChild(s); }
     return w;
   }

@@ -10,6 +10,7 @@
              POST /reset            {confirm:'RESET'} wipes the counters
              GET  /content/:name    read a content JSON file from the GitHub repo
              PUT  /content/:name    write it (commits; GitHub Actions rebuilds the site)
+             GET  /adsense/summary?days=30  the publisher's own AdSense earnings
              GET  /health                                                          */
 
 const CONTENT_FILES = { site: 'site.json', popular: 'content/popular.json', steps: 'content/steps.json', faq: 'content/faq.json',
@@ -36,6 +37,7 @@ export default {
       else if (url.pathname === '/stats' && request.method === 'GET') res = await guard(request, env, () => stats(url, env));
       else if (url.pathname === '/reset' && request.method === 'POST') res = await guard(request, env, () => resetCounters(request, env));
       else if (url.pathname.startsWith('/content/')) res = await guard(request, env, () => content(request, url, env));
+      else if (url.pathname === '/adsense/summary' && request.method === 'GET') res = await guard(request, env, () => adsenseSummary(url, env));
       else res = json({ error: 'not found' }, 404);
       for (const [k, v] of Object.entries(cors)) res.headers.set(k, v);
       return res;
@@ -318,4 +320,187 @@ async function content(request, url, env) {
   if (!put.ok) return json({ error: 'GitHub write failed: ' + put.status + ' ' + (await put.text()).slice(0, 200) }, 502);
   const r = await put.json();
   return json({ ok: true, name, path, sha: r.content && r.content.sha, commit: r.commit && r.commit.html_url });
+}
+
+/* --------------------------------------------------------- AdSense earnings
+   Reads the publisher's own AdSense figures through the AdSense Management
+   API v2 and hands them to the admin panel and the phone app. The Google
+   credentials stay here: an APK can be taken apart, so a refresh token must
+   never travel inside one. Callers authenticate with the ordinary admin
+   token, so whoever knows ADMIN_PASSWORD sees the earnings and nobody else.
+
+   Secrets:  ADSENSE_CLIENT_ID  ADSENSE_CLIENT_SECRET  ADSENSE_REFRESH_TOKEN  */
+
+const ADSENSE_API = 'https://adsense.googleapis.com/v2';
+let _tok = { value: '', expires: 0 };     // best-effort cache, per isolate
+let _account = '';
+
+async function accessToken(env) {
+  const now = Date.now() / 1000;
+  if (_tok.value && _tok.expires > now + 60) return _tok.value;
+  const body = new URLSearchParams({
+    grant_type: 'refresh_token',
+    refresh_token: env.ADSENSE_REFRESH_TOKEN,
+    client_id: env.ADSENSE_CLIENT_ID,
+    client_secret: env.ADSENSE_CLIENT_SECRET,
+  });
+  const r = await fetch('https://oauth2.googleapis.com/token', {
+    method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' }, body,
+  });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok || !j.access_token) {
+    throw new Error('google refused the refresh token: ' + (j.error_description || j.error || r.status));
+  }
+  _tok = { value: j.access_token, expires: now + (j.expires_in || 3600) };
+  return _tok.value;
+}
+
+// The publisher account this refresh token belongs to, e.g. accounts/pub-123.
+async function adsenseAccount(env, tok) {
+  if (_account) return _account;
+  const r = await fetch(ADSENSE_API + '/accounts', { headers: { Authorization: 'Bearer ' + tok } });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error('could not list AdSense accounts: ' + (j.error && j.error.message || r.status));
+  const first = (j.accounts || [])[0];
+  if (!first) throw new Error('this Google account has no AdSense account');
+  _account = first.name;
+  return _account;
+}
+
+function ymd(d) { return { y: d.getUTCFullYear(), m: d.getUTCMonth() + 1, d: d.getUTCDate() }; }
+
+// One report. `dims` may be empty for a plain total.
+async function adsenseReport(env, tok, account, dims, start, end, currency) {
+  const p = new URLSearchParams();
+  const a = ymd(start), b = ymd(end);
+  p.set('dateRange', 'CUSTOM');
+  p.set('startDate.year', a.y); p.set('startDate.month', a.m); p.set('startDate.day', a.d);
+  p.set('endDate.year', b.y); p.set('endDate.month', b.m); p.set('endDate.day', b.d);
+  // Only the five raw counters. Rates (CPC, RPM, CTR) are worked out below,
+  // which keeps us clear of the API's metric/dimension compatibility rules.
+  for (const m of ['ESTIMATED_EARNINGS', 'CLICKS', 'IMPRESSIONS', 'PAGE_VIEWS', 'AD_REQUESTS']) p.append('metrics', m);
+  for (const d of dims) p.append('dimensions', d);
+  if (dims.length) { p.set('orderBy', '-ESTIMATED_EARNINGS'); p.set('limit', '50'); }
+  p.set('currencyCode', currency);
+  p.set('reportingTimeZone', 'ACCOUNT_TIME_ZONE');
+  const r = await fetch(`${ADSENSE_API}/${account}/reports:generate?` + p.toString(),
+                        { headers: { Authorization: 'Bearer ' + tok } });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error('AdSense report failed: ' + (j.error && j.error.message || r.status));
+  return j;
+}
+
+// Turn the API's cell grid into plain objects keyed by header name.
+function rowsOf(rep) {
+  const heads = (rep.headers || []).map(h => h.name);
+  return (rep.rows || []).map(row => {
+    const o = {};
+    (row.cells || []).forEach((c, i) => { o[heads[i]] = c.value; });
+    return o;
+  });
+}
+function totalsOf(rep) {
+  const heads = (rep.headers || []).map(h => h.name);
+  const o = {};
+  ((rep.totals || {}).cells || []).forEach((c, i) => { o[heads[i]] = c.value; });
+  return o;
+}
+const num = v => { const n = parseFloat(v); return Number.isFinite(n) ? n : 0; };
+
+// Earnings per click and per thousand impressions, plus click-through rate.
+// AdSense does not say how much of the money came from clicks and how much
+// from impressions, so these are rates, never a split of the total.
+function rates(earn, clicks, impressions) {
+  return {
+    perClick: clicks > 0 ? earn / clicks : 0,
+    per1000Views: impressions > 0 ? (earn / impressions) * 1000 : 0,
+    ctr: impressions > 0 ? clicks / impressions : 0,
+  };
+}
+
+function breakdown(usdRep, inrRep, keys) {
+  const inrBy = new Map();
+  for (const r of rowsOf(inrRep)) inrBy.set(keys.map(k => r[k] || '').join('|'), num(r.ESTIMATED_EARNINGS));
+  return rowsOf(usdRep).map(r => {
+    const id = keys.map(k => r[k] || '').join('|');
+    const usd = num(r.ESTIMATED_EARNINGS), clicks = num(r.CLICKS), impressions = num(r.IMPRESSIONS);
+    const inr = inrBy.get(id) || 0;
+    // A rate has to exist in both currencies, or a caller showing rupees ends
+    // up printing a dollar figure behind a rupee sign.
+    const ru = rates(usd, clicks, impressions), ri = rates(inr, clicks, impressions);
+    return {
+      key: id,
+      label: r[keys[keys.length - 1]] || r[keys[0]] || '—',
+      code: keys.length > 1 ? (r[keys[0]] || '') : '',
+      usd, inr,
+      clicks, impressions,
+      pageViews: num(r.PAGE_VIEWS), adRequests: num(r.AD_REQUESTS),
+      perClickUsd: ru.perClick, perClickInr: ri.perClick,
+      per1000ViewsUsd: ru.per1000Views, per1000ViewsInr: ri.per1000Views,
+      ctr: ru.ctr,
+    };
+  });
+}
+
+async function adsenseSummary(url, env) {
+  if (!env.ADSENSE_REFRESH_TOKEN || !env.ADSENSE_CLIENT_ID || !env.ADSENSE_CLIENT_SECRET) {
+    return json({ error: 'not_configured',
+                  message: 'The API has no AdSense credentials yet. Set ADSENSE_CLIENT_ID, '
+                           + 'ADSENSE_CLIENT_SECRET and ADSENSE_REFRESH_TOKEN with `wrangler secret put`.' }, 503);
+  }
+  const days = Math.max(1, Math.min(365, parseInt(url.searchParams.get('days') || '30', 10)));
+  const end = new Date();
+  const start = new Date(end.getTime() - (days - 1) * 86400000);
+  try {
+    const tok = await accessToken(env);
+    const account = await adsenseAccount(env, tok);
+    const want = [['DATE'], ['COUNTRY_CODE', 'COUNTRY_NAME'], ['PLATFORM_TYPE_NAME'], ['AD_UNIT_NAME'], ['PRODUCT_NAME']];
+    const jobs = [];
+    for (const dims of want) for (const cur of ['USD', 'INR']) jobs.push(adsenseReport(env, tok, account, dims, start, end, cur));
+    const out = await Promise.all(jobs);
+    const [dateUsd, dateInr, cUsd, cInr, pUsd, pInr, uUsd, uInr, prUsd, prInr] = out;
+
+    const tU = totalsOf(dateUsd), tI = totalsOf(dateInr);
+    const usd = num(tU.ESTIMATED_EARNINGS), inr = num(tI.ESTIMATED_EARNINGS);
+    const clicks = num(tU.CLICKS), impressions = num(tU.IMPRESSIONS);
+    const rUsd = rates(usd, clicks, impressions), rInr = rates(inr, clicks, impressions);
+
+    const daily = (() => {
+      const inrBy = new Map();
+      for (const r of rowsOf(dateInr)) inrBy.set(r.DATE, num(r.ESTIMATED_EARNINGS));
+      return rowsOf(dateUsd).map(r => ({
+        date: r.DATE, usd: num(r.ESTIMATED_EARNINGS), inr: inrBy.get(r.DATE) || 0,
+        clicks: num(r.CLICKS), impressions: num(r.IMPRESSIONS), pageViews: num(r.PAGE_VIEWS),
+      }));
+    })();
+
+    return json({
+      ok: true,
+      account,
+      range: { days, start: start.toISOString().slice(0, 10), end: end.toISOString().slice(0, 10) },
+      totals: {
+        usd, inr, clicks, impressions,
+        pageViews: num(tU.PAGE_VIEWS), adRequests: num(tU.AD_REQUESTS),
+        perClickUsd: rUsd.perClick, perClickInr: rInr.perClick,
+        per1000ViewsUsd: rUsd.per1000Views, per1000ViewsInr: rInr.per1000Views,
+        ctr: rUsd.ctr,
+      },
+      daily,
+      countries: breakdown(cUsd, cInr, ['COUNTRY_CODE', 'COUNTRY_NAME']),
+      platforms: breakdown(pUsd, pInr, ['PLATFORM_TYPE_NAME']),
+      units: breakdown(uUsd, uInr, ['AD_UNIT_NAME']),
+      products: breakdown(prUsd, prInr, ['PRODUCT_NAME']),
+      // Stated here so every caller shows the same thing and nobody invents it.
+      notes: {
+        splitByClickOrView: 'AdSense reports one estimated earnings figure. It does not say how much came '
+                            + 'from clicks and how much from impressions, so this shows the rate per click '
+                            + 'and the rate per 1000 views instead of a split.',
+        purchases: 'AdSense pays for clicks and impressions, not for anything a visitor buys afterwards. '
+                   + 'Purchase or conversion revenue belongs to the advertiser and is not reported to publishers.',
+        geography: 'AdSense geography stops at the country. There is no state or city breakdown in its API.',
+      },
+    });
+  } catch (e) {
+    return json({ error: 'adsense_failed', message: String(e.message || e) }, 502);
+  }
 }

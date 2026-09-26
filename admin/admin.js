@@ -39,15 +39,16 @@
     var h = { 'Content-Type': 'application/json' };
     if (token) h.Authorization = 'Bearer ' + token;
     return fetch(API + path, { method: opts.method || 'GET', headers: h, body: opts.body ? JSON.stringify(opts.body) : undefined })
-      .then(function (r) { return r.json().then(function (j) { if (!r.ok) { if (r.status === 401) signOut(); throw new Error(j.error || ('HTTP ' + r.status)); } return j; }); });
+      .then(function (r) { return r.json().then(function (j) { if (!r.ok) { if (r.status === 401) signOut(); throw new Error(j.message || j.error || ('HTTP ' + r.status)); } return j; }); });
   }
 
   /* ------------------------------------------------------------ views */
   function show(v) {
-    ['login', 'dash', 'content', 'feedback', 'settings'].forEach(function (x) { $('#v-' + x).hidden = x !== v; });
+    ['login', 'dash', 'earn', 'content', 'feedback', 'settings'].forEach(function (x) { $('#v-' + x).hidden = x !== v; });
     document.querySelectorAll('#adm-tabs .tab').forEach(function (t) { t.setAttribute('aria-selected', String(t.dataset.v === v)); });
     $('#adm-tabs').hidden = v === 'login'; $('#logout').hidden = v === 'login';
     if (v === 'dash') loadDash();
+    if (v === 'earn') loadEarnings();
     if (v === 'content') renderFiles();
     if (v === 'feedback') loadFeedback();
     if (v === 'settings') { ownState(); openFile('site', $('#s-editor')); }
@@ -111,6 +112,123 @@
       table($('#d-fails'), s.failures, function (r) { return r.key.replace('>', ' → '); }, 'No failures — good');
     }).catch(function (e) { $('#dash-sub').textContent = 'Could not load stats: ' + e.message; });
   }
+  /* --------------------------------------------------------- earnings */
+  // Every number here came from Google through the Worker. Where AdSense does
+  // not report something, the panel says so rather than working it out.
+  var earnDays = 30, earnCur = 'inr';
+
+  // Small rates would round away to nothing at two decimals, so they keep four.
+  function moneyOf(v, cur) {
+    v = +v || 0;
+    var d = v !== 0 && Math.abs(v) < 0.01 ? 4 : 2;
+    try {
+      return new Intl.NumberFormat(cur === 'inr' ? 'en-IN' : 'en-US',
+        { style: 'currency', currency: cur === 'inr' ? 'INR' : 'USD', minimumFractionDigits: d, maximumFractionDigits: d }).format(v);
+    } catch (e) {
+      return (cur === 'inr' ? '\u20B9' : '$') + v.toFixed(d);
+    }
+  }
+  function amountOf(r) { return earnCur === 'inr' ? (+r.inr || 0) : (+r.usd || 0); }
+  function pct(f) { f = +f || 0; return (f * 100).toFixed(f < 0.01 ? 3 : 2) + '%'; }
+
+  // Like table(), but the right-hand column is money and the bar is its share.
+  function moneyTable(t, rows, label, emptyText) {
+    t.innerHTML = '';
+    if (!rows || !rows.length) { var tr0 = el('tr'); tr0.appendChild(el('td', 'empty', emptyText || 'Nothing yet')); t.appendChild(tr0); return; }
+    var max = 0;
+    rows.forEach(function (r) { if (amountOf(r) > max) max = amountOf(r); });
+    rows.forEach(function (r) {
+      var tr = el('tr'), a = el('td'), b = el('td', null, moneyOf(amountOf(r), earnCur));
+      a.appendChild(el('div', null, label(r)));
+      var bar = el('div', 'bar'), i = el('i');
+      i.style.width = (max > 0 ? Math.round(amountOf(r) / max * 100) : 0) + '%';
+      bar.appendChild(i); a.appendChild(bar);
+      a.appendChild(el('small', null, fmt(r.clicks) + ' clicks \u00B7 ' + fmt(r.impressions) + ' views \u00B7 ' + moneyOf(earnCur === 'inr' ? r.perClickInr : r.perClickUsd, earnCur) + ' a click'));
+      tr.appendChild(a); tr.appendChild(b); t.appendChild(tr);
+    });
+  }
+
+  function earnChart(box, daily) {
+    var W = 800, H = 220, P = 34, n = daily.length;
+    if (!n) { box.innerHTML = '<p class="sub">No days to draw yet.</p>'; return; }
+    var vals = daily.map(function (d) { return earnCur === 'inr' ? (+d.inr || 0) : (+d.usd || 0); });
+    var max = Math.max.apply(null, vals);
+    var bw = (W - P * 2) / n, s = '<svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none">';
+    [0.25, 0.5, 0.75, 1].forEach(function (f) {
+      var y = H - P - (H - P * 2) * f;
+      s += '<line x1="' + P + '" x2="' + (W - P) + '" y1="' + y + '" y2="' + y + '" stroke="var(--line)" stroke-width="1"/>';
+      s += '<text x="' + (P - 4) + '" y="' + (y + 4) + '" font-size="10" text-anchor="end" fill="var(--muted)">' + moneyOf(max * f, earnCur) + '</text>';
+    });
+    daily.forEach(function (d, i) {
+      var x = P + i * bw, h = max > 0 ? (H - P * 2) * vals[i] / max : 0;
+      s += '<rect x="' + (x + bw * 0.15) + '" y="' + (H - P - h) + '" width="' + (bw * 0.7) + '" height="' + Math.max(h, 1) + '" rx="2" fill="var(--accent)"><title>' + d.date + ': ' + moneyOf(vals[i], earnCur) + ' \u00B7 ' + fmt(d.clicks) + ' clicks</title></rect>';
+      if (n <= 31 || i % 7 === 0) s += '<text x="' + (x + bw / 2) + '" y="' + (H - P + 14) + '" font-size="9" text-anchor="middle" fill="var(--muted)">' + String(d.date).slice(5) + '</text>';
+    });
+    s += '</svg>';
+    box.innerHTML = s;
+  }
+
+  var lastEarn = null;
+  function renderEarnings(r) {
+    lastEarn = r;
+    var t = r.totals || {};
+    var perClick = earnCur === 'inr' ? t.perClickInr : t.perClickUsd;
+    var perView = earnCur === 'inr' ? t.per1000ViewsInr : t.per1000ViewsUsd;
+    var other = earnCur === 'inr' ? moneyOf(t.usd, 'usd') : moneyOf(t.inr, 'inr');
+    var k = $('#e-kpis'); k.innerHTML = '';
+    [[moneyOf(amountOf(t), earnCur), 'total earnings', other + ' \u00B7 ' + r.range.start + ' to ' + r.range.end],
+     [moneyOf(perClick, earnCur), 'for one click', fmt(t.clicks) + ' clicks \u00B7 a rate, not a share of the total'],
+     [moneyOf(perView, earnCur), 'per 1000 views of an ad', fmt(t.impressions) + ' views \u00B7 the RPM Google reports'],
+     [pct(t.ctr), 'of views became a click', fmt(t.pageViews) + ' page views \u00B7 ' + fmt(t.adRequests) + ' ad requests']
+    ].forEach(function (x) { var d = el('div', 'kpi'); d.appendChild(el('b', null, x[0])); d.appendChild(el('span', null, x[1])); d.appendChild(el('small', null, x[2])); k.appendChild(d); });
+
+    earnChart($('#e-chart'), r.daily || []);
+    moneyTable($('#e-countries'), r.countries, function (x) { return flag(x.code) + '  ' + (x.label || countryName(x.code)); }, 'No country has earned anything yet');
+    moneyTable($('#e-platforms'), r.platforms, function (x) { return x.label; }, 'Nothing by device yet');
+    moneyTable($('#e-units'), r.units, function (x) { return x.label; }, 'No ad unit has earned anything yet');
+    moneyTable($('#e-products'), r.products, function (x) { return x.label; }, 'No product has earned anything yet');
+
+    if (r.notes) {
+      if (r.notes.splitByClickOrView) $('#e-n1').textContent = r.notes.splitByClickOrView;
+      if (r.notes.purchases) $('#e-n2').textContent = r.notes.purchases;
+      if (r.notes.geography) $('#e-n3').textContent = r.notes.geography;
+    }
+
+    var quiet = !t.usd && !t.inr && !t.clicks && !t.impressions;
+    $('#earn-sub').textContent = quiet
+      ? 'Google has the account but reported nothing between ' + r.range.start + ' and ' + r.range.end
+        + '. That is what an account shows before it is approved, and on any day no ad was served.'
+      : 'Estimated figures from ' + (r.account || 'your AdSense account') + ', updated by Google through the day.';
+  }
+
+  function loadEarnings() {
+    $('#earn-sub').textContent = 'Asking Google\u2026';
+    api('/adsense/summary?days=' + earnDays).then(renderEarnings).catch(function (e) {
+      ['#e-kpis'].forEach(function (id) { $(id).innerHTML = ''; });
+      $('#earn-sub').textContent = /credential|configured/i.test(e.message)
+        ? 'Not connected to AdSense yet. ' + e.message
+        : 'Could not load the earnings: ' + e.message;
+    });
+  }
+
+  document.querySelectorAll('#v-earn [data-edays]').forEach(function (b) {
+    b.onclick = function () {
+      earnDays = +b.dataset.edays;
+      document.querySelectorAll('#v-earn [data-edays]').forEach(function (x) { x.classList.toggle('primary', x === b); });
+      loadEarnings();
+    };
+  });
+  document.querySelectorAll('#v-earn [data-cur]').forEach(function (b) {
+    b.onclick = function () {
+      earnCur = b.dataset.cur;
+      document.querySelectorAll('#v-earn [data-cur]').forEach(function (x) { x.classList.toggle('primary', x === b); });
+      // Redraw from what is already here: switching currency is not a refetch,
+      // because both figures arrived in the same response.
+      if (lastEarn) renderEarnings(lastEarn); else loadEarnings();
+    };
+  });
+  $('#earn-refresh').onclick = loadEarnings;
+
   function table(t, rows, label, emptyText) {
     t.innerHTML = '';
     if (!rows || !rows.length) { var tr = el('tr'); var td = el('td', 'empty', emptyText || 'Nothing yet'); tr.appendChild(td); t.appendChild(tr); return; }

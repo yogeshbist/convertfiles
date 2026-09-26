@@ -16,3 +16,6 @@ GITHUB_BRANCH = "main"
 #   ADMIN_PASSWORD  - the admin panel / app password
 #   TOKEN_SECRET    - random string used to sign login tokens
 #   GITHUB_TOKEN    - fine-grained PAT with Contents: read & write on the repo
+#   ADSENSE_CLIENT_ID     - OAuth client id from the Google Cloud project
+#   ADSENSE_CLIENT_SECRET - its secret
+#   ADSENSE_REFRESH_TOKEN - one-time consent for https://www.googleapis.com/auth/adsense.readonly

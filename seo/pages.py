@@ -241,14 +241,23 @@ def faqs(f, t, ext_table):
     return out
 
 
-def related(f, t, pairs_set, limit=12):
-    """Other pages worth linking: same source, then same target."""
-    same_source = [(f, x) for (a, x) in pairs_set if a == f and x != t]
-    same_target = [(x, t) for (x, b) in pairs_set if b == t and x != f]
+def related(f, t, pairs, limit=12):
+    """Other pages worth linking: the reverse pair, then same source, then same target.
+
+    Takes the ordered pair list rather than a set. Iterating a set of string
+    tuples walks them in hash order, which PYTHONHASHSEED randomises per
+    process, so every build both reshuffled these links and — on the pages
+    with more than `limit` candidates — picked a different subset of them.
+    The list order is the curated one from the family lists, which runs
+    most-searched format first, so that is what the limited slots go to.
+    """
+    pairs_set = set(pairs)
     reverse = [(t, f)] if (t, f) in pairs_set else []
+    same_source = [(f, x) for (a, x) in pairs if a == f and x != t]
+    same_target = [(x, t) for (x, b) in pairs if b == t and x != f]
     out, seen = [], set()
     for p in reverse + same_source + same_target:
-        if p not in seen and p in pairs_set:
+        if p not in seen:
             seen.add(p)
             out.append(p)
         if len(out) >= limit:

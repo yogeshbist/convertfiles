@@ -288,7 +288,6 @@ SEO_PAIRS = SEO.seo_pairs(GRAPH)
 TOOL_BY_SLUG = {t['slug']: t for t in TOOLPAGES.all_pages()}
 LANDING_SLUGS = set('%s-to-%s' % p for p in SEO_PAIRS)
 HERO_P = '<p>Free, no sign-up &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>'
-PAIR_SET = set(SEO_PAIRS)
 
 
 def crumbs(items):
@@ -343,7 +342,7 @@ for f, t in SEO_PAIRS:
         body.append('<dt>%s</dt><dd>%s</dd>' % (esc(q), esc(a)))
     body.append('</dl>')
 
-    rel = PAGES.related(f, t, PAIR_SET)
+    rel = PAGES.related(f, t, SEO_PAIRS)
     if rel:
         body.append('<h2>Related conversions</h2><div class="rel">' + ''.join(
             '<a href="/%s-to-%s/">%s to %s</a>' % (a, b, a.upper(), b.upper()) for a, b in rel) + '</div>')

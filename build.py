@@ -657,7 +657,7 @@ if _ink:
 
 # -------------------------------------------------------------- legal pages
 shell = open('pages/_shell.html').read()
-for name in ['privacy', 'terms', 'contact']:
+for name in ['about', 'privacy', 'terms', 'contact']:
     raw = open('pages/%s.html' % name).read()
     title = re.search(r'<!-- title: (.*?) -->', raw).group(1)
     desc = re.search(r'<!-- description: (.*?) -->', raw).group(1)

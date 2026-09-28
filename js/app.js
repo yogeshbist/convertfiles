@@ -1288,11 +1288,9 @@
     };
     $('#nav-files').onclick = function () { show('files'); };
     $('#brand').onclick = function (e) { if (isHome()) { e.preventDefault(); show('convert'); } };
-    $('#f-about').onclick = function (e) {
-      var t = $('#about');
-      if (!t) return;            // not the home page: follow the href to /#about
-      e.preventDefault(); show('convert', true); t.scrollIntoView({ block: 'start' });
-    };
+    // The footer's About link goes to the standalone /about.html on every page,
+    // so nothing intercepts it here. The #about summary on the home page is
+    // still reached by scrolling, and by the /#about route handled above.
     $('#f-support').onclick = function (e) { e.preventDefault(); goSupport(); };
     $('#f-feedback').onclick = function (e) {
       var t = $('#feedback');

@@ -1,0 +1,44 @@
+<!-- title: About -->
+<!-- description: What Convert Files is, why it converts files inside your browser instead of on a server, how to check that for yourself, and who makes it. -->
+<h1>About Convert Files</h1>
+<p class="upd">Last updated {{date}} &middot; applies to {{host}}</p>
+
+<div class="card">
+  <p><strong>The short version.</strong> Convert Files is a free file converter that runs inside your own browser. It handles 1,624 conversions across 80 formats, plus 23 tools for the jobs that are not really conversions &mdash; merging a PDF, reading text out of a photograph, making a passport photo. There is no upload, no account, no queue and no limit on how many files you convert.</p>
+</div>
+
+<h2>What it is</h2>
+<p>Pick a file, choose what it should become, download the result. That is the whole thing. Nothing is installed, nothing is signed up for, and there is no paid tier holding back the useful part. The page you are reading is the product.</p>
+<p>Of the 1,624 conversions it can do, 399 have a page of their own &mdash; <a href="/jpg-to-png/">JPG to PNG</a>, <a href="/pdf-to-docx/">PDF to DOCX</a>, and so on &mdash; so you can land straight on the one you need. The rest are reachable from the converter on the <a href="/">home page</a>, and the full list is on the <a href="/formats/">all conversions</a> page.</p>
+
+<h2>How it works, and how to check</h2>
+<p>Your browser is already a capable piece of software. It decodes and re-encodes images, it renders PDF, it holds the same video and audio codecs a desktop application would use. Convert Files does the work with those, on your machine, and writes the result straight to your Downloads folder. No server ever receives the file, because there is no server doing conversions at all &mdash; the site is a set of static files and the code runs on your side of the connection.</p>
+<p>You do not have to take that on trust. Open your browser&rsquo;s developer tools, switch to the Network tab, and convert something. You will see the converter libraries being fetched the first time they are needed, and you will see nothing being sent. It is the kind of claim that is easy to make and easy to check, so please check it.</p>
+<p>Two consequences worth knowing. A very large file is limited by your own device&rsquo;s memory rather than by an upload limit. And a format that needs a codec your browser does not have will say so plainly instead of pretending.</p>
+
+<h2>What it converts</h2>
+<ul>
+  <li><strong>Images</strong> &mdash; JPG, PNG, WEBP, AVIF, HEIC, JXL, TIFF, BMP, GIF, SVG, ICO, ICNS and more.</li>
+  <li><strong>Documents</strong> &mdash; PDF, DOCX, ODT, RTF, EPUB, TXT, Markdown and HTML.</li>
+  <li><strong>Spreadsheets and data</strong> &mdash; XLSX, XLS, ODS, CSV, TSV, JSON, YAML, XML and SQL.</li>
+  <li><strong>Audio</strong> &mdash; MP3, WAV, FLAC, OGG, OPUS, M4A and AAC.</li>
+  <li><strong>Video</strong> &mdash; MP4, WEBM, MOV, M4V and animated GIF.</li>
+  <li><strong>Fonts</strong> &mdash; TTF, OTF and WOFF.</li>
+  <li><strong>3D models</strong> &mdash; STL, OBJ, PLY, GLB and GLTF.</li>
+  <li><strong>Archives</strong> &mdash; ZIP, TAR and GZ, in both directions.</li>
+</ul>
+<p>Alongside those there are <a href="/tools/">23 tools</a>: compressing an image or a PDF to a target size, merging, splitting and signing PDFs, cropping and resizing, reading text out of a picture, trimming audio and video, stripping EXIF data, setting the DPI a form asks for, straightening a photographed page into a clean PDF, and generating QR codes.</p>
+<p>Every pair on offer is one that genuinely works. Where a conversion would be lossy or approximate &mdash; and moving between formats often is &mdash; the page for it says so rather than promising a perfect result.</p>
+
+<h2>Why it exists</h2>
+<p>Most online converters take your file, send it to a machine you will never see, convert it there, and keep a copy for some period described in a policy you did not read. For a holiday photograph that hardly matters. For a bank statement, a passport scan, a medical report or a signed contract, it is a real cost, and it is a cost most people are not told they are paying.</p>
+<p>Browsers became able to do this work a while ago. So the sensible arrangement is the other way round: bring the converter to the file instead of sending the file to the converter. That is the only idea here, and everything else follows from it &mdash; including the price, because a site with no conversion servers has almost nothing to run.</p>
+
+<h2>Who makes it</h2>
+<p>Convert Files is built and maintained by one independent developer in India, in their own time. It is not a company, it has no investors, and there is no team behind a support address.</p>
+<p>It is paid for by advertising, which covers the hosting and the domain. Ads never receive the contents of your files &mdash; they cannot, because the files never leave your device. If you would rather support it directly, there is a tip link on the home page; it is a gift, not a subscription, and it unlocks nothing, because nothing is locked.</p>
+<p>The site is under continuous development. Formats get added, conversions that turn out to be unreliable get removed, and mistakes get fixed when they are reported.</p>
+
+<h2>Get in touch</h2>
+<p>Bug reports, a format you need, or anything that behaved oddly: <a href="mailto:{{email}}">{{email}}</a>. Requests for a conversion that does not exist yet are genuinely useful &mdash; they are how most of the list got written.</p>
+<p>See also the <a href="/privacy.html">Privacy Policy</a>, the <a href="/terms.html">Terms of Use</a> and the <a href="/contact.html">contact page</a>.</p>

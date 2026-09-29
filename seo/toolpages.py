@@ -204,6 +204,22 @@ TOOLS = [
               ('And on iPhone?', 'iPhone does not accept MP3 ringtones directly. Save the clip, then add it through GarageBand or iTunes/Finder as a tone.')],
          related=['mp3-cutter', 'trim-video', 'mp4-to-mp3']),
 
+    dict(slug='mask-aadhaar', group='image', name='Mask Aadhaar number',
+         title='Free Aadhaar Masking Tool \u2014 Hide First 8 Digits Online',
+         h1='Free Aadhaar masking tool: hide the first 8 digits',
+         desc='Mask an Aadhaar number on a photo or PDF: cover the first 8 digits and keep the last 4, as UIDAI advises. Free, in your browser, nothing uploaded.',
+         intro='Share a copy of your Aadhaar without handing over the whole number. This covers the first 8 digits and leaves the last 4 readable, which is the form UIDAI itself recommends. The number is found for you, or you can draw the box by hand. ' + NOTHING,
+         steps=[('Drop your Aadhaar', 'A photo, a scan or the e-Aadhaar PDF. It is read on your device \u2014 nothing is sent anywhere.'),
+                ('Check the mask', 'Press Find the number and the first 8 digits are covered automatically. If the photo is tilted or blurred, draw the box yourself.'),
+                ('Download the safe copy', 'The black box is burned into the pixels, so the hidden digits cannot be recovered from the file you send.')],
+         faq=[('How much of an Aadhaar number should be hidden?', 'UIDAI\u2019s masked Aadhaar shows only the last 4 digits, so the first 8 are covered. That is what this tool does by default \u2014 enough to identify the document as yours, without giving away the full number.'),
+              ('Can the hidden digits be recovered from the file?', 'No. Drawing a black rectangle on a PDF leaves the real text underneath, where copy-paste or any text extractor will find it. This tool flattens the page to an image and paints the mask into the pixels, so there is nothing left to recover.'),
+              ('It did not find the number \u2014 what now?', 'Press Draw a box and drag across the digits yourself. Automatic reading struggles with a tilted photo, heavy glare, a low-resolution scan or a coloured background. The manual box always works.'),
+              ('Should I cover the QR code as well?', 'Usually yes. The QR code on an Aadhaar carries the full record \u2014 name, address, date of birth and the number. Masking the printed digits alone still leaves all of that readable by anyone with a scanner. Draw a second box over the QR code before you download.'),
+              ('Is masked Aadhaar accepted as proof?', 'It is accepted in many places that only need to see which document you hold, and UIDAI publishes masked Aadhaar for exactly that use. Some verifications still require the full number, so check what you are being asked for.'),
+              ('Is my Aadhaar uploaded anywhere?', 'No. The picture is decoded, masked and re-encoded inside your browser. Open your developer tools, watch the Network tab while you use it, and you will see nothing leave your device.')],
+         related=['remove-exif', 'compress-image', 'scan-document', 'images-to-pdf']),
+
     dict(slug='remove-exif', group='image', name='Remove EXIF / metadata',
          title='Free EXIF Remover — Strip Photo Metadata Online, Private',
          h1='Free EXIF remover: view and strip photo metadata',
@@ -319,7 +335,7 @@ GROUPS = [('image', 'Image tools'), ('pdf', 'PDF tools'), ('media', 'Audio & vid
 
 # The home page lists every tool, most used first. Until the counters have
 # something to say, this is the order — by search demand, most to least.
-RAIL_ORDER = ['compress-image', 'compress-pdf', 'passport-photo', 'scan-document', 'merge-pdf', 'image-to-text', 'change-dpi', 'resize-image',
+RAIL_ORDER = ['compress-image', 'compress-pdf', 'mask-aadhaar', 'passport-photo', 'scan-document', 'merge-pdf', 'image-to-text', 'change-dpi', 'resize-image',
               'images-to-pdf', 'split-pdf', 'sign-pdf', 'crop-image', 'qr-code-generator', 'remove-exif', 'trim-video',
               'mp3-cutter', 'pdf-ocr', 'organize-pdf', 'delete-pdf-pages', 'rotate-pdf', 'unzip', 'ringtone-maker', 'view-metadata']
 GROUP_FAM = {'image': 'image', 'pdf': 'doc', 'media': 'video', 'other': 'data'}
@@ -327,6 +343,7 @@ GROUP_FAM = {'image': 'image', 'pdf': 'doc', 'media': 'video', 'other': 'data'}
 RAIL_META = {
     'compress-image':    ('Down to 20\u2013500 KB for any form', 'compress'),
     'compress-pdf':      ('Under 100 KB to 1 MB limits', 'pdf'),
+    'mask-aadhaar':      ('Hide the first 8 digits, keep the last 4', 'shield'),
     'passport-photo':    ('35\u00d745 mm, print sheet, under 50 KB', 'portrait'),
     'resize-image':      ('Pixels, percent or social presets', 'resize'),
     'crop-image':        ('Square, 16:9, 9:16 or custom', 'crop'),

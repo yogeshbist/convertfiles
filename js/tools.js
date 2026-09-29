@@ -798,6 +798,219 @@
   };
   TOOLS['pdf-ocr'] = TOOLS['image-to-text'];
 
+  // ---- mask an Aadhaar number
+  // UIDAI's own guidance is to show only the last 4 digits. The number-finding
+  // and the geometry live in imaging.js, where the test suite can reach them;
+  // this file is the interface around them.
+  var verhoeffOk = Imaging.verhoeff, aadhaarHits = Imaging.aadhaarRuns, first8Box = Imaging.first8Box;
+
+  function MaskStage(pages) {
+    var at = 0, drawing = false, drag = null;
+    var box = el('div', 't-stage-box');
+    var cv = el('canvas', 't-stage-canvas'); box.appendChild(cv);
+    var g = cv.getContext('2d');
+    var W = 560, scale = 1;
+    var note = el('p', 'u t-note', '');
+
+    function page() { return pages[at]; }
+    function layout() {
+      var p = page(), iw = p.canvas.width, ih = p.canvas.height;
+      scale = Math.min(1, W / iw);
+      cv.width = Math.round(iw * scale); cv.height = Math.round(ih * scale);
+      draw();
+    }
+    function draw() {
+      var p = page();
+      g.clearRect(0, 0, cv.width, cv.height);
+      g.drawImage(p.canvas, 0, 0, cv.width, cv.height);
+      g.fillStyle = '#000';
+      p.masks.forEach(function (m) { g.fillRect(m.x * scale, m.y * scale, m.w * scale, m.h * scale); });
+      if (drag && drag.box) {
+        g.save();
+        g.fillStyle = 'rgba(0,0,0,.6)'; g.strokeStyle = '#fff'; g.lineWidth = 2; g.setLineDash([5, 4]);
+        g.fillRect(drag.box.x * scale, drag.box.y * scale, drag.box.w * scale, drag.box.h * scale);
+        g.strokeRect(drag.box.x * scale, drag.box.y * scale, drag.box.w * scale, drag.box.h * scale);
+        g.restore();
+      }
+      undoB.disabled = !p.masks.length;
+      clearB.disabled = !pages.some(function (q) { return q.masks.length; });
+      if (pages.length > 1) pageL.textContent = 'Page ' + (at + 1) + ' of ' + pages.length;
+    }
+    function at2src(e) {
+      var r = cv.getBoundingClientRect(), k = cv.width / r.width;
+      return { x: (e.clientX - r.left) * k / scale, y: (e.clientY - r.top) * k / scale };
+    }
+    cv.style.touchAction = 'none';
+    cv.addEventListener('pointerdown', function (e) {
+      if (!drawing) return;
+      var q = at2src(e); drag = { ox: q.x, oy: q.y, box: { x: q.x, y: q.y, w: 0, h: 0 } };
+      cv.setPointerCapture(e.pointerId);
+    });
+    cv.addEventListener('pointermove', function (e) {
+      if (!drag) return;
+      var q = at2src(e);
+      drag.box = { x: Math.min(drag.ox, q.x), y: Math.min(drag.oy, q.y),
+                   w: Math.abs(q.x - drag.ox), h: Math.abs(q.y - drag.oy) };
+      draw();
+    });
+    function endDrag() {
+      if (!drag) return;
+      var b = drag.box; drag = null;
+      if (b && b.w > 3 && b.h > 3) page().masks.push(b);
+      draw();
+    }
+    cv.addEventListener('pointerup', endDrag);
+    cv.addEventListener('pointercancel', endDrag);
+
+    var tools = el('div', 't-stage-tools');
+    var scanB = btn('Find the number', 'sm primary');
+    var drawB = btn('Draw a box', 'sm');
+    var undoB = btn('Undo', 'sm'); undoB.disabled = true;
+    var clearB = btn('Clear', 'sm'); clearB.disabled = true;
+    var pageL = el('span', 'u', '');
+    var prevB = btn('←', 'sm'), nextB = btn('→', 'sm');
+
+    drawB.onclick = function () {
+      drawing = !drawing;
+      drawB.classList.toggle('on', drawing);
+      cv.style.cursor = drawing ? 'crosshair' : '';
+      note.textContent = drawing
+        ? 'Drag across anything you want covered — the digits, or the QR code.'
+        : '';
+    };
+    undoB.onclick = function () { page().masks.pop(); draw(); };
+    clearB.onclick = function () { pages.forEach(function (p) { p.masks = []; }); draw(); };
+    prevB.onclick = function () { if (at > 0) { at--; layout(); } };
+    nextB.onclick = function () { if (at < pages.length - 1) { at++; layout(); } };
+
+    scanB.onclick = function () {
+      scanB.disabled = true; scanB.textContent = 'Reading…';
+      note.textContent = 'Reading the page on your device. The first run downloads the recognition engine.';
+      need('tesseract').then(function (T) {
+        return T.createWorker('eng', 1).then(function (w) {
+          return w.setParameters({ tessedit_char_whitelist: '0123456789 ' }).then(function () {
+            return w.recognize(page().canvas);
+          }).then(function (r) {
+            var words = (r.data && r.data.words) || [];
+            if (!words.length && r.data && r.data.blocks) {
+              r.data.blocks.forEach(function (b) {
+                (b.paragraphs || []).forEach(function (pp) {
+                  (pp.lines || []).forEach(function (l) { (l.words || []).forEach(function (x) { words.push(x); }); });
+                });
+              });
+            }
+            var hits = aadhaarHits(words), added = 0;
+            hits.forEach(function (h) {
+              var b = first8Box(h);
+              if (b.w > 4 && b.h > 4) { page().masks.push(b); added++; }
+            });
+            draw();
+            if (!added) {
+              note.textContent = 'No twelve-digit number was found on this page. That happens with a tilted photo, a low-resolution scan or glare — use Draw a box to cover it yourself.';
+            } else {
+              var last4 = hits.map(function (h) { return h.digits.slice(-4); }).join(', ');
+              var sure = hits.some(function (h) { return h.valid; });
+              note.textContent = sure
+                ? 'Masked the first 8 digits of ' + added + ' number' + (added > 1 ? 's' : '') + ', ending in ' + last4 + '. The check digit matches, so this is an Aadhaar number. Look at the page and confirm the box covers the digits before you download.'
+                : 'Found ' + added + ' twelve-digit number' + (added > 1 ? 's' : '') + ' ending in ' + last4 + ' and masked the first 8. The Aadhaar check digit did not match, which usually means a digit was misread — check the box is in the right place.';
+            }
+            return w.terminate();
+          }, function (e) { if (w) w.terminate(); throw e; });
+        });
+      }).catch(function (e) {
+        note.textContent = 'The text recogniser could not run (' + (e && e.message ? e.message : e) + '). Use Draw a box instead.';
+      }).then(function () {
+        scanB.disabled = false; scanB.textContent = 'Find the number';
+      });
+    };
+
+    tools.appendChild(scanB); tools.appendChild(drawB);
+    tools.appendChild(undoB); tools.appendChild(clearB);
+    if (pages.length > 1) { tools.appendChild(prevB); tools.appendChild(pageL); tools.appendChild(nextB); }
+    box.appendChild(tools);
+    box.appendChild(note);
+    layout();
+
+    return {
+      el: box,
+      pages: pages,
+      count: function () { return pages.reduce(function (n, p) { return n + p.masks.length; }, 0); },
+      // Masks are painted into the pixels here, not drawn over the top.
+      flat: function (i) {
+        var p = pages[i], out = K.canvasOf(p.canvas.width, p.canvas.height), og = out.getContext('2d');
+        og.drawImage(p.canvas, 0, 0);
+        og.fillStyle = '#000';
+        p.masks.forEach(function (m) { og.fillRect(m.x, m.y, m.w, m.h); });
+        return out;
+      }
+    };
+  }
+
+  TOOLS['mask-aadhaar'] = {
+    accept: 'image/*,.pdf,.heic,.heif,.tif,.tiff', kinds: 'ocr', multiple: false, stage: true,
+    hint: 'Drop your Aadhaar photo or PDF here', label: 'Download the masked copy',
+    setup: function (panel, o) {
+      o.fmt = 'auto';
+      var fmt = sel([['auto', 'Same kind as the original'], ['png', 'PNG'], ['jpeg', 'JPG']], 'auto');
+      fmt.onchange = function () { o.fmt = fmt.value; };
+      panel.appendChild(field('Output', fmt));
+      panel.appendChild(el('p', 'u t-note', 'Press Find the number to detect the Aadhaar automatically, or Draw a box to cover it yourself. Only the last 4 digits should stay readable. The QR code carries the full record — cover that too if you are sending the copy to someone who does not need it.'));
+    },
+    onFiles: function (files, o, stageBox) {
+      var f = files[0];
+      var load = isPdf(f)
+        ? pdfDoc(f).then(function (doc) {
+            var n = Math.min(doc.numPages, 20), out = [], ch = Promise.resolve();
+            for (var i = 0; i < n; i++) (function (i) {
+              ch = ch.then(function () { return renderPage(doc, i, 2.5).then(function (pg) { out[i] = { canvas: pg.canvas, masks: [] }; }); });
+            })(i);
+            return ch.then(function () { o.isPdf = true; return out; });
+          })
+        : decode(f).then(function (c) { o.isPdf = false; return [{ canvas: c, masks: [] }]; });
+      return load.then(function (pages) {
+        stageBox.innerHTML = '';
+        o.stage = MaskStage(pages);
+        stageBox.appendChild(o.stage.el);
+        stageBox.hidden = false;
+      });
+    },
+    run: function (files, o) {
+      var f = files[0], st = o.stage;
+      if (!st || !st.count()) return Promise.reject(new Error('Cover the number first — press Find the number, or Draw a box over the digits.'));
+      if (o.isPdf && o.fmt === 'auto') {
+        return pdfLib().then(function (PL) {
+          return PL.PDFDocument.create().then(function (doc) {
+            return st.pages.reduce(function (chain, p, i) {
+              return chain.then(function () {
+                return canvasToBlob(st.flat(i), 'image/png').then(function (b) {
+                  return b.arrayBuffer().then(function (ab) {
+                    return doc.embedPng(ab).then(function (img) {
+                      doc.addPage([img.width, img.height]).drawImage(img, { x: 0, y: 0, width: img.width, height: img.height });
+                    });
+                  });
+                });
+              });
+            }, Promise.resolve()).then(function () {
+              return doc.save().then(function (bytes) {
+                var blob = new Blob([bytes], { type: 'application/pdf' });
+                return [{ blob: blob, name: base(f.name) + '-masked.pdf', src: f,
+                          note: st.pages.length + ' page' + (st.pages.length > 1 ? 's' : '') + ' · flattened, the hidden digits are not recoverable' }];
+              });
+            });
+          });
+        });
+      }
+      var out = st.flat(0);
+      var fmt = o.fmt === 'auto' ? (ext(f) === 'png' ? 'png' : 'jpg') : (o.fmt === 'jpeg' ? 'jpg' : o.fmt);
+      var mime = fmt === 'jpg' ? 'image/jpeg' : 'image/png';
+      if (mime === 'image/jpeg' && hasAlpha(out)) out = flatten(out, '#fff');
+      return canvasToBlob(out, mime, mime === 'image/jpeg' ? 0.95 : undefined).then(function (b) {
+        return [{ blob: b, name: base(f.name) + '-masked.' + fmt, src: f,
+                  note: out.width + '×' + out.height + ' · the masked digits are gone from the pixels' }];
+      });
+    }
+  };
+
   // ---- trim video
   TOOLS['trim-video'] = {
     accept: 'video/*,.mp4,.mov,.webm,.m4v,.mkv', kinds: 'video', multiple: false, hint: 'Drop a video here', label: 'Trim & save', stage: true,

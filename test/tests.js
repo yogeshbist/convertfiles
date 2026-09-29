@@ -511,6 +511,51 @@ function makeImage(w, h, fn) {
   ok('scan: an enormous photo is capped', Math.max(capped.w, capped.h) === 2600,
      capped.w + 'x' + capped.h);
   eq('scan: four points enclose the area they should', Math.round(I.polyArea([[0, 0], [10, 0], [10, 10], [0, 10]])), 100);
+
+  /* ------------------------------------------- Aadhaar masking geometry */
+  // A word as Tesseract hands it back.
+  function w(text, x0, x1) { return { text: text, bbox: { x0: x0, x1: x1, y0: 100, y1: 130 } }; }
+  // Verhoeff-valid, but starting with 0 — UIDAI never issues those, so no real
+  // person's number appears in this repository.
+  var AAD = '032165498713';
+
+  ok('aadhaar: a valid check digit passes', I.verhoeff(AAD));
+  ok('aadhaar: a wrong check digit fails', !I.verhoeff('032165498714'));
+  ok('aadhaar: a transposition is caught', !I.verhoeff('032165498731'));
+
+  // The three shapes OCR actually returns for "0321 6549 8713".
+  var asThree = I.aadhaarRuns([w('0321', 100, 180), w('6549', 190, 270), w('8713', 280, 360)]);
+  var asOne   = I.aadhaarRuns([w(AAD, 100, 360)]);
+  var asTwo   = I.aadhaarRuns([w('03216549', 100, 270), w('8713', 280, 360)]);
+  eq('aadhaar: found when split into three words', asThree.length, 1);
+  eq('aadhaar: found when read as one word', asOne.length, 1);
+  eq('aadhaar: found when split unevenly', asTwo.length, 1);
+  eq('aadhaar: the digits are recovered', asThree[0].digits, AAD);
+  ok('aadhaar: a real number is flagged valid', asThree[0].valid);
+
+  // The mask must cover the first eight digits and stop before the last four,
+  // which start at x=280 in every arrangement above.
+  [['three words', asThree], ['one word', asOne], ['uneven split', asTwo]].forEach(function (c) {
+    var b = I.first8Box(c[1][0]);
+    ok('aadhaar: mask starts at the number (' + c[0] + ')', Math.abs(b.x - 100) < 14, 'x=' + b.x);
+    ok('aadhaar: mask stops before the last 4 (' + c[0] + ')', b.x + b.w <= 281, 'right=' + (b.x + b.w));
+    ok('aadhaar: mask is not empty (' + c[0] + ')', b.w > 100 && b.h > 10, b.w + 'x' + b.h);
+  });
+
+  // Things that merely look like an Aadhaar must not be masked.
+  eq('aadhaar: a 10-digit phone number is ignored', I.aadhaarRuns([w('9876543210', 100, 300)]).length, 0);
+  eq('aadhaar: 13 digits are ignored', I.aadhaarRuns([w('0321654987134', 100, 360)]).length, 0);
+  eq('aadhaar: an empty page finds nothing', I.aadhaarRuns([]).length, 0);
+  eq('aadhaar: a label before the number does not break it',
+     I.aadhaarRuns([w('DOB:', 40, 90), w('0321', 100, 180), w('6549', 190, 270), w('8713', 280, 360)]).length, 1);
+  // A number on the line above must not be glued to one below.
+  var twoLines = I.aadhaarRuns([
+    { text: '0321', bbox: { x0: 100, x1: 180, y0: 100, y1: 130 } },
+    { text: '6549', bbox: { x0: 190, x1: 270, y0: 100, y1: 130 } },
+    { text: '8713', bbox: { x0: 280, x1: 360, y0: 100, y1: 130 } },
+    { text: '1111', bbox: { x0: 100, x1: 180, y0: 400, y1: 430 } }
+  ]);
+  eq('aadhaar: a number on another line is not joined in', twoLines.length, 1);
 })();
 
 REPORT.join('\n') + '\n\n' + (FAIL.length ? FAIL.length + ' FAILED, ' + PASS + ' passed' : 'all ' + PASS + ' checks passed');

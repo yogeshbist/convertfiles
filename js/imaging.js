@@ -442,10 +442,68 @@
     });
   }
 
+  var VD = [[0,1,2,3,4,5,6,7,8,9],[1,2,3,4,0,6,7,8,9,5],[2,3,4,0,1,7,8,9,5,6],
+            [3,4,0,1,2,8,9,5,6,7],[4,0,1,2,3,9,5,6,7,8],[5,9,8,7,6,0,4,3,2,1],
+            [6,5,9,8,7,1,0,4,3,2],[7,6,5,9,8,2,1,0,4,3],[8,7,6,5,9,3,2,1,0,4],
+            [9,8,7,6,5,4,3,2,1,0]];
+  var VP = [[0,1,2,3,4,5,6,7,8,9],[1,5,7,6,2,8,3,0,9,4],[5,8,0,3,7,9,6,1,4,2],
+            [8,9,1,6,0,4,3,5,2,7],[9,4,5,3,1,2,6,8,7,0],[4,2,8,6,5,7,3,9,0,1],
+            [2,7,9,3,8,0,6,4,1,5],[7,0,4,6,9,1,3,2,5,8]];
+  // Every real Aadhaar ends in a Verhoeff check digit. A phone number or an
+  // enrolment id that happens to be twelve digits almost never passes, so this
+  // separates a true hit from a coincidence. A misread digit breaks it too,
+  // which is why it only changes the wording rather than dropping the match.
+  function verhoeffOk(n) {
+    var c = 0, i;
+    for (i = n.length - 1; i >= 0; i--) c = VD[c][VP[(n.length - 1 - i) % 8][+n.charAt(i)]];
+    return c === 0;
+  }
+  // Aadhaar prints as "1234 5678 9012"; OCR may hand that back as one word,
+  // three, or anything between. So a run of words whose digits total twelve is
+  // found first, and where to cut is worked out afterwards by character.
+  function aadhaarHits(words) {
+    var lines = {}, out = [];
+    words.forEach(function (w) {
+      var b = w.bbox || w;
+      var key = Math.round((b.y0 + b.y1) / 2 / 14);
+      (lines[key] = lines[key] || []).push(w);
+    });
+    Object.keys(lines).forEach(function (k) {
+      var ws = lines[k].sort(function (a, c) { return (a.bbox || a).x0 - (c.bbox || c).x0; });
+      for (var i = 0; i < ws.length; i++) {
+        var run = [], digits = '';
+        for (var j = i; j < ws.length && digits.length < 12; j++) {
+          var t = (ws[j].text || '').replace(/\D/g, '');
+          if (!t) break;
+          run.push({ w: ws[j], d: t }); digits += t;
+        }
+        if (digits.length !== 12) continue;
+        out.push({ run: run, digits: digits, valid: verhoeffOk(digits) });
+        i += run.length - 1;
+      }
+    });
+    return out;
+  }
+  // The rectangle over the first eight digits. A word holding several digits is
+  // split proportionally so the cut lands between the 8th and 9th.
+  function first8Box(hit) {
+    var seen = 0, x0 = null, x1 = null, y0 = 1e9, y1 = -1e9, i;
+    for (i = 0; i < hit.run.length; i++) {
+      var w = hit.run[i].w, d = hit.run[i].d, b = w.bbox || w;
+      y0 = Math.min(y0, b.y0); y1 = Math.max(y1, b.y1);
+      if (x0 === null) x0 = b.x0;
+      if (seen + d.length <= 8) { x1 = b.x1; seen += d.length; if (seen === 8) break; }
+      else { x1 = b.x0 + (b.x1 - b.x0) * ((8 - seen) / d.length); break; }
+    }
+    var px = (y1 - y0) * 0.14, py = (y1 - y0) * 0.18;
+    return { x: x0 - px, y: y0 - py, w: (x1 - x0) + px * 2, h: (y1 - y0) + py * 2 };
+  }
+
   root.Imaging = {
     detectQuad: detectQuad, warpQuad: warpQuad, enhance: enhance,
     sizeFor: sizeFor, polyArea: polyArea, dist: dist,
     readDpi: readDpi, setDpi: setDpi, blobWithDpi: blobWithDpi,
-    canvasOf: canvasOf
+    canvasOf: canvasOf,
+    verhoeff: verhoeffOk, aadhaarRuns: aadhaarHits, first8Box: first8Box
   };
 })(window);

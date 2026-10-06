@@ -91,7 +91,9 @@
         var w = wAttr ? parseFloat(wAttr[1]) : 0, h = hAttr ? parseFloat(hAttr[1]) : 0;
         if ((!w || !h) && box) { var p = box[1].trim().split(/[\s,]+/).map(Number); w = p[2]; h = p[3]; }
         if (!w || !h) { w = 1024; h = 1024; }
-        var target = ctx.opts.width || Math.min(2048, Math.round(w));
+        // A vector has no native resolution, so the only reason to cap this is
+        // memory. 4096 gives a 4K-wide picture from a small source file.
+        var target = ctx.opts.width || Math.min(4096, Math.round(w));
         var scale = target / w;
         var url = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' }));
         return loadImg(url).then(function (img) {
@@ -212,22 +214,95 @@
         return new Blob([UTIF.encodeImage(d.data.buffer, canvas.width, canvas.height)], { type: 'image/tiff' });
       });
     }
-    if (to === 'svg') {
-      return toBlob(canvas, 'image/png').then(function (png) {
-        return new Promise(function (res) {
-          var fr = new FileReader();
-          fr.onload = function () {
-            var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + canvas.width + '" height="' + canvas.height +
-              '" viewBox="0 0 ' + canvas.width + ' ' + canvas.height + '">' +
-              '<image width="' + canvas.width + '" height="' + canvas.height + '" href="' + fr.result + '"/></svg>';
-            res(new Blob([svg], { type: 'image/svg+xml' }));
-          };
-          fr.readAsDataURL(png);
-        });
-      });
-    }
+    if (to === 'svg') return toSvg(canvas, opts);
+
     return Promise.reject(new Error('no encoder for .' + to));
   }
+
+  /* ------------------------------------------------------------------ SVG
+     Two different things share the .svg extension here.
+
+     Tracing turns the picture into real shapes — <path> elements — which stay
+     sharp at any zoom, because there are no pixels left. That is what people
+     mean by "convert to vector", and it suits a logo, an icon, line art or a
+     screenshot of flat colour.
+
+     Embedding wraps the original pixels in an SVG shell. The file opens
+     anywhere and looks identical, but zooming shows the same blur as the
+     source, because it IS the source. A photograph has to go this way: traced,
+     it becomes a few thousand posterised blobs, larger than the original and
+     worse to look at. */
+
+  // Roughly how many colours the picture uses, on a 5-bit-per-channel grid.
+  // Flat art lands in the dozens; a photograph runs to thousands.
+  function colourCount(data, cap) {
+    var seen = Object.create(null), n = 0, d = data.data;
+    // Sample at most ~40k pixels: enough to tell art from photograph.
+    var step = Math.max(4, Math.floor(d.length / 4 / 40000) * 4);
+    for (var i = 0; i < d.length; i += step) {
+      if (d[i + 3] < 8) continue;                       // ignore transparent
+      var k = (d[i] >> 3) * 1024 + (d[i + 1] >> 3) * 32 + (d[i + 2] >> 3);
+      if (!seen[k]) { seen[k] = 1; if (++n >= cap) return n; }
+    }
+    return n;
+  }
+
+  function embedSvg(canvas) {
+    return toBlob(canvas, 'image/png').then(function (png) {
+      return new Promise(function (res) {
+        var fr = new FileReader();
+        fr.onload = function () {
+          var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + canvas.width + '" height="' + canvas.height +
+            '" viewBox="0 0 ' + canvas.width + ' ' + canvas.height + '">' +
+            '<image width="' + canvas.width + '" height="' + canvas.height + '" href="' + fr.result + '"/></svg>';
+          res(new Blob([svg], { type: 'image/svg+xml' }));
+        };
+        fr.readAsDataURL(png);
+      });
+    });
+  }
+
+  // How much detail the tracer is given. Fewer colours on flat art keeps the
+  // shapes clean; more on a busy picture keeps it recognisable.
+  function traceOptions(colours) {
+    if (colours <= 24) return { numberofcolors: Math.max(2, colours), pathomit: 8, ltres: 1, qtres: 1, rightangleenhance: true, colorquantcycles: 3 };
+    if (colours <= 160) return { numberofcolors: 32, pathomit: 4, ltres: 1, qtres: 1, rightangleenhance: true, colorquantcycles: 3 };
+    return { numberofcolors: 64, pathomit: 2, ltres: 0.5, qtres: 0.5, colorquantcycles: 3 };
+  }
+
+  function toSvg(canvas, opts) {
+    var mode = opts.svgMode || 'auto';
+    if (mode === 'embed') return embedSvg(canvas);
+
+    // Tracing cost grows with pixels, and the paths it emits scale for free —
+    // so a big picture is traced small and still prints at any size.
+    var TRACE_MAX = 1600;
+    var src = Math.max(canvas.width, canvas.height) > TRACE_MAX
+      ? resize(canvas, Math.round(canvas.width * TRACE_MAX / Math.max(canvas.width, canvas.height)))
+      : canvas;
+    var data = imageDataOf(src);
+    var colours = colourCount(data, 4001);
+
+    // A photograph traced is worse than a photograph embedded. Say so by doing
+    // the right thing, unless the person asked for tracing outright.
+    if (mode === 'auto' && colours > 4000) return embedSvg(canvas);
+
+    return need('imagetracer').then(function (IT) {
+      var svg = IT.imagedataToSVG(data, traceOptions(colours));
+      // The tracer writes the sampled size; restore the real one so the file
+      // drops in at the dimensions people expect. The paths are unaffected.
+      svg = svg.replace(/^<svg([^>]*)>/, function (m, attrs) {
+        var a = attrs.replace(/\s(width|height)="[^"]*"/g, '');
+        if (!/viewBox=/.test(a)) a += ' viewBox="0 0 ' + src.width + ' ' + src.height + '"';
+        return '<svg' + a + ' width="' + canvas.width + '" height="' + canvas.height + '">';
+      });
+      if (!/xmlns=/.test(svg)) svg = svg.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
+      return new Blob([svg], { type: 'image/svg+xml' });
+    }, function () {
+      return embedSvg(canvas);          // tracer unreachable: still return a file
+    });
+  }
+
 
   function canvasesToPdf(canvases, opts) {
     return need('jspdf').then(function (ns) {
@@ -1456,6 +1531,7 @@
       writeObj: writeObj, writeStl: writeStl, writePly: writePly,
       glbToGltf: glbToGltf, gltfToGlb: gltfToGlb, glbParse: glbParse, meshToGltfText: meshToGltfText, gltfToMesh: gltfToMesh,
       objToXml: objToXml, rowsOf: rowsOf, b64FromBytes: b64FromBytes, bytesFromB64: bytesFromB64,
+      colourCount: colourCount, traceOptions: traceOptions,
       toSql: toSql, sfntTables: sfntTables, avcCodecFor: avcCodecFor
     }
   };

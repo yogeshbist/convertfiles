@@ -116,6 +116,8 @@
     jsyaml:   { g: 'jsyaml',  u: ['https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js',
                                   'https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js'] },
     utif:     { g: 'UTIF',    u: ['https://cdn.jsdelivr.net/npm/utif@3.1.0/UTIF.js'] },
+    imagetracer: { g: 'ImageTracer', u: ['https://cdn.jsdelivr.net/npm/imagetracerjs@1.2.6/imagetracer_v1.2.6.js',
+                                        'https://unpkg.com/imagetracerjs@1.2.6/imagetracer_v1.2.6.js'] },
     lamejs:   { g: 'lamejs',  u: ['https://cdn.jsdelivr.net/npm/lamejs@1.2.1/lame.min.js'] },
     // libheif compiled to WebAssembly (~1.3 MB); only fetched when the browser
     // itself cannot decode HEIC, i.e. Chrome, Edge and Firefox.

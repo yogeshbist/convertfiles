@@ -556,6 +556,36 @@ function makeImage(w, h, fn) {
     { text: '1111', bbox: { x0: 100, x1: 180, y0: 400, y1: 430 } }
   ]);
   eq('aadhaar: a number on another line is not joined in', twoLines.length, 1);
+
+  /* ------------------------------------------- raster to SVG: trace or embed */
+  // Fake ImageData: flat art has a handful of colours, a photograph thousands.
+  // colourCount buckets to 5 bits a channel, so the fixture must spread across
+  // that 32x32x32 grid rather than cycle a single channel.
+  function pixels(colours, n) {
+    var d = new Uint8ClampedArray(n * 4);
+    for (var i = 0; i < n; i++) {
+      var c = i % colours;
+      d[i*4]     = (c % 32) * 8;
+      d[i*4 + 1] = (Math.floor(c / 32) % 32) * 8;
+      d[i*4 + 2] = (Math.floor(c / 1024) % 32) * 8;
+      d[i*4 + 3] = 255;
+    }
+    return { data: d };
+  }
+  var SP = Convert._pure;
+  eq('svg: a two-colour logo counts two', SP.colourCount(pixels(2, 4000), 4001), 2);
+  ok('svg: a noisy photograph trips the cap', SP.colourCount(pixels(9000, 60000), 4001) >= 4001);
+  // Fully transparent pixels must not be counted as a colour.
+  var clear = { data: new Uint8ClampedArray(4000 * 4) };
+  eq('svg: transparent pixels are not colours', SP.colourCount(clear, 4001), 0);
+  // Flat art gets few colours and aggressive path merging; busy art gets more.
+  var flat = SP.traceOptions(8), mid = SP.traceOptions(60), busy = SP.traceOptions(900);
+  eq('svg: flat art traces with its own colour count', flat.numberofcolors, 8);
+  ok('svg: busier art is given more colours', busy.numberofcolors > mid.numberofcolors &&
+     mid.numberofcolors > flat.numberofcolors);
+  ok('svg: flat art merges small paths harder', flat.pathomit > busy.pathomit);
+  ok('svg: a one-colour image still asks for two', SP.traceOptions(1).numberofcolors === 2);
+
 })();
 
 REPORT.join('\n') + '\n\n' + (FAIL.length ? FAIL.length + ' FAILED, ' + PASS + ' passed' : 'all ' + PASS + ' checks passed');

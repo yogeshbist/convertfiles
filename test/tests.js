@@ -585,6 +585,15 @@ function makeImage(w, h, fn) {
      mid.numberofcolors > flat.numberofcolors);
   ok('svg: flat art merges small paths harder', flat.pathomit > busy.pathomit);
   ok('svg: a one-colour image still asks for two', SP.traceOptions(1).numberofcolors === 2);
+  // A trace is only worth keeping when it is actually a drawing of the picture.
+  // The case that prompted this: a shaded illustration traced into 140,932
+  // shapes and 21 MB, with ragged edges where the original was smooth.
+  ok('svg: a logo-sized trace is kept', SP.traceWorthKeeping(277, 38801));
+  ok('svg: line art is kept', SP.traceWorthKeeping(1371, 176051));
+  ok('svg: a 140k-shape trace is thrown away', !SP.traceWorthKeeping(140932, 21000000));
+  ok('svg: a trace that is merely huge is thrown away', !SP.traceWorthKeeping(900, 9000000));
+  ok('svg: a trace that found nothing is not kept', !SP.traceWorthKeeping(0, 120));
+
 
 })();
 

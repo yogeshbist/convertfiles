@@ -270,6 +270,19 @@
     return { numberofcolors: 64, pathomit: 2, ltres: 0.5, qtres: 0.5, colorquantcycles: 3 };
   }
 
+  // What counts as too much to be worth tracing. The colour cap stops the
+  // obvious photographs before any work is done; the shape and byte caps catch
+  // the rest afterwards, because a gradient illustration can look modest on
+  // colour count and still trace into six figures of paths.
+  var TRACE_MAX_COLOURS = 1200;
+  var TRACE_MAX_SHAPES = 15000;
+  var TRACE_MAX_BYTES = 2500000;
+
+  // Whether a finished trace is better than the picture it came from.
+  function traceWorthKeeping(shapes, bytes) {
+    return shapes > 0 && shapes <= TRACE_MAX_SHAPES && bytes <= TRACE_MAX_BYTES;
+  }
+
   function toSvg(canvas, opts) {
     var mode = opts.svgMode || 'auto';
     if (mode === 'embed') return embedSvg(canvas);
@@ -281,14 +294,21 @@
       ? resize(canvas, Math.round(canvas.width * TRACE_MAX / Math.max(canvas.width, canvas.height)))
       : canvas;
     var data = imageDataOf(src);
-    var colours = colourCount(data, 4001);
+    var colours = colourCount(data, TRACE_MAX_COLOURS + 1);
 
     // A photograph traced is worse than a photograph embedded. Say so by doing
     // the right thing, unless the person asked for tracing outright.
-    if (mode === 'auto' && colours > 4000) return embedSvg(canvas);
+    if (mode === 'auto' && colours > TRACE_MAX_COLOURS) return embedSvg(canvas);
 
     return need('imagetracer').then(function (IT) {
       var svg = IT.imagedataToSVG(data, traceOptions(colours));
+      // A trace running to tens of thousands of shapes is not a drawing of the
+      // picture, it is the picture cut into confetti: enormous, slow to open,
+      // and ragged exactly where the original was smooth. A shaded
+      // illustration or anything with anti-aliased text lands here however few
+      // colours it counted, so the honest answer is the faithful copy.
+      var shapes = (svg.match(/<path/g) || []).length;
+      if (mode === 'auto' && !traceWorthKeeping(shapes, svg.length)) return embedSvg(canvas);
       // The tracer writes the sampled size; restore the real one so the file
       // drops in at the dimensions people expect. The paths are unaffected.
       svg = svg.replace(/^<svg([^>]*)>/, function (m, attrs) {
@@ -1531,7 +1551,7 @@
       writeObj: writeObj, writeStl: writeStl, writePly: writePly,
       glbToGltf: glbToGltf, gltfToGlb: gltfToGlb, glbParse: glbParse, meshToGltfText: meshToGltfText, gltfToMesh: gltfToMesh,
       objToXml: objToXml, rowsOf: rowsOf, b64FromBytes: b64FromBytes, bytesFromB64: bytesFromB64,
-      colourCount: colourCount, traceOptions: traceOptions,
+      colourCount: colourCount, traceOptions: traceOptions, traceWorthKeeping: traceWorthKeeping,
       toSql: toSql, sfntTables: sfntTables, avcCodecFor: avcCodecFor
     }
   };

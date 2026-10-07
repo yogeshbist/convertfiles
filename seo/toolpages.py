@@ -369,13 +369,20 @@ RAIL_META = {
 
 # /compress-image-to-50kb/ and friends: the same tool, preset, with its own copy
 KB_PAGES = {
-    'compress-image': [20, 50, 100, 200, 500],
-    'compress-pdf': [100, 200, 500, 1024],
+    # Every one of these is a phrase Google itself suggests for "compress image
+    # to" / "compress pdf to", which is where this site's demand actually is:
+    # a third of its search queries name an exact KB or MB target.
+    'compress-image': [15, 20, 30, 40, 50, 100, 200, 500, 1024],
+    'compress-pdf': [50, 100, 200, 300, 400, 500, 1024, 2048],
 }
 
 
 def kb_label(kb):
-    return '1 MB' if kb == 1024 else '%d KB' % kb
+    return '%d MB' % (kb // 1024) if kb >= 1024 and kb % 1024 == 0 else '%d KB' % kb
+
+
+def kb_slug(kb):
+    return '%dmb' % (kb // 1024) if kb >= 1024 and kb % 1024 == 0 else '%dkb' % kb
 
 
 def kb_page(base, kb):
@@ -383,7 +390,7 @@ def kb_page(base, kb):
     lab = kb_label(kb)
     kind = 'image' if base['slug'] == 'compress-image' else 'PDF'
     d = dict(base)
-    d['slug'] = '%s-to-%s' % (base['slug'], '1mb' if kb == 1024 else '%dkb' % kb)
+    d['slug'] = '%s-to-%s' % (base['slug'], kb_slug(kb))
     d['preset'] = {'kb': kb}
     d['parent'] = base['slug']
     if kind == 'image':
@@ -393,14 +400,18 @@ def kb_page(base, kb):
         d['intro'] = ('Drop the picture and it comes back under %s — the target is already set. The tool keeps the highest quality that fits and only '
                       'shrinks the pixels if it has to. ' % lab) + NOTHING
         d['faq'] = [('How do I reduce a photo to %s?' % lab, 'Drop it above; %s is already set as the target. Press Compress and download the result. Several photos can be done at once.' % lab),
-                    ('Will a %s image still look good?' % lab, {20: 'At 20 KB the picture has to be small — a few hundred pixels across — which is exactly what forms asking for 20 KB expect, such as a signature or a thumbnail photo.',
+                    ('Will a %s image still look good?' % lab, {15: 'Only for something simple. 15 KB is signature territory — black ink on white compresses to almost nothing, so it stays crisp. A face photo at 15 KB has to drop to roughly 300 pixels across and will look soft.',
+                                                              20: 'At 20 KB the picture has to be small — a few hundred pixels across — which is exactly what forms asking for 20 KB expect, such as a signature or a thumbnail photo.',
+                                                              30: 'For a signature or a scanned form, easily. For a face, 30 KB gives about 400 pixels across: readable on screen, a little soft if printed.',
+                                                              40: 'Yes. 40 KB is the size many Indian exam forms ask for, and it holds a face photo around 500 pixels wide — enough to be clearly recognisable.',
                                                               50: 'Yes for a photo of a face or a document: 50 KB holds a sharp picture around 600 pixels wide, which is what passport-style uploads want.',
                                                               100: 'Yes. 100 KB holds a clear picture around 1000 pixels wide, fine for any form and most web use.',
                                                               200: 'Comfortably. 200 KB is enough for a full-screen photo at good quality.',
-                                                              500: 'Easily. 500 KB is a large, high-quality image; only the biggest camera files need any visible compression to reach it.'}[kb]),
+                                                              500: 'Easily. 500 KB is a large, high-quality image; only the biggest camera files need any visible compression to reach it.',
+                                                              1024: 'There is nothing to worry about at 1 MB. That is a full-resolution photo at high quality; the limit exists to stop a 12 MB camera file, not to force any visible loss.'}[kb]),
                     ('What if the form also wants specific dimensions?', 'Use the presets on the page (exam photo, signature, passport) or the passport photo tool for an exact crop; then the size target is applied on top.'),
                     ('Is the picture uploaded?', 'No. Everything runs in your browser.')]
-        d['related'] = [base['slug'] + ('-to-%s' % ('1mb' if k == 1024 else '%dkb' % k)) for k in KB_PAGES['compress-image'] if k != kb] + ['passport-photo', 'resize-image']
+        d['related'] = [base['slug'] + '-to-' + kb_slug(k) for k in KB_PAGES['compress-image'] if k != kb] + ['passport-photo', 'resize-image']
     else:
         d['title'] = 'Compress PDF to %s — Free Online Tool, No Upload' % lab
         d['h1'] = 'Free PDF compressor to %s' % lab
@@ -410,7 +421,7 @@ def kb_page(base, kb):
                     ('Will the text still be readable?', 'Yes. Pages are redrawn at the resolution needed to hit %s; if that would make them unreadable you get the smallest readable version and a note instead.' % lab),
                     ('Can I keep the text selectable?', 'Choose Light compression. It keeps the text but cannot shrink pictures much, so a scan may not reach %s that way.' % lab),
                     ('Is the PDF uploaded?', 'No.')]
-        d['related'] = [base['slug'] + ('-to-%s' % ('1mb' if k == 1024 else '%dkb' % k)) for k in KB_PAGES['compress-pdf'] if k != kb] + ['merge-pdf', 'images-to-pdf']
+        d['related'] = [base['slug'] + '-to-' + kb_slug(k) for k in KB_PAGES['compress-pdf'] if k != kb] + ['merge-pdf', 'images-to-pdf']
     return d
 
 

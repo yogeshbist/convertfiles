@@ -66,6 +66,32 @@
     "seo_title": "PDF to Word: what survives the trip"
   },
   {
+    "slug": "free-pdf-tools-no-upload",
+    "cat": "documents",
+    "fam": "doc",
+    "title": "Free PDF tools that never upload your file: merge, split, compress and more",
+    "teaser": "Most online PDF tools send your file to a server. Here is how to merge, split, compress and sign a PDF without it leaving your device, and when a full online service is still the better pick.",
+    "seo_title": "Free PDF tools with no upload and no signup",
+    "tryTool": "merge-pdf",
+    "tryLabel": "Try it: merge two PDFs — free, in your browser, nothing uploaded.",
+    "body": [
+      "p:Online PDF tools are popular for good reason: merging, splitting and compressing a PDF takes a minute, and many let you start without an account. If you are here, you are probably after the same convenience with one thing changed. Either the document is private, or you keep hitting a limit on file size or on how many tasks you can run in a day.",
+      "h:The one real difference: where your file goes",
+      "p:Most online PDF services work by sending your file to their servers, processing it there, and letting you download the result. They typically say they delete files after a short time, and the details differ from one service to the next, so read the policy of whichever one you use. For a menu or a recipe that is fine. For a tenancy agreement, a bank statement, a medical report or an ID document, it means a copy of the file sits on someone else&rsquo;s computer for a while.",
+      "p:Convert Files does the work inside your browser instead. The page loads the PDF tools, your file is read from your disk into the browser&rsquo;s memory, and the result is written back to your disk. There is no server step to delete from, because the file never travels. You can verify this yourself in thirty seconds; the method is in <a href=\"/guides/is-it-safe/\">Is it safe to convert files online?</a>",
+      "h:The usual PDF jobs, one by one",
+      "ul:<a href=\"/merge-pdf/\">Merge PDF</a> &mdash; combine up to 200 files in the order you choose. Pages are copied across, not re-rendered, so text, links and quality stay as they were|<a href=\"/split-pdf/\">Split PDF</a> &mdash; every page as its own file, page ranges such as 2, 5-7, or chunks of a fixed length|<a href=\"/compress-pdf/\">Compress PDF</a> &mdash; type the size a portal asks for (100 KB, 200 KB, 1 MB) and get a file under it. Strong mode turns pages into pictures to get big reductions, so use Light if the text must stay selectable|<a href=\"/organize-pdf/\">Organise pages</a>, <a href=\"/rotate-pdf/\">Rotate PDF</a> and <a href=\"/delete-pdf-pages/\">Delete pages</a> &mdash; see every page as a thumbnail, then reorder, rotate or cross out|<a href=\"/sign-pdf/\">Sign PDF</a> &mdash; draw, type or upload a signature and place it on any page|<a href=\"/images-to-pdf/\">Images to PDF</a> and <a href=\"/scan-document/\">Document scanner</a> &mdash; turn photos of a page into a straight, clean PDF|<a href=\"/pdf-to-docx/\">PDF to Word</a>, <a href=\"/pdf-to-jpg/\">PDF to JPG</a>, <a href=\"/docx-to-pdf/\">Word to PDF</a> and <a href=\"/xlsx-to-pdf/\">Excel to PDF</a> &mdash; the common conversions in both directions",
+      "h:When this is the better choice",
+      "p:When the document is sensitive, since nothing leaves your device. When you are on a slow or metered connection, because the file itself is never uploaded and downloaded. When you keep running into a size cap or a daily task limit elsewhere, because nothing here counts your tasks; the practical limit is how much memory your device has. And when you do not want to make an account or look at a pile of banners to do a two-minute job.",
+      "h:When a full online PDF service is the better choice",
+      "p:Being straight about this saves you a wasted trip. At the time of writing, Convert Files does not do the following, and larger PDF services often do:",
+      "ul:Password-protecting or unlocking a PDF|Adding watermarks or page numbers|Repairing a damaged PDF|Converting PowerPoint files|Editing the text inside a PDF (for that you want a desktop PDF editor)|Phone and desktop apps, and team features for processing in bulk",
+      "p:Also keep in mind that a PDF is a layout, not a document, so any converter moves things around when it turns one into Word. The details are in <a href=\"/guides/pdf-to-word/\">PDF to Word: what survives the trip</a>. A scanned PDF has no text to extract at all and needs OCR first; <a href=\"/pdf-ocr/\">PDF OCR</a> reads up to 50 pages at a time, but it gives you the text rather than writing a searchable layer back into the PDF.",
+      "h:A quick way to decide",
+      "p:If the file is private, or you are blocked by a limit, use the tools above and nothing is uploaded. If you need password protection, watermarks or a PowerPoint conversion, use a full service, and think about whether that particular document should be uploaded at all. Limits and policies change, so check the service&rsquo;s own pages for the current ones before you rely on them."
+    ]
+  },
+  {
     "slug": "which-image-format",
     "cat": "image",
     "fam": "image",

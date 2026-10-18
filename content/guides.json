@@ -375,5 +375,52 @@
       "h:WhatsApp पर भेजते समय",
       "p:WhatsApp iPhone से भेजी HEIC को अपने आप JPG बना देता है, इसलिए वहाँ दिक्कत नहीं आती। दिक्कत तब आती है जब फोटो ईमेल, Google Drive, USB या AirDrop से Windows पर जाती है — तब वह HEIC ही रहती है। ऐसे में भेजने से पहले ही JPG बना लीजिए।"
     ]
+  },
+  {
+    "slug": "exam-form-photo-signature-size",
+    "cat": "Photos",
+    "fam": "image",
+    "title": "Photo and signature size for SSC, IBPS, UPSC forms — exact KB, free",
+    "seo_title": "Photo & Signature Size for Government Exam Forms (SSC, IBPS, UPSC)",
+    "teaser": "The exact photo and signature sizes exam portals ask for, and how to make them free in your browser — nothing uploaded, no app.",
+    "alt": "exam-form-photo-signature-hindi",
+    "tryTool": "compress-image",
+    "tryLabel": "Compress your photo to the exact KB — free, in your browser.",
+    "body": [
+      "p:Almost every government exam form in India — SSC, IBPS, UPSC, railways, state police — asks for the same two uploads: a passport photo and a signature, both as JPG, both inside a strict kilobyte limit. Get the size wrong and the portal rejects the file; get it very wrong and the application itself is at risk. The limits are small because the portals store lakhs of applications, and a 4 MB phone photo would grind them to a halt.",
+      "h:What the portals actually ask for",
+      "p:There is no single rule — each notification sets its own — but the pattern barely changes. A photograph is usually wanted as a JPG between 20 KB and 50 KB, roughly passport-sized. A signature is usually a JPG between 10 KB and 20 KB, signed in black or blue ink on plain white paper. UPSC and IBPS follow the same shape with slightly different numbers, which is why the first rule of this whole exercise is: read the file-size line in <em>your</em> notification, not someone's blog summary of last year's.",
+      "p:One real change to know: SSC CGL moved to <em>live</em> photo capture — the photo is taken through your webcam or phone during the application, and uploading an old photo gets the form rejected. The signature, though, is still an uploaded JPG of 10–20 KB. Other exams still take uploaded photos, so the steps below cover both.",
+      "h:Make the photo the right size",
+      "p:Start from the clearest photo you have — a phone picture in daylight against a plain light background. Open the image compressor, type the target the notification asks for (say 30), and press Compress. The tool finds the highest quality that fits under your number, shrinking the pixels only if it must. If the form also demands the 35×45 mm passport shape, run it through the passport photo tool first, then compress the result.",
+      "h:Make the signature the right size",
+      "p:Sign on plain white paper with a black or blue pen — a normal running signature, not block capitals. Photograph it in good light or scan it, crop close to the ink, and compress it to the 10–20 KB band the same way. Check the preview before you upload: blurred, tiny, or tilted signatures are among the top reasons forms get rejected, alongside files outside the KB band and the wrong format (PNG or HEIC instead of JPG).",
+      "h:Do it without uploading anything",
+      "p:Exam documents are identity documents, and uploading them to a random converter is exactly the kind of thing you should not do. Everything here runs inside your browser: the photo never leaves your device, there is no account, and nothing is stored. Compress, download, upload to the portal, done."
+    ]
+  },
+  {
+    "slug": "exam-form-photo-signature-hindi",
+    "lang": "hi",
+    "cat": "फोटो",
+    "fam": "image",
+    "title": "SSC, IBPS, UPSC फॉर्म के लिए फोटो और हस्ताक्षर का साइज़ — सही KB, फ्री में",
+    "seo_title": "सरकारी एग्ज़ाम फॉर्म के लिए फोटो और हस्ताक्षर का साइज़ (SSC, IBPS, UPSC)",
+    "teaser": "एग्ज़ाम पोर्टल जो फोटो और हस्ताक्षर का साइज़ मांगते हैं, और उन्हें ब्राउज़र में फ्री में कैसे बनाएं — बिना अपलोड, बिना ऐप।",
+    "alt": "exam-form-photo-signature-size",
+    "tryTool": "compress-image",
+    "tryLabel": "अपनी फोटो को सही KB में कंप्रेस करें — फ्री, आपके ब्राउज़र में।",
+    "body": [
+      "p:भारत में लगभग हर सरकारी एग्ज़ाम फॉर्म — SSC, IBPS, UPSC, रेलवे, राज्य पुलिस — दो फाइलें मांगता है: पासपोर्ट फोटो और हस्ताक्षर, दोनों JPG में, दोनों एक तय KB सीमा के अंदर। साइज़ गलत हुआ तो पोर्टल फाइल रिजेक्ट कर देता है। सीमा छोटी इसलिए होती है क्योंकि पोर्टल पर लाखों आवेदन आते हैं; 4 MB की फोन फोटो सब कुछ धीमा कर देगी।",
+      "h:पोर्टल असल में क्या मांगते हैं",
+      "p:कोई एक नियम नहीं है — हर नोटिफिकेशन अपना नियम देता है — लेकिन तरीका लगभग एक जैसा है। फोटो आमतौर पर 20 KB से 50 KB के बीच JPG में, लगभग पासपोर्ट साइज़। हस्ताक्षर आमतौर पर 10 KB से 20 KB के बीच JPG में, सादे सफेद कागज़ पर काले या नीले पेन से। UPSC और IBPS में नंबर थोड़े अलग हो सकते हैं, इसलिए सबसे पहला नियम: <em>अपने</em> नोटिफिकेशन में फाइल साइज़ वाली लाइन पढ़ें, किसी ब्लॉग का पुराना सारांश नहीं।",
+      "p:एक ज़रूरी बदलाव: SSC CGL में अब फोटो <em>लाइव</em> ली जाती है — आवेदन के समय वेबकैम या फोन से, और पुरानी फोटो अपलोड करने पर फॉर्म रिजेक्ट हो जाता है। हस्ताक्षर फिर भी 10–20 KB की JPG फाइल के रूप में अपलोड होता है। बाकी परीक्षाओं में फोटो अपलोड होती है, इसलिए नीचे दोनों के तरीके दिए हैं।",
+      "h:फोटो को सही साइज़ में बनाएं",
+      "p:सबसे साफ फोटो से शुरू करें — दिन की रोशनी में, सादी हल्की बैकग्राउंड के सामने फोन से ली हुई। इमेज कंप्रेसर खोलें, नोटिफिकेशन में मांगा गया नंबर लिखें (जैसे 30), और Compress दबाएं। टूल सबसे अच्छी क्वालिटी चुनता है जो आपके नंबर में फिट हो; ज़रूरत पड़े तभी पिक्सल घटाता है। अगर फॉर्म में 35×45 mm पासपोर्ट शेप भी मांगी है, तो पहले पासपोर्ट फोटो टूल से शेप बनाएं, फिर कंप्रेस करें।",
+      "h:हस्ताक्षर को सही साइज़ में बनाएं",
+      "p:सादे सफेद कागज़ पर काले या नीले पेन से सामान्य हस्ताक्षर करें — कैपिटल अक्षरों में नहीं। अच्छी रोशनी में फोटो लें या स्कैन करें, स्याही के पास से क्रॉप करें, और उसी तरह 10–20 KB में कंप्रेस करें। अपलोड से पहले प्रीव्यू ज़रूर देखें: धुंधले, बहुत छोटे या टेढ़े हस्ताक्षर, गलत KB, और गलत फॉर्मेट (JPG की जगह PNG या HEIC) रिजेक्शन के सबसे आम कारण हैं।",
+      "h:बिना अपलोड किए करें",
+      "p:परीक्षा के दस्तावेज़ पहचान के दस्तावेज़ होते हैं — इन्हें किसी अनजान कन्वर्टर पर अपलोड करना ठीक नहीं। यहां सब कुछ आपके ब्राउज़र में होता है: फोटो आपके डिवाइस से बाहर नहीं जाती, कोई अकाउंट नहीं, कुछ स्टोर नहीं होता। कंप्रेस करें, डाउनलोड करें, पोर्टल पर अपलोड करें — हो गया।"
+    ]
   }
 ]

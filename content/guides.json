@@ -422,5 +422,28 @@
       "h:बिना अपलोड किए करें",
       "p:परीक्षा के दस्तावेज़ पहचान के दस्तावेज़ होते हैं — इन्हें किसी अनजान कन्वर्टर पर अपलोड करना ठीक नहीं। यहां सब कुछ आपके ब्राउज़र में होता है: फोटो आपके डिवाइस से बाहर नहीं जाती, कोई अकाउंट नहीं, कुछ स्टोर नहीं होता। कंप्रेस करें, डाउनलोड करें, पोर्टल पर अपलोड करें — हो गया।"
     ]
+  },
+  {
+    "slug": "convert-without-uploading",
+    "cat": "Privacy",
+    "fam": "any",
+    "title": "Convert files without uploading them — how private conversion works",
+    "seo_title": "Convert Files Without Uploading — 100% Private, Free, No Signup",
+    "teaser": "Your file never leaves your device. How in-browser conversion works, why it is safer, and how to check any online tool's privacy claims in ten seconds.",
+    "tryTool": "merge-pdf",
+    "tryLabel": "Try it: merge PDFs with nothing uploaded — free.",
+    "body": [
+      "p:Every online file converter asks you the same silent question: where does my file go when I press Convert? With most of them, the honest answer is <em>to a computer you will never see</em> — your document is uploaded to their server, processed there, kept for hours or days \"for your convenience\", and only then deleted. If the file is a contract, a medical report, or your passport scan, that journey should make you pause.",
+      "h:What uploading actually means",
+      "p:A normal converter works in three steps on <em>their</em> machines: your browser sends the file up, their server converts it, your browser downloads the result. During that window your file exists on hardware you do not control, under a privacy policy you did not read, in a country you did not choose. Deletion promises are real, but they cover the aftermath — not the exposure itself.",
+      "h:How conversion without uploading works",
+      "p:There is another way, and it is what this site uses: bring the converter to the file instead of the file to the converter. The page you are reading <em>is</em> the program. Your browser already contains everything needed — image codecs, video encoders, a PDF engine, zip handling — so the conversion runs on your own device, in the same tab, using the same engines a desktop app would use. Nothing is sent anywhere because there is nowhere it needs to go.",
+      "h:Why it matters in practice",
+      "p:Three kinds of files should never be uploaded to a stranger's server: identity documents (passport, Aadhaar, PAN), work under NDA or legal privilege, and anything with other people's personal data in it. With in-browser conversion the question of trust disappears — there is no server to breach, no retention window to worry about, and no terms of service governing your document, because your document never arrives.",
+      "h:How to check any converter's privacy claims",
+      "p:You do not have to take anyone's word, including ours. Open your browser's developer tools, switch to the Network tab, and convert a file: if you see your file's bytes travel up to a server, it was uploaded — whatever the homepage says. Then read the privacy policy's retention line: \"deleted after 24 hours\" means stored for 24 hours. A tool that converts locally shows no upload traffic at all, which you can verify in ten seconds.",
+      "h:The honest limits",
+      "p:In-browser conversion is not magic. Very large videos take a while because your phone does the encoding work, and the page itself must load once (after that it keeps working offline). What you gain — total privacy, no accounts, no queues, no per-day limits — comes from the same design choice: with no server doing work per file, there is no cost per file to pass on to you."
+    ]
   }
 ]

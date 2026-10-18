@@ -318,7 +318,7 @@ for f, t in SEO_PAIRS:
 
     steps = [
         ('Choose your %s file' % F, 'Drop it on the box above, or tap to browse. You can pick several files at once.'),
-        ('Confirm the target is .%s' % t, 'It is already selected. Adjust quality, size or the other options if you want to.'),
+        ('Confirm the target is .%s' % t, 'It is preselected when your browser can encode it; otherwise the closest available target is chosen. Adjust quality, size or the other options if you want to.'),
         ('Convert and download', 'Press Convert, then Download. Your file stays on your device the whole time.'),
     ]
 

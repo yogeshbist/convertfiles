@@ -1084,7 +1084,10 @@
     var m = document.querySelector('meta[name="cf-preset"]');
     if (m && /^[a-z0-9]+>[a-z0-9]+$/.test(m.content)) {
       var pr = m.content.split('>');
-      if (C.rule(pr[0], pr[1])) { state.preset = { from: pr[0], to: pr[1] }; state.from = pr[0]; state.to = pr[1]; refreshTargets(); }
+      // Remember the page's intended pair even when this browser cannot encode
+      // the target, so the formats-changed handler below can explain the switch.
+      state.preset = { from: pr[0], to: pr[1] };
+      if (C.rule(pr[0], pr[1])) { state.from = pr[0]; state.to = pr[1]; refreshTargets(); }
     }
     var g = document.querySelector('meta[name="cf-guide"]');
     if (g && g.content) openGuide(g.content);
@@ -1278,7 +1281,18 @@
   function init() {
     state.to = C.defaultTarget(state.from);
     refreshTargets();
-    document.addEventListener('formats-changed', function () { refreshTargets(); if (picker.open === 'to') { picker.items = targetItems(); paintPicker(); } });
+    // Capability probes can drop a landing page's own target when this browser
+    // has no encoder for it. Say so once instead of silently switching it.
+    var presetDropNoted = false;
+    document.addEventListener('formats-changed', function () {
+      refreshTargets();
+      var pre = state.preset;
+      if (!presetDropNoted && pre && state.to && C.targetsFor(pre.from).indexOf(pre.to) < 0) {
+        presetDropNoted = true;
+        toast('This browser cannot encode .' + pre.to + ' — .' + state.to + ' is selected instead.');
+      }
+      if (picker.open === 'to') { picker.items = targetItems(); paintPicker(); }
+    });
 
     // Convert goes to the converter itself. On the home page that is just a
     // view switch; from a hub, guide or landing page it is a real navigation.

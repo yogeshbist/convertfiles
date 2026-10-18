@@ -27,6 +27,8 @@
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-swap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h13l-3-3"/><path d="M20 17H7l3 3"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.9 5.7 3.9 9s-1.4 6.4-3.9 9c-2.5-2.6-3.9-5.7-3.9-9S9.5 5.6 12 3z"/></symbol>
+  <symbol id="i-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol>
 </svg>
 <header class="nav">
   <div class="nav-in">
@@ -36,6 +38,15 @@
       <a class="tab" href="/#guides" style="text-decoration:none">Guides</a>
       <a class="tab" href="/#formats" style="text-decoration:none">Formats</a>
     </nav>
+    <div class="lang-wrap notranslate" translate="no">
+      <button id="langBtn" class="lang-btn" aria-haspopup="listbox" aria-expanded="false" title="Change language">
+        <svg aria-hidden="true"><use href="#i-globe"/></svg><span id="langCur">English</span><svg class="lang-caret" aria-hidden="true"><use href="#i-caret"/></svg>
+      </button>
+      <div id="langPanel" class="lang-panel" role="listbox" aria-label="Choose language" hidden>
+        <input id="langSearch" type="search" placeholder="Search languages…" aria-label="Search languages" autocomplete="off">
+        <ul id="langList"></ul>
+      </div>
+    </div>
   </div>
 </header>
 <main>
@@ -47,5 +58,6 @@
   <span><b>Convert Files</b> &mdash; free, no account, nothing leaves your device.</span>
   <span class="footer-links"><a href="/#guides">Guides</a><a href="/#formats">Formats</a><a href="/about.html">About</a><a href="/#support">Support</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/contact.html">Contact</a></span>
 </footer>
+<script src="/js/lang.js?v={{v}}"></script>
 </body>
 </html>

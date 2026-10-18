@@ -29,7 +29,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=b501bbf7">
+<link rel="stylesheet" href="/css/app.css?v=519276b4">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": {"client": "ca-pub-3081346168059285", "slots": {"result": "8055560270", "home": "4307886954", "article": "3651168992"}}};</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3081346168059285" crossorigin="anonymous"></script>
@@ -72,6 +72,8 @@
   <symbol id="i-heart" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 21s-7.5-4.6-9.5-9.2C1.2 8.5 3.3 5 6.8 5c2 0 3.4 1.1 5.2 3 1.8-1.9 3.2-3 5.2-3 3.5 0 5.6 3.5 4.3 6.8C19.5 16.4 12 21 12 21z"/></symbol>
   <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></symbol>
   <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.9 5.7 3.9 9s-1.4 6.4-3.9 9c-2.5-2.6-3.9-5.7-3.9-9S9.5 5.6 12 3z"/></symbol>
+  <symbol id="i-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol>
 </svg>
 
 <header class="nav">
@@ -84,6 +86,15 @@
       <a class="tab" id="nav-guides" href="/guides/">Guides</a>
       <a class="tab" id="nav-tools" href="/tools/">Tools</a>
     </nav>
+    <div class="lang-wrap notranslate" translate="no">
+      <button id="langBtn" class="lang-btn" aria-haspopup="listbox" aria-expanded="false" title="Change language">
+        <svg aria-hidden="true"><use href="#i-globe"/></svg><span id="langCur">English</span><svg class="lang-caret" aria-hidden="true"><use href="#i-caret"/></svg>
+      </button>
+      <div id="langPanel" class="lang-panel" role="listbox" aria-label="Choose language" hidden>
+        <input id="langSearch" type="search" placeholder="Search languages&hellip;" aria-label="Search languages" autocomplete="off">
+        <ul id="langList"></ul>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -264,12 +275,13 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script defer src="/js/formats.js?v=b501bbf7"></script>
-<script defer src="/js/encoders.js?v=b501bbf7"></script>
-<script defer src="/js/docmodel.js?v=b501bbf7"></script>
-<script defer src="/js/convert.js?v=b501bbf7"></script>
-<script defer src="/js/db.js?v=b501bbf7"></script>
-<script defer src="/js/content.js?v=b501bbf7"></script>
-<script defer src="/js/app.js?v=b501bbf7"></script>
+<script defer src="/js/formats.js?v=519276b4"></script>
+<script defer src="/js/encoders.js?v=519276b4"></script>
+<script defer src="/js/docmodel.js?v=519276b4"></script>
+<script defer src="/js/convert.js?v=519276b4"></script>
+<script defer src="/js/db.js?v=519276b4"></script>
+<script defer src="/js/lang.js?v=519276b4"></script>
+<script defer src="/js/content.js?v=519276b4"></script>
+<script defer src="/js/app.js?v=519276b4"></script>
 </body>
 </html>

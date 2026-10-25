@@ -720,6 +720,28 @@
     "h:अगर पोर्टल को कोई और साइज़ चाहिए",
     "p:यही टूल कोई भी target लेता है — 200 KB और 500 KB के बटन तैयार हैं, और फॉर्म जो भी नंबर मांगे वो आप खुद लिख सकते हैं। फोटो और हस्ताक्षर के लिए साथ वाला टूल तस्वीरों को 20 KB या 50 KB जैसे exact साइज़ में compress करता है। एक आदत बना लें: compress करने के बाद फाइल एक बार खोलकर zoom करके देख लें। दस सेकंड की जांच, रिजेक्ट हुए फॉर्म से कहीं सस्ती है।"
    ]
+  },
+  {
+   "slug": "markdown-to-word",
+   "cat": "Documents",
+   "fam": "doc",
+   "title": "Markdown to Word: turn an .md file into a clean .docx, free",
+   "seo_title": "Markdown to Word — Convert .md to .docx Free Online (Guide)",
+   "teaser": "Pasting Markdown into Word leaves # and ** everywhere. Here is how to convert the .md file itself into a properly formatted Word document — free, in your browser.",
+   "alt": null,
+   "tryTool": "md-to-docx",
+   "tryLabel": "Convert your Markdown file to Word — free, in your browser.",
+   "body": [
+    "p:Markdown is how the internet writes: GitHub, Reddit, Notion exports, and almost every AI chatbot answer in it. Word is how offices insist on receiving things. Sooner or later the two meet, and the usual first attempt — copy the Markdown, paste it into Word — makes a mess: headings arrive with their # symbols still attached, bold text shows its ** literally, and tables fall apart into tab-separated lines.",
+    "h:Can Microsoft Word open a Markdown file itself?",
+    "p:Not properly. Word will open an .md file as plain text, which is exactly what Markdown is — a text file with formatting instructions written in characters. Word shows you the instructions instead of following them. There is no built-in Markdown import that turns those # and ** marks into real headings and bold, which is why a converter sits in the middle: it reads the instructions and builds a genuine .docx with Word styles, headings, lists, tables and links in the right places.",
+    "h:How to convert (under a minute)",
+    "p:Open the Markdown to Word converter on Convert Files and drop your .md file in. Press Convert and download the .docx. Headings become Word heading styles (so the navigation pane and table of contents work), bold and italic become real formatting, bullet and numbered lists stay lists, code blocks land in a monospace style, and links stay clickable. It all runs inside your browser — the file is never uploaded, which matters when the document is an unpublished draft or internal notes.",
+    "h:The AI chatbot case is the common one now",
+    "p:The most frequent reason people hit this problem in 2026 is an AI assistant. Chatbots answer in Markdown by default, so a report, essay or set of notes copied out of a chat carries the marks with it. Saving the answer as an .md file and converting it gives you a clean Word document in one step, instead of ten minutes of deleting asterisks by hand. The same applies to Notion and Obsidian exports, which are Markdown underneath.",
+    "h:What survives the conversion, honestly",
+    "p:Headings, paragraphs, bold, italic, lists, blockquotes, code, tables and links all come through. Raw HTML embedded inside a Markdown file may be simplified rather than rendered exactly, and very exotic extensions — footnotes from one specific app, for instance — can land as plain text. For ordinary documents, which is nearly all of them, what you download is what you meant to write."
+   ]
   }
  ],
  "SUPPORT": {

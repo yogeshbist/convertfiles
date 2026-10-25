@@ -52,7 +52,9 @@ TOOLS = [
               ('What about the USA?', '2 × 2 inches (51 × 51 mm), with the head between 1 and 1⅜ inches high. Choose the USA preset.'),
               ('Can it change the background to white?', 'No. This tool crops and sizes; it does not edit the picture. Photograph against a plain white or light wall and the result is accepted by nearly every form.'),
               ('How do I print it?', 'Download the 4×6 inch sheet and print it at 100% size (no "fit to page") on photo paper at any photo shop or on a home printer. Cut along the grey lines.'),
-              ('Can I keep the file under 50 KB?', 'Yes. Set the maximum file size and the photo is saved at the highest quality that stays under it.')],
+              ('Can I keep the file under 50 KB?', 'Yes. Set the maximum file size and the photo is saved at the highest quality that stays under it.'),
+              ('What is the passport photo size in pixels?', 'At the print resolution forms expect (300 DPI), 35 x 45 mm works out to 413 x 531 pixels, and the US 2 x 2 inch size is 600 x 600 pixels. Pick the preset and the download comes out at exactly that size.'),
+              ('My exam form wants the photo under a KB limit — what do I do?', 'Make the photo here with the maximum file size set to the limit your form shows — 20 KB and 50 KB are the common ones. If your photo already has the right dimensions, the compress image tool takes it to an exact KB instead.')],
          related=['compress-image', 'crop-image', 'resize-image', 'remove-exif']),
 
     dict(slug='resize-image', group='image', name='Resize image',

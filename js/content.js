@@ -675,6 +675,51 @@
     "h:The honest limits",
     "p:In-browser conversion is not magic. Very large videos take a while because your phone does the encoding work, and the page itself must load once (after that it keeps working offline). What you gain — total privacy, no accounts, no queues, no per-day limits — comes from the same design choice: with no server doing work per file, there is no cost per file to pass on to you."
    ]
+  },
+  {
+   "slug": "compress-pdf-to-100kb",
+   "cat": "PDF",
+   "fam": "doc",
+   "title": "Compress a PDF to 100 KB — free, in your browser",
+   "seo_title": "Compress PDF to 100 KB Online Free — No Upload, No Signup",
+   "teaser": "A portal wants your PDF under 100 KB? Here is how to shrink it free in your browser — the file never leaves your device.",
+   "alt": "compress-pdf-100kb-hindi",
+   "tryTool": "compress-pdf",
+   "tryLabel": "Compress your PDF to 100 KB — free, in your browser.",
+   "body": [
+    "p:Government portals, college admissions and job sites often set the same hard rule: your uploaded PDF must be under 100 KB. A scanned document is usually ten or twenty times that, so the form rejects it and the deadline does not move. The good news is that most of that weight is waste — oversized scans and uncompressed images — and it can be removed in under a minute, free, without uploading your document anywhere.",
+    "h:How to do it (about a minute)",
+    "p:Open the Compress PDF tool on Convert Files and drop your PDF in. Type 100 in the target KB box and press Convert. The tool re-compresses the images inside the PDF and strips the padding until the file fits at or under 100 KB, then hands it back to you as a download. Everything happens inside your browser — the PDF is never uploaded to a server, which matters when the document is a marksheet, an ID proof or a signed form.",
+    "h:Why PDFs get so big in the first place",
+    "p:Nine times out of ten, the weight is photographs and scans. A phone scanner app saves pages as full-resolution images; ten such pages can pass 5 MB without a single line of extra text. Text-only PDFs are the opposite: a typed ten-page document is often already under 100 KB, because text compresses extremely well. That is also why a scanned PDF shrinks dramatically while a typed one barely changes — there is simply more waste to remove.",
+    "h:Will 100 KB ruin the quality?",
+    "p:For form uploads, no. Portals store these files for records, not for printing, and examiners read them on screens. The tool lowers image resolution only as far as the target requires, so a document that starts at 300 KB usually stays perfectly readable at 100 KB. The honest limit: a very long scanned document — say 30 pages of photos — physically cannot reach 100 KB and stay readable. If that happens, split the PDF and upload it in the parts the form allows, or scan again at a lower DPI.",
+    "h:If the portal wants a different size",
+    "p:The same tool takes any target — 200 KB and 500 KB are one tap presets, and you can type any number the form asks for. For photographs and signatures the companion tool compresses images to exact sizes like 20 KB or 50 KB. One habit worth keeping: after compressing, open the result once and zoom in. Ten seconds of checking beats a rejected application."
+   ]
+  },
+  {
+   "slug": "compress-pdf-100kb-hindi",
+   "lang": "hi",
+   "cat": "PDF",
+   "fam": "doc",
+   "title": "PDF को 100 KB तक कैसे छोटा करें — फ्री, बिना अपलोड किए",
+   "seo_title": "PDF को 100 KB में Compress करें — फ्री ऑनलाइन, बिना अपलोड",
+   "teaser": "फॉर्म में PDF 100 KB से कम चाहिए? जानिए कैसे अपने ब्राउज़र में ही फ्री में PDF छोटा करें — फाइल आपके फोन से बाहर जाती ही नहीं।",
+   "alt": "compress-pdf-to-100kb",
+   "tryTool": "compress-pdf",
+   "tryLabel": "अपनी PDF को 100 KB तक अभी छोटा करें",
+   "body": [
+    "p:सरकारी फॉर्म, कॉलेज एडमिशन और नौकरी की वेबसाइट्स पर एक नियम बार-बार आता है — आपकी PDF 100 KB से कम होनी चाहिए। स्कैन किया हुआ दस्तावेज़ आमतौर पर इससे दस-बीस गुना बड़ा होता है, इसलिए पोर्टल उसे रिजेक्ट कर देता है और आखिरी तारीख रुकती नहीं। अच्छी खबर ये है कि PDF का ज़्यादातर वज़न फालतू होता है — बड़े स्कैन और बिना compress की हुई तस्वीरें — और इसे एक मिनट से भी कम में, बिल्कुल फ्री, हटाया जा सकता है।",
+    "h:ऐसे करें (करीब एक मिनट लगेगा)",
+    "p:Convert Files पर Compress PDF टूल खोलें और अपनी PDF डाल दें। Target KB वाले बॉक्स में 100 लिखें और Convert दबाएँ। टूल PDF के अंदर की तस्वीरों को दोबारा compress करके फाइल को 100 KB या उससे कम पर ले आता है, फिर डाउनलोड के लिए दे देता है। ये सारा काम आपके ब्राउज़र के अंदर होता है — PDF किसी सर्वर पर अपलोड नहीं होती, जो मार्कशीट, पहचान पत्र या हस्ताक्षर वाले फॉर्म के लिए सबसे ज़रूरी बात है।",
+    "h:PDF इतनी बड़ी होती क्यों है?",
+    "p:दस में से नौ बार वजह होती है फोटो और स्कैन। फोन का स्कैनर ऐप हर पन्ने को पूरी क्वालिटी की तस्वीर बनाकर रखता है; ऐसे दस पन्ने बिना एक अक्षर extra लिखे 5 MB पार कर जाते हैं। इसके उलट, सिर्फ़ text वाली PDF पहले से ही बहुत हल्की होती है — दस पन्नों का typed दस्तावेज़ अक्सर 100 KB से कम का होता है। इसीलिए स्कैन वाली PDF नाटकीय रूप से छोटी हो जाती है और typed वाली में ज़्यादा बदलाव नहीं आता।",
+    "h:क्या 100 KB पर क्वालिटी खराब हो जाएगी?",
+    "p:फॉर्म अपलोड के लिए नहीं। पोर्टल ये फाइलें रिकॉर्ड के लिए रखते हैं, छापने के लिए नहीं, और जांचने वाले इन्हें स्क्रीन पर ही पढ़ते हैं। टूल तस्वीरों की क्वालिटी सिर्फ़ उतनी ही घटाता है जितनी target के लिए ज़रूरी हो, इसलिए 300 KB की फाइल 100 KB पर भी साफ़ पढ़ी जाती है। ईमानदार सीमा ये है: बहुत लंबा स्कैन किया दस्तावेज़ — मान लीजिए फोटो वाले 30 पन्ने — 100 KB में आ ही नहीं सकता और पढ़ने लायक भी रहे। ऐसा हो तो PDF को बांटकर उतने हिस्सों में अपलोड करें जितने की फॉर्म इजाज़त देता है।",
+    "h:अगर पोर्टल को कोई और साइज़ चाहिए",
+    "p:यही टूल कोई भी target लेता है — 200 KB और 500 KB के बटन तैयार हैं, और फॉर्म जो भी नंबर मांगे वो आप खुद लिख सकते हैं। फोटो और हस्ताक्षर के लिए साथ वाला टूल तस्वीरों को 20 KB या 50 KB जैसे exact साइज़ में compress करता है। एक आदत बना लें: compress करने के बाद फाइल एक बार खोलकर zoom करके देख लें। दस सेकंड की जांच, रिजेक्ट हुए फॉर्म से कहीं सस्ती है।"
+   ]
   }
  ],
  "SUPPORT": {

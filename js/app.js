@@ -455,6 +455,24 @@
     step();
   }
 
+  // Share the tool, never the file: only the page link leaves the device.
+  // Sits beside the tip link on the result card — the one moment a happy
+  // user might actually tell someone.
+  function shareToolLink() {
+    var s = el('a', 'tip-link'); s.href = '#share';
+    s.appendChild(icon('share'));
+    s.appendChild(el('span', null, 'Share this tool'));
+    s.onclick = function (e) {
+      e.preventDefault();
+      var data = { title: 'Convert Files', text: 'Free file converter that never uploads your files - no signup, no watermark:', url: location.href };
+      if (navigator.share) { navigator.share(data).catch(function () {}); }
+      else if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(data.text + ' ' + data.url).then(function () { toast('Link copied - share it anywhere', 'check'); }, function () { toast(data.url); });
+      } else { toast(data.url); }
+    };
+    return s;
+  }
+
   // Every result in one card, each with its own Download, plus one zip of them all.
   function paintDoneMulti(results, to) {
     revokeAll();
@@ -507,7 +525,7 @@
     var a = el('a', null, 'My files'); a.href = '#'; a.onclick = function (e) { e.preventDefault(); show('files'); }; saved.appendChild(a);
     saved.appendChild(document.createTextNode(' so you can download them again later. '));
     var tip = el('a', 'tip-link'); tip.href = '#support'; tip.appendChild(icon('heart')); tip.appendChild(el('span', null, 'Found it useful? Leave a tip'));
-    tip.onclick = function (e) { e.preventDefault(); goSupport(); }; saved.appendChild(tip);
+    tip.onclick = function (e) { e.preventDefault(); goSupport(); }; saved.appendChild(tip); saved.appendChild(document.createTextNode('  ')); saved.appendChild(shareToolLink());
     body.appendChild(saved);
     if (feedbackDue()) body.appendChild(feedbackForm({ compact: true, page: location.pathname }));
     box.appendChild(body);
@@ -548,7 +566,7 @@
       saved.appendChild(document.createTextNode(' so you can download it again later. '));
       var tip = el('a', 'tip-link'); tip.href = '#support'; tip.appendChild(icon('heart')); tip.appendChild(el('span', null, 'Found it useful? Leave a tip'));
       tip.onclick = function (e) { e.preventDefault(); goSupport(); };
-      saved.appendChild(tip);
+      saved.appendChild(tip); saved.appendChild(document.createTextNode('  ')); saved.appendChild(shareToolLink());
     } else {
       saved.textContent = 'Download it now — this browser could not keep a copy.';
     }

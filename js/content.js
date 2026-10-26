@@ -742,6 +742,47 @@
     "h:What survives the conversion, honestly",
     "p:Headings, paragraphs, bold, italic, lists, blockquotes, code, tables and links all come through. Raw HTML embedded inside a Markdown file may be simplified rather than rendered exactly, and very exotic extensions — footnotes from one specific app, for instance — can land as plain text. For ordinary documents, which is nearly all of them, what you download is what you meant to write."
    ]
+  },
+  {
+   "slug": "rrb-ntpc-photo-signature-size",
+   "cat": "Photos",
+   "fam": "image",
+   "title": "RRB NTPC form: photo and signature size — live photo rules, signature 30-49 KB",
+   "seo_title": "RRB NTPC Photo & Signature Size 2026 — Live Photo Rules, 30-49 KB Signature",
+   "teaser": "Filling the RRB NTPC form (last dates 6 and 13 Nov 2026)? The photo is captured live this year, and the signature band is 30-49 KB — different from bank exams. Here is how to get both right.",
+   "alt": "rrb-ntpc-photo-signature-hindi",
+   "tryTool": "compress-image",
+   "tryLabel": "Set your signature to exactly 40 KB — free, in your browser.",
+   "body": [
+    "p:Two things trip up RRB NTPC applicants this year. First, the photograph: the 2026 NTPC forms (CEN 06/2026 for graduates, applications till 6 November 2026, and CEN 07/2026 for 12th-level posts, till 13 November 2026) capture your photo live through the camera during the application — an old studio file may not be accepted the way it was in earlier years. Second, the signature: Railways ask for a JPG between 30 KB and 49 KB, which is a different band from the 10-20 KB that SSC and bank exams use. People who reuse their bank-exam signature file get rejected on size alone.",
+    "h:The live photo — what to do",
+    "p:Because the photo is captured live, preparation means you, not a file. Sit facing a plain, light-coloured wall with the light on your face, not behind you. No cap, no sunglasses, and keep the camera at eye level so the full face is visible and sharp. If the portal also offers an upload option in your category, the standby specification from the notice is a 35 x 45 mm passport-style photo, JPG, roughly 20-50 KB, on a white or light background — the passport photo maker here prepares exactly that, with a head guide and a file-size cap.",
+    "h:The signature — 30 to 49 KB, running hand",
+    "p:Sign in running handwriting (not block capital letters) with a black or blue pen on plain white paper, and photograph just the signature, cropped tight. The file must be a JPG of at least 140 x 60 pixels and between 30 KB and 49 KB. If your photo of the signature is bigger than 49 KB, compress it to a target of about 40 KB — the middle of the band is the safe place to land, because a file that slips under 30 KB is rejected just as firmly as one over the limit. That is the whole trick with Railway forms: not just smaller, but inside the band.",
+    "h:Before you press submit",
+    "p:Check three things. One, the signature file size reads between 30 and 49 KB (long-press the file and look at Details). Two, the signature is your running hand, the same style you will sign in the exam hall — mismatches cause trouble at document verification. Three, keep copies of the final files with the application number; the correction window, when it opens, is short. Everything above is free to prepare in your browser — the files never leave your device."
+   ]
+  },
+  {
+   "slug": "rrb-ntpc-photo-signature-hindi",
+   "lang": "hi",
+   "cat": "फोटो",
+   "fam": "image",
+   "title": "RRB NTPC फॉर्म: फोटो और हस्ताक्षर का साइज़ — live photo नियम, हस्ताक्षर 30-49 KB",
+   "seo_title": "RRB NTPC फोटो और सिग्नेचर साइज़ 2026 — Live Photo नियम, 30-49 KB हस्ताक्षर",
+   "teaser": "RRB NTPC फॉर्म भर रहे हैं (आखिरी तारीख 6 और 13 नवंबर 2026)? इस साल फोटो live लिया जाएगा, और हस्ताक्षर 30-49 KB का चाहिए — बैंक परीक्षाओं से अलग। जानिए दोनों कैसे सही तैयार करें।",
+   "alt": "rrb-ntpc-photo-signature-size",
+   "tryTool": "compress-image",
+   "tryLabel": "अपने हस्ताक्षर को ठीक 40 KB पर सेट करें — फ्री, ब्राउज़र में।",
+   "body": [
+    "p:इस साल RRB NTPC के फॉर्म में दो बातें सबसे ज़्यादा लोगों को फंसाती हैं। पहली, फोटो: 2026 के NTPC फॉर्म (graduate के लिए CEN 06/2026, आवेदन 6 नवंबर 2026 तक, और 12वीं स्तर के पदों के लिए CEN 07/2026, 13 नवंबर 2026 तक) में फोटो आवेदन के समय कैमरे से live लिया जाता है — पुरानी studio वाली फाइल पहले की तरह स्वीकार हो, ये ज़रूरी नहीं। दूसरी, हस्ताक्षर: रेलवे को JPG फाइल 30 KB से 49 KB के बीच चाहिए, जबकि SSC और बैंक परीक्षाओं में 10-20 KB चलता है। जो लोग बैंक वाली signature फाइल ही लगा देते हैं, उनका फॉर्म सिर्फ size की वजह से अटक जाता है।",
+    "h:Live फोटो — क्या करें",
+    "p:फोटो live लिया जाएगा, इसलिए तैयारी फाइल की नहीं, आपकी है। किसी सादी, हल्के रंग की दीवार के सामने बैठें, रोशनी चेहरे पर पड़े, पीछे से नहीं। टोपी या धूप का चश्मा नहीं, कैमरा आंखों के बराबर रखें ताकि पूरा चेहरा साफ़ दिखे। अगर आपके वर्ग में upload का विकल्प भी मिले, तो notice का standby नियम है: 35 x 45 mm की passport-style फोटो, JPG, करीब 20-50 KB, सफेद या हल्की पृष्ठभूमि पर — यहां का passport photo maker ठीक यही तैयार करता है, सिर के लिए guide और file size की सीमा के साथ।",
+    "h:हस्ताक्षर — 30 से 49 KB, चलती हुई लिखावट में",
+    "p:सफेद सादे कागज़ पर काले या नीले पेन से अपने आम हस्ताक्षर (बड़े-बड़े block अक्षरों में नहीं) करें, और सिर्फ हस्ताक्षर की फोटो लें, आसपास की जगह काटकर। फाइल JPG हो, कम से कम 140 x 60 pixels हो, और size 30 KB से 49 KB के बीच हो। अगर फोटो 49 KB से बड़ी है, तो उसे करीब 40 KB के target पर छोटा करें — band के बीच में रहना सबसे सुरक्षित है, क्योंकि 30 KB से नीचे गई फाइल भी उतनी ही पक्की तरह reject होती है जितनी ऊपर गई हुई। रेलवे फॉर्म की असली चाल यही है: सिर्फ छोटा नहीं, band के अंदर।",
+    "h:Submit करने से पहले",
+    "p:तीन बातें जांच लें। एक, signature फाइल का size 30 से 49 KB के बीच दिखे (फाइल को देर तक दबाकर Details देखें)। दो, हस्ताक्षर आपकी चलती हुई लिखावट के हों — परीक्षा हॉल में भी वही हस्ताक्षर करने होंगे, गड़बड़ हुई तो document verification में दिक्कत आती है। तीन, तैयार फाइलों की copy आवेदन संख्या के साथ संभाल कर रखें; correction window जब खुलता है, छोटा होता है। ये सारी तैयारी आपके ब्राउज़र में फ्री में हो जाती है — फाइलें आपके फोन से बाहर जाती ही नहीं।"
+   ]
   }
  ],
  "SUPPORT": {

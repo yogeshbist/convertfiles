@@ -299,6 +299,7 @@
       [{ l: 'SSC Photo · ≤50 KB', kb: 50, w: 413, h: 531 }, { l: 'SSC Signature · ≤20 KB', kb: 20, w: 472, h: 236 },
        { l: 'Bank Photo (IBPS/SBI) · ≤50 KB', kb: 50, w: 200, h: 230 }, { l: 'Bank Signature · ≤20 KB', kb: 20, w: 140, h: 60 },
        { l: 'Railway Signature (RRB) · 30–49 KB', kb: 40, w: 0, h: 0, note: 'Railway band is 30–49 KB: the target is set to 40 KB, safely in the middle. No cropping — keep your full signature.' },
+       { l: 'PAN Photo · ≤20 KB', kb: 20, w: 276, h: 197 }, { l: 'PAN Signature · ≤10 KB', kb: 10, w: 354, h: 157 },
        { l: 'Passport 35×45 mm · ≤100 KB', kb: 100, w: 413, h: 531 }].forEach(function (p) {
         var b = el('button', 't-chip', p.l); b.type = 'button';
         b.onclick = function () { o.kb = p.kb; kbIn.value = p.kb; o.w = p.w; o.h = p.h; dims.textContent = p.note || (p.w ? 'Output ' + p.w + '×' + p.h + ' px (centre-cropped to that shape). ' : ''); toast('Preset applied: ' + p.l, 'check'); };

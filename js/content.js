@@ -230,6 +230,51 @@
  },
  "GUIDES": [
   {
+   "slug": "rrb-ntpc-photo-signature-size",
+   "cat": "Photos",
+   "fam": "image",
+   "title": "RRB NTPC form: photo and signature size — live photo rules, signature 30-49 KB",
+   "seo_title": "RRB NTPC Photo & Signature Size 2026 — Live Photo Rules, 30-49 KB Signature",
+   "teaser": "Filling the RRB NTPC form (last dates 6 and 13 Nov 2026)? The photo is captured live this year, and the signature band is 30-49 KB — different from bank exams. Here is how to get both right.",
+   "alt": "rrb-ntpc-photo-signature-hindi",
+   "tryTool": "compress-image",
+   "tryLabel": "Set your signature to exactly 40 KB — free, in your browser.",
+   "body": [
+    "p:Two things trip up RRB NTPC applicants this year. First, the photograph: the 2026 NTPC forms (CEN 06/2026 for graduates, applications till 6 November 2026, and CEN 07/2026 for 12th-level posts, till 13 November 2026) capture your photo live through the camera during the application — an old studio file may not be accepted the way it was in earlier years. Second, the signature: Railways ask for a JPG between 30 KB and 49 KB, which is a different band from the 10-20 KB that SSC and bank exams use. People who reuse their bank-exam signature file get rejected on size alone.",
+    "h:The live photo — what to do",
+    "p:Because the photo is captured live, preparation means you, not a file. Sit facing a plain, light-coloured wall with the light on your face, not behind you. No cap, no sunglasses, and keep the camera at eye level so the full face is visible and sharp. If the portal also offers an upload option in your category, the standby specification from the notice is a 35 x 45 mm passport-style photo, JPG, roughly 20-50 KB, on a white or light background — the passport photo maker here prepares exactly that, with a head guide and a file-size cap.",
+    "h:The signature — 30 to 49 KB, running hand",
+    "p:Sign in running handwriting (not block capital letters) with a black or blue pen on plain white paper, and photograph just the signature, cropped tight. The file must be a JPG of at least 140 x 60 pixels and between 30 KB and 49 KB. If your photo of the signature is bigger than 49 KB, compress it to a target of about 40 KB — the middle of the band is the safe place to land, because a file that slips under 30 KB is rejected just as firmly as one over the limit. That is the whole trick with Railway forms: not just smaller, but inside the band.",
+    "h:Before you press submit",
+    "p:Check three things. One, the signature file size reads between 30 and 49 KB (long-press the file and look at Details). Two, the signature is your running hand, the same style you will sign in the exam hall — mismatches cause trouble at document verification. Three, keep copies of the final files with the application number; the correction window, when it opens, is short. Everything above is free to prepare in your browser — the files never leave your device."
+   ],
+   "hot": true,
+   "tryUrl": "/compress-image-to-40kb/"
+  },
+  {
+   "slug": "rrb-ntpc-photo-signature-hindi",
+   "lang": "hi",
+   "cat": "फोटो",
+   "fam": "image",
+   "title": "RRB NTPC फॉर्म: फोटो और हस्ताक्षर का साइज़ — live photo नियम, हस्ताक्षर 30-49 KB",
+   "seo_title": "RRB NTPC फोटो और सिग्नेचर साइज़ 2026 — Live Photo नियम, 30-49 KB हस्ताक्षर",
+   "teaser": "RRB NTPC फॉर्म भर रहे हैं (आखिरी तारीख 6 और 13 नवंबर 2026)? इस साल फोटो live लिया जाएगा, और हस्ताक्षर 30-49 KB का चाहिए — बैंक परीक्षाओं से अलग। जानिए दोनों कैसे सही तैयार करें।",
+   "alt": "rrb-ntpc-photo-signature-size",
+   "tryTool": "compress-image",
+   "tryLabel": "अपने हस्ताक्षर को ठीक 40 KB पर सेट करें — फ्री, ब्राउज़र में।",
+   "body": [
+    "p:इस साल RRB NTPC के फॉर्म में दो बातें सबसे ज़्यादा लोगों को फंसाती हैं। पहली, फोटो: 2026 के NTPC फॉर्म (graduate के लिए CEN 06/2026, आवेदन 6 नवंबर 2026 तक, और 12वीं स्तर के पदों के लिए CEN 07/2026, 13 नवंबर 2026 तक) में फोटो आवेदन के समय कैमरे से live लिया जाता है — पुरानी studio वाली फाइल पहले की तरह स्वीकार हो, ये ज़रूरी नहीं। दूसरी, हस्ताक्षर: रेलवे को JPG फाइल 30 KB से 49 KB के बीच चाहिए, जबकि SSC और बैंक परीक्षाओं में 10-20 KB चलता है। जो लोग बैंक वाली signature फाइल ही लगा देते हैं, उनका फॉर्म सिर्फ size की वजह से अटक जाता है।",
+    "h:Live फोटो — क्या करें",
+    "p:फोटो live लिया जाएगा, इसलिए तैयारी फाइल की नहीं, आपकी है। किसी सादी, हल्के रंग की दीवार के सामने बैठें, रोशनी चेहरे पर पड़े, पीछे से नहीं। टोपी या धूप का चश्मा नहीं, कैमरा आंखों के बराबर रखें ताकि पूरा चेहरा साफ़ दिखे। अगर आपके वर्ग में upload का विकल्प भी मिले, तो notice का standby नियम है: 35 x 45 mm की passport-style फोटो, JPG, करीब 20-50 KB, सफेद या हल्की पृष्ठभूमि पर — यहां का passport photo maker ठीक यही तैयार करता है, सिर के लिए guide और file size की सीमा के साथ।",
+    "h:हस्ताक्षर — 30 से 49 KB, चलती हुई लिखावट में",
+    "p:सफेद सादे कागज़ पर काले या नीले पेन से अपने आम हस्ताक्षर (बड़े-बड़े block अक्षरों में नहीं) करें, और सिर्फ हस्ताक्षर की फोटो लें, आसपास की जगह काटकर। फाइल JPG हो, कम से कम 140 x 60 pixels हो, और size 30 KB से 49 KB के बीच हो। अगर फोटो 49 KB से बड़ी है, तो उसे करीब 40 KB के target पर छोटा करें — band के बीच में रहना सबसे सुरक्षित है, क्योंकि 30 KB से नीचे गई फाइल भी उतनी ही पक्की तरह reject होती है जितनी ऊपर गई हुई। रेलवे फॉर्म की असली चाल यही है: सिर्फ छोटा नहीं, band के अंदर।",
+    "h:Submit करने से पहले",
+    "p:तीन बातें जांच लें। एक, signature फाइल का size 30 से 49 KB के बीच दिखे (फाइल को देर तक दबाकर Details देखें)। दो, हस्ताक्षर आपकी चलती हुई लिखावट के हों — परीक्षा हॉल में भी वही हस्ताक्षर करने होंगे, गड़बड़ हुई तो document verification में दिक्कत आती है। तीन, तैयार फाइलों की copy आवेदन संख्या के साथ संभाल कर रखें; correction window जब खुलता है, छोटा होता है। ये सारी तैयारी आपके ब्राउज़र में फ्री में हो जाती है — फाइलें आपके फोन से बाहर जाती ही नहीं।"
+   ],
+   "hot": true,
+   "tryUrl": "/compress-image-to-40kb/"
+  },
+  {
    "slug": "heic-to-jpg",
    "cat": "image",
    "fam": "image",
@@ -627,7 +672,8 @@
     "p:Sign on plain white paper with a black or blue pen — a normal running signature, not block capitals. Photograph it in good light or scan it, crop close to the ink, and compress it to the 10–20 KB band the same way. Check the preview before you upload: blurred, tiny, or tilted signatures are among the top reasons forms get rejected, alongside files outside the KB band and the wrong format (PNG or HEIC instead of JPG).",
     "h:Do it without uploading anything",
     "p:Exam documents are identity documents, and uploading them to a random converter is exactly the kind of thing you should not do. Everything here runs inside your browser: the photo never leaves your device, there is no account, and nothing is stored. Compress, download, upload to the portal, done."
-   ]
+   ],
+   "tryUrl": "/compress-image-to-50kb/"
   },
   {
    "slug": "exam-form-photo-signature-hindi",
@@ -651,7 +697,8 @@
     "p:सादे सफेद कागज़ पर काले या नीले पेन से सामान्य हस्ताक्षर करें — कैपिटल अक्षरों में नहीं। अच्छी रोशनी में फोटो लें या स्कैन करें, स्याही के पास से क्रॉप करें, और उसी तरह 10–20 KB में कंप्रेस करें। अपलोड से पहले प्रीव्यू ज़रूर देखें: धुंधले, बहुत छोटे या टेढ़े हस्ताक्षर, गलत KB, और गलत फॉर्मेट (JPG की जगह PNG या HEIC) रिजेक्शन के सबसे आम कारण हैं।",
     "h:बिना अपलोड किए करें",
     "p:परीक्षा के दस्तावेज़ पहचान के दस्तावेज़ होते हैं — इन्हें किसी अनजान कन्वर्टर पर अपलोड करना ठीक नहीं। यहां सब कुछ आपके ब्राउज़र में होता है: फोटो आपके डिवाइस से बाहर नहीं जाती, कोई अकाउंट नहीं, कुछ स्टोर नहीं होता। कंप्रेस करें, डाउनलोड करें, पोर्टल पर अपलोड करें — हो गया।"
-   ]
+   ],
+   "tryUrl": "/compress-image-to-50kb/"
   },
   {
    "slug": "convert-without-uploading",
@@ -696,7 +743,8 @@
     "p:For form uploads, no. Portals store these files for records, not for printing, and examiners read them on screens. The tool lowers image resolution only as far as the target requires, so a document that starts at 300 KB usually stays perfectly readable at 100 KB. The honest limit: a very long scanned document — say 30 pages of photos — physically cannot reach 100 KB and stay readable. If that happens, split the PDF and upload it in the parts the form allows, or scan again at a lower DPI.",
     "h:If the portal wants a different size",
     "p:The same tool takes any target — 200 KB and 500 KB are one tap presets, and you can type any number the form asks for. For photographs and signatures the companion tool compresses images to exact sizes like 20 KB or 50 KB. One habit worth keeping: after compressing, open the result once and zoom in. Ten seconds of checking beats a rejected application."
-   ]
+   ],
+   "tryUrl": "/compress-pdf-to-100kb/"
   },
   {
    "slug": "compress-pdf-100kb-hindi",
@@ -719,7 +767,8 @@
     "p:फॉर्म अपलोड के लिए नहीं। पोर्टल ये फाइलें रिकॉर्ड के लिए रखते हैं, छापने के लिए नहीं, और जांचने वाले इन्हें स्क्रीन पर ही पढ़ते हैं। टूल तस्वीरों की क्वालिटी सिर्फ़ उतनी ही घटाता है जितनी target के लिए ज़रूरी हो, इसलिए 300 KB की फाइल 100 KB पर भी साफ़ पढ़ी जाती है। ईमानदार सीमा ये है: बहुत लंबा स्कैन किया दस्तावेज़ — मान लीजिए फोटो वाले 30 पन्ने — 100 KB में आ ही नहीं सकता और पढ़ने लायक भी रहे। ऐसा हो तो PDF को बांटकर उतने हिस्सों में अपलोड करें जितने की फॉर्म इजाज़त देता है।",
     "h:अगर पोर्टल को कोई और साइज़ चाहिए",
     "p:यही टूल कोई भी target लेता है — 200 KB और 500 KB के बटन तैयार हैं, और फॉर्म जो भी नंबर मांगे वो आप खुद लिख सकते हैं। फोटो और हस्ताक्षर के लिए साथ वाला टूल तस्वीरों को 20 KB या 50 KB जैसे exact साइज़ में compress करता है। एक आदत बना लें: compress करने के बाद फाइल एक बार खोलकर zoom करके देख लें। दस सेकंड की जांच, रिजेक्ट हुए फॉर्म से कहीं सस्ती है।"
-   ]
+   ],
+   "tryUrl": "/compress-pdf-to-100kb/"
   },
   {
    "slug": "markdown-to-word",
@@ -741,47 +790,6 @@
     "p:The most frequent reason people hit this problem in 2026 is an AI assistant. Chatbots answer in Markdown by default, so a report, essay or set of notes copied out of a chat carries the marks with it. Saving the answer as an .md file and converting it gives you a clean Word document in one step, instead of ten minutes of deleting asterisks by hand. The same applies to Notion and Obsidian exports, which are Markdown underneath.",
     "h:What survives the conversion, honestly",
     "p:Headings, paragraphs, bold, italic, lists, blockquotes, code, tables and links all come through. Raw HTML embedded inside a Markdown file may be simplified rather than rendered exactly, and very exotic extensions — footnotes from one specific app, for instance — can land as plain text. For ordinary documents, which is nearly all of them, what you download is what you meant to write."
-   ]
-  },
-  {
-   "slug": "rrb-ntpc-photo-signature-size",
-   "cat": "Photos",
-   "fam": "image",
-   "title": "RRB NTPC form: photo and signature size — live photo rules, signature 30-49 KB",
-   "seo_title": "RRB NTPC Photo & Signature Size 2026 — Live Photo Rules, 30-49 KB Signature",
-   "teaser": "Filling the RRB NTPC form (last dates 6 and 13 Nov 2026)? The photo is captured live this year, and the signature band is 30-49 KB — different from bank exams. Here is how to get both right.",
-   "alt": "rrb-ntpc-photo-signature-hindi",
-   "tryTool": "compress-image",
-   "tryLabel": "Set your signature to exactly 40 KB — free, in your browser.",
-   "body": [
-    "p:Two things trip up RRB NTPC applicants this year. First, the photograph: the 2026 NTPC forms (CEN 06/2026 for graduates, applications till 6 November 2026, and CEN 07/2026 for 12th-level posts, till 13 November 2026) capture your photo live through the camera during the application — an old studio file may not be accepted the way it was in earlier years. Second, the signature: Railways ask for a JPG between 30 KB and 49 KB, which is a different band from the 10-20 KB that SSC and bank exams use. People who reuse their bank-exam signature file get rejected on size alone.",
-    "h:The live photo — what to do",
-    "p:Because the photo is captured live, preparation means you, not a file. Sit facing a plain, light-coloured wall with the light on your face, not behind you. No cap, no sunglasses, and keep the camera at eye level so the full face is visible and sharp. If the portal also offers an upload option in your category, the standby specification from the notice is a 35 x 45 mm passport-style photo, JPG, roughly 20-50 KB, on a white or light background — the passport photo maker here prepares exactly that, with a head guide and a file-size cap.",
-    "h:The signature — 30 to 49 KB, running hand",
-    "p:Sign in running handwriting (not block capital letters) with a black or blue pen on plain white paper, and photograph just the signature, cropped tight. The file must be a JPG of at least 140 x 60 pixels and between 30 KB and 49 KB. If your photo of the signature is bigger than 49 KB, compress it to a target of about 40 KB — the middle of the band is the safe place to land, because a file that slips under 30 KB is rejected just as firmly as one over the limit. That is the whole trick with Railway forms: not just smaller, but inside the band.",
-    "h:Before you press submit",
-    "p:Check three things. One, the signature file size reads between 30 and 49 KB (long-press the file and look at Details). Two, the signature is your running hand, the same style you will sign in the exam hall — mismatches cause trouble at document verification. Three, keep copies of the final files with the application number; the correction window, when it opens, is short. Everything above is free to prepare in your browser — the files never leave your device."
-   ]
-  },
-  {
-   "slug": "rrb-ntpc-photo-signature-hindi",
-   "lang": "hi",
-   "cat": "फोटो",
-   "fam": "image",
-   "title": "RRB NTPC फॉर्म: फोटो और हस्ताक्षर का साइज़ — live photo नियम, हस्ताक्षर 30-49 KB",
-   "seo_title": "RRB NTPC फोटो और सिग्नेचर साइज़ 2026 — Live Photo नियम, 30-49 KB हस्ताक्षर",
-   "teaser": "RRB NTPC फॉर्म भर रहे हैं (आखिरी तारीख 6 और 13 नवंबर 2026)? इस साल फोटो live लिया जाएगा, और हस्ताक्षर 30-49 KB का चाहिए — बैंक परीक्षाओं से अलग। जानिए दोनों कैसे सही तैयार करें।",
-   "alt": "rrb-ntpc-photo-signature-size",
-   "tryTool": "compress-image",
-   "tryLabel": "अपने हस्ताक्षर को ठीक 40 KB पर सेट करें — फ्री, ब्राउज़र में।",
-   "body": [
-    "p:इस साल RRB NTPC के फॉर्म में दो बातें सबसे ज़्यादा लोगों को फंसाती हैं। पहली, फोटो: 2026 के NTPC फॉर्म (graduate के लिए CEN 06/2026, आवेदन 6 नवंबर 2026 तक, और 12वीं स्तर के पदों के लिए CEN 07/2026, 13 नवंबर 2026 तक) में फोटो आवेदन के समय कैमरे से live लिया जाता है — पुरानी studio वाली फाइल पहले की तरह स्वीकार हो, ये ज़रूरी नहीं। दूसरी, हस्ताक्षर: रेलवे को JPG फाइल 30 KB से 49 KB के बीच चाहिए, जबकि SSC और बैंक परीक्षाओं में 10-20 KB चलता है। जो लोग बैंक वाली signature फाइल ही लगा देते हैं, उनका फॉर्म सिर्फ size की वजह से अटक जाता है।",
-    "h:Live फोटो — क्या करें",
-    "p:फोटो live लिया जाएगा, इसलिए तैयारी फाइल की नहीं, आपकी है। किसी सादी, हल्के रंग की दीवार के सामने बैठें, रोशनी चेहरे पर पड़े, पीछे से नहीं। टोपी या धूप का चश्मा नहीं, कैमरा आंखों के बराबर रखें ताकि पूरा चेहरा साफ़ दिखे। अगर आपके वर्ग में upload का विकल्प भी मिले, तो notice का standby नियम है: 35 x 45 mm की passport-style फोटो, JPG, करीब 20-50 KB, सफेद या हल्की पृष्ठभूमि पर — यहां का passport photo maker ठीक यही तैयार करता है, सिर के लिए guide और file size की सीमा के साथ।",
-    "h:हस्ताक्षर — 30 से 49 KB, चलती हुई लिखावट में",
-    "p:सफेद सादे कागज़ पर काले या नीले पेन से अपने आम हस्ताक्षर (बड़े-बड़े block अक्षरों में नहीं) करें, और सिर्फ हस्ताक्षर की फोटो लें, आसपास की जगह काटकर। फाइल JPG हो, कम से कम 140 x 60 pixels हो, और size 30 KB से 49 KB के बीच हो। अगर फोटो 49 KB से बड़ी है, तो उसे करीब 40 KB के target पर छोटा करें — band के बीच में रहना सबसे सुरक्षित है, क्योंकि 30 KB से नीचे गई फाइल भी उतनी ही पक्की तरह reject होती है जितनी ऊपर गई हुई। रेलवे फॉर्म की असली चाल यही है: सिर्फ छोटा नहीं, band के अंदर।",
-    "h:Submit करने से पहले",
-    "p:तीन बातें जांच लें। एक, signature फाइल का size 30 से 49 KB के बीच दिखे (फाइल को देर तक दबाकर Details देखें)। दो, हस्ताक्षर आपकी चलती हुई लिखावट के हों — परीक्षा हॉल में भी वही हस्ताक्षर करने होंगे, गड़बड़ हुई तो document verification में दिक्कत आती है। तीन, तैयार फाइलों की copy आवेदन संख्या के साथ संभाल कर रखें; correction window जब खुलता है, छोटा होता है। ये सारी तैयारी आपके ब्राउज़र में फ्री में हो जाती है — फाइलें आपके फोन से बाहर जाती ही नहीं।"
    ]
   }
  ],

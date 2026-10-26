@@ -1050,7 +1050,7 @@
     if (gd.tryTool) {
       var tt = el('div', 'try');
       tt.appendChild(el('span', 't', gd.tryLabel || 'Try it — free, in your browser.'));
-      var tgo = el('a', 'btn primary'); tgo.href = '/' + gd.tryTool + '/'; tgo.appendChild(icon('bolt')); tgo.appendChild(el('span', null, gd.tryLabel || gd.tryTool)); tt.appendChild(tgo);
+      var tgo = el('a', 'btn primary'); tgo.href = gd.tryUrl || ('/' + gd.tryTool + '/'); tgo.appendChild(icon('bolt')); tgo.appendChild(el('span', null, gd.tryLabel || gd.tryTool)); tt.appendChild(tgo);
       a.appendChild(tt);
     } else if (gd.tryFrom && C.rule(gd.tryFrom, gd.tryTo)) {
       var t = el('div', 'try');

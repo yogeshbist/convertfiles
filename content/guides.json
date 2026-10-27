@@ -561,5 +561,50 @@
   ],
   "hot": true,
   "tryUrl": "/compress-image-to-40kb/"
+ },
+ {
+  "slug": "rrb-station-master-photo-signature-size",
+  "cat": "Photos",
+  "fam": "image",
+  "title": "RRB Station Master form: photo and signature size — live photo rules, signature 30-49 KB",
+  "seo_title": "RRB Station Master Photo & Signature Size 2026 — CEN 08/2026 Live Photo Rules, 30-49 KB Signature",
+  "teaser": "Filling the RRB Station Master form (CEN 08/2026, 27 Oct – 25 Nov 2026)? The photo is captured live, and the signature band is 30-49 KB. Here is how to get both right, from the detailed notification.",
+  "alt": "rrb-station-master-photo-signature-hindi",
+  "tryTool": "compress-image",
+  "tryLabel": "Set your signature to exactly 40 KB — free, in your browser.",
+  "body": [
+   "p:Station Master has its own notification this year — CEN 08/2026, separate from RRB NTPC. The detailed notification came out on 26 October 2026, applications run from 27 October to 25 November 2026 (fee till 27 November), and two things trip up applicants. First, the photograph: it is captured live through the camera during the application — there is no photo file to upload. Second, the signature: Railways ask for a JPG between 30 KB and 49 KB, a different band from the 10-20 KB that SSC and bank exams use. People who reuse their bank-exam signature file get rejected on size alone.",
+   "h:The live photo — what to do",
+   "p:Because the photo is captured live, preparation means you, not a file. Sit facing a plain white background, in dark-coloured clothing, with the light on your face, not behind you. No cap, no mask, no spectacles, and keep the camera at eye level so your head covers at least half the frame and your face is sharp. A photograph of a printed or on-screen photo is rejected — the portal wants your live face, captured by webcam or your phone's front camera.",
+   "h:The signature — 30 to 49 KB, running hand",
+   "p:Sign in running handwriting (not block capital letters) with a black pen on plain white paper, and scan or photograph just the signature, cropped tight, at 100 DPI or more. The file must be a JPG or JPEG of at least 140 x 60 pixels and between 30 KB and 49 KB. If your scan is bigger than 49 KB, compress it to a target of about 40 KB — the middle of the band is the safe place to land, because a file that slips under 30 KB is rejected just as firmly as one over the limit. That is the whole trick with Railway forms: not just smaller, but inside the band. SC/ST candidates claiming the free sleeper-class travel pass also upload their caste certificate as a PDF under 400 KB.",
+   "h:Before you press submit",
+   "p:Check four things. One, the signature file size reads between 30 and 49 KB. Two, your name and date of birth in Aadhaar match your Class 10 certificate 100% — the short notice itself warns to get Aadhaar updated before applying if they differ. Three, apply to only one RRB: the board you choose cannot be changed later, not even in the correction window. Four, remember the correction window itself: 28 November to 7 December 2026, ₹250 per change, but account-creation details and the chosen RRB stay locked. Eligibility is graduation in any stream, age 20 to 33 years as on 1 January 2027 (relaxations apply). Everything above is free to prepare in your browser — the files never leave your device."
+  ],
+  "hot": true,
+  "tryUrl": "/compress-image-to-40kb/"
+ },
+ {
+  "slug": "rrb-station-master-photo-signature-hindi",
+  "lang": "hi",
+  "cat": "फोटो",
+  "fam": "image",
+  "title": "RRB Station Master फॉर्म: फोटो और हस्ताक्षर का साइज़ — live photo नियम, हस्ताक्षर 30-49 KB",
+  "seo_title": "RRB Station Master फोटो और सिग्नेचर साइज़ 2026 — CEN 08/2026 Live Photo नियम, 30-49 KB हस्ताक्षर",
+  "teaser": "RRB Station Master फॉर्म भर रहे हैं (CEN 08/2026, 27 अक्टूबर – 25 नवंबर 2026)? इस साल फोटो live लिया जाएगा, और हस्ताक्षर 30-49 KB का चाहिए। विस्तृत अधिसूचना के अनुसार दोनों कैसे सही तैयार करें।",
+  "alt": "rrb-station-master-photo-signature-size",
+  "tryTool": "compress-image",
+  "tryLabel": "अपने हस्ताक्षर को ठीक 40 KB पर सेट करें — फ्री, ब्राउज़र में।",
+  "body": [
+   "p:इस साल Station Master की अपनी अलग अधिसूचना है — CEN 08/2026, RRB NTPC से अलग। विस्तृत अधिसूचना 26 अक्टूबर 2026 को आई, आवेदन 27 अक्टूबर से 25 नवंबर 2026 तक चलेंगे (फीस 27 नवंबर तक), और दो बातें सबसे ज़्यादा लोगों को फंसाती हैं। पहली, फोटो: आवेदन के समय कैमरे से live ली जाती है — upload करने के लिए कोई फोटो फाइल नहीं है। दूसरी, हस्ताक्षर: रेलवे को JPG फाइल 30 KB से 49 KB के बीच चाहिए, जबकि SSC और बैंक परीक्षाओं में 10-20 KB चलता है। जो लोग बैंक वाली signature फाइल ही लगा देते हैं, उनका फॉर्म सिर्फ size की वजह से अटक जाता है।",
+   "h:Live फोटो — क्या करें",
+   "p:फोटो live ली जाएगी, इसलिए तैयारी फाइल की नहीं, आपकी है। सादी सफेद पृष्ठभूमि के सामने, गहरे रंग के कपड़ों में बैठें, रोशनी चेहरे पर पड़े, पीछे से नहीं। टोपी, मास्क या चश्मा नहीं, कैमरा आंखों के बराबर रखें ताकि सिर फ्रेम का कम से कम आधा हिस्सा घेरे और चेहरा साफ़ दिखे। छपी हुई या स्क्रीन पर दिखती फोटो की फोटो reject हो जाती है — पोर्टल को webcam या फोन के front camera से आपका live चेहरा चाहिए।",
+   "h:हस्ताक्षर — 30 से 49 KB, चलती हुई लिखावट में",
+   "p:सफेद सादे कागज़ पर काले पेन से अपने आम हस्ताक्षर (बड़े-बड़े block अक्षरों में नहीं) करें, और सिर्फ हस्ताक्षर को 100 DPI या उससे ज़्यादा पर scan या फोटो लें, आसपास की जगह काटकर। फाइल JPG या JPEG हो, कम से कम 140 x 60 pixels हो, और size 30 KB से 49 KB के बीच हो। अगर scan 49 KB से बड़ा है, तो उसे करीब 40 KB के target पर छोटा करें — band के बीच में रहना सबसे सुरक्षित है, क्योंकि 30 KB से नीचे गई फाइल भी उतनी ही पक्की तरह reject होती है जितनी ऊपर गई हुई। रेलवे फॉर्म की असली चाल यही है: सिर्फ छोटा नहीं, band के अंदर। मुफ्त sleeper-class यात्रा पास का दावा करने वाले SC/ST उम्मीदवार जाति प्रमाणपत्र PDF में 400 KB से कम में upload करें।",
+   "h:Submit करने से पहले",
+   "p:चार बातें जांच लें। एक, signature फाइल का size 30 से 49 KB के बीच दिखे। दो, Aadhaar में आपका नाम और जन्मतिथि Class 10 के certificate से 100% मिले — short notice में ही कहा गया है कि फर्क हो तो आवेदन से पहले Aadhaar update करा लें। तीन, सिर्फ एक RRB को चुनें: चुना हुआ बोर्ड बाद में बदला नहीं जा सकता, correction window में भी नहीं। चार, correction window याद रखें: 28 नवंबर से 7 दिसंबर 2026, हर बदलाव पर ₹250, लेकिन account बनाने की जानकारी और चुना हुआ RRB locked रहेंगे। पात्रता: किसी भी stream में graduation, उम्र 1 जनवरी 2027 को 20 से 33 साल (छूट लागू)। ये सारी तैयारी आपके ब्राउज़र में फ्री में हो जाती है — फाइलें आपके फोन से बाहर जाती ही नहीं।"
+  ],
+  "hot": true,
+  "tryUrl": "/compress-image-to-40kb/"
  }
 ]

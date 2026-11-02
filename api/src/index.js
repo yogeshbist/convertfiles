@@ -11,6 +11,8 @@
              GET  /content/:name    read a content JSON file from the GitHub repo
              PUT  /content/:name    write it (commits; GitHub Actions rebuilds the site)
              GET  /adsense/summary?days=30  the publisher's own AdSense earnings
+             GET  /google/analytics?days=30 GA4 users, sessions, geo, sources, pages
+             GET  /google/search?days=30    Search Console clicks, queries, countries
              GET  /health                                                          */
 
 const CONTENT_FILES = { site: 'site.json', popular: 'content/popular.json', steps: 'content/steps.json', faq: 'content/faq.json',
@@ -38,6 +40,8 @@ export default {
       else if (url.pathname === '/reset' && request.method === 'POST') res = await guard(request, env, () => resetCounters(request, env));
       else if (url.pathname.startsWith('/content/')) res = await guard(request, env, () => content(request, url, env));
       else if (url.pathname === '/adsense/summary' && request.method === 'GET') res = await guard(request, env, () => adsenseSummary(url, env));
+      else if (url.pathname === '/google/analytics' && request.method === 'GET') res = await guard(request, env, () => googleAnalytics(url, env));
+      else if (url.pathname === '/google/search' && request.method === 'GET') res = await guard(request, env, () => googleSearchConsole(url, env));
       else res = json({ error: 'not found' }, 404);
       for (const [k, v] of Object.entries(cors)) res.headers.set(k, v);
       return res;
@@ -502,5 +506,194 @@ async function adsenseSummary(url, env) {
     });
   } catch (e) {
     return json({ error: 'adsense_failed', message: String(e.message || e) }, 502);
+  }
+}
+
+/* --------------------------------------- Google Analytics + Search Console
+   The same pattern as AdSense: the credentials never leave the Worker. One
+   refresh token (env.GOOGLE_REFRESH_TOKEN, secret) granted with the scopes
+   analytics.readonly + webmasters.readonly, minted into short-lived access
+   tokens here. It shares the OAuth client with AdSense, so the client id and
+   secret come from ADSENSE_CLIENT_ID / ADSENSE_CLIENT_SECRET.
+
+   Vars:  GA4_PROPERTY_ID - numeric GA4 property id (e.g. 123456789)
+          GSC_SITE        - Search Console property (default sc-domain:convertfiles.in)
+
+   Until the token and property id are set, both endpoints answer
+   {connected:false, reason} with HTTP 200 so the app can show a calm
+   "not connected yet" state instead of an error. */
+
+let _gtok = { value: '', expires: 0 };     // best-effort cache, per isolate
+const _gcache = new Map();                // path+days -> { at, data }, 600 s
+
+async function googleAccessToken(env) {
+  const now = Date.now() / 1000;
+  if (_gtok.value && _gtok.expires > now + 60) return _gtok.value;
+  const body = new URLSearchParams({
+    grant_type: 'refresh_token',
+    refresh_token: env.GOOGLE_REFRESH_TOKEN,
+    client_id: env.GOOGLE_CLIENT_ID || env.ADSENSE_CLIENT_ID,
+    client_secret: env.GOOGLE_CLIENT_SECRET || env.ADSENSE_CLIENT_SECRET,
+  });
+  const r = await fetch('https://oauth2.googleapis.com/token', {
+    method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' }, body,
+  });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok || !j.access_token) {
+    throw new Error('google refused the refresh token: ' + (j.error_description || j.error || r.status));
+  }
+  _gtok = { value: j.access_token, expires: now + (j.expires_in || 3600) };
+  return _gtok.value;
+}
+
+function gcacheGet(key) {
+  const hit = _gcache.get(key);
+  return hit && Date.now() - hit.at < 600000 ? hit.data : null;
+}
+function gcachePut(key, data) { _gcache.set(key, { at: Date.now(), data }); return data; }
+
+function googleClientMissing(env) {
+  return !env.GOOGLE_REFRESH_TOKEN
+    || !(env.GOOGLE_CLIENT_ID || env.ADSENSE_CLIENT_ID)
+    || !(env.GOOGLE_CLIENT_SECRET || env.ADSENSE_CLIENT_SECRET);
+}
+
+/* ---------------------------------------------------------- GA4 (analytics) */
+// Turn one GA4 report into plain objects keyed by header name; metric values
+// become numbers (num() is defined in the AdSense section above).
+function gaRows(report) {
+  const dims = (report.dimensionHeaders || []).map(h => h.name);
+  const mets = (report.metricHeaders || []).map(h => h.name);
+  return (report.rows || []).map(row => {
+    const o = {};
+    (row.dimensionValues || []).forEach((v, i) => { o[dims[i]] = v.value; });
+    (row.metricValues || []).forEach((v, i) => { o[mets[i]] = num(v.value); });
+    return o;
+  });
+}
+// GA4 sends the date dimension as yyyyMMdd; the app wants yyyy-MM-dd.
+const gaDay = s => (s && s.length === 8) ? s.slice(0, 4) + '-' + s.slice(4, 6) + '-' + s.slice(6, 8) : s;
+
+async function googleAnalytics(url, env) {
+  const days = Math.max(1, Math.min(90, parseInt(url.searchParams.get('days') || '30', 10)));
+  if (googleClientMissing(env)) {
+    return json({ connected: false, reason: 'GOOGLE_REFRESH_TOKEN is not set on the API yet' });
+  }
+  if (!env.GA4_PROPERTY_ID) {
+    return json({ connected: false, reason: 'GA4_PROPERTY_ID is not set on the API yet' });
+  }
+  const prop = String(env.GA4_PROPERTY_ID).replace(/^properties\//, '');
+  const cacheKey = 'analytics:' + days + ':' + prop;
+  const hit = gcacheGet(cacheKey);
+  if (hit) return json(hit);
+  try {
+    const tok = await googleAccessToken(env);
+    const start = new Date(Date.now() - (days - 1) * 86400000);
+    const range = [{ startDate: start.toISOString().slice(0, 10), endDate: 'today' }];
+    const rep = (dimensions, metrics, orderBys, limit) => ({
+      dateRanges: range,
+      dimensions: dimensions.map(name => ({ name })),
+      metrics: metrics.map(name => ({ name })),
+      orderBys,
+      limit: String(limit),
+    });
+    const byMetric = name => [{ metric: { metricName: name }, desc: true }];
+    const r = await fetch(`https://analyticsdata.googleapis.com/v1beta/properties/${prop}:batchRunReports`, {
+      method: 'POST',
+      headers: { Authorization: 'Bearer ' + tok, 'content-type': 'application/json' },
+      body: JSON.stringify({ requests: [
+        rep(['date'], ['totalUsers', 'sessions', 'screenPageViews'],
+            [{ dimension: { dimensionName: 'date' }, desc: false }], 500),
+        rep(['country'], ['totalUsers', 'sessions'], byMetric('totalUsers'), 30),
+        rep(['country', 'region'], ['totalUsers'], byMetric('totalUsers'), 40),
+        rep(['sessionSource'], ['sessions', 'totalUsers'], byMetric('sessions'), 40),
+        rep(['pagePath'], ['screenPageViews', 'totalUsers'], byMetric('screenPageViews'), 25),
+      ] }),
+    });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error('GA4 report failed: ' + (j.error && j.error.message || r.status));
+    const reports = j.reports || [];
+    const daily = gaRows(reports[0] || {}).map(x => ({
+      day: gaDay(x.date), users: x.totalUsers || 0, sessions: x.sessions || 0, views: x.screenPageViews || 0,
+    }));
+    const out = {
+      connected: true, days,
+      totals: {
+        users: daily.reduce((a, x) => a + x.users, 0),
+        sessions: daily.reduce((a, x) => a + x.sessions, 0),
+        views: daily.reduce((a, x) => a + x.views, 0),
+      },
+      daily,
+      countries: gaRows(reports[1] || {})
+        .filter(x => x.country && x.country !== '(not set)')
+        .map(x => ({ key: x.country, users: x.totalUsers || 0, sessions: x.sessions || 0 })),
+      regions: gaRows(reports[2] || {})
+        .filter(x => x.country && x.country !== '(not set)' && x.region && x.region !== '(not set)')
+        .map(x => ({ country: x.country, region: x.region, users: x.totalUsers || 0 })),
+      sources: gaRows(reports[3] || {})
+        .map(x => ({ key: x.sessionSource, sessions: x.sessions || 0, users: x.totalUsers || 0 })),
+      pages: gaRows(reports[4] || {})
+        .map(x => ({ key: x.pagePath, views: x.screenPageViews || 0, users: x.totalUsers || 0 })),
+    };
+    return json(gcachePut(cacheKey, out));
+  } catch (e) {
+    console.error('google analytics failed:', e.message || e);
+    return json({ connected: false, reason: 'google_error', message: String(e.message || e) });
+  }
+}
+
+/* ------------------------------------------------------- Search Console */
+async function googleSearchConsole(url, env) {
+  const days = Math.max(3, Math.min(90, parseInt(url.searchParams.get('days') || '30', 10)));
+  if (googleClientMissing(env)) {
+    return json({ connected: false, reason: 'GOOGLE_REFRESH_TOKEN is not set on the API yet' });
+  }
+  const site = env.GSC_SITE || 'sc-domain:convertfiles.in';
+  const cacheKey = 'search:' + days + ':' + site;
+  const hit = gcacheGet(cacheKey);
+  if (hit) return json(hit);
+  try {
+    const tok = await googleAccessToken(env);
+    // Search Console data lags about two days, so the window ends the day
+    // before yesterday rather than today.
+    const end = new Date(Date.now() - 2 * 86400000);
+    const start = new Date(end.getTime() - (days - 1) * 86400000);
+    const startDate = start.toISOString().slice(0, 10), endDate = end.toISOString().slice(0, 10);
+    const query = async (dimensions, rowLimit, extra) => {
+      const r = await fetch(`https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(site)}/searchAnalytics/query`, {
+        method: 'POST',
+        headers: { Authorization: 'Bearer ' + tok, 'content-type': 'application/json' },
+        body: JSON.stringify({ startDate, endDate, dimensions, rowLimit, ...(extra || {}) }),
+      });
+      const j = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error('Search Console query failed: ' + (j.error && j.error.message || r.status));
+      return j.rows || [];
+    };
+    const [totRows, dateRows, queryRows, pageRows, countryRows, cqRows] = await Promise.all([
+      query([], 1, { aggregationType: 'byProperty' }),
+      query(['date'], 1000),
+      query(['query'], 25),
+      query(['page'], 25),
+      query(['country'], 30),
+      query(['country', 'query'], 40),
+    ]);
+    const nums = row => ({
+      clicks: row.clicks || 0, impressions: row.impressions || 0,
+      ctr: row.ctr || 0, position: row.position || 0,
+    });
+    const out = {
+      connected: true, days,
+      range: { start: startDate, end: endDate },
+      totals: nums(totRows[0] || {}),
+      daily: dateRows.map(row => ({ day: row.keys[0], ...nums(row) })),
+      queries: queryRows.map(row => ({ key: row.keys[0], ...nums(row) })),
+      pages: pageRows.map(row => ({ key: row.keys[0], ...nums(row) })),
+      countries: countryRows.map(row => ({ key: row.keys[0], ...nums(row) })),
+      countryQueries: cqRows.map(row => ({ country: row.keys[0], query: row.keys[1], ...nums(row) })),
+    };
+    return json(gcachePut(cacheKey, out));
+  } catch (e) {
+    console.error('google search console failed:', e.message || e);
+    return json({ connected: false, reason: 'google_error', message: String(e.message || e) });
   }
 }

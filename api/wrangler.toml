@@ -11,6 +11,8 @@ database_id = "57b6d275-abaf-4981-8cd7-94e26607c318"
 ALLOWED_ORIGINS = "https://convertfiles.in,https://www.convertfiles.in,http://localhost:8777"
 GITHUB_REPO = "yogeshbist/convertfiles"
 GITHUB_BRANCH = "main"
+GA4_PROPERTY_ID = "555521429"
+GSC_SITE = "sc-domain:convertfiles.in"
 
 # Secrets (set with `wrangler secret put NAME`, never committed):
 #   ADMIN_PASSWORD  - the admin panel / app password
@@ -19,3 +21,5 @@ GITHUB_BRANCH = "main"
 #   ADSENSE_CLIENT_ID     - OAuth client id from the Google Cloud project
 #   ADSENSE_CLIENT_SECRET - its secret
 #   ADSENSE_REFRESH_TOKEN - one-time consent for https://www.googleapis.com/auth/adsense.readonly
+#   GOOGLE_REFRESH_TOKEN  - one-time consent for analytics.readonly + webmasters.readonly
+#                           (same OAuth client as AdSense; powers /google/analytics and /google/search)

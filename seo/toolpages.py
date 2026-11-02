@@ -41,7 +41,7 @@ TOOLS = [
          related=['compress-image', 'merge-pdf', 'split-pdf', 'images-to-pdf']),
 
     dict(slug='passport-photo', group='image', name='Passport photo maker',
-         title='Free Passport Size Photo Maker — 35×45 mm, 2×2 in Online',
+         title='Free Passport Size Photo Maker — Print Sheet, 35×45 mm, 2×2 in Online',
          h1='Free passport size photo maker',
          desc='Make a passport size photo online: crop to 35×45 mm, 2×2 inch or any size, under 50 KB if needed, plus a printable 4×6 sheet. Free, nothing uploaded.',
          intro='Crop any photo to the exact passport, visa or exam-form size, at print resolution, with a guide for where the head should sit. Get the single photo for online forms and a 4×6 inch sheet of copies for printing. ' + NOTHING,
@@ -449,6 +449,7 @@ def kb_page(base, kb):
         d['desc'] = 'Shrink a PDF to under %s for an upload limit, in your browser. Free, nothing uploaded.' % lab
         d['intro'] = ('Drop the PDF and get it back under %s — the target is preset. Strong compression redraws pages to fit; light compression keeps the text selectable. ' % lab) + NOTHING
         d['faq'] = [('How do I compress a PDF to %s?' % lab, 'Drop it above with %s already set, keep Strong compression for scans and picture PDFs, press the button and download.' % lab),
+                    ('My PDF is in MB — how do I reduce it to %s?' % lab, 'Drop it above; %s is already set as the target. A scanned or photo-heavy PDF sits in MB because every page is a picture, and Strong compression redraws those pages at the size needed to come down to %s. If a file cannot reach it without turning unreadable, you get the smallest readable version and a note saying so.' % (lab, lab)),
                     ('Will the text still be readable?', 'Yes. Pages are redrawn at the resolution needed to hit %s; if that would make them unreadable you get the smallest readable version and a note instead.' % lab),
                     ('Can I keep the text selectable?', 'Choose Light compression. It keeps the text but cannot shrink pictures much, so a scan may not reach %s that way.' % lab),
                     ('Is the PDF uploaded?', 'No.')]

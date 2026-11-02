@@ -219,6 +219,12 @@ def faqs(f, t, ext_table):
     out.append(("Can I batch convert several %s files to %s at once?" % (F, T) if 'bulk' in mods else "Can I convert several %s files at once?" % F,
                 "Yes. Select as many files as you like and they are converted one after another in a single tap, with a "
                 "download for each and a zip of all of them."))
+    if ff == 'archive':
+        out.append(("How do I open a %s file online?" % F,
+                    "A %s file is an archive — files packed into one and compressed. Drop it above and convert it to %s "
+                    "to get the contents in a format almost any phone or computer opens directly. To look inside first, "
+                    "the unzip tool on this site opens %s archives in the browser and lets you download single files "
+                    "from them. Either way, nothing is uploaded." % (F, ST, F)))
     if 'code' in mods:
         tool = SCRIPT_TOOL.get(ff, 'a script')
         out.append(("Can I convert %s to %s without %s or a script?" % (SF, ST, tool),

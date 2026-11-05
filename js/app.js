@@ -1418,3 +1418,85 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })(window);
+
+/* ---------------- design polish: sticky-nav shadow + scroll reveal --------
+   Standalone on purpose: it only decorates. The pre-reveal state lives
+   behind html.js-rv in app.css, and js-rv is added solely when
+   IntersectionObserver exists and reduced motion is off — otherwise every
+   element simply stays visible. Converter panels are never targets. */
+(function () {
+  var nav = document.querySelector('.nav');
+  if (nav) {
+    var ticking = false;
+    var paintNav = function () {
+      ticking = false;
+      if (window.pageYOffset > 8) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    };
+    window.addEventListener('scroll', function () {
+      if (!ticking) { ticking = true; window.requestAnimationFrame(paintNav); }
+    }, { passive: true });
+    paintNav();
+  }
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) return;
+  document.documentElement.classList.add('js-rv');
+  var io = new IntersectionObserver(function (entries) {
+    for (var i = 0; i < entries.length; i++) {
+      if (!entries[i].isIntersecting) continue;
+      var el = entries[i].target;
+      io.unobserve(el);
+      reveal(el);
+    }
+  }, { threshold: 0.12, rootMargin: '0px 0px -3% 0px' });
+  function reveal(el) {
+    var d = parseInt(el.getAttribute('data-rvd') || '0', 10) || 0;
+    el.classList.add('rv-in');
+    setTimeout(function () {
+      el.classList.remove('rv');
+      el.classList.remove('rv-in');
+      el.removeAttribute('data-rvd');
+      el.style.transitionDelay = '';
+    }, d + 620);
+  }
+  function scan() {
+    var nodes = document.querySelectorAll('section.home:not([data-rv]), .gcard:not([data-rv]), .tcard:not([data-rv])');
+    var list = [];
+    var i, el, p, nested;
+    for (i = 0; i < nodes.length; i++) list.push(nodes[i]);
+    // A card inside a section that is itself revealing rides with the section.
+    list = list.filter(function (node) {
+      p = node.parentNode;
+      while (p && p !== document.body) {
+        if (list.indexOf(p) !== -1) return false;
+        p = p.parentNode;
+      }
+      return true;
+    });
+    var parents = [], counts = [];
+    for (i = 0; i < list.length; i++) {
+      el = list[i];
+      var pi = parents.indexOf(el.parentNode);
+      if (pi === -1) { parents.push(el.parentNode); counts.push(0); pi = parents.length - 1; }
+      var d = Math.min(counts[pi]++ * 70, 300);
+      el.setAttribute('data-rv', '1');
+      if (!el.classList.contains('rv')) el.classList.add('rv');
+      el.setAttribute('data-rvd', String(d));
+      el.style.transitionDelay = d + 'ms';
+      io.observe(el);
+    }
+  }
+  scan();
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', scan);
+  // Hub grids (guides, exams) are rendered by the app during init and after
+  // its first fetch — watch briefly so those cards join the reveal too.
+  if (window.MutationObserver && document.body) {
+    var moTimer = null;
+    var mo = new MutationObserver(function () {
+      if (moTimer) return;
+      moTimer = setTimeout(function () { moTimer = null; scan(); }, 150);
+    });
+    mo.observe(document.body, { childList: true, subtree: true });
+    setTimeout(function () { mo.disconnect(); }, 20000);
+  }
+})();

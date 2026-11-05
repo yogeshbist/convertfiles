@@ -618,3 +618,40 @@ table.dates td{color:var(--ink-2)}
 .exam-disc{font-size:13px;color:var(--muted);line-height:1.65;border-top:1px solid var(--line);padding-top:14px;margin-top:28px}
 .official-links{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 14px}
 @media (max-width:760px){.tabs{overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}}
+
+/* ---------- design polish (2026-11-05): nav shadow, hero motion, card lift,
+   scroll reveal. Motion is transform/opacity only. The reveal pre-state is
+   gated on html.js-rv, which js/app.js sets only when IntersectionObserver
+   exists and the user has not asked for reduced motion — with JS off or an
+   old browser, everything below is simply visible. */
+.nav{transition:box-shadow .25s ease}
+.nav.scrolled{box-shadow:0 10px 30px color-mix(in srgb,var(--ink) 10%,transparent)}
+.tab{position:relative}
+.tab::after{content:"";position:absolute;left:12px;right:12px;bottom:3px;height:2px;border-radius:2px;background:var(--accent);transform:scaleX(0);transform-origin:left center;transition:transform .2s ease}
+.tab:hover::after,.tab[aria-current="page"]::after{transform:scaleX(1)}
+.hero::before{background:radial-gradient(640px 320px at 30% 0%,var(--accent-soft),transparent 70%),radial-gradient(520px 280px at 78% 8%,var(--pop-soft),transparent 70%),linear-gradient(180deg,color-mix(in srgb,var(--accent) 5%,transparent),transparent 55%)}
+@keyframes cf-rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+  .hero>.eyebrow{animation:cf-rise .55s ease-out both}
+  .hero>h1{animation:cf-rise .55s ease-out .15s both}
+  .hero>p{animation:cf-rise .55s ease-out .3s both}
+}
+::selection{background:var(--accent-soft)}
+.gcard{transition:transform .2s ease,box-shadow .2s ease}
+.gcard:hover{transform:translateY(-3px)}
+.tcard:hover{box-shadow:var(--shadow-lg)}
+.kitcard{transition:transform .2s ease,box-shadow .2s ease}
+.kitcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.btn:active{transform:scale(.98)}
+.btn.primary{transition:background .15s,border-color .15s,transform .1s,box-shadow .2s ease}
+.btn.primary:hover{box-shadow:0 10px 22px color-mix(in srgb,var(--accent) 34%,transparent)}
+.cta:active:not(:disabled){transform:scale(.99)}
+.home-h h2,.page-h h1,.page-h .view-title{display:flex;align-items:center;gap:11px}
+.home-h h2::before,.page-h h1::before,.page-h .view-title::before{content:"";flex:none;width:5px;height:.95em;border-radius:4px;background:var(--accent)}
+html.js-rv .rv{opacity:0;transform:translateY(14px)}
+html.js-rv .rv.rv-in{opacity:1;transform:translateY(0);transition:opacity .5s ease-out,transform .5s ease-out}
+@media (prefers-reduced-motion:reduce){
+  html.js-rv .rv{opacity:1;transform:none;transition:none}
+  .gcard:hover,.tcard:hover,.kitcard:hover{transform:none}
+}

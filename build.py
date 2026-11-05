@@ -320,7 +320,7 @@ index = replace_block(index, 'promo:slides', ''.join(_slides))
 _gc = []
 for _g in [g for g in CONTENT['GUIDES'] if g.get('lang') != 'hi'][:3]:
     _words = len(re.sub(r'<[^>]+>', '', ' '.join(_g['body'])).split())
-    _gc.append('<a class="gcard" href="/guides/%s/"><span class="cat" style="--fam:var(--f-%s)">%s</span>'
+    _gc.append('<a class="gcard rv" href="/guides/%s/"><span class="cat" style="--fam:var(--f-%s)">%s</span>'
                '<h3>%s</h3><p>%s</p><span class="rt">%d min read</span></a>'
                % (_g['slug'], _g['fam'], esc(_g['cat']), esc(_g['title']), esc(_g['teaser']), max(2, round(_words / 200))))
 index = replace_block(index, 'home:guides', ''.join(_gc))
@@ -332,7 +332,7 @@ for _e in EXAMS_SORTED[:4]:
     if _e.get('posts'):
         _bits.append('{:,} posts'.format(_e['posts']))
     _bits.append(_e['advt'])
-    _ec.append('<a class="gcard" href="/exam-forms/%s/"><span class="cat">Exam Form Centre</span>'
+    _ec.append('<a class="gcard rv" href="/exam-forms/%s/"><span class="cat">Exam Form Centre</span>'
                '<h3>%s</h3><p>%s</p><span class="rt">%s</span></a>'
                % (_e['slug'], esc(_c['name']), esc(_c['tagline']), esc(' \u00b7 '.join(_bits))))
 index = replace_block(index, 'home:exams', ''.join(_ec))
@@ -838,7 +838,7 @@ for gid, gname in TOOLPAGES.GROUPS:
     th.append('<h2>%s</h2><div class="tgrid">' % gname)
     for x in members:
         _hint, _icon = TOOLPAGES.RAIL_META[x['slug']]
-        th.append('<a class="tcard" href="/%s/"><span class="ic" style="--fam:var(--f-%s)"><svg><use href="#t-%s"/></svg></span>'
+        th.append('<a class="tcard rv" href="/%s/"><span class="ic" style="--fam:var(--f-%s)"><svg><use href="#t-%s"/></svg></span>'
                   '<h3>%s</h3><p>%s</p>%s</a>'
                   % (x['slug'], TOOLPAGES.GROUP_FAM[gid], _icon, esc(x['name']), esc(_hint),
                      ('<span class="ttag">%s</span>' % _tags[x['slug']]) if x['slug'] in _tags else ''))

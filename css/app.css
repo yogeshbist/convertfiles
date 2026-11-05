@@ -5,15 +5,15 @@
 /* Convert Files — visual system
    Light first. Every colour is a token on :root; dark redefines tokens only. */
 :root{
-  --bg:#FAF8F3; --surface:#FFFFFF; --surface-2:#F4F0E6; --surface-3:#EAE2CE;
-  --ink:#1D1A13; --ink-2:#463F30; --muted:#6E675A;
-  --line:#E7DFCB; --line-2:#D6CCAC;
-  --accent:#A87F1F; --accent-d:#8A6716; --accent-soft:#F4EBD2; --accent-ink:#FFFFFF;
+  --bg:#F5F7FA; --surface:#FFFFFF; --surface-2:#F0F3F7; --surface-3:#E9EEF3;
+  --ink:#12202B; --ink-2:#3C4A56; --muted:#606D7A;
+  --line:#E3E9EF; --line-2:#CFD9E2;
+  --accent:#0D7780; --accent-d:#0B646C; --accent-soft:#DDF1F3; --accent-ink:#FFFFFF;
   --pop:#FF7A59; --pop-soft:#FFE7DF;
   --ok:#168A5B; --ok-soft:#DDF4E8;
   --err:#C8402F; --err-soft:#FBE4E0;
-  --shadow:0 1px 2px rgba(29,26,19,.05),0 10px 30px rgba(29,26,19,.07);
-  --shadow-lg:0 2px 4px rgba(29,26,19,.06),0 24px 60px rgba(29,26,19,.11);
+  --shadow:0 1px 2px rgba(18,32,43,.04),0 10px 30px rgba(18,32,43,.06);
+  --shadow-lg:0 2px 4px rgba(18,32,43,.05),0 24px 60px rgba(18,32,43,.10);
   --display:"Sora",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,sans-serif;
   --body:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
@@ -23,10 +23,10 @@
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#171410; --surface:#201B14; --surface-2:#292219; --surface-3:#342B1E;
-    --ink:#F2ECDF; --ink-2:#CFC6B2; --muted:#A79C86;
-    --line:#3A3222; --line-2:#4A3F28;
-    --accent:#D9A93B; --accent-d:#EBC46A; --accent-soft:#3A3010; --accent-ink:#241B03;
+    --bg:#0E141C; --surface:#151D27; --surface-2:#1B2531; --surface-3:#222D3A;
+    --ink:#E8EEF3; --ink-2:#B9C5CF; --muted:#8595A2;
+    --line:#243040; --line-2:#2E3B4C;
+    --accent:#2FB7C2; --accent-d:#6ACBD3; --accent-soft:#12333A; --accent-ink:#06191C;
     --pop:#FF8F73; --pop-soft:#3A241D;
     --ok:#3CC98A; --ok-soft:#12302A;
     --err:#F0796A; --err-soft:#3A1F1B;
@@ -35,10 +35,10 @@
   }
 }
 :root[data-theme="dark"]{
-  --bg:#171410; --surface:#201B14; --surface-2:#292219; --surface-3:#342B1E;
-  --ink:#F2ECDF; --ink-2:#CFC6B2; --muted:#A79C86;
-  --line:#3A3222; --line-2:#4A3F28;
-  --accent:#D9A93B; --accent-d:#EBC46A; --accent-soft:#3A3010; --accent-ink:#241B03;
+  --bg:#0E141C; --surface:#151D27; --surface-2:#1B2531; --surface-3:#222D3A;
+  --ink:#E8EEF3; --ink-2:#B9C5CF; --muted:#8595A2;
+  --line:#243040; --line-2:#2E3B4C;
+  --accent:#2FB7C2; --accent-d:#6ACBD3; --accent-soft:#12333A; --accent-ink:#06191C;
   --pop:#FF8F73; --pop-soft:#3A241D;
   --ok:#3CC98A; --ok-soft:#12302A;
   --err:#F0796A; --err-soft:#3A1F1B;

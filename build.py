@@ -896,7 +896,7 @@ write('widget/index.html', hide_converter(strip_home(wd_page)))
 # ---- PWA: manifest and service worker (the shell is precached with this build's version)
 manifest = {
     'name': 'Convert Files', 'short_name': 'Convert Files', 'id': '/', 'start_url': '/?source=pwa', 'scope': '/',
-    'display': 'standalone', 'background_color': '#FAF8F3', 'theme_color': '#A87F1F',
+    'display': 'standalone', 'background_color': '#0e141c', 'theme_color': '#0E7C86',
     'description': 'Free file converter that runs entirely on your device. Nothing is uploaded.',
     'icons': [{'src': '/assets/icon-192.png', 'sizes': '192x192', 'type': 'image/png', 'purpose': 'any'},
               {'src': '/assets/icon-512.png', 'sizes': '512x512', 'type': 'image/png', 'purpose': 'any maskable'}],

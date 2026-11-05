@@ -14,6 +14,7 @@
   --err:#C8402F; --err-soft:#FBE4E0;
   --shadow:0 1px 2px rgba(18,32,43,.04),0 10px 30px rgba(18,32,43,.06);
   --shadow-lg:0 2px 4px rgba(18,32,43,.05),0 24px 60px rgba(18,32,43,.10);
+  --shadow-pop:0 4px 10px rgba(18,32,43,.07),0 32px 64px rgba(18,32,43,.18);
   --display:"Sora",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,sans-serif;
   --body:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
@@ -32,6 +33,7 @@
     --err:#F0796A; --err-soft:#3A1F1B;
     --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
     --shadow-lg:0 2px 4px rgba(0,0,0,.35),0 24px 60px rgba(0,0,0,.5);
+    --shadow-pop:0 4px 10px rgba(0,0,0,.45),0 32px 64px rgba(0,0,0,.65);
   }
 }
 :root[data-theme="dark"]{
@@ -44,6 +46,7 @@
   --err:#F0796A; --err-soft:#3A1F1B;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
   --shadow-lg:0 2px 4px rgba(0,0,0,.35),0 24px 60px rgba(0,0,0,.5);
+    --shadow-pop:0 4px 10px rgba(0,0,0,.45),0 32px 64px rgba(0,0,0,.65);
 }
 
 *{box-sizing:border-box}
@@ -663,28 +666,30 @@ table.dates td{color:var(--ink-2)}
 .tab::after{content:"";position:absolute;left:12px;right:12px;bottom:3px;height:2px;border-radius:2px;background:var(--accent);transform:scaleX(0);transform-origin:left center;transition:transform .2s ease}
 .tab:hover::after,.tab[aria-current="page"]::after{transform:scaleX(1)}
 .hero::before{background:radial-gradient(640px 320px at 30% 0%,var(--accent-soft),transparent 70%),radial-gradient(520px 280px at 78% 8%,var(--pop-soft),transparent 70%),linear-gradient(180deg,color-mix(in srgb,var(--accent) 5%,transparent),transparent 55%)}
-@keyframes cf-rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes cf-rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 @media (prefers-reduced-motion:no-preference){
   html{scroll-behavior:smooth}
-  .hero>.eyebrow{animation:cf-rise .55s ease-out both}
-  .hero>h1{animation:cf-rise .55s ease-out .15s both}
-  .hero>p{animation:cf-rise .55s ease-out .3s both}
+  .hero>.eyebrow{animation:cf-rise .65s ease-out both}
+  .hero>h1{animation:cf-rise .7s ease-out .2s both}
+  .hero>p{animation:cf-rise .75s ease-out .4s both}
+  .hero>.drop{animation:cf-rise .8s ease-out .6s both}
 }
 ::selection{background:var(--accent-soft)}
-.gcard{transition:transform .2s ease,box-shadow .2s ease}
-.gcard:hover{transform:translateY(-3px)}
-.tcard:hover{box-shadow:var(--shadow-lg)}
-.kitcard{transition:transform .2s ease,box-shadow .2s ease}
-.kitcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.gcard{transition:transform .25s ease,box-shadow .25s ease}
+.gcard:hover{transform:translateY(-5px);box-shadow:var(--shadow-pop)}
+.tcard:hover{box-shadow:var(--shadow-pop);transform:translateY(-5px)}
+.kitcard{transition:transform .25s ease,box-shadow .25s ease}
+.kitcard:hover{transform:translateY(-5px);box-shadow:var(--shadow-pop)}
+.ecard:hover{transform:translateY(-5px);box-shadow:var(--shadow-pop)}
 .btn:active{transform:scale(.98)}
 .btn.primary{transition:background .15s,border-color .15s,transform .1s,box-shadow .2s ease}
 .btn.primary:hover{box-shadow:0 10px 22px color-mix(in srgb,var(--accent) 34%,transparent)}
 .cta:active:not(:disabled){transform:scale(.99)}
 .home-h h2,.page-h h1,.page-h .view-title{display:flex;align-items:center;gap:11px}
 .home-h h2::before,.page-h h1::before,.page-h .view-title::before{content:"";flex:none;width:5px;height:.95em;border-radius:4px;background:var(--accent)}
-html.js-rv .rv{opacity:0;transform:translateY(14px)}
-html.js-rv .rv.rv-in{opacity:1;transform:translateY(0);transition:opacity .5s ease-out,transform .5s ease-out}
+html.js-rv .rv{opacity:0;transform:translateY(20px)}
+html.js-rv .rv.rv-in{opacity:1;transform:translateY(0);transition:opacity .65s ease-out,transform .65s ease-out}
 @media (prefers-reduced-motion:reduce){
   html.js-rv .rv{opacity:1;transform:none;transition:none}
-  .gcard:hover,.tcard:hover,.kitcard:hover{transform:none}
+  .gcard:hover,.tcard:hover,.kitcard:hover,.ecard:hover{transform:none}
 }

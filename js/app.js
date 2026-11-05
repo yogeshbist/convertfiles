@@ -1457,7 +1457,7 @@
       el.classList.remove('rv-in');
       el.removeAttribute('data-rvd');
       el.style.transitionDelay = '';
-    }, d + 620);
+    }, d + 700);
   }
   function scan() {
     var nodes = document.querySelectorAll('section.home:not([data-rv]), .gcard:not([data-rv]), .tcard:not([data-rv])');

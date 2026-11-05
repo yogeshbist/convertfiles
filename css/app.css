@@ -5,15 +5,15 @@
 /* Convert Files — visual system
    Light first. Every colour is a token on :root; dark redefines tokens only. */
 :root{
-  --bg:#F5F7FA; --surface:#FFFFFF; --surface-2:#F0F3F7; --surface-3:#E9EEF3;
-  --ink:#12202B; --ink-2:#3C4A56; --muted:#606D7A;
-  --line:#E3E9EF; --line-2:#CFD9E2;
-  --accent:#0D7780; --accent-d:#0B646C; --accent-soft:#DDF1F3; --accent-ink:#FFFFFF;
+  --bg:#FAF8F3; --surface:#FFFFFF; --surface-2:#F4F0E6; --surface-3:#EAE2CE;
+  --ink:#1D1A13; --ink-2:#463F30; --muted:#6E675A;
+  --line:#E7DFCB; --line-2:#D6CCAC;
+  --accent:#A87F1F; --accent-d:#8A6716; --accent-soft:#F4EBD2; --accent-ink:#FFFFFF;
   --pop:#FF7A59; --pop-soft:#FFE7DF;
   --ok:#168A5B; --ok-soft:#DDF4E8;
   --err:#C8402F; --err-soft:#FBE4E0;
-  --shadow:0 1px 2px rgba(18,32,43,.04),0 10px 30px rgba(18,32,43,.06);
-  --shadow-lg:0 2px 4px rgba(18,32,43,.05),0 24px 60px rgba(18,32,43,.10);
+  --shadow:0 1px 2px rgba(29,26,19,.05),0 10px 30px rgba(29,26,19,.07);
+  --shadow-lg:0 2px 4px rgba(29,26,19,.06),0 24px 60px rgba(29,26,19,.11);
   --display:"Sora",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,sans-serif;
   --body:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,sans-serif;
   --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
@@ -23,10 +23,10 @@
 }
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg:#0E141C; --surface:#151D27; --surface-2:#1B2531; --surface-3:#222D3A;
-    --ink:#E8EEF3; --ink-2:#B9C5CF; --muted:#8595A2;
-    --line:#243040; --line-2:#2E3B4C;
-    --accent:#2FB7C2; --accent-d:#6ACBD3; --accent-soft:#12333A; --accent-ink:#06191C;
+    --bg:#171410; --surface:#201B14; --surface-2:#292219; --surface-3:#342B1E;
+    --ink:#F2ECDF; --ink-2:#CFC6B2; --muted:#A79C86;
+    --line:#3A3222; --line-2:#4A3F28;
+    --accent:#D9A93B; --accent-d:#EBC46A; --accent-soft:#3A3010; --accent-ink:#241B03;
     --pop:#FF8F73; --pop-soft:#3A241D;
     --ok:#3CC98A; --ok-soft:#12302A;
     --err:#F0796A; --err-soft:#3A1F1B;
@@ -35,10 +35,10 @@
   }
 }
 :root[data-theme="dark"]{
-  --bg:#0E141C; --surface:#151D27; --surface-2:#1B2531; --surface-3:#222D3A;
-  --ink:#E8EEF3; --ink-2:#B9C5CF; --muted:#8595A2;
-  --line:#243040; --line-2:#2E3B4C;
-  --accent:#2FB7C2; --accent-d:#6ACBD3; --accent-soft:#12333A; --accent-ink:#06191C;
+  --bg:#171410; --surface:#201B14; --surface-2:#292219; --surface-3:#342B1E;
+  --ink:#F2ECDF; --ink-2:#CFC6B2; --muted:#A79C86;
+  --line:#3A3222; --line-2:#4A3F28;
+  --accent:#D9A93B; --accent-d:#EBC46A; --accent-soft:#3A3010; --accent-ink:#241B03;
   --pop:#FF8F73; --pop-soft:#3A241D;
   --ok:#3CC98A; --ok-soft:#12302A;
   --err:#F0796A; --err-soft:#3A1F1B;
@@ -586,3 +586,35 @@ main:has(.convert-grid.two){max-width:none;padding-left:max(48px,6vw);padding-ri
 .lang-panel li button span{font-size:12px;color:var(--muted);font-weight:400}
 .lang-empty{padding:14px;text-align:center;color:var(--muted);font-size:13.5px}
 @media (max-width:520px){#langCur{display:none}.lang-btn{padding:7px 10px}}
+
+/* ---------- exam form centre ---------- */
+.exam-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:8px 0 10px}
+.ecard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px 20px;box-shadow:var(--shadow);text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:7px;transition:transform .15s,box-shadow .15s}
+.ecard:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.ecard .cat{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--accent-d)}
+.ecard h3{font-family:var(--display);font-weight:600;font-size:17px;margin:0;letter-spacing:-.01em;line-height:1.3;color:var(--ink)}
+.ecard p{margin:0;color:var(--ink-2);font-size:13.5px}
+.ecard .meta-row{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:13px;color:var(--muted);margin-top:auto;padding-top:4px}
+.ecard .meta-row b{color:var(--ink);font-weight:600}
+.status-chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--ok-soft);color:var(--ok);width:fit-content}
+.status-chip.soon{background:var(--accent-soft);color:var(--accent-d)}
+.status-chip.closed{background:var(--surface-2);color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:4px 0 6px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 14px;box-shadow:var(--shadow)}
+.fact span{display:block;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.fact b{font-family:var(--display);font-size:16.5px;font-weight:700;color:var(--ink);line-height:1.3}
+table.dates{width:100%;border-collapse:collapse;margin:2px 0 14px;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+table.dates th,table.dates td{padding:10px 14px;text-align:left;font-size:14.5px;line-height:1.5;border-bottom:1px solid var(--line);vertical-align:top}
+table.dates tr:last-child th,table.dates tr:last-child td{border-bottom:0}
+table.dates th{color:var(--ink);font-weight:600;width:42%}
+table.dates td{color:var(--ink-2)}
+.kit{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));gap:12px;margin:6px 0 14px}
+.kitcard{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:6px}
+.kitcard h3{font-family:var(--display);font-size:15px;font-weight:600;margin:0;color:var(--ink);line-height:1.35}
+.kitcard p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.55;flex:1}
+.kitcard .btn{align-self:flex-start;margin-top:4px}
+.exam-note{background:var(--accent-soft);border:1px solid var(--line-2);border-radius:12px;padding:13px 16px;font-size:14.5px;color:var(--ink);line-height:1.6;margin:0 0 14px}
+.exam-note b{font-weight:700}
+.exam-disc{font-size:13px;color:var(--muted);line-height:1.65;border-top:1px solid var(--line);padding-top:14px;margin-top:28px}
+.official-links{display:flex;flex-wrap:wrap;gap:10px;margin:6px 0 14px}
+@media (max-width:760px){.tabs{overflow-x:auto;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}}

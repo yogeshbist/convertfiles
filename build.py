@@ -211,6 +211,52 @@ def write(path, text):
     GENERATED.append(path)
 
 
+# ------------------------------------------------------- Exam Form Centre
+# content/exams.json: one entry per live exam. The hub pages (/exam-forms/,
+# /hi/exam-forms/) list cards sorted by last date; every exam gets a detail
+# page with dates, eligibility, specs, a form kit and the official links.
+EXAMS = load_json('exams')
+EXAMS_SORTED = sorted(EXAMS, key=lambda e: e['dates']['apply_end'])
+GUIDE_TO_EXAMS = {}
+for _e in EXAMS:
+    for _lang in ('en', 'hi'):
+        if _e['guide'].get(_lang):
+            GUIDE_TO_EXAMS.setdefault(_e['guide'][_lang], []).append(_e)
+
+MONTHS_EN = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+             'August', 'September', 'October', 'November', 'December']
+MONTHS_HI = ['\u091c\u0928\u0935\u0930\u0940', '\u092b\u0930\u0935\u0930\u0940', '\u092e\u093e\u0930\u094d\u091a', '\u0905\u092a\u094d\u0930\u0948\u0932', '\u092e\u0908', '\u091c\u0942\u0928',
+             '\u091c\u0941\u0932\u093e\u0908', '\u0905\u0917\u0938\u094d\u0924', '\u0938\u093f\u0924\u0902\u092c\u0930', '\u0905\u0915\u094d\u091f\u0942\u092c\u0930', '\u0928\u0935\u0902\u092c\u0930', '\u0926\u093f\u0938\u0902\u092c\u0930']
+
+
+def dstr(iso, lang='en'):
+    """'2026-11-25' -> '25 November 2026' / '25 \u0928\u0935\u0902\u092c\u0930 2026'."""
+    y, m, d = (int(x) for x in iso.split('-'))
+    months = MONTHS_HI if lang == 'hi' else MONTHS_EN
+    return '%d %s %d' % (d, months[m - 1], y)
+
+
+def exam_status(e):
+    """(css class, EN label, HI label) from the exam's dates, at build time."""
+    today = datetime.date.today()
+    d = e['dates']
+    start = datetime.date.fromisoformat(d['apply_start'])
+    end = datetime.date.fromisoformat(d['apply_end'])
+    if today < start:
+        return ('soon', 'Starting soon', '\u091c\u0932\u094d\u0926 \u0936\u0941\u0930\u0942')
+    if today <= end:
+        return ('open', 'Form open', '\u092b\u0949\u0930\u094d\u092e \u0916\u0941\u0932\u093e \u0939\u0948')
+    if d.get('correction_start') and today < datetime.date.fromisoformat(d['correction_start']):
+        return ('soon', 'Correction soon', 'Correction \u091c\u0932\u094d\u0926')
+    if d.get('correction_end') and today <= datetime.date.fromisoformat(d['correction_end']):
+        return ('soon', 'Correction open', 'Correction \u091a\u093e\u0932\u0942')
+    return ('closed', 'Form closed', '\u092b\u0949\u0930\u094d\u092e \u092c\u0902\u0926')
+
+
+def exam_path(e, lang):
+    return ('hi/exam-forms/%s/' if lang == 'hi' else 'exam-forms/%s/') % e['slug']
+
+
 # ------------------------------------------------------------ index.html base
 index = open('index.html').read()
 index = re.sub(r'\?v=[0-9a-f]+', '?v=' + VER, index)
@@ -278,6 +324,18 @@ for _g in [g for g in CONTENT['GUIDES'] if g.get('lang') != 'hi'][:3]:
                '<h3>%s</h3><p>%s</p><span class="rt">%d min read</span></a>'
                % (_g['slug'], _g['fam'], esc(_g['cat']), esc(_g['title']), esc(_g['teaser']), max(2, round(_words / 200))))
 index = replace_block(index, 'home:guides', ''.join(_gc))
+_ec = []
+for _e in EXAMS_SORTED[:4]:
+    _c = _e['en']
+    _cls, _status, _ = exam_status(_e)
+    _bits = ['Last date %s' % dstr(_e['dates']['apply_end'])]
+    if _e.get('posts'):
+        _bits.append('{:,} posts'.format(_e['posts']))
+    _bits.append(_e['advt'])
+    _ec.append('<a class="gcard" href="/exam-forms/%s/"><span class="cat">Exam Form Centre</span>'
+               '<h3>%s</h3><p>%s</p><span class="rt">%s</span></a>'
+               % (_e['slug'], esc(_c['name']), esc(_c['tagline']), esc(' \u00b7 '.join(_bits))))
+index = replace_block(index, 'home:exams', ''.join(_ec))
 open('index.html', 'w').write(index)
 GENERATED.append('index.html')
 BASE = index
@@ -448,6 +506,15 @@ for gd in CONTENT['GUIDES']:
     elif gd.get('tryFrom'):
         article.append('<div class="try"><span class="t">%s</span><a class="btn primary" href="/%s-to-%s/">Convert .%s to .%s</a></div>'
                        % (esc(gd.get('tryLabel') or ('Try it: convert a .%s to .%s — free, in your browser.' % (gd['tryFrom'], gd['tryTo']))), gd['tryFrom'], gd['tryTo'], gd['tryFrom'], gd['tryTo']))
+    for _xe in GUIDE_TO_EXAMS.get(gd['slug'], []):
+        _xlang = 'hi' if hindi else 'en'
+        _xname = _xe[_xlang]['name']
+        if hindi:
+            article.append('<div class="try"><span class="t">इसी परीक्षा की सभी तारीखें, शुल्क, form kit और आधिकारिक link — परीक्षा फॉर्म केंद्र में देखें: %s (%s)</span><a class="btn primary" href="/%s">Exam Form Centre</a></div>'
+                           % (esc(_xname), esc(_xe['advt']), exam_path(_xe, 'hi')))
+        else:
+            article.append('<div class="try"><span class="t">Every date, the fees, the form kit and the official apply link for this exam — see the Exam Form Centre: %s (%s)</span><a class="btn primary" href="/%s">Exam Form Centre</a></div>'
+                           % (esc(_xname), esc(_xe['advt']), exam_path(_xe, 'en')))
     guides_crumb = ('हिन्दी गाइड', '/hi/guides/') if hindi else ('Guides', '/guides/')
     _, gcrumb_ld = crumbs([('Home', '/'), guides_crumb, (gd['title'], None)])
     jsonld = [gcrumb_ld, {'@context': 'https://schema.org', '@type': 'Article', 'headline': gd['title'], 'description': gd['teaser'],
@@ -512,6 +579,200 @@ hg_page = replace_block(hg_page, 'page:body', '\n'.join(hg))
 hg_page = hg_page.replace('<h1>Free Online File Converter</h1>', '<h1>हिन्दी गाइड</h1>')
 hg_page = hg_page.replace(HERO_P, '<p>%d गाइड, आसान हिन्दी में।</p>' % len(HI_GUIDES))
 write('hi/guides/index.html', hide_converter(strip_home(hg_page)))
+
+# --------------------------------------------- Exam Form Centre: hubs + pages
+def exam_hreflang(e):
+    return ('<link rel="alternate" hreflang="en" href="%s/%s">' % (DOMAIN, exam_path(e, 'en')) +
+            '<link rel="alternate" hreflang="hi" href="%s/%s">' % (DOMAIN, exam_path(e, 'hi')) +
+            '<link rel="alternate" hreflang="x-default" href="%s/%s">' % (DOMAIN, exam_path(e, 'en')))
+
+
+def exam_faqs(e, lang):
+    c, d = e[lang], e['dates']
+    hi = lang == 'hi'
+    name = c['name']
+    faqs = []
+    if hi:
+        faqs.append(('%s के लिए आवेदन की आखिरी तारीख क्या है?' % name,
+                     'Online फॉर्म %s को बंद होगा। शुल्क %s तक भरा जा सकता है।' % (dstr(d['apply_end'], 'hi'), dstr(d['fee_end'], 'hi'))))
+    else:
+        faqs.append(('What is the last date to apply for %s?' % name,
+                     'The online form closes on %s. The fee can be paid till %s.' % (dstr(d['apply_end']), dstr(d['fee_end']))))
+    kind = e['photo_kind']
+    if kind == 'live':
+        faqs.append(('क्या मुझे फोटो upload करनी होगी?' if hi else 'Do I have to upload a photograph?',
+                     'नहीं। इस फॉर्म में फोटो आवेदन के समय camera से live ली जाती है। Plain, हल्की background के सामने बैठो, रोशनी चेहरे पर रखो और पूरा चेहरा साफ दिखे — कोई फोटो फाइल तैयार नहीं करनी।' if hi else
+                     'No. In this form the photo is captured live through the camera while you apply. Sit before a plain, light background, face the light and keep your full face clearly visible — there is no photo file to prepare.'))
+    elif kind == 'upload':
+        faqs.append(('फोटो और हस्ताक्षर का size क्या होना चाहिए?' if hi else 'What size should the photo and signature be?',
+                     ' '.join(c['specs'][:2])))
+    elif kind == 'autofetch':
+        faqs.append(('क्या मुझे फोटो या हस्ताक्षर upload करने होंगे?' if hi else 'Do I have to upload a photo or signature?',
+                     'नहीं। दोनों आपके PET-2025 record से auto-fetch हो जाते हैं — इस फॉर्म में कोई नया upload नहीं है।' if hi else
+                     'No. Both are auto-fetched from your PET-2025 record when you apply — there is no fresh upload in this form.'))
+    else:
+        faqs.append(('इस फॉर्म के लिए फोटो और हस्ताक्षर के size क्या हैं?' if hi else 'What are the photo and signature sizes for this form?',
+                     'विस्तृत अधिसूचना का अभी इंतज़ार है। Exact size, notice आते ही इस पेज पर update होंगे — upload से पहले size हमेशा आधिकारिक notice में ज़रूर जाँचो।' if hi else
+                     'The detailed notification is still awaited. The exact sizes will be updated on this page as soon as it is published — always confirm them in the official notice before uploading.'))
+    if d.get('correction_end'):
+        if d.get('correction_start'):
+            win = ('%s से %s तक' % (dstr(d['correction_start'], lang), dstr(d['correction_end'], lang))) if hi else \
+                  ('from %s to %s' % (dstr(d['correction_start']), dstr(d['correction_end'])))
+        else:
+            win = ('%s तक' % dstr(d['correction_end'], 'hi')) if hi else ('till %s' % dstr(d['correction_end']))
+        faqs.append(('क्या submit के बाद फॉर्म में सुधार हो सकता है?' if hi else 'Can I correct the form after submitting?',
+                     ('हाँ। Correction window %s खुला रहेगा।' % win) if hi else ('Yes. The correction window runs %s.' % win)))
+    for x in c.get('extra_faq', []):
+        faqs.append((x['q'], x['a']))
+    faqs.append(('फॉर्म आखिर में submit कहाँ होता है?' if hi else 'Where is the form finally submitted?',
+                 ('सिर्फ आधिकारिक portal %s पर। Convert Files सिर्फ तैयारी में मदद करता है — तारीखें, size और फ्री टूल। इस website पर कोई फॉर्म submit नहीं होता, और Convert Files कोई सरकारी website नहीं है।' % e['portal']) if hi else
+                 ('Only on the official portal, %s. Convert Files only helps you prepare — dates, sizes and free tools. No form is submitted on this website, and Convert Files is not a government website.' % e['portal'])))
+    faqs.append(('क्या इस पेज की हर चीज़ फ्री है?' if hi else 'Is everything on this page free?',
+                 'हाँ। Convert Files के सभी टूल और गाइड फ्री हैं, आपके browser में ही काम करते हैं और कुछ भी upload नहीं करते — आपकी फाइलें आपके device से बाहर नहीं जातीं।' if hi else
+                 'Yes. Every tool and guide on Convert Files is free, works inside your browser and uploads nothing — your files never leave your device.'))
+    return faqs
+
+
+def exam_card(e, lang):
+    c = e[lang]
+    cls, st_en, st_hi = exam_status(e)
+    status = st_hi if lang == 'hi' else st_en
+    posts = ('<span>%s <b>{:,}</b></span>'.format(e['posts']) % ('कुल पद' if lang == 'hi' else 'Posts')) if e.get('posts') else ''
+    return ('<a class="ecard" href="/%s"><span class="cat">%s \u00b7 %s</span><h3>%s</h3><p>%s</p>'
+            '<span class="status-chip %s">%s</span>'
+            '<div class="meta-row"><span>%s <b>%s</b></span>%s</div></a>'
+            % (exam_path(e, lang), esc(e['board_hi' if lang == 'hi' else 'board_en']), esc(e['advt']),
+               esc(c['name']), esc(c['tagline']), cls, esc(status),
+               'अंतिम तिथि' if lang == 'hi' else 'Last date', dstr(e['dates']['apply_end'], lang), posts))
+
+
+def exam_detail(e, lang):
+    c, d = e[lang], e['dates']
+    hi = lang == 'hi'
+    path = exam_path(e, lang)
+    cls, st_en, st_hi = exam_status(e)
+    status = st_hi if hi else st_en
+    hub_name = 'परीक्षा फॉर्म केंद्र' if hi else 'Exam Form Centre'
+    hub_path = 'hi/exam-forms/' if hi else 'exam-forms/'
+    crumb_html, crumb_ld = crumbs([('Home', '/'), (hub_name, '/' + hub_path), (c['name'], None)])
+    body = ['<section class="seo exam">', crumb_html]
+    body.append('<p class="lead">%s</p>' % esc(c['tagline']))
+    body.append('<p><span class="status-chip %s">%s</span></p>' % (cls, esc(status)))
+    facts = []
+    if e.get('posts'):
+        facts.append(('कुल पद' if hi else 'Posts', '{:,}'.format(e['posts'])))
+    facts.append(('अंतिम तिथि' if hi else 'Last date', dstr(d['apply_end'], lang)))
+    facts.append(('शुल्क की अंतिम तिथि' if hi else 'Fee last date', dstr(d['fee_end'], lang)))
+    facts.append(('विज्ञापन' if hi else 'Advertisement', e['advt']))
+    body.append('<div class="facts">' + ''.join('<div class="fact"><span>%s</span><b>%s</b></div>' % (esc(k), esc(v)) for k, v in facts) + '</div>')
+    if e.get('note_hi' if hi else 'note_en'):
+        body.append('<p class="exam-note"><b>%s</b> %s</p>' % ('ध्यान दो:' if hi else 'Check first:', esc(e['note_hi' if hi else 'note_en'])))
+    rows = [('फॉर्म शुरू' if hi else 'Form opens', dstr(d['apply_start'], lang)),
+            ('आवेदन की अंतिम तिथि' if hi else 'Last date to apply', dstr(d['apply_end'], lang)),
+            ('शुल्क भुगतान की अंतिम तिथि' if hi else 'Last date for fee payment', dstr(d['fee_end'], lang))]
+    if d.get('correction_end'):
+        if d.get('correction_start'):
+            cv = '%s \u2013 %s' % (dstr(d['correction_start'], lang), dstr(d['correction_end'], lang))
+        else:
+            cv = ('%s तक' % dstr(d['correction_end'], 'hi')) if hi else ('till %s' % dstr(d['correction_end']))
+        rows.append(('Correction window', cv))
+    exam_txt = d.get('exam_hi' if hi else 'exam') or ('अभी घोषित नहीं — घोषित होते ही यहाँ update होगा' if hi else 'To be announced — updated here as soon as it is')
+    rows.append(('परीक्षा तिथि' if hi else 'Exam date', exam_txt))
+    rows.append(('परिणाम (Result)' if hi else 'Result', 'अभी घोषित नहीं — आते ही यहाँ update होगा' if hi else 'Not declared yet — updated here as soon as it is'))
+    body.append('<h2>%s</h2><table class="dates">%s</table>' % ('महत्वपूर्ण तिथियाँ' if hi else 'Important dates',
+                ''.join('<tr><th>%s</th><td>%s</td></tr>' % (esc(k), esc(v)) for k, v in rows)))
+    body.append('<h2>%s</h2><ul>%s</ul>' % ('पात्रता और शुल्क' if hi else 'Eligibility & fees',
+                ''.join('<li>%s</li>' % esc(x) for x in c['eligibility'] + c.get('fees', []))))
+    body.append('<h2>%s</h2><ul>%s</ul>' % ('फोटो और हस्ताक्षर — क्या चाहिए' if hi else 'Photo & signature — what the form asks',
+                ''.join('<li>%s</li>' % esc(x) for x in c['specs'])))
+    kit = []
+    for k in c['kit']:
+        btn = ''
+        if k.get('tool'):
+            tname = TOOL_BY_SLUG[k['tool']]['name'] if k['tool'] in TOOL_BY_SLUG else k['tool']
+            btn = '<a class="btn primary" href="/%s/">%s</a>' % (k['tool'], esc(tname))
+        kit.append('<div class="kitcard"><h3>%s</h3><p>%s</p>%s</div>' % (esc(k['title']), esc(k['text']), btn))
+    body.append('<h2>%s</h2><div class="kit">%s</div><p>%s</p>' % (
+        'Form Kit — फाइलें यहीं तैयार करो (फ्री)' if hi else 'Form Kit — prepare every file here, free',
+        ''.join(kit),
+        'सभी टूल आपके browser में ही चलते हैं — कोई फाइल upload नहीं होती, कोई sign-up नहीं।' if hi else
+        'Every tool runs inside your browser — nothing is uploaded and no sign-up is needed.'))
+    body.append('<h2>%s</h2><ol class="howto">%s</ol>' % ('फॉर्म कैसे भरें — step by step' if hi else 'How to apply — step by step',
+                ''.join('<li>%s</li>' % esc(s) for s in c['steps'])))
+    links = ['<a class="btn primary" href="%s" target="_blank" rel="noopener">%s \u2014 %s</a>' % (e['links']['apply'], 'Apply Online' if not hi else 'ऑनलाइन आवेदन करो', esc(e['portal']))]
+    if e['links'].get('notice'):
+        links.append('<a class="btn" href="%s" target="_blank" rel="noopener">%s</a>' % (e['links']['notice'], 'Official notification (PDF)' if not hi else 'आधिकारिक अधिसूचना (PDF)'))
+    links.append('<a class="btn" href="%s" target="_blank" rel="noopener">%s</a>' % (e['links']['site'], 'Official website' if not hi else 'आधिकारिक website'))
+    body.append('<h2>%s</h2><div class="official-links">%s</div>' % ('आधिकारिक लिंक' if hi else 'Official links', ''.join(links)))
+    gsl = e['guide'].get('hi' if hi else 'en')
+    if gsl and gsl in GUIDE_BY_SLUG:
+        gpath = ('hi/guides/%s/' if hi else 'guides/%s/') % gsl
+        body.append('<div class="exam-note">%s <a href="/%s"><b>%s</b></a></div>' % (
+            'फोटो और हस्ताक्षर के नियम पूरी detail में चाहिए? हमारी गाइड पढ़ो:' if hi else
+            'Want the photo and signature rules in full detail? Read the guide:', gpath, esc(GUIDE_BY_SLUG[gsl]['title'])))
+    faqs = exam_faqs(e, lang)
+    body.append('<h2>%s</h2><dl class="faq-list">%s</dl>' % ('आम सवाल' if hi else 'Questions',
+                ''.join('<dt>%s</dt><dd>%s</dd>' % (esc(q), esc(a)) for q, a in faqs)))
+    body.append('<p class="exam-disc">%s</p>' % (
+        'सभी जानकारी आधिकारिक अधिसूचना से ली गई है। फॉर्म अंत में सिर्फ आधिकारिक portal (%s) पर ही submit होता है — Convert Files एक फ्री मदद platform है, कोई सरकारी website नहीं। यहाँ हर चीज़ फ्री है; कोई sign-up नहीं चाहिए।' % e['portal'] if hi else
+        'All information here is taken from the official notification. The form is finally submitted only on the official portal (%s) — Convert Files is a free help platform, not a government website. Everything here is free; no sign-up is needed.' % e['portal']))
+    body.append('<p class="seo-more"><a href="/%s">%s</a> \u00b7 <a href="/%s">%s</a></p>' % (
+        hub_path, 'सभी परीक्षाएँ' if hi else 'All exams', 'hi/guides/' if hi else 'guides/', 'गाइड' if hi else 'Guides'))
+    body.append('</section>')
+    faq_ld = {'@context': 'https://schema.org', '@type': 'FAQPage',
+              'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faqs]}
+    title = ('%s (%s) ऑनलाइन फॉर्म 2026 — अंतिम तिथि, शुल्क, फोटो और हस्ताक्षर का size' % (c['name'], e['advt'])) if hi else \
+            ('%s (%s) Online Form 2026 — Last Date, Fees, Photo & Signature Size' % (c['name'], e['advt']))
+    desc = c['tagline'] + (' अंतिम तिथि %s। Correction, परीक्षा तिथि और result के update, form kit और आधिकारिक apply link — सब फ्री, कुछ upload नहीं होता।' % dstr(d['apply_end'], 'hi') if hi else
+                           ' Last date %s. Correction, exam-date and result updates, the form kit and the official apply link — everything free, nothing uploaded.' % dstr(d['apply_end']))
+    page = replace_block(BASE, 'page:meta', page_meta(title, desc, path, extra_meta=exam_hreflang(e), jsonld=[crumb_ld, faq_ld]))
+    if hi:
+        page = page.replace('<html lang="en">', '<html lang="hi">', 1)
+    page = replace_block(page, 'page:body', '\n'.join(body))
+    page = page.replace('<h1>Free Online File Converter</h1>', '<h1>%s</h1>' % esc(c['name']))
+    page = page.replace(HERO_P, '<p>%s \u00b7 %s \u00b7 <b>%s</b> \u00b7 %s %s</p>' % (
+        esc(e['board_hi' if hi else 'board_en']), esc(e['advt']), esc(status),
+        'अंतिम तिथि' if hi else 'Last date', dstr(d['apply_end'], lang)))
+    write(path + 'index.html', hide_converter(strip_home(page)))
+
+
+for _e in EXAMS:
+    exam_detail(_e, 'en')
+    exam_detail(_e, 'hi')
+
+for _lang in ('en', 'hi'):
+    _hi = _lang == 'hi'
+    _hub_path = 'hi/exam-forms/' if _hi else 'exam-forms/'
+    _hub_name = 'परीक्षा फॉर्म केंद्र' if _hi else 'Exam Form Centre'
+    _hc, _hc_ld = crumbs([('Home', '/'), (_hub_name, None)])
+    _hb = ['<section class="seo hub">', _hc,
+           '<p class="lead">%s</p>' % (
+               'अभी खुले हुए सभी बड़े सरकारी परीक्षा फॉर्म, अंतिम तिथि के क्रम में — हर परीक्षा की तारीखें, शुल्क, correction window, फोटो-हस्ताक्षर के size, फाइलें तैयार करने के फ्री टूल और आधिकारिक apply link। सब कुछ एक ही जगह, बिल्कुल फ्री। किसी परीक्षा पर click करो, पूरी जानकारी का पेज खुलेगा।' if _hi else
+               'Every big sarkari exam form that is open right now, sorted by last date — each exam\u2019s dates, fees, correction window, photo-signature sizes, free tools to prepare your files, and the official apply link. Everything in one place, all free. Click an exam for its full page.'),
+           '<div class="exam-grid">' + ''.join(exam_card(_e, _lang) for _e in EXAMS_SORTED) + '</div>',
+           '<p class="exam-disc">%s</p>' % (
+               'सभी जानकारी आधिकारिक अधिसूचनाओं से ली गई है। फॉर्म अंत में सिर्फ आधिकारिक portal पर ही submit होते हैं — Convert Files एक फ्री मदद platform है, कोई सरकारी website नहीं।' if _hi else
+               'All information is taken from the official notifications. Forms are finally submitted only on the official portals — Convert Files is a free help platform, not a government website.'),
+           '<p class="seo-more"><a href="/%s">%s</a> \u00b7 <a href="/tools/">%s</a></p>' % (
+               'hi/guides/' if _hi else 'guides/', 'फोटो-हस्ताक्षर गाइड' if _hi else 'Photo & signature guides', 'सभी टूल' if _hi else 'All tools'),
+           '</section>']
+    _hl = ('<link rel="alternate" hreflang="en" href="%s/exam-forms/">'
+           '<link rel="alternate" hreflang="hi" href="%s/hi/exam-forms/">'
+           '<link rel="alternate" hreflang="x-default" href="%s/exam-forms/">') % (DOMAIN, DOMAIN, DOMAIN)
+    _hp = replace_block(BASE, 'page:meta', page_meta(
+        'परीक्षा फॉर्म केंद्र — सरकारी परीक्षा फॉर्म, तारीखें, शुल्क और फ्री फोटो-हस्ताक्षर टूल' if _hi else
+        'Exam Form Centre — Sarkari Exam Forms, Dates, Fees & Free Photo-Signature Tools',
+        'RRB NTPC, स्टेशन मास्टर, UP TGT, प्रिंसिपल, हेडमास्टर, UPSSSC लोअर PCS समेत सभी खुले सरकारी परीक्षा फॉर्म एक जगह — अंतिम तिथियाँ, correction window, शुल्क, फोटो-हस्ताक्षर के size और हर फाइल तैयार करने के फ्री टूल।' if _hi else
+        'All open government exam forms in one place — RRB NTPC, Station Master, UP TGT, Principal, Headmaster, UPSSSC Lower PCS and more. Last dates, correction windows, fees, photo-signature sizes and free tools to prepare every file.',
+        _hub_path, extra_meta=_hl, jsonld=[_hc_ld]))
+    if _hi:
+        _hp = _hp.replace('<html lang="en">', '<html lang="hi">', 1)
+    _hp = replace_block(_hp, 'page:body', '\n'.join(_hb))
+    _hp = _hp.replace('<h1>Free Online File Converter</h1>', '<h1>%s</h1>' % _hub_name)
+    _hp = _hp.replace(HERO_P, '<p>%s</p>' % (
+        '%d परीक्षाएँ, अंतिम तिथि के क्रम में — फॉर्म, correction और result, सबके update यहीं।' % len(EXAMS) if _hi else
+        '%d exams, sorted by last date — forms, corrections and results, all tracked here.' % len(EXAMS)))
+    write(_hub_path + 'index.html', hide_converter(strip_home(_hp)))
 
 # ------------------------------------------------------------- tool pages
 # /compress-image/, /merge-pdf/ and friends: the converter's shell, the drop
@@ -635,7 +896,7 @@ write('widget/index.html', hide_converter(strip_home(wd_page)))
 # ---- PWA: manifest and service worker (the shell is precached with this build's version)
 manifest = {
     'name': 'Convert Files', 'short_name': 'Convert Files', 'id': '/', 'start_url': '/?source=pwa', 'scope': '/',
-    'display': 'standalone', 'background_color': '#0e141c', 'theme_color': '#0E7C86',
+    'display': 'standalone', 'background_color': '#FAF8F3', 'theme_color': '#A87F1F',
     'description': 'Free file converter that runs entirely on your device. Nothing is uploaded.',
     'icons': [{'src': '/assets/icon-192.png', 'sizes': '192x192', 'type': 'image/png', 'purpose': 'any'},
               {'src': '/assets/icon-512.png', 'sizes': '512x512', 'type': 'image/png', 'purpose': 'any maskable'}],

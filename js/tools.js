@@ -1429,13 +1429,13 @@
         if (i === 0) g.moveTo(v[0], v[1]); else g.lineTo(v[0], v[1]);
       });
       g.closePath();
-      g.strokeStyle = '#2FB7C2'; g.lineWidth = 2; g.stroke();
+      g.strokeStyle = '#38BDF8'; g.lineWidth = 2; g.stroke();
 
       pts.forEach(function (p) {
         var v = toView(p);
         g.beginPath(); g.arc(v[0], v[1], 11, 0, Math.PI * 2);
         g.fillStyle = 'rgba(255,255,255,.92)'; g.fill();
-        g.strokeStyle = '#0E7C86'; g.lineWidth = 2.5; g.stroke();
+        g.strokeStyle = '#38BDF8'; g.lineWidth = 2.5; g.stroke();
       });
     }
 

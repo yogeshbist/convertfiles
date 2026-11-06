@@ -5,8 +5,8 @@
  "start_url": "/?source=pwa",
  "scope": "/",
  "display": "standalone",
- "background_color": "#0e141c",
- "theme_color": "#0E7C86",
+ "background_color": "#0F1620",
+ "theme_color": "#0F1620",
  "description": "Free file converter that runs entirely on your device. Nothing is uploaded.",
  "icons": [
   {

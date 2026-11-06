@@ -290,6 +290,26 @@ def next_deadline(e=None):
     return best
 
 
+def deadline_events(e=None):
+    """Every countdown event for the chips as (exam, day, kind, target),
+    soonest first — the full list next_deadline() picks its single winner
+    from. cd_chip() embeds it as JSON on the chip so js/app.js can roll
+    from one event to the next long after build time."""
+    out = []
+    for x in ([e] if e else EXAMS):
+        d = x['dates']
+        cands = [('apply_end', d['apply_end'], 'T23:59:59+05:30')]
+        if not x.get('no_correction'):
+            if d.get('correction_start'):
+                cands.append(('correction_start', d['correction_start'], 'T00:00:00+05:30'))
+            if d.get('correction_end'):
+                cands.append(('correction_end', d['correction_end'], 'T23:59:59+05:30'))
+        for kind, iso, tod in cands:
+            out.append((x, datetime.date.fromisoformat(iso), kind, iso + tod))
+    out.sort(key=lambda ev: ev[3])
+    return out
+
+
 _CD_LABELS = {
     'apply_end': ('Last date', '\u0905\u0902\u0924\u093f\u092e \u0924\u093f\u0925\u093f'),
     'correction_start': ('Correction opens', 'Correction \u0936\u0941\u0930\u0942'),
@@ -300,21 +320,35 @@ _CD_LABELS = {
 def cd_chip(e, lang):
     """Live countdown chip for an exam hero: the hub (e=None) counts to the
     nearest deadline across all exams, a detail page to that exam's own next
-    deadline. Static text is the existing days-left / date wording; js/app.js
-    swaps in a per-second tick and hides the chip once the moment passes.
+    deadline. The chip carries every deadline event as JSON in
+    data-deadlines; js/app.js ticks to the soonest future one, rolls over
+    to the next when it passes, and hides the chip only when none remain.
+    Static text is the existing days-left / date wording (no-JS fallback).
     Empty string when nothing is upcoming."""
-    found = next_deadline(e)
-    if not found:
+    events = deadline_events(e)
+    today = datetime.date.today()
+    upcoming = [ev for ev in events if ev[1] >= today]
+    if not upcoming:
         return ''
-    x, day, kind, target = found
-    label = _CD_LABELS[kind][1 if lang == 'hi' else 0]
+    hi = lang == 'hi'
+    data = []
+    for x, day, kind, target in events:
+        item = {'t': target, 'l': _CD_LABELS[kind][1 if hi else 0]}
+        if e is None:
+            item['n'] = x[lang]['name']
+        data.append(item)
+    blob = json.dumps(data, ensure_ascii=False)
+    blob = blob.replace('&', '&amp;').replace("'", '&#39;').replace('<', '&lt;')
+    x, day, kind, target = upcoming[0]
+    label = _CD_LABELS[kind][1 if hi else 0]
     static = (days_left_text(x['dates']['apply_end'], lang) if kind == 'apply_end'
               else dstr(x['dates'][kind], lang))
     if e is None:
         label = '<b>%s</b> \u00b7 %s' % (esc(x[lang]['name']), label)
-    return ('<div class="cd-chip" data-cd="%s"><span class="cd-dot"></span>'
-            '<span class="cd-txt">%s: <span class="cd-time">%s</span></span></div>'
-            % (target, label, static))
+    return ('<div class="cd-chip" data-deadlines=\'%s\'><span class="cd-dot"></span>'
+            '<span class="cd-txt"><span class="cd-label">%s</span>: '
+            '<span class="cd-time">%s</span></span></div>'
+            % (blob, label, static))
 
 
 def exam_path(e, lang):

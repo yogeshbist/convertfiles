@@ -1502,23 +1502,51 @@
 })();
 
 /* ---------------- exam centre: live countdown chips ----------------
-   Decorative only: each [data-cd] chip carries an ISO target written by
-   build.py; the static text already says the date / days left, this just
-   swaps in a per-second tick and hides the chip once the moment passes. */
+   Decorative only: each .cd-chip carries data-deadlines, a JSON list of
+   {t, l, n} events written by build.py (t = ISO target, l = the event
+   label, n = exam name, hub chips only). The chip counts down to the
+   soonest future event and rolls over to the next when one passes; it
+   hides only when no future events remain. The static text already says
+   the days left / date, so no-JS visitors lose nothing. */
 (function () {
-  var chips = document.querySelectorAll('[data-cd]');
+  var chips = document.querySelectorAll('[data-deadlines]');
   if (!chips.length) return;
   function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function setLabel(chip, ev) {
+    var lab = chip.querySelector('.cd-label');
+    if (!lab) return;
+    lab.textContent = '';
+    if (ev.n) {
+      var b = document.createElement('b');
+      b.textContent = ev.n;
+      lab.appendChild(b);
+      lab.appendChild(document.createTextNode(' \u00B7 ' + ev.l));
+    } else {
+      lab.appendChild(document.createTextNode(ev.l));
+    }
+  }
+  var states = [];
+  for (var i = 0; i < chips.length; i++) {
+    var evs = null;
+    try { evs = JSON.parse(chips[i].getAttribute('data-deadlines')); } catch (e) { evs = null; }
+    if (evs && evs.length) states.push({ chip: chips[i], evs: evs, cur: null });
+  }
+  if (!states.length) return;
   function tick() {
     var now = Date.now();
-    for (var i = 0; i < chips.length; i++) {
-      var chip = chips[i];
+    for (var i = 0; i < states.length; i++) {
+      var st = states[i], chip = st.chip;
       if (chip.hidden) continue;
-      var t = Date.parse(chip.getAttribute('data-cd'));
-      var ms = t - now;
-      if (isNaN(t) || ms <= 0) { chip.hidden = true; continue; }
+      var ev = null, t = Infinity;
+      for (var j = 0; j < st.evs.length; j++) {
+        var tt = Date.parse(st.evs[j].t);
+        if (!isNaN(tt) && tt > now && tt < t) { ev = st.evs[j]; t = tt; }
+      }
+      if (!ev) { chip.hidden = true; continue; }
+      if (st.cur !== ev.t) { st.cur = ev.t; setLabel(chip, ev); }
       var out = chip.querySelector('.cd-time');
       if (!out) continue;
+      var ms = t - now;
       var s = Math.floor(ms / 1000), d = Math.floor(s / 86400);
       out.textContent = (d > 0 ? d + 'd ' : '') + pad(Math.floor(s % 86400 / 3600)) + ':' +
         pad(Math.floor(s % 3600 / 60)) + ':' + pad(s % 60);

@@ -779,6 +779,17 @@ def exam_detail(e, lang):
         body.append('<h2>%s</h2><ul>%s</ul>' % (
             'दस्तावेज़ जो लगेंगे' if hi else 'Documents you will need',
             ''.join('<li>%s</li>' % esc(x) for x in c['documents'])))
+    if e.get('papers'):
+        pcards = []
+        for p in e['papers']:
+            pcards.append('<div class="kitcard"><h3>%s</h3><p>%s</p><a class="btn primary" href="/papers/%s" download>%s</a></div>' % (
+                esc(p['title_' + lang]), esc(p['meta_' + lang]), p['file'],
+                'PDF Download करो — बिल्कुल Free' if hi else 'Download PDF — Free'))
+        body.append('<h2>%s</h2><div class="kit">%s</div><p>%s</p>' % (
+            'Practice Papers — पिछला Paper बिल्कुल Free' if hi else 'Practice papers — previous year paper, free',
+            ''.join(pcards),
+            'ये paper exam board का official print है; सही जवाब हरे ✓ निशान के साथ उसी में दिए हैं। Paper पर हक़ board का है — यहाँ सिर्फ़ पढ़ाई के लिए free रखा है।' if hi else
+            'This is the exam board\u2019s official print; the correct answers are marked with a green \u2713 inside it. The paper belongs to the board — it is kept here free, for study only.'))
     kit = []
     for k in c['kit']:
         btn = ''

@@ -742,7 +742,9 @@ def exam_detail(e, lang):
     rows = [('फॉर्म शुरू' if hi else 'Form opens', dstr(d['apply_start'], lang)),
             ('आवेदन की अंतिम तिथि' if hi else 'Last date to apply', dstr(d['apply_end'], lang)),
             ('शुल्क भुगतान की अंतिम तिथि' if hi else 'Last date for fee payment', dstr(d['fee_end'], lang))]
-    if d.get('correction_end'):
+    if e.get('no_correction'):
+        rows.append(('Correction window', 'कोई नहीं — final submission के बाद कोई बदलाव नहीं होगा' if hi else 'None — no changes are allowed after final submission'))
+    elif d.get('correction_end'):
         if d.get('correction_start'):
             cv = '%s \u2013 %s' % (dstr(d['correction_start'], lang), dstr(d['correction_end'], lang))
         else:
@@ -798,8 +800,12 @@ def exam_detail(e, lang):
         links.append('<a class="btn" href="%s" target="_blank" rel="noopener">%s</a>' % (e['links']['notice'], 'Official notification (PDF)' if not hi else 'आधिकारिक अधिसूचना (PDF)'))
     links.append('<a class="btn" href="%s" target="_blank" rel="noopener">%s</a>' % (e['links']['site'], 'Official website' if not hi else 'आधिकारिक website'))
     body.append('<h2>%s</h2><div class="official-links">%s</div>' % ('आधिकारिक लिंक' if hi else 'Official links', ''.join(links)))
+    if e.get('no_correction'):
+        _corr_txt = 'कोई नहीं — submission के बाद बदलाव नहीं' if hi else 'No correction window — nothing changes after final submission'
+    else:
+        _corr_txt = _corr_value(e, lang) or ('अभी घोषित नहीं' if hi else 'Not announced yet')
     tl = [('फॉर्म' if hi else 'Form', ('अंतिम तिथि ' if hi else 'Last date ') + dstr(d['apply_end'], lang)),
-          ('Correction (सुधार)' if hi else 'Correction', _corr_value(e, lang) or ('अभी घोषित नहीं' if hi else 'Not announced yet')),
+          ('Correction (सुधार)' if hi else 'Correction', _corr_txt),
           ('Admit Card (प्रवेश पत्र)' if hi else 'Admit card', 'अभी घोषित नहीं' if hi else 'To be announced'),
           ('परीक्षा' if hi else 'Exam', exam_txt),
           ('Result (परिणाम)' if hi else 'Result', 'अभी घोषित नहीं' if hi else 'Not declared yet')]

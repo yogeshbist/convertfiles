@@ -65,6 +65,8 @@ a{color:var(--accent)}
 .mark{width:32px;height:32px;border-radius:8px;background:var(--accent);display:grid;place-items:center;color:#fff;flex:none}
 .mark svg{width:18px;height:18px}
 .brand b{font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:-.02em;white-space:nowrap}
+.brand-logo{height:40px;width:auto;border-radius:9px;display:block}
+@media (max-width:520px){.brand-logo{height:33px}}
 .tabs{display:flex;gap:6px;align-items:center}
 .tab{border:0;background:transparent;padding:7px 12px;border-radius:9px;font-weight:500;font-size:13.5px;color:var(--ink-2);display:flex;align-items:center;gap:7px;text-decoration:none;transition:background .15s,color .15s}
 .tab:hover{color:var(--ink)}

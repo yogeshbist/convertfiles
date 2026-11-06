@@ -676,6 +676,8 @@ HUB_FAQS = {
 
 def _corr_value(e, lang):
     """Correction window as a short display string, or None when unannounced."""
+    if e.get('no_correction'):
+        return '\u0915\u094b\u0908 \u0928\u0939\u0940\u0902' if lang == 'hi' else 'None'
     d = e['dates']
     if not d.get('correction_end'):
         return None

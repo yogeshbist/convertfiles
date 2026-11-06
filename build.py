@@ -253,6 +253,19 @@ def exam_status(e):
     return ('closed', 'Form closed', '\u092b\u0949\u0930\u094d\u092e \u092c\u0902\u0926')
 
 
+def days_left_text(iso, lang='en'):
+    """'6 days left' / '1 day left' / 'Last day today' / 'Closed' (+ Hindi)."""
+    hi = lang == 'hi'
+    dl = (datetime.date.fromisoformat(iso) - datetime.date.today()).days
+    if dl > 1:
+        return '%d \u0926\u093f\u0928 \u092c\u093e\u0915\u0940' % dl if hi else '%d days left' % dl
+    if dl == 1:
+        return '1 \u0926\u093f\u0928 \u092c\u093e\u0915\u0940' if hi else '1 day left'
+    if dl == 0:
+        return '\u0906\u091c \u0906\u0916\u093f\u0930\u0940 \u0926\u093f\u0928' if hi else 'Last day today'
+    return '\u092c\u0902\u0926 \u0939\u094b \u0917\u092f\u093e' if hi else 'Closed'
+
+
 def exam_path(e, lang):
     return ('hi/exam-forms/%s/' if lang == 'hi' else 'exam-forms/%s/') % e['slug']
 
@@ -328,13 +341,17 @@ _ec = []
 for _e in EXAMS_SORTED[:4]:
     _c = _e['en']
     _cls, _status, _ = exam_status(_e)
-    _bits = ['Last date %s' % dstr(_e['dates']['apply_end'])]
+    _facts = []
     if _e.get('posts'):
-        _bits.append('{:,} posts'.format(_e['posts']))
-    _bits.append(_e['advt'])
-    _ec.append('<a class="gcard rv" href="/exam-forms/%s/"><span class="cat">Exam Form Centre</span>'
+        _facts.append('{:,} posts'.format(_e['posts']))
+    if _c.get('qual'):
+        _facts.append(esc(_c['qual']))
+    _facts.append('Last date %s \u00b7 %s' % (dstr(_e['dates']['apply_end']), days_left_text(_e['dates']['apply_end'])))
+    _ec.append('<a class="gcard rv xmini" href="/exam-forms/%s/">'
+               '<span class="hchips"><span class="advt-chip">%s</span><span class="status-chip %s">%s</span></span>'
+               '<span class="cat">Exam Form Centre</span>'
                '<h3>%s</h3><p>%s</p><span class="rt">%s</span></a>'
-               % (_e['slug'], esc(_c['name']), esc(_c['tagline']), esc(' \u00b7 '.join(_bits))))
+               % (_e['slug'], esc(_e['advt']), _cls, esc(_status), esc(_c['name']), esc(_c['tagline']), ' \u00b7 '.join(_facts)))
 index = replace_block(index, 'home:exams', ''.join(_ec))
 open('index.html', 'w').write(index)
 GENERATED.append('index.html')
@@ -678,12 +695,7 @@ def exam_card(e, lang, mini=False):
         cells.append(('\u0915\u0941\u0932 \u092a\u0926' if hi else 'Total posts', '{:,}'.format(e['posts'])))
     if c.get('qual'):
         cells.append(('\u092f\u094b\u0917\u094d\u092f\u0924\u093e' if hi else 'Qualification', esc(c['qual'])))
-    dl = (datetime.date.fromisoformat(e['dates']['apply_end']) - datetime.date.today()).days
-    last = dstr(e['dates']['apply_end'], lang)
-    if dl > 0:
-        last += ' \u00b7 ' + ('%d \u0926\u093f\u0928 \u092c\u093e\u0915\u0940' % dl if hi else '%d days left' % dl)
-    elif dl == 0:
-        last += ' \u00b7 ' + ('\u0906\u091c \u0906\u0916\u093f\u0930\u0940 \u0926\u093f\u0928' if hi else 'Last day today')
+    last = dstr(e['dates']['apply_end'], lang) + ' \u00b7 ' + days_left_text(e['dates']['apply_end'], lang)
     cells.append(('\u0905\u0902\u0924\u093f\u092e \u0924\u093f\u0925\u093f' if hi else 'Last date', last))
     if c.get('fees_short'):
         cells.append(('\u0936\u0941\u0932\u094d\u0915' if hi else 'Fee', esc(c['fees_short'])))

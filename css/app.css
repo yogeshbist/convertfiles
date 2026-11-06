@@ -592,7 +592,7 @@ main:has(.convert-grid.two){max-width:none;padding-left:max(48px,6vw);padding-ri
 
 /* ---------- exam form centre ---------- */
 .exam-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:8px 0 10px}
-.ecard{background:linear-gradient(var(--accent),var(--accent)) left top/100% 4px no-repeat,var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px 20px;box-shadow:var(--shadow);color:inherit;display:flex;flex-direction:column;gap:8px;transition:transform .25s ease,box-shadow .25s ease}
+.ecard{background:linear-gradient(var(--accent),var(--accent)) left top/100% 4px no-repeat,var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px 20px;box-shadow:var(--shadow);color:inherit;display:flex;flex-direction:column;gap:8px;height:100%;transition:transform .25s ease,box-shadow .25s ease}
 .ecard:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
 .ecard-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .advt-chip{font-size:11px;font-weight:700;letter-spacing:.03em;padding:3px 9px;border-radius:99px;background:var(--accent-soft);color:var(--accent-d)}
@@ -602,7 +602,7 @@ main:has(.convert-grid.two){max-width:none;padding-left:max(48px,6vw);padding-ri
 .ecard h3 a{color:inherit;text-decoration:none}
 .ecard h3 a:hover{color:var(--accent-d);text-decoration:underline}
 .ecard p{margin:0;color:var(--ink-2);font-size:13.5px}
-.ecard-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px 14px;background:var(--surface-2);border-radius:10px;padding:11px 13px}
+.ecard-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px 14px;background:var(--surface-2);border-radius:10px;padding:11px 13px;flex:1;align-content:start}
 .ecell span{display:block;font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:2px}
 .ecell b{font-size:13.5px;font-weight:600;color:var(--ink);line-height:1.35}
 .ecard-foot{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-top:4px}
@@ -666,16 +666,18 @@ table.dates td{color:var(--ink-2)}
 .tab::after{content:"";position:absolute;left:12px;right:12px;bottom:3px;height:2px;border-radius:2px;background:var(--accent);transform:scaleX(0);transform-origin:left center;transition:transform .2s ease}
 .tab:hover::after,.tab[aria-current="page"]::after{transform:scaleX(1)}
 .hero::before{background:radial-gradient(640px 320px at 30% 0%,var(--accent-soft),transparent 70%),radial-gradient(520px 280px at 78% 8%,var(--pop-soft),transparent 70%),linear-gradient(180deg,color-mix(in srgb,var(--accent) 5%,transparent),transparent 55%)}
-@keyframes cf-rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@keyframes cf-rise{from{opacity:.35;transform:translateY(13px)}to{opacity:1;transform:translateY(0)}}
 @media (prefers-reduced-motion:no-preference){
   html{scroll-behavior:smooth}
   .hero>.eyebrow{animation:cf-rise .65s ease-out both}
   .hero>h1{animation:cf-rise .7s ease-out .2s both}
   .hero>p{animation:cf-rise .75s ease-out .4s both}
-  .hero>.drop{animation:cf-rise .8s ease-out .6s both}
 }
 ::selection{background:var(--accent-soft)}
 .gcard{transition:transform .25s ease,box-shadow .25s ease}
+.gcard .hchips{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.gcard .hchips .status-chip{margin-left:auto}
+.gcard.xmini{background:linear-gradient(var(--accent),var(--accent)) left top/100% 4px no-repeat,var(--surface)}
 .gcard:hover{transform:translateY(-5px);box-shadow:var(--shadow-pop)}
 .tcard:hover{box-shadow:var(--shadow-pop);transform:translateY(-5px)}
 .kitcard{transition:transform .25s ease,box-shadow .25s ease}
@@ -687,7 +689,7 @@ table.dates td{color:var(--ink-2)}
 .cta:active:not(:disabled){transform:scale(.99)}
 .home-h h2,.page-h h1,.page-h .view-title{display:flex;align-items:center;gap:11px}
 .home-h h2::before,.page-h h1::before,.page-h .view-title::before{content:"";flex:none;width:5px;height:.95em;border-radius:4px;background:var(--accent)}
-html.js-rv .rv{opacity:0;transform:translateY(20px)}
+html.js-rv .rv{opacity:.35;transform:translateY(13px)}
 html.js-rv .rv.rv-in{opacity:1;transform:translateY(0);transition:opacity .65s ease-out,transform .65s ease-out}
 @media (prefers-reduced-motion:reduce){
   html.js-rv .rv{opacity:1;transform:none;transition:none}

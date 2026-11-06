@@ -1460,7 +1460,7 @@
     }, d + 700);
   }
   function scan() {
-    var nodes = document.querySelectorAll('section.home:not([data-rv]), .gcard:not([data-rv]), .tcard:not([data-rv])');
+    var nodes = document.querySelectorAll('section.home:not([data-rv]), .gcard:not([data-rv]), .tcard:not([data-rv]), .ecard:not([data-rv]), .trust-strip:not([data-rv]), .facts:not([data-rv]), .timeline:not([data-rv]), .kit:not([data-rv]), .dd:not([data-rv]), table.dates:not([data-rv])');
     var list = [];
     var i, el, p, nested;
     for (i = 0; i < nodes.length; i++) list.push(nodes[i]);
@@ -1499,4 +1499,31 @@
     mo.observe(document.body, { childList: true, subtree: true });
     setTimeout(function () { mo.disconnect(); }, 20000);
   }
+})();
+
+/* ---------------- exam centre: live countdown chips ----------------
+   Decorative only: each [data-cd] chip carries an ISO target written by
+   build.py; the static text already says the date / days left, this just
+   swaps in a per-second tick and hides the chip once the moment passes. */
+(function () {
+  var chips = document.querySelectorAll('[data-cd]');
+  if (!chips.length) return;
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function tick() {
+    var now = Date.now();
+    for (var i = 0; i < chips.length; i++) {
+      var chip = chips[i];
+      if (chip.hidden) continue;
+      var t = Date.parse(chip.getAttribute('data-cd'));
+      var ms = t - now;
+      if (isNaN(t) || ms <= 0) { chip.hidden = true; continue; }
+      var out = chip.querySelector('.cd-time');
+      if (!out) continue;
+      var s = Math.floor(ms / 1000), d = Math.floor(s / 86400);
+      out.textContent = (d > 0 ? d + 'd ' : '') + pad(Math.floor(s % 86400 / 3600)) + ':' +
+        pad(Math.floor(s % 3600 / 60)) + ':' + pad(s % 60);
+    }
+  }
+  tick();
+  setInterval(tick, 1000);
 })();

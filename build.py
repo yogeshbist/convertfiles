@@ -266,6 +266,57 @@ def days_left_text(iso, lang='en'):
     return '\u092c\u0902\u0926 \u0939\u094b \u0917\u092f\u093e' if hi else 'Closed'
 
 
+def next_deadline(e=None):
+    """Soonest upcoming form deadline as (exam, date, kind, target) or None.
+    kind is 'apply_end', 'correction_start' or 'correction_end'; target is
+    the ISO datetime the countdown runs to (IST). With no exam given, every
+    exam in EXAMS is searched."""
+    today = datetime.date.today()
+    best = None
+    for x in ([e] if e else EXAMS):
+        d = x['dates']
+        cands = [('apply_end', d['apply_end'], 'T23:59:59+05:30')]
+        if not x.get('no_correction'):
+            if d.get('correction_start'):
+                cands.append(('correction_start', d['correction_start'], 'T00:00:00+05:30'))
+            if d.get('correction_end'):
+                cands.append(('correction_end', d['correction_end'], 'T23:59:59+05:30'))
+        for kind, iso, tod in cands:
+            day = datetime.date.fromisoformat(iso)
+            if day < today:
+                continue
+            if best is None or day < best[1]:
+                best = (x, day, kind, iso + tod)
+    return best
+
+
+_CD_LABELS = {
+    'apply_end': ('Last date', '\u0905\u0902\u0924\u093f\u092e \u0924\u093f\u0925\u093f'),
+    'correction_start': ('Correction opens', 'Correction \u0936\u0941\u0930\u0942'),
+    'correction_end': ('Correction last date', 'Correction \u0905\u0902\u0924\u093f\u092e \u0924\u093f\u0925\u093f'),
+}
+
+
+def cd_chip(e, lang):
+    """Live countdown chip for an exam hero: the hub (e=None) counts to the
+    nearest deadline across all exams, a detail page to that exam's own next
+    deadline. Static text is the existing days-left / date wording; js/app.js
+    swaps in a per-second tick and hides the chip once the moment passes.
+    Empty string when nothing is upcoming."""
+    found = next_deadline(e)
+    if not found:
+        return ''
+    x, day, kind, target = found
+    label = _CD_LABELS[kind][1 if lang == 'hi' else 0]
+    static = (days_left_text(x['dates']['apply_end'], lang) if kind == 'apply_end'
+              else dstr(x['dates'][kind], lang))
+    if e is None:
+        label = '<b>%s</b> \u00b7 %s' % (esc(x[lang]['name']), label)
+    return ('<div class="cd-chip" data-cd="%s"><span class="cd-dot"></span>'
+            '<span class="cd-txt">%s: <span class="cd-time">%s</span></span></div>'
+            % (target, label, static))
+
+
 def exam_path(e, lang):
     return ('hi/exam-forms/%s/' if lang == 'hi' else 'exam-forms/%s/') % e['slug']
 
@@ -697,7 +748,9 @@ def exam_card(e, lang, mini=False):
         cells.append(('\u0915\u0941\u0932 \u092a\u0926' if hi else 'Total posts', '{:,}'.format(e['posts'])))
     if c.get('qual'):
         cells.append(('\u092f\u094b\u0917\u094d\u092f\u0924\u093e' if hi else 'Qualification', esc(c['qual'])))
-    last = dstr(e['dates']['apply_end'], lang) + ' \u00b7 ' + days_left_text(e['dates']['apply_end'], lang)
+    _dl = (datetime.date.fromisoformat(e['dates']['apply_end']) - datetime.date.today()).days
+    last = (dstr(e['dates']['apply_end'], lang) + ' \u00b7 <span class="dl%s">%s</span>'
+            % (' hot' if 0 <= _dl <= 3 else '', days_left_text(e['dates']['apply_end'], lang)))
     cells.append(('\u0905\u0902\u0924\u093f\u092e \u0924\u093f\u0925\u093f' if hi else 'Last date', last))
     if c.get('fees_short'):
         cells.append(('\u0936\u0941\u0932\u094d\u0915' if hi else 'Fee', esc(c['fees_short'])))
@@ -860,7 +913,7 @@ def exam_detail(e, lang):
     page = page.replace('<h1>Free Online File Converter</h1>', '<h1>%s</h1>' % esc(c['name']))
     page = page.replace(HERO_P, '<p>%s \u00b7 %s \u00b7 <b>%s</b> \u00b7 %s %s</p>' % (
         esc(e['board_hi' if hi else 'board_en']), esc(e['advt']), esc(status),
-        'अंतिम तिथि' if hi else 'Last date', dstr(d['apply_end'], lang)))
+        'अंतिम तिथि' if hi else 'Last date', dstr(d['apply_end'], lang)) + cd_chip(e, lang))
     write(path + 'index.html', hide_converter(strip_home(page)))
 
 
@@ -927,9 +980,9 @@ for _lang in ('en', 'hi'):
         _hp = _hp.replace('<html lang="en">', '<html lang="hi">', 1)
     _hp = replace_block(_hp, 'page:body', '\n'.join(_hb))
     _hp = _hp.replace('<h1>Free Online File Converter</h1>', '<h1>%s</h1>' % _hub_name)
-    _hp = _hp.replace(HERO_P, '<p>%s</p>' % (
+    _hp = _hp.replace(HERO_P, ('<p>%s</p>' % (
         '%d परीक्षाएँ, अंतिम तिथि के क्रम में — फॉर्म, correction और result, सबके update यहीं।' % len(EXAMS) if _hi else
-        '%d exams, sorted by last date — forms, corrections and results, all tracked here.' % len(EXAMS)))
+        '%d exams, sorted by last date — forms, corrections and results, all tracked here.' % len(EXAMS))) + cd_chip(None, _lang))
     write(_hub_path + 'index.html', hide_converter(strip_home(_hp)))
 
 # ------------------------------------------------------------- tool pages

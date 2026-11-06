@@ -664,3 +664,29 @@ html.js-rv .rv.rv-in{opacity:1;transform:translateY(0);transition:opacity .65s e
   html.js-rv .rv{opacity:1;transform:none;transition:none}
   .gcard:hover,.tcard:hover,.kitcard:hover,.ecard:hover{transform:none}
 }
+
+/* ---------- cinematic exam centre (2026-11-06): live countdown chip in the
+   hero, days-left emphasis, a gentle card tilt, and the Form -> Result
+   journey stepping in on scroll. Reveal pre-states ride on the existing
+   html.js-rv gate — with JS off, no observer, or reduced motion requested,
+   everything is simply visible; converter panels are never touched. */
+.cd-chip{display:inline-flex;align-items:center;gap:9px;margin-top:18px;background:var(--surface);border:1px solid var(--line-2);border-radius:99px;padding:8px 16px;font-size:13.5px;font-weight:600;color:var(--ink-2);box-shadow:var(--shadow);max-width:100%}
+.cd-chip b{color:var(--ink)}
+.cd-chip .cd-time{font-family:var(--mono);font-weight:700;color:var(--accent-d);font-variant-numeric:tabular-nums;white-space:nowrap}
+.cd-dot{width:8px;height:8px;border-radius:50%;background:var(--ok);flex:none;animation:cd-pulse 1.6s ease-in-out infinite}
+@keyframes cd-pulse{0%,100%{opacity:1}50%{opacity:.3}}
+@media (prefers-reduced-motion:no-preference){ .hero .cd-chip{animation:cf-rise .8s ease-out .55s both} }
+.ecell .dl{color:var(--accent-d);font-weight:700}
+.ecell .dl.hot{color:var(--err)}
+.ecard:hover{transform:translateY(-5px) rotate(.35deg)}
+html.js-rv .timeline.rv .tl-step{opacity:.3;transform:translateY(10px)}
+html.js-rv .timeline.rv.rv-in .tl-step{opacity:1;transform:none;transition:opacity .45s ease-out,transform .45s ease-out}
+html.js-rv .timeline.rv.rv-in .tl-step:nth-child(2){transition-delay:.05s}
+html.js-rv .timeline.rv.rv-in .tl-step:nth-child(3){transition-delay:.1s}
+html.js-rv .timeline.rv.rv-in .tl-step:nth-child(4){transition-delay:.15s}
+html.js-rv .timeline.rv.rv-in .tl-step:nth-child(5){transition-delay:.2s}
+@media (prefers-reduced-motion:reduce){
+  .cd-dot{animation:none}
+  .ecard:hover{transform:none}
+  html.js-rv .timeline.rv .tl-step{opacity:1;transform:none;transition:none}
+}

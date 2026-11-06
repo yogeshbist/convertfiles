@@ -986,7 +986,7 @@ for _lang in ('en', 'hi'):
     _hfaq_html = ('<h2>%s</h2><dl class="faq-list">%s</dl>' % (
         'आम सवाल' if _hi else 'Questions',
         ''.join('<dt>%s</dt><dd>%s</dd>' % (esc(q), esc(a)) for q, a in _hfaqs)))
-    _hb = ['<section class="seo hub">', _hc,
+    _hb = ['<section class="seo hub exam-hub">', _hc,
            '<p class="lead">%s</p>' % (
                'अभी खुले हुए सभी बड़े सरकारी परीक्षा फॉर्म, अंतिम तिथि के क्रम में — हर परीक्षा की तारीखें, शुल्क, correction window, फोटो-हस्ताक्षर के size, फाइलें तैयार करने के फ्री टूल और आधिकारिक apply link। सब कुछ एक ही जगह, बिल्कुल फ्री। किसी परीक्षा पर click करो, पूरी जानकारी का पेज खुलेगा।' if _hi else
                'Every big sarkari exam form that is open right now, sorted by last date — each exam\u2019s dates, fees, correction window, photo-signature sizes, free tools to prepare your files, and the official apply link. Everything in one place, all free. Click an exam for its full page.'),

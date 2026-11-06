@@ -1095,6 +1095,16 @@
     ins.setAttribute('data-ad-format', 'auto');
     ins.setAttribute('data-full-width-responsive', 'true');
     box.appendChild(ins);
+    // Fallback for browsers without :has — hide the slot once Google marks
+    // the unit unfilled, so its white iframe never shows on the dark theme.
+    if (root.MutationObserver) {
+      var watch = new MutationObserver(function () {
+        var st = ins.getAttribute('data-ad-status');
+        if (st === 'unfilled') { box.classList.add('ad-empty'); watch.disconnect(); }
+        else if (st) { watch.disconnect(); }
+      });
+      watch.observe(ins, { attributes: true, attributeFilter: ['data-ad-status'] });
+    }
     try { (root.adsbygoogle = root.adsbygoogle || []).push({}); } catch (e) {}
   }
   // Static landing pages and guide pages tell the app what to open.

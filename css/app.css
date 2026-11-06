@@ -337,6 +337,12 @@ body:has(.sticky:not([hidden])) main{padding-bottom:150px}
 /* ---------- ads (only when configured) ---------- */
 .ad{margin-top:22px;min-height:90px;display:flex;justify-content:center;align-items:center;background:var(--surface);border-radius:var(--r-lg);overflow:hidden}
 .ad ins{display:block;width:100%}
+/* An unfilled unit paints a bright white iframe; collapse the whole slot in
+   that state (the ins is a direct child of .ad — see adUnit in js/app.js).
+   Filled units get data-ad-status="filled" and display normally. */
+.ad:has(> ins.adsbygoogle[data-ad-status="unfilled"]){display:none}
+.ad.ad-empty{display:none}
+ins.adsbygoogle[data-ad-status="unfilled"]{display:none}
 .ad-label{display:block;text-align:center;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
 
 /* ---------- landing & hub page content ---------- */

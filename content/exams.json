@@ -7178,5 +7178,240 @@
         }
       ]
     }
+  },
+  {
+    "advt": "RRC/NR/03/2026/Act Apprentice",
+    "board_en": "Railway Recruitment Cell (RRC), Northern Railway, New Delhi",
+    "board_hi": "रेलवे भर्ती सेल (RRC), उत्तर रेलवे, नई दिल्ली",
+    "dates": {
+      "apply_end": "2026-12-11",
+      "apply_start": "2026-11-11",
+      "correction_end": null,
+      "correction_start": null,
+      "exam": null,
+      "fee_end": "2026-12-11"
+    },
+    "en": {
+      "checklist": [
+        "Photo, signature and left thumb impression ready — each JPG, 10-50 KB",
+        "Class 10 marksheet and certificate scanned (50% or more in aggregate)",
+        "Consolidated ITI marksheet of all semesters and the National Trade Certificate scanned",
+        "Caste certificate / PwBD certificate / Ex-SM discharge certificate scanned, if applicable",
+        "Mobile number and email ID ready — the login password comes by email and SMS after registration",
+        "Debit card / UPI ready for the ₹100 fee, if applicable"
+      ],
+      "documents": [
+        "Date-of-birth proof — Class 10 certificate or DOB certificate",
+        "Class 10 marksheet and certificate (at least 50% aggregate)",
+        "Consolidated ITI marksheet of all semesters of the trade applied for",
+        "National Trade Certificate issued by NCVT/SCVT, with marksheet",
+        "Caste certificate (SC/ST/OBC) in the prescribed format, if applicable",
+        "PwBD disability certificate / Ex-SM discharge certificate, if applicable"
+      ],
+      "donts": [
+        "Do not submit more than one application — the notice says ALL applications of such a candidate will be rejected, with no fee refund.",
+        "Do not expect a correction window — no change of any kind is allowed after final submission.",
+        "Do not wear goggles, a cap or a wig in the photograph.",
+        "Do not sign in CAPITAL letters only.",
+        "Do not treat this training as a promise of a railway job."
+      ],
+      "dos": [
+        "Keep the photo, signature and thumb impression each inside 10-50 KB in JPG format — one single band for all three.",
+        "Choose your cluster, unit and trade carefully — slots are cluster, unit and trade specific, and only one application is allowed.",
+        "Calculate your Class 10 and ITI percentages exactly as printed on the certificates — the merit list is the straight average of the two.",
+        "Apply well before the last date — the RRC itself warns that the website gets busy in the final days.",
+        "Save and print the submitted application and the fee payment slip for your records."
+      ],
+      "eligibility": [
+        "Age: you should have completed 15 years and should not have completed 24 years as on 11 December 2026. Relaxations as per the notice — SC/ST 5 years, OBC 3 years, PwBD 10 years.",
+        "Education: Class 10 (SSC/Matriculation) with at least 50% marks in aggregate from a recognised board, plus ITI in the relevant trade issued by NCVT/SCVT. Candidates still awaiting their Class 10 or ITI result on the notification date are NOT eligible.",
+        "Slots by cluster: Lucknow 1,525, Delhi 1,312, Ambala 979, Firozpur 740, Moradabad 63, Jammu 32 — 4,651 training slots in all for 2026-27.",
+        "Selection is purely by merit — the simple average of your Class 10 percentage and ITI percentage, giving equal weightage to both. There is NO written exam and NO interview. The merit list is prepared cluster, trade and community-wise; ties go to the older candidate, then to whoever passed Class 10 earlier.",
+        "The merit list is expected in February 2027. Training period and stipend are as per the extant rules applicable."
+      ],
+      "extra_faq": [
+        {
+          "a": "No. Selection is purely on merit — a merit list from the average of your Class 10 percentage and ITI percentage with equal weightage to both, prepared cluster, trade and community-wise, followed by document verification. The merit list is expected in February 2027.",
+          "q": "Is there any written exam or interview for Northern Railway apprentice?"
+        },
+        {
+          "a": "No. These are Act Apprentice training slots under the Apprentices Act, 1961, and the notice itself says the training does not confer any right to absorption in the Railways.",
+          "q": "Will I get a railway job after this training?"
+        },
+        {
+          "a": "The fee is ₹100, paid online, and it is not refunded. SC, ST, PwBD and women candidates pay no fee. The last date to apply and pay is 11 December 2026 (11:59 PM).",
+          "q": "How much is the fee, and who is exempt?"
+        },
+        {
+          "a": "No. One candidate can submit only one application — if multiple applications are received, all of them are summarily rejected. No change is allowed after final submission either.",
+          "q": "Can I submit two applications or apply for two clusters?"
+        }
+      ],
+      "fees": [
+        "₹100 for General, OBC and EWS candidates, paid online as part of the form — the fee is not refunded.",
+        "No fee for SC, ST, PwBD and women candidates.",
+        "Last date to apply and pay the fee: 11 December 2026 (11:59 PM)."
+      ],
+      "fees_short": "₹100 · SC/ST/PwBD/Women: Free",
+      "kit": [
+        {
+          "text": "Photo JPG me 10-50 KB chahiye. Target 30 KB rakho — band ke beech me, portal par file atkti nahi.",
+          "title": "Photo 10-50 KB ke beech rakho",
+          "tool": "compress-image"
+        },
+        {
+          "text": "Safed kagaz par running hand me sign karke scan karo aur 10-50 KB ke andar rakho — CAPITAL letters wala sign reject ho sakta hai.",
+          "title": "Signature 10-50 KB me rakho",
+          "tool": "compress-image"
+        },
+        {
+          "text": "Left thumb impression bhi JPG me 10-50 KB chahiye — saaf dabaa hua thumb scan karke yahan size set karo.",
+          "title": "Thumb impression 10-50 KB me rakho",
+          "tool": "compress-image"
+        }
+      ],
+      "mistakes": [
+        "Submitting two applications — the notice rejects every application of that candidate.",
+        "Trying to fix an error after final submission — no change is allowed afterwards, so check everything before you submit.",
+        "A photo with goggles, a cap or a wig, or a signature in capital letters — all are listed rejection grounds in the notice.",
+        "Counting the Class 10 or ITI percentage wrongly — merit is the straight average of the two, so one wrong figure drops the rank."
+      ],
+      "name": "RRC Northern Railway Apprentice",
+      "qual": "10th (50%) + ITI",
+      "specs": [
+        "Photograph: JPG format, 10-50 KB.",
+        "Signature: JPG format, 10-50 KB — sign in running hand; a signature in capital letters is a listed rejection ground.",
+        "Left thumb impression (LHT): JPG format, 10-50 KB.",
+        "The notice rejects applications whose photo shows the candidate wearing goggles, a cap or a wig — use a clear, recent, front-facing photo."
+      ],
+      "steps": [
+        "Open rrcnr.org and read Notification RRC/NR/03/2026/Act Apprentice fully.",
+        "Register with your name, father's name, community/category, mobile number, email ID and date of birth — the password arrives by email and SMS.",
+        "Log in to the candidate dashboard and fill the application form; choose your cluster, unit and trade carefully.",
+        "Pay the ₹100 fee online if applicable (SC/ST/PwBD/Women pay nothing).",
+        "Upload the photo, signature and left thumb impression (each JPG, 10-50 KB) and the certificates.",
+        "Submit by 11 December 2026, 11:59 PM and save or print the application and fee payment slip."
+      ],
+      "tagline": "4,651 Act Apprentice slots across six Northern Railway clusters — Lucknow 1,525, Delhi 1,312, Ambala 979, Firozpur 740, Moradabad 63, Jammu 32. Forms open 11 November; last date 11 December 2026."
+    },
+    "guide": {
+      "en": null,
+      "hi": null
+    },
+    "hi": {
+      "checklist": [
+        "Photo, signature aur bayein angoothe ka nishan taiyaar — har ek JPG, 10-50 KB",
+        "Class 10 ki marksheet aur certificate scan (kul 50% ya zyada)",
+        "ITI ke sabhi semesters ki consolidated marksheet aur National Trade Certificate scan",
+        "Jaati praman-patra / PwBD praman-patra / Ex-SM discharge certificate scan, yadi laagu ho",
+        "Mobile number aur email ID taiyaar — registration ke baad login password email aur SMS se aata hai",
+        "₹100 fee ke liye debit card / UPI taiyaar, yadi laagu ho"
+      ],
+      "documents": [
+        "Janm-tithi ka saboot — Class 10 certificate ya DOB certificate",
+        "Class 10 ki marksheet aur certificate (kam se kam 50% kul ank)",
+        "Aavedan wale trade ke sabhi semesters ki consolidated ITI marksheet",
+        "NCVT/SCVT dwara jaari National Trade Certificate, marksheet ke saath",
+        "Nirdharit format me jaati praman-patra (SC/ST/OBC), yadi laagu ho",
+        "PwBD divyangta praman-patra / Ex-SM discharge certificate, yadi laagu ho"
+      ],
+      "donts": [
+        "Ek se zyada aavedan mat karo — notice kehta hai ki aise ummeedwar ke SAARE aavedan reject ho jayenge aur fee bhi wapas nahi milegi.",
+        "Correction window ki ummeed mat rakho — final submission ke baad kisi bhi tarah ka badlav nahi hota.",
+        "Photo me goggles, topi ya wig mat rakho.",
+        "Sirf CAPITAL aksharon me sign mat karo.",
+        "Is training ko railway ki pakki naukri ka vaada mat samjho."
+      ],
+      "dos": [
+        "Photo, signature aur thumb impression — teeno ko JPG me 10-50 KB ke andar rakho; teeno ke liye ek hi band hai.",
+        "Cluster, unit aur trade dhyaan se chuno — slots cluster, unit aur trade ke hisaab se hain, aur sirf ek hi aavedan chalega.",
+        "Class 10 aur ITI ke percentage certificate par chhape ankon ke hisaab se hi nikalo — merit list dono ke seedhe ausat se banti hai.",
+        "Aakhiri tareekh se kaafi pehle apply karo — RRC khud kehta hai ki aakhiri dinon me website vyast ho jaati hai.",
+        "Submit kiye gaye aavedan aur fee payment slip ka print/save karke rakho."
+      ],
+      "eligibility": [
+        "Umar: 11 December 2026 ko 15 saal poore ho chuke hon aur 24 saal poore na hue hon. Notice ke anusaar chhoot — SC/ST 5 saal, OBC 3 saal, PwBD 10 saal.",
+        "Padhai: maanyata-praapt board se Class 10 (SSC/Matriculation) me kul kam se kam 50% ank, saath me sambandhit trade me NCVT/SCVT ka ITI. Jin ummeedwaron ka Class 10 ya ITI result notification ki tareekh tak aana baaki hai, ve eligible NAHI hain.",
+        "Cluster ke hisaab se slots: Lucknow 1,525, Delhi 1,312, Ambala 979, Firozpur 740, Moradabad 63, Jammu 32 — 2026-27 ke liye kul 4,651 training slots.",
+        "Chayan poori tarah merit par hai — Class 10 ke percentage aur ITI ke percentage ka seedha ausat, dono ko barabar weightage. KOI likhit pariksha nahi hai aur KOI interview nahi hai. Merit list cluster, trade aur community ke hisaab se banti hai; barabari par bade umar wala pehle, phir Class 10 pehle pass karne wala.",
+        "Merit list February 2027 me apekshit hai. Training ki avadhi aur stipend prachalit niyamon ke anusaar hoga."
+      ],
+      "extra_faq": [
+        {
+          "a": "Nahi. Chayan poori tarah merit par hai — Class 10 ke percentage aur ITI ke percentage ke ausat (dono ko barabar weightage) se merit list banti hai, cluster, trade aur community ke hisaab se, phir document verification hota hai. Merit list February 2027 me apekshit hai.",
+          "q": "Kya Northern Railway apprentice ke liye koi likhit pariksha ya interview hai?"
+        },
+        {
+          "a": "Nahi. Ye Apprentices Act, 1961 ke tahat Act Apprentice training slots hain, aur notice khud kehta hai ki training se Railways me absorption ka koi adhikar nahi milta.",
+          "q": "Kya is training ke baad railway me naukri milegi?"
+        },
+        {
+          "a": "Fee ₹100 hai, online deni hai aur wapas nahi hoti. SC, ST, PwBD aur mahila ummeedwaron ka koi fee nahi hai. Aavedan aur fee ki aakhiri tareekh 11 December 2026 (raat 11:59) hai.",
+          "q": "Fee kitni hai aur kin ka fee nahi hai?"
+        },
+        {
+          "a": "Nahi. Ek ummeedwar sirf ek hi aavedan kar sakta hai — ek se zyada aavedan milne par saare aavedan reject ho jaate hain. Final submission ke baad koi badlav bhi nahi hota.",
+          "q": "Kya main do aavedan ya do clusters ke liye apply kar sakta hoon?"
+        }
+      ],
+      "fees": [
+        "General, OBC aur EWS ummeedwaron ke liye ₹100 — online form ke saath hi dena hai, fee wapas nahi hoti.",
+        "SC, ST, PwBD aur mahila ummeedwaron ka koi fee nahi hai.",
+        "Aavedan aur fee ki aakhiri tareekh: 11 December 2026 (raat 11:59)."
+      ],
+      "fees_short": "₹100 · SC/ST/PwBD/Women: Free",
+      "kit": [
+        {
+          "text": "Photo JPG me 10-50 KB chahiye. Target 30 KB rakho — band ke beech me, portal par file atkti nahi.",
+          "title": "Photo 10-50 KB ke beech rakho",
+          "tool": "compress-image"
+        },
+        {
+          "text": "Safed kagaz par running hand me sign karke scan karo aur 10-50 KB ke andar rakho — CAPITAL aksharon wala sign reject ho sakta hai.",
+          "title": "Signature 10-50 KB me rakho",
+          "tool": "compress-image"
+        },
+        {
+          "text": "Bayein angoothe ka nishan bhi JPG me 10-50 KB chahiye — saaf dabaa hua thumb scan karke yahan size set karo.",
+          "title": "Thumb impression 10-50 KB me rakho",
+          "tool": "compress-image"
+        }
+      ],
+      "mistakes": [
+        "Do aavedan karna — notice us ummeedwar ke har aavedan ko reject karta hai.",
+        "Final submission ke baad galti sudhaarne ki koshish — uske baad koi badlav nahi hota, isliye submit se pehle sab kuch jaanch lo.",
+        "Goggles/topi/wig wali photo, ya CAPITAL aksharon wala signature — notice me ye sab rejection ki wajahen gini gayi hain.",
+        "Class 10 ya ITI ka percentage galat nikalna — merit dono ka seedha ausat hai, ek galat ank rank gira deta hai."
+      ],
+      "name": "RRC Northern Railway Apprentice",
+      "qual": "10वीं (50%) + ITI",
+      "specs": [
+        "Photo: JPG format, 10-50 KB.",
+        "Signature: JPG format, 10-50 KB — running hand me sign karo; CAPITAL aksharon wala signature rejection ki wajahon me gina gaya hai.",
+        "Bayein angoothe ka nishan (LHT): JPG format, 10-50 KB.",
+        "Notice ke anusaar goggles, topi ya wig pehenkar li gayi photo wala aavedan reject hota hai — saaf, taazi, saamne se li hui photo lagao."
+      ],
+      "steps": [
+        "rrcnr.org kholo aur Notification RRC/NR/03/2026/Act Apprentice poora padho.",
+        "Apna naam, pita ka naam, samudaay/shreni, mobile number, email ID aur janm-tithi se registration karo — password email aur SMS se aayega.",
+        "Candidate dashboard me login karke aavedan form bharo; cluster, unit aur trade dhyaan se chuno.",
+        "Laagu ho to ₹100 fee online bharo (SC/ST/PwBD/Women ka koi fee nahi).",
+        "Photo, signature aur bayein angoothe ka nishan (har ek JPG, 10-50 KB) aur praman-patra upload karo.",
+        "11 December 2026 raat 11:59 se pehle submit karo aur aavedan va fee slip ka print/save rakho."
+      ],
+      "tagline": "Uttar Railway ke chhah clusters me 4,651 Act Apprentice slots — Lucknow 1,525, Delhi 1,312, Ambala 979, Firozpur 740, Moradabad 63, Jammu 32. Form 11 November se; aakhiri tareekh 11 December 2026."
+    },
+    "links": {
+      "apply": "https://rrcnr.org/",
+      "notice": "https://rrcnr.org/downloads/Notification_Act_Appretice_2026.pdf",
+      "site": "https://rrcnr.org/"
+    },
+    "no_correction": true,
+    "note_en": "This is Act Apprentice training under the Apprentices Act, 1961 — not a railway job. The notice itself says the training does not confer any right to absorption in the Railways.",
+    "note_hi": "यह Apprentices Act, 1961 के तहत Act Apprentice training है — railway ki naukri nahi. Notice me saaf likha hai ki training se Railways me absorption ka koi adhikar nahi milta.",
+    "photo_kind": "upload",
+    "portal": "rrcnr.org",
+    "posts": 4651,
+    "slug": "rrc-northern-railway-apprentice"
   }
 ]

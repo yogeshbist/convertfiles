@@ -474,7 +474,8 @@
     "h:Make the signature the right size",
     "p:Sign on plain white paper with a black or blue pen — a normal running signature, not block capitals. Photograph it in good light or scan it, crop close to the ink, and compress it to the 10–20 KB band the same way. Check the preview before you upload: blurred, tiny, or tilted signatures are among the top reasons forms get rejected, alongside files outside the KB band and the wrong format (PNG or HEIC instead of JPG).",
     "h:Do it without uploading anything",
-    "p:Exam documents are identity documents, and uploading them to a random converter is exactly the kind of thing you should not do. Everything here runs inside your browser: the photo never leaves your device, there is no account, and nothing is stored. Compress, download, upload to the portal, done."
+    "p:Exam documents are identity documents, and uploading them to a random converter is exactly the kind of thing you should not do. Everything here runs inside your browser: the photo never leaves your device, there is no account, and nothing is stored. Compress, download, upload to the portal, done.",
+    "p:Applying this season? The <a href=\"/exam-forms/\">Exam Form Centre — sarkari exam forms, last dates and photo-signature sizes</a> lists every open government exam form in one place, sorted by last date — check your exam’s exact photo-signature size, fees and deadline there before you start."
    ],
    "tryUrl": "/compress-image-to-50kb/"
   },
@@ -499,7 +500,8 @@
     "h:हस्ताक्षर को सही साइज़ में बनाएं",
     "p:सादे सफेद कागज़ पर काले या नीले पेन से सामान्य हस्ताक्षर करें — कैपिटल अक्षरों में नहीं। अच्छी रोशनी में फोटो लें या स्कैन करें, स्याही के पास से क्रॉप करें, और उसी तरह 10–20 KB में कंप्रेस करें। अपलोड से पहले प्रीव्यू ज़रूर देखें: धुंधले, बहुत छोटे या टेढ़े हस्ताक्षर, गलत KB, और गलत फॉर्मेट (JPG की जगह PNG या HEIC) रिजेक्शन के सबसे आम कारण हैं।",
     "h:बिना अपलोड किए करें",
-    "p:परीक्षा के दस्तावेज़ पहचान के दस्तावेज़ होते हैं — इन्हें किसी अनजान कन्वर्टर पर अपलोड करना ठीक नहीं। यहां सब कुछ आपके ब्राउज़र में होता है: फोटो आपके डिवाइस से बाहर नहीं जाती, कोई अकाउंट नहीं, कुछ स्टोर नहीं होता। कंप्रेस करें, डाउनलोड करें, पोर्टल पर अपलोड करें — हो गया।"
+    "p:परीक्षा के दस्तावेज़ पहचान के दस्तावेज़ होते हैं — इन्हें किसी अनजान कन्वर्टर पर अपलोड करना ठीक नहीं। यहां सब कुछ आपके ब्राउज़र में होता है: फोटो आपके डिवाइस से बाहर नहीं जाती, कोई अकाउंट नहीं, कुछ स्टोर नहीं होता। कंप्रेस करें, डाउनलोड करें, पोर्टल पर अपलोड करें — हो गया।",
+    "p:इस season form भर रहे हो? <a href=\"/hi/exam-forms/\">परीक्षा फॉर्म केंद्र — सरकारी परीक्षा फॉर्म, अंतिम तिथि और फोटो-हस्ताक्षर size</a> पर हर खुला सरकारी परीक्षा फॉर्म एक जगह, अंतिम तिथि के क्रम में मिलता है — शुरू करने से पहले अपनी परीक्षा का सही size, शुल्क और अंतिम तिथि वहाँ देख लो।"
    ],
    "tryUrl": "/compress-image-to-50kb/"
   },

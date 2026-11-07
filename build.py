@@ -438,6 +438,8 @@ for _e in EXAMS_SORTED[:4]:
                '<h3>%s</h3><p>%s</p><span class="rt">%s</span></a>'
                % (_e['slug'], esc(_e['advt']), _cls, esc(_status), esc(_c['name']), esc(_c['tagline']), ' \u00b7 '.join(_facts)))
 index = replace_block(index, 'home:exams', ''.join(_ec))
+index = re.sub(r'(<a class="btn sm" href="/exam-forms/">)(?:All exams|See all \d+ sarkari exam forms)(</a>)',
+               r'\g<1>See all %d sarkari exam forms\g<2>' % len(EXAMS), index)
 open('index.html', 'w').write(index)
 GENERATED.append('index.html')
 BASE = index
@@ -737,6 +739,10 @@ def exam_faqs(e, lang):
 
 HUB_FAQS = {
     'en': [
+        ('Where can I see all sarkari exam forms in one place?',
+         'Right here. This page lists every big sarkari exam form that is open now — {count} exams at the moment — sorted by last date, with a live countdown to the next deadline at the top. The table below the cards shows every exam\u2019s last date, fee last date and correction window in one view.'),
+        ('Which sarkari forms are closing this week?',
+         'The cards are sorted by last date, so the forms closing soonest are always first, and the countdown at the top of this page shows the next deadline live. Each card also shows how many days are left, so you can see at a glance which forms close this week.'),
         ('Is Convert Files a government website?',
          'No. Convert Files is a free help platform. Every form is finally submitted only on the official government portal — we help you prepare: the right dates, the right file sizes, and free tools to make them.'),
         ('Will my form be submitted on this website?',
@@ -747,6 +753,10 @@ HUB_FAQS = {
          'No. Every tool runs inside your browser — your files never leave your device.'),
     ],
     'hi': [
+        ('सभी सरकारी परीक्षा फॉर्म एक जगह कहाँ देख सकते हैं?',
+         'यहीं, इसी पेज पर। यहाँ हर बड़ा सरकारी परीक्षा फॉर्म जो अभी खुला है — इस समय {count} परीक्षाएँ — अंतिम तिथि के क्रम में लगा है, और ऊपर live countdown अगले deadline तक का समय दिखाता है। Cards के नीचे वाली table में हर परीक्षा की अंतिम तिथि, शुल्क की अंतिम तिथि और correction window एक साथ दिखता है।'),
+        ('इस हफ्ते कौन से सरकारी फॉर्म बंद हो रहे हैं?',
+         'Cards अंतिम तिथि के क्रम में लगे हैं, इसलिए सबसे पहले बंद होने वाले फॉर्म हमेशा सबसे ऊपर रहते हैं — और पेज के ऊपर का live countdown अगला deadline दिखाता है। हर card पर यह भी दिखता है कि कितने दिन बचे हैं, तो एक नज़र में पता चल जाता है कि इस हफ्ते कौन से फॉर्म बंद हो रहे हैं।'),
         ('क्या Convert Files कोई सरकारी website है?',
          'नहीं। Convert Files एक फ्री मदद platform है। हर फॉर्म अंत में सिर्फ आधिकारिक सरकारी portal पर ही submit होता है — हम आपकी तैयारी में मदद करते हैं: सही तारीखें, सही file size, और उन्हें बनाने के फ्री टूल।'),
         ('क्या मेरा फॉर्म इसी website पर submit होगा?',
@@ -980,7 +990,7 @@ for _lang in ('en', 'hi'):
         'सभी परीक्षाओं की तारीखें — एक नज़र में' if _hi else 'All exam dates — at a glance',
         'परीक्षा' if _hi else 'Exam', 'अंतिम तिथि' if _hi else 'Last date',
         'शुल्क की अंतिम तिथि' if _hi else 'Fee last date', 'Correction', ''.join(_trows)))
-    _hfaqs = HUB_FAQS[_lang]
+    _hfaqs = [(q, a.replace('{count}', str(len(EXAMS)))) for q, a in HUB_FAQS[_lang]]
     _hfaq_ld = {'@context': 'https://schema.org', '@type': 'FAQPage',
                 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in _hfaqs]}
     _hfaq_html = ('<h2>%s</h2><dl class="faq-list">%s</dl>' % (
@@ -988,8 +998,8 @@ for _lang in ('en', 'hi'):
         ''.join('<dt>%s</dt><dd>%s</dd>' % (esc(q), esc(a)) for q, a in _hfaqs)))
     _hb = ['<section class="seo hub exam-hub">', _hc,
            '<p class="lead">%s</p>' % (
-               'अभी खुले हुए सभी बड़े सरकारी परीक्षा फॉर्म, अंतिम तिथि के क्रम में — हर परीक्षा की तारीखें, शुल्क, correction window, फोटो-हस्ताक्षर के size, फाइलें तैयार करने के फ्री टूल और आधिकारिक apply link। सब कुछ एक ही जगह, बिल्कुल फ्री। किसी परीक्षा पर click करो, पूरी जानकारी का पेज खुलेगा।' if _hi else
-               'Every big sarkari exam form that is open right now, sorted by last date — each exam\u2019s dates, fees, correction window, photo-signature sizes, free tools to prepare your files, and the official apply link. Everything in one place, all free. Click an exam for its full page.'),
+               'अभी खुले हुए सभी सरकारी परीक्षा फॉर्म एक ही जगह — हर सरकारी भर्ती के लिए online form की अंतिम तिथि, शुल्क, correction window, सही फोटो-हस्ताक्षर size और आधिकारिक apply link, साथ में apply करने से पहले फाइलें तैयार करने के फ्री टूल। बिना sign-up, बिल्कुल फ्री। किसी भी परीक्षा पर click करो — उसका पूरा पेज खुलेगा।' if _hi else
+               'Every sarkari exam form open right now, in one place — for each sarkari bharti: the online form\u2019s last date, fees, correction window, exact photo-signature size and the official apply link, plus free tools to prepare your files before you apply. No sign-up, nothing to pay. Click any exam for its full page.'),
            _trust,
            ''.join(_steps3),
            '<div class="exam-grid">' + ''.join(exam_card(_e, _lang) for _e in EXAMS_SORTED) + '</div>',
@@ -1005,10 +1015,10 @@ for _lang in ('en', 'hi'):
            '<link rel="alternate" hreflang="hi" href="%s/hi/exam-forms/">'
            '<link rel="alternate" hreflang="x-default" href="%s/exam-forms/">') % (DOMAIN, DOMAIN, DOMAIN)
     _hp = replace_block(BASE, 'page:meta', page_meta(
-        'परीक्षा फॉर्म केंद्र — सरकारी परीक्षा फॉर्म, तारीखें, शुल्क और फ्री फोटो-हस्ताक्षर टूल' if _hi else
-        'Exam Form Centre — Sarkari Exam Forms, Dates, Fees & Free Photo-Signature Tools',
-        'RRB NTPC, स्टेशन मास्टर, UP TGT, प्रिंसिपल, हेडमास्टर, UPSSSC लोअर PCS समेत सभी खुले सरकारी परीक्षा फॉर्म एक जगह — अंतिम तिथियाँ, correction window, शुल्क, फोटो-हस्ताक्षर के size और हर फाइल तैयार करने के फ्री टूल।' if _hi else
-        'All open government exam forms in one place — RRB NTPC, Station Master, UP TGT, Principal, Headmaster, UPSSSC Lower PCS and more. Last dates, correction windows, fees, photo-signature sizes and free tools to prepare every file.',
+        'सरकारी परीक्षा फॉर्म 2026 — सभी सरकारी भर्तियों के ऑनलाइन फॉर्म, अंतिम तिथि व फोटो-हस्ताक्षर साइज़ | ConvertFiles' if _hi else
+        'Sarkari Exam Forms 2026 — All Govt Exam Online Forms, Last Dates & Photo-Signature Size | ConvertFiles',
+        ('%d खुले सरकारी परीक्षा फॉर्म एक जगह — हर सरकारी भर्ती की अंतिम तिथि, शुल्क, correction window और सही फोटो-हस्ताक्षर size, साथ में फाइलें तैयार करने के फ्री टूल। बिल्कुल फ्री, बिना sign-up।' % len(EXAMS)) if _hi else
+        ('All %d open sarkari exam forms in one place — last dates, fees, correction windows and exact photo-signature sizes, with free tools to prepare every file. Free, no sign-up.' % len(EXAMS)),
         _hub_path, extra_meta=_hl, jsonld=[_hc_ld, _hfaq_ld]))
     if _hi:
         _hp = _hp.replace('<html lang="en">', '<html lang="hi">', 1)

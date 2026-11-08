@@ -579,13 +579,20 @@ main:has(.exam-hub){max-width:1600px}
 .exam-hub .exam-grid{grid-template-columns:repeat(3,1fr)}
 @media (max-width:1024px){.exam-hub .exam-grid{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:620px){.exam-hub .exam-grid{grid-template-columns:1fr}}
-/* Hub live search (js/app.js #examSearch): full-width box above the grid,
-   count line under it, dashed empty-state panel when nothing matches. */
-.exam-hub .exam-search{margin:14px 0 2px}
-.exam-hub .exam-search input{width:100%;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:13px 16px;font-size:15.5px;color:var(--ink);box-shadow:var(--shadow)}
-.exam-hub .exam-search input::placeholder{color:var(--muted)}
-.exam-hub .exam-search input:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 32%,transparent)}
-.exam-hub .exam-count{margin:8px 2px 0;font-size:13px;color:var(--muted)}
+/* Hub live search (js/app.js #examSearch): Yogesh 8 Nov — search sits at the
+   very top of the hub, just under the Exam Form Centre heading, as a WHITE
+   card that stands clearly apart from the dark Deep Slate theme (no gold).
+   Count line under the input, dashed empty-state panel when nothing matches. */
+.exam-hub .exam-search{margin:6px 0 18px;background:#fff;border:2px solid var(--accent);border-radius:var(--r-lg);padding:16px 18px 13px;box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 28%,transparent),0 18px 42px rgba(0,0,0,.5)}
+.exam-hub .exam-search-head{display:flex;align-items:center;gap:9px;color:#0F1620;font-size:17px;font-weight:800;line-height:1.35;margin:0 0 11px}
+.exam-hub .exam-search-head span:first-child{font-size:21px;line-height:1}
+.exam-hub .exam-search-box{position:relative}
+.exam-hub .exam-search-ic{position:absolute;left:15px;top:50%;transform:translateY(-50%);font-size:20px;line-height:1;pointer-events:none}
+.exam-hub .exam-search input{width:100%;background:#EFF6FB;border:2px solid #B9D6E8;border-radius:99px;padding:14px 18px 14px 48px;font-size:16.5px;color:#0F1620;box-shadow:inset 0 1px 3px rgba(15,22,32,.08)}
+.exam-hub .exam-search input::placeholder{color:#5B7186}
+.exam-hub .exam-search input:focus{border-color:#0284C7;background:#fff;outline:none;box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 35%,transparent)}
+.exam-hub .exam-count{margin:9px 2px 0;font-size:13.5px;font-weight:700;color:#0B5C85}
+.exam-hub .exam-search-hint{margin:3px 2px 0;font-size:12.5px;color:#5B7186}
 .exam-hub .exam-none{margin:4px 0 10px;background:var(--surface);border:1px dashed var(--line-2);border-radius:var(--r-lg);padding:22px;text-align:center;color:var(--ink-2)}
 .exam-hub .exam-none p{margin:0 0 12px}
 .ecard{background:linear-gradient(var(--accent),var(--accent)) left top/100% 4px no-repeat,var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px 20px;box-shadow:var(--shadow);color:inherit;display:flex;flex-direction:column;gap:8px;height:100%;transition:transform .25s ease,box-shadow .25s ease}

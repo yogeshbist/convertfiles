@@ -1006,27 +1006,34 @@ for _lang in ('en', 'hi'):
     _hfaq_html = ('<h2>%s</h2><dl class="faq-list">%s</dl>' % (
         'आम सवाल' if _hi else 'Questions',
         ''.join('<dt>%s</dt><dd>%s</dd>' % (esc(q), esc(a)) for q, a in _hfaqs)))
-    _search = ('<div class="exam-search"><input type="search" id="examSearch" autocomplete="off" '
-               'placeholder="%s" aria-label="%s">'
-               '<p class="exam-count" id="examCount" data-showing="%s">%s</p></div>' % (
+    _search = ('<div class="exam-search">'
+               '<div class="exam-search-head"><span aria-hidden="true">\U0001F50D</span><span>%s</span></div>'
+               '<div class="exam-search-box"><span class="exam-search-ic" aria-hidden="true">\U0001F50D</span>'
+               '<input type="search" id="examSearch" autocomplete="off" '
+               'placeholder="%s" aria-label="%s"></div>'
+               '<p class="exam-count" id="examCount" data-showing="%s">%s</p>'
+               '<p class="exam-search-hint">%s</p></div>' % (
+                   esc('अपनी exam खोजो — नाम लिखते ही नीचे सिर्फ़ वही exams दिखेंगी' if _hi else
+                       'Find your exam — start typing and the list below filters instantly'),
                    esc('Exam खोजें — जैसे NTPC, Police, Bank, Teacher…' if _hi else
                        'Search exams — try NTPC, Police, Bank, Teacher…'),
                    esc('Exam खोजें' if _hi else 'Search exams'),
                    esc('{n} में से {x} exam दिख रहे हैं' if _hi else 'Showing {x} of {n} exams'),
                    ('%d में से %d exam दिख रहे हैं' % (len(EXAMS), len(EXAMS))) if _hi else
-                   ('Showing %d of %d exams' % (len(EXAMS), len(EXAMS)))))
+                   ('Showing %d of %d exams' % (len(EXAMS), len(EXAMS))),
+                   'Popular: NTPC \u00b7 SSC \u00b7 Police \u00b7 Bank \u00b7 Teacher \u00b7 Railway'))
     _none = ('<div class="exam-none" id="examNone" hidden><p>%s</p>'
              '<button type="button" class="btn" id="examClear">%s</button></div>' % (
                  'आपकी search से कोई exam match नहीं हुआ। Board का नाम try करो — जैसे RRB, SSC, IBPS — या Police, Bank, Teacher जैसा शब्द।' if _hi else
                  'No exam matches your search. Try a board name like RRB, SSC, IBPS or a word like Police, Bank, Teacher.',
                  'Search साफ़ करो' if _hi else 'Clear search'))
     _hb = ['<section class="seo hub exam-hub">', _hc,
+           _search,
            '<p class="lead">%s</p>' % (
                'अभी खुले हुए सभी सरकारी परीक्षा फॉर्म एक ही जगह — हर सरकारी भर्ती के लिए online form की अंतिम तिथि, शुल्क, correction window, सही फोटो-हस्ताक्षर size और आधिकारिक apply link, साथ में apply करने से पहले फाइलें तैयार करने के फ्री टूल। बिना sign-up, बिल्कुल फ्री। किसी भी परीक्षा पर click करो — उसका पूरा पेज खुलेगा।' if _hi else
                'Every sarkari exam form open right now, in one place — for each sarkari bharti: the online form\u2019s last date, fees, correction window, exact photo-signature size and the official apply link, plus free tools to prepare your files before you apply. No sign-up, nothing to pay. Click any exam for its full page.'),
            _trust,
            ''.join(_steps3),
-           _search,
            '<div class="exam-grid">' + ''.join(exam_card(_e, _lang) for _e in EXAMS_SORTED) + '</div>',
            _none,
            _dates_tbl,

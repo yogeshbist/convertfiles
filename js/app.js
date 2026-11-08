@@ -1580,6 +1580,7 @@
   var count = document.getElementById('examCount');
   var none = document.getElementById('examNone');
   var clear = document.getElementById('examClear');
+  var go = document.getElementById('examGo');
   var cards = grid.querySelectorAll('.ecard');
   var total = cards.length;
   function apply() {
@@ -1602,10 +1603,17 @@
     if (none) none.hidden = shown !== 0;
   }
   input.addEventListener('input', apply);
+  input.addEventListener('keydown', function (ev) {
+    if (ev.key === 'Enter') { ev.preventDefault(); apply(); grid.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
   if (clear) clear.addEventListener('click', function () {
     input.value = '';
     apply();
     input.focus();
+  });
+  if (go) go.addEventListener('click', function () {
+    apply();
+    grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
   apply();
 })();

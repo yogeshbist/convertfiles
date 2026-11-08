@@ -1007,21 +1007,18 @@ for _lang in ('en', 'hi'):
         'आम सवाल' if _hi else 'Questions',
         ''.join('<dt>%s</dt><dd>%s</dd>' % (esc(q), esc(a)) for q, a in _hfaqs)))
     _search = ('<div class="exam-search">'
-               '<div class="exam-search-head"><span aria-hidden="true">\U0001F50D</span><span>%s</span></div>'
-               '<div class="exam-search-box"><span class="exam-search-ic" aria-hidden="true">\U0001F50D</span>'
+               '<div class="exam-search-pill"><span class="exam-search-ic" aria-hidden="true"><svg><use href="#i-search"/></svg></span>'
                '<input type="search" id="examSearch" autocomplete="off" '
-               'placeholder="%s" aria-label="%s"></div>'
-               '<p class="exam-count" id="examCount" data-showing="%s">%s</p>'
-               '<p class="exam-search-hint">%s</p></div>' % (
-                   esc('अपनी exam खोजो — नाम लिखते ही नीचे सिर्फ़ वही exams दिखेंगी' if _hi else
-                       'Find your exam — start typing and the list below filters instantly'),
+               'placeholder="%s" aria-label="%s">'
+               '<button type="button" class="exam-search-btn" id="examGo">%s</button></div>'
+               '<p class="exam-count" id="examCount" data-showing="%s">%s</p></div>' % (
                    esc('Exam खोजें — जैसे NTPC, Police, Bank, Teacher…' if _hi else
                        'Search exams — try NTPC, Police, Bank, Teacher…'),
                    esc('Exam खोजें' if _hi else 'Search exams'),
+                   'खोजें' if _hi else 'Search',
                    esc('{n} में से {x} exam दिख रहे हैं' if _hi else 'Showing {x} of {n} exams'),
                    ('%d में से %d exam दिख रहे हैं' % (len(EXAMS), len(EXAMS))) if _hi else
-                   ('Showing %d of %d exams' % (len(EXAMS), len(EXAMS))),
-                   'Popular: NTPC \u00b7 SSC \u00b7 Police \u00b7 Bank \u00b7 Teacher \u00b7 Railway'))
+                   ('Showing %d of %d exams' % (len(EXAMS), len(EXAMS)))))
     _none = ('<div class="exam-none" id="examNone" hidden><p>%s</p>'
              '<button type="button" class="btn" id="examClear">%s</button></div>' % (
                  'आपकी search से कोई exam match नहीं हुआ। Board का नाम try करो — जैसे RRB, SSC, IBPS — या Police, Bank, Teacher जैसा शब्द।' if _hi else

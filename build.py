@@ -781,6 +781,16 @@ def _corr_value(e, lang):
     return ('%s \u0924\u0915' % dstr(d['correction_end'], 'hi')) if lang == 'hi' else ('till %s' % dstr(d['correction_end']))
 
 
+def _search_text(e):
+    """Lowercase searchable text for the hub live filter (js/app.js reads it
+    from each card's data-search): both names, advt, board, slug words, both
+    taglines and the portal — so 'ntpc', 'police', 'bank', 'teacher', a board
+    name or an advt number all find the right card."""
+    parts = [e['en']['name'], e['hi']['name'], e['advt'], e['board_en'], e['board_hi'],
+             e['slug'].replace('-', ' '), e['en']['tagline'], e['hi']['tagline'], e['portal']]
+    return esc(' '.join(parts).lower())
+
+
 def exam_card(e, lang, mini=False):
     c = e[lang]
     hi = lang == 'hi'
@@ -807,12 +817,12 @@ def exam_card(e, lang, mini=False):
     if gsl and gsl in GUIDE_BY_SLUG:
         gbtn = '<a class="btn" href="/%s">%s</a>' % ((('hi/guides/%s/' if hi else 'guides/%s/') % gsl), '\u0917\u093e\u0907\u0921' if hi else 'Guide')
     tag = '' if mini else '<p>%s</p>' % esc(c['tagline'])
-    return ('<article class="ecard"><div class="ecard-head"><span class="advt-chip">%s</span>'
+    return ('<article class="ecard" data-search="%s"><div class="ecard-head"><span class="advt-chip">%s</span>'
             '<span class="status-chip %s">%s</span></div>'
             '<span class="cat">%s</span><h3><a href="/%s">%s</a></h3>%s'
             '<div class="ecard-grid">%s</div>'
             '<div class="ecard-foot"><a class="btn primary" href="/%s">%s</a>%s</div></article>'
-            % (esc(e['advt']), cls, esc(status), esc(e['board_hi' if hi else 'board_en']),
+            % (_search_text(e), esc(e['advt']), cls, esc(status), esc(e['board_hi' if hi else 'board_en']),
                path, esc(c['name']), tag, grid, path,
                '\u092a\u0942\u0930\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u2192' if hi else 'Full details \u2192', gbtn))
 
@@ -996,13 +1006,29 @@ for _lang in ('en', 'hi'):
     _hfaq_html = ('<h2>%s</h2><dl class="faq-list">%s</dl>' % (
         'आम सवाल' if _hi else 'Questions',
         ''.join('<dt>%s</dt><dd>%s</dd>' % (esc(q), esc(a)) for q, a in _hfaqs)))
+    _search = ('<div class="exam-search"><input type="search" id="examSearch" autocomplete="off" '
+               'placeholder="%s" aria-label="%s">'
+               '<p class="exam-count" id="examCount" data-showing="%s">%s</p></div>' % (
+                   esc('Exam खोजें — जैसे NTPC, Police, Bank, Teacher…' if _hi else
+                       'Search exams — try NTPC, Police, Bank, Teacher…'),
+                   esc('Exam खोजें' if _hi else 'Search exams'),
+                   esc('{n} में से {x} exam दिख रहे हैं' if _hi else 'Showing {x} of {n} exams'),
+                   ('%d में से %d exam दिख रहे हैं' % (len(EXAMS), len(EXAMS))) if _hi else
+                   ('Showing %d of %d exams' % (len(EXAMS), len(EXAMS)))))
+    _none = ('<div class="exam-none" id="examNone" hidden><p>%s</p>'
+             '<button type="button" class="btn" id="examClear">%s</button></div>' % (
+                 'आपकी search से कोई exam match नहीं हुआ। Board का नाम try करो — जैसे RRB, SSC, IBPS — या Police, Bank, Teacher जैसा शब्द।' if _hi else
+                 'No exam matches your search. Try a board name like RRB, SSC, IBPS or a word like Police, Bank, Teacher.',
+                 'Search साफ़ करो' if _hi else 'Clear search'))
     _hb = ['<section class="seo hub exam-hub">', _hc,
            '<p class="lead">%s</p>' % (
                'अभी खुले हुए सभी सरकारी परीक्षा फॉर्म एक ही जगह — हर सरकारी भर्ती के लिए online form की अंतिम तिथि, शुल्क, correction window, सही फोटो-हस्ताक्षर size और आधिकारिक apply link, साथ में apply करने से पहले फाइलें तैयार करने के फ्री टूल। बिना sign-up, बिल्कुल फ्री। किसी भी परीक्षा पर click करो — उसका पूरा पेज खुलेगा।' if _hi else
                'Every sarkari exam form open right now, in one place — for each sarkari bharti: the online form\u2019s last date, fees, correction window, exact photo-signature size and the official apply link, plus free tools to prepare your files before you apply. No sign-up, nothing to pay. Click any exam for its full page.'),
            _trust,
            ''.join(_steps3),
+           _search,
            '<div class="exam-grid">' + ''.join(exam_card(_e, _lang) for _e in EXAMS_SORTED) + '</div>',
+           _none,
            _dates_tbl,
            _hfaq_html,
            '<p class="exam-disc">%s</p>' % (

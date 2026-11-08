@@ -1565,3 +1565,47 @@
   tick();
   setInterval(tick, 1000);
 })();
+
+/* ---------------- exam centre hub: live search filter ----------------
+   Only the two hub pages carry #examSearch; this block no-ops everywhere
+   else. Each card's data-search text is written by build.py (name, advt,
+   board, slug words, tagline, portal). A card stays visible only when
+   EVERY word of the query appears in its data-search; the count line and
+   the empty-state panel update on every keystroke. */
+(function () {
+  var input = document.getElementById('examSearch');
+  if (!input) return;
+  var grid = document.querySelector('.exam-hub .exam-grid');
+  if (!grid) return;
+  var count = document.getElementById('examCount');
+  var none = document.getElementById('examNone');
+  var clear = document.getElementById('examClear');
+  var cards = grid.querySelectorAll('.ecard');
+  var total = cards.length;
+  function apply() {
+    var q = input.value.toLowerCase().replace(/^\s+|\s+$/g, '');
+    var words = q ? q.split(/\s+/) : [];
+    var shown = 0;
+    for (var i = 0; i < cards.length; i++) {
+      var hay = cards[i].getAttribute('data-search') || '';
+      var ok = true;
+      for (var j = 0; j < words.length; j++) {
+        if (hay.indexOf(words[j]) === -1) { ok = false; break; }
+      }
+      cards[i].style.display = ok ? '' : 'none';
+      if (ok) shown++;
+    }
+    if (count) {
+      var tpl = count.getAttribute('data-showing') || '';
+      count.textContent = tpl.replace('{x}', shown).replace('{n}', total);
+    }
+    if (none) none.hidden = shown !== 0;
+  }
+  input.addEventListener('input', apply);
+  if (clear) clear.addEventListener('click', function () {
+    input.value = '';
+    apply();
+    input.focus();
+  });
+  apply();
+})();

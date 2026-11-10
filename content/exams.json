@@ -1242,6 +1242,15 @@
     },
     "note_en": "Aadhaar check: the name and date of birth on your Aadhaar must match your Class 10 certificate 100%. If they differ, get Aadhaar updated before you apply.",
     "note_hi": "Aadhaar जाँच: आपके Aadhaar पर नाम और जन्म तिथि Class 10 के प्रमाणपत्र से 100% मिलने चाहिए। अगर अंतर है तो आवेदन से पहले Aadhaar update करवा लो।",
+    "papers": [
+      {
+        "file": "rrb-ntpc-graduate-cbt1-2025-shift1-paper.pdf",
+        "meta_en": "Station Master is an NTPC Graduate post, so its exam is this same NTPC CBT-1 paper · 6 June 2025 · Shift 1 · 100 questions · CEN 05/2024 (previous cycle) · PDF · 758 KB",
+        "meta_hi": "Station Master NTPC Graduate ka hi pad hai, isliye uski pariksha yahi NTPC CBT-1 paper hai · 6 जून 2025 · Shift 1 · 100 सवाल · CEN 05/2024 (पिछला cycle) · PDF · 758 KB",
+        "title_en": "NTPC CBT-1 — Question Paper + Answer Key (same paper for Station Master)",
+        "title_hi": "NTPC CBT-1 — Question Paper + Answer Key (Station Master ke liye bhi yahi paper)"
+      }
+    ],
     "photo_kind": "live",
     "portal": "rrbapply.gov.in",
     "posts": 1265,

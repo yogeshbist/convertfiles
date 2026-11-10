@@ -3118,7 +3118,16 @@
     "photo_kind": "upload",
     "portal": "dsssbonline.nic.in",
     "posts": 1260,
-    "slug": "dsssb-advt-06-2026"
+    "slug": "dsssb-advt-06-2026",
+    "papers": [
+      {
+        "file": "dsssb-advt-06-2026-je-electrical-paper.pdf",
+        "title_en": "DSSSB JE (Electrical) — Previous Year Question Paper",
+        "title_hi": "DSSSB JE (Electrical) — Previous Year Question Paper",
+        "meta_en": "28 Nov 2022 · Shift 3 · 200 questions · Post Code 24/21 (previous cycle) · answers marked in paper · PDF · 3.2 MB",
+        "meta_hi": "28 नवंबर 2022 · Shift 3 · 200 सवाल · Post Code 24/21 (पिछला cycle) · जवाब paper में marked · PDF · 3.2 MB"
+      }
+    ]
   },
   {
     "advt": "Advt 468/202627",

@@ -178,7 +178,7 @@ FROM_NOTE = {
     'mov': 'iPhone MOV files are usually H.264 or HEVC already, so the picture quality survives the trip.',
     'webm': 'WebM from a browser recording often has no duration in its header; it is measured during conversion.',
     'stl': 'An STL has no colour or texture, so the result is untextured geometry.',
-    'ply': 'A PLY from a scanner may carry per-vertex colour, which is kept where the target supports it.',
+    'ply': 'A PLY from a scanner may carry per-vertex colour; only the geometry is read here, so colour and other attributes do not come across.',
     'obj': 'OBJ keeps its materials in a separate .mtl file, which is not read here — geometry converts, materials do not.',
     'flac': 'FLAC is lossless, so this is the best possible starting point for any conversion.',
     'wav': 'WAV is uncompressed, so the source is pristine and only the target format decides the quality.',

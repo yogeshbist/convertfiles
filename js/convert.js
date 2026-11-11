@@ -74,6 +74,20 @@
     if (ctx.from === 'tif' || ctx.from === 'tiff') return tiffCanvases(ctx.file);
     return decodeImage(ctx).then(function (c) { return [c]; });
   }
+  // Whether a WebP or PNG is animated, from its chunk markers (ANIM / acTL,
+  // both near the front of the file). The decoders here hand back the first
+  // frame only, so an animated source aimed at GIF would come out a still.
+  function sourceAnimated(ctx) {
+    if (ctx.from !== 'webp' && ctx.from !== 'png') return Promise.resolve(false);
+    var marker = ctx.from === 'webp' ? 'ANIM' : 'acTL';
+    return ctx.file.slice(0, 65536).arrayBuffer().then(function (ab) {
+      var u = new Uint8Array(ab);
+      for (var i = 0; i + 3 < u.length; i++) {
+        if (u[i] === marker.charCodeAt(0) && u[i + 1] === marker.charCodeAt(1) && u[i + 2] === marker.charCodeAt(2) && u[i + 3] === marker.charCodeAt(3)) return true;
+      }
+      return false;
+    }, function () { return false; });
+  }
   function decodeImage(ctx) {
     var file = ctx.file, ext = ctx.from;
     if (ext === 'tif' || ext === 'tiff') {
@@ -1377,7 +1391,10 @@
 
   // image -> image
   add(IMG_IN, IMG_OUT, function (ctx) {
-    return decodeImagePages(ctx).then(function (pages) {
+    var stillCheck = ctx.to === 'gif' ? sourceAnimated(ctx).then(function (anim) {
+      if (anim) ctx.warn('this picture is animated, but only its first frame can be read here — the GIF is a still');
+    }) : Promise.resolve();
+    return stillCheck.then(function () { return decodeImagePages(ctx); }).then(function (pages) {
       ctx.log('decoded ' + pages[0].width + ' x ' + pages[0].height);
       if (pages.length === 1) return encodeCanvas(resize(pages[0], ctx.opts.width), ctx.to, ctx.opts);
       // A multi-page TIFF: every page is converted, delivered as a zip of

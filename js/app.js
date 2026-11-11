@@ -302,7 +302,7 @@
     var fps = $('#o-fps');
     if (videoOut && fps.dataset.mode !== 'video') { fps.dataset.mode = 'video'; fps.max = 60; fps.value = 30; }
     if (!videoOut && fps.dataset.mode !== 'gif') { fps.dataset.mode = 'gif'; fps.max = 24; fps.value = 10; }
-    $('#o-width-hint').textContent = videoOut ? 'px · 0 keeps original, up to 1920' : 'px · 0 keeps original';
+    $('#o-width-hint').textContent = videoOut ? 'px · 0 keeps original, up to 1920 · never enlarges' : 'px · 0 keeps original · never enlarges';
     // Opus — the .ogg/.opus targets, and the sound inside a .webm — is
     // encoded at 256 kbps at most by the engine, so a 320 choice would be
     // silently cut. Disable it for those targets instead.

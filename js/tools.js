@@ -504,7 +504,7 @@
       var rot = sel([['0', 'None'], ['90', 'Rotate 90° right'], ['180', 'Rotate 180°'], ['270', 'Rotate 90° left']], '0'); rot.onchange = function () { o.rot = +rot.value; };
       var flip = check(false); flip.onchange = function () { o.flipH = flip.checked; };
       panel.appendChild(field('Rotate', rot)); panel.appendChild(field('Flip horizontally (mirror)', flip));
-      var fmt = sel([['same', 'Same as the original'], ['jpeg', 'JPG'], ['png', 'PNG'], ['webp', 'WebP']], 'same'); fmt.onchange = function () { o.fmt = fmt.value; };
+      var fmt = sel([['same', 'Same where possible (else PNG or JPG)'], ['jpeg', 'JPG'], ['png', 'PNG'], ['webp', 'WebP']], 'same'); fmt.onchange = function () { o.fmt = fmt.value; };
       var q = range(90, 50, 100, 1), qv = el('b', null, '90%'); q.oninput = function () { o.q = +q.value / 100; qv.textContent = q.value + '%'; };
       var qrow = field('Quality', q); qrow.appendChild(qv);
       panel.appendChild(field('Output', fmt)); panel.appendChild(qrow);
@@ -558,7 +558,7 @@
       panel.appendChild(custom);
       var ow = num(0, 0, 20000, 1, '92px'); ow.oninput = function () { o.outW = +ow.value || 0; };
       panel.appendChild(field('Output width', ow, 'px · 0 = keep the original pixels of the cropped area'));
-      var fmt = sel([['same', 'Same as the original'], ['jpeg', 'JPG'], ['png', 'PNG'], ['webp', 'WebP']], 'same'); fmt.onchange = function () { o.fmt = fmt.value; };
+      var fmt = sel([['same', 'Same where possible (else PNG or JPG)'], ['jpeg', 'JPG'], ['png', 'PNG'], ['webp', 'WebP']], 'same'); fmt.onchange = function () { o.fmt = fmt.value; };
       panel.appendChild(field('Output', fmt));
     },
     onFiles: function (files, o, stageBox) {
@@ -764,7 +764,7 @@
       o.lang = 'eng';
       var l = sel(OCR_LANGS, 'eng'); l.onchange = function () { o.lang = l.value; };
       panel.appendChild(field('Language', l));
-      panel.appendChild(el('p', 'u t-note', 'The first run downloads the recognition engine (about 4 MB) and a language file (2–15 MB) into your browser; after that it is cached. The text is read on your device — the image is never uploaded. Clear, straight, well-lit pictures read best.'));
+      panel.appendChild(el('p', 'u t-note', 'The first run downloads the recognition engine (about 4 MB) and a language file (2–15 MB) into your browser; after that it is cached. The text is read on your device — the image is never uploaded. Clear, straight, well-lit pictures read best. A PDF is read up to its first 50 pages.'));
     },
     run: function (files, o, prog) {
       return need('tesseract').then(function (T) {
@@ -774,8 +774,9 @@
           .then(function () {
             return files.reduce(function (chain, f, i) {
               return chain.then(function (acc) {
-                var pieces = [];
+                var pieces = [], capped = 0;
                 var pages = isPdf(f) ? pdfDoc(f).then(function (doc) {
+                  if (doc.numPages > 50) capped = doc.numPages;
                   var n = Math.min(doc.numPages, 50), ch2 = Promise.resolve();
                   for (var p = 0; p < n; p++) (function (p) { ch2 = ch2.then(function () { return renderPage(doc, p, 2).then(function (pg) { pieces.push({ canvas: pg.canvas, label: 'page ' + (p + 1) }); }); }); })(p);
                   return ch2;
@@ -789,7 +790,7 @@
                   }, Promise.resolve(''));
                 }).then(function (text) {
                   var b = new Blob([text.trim() + '\n'], { type: 'text/plain' });
-                  acc.push({ blob: b, name: base(f.name) + '.txt', src: f, note: (text.trim().split(/\s+/).filter(Boolean).length) + ' words', text: text.trim() });
+                  acc.push({ blob: b, name: base(f.name) + '.txt', src: f, note: (text.trim().split(/\s+/).filter(Boolean).length) + ' words' + (capped ? ' · first 50 of ' + capped + ' pages read' : ''), text: text.trim() });
                   return acc;
                 });
               });
@@ -954,7 +955,7 @@
     hint: 'Drop your Aadhaar photo or PDF here', label: 'Download the masked copy',
     setup: function (panel, o) {
       o.fmt = 'auto';
-      var fmt = sel([['auto', 'Same kind as the original'], ['png', 'PNG'], ['jpeg', 'JPG']], 'auto');
+      var fmt = sel([['auto', 'Same kind where possible (else PNG or JPG)'], ['png', 'PNG'], ['jpeg', 'JPG']], 'auto');
       fmt.onchange = function () { o.fmt = fmt.value; };
       panel.appendChild(field('Output', fmt));
       panel.appendChild(el('p', 'u t-note', 'Press Find the number to detect the Aadhaar automatically, or Draw a box to cover it yourself. Only the last 4 digits should stay readable. The QR code carries the full record — cover that too if you are sending the copy to someone who does not need it.'));
@@ -963,6 +964,7 @@
       var f = files[0];
       var load = isPdf(f)
         ? pdfDoc(f).then(function (doc) {
+            o.totalPages = doc.numPages;
             var n = Math.min(doc.numPages, 20), out = [], ch = Promise.resolve();
             for (var i = 0; i < n; i++) (function (i) {
               ch = ch.then(function () { return renderPage(doc, i, 2.5).then(function (pg) { out[i] = { canvas: pg.canvas, masks: [] }; }); });
@@ -997,7 +999,7 @@
               return doc.save().then(function (bytes) {
                 var blob = new Blob([bytes], { type: 'application/pdf' });
                 return [{ blob: blob, name: base(f.name) + '-masked.pdf', src: f,
-                          note: st.pages.length + ' page' + (st.pages.length > 1 ? 's' : '') + ' · flattened, the hidden digits are not recoverable' }];
+                          note: st.pages.length + ' page' + (st.pages.length > 1 ? 's' : '') + ' · flattened, the hidden digits are not recoverable · the pages are now pictures at 2.5× size, so the page size has grown and the text can no longer be selected' + (o.totalPages && o.totalPages > st.pages.length ? ' · only the first ' + st.pages.length + ' of ' + o.totalPages + ' pages were loaded' : '') }];
               });
             });
           });
@@ -1273,7 +1275,7 @@
   // ---- sign a PDF
   TOOLS['sign-pdf'] = {
     accept: '.pdf,application/pdf', kinds: 'pdf', multiple: false, hint: 'Drop the PDF to sign here', label: 'Apply signature & save', stage: true,
-    setup: function (panel, o) { o.addDate = false; var d = check(false); d.onchange = function () { o.addDate = d.checked; }; panel.appendChild(field("Write today's date under the signature", d)); },
+    setup: function (panel, o) { o.addDate = false; var d = check(false); d.onchange = function () { o.addDate = d.checked; }; panel.appendChild(field("Write today's date under the signature", d)); panel.appendChild(el('p', 'u t-note', 'The page picker below shows up to 60 pages — on a longer PDF the signature can only be placed on one of those.')); },
     onFiles: function (files, o, stageBox) {
       stageBox.innerHTML = ''; stageBox.hidden = false;
       var f = files[0];
@@ -1326,6 +1328,7 @@
       o.pageIdx = 0; o.pos = null; o.widthPct = 25;
       return pdfDoc(f).then(function (doc) {
         o.doc = doc; var n = doc.numPages, chain = Promise.resolve();
+        if (n > 60) stageBox.appendChild(el('p', 'u t-note', 'This PDF has ' + n + ' pages — the picker shows the first 60, so the signature can only go on one of those.'));
         for (var i = 0; i < Math.min(n, 60); i++) (function (i) {
           chain = chain.then(function () { return renderPage(doc, i, 0.2).then(function (pg) { var card = el('div', 't-page' + (i === 0 ? ' sel' : '')); var th = el('div', 't-page-th'); th.appendChild(pg.canvas); card.appendChild(th); card.appendChild(el('div', 't-page-n', String(i + 1))); card.onclick = function () { pagesStrip.querySelectorAll('.t-page').forEach(function (c) { c.classList.remove('sel'); }); card.classList.add('sel'); showPage(i); }; pagesStrip.appendChild(card); }); });
         })(i);
@@ -1706,7 +1709,7 @@
       var kb = num(0, 0, 5000, 5, '84px');
       kb.oninput = function () { o.kb = +kb.value || 0; };
       panel.appendChild(field('Max file size', kb, 'KB · 0 = no limit'));
-      var fmt = sel([['same', 'Same as the original'], ['jpeg', 'JPG'], ['png', 'PNG']], 'same');
+      var fmt = sel([['same', 'Same where possible (else PNG or JPG)'], ['jpeg', 'JPG'], ['png', 'PNG']], 'same');
       fmt.onchange = function () { o.fmt = fmt.value; };
       panel.appendChild(field('Output', fmt));
 

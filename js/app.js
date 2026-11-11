@@ -303,6 +303,13 @@
     if (videoOut && fps.dataset.mode !== 'video') { fps.dataset.mode = 'video'; fps.max = 60; fps.value = 30; }
     if (!videoOut && fps.dataset.mode !== 'gif') { fps.dataset.mode = 'gif'; fps.max = 24; fps.value = 10; }
     $('#o-width-hint').textContent = videoOut ? 'px · 0 keeps original, up to 1920' : 'px · 0 keeps original';
+    // Opus — the .ogg/.opus targets, and the sound inside a .webm — is
+    // encoded at 256 kbps at most by the engine, so a 320 choice would be
+    // silently cut. Disable it for those targets instead.
+    var brSel = $('#o-bitrate'), br320 = brSel.querySelector('option[value="320"]');
+    var opusOut = /^(ogg|opus|webm)$/.test(state.to);
+    if (br320) br320.disabled = opusOut;
+    if (opusOut && brSel.value === '320') brSel.value = '256';
     $('#opts').hidden = shown === 0;
     var note = $('#rulenote');
     note.hidden = !(r && r.note);

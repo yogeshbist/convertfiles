@@ -370,6 +370,7 @@
       return pdfBlob.arrayBuffer().then(function (ab) { return pdfjsLib.getDocument({ data: ab }).promise; });
     }).then(function (pdf) {
       var total = Math.min(pdf.numPages, 300);
+      if (pdf.numPages > 300) ctx.warn('this PDF has ' + pdf.numPages + ' pages — only the first 300 were converted');
       var pages = ctx.opts.allPages === false ? 1 : total;
       var scale = Math.max(0.5, Math.min(4, ctx.opts.scale || 2));
       var jobs = [], chain = Promise.resolve();
@@ -418,7 +419,36 @@
       default: return blobText(f).then(function (t) { return DM.fromText(t, base); });
     }
   }
-  function saveDoc(doc, to, opts) {
+  // jsPDF's built-in fonts cover WinAnsi — roughly Latin-1 plus typographic
+  // punctuation. Text outside it (Devanagari, Bengali, Tamil, CJK, Arabic,
+  // Cyrillic…) is drawn as garbage by every generated-PDF path, so detect it
+  // and warn rather than hand over a quietly broken file.
+  var WINANSI_EXTRA = {};
+  '€‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—˜™š›œžŸ'.split('').forEach(function (c) { WINANSI_EXTRA[c.charCodeAt(0)] = 1; });
+  function textOutsideWinAnsi(text) {
+    for (var i = 0; i < text.length; i++) {
+      var cp = text.codePointAt(i);
+      if (cp > 0xFFFF) i++;
+      if (cp === 0x09 || cp === 0x0A || cp === 0x0D) continue;
+      if (cp >= 0x20 && cp <= 0x7E) continue;
+      if (cp >= 0xA0 && cp <= 0xFF) continue;
+      if (WINANSI_EXTRA[cp]) continue;
+      return true;
+    }
+    return false;
+  }
+  function docText(doc) {
+    var parts = [doc.title || ''];
+    (doc.blocks || []).forEach(function (b) {
+      (b.runs || []).forEach(function (r) { parts.push(r.text || ''); });
+      (b.rows || []).forEach(function (row) { (row || []).forEach(function (c) { parts.push(String(c)); }); });
+    });
+    return parts.join('\n');
+  }
+  function saveDoc(doc, to, opts, warn) {
+    if (to === 'pdf' && warn && textOutsideWinAnsi(docText(doc))) {
+      warn('some of this text uses a script the built-in PDF font cannot draw (such as Devanagari, Bengali, Tamil, Chinese, Arabic or Cyrillic), so those characters may come out blank or garbled in the PDF — the HTML or EPUB output keeps them intact');
+    }
     return DM.prepareImages(doc).then(function () {
       switch (to) {
         case 'txt': return DM.toText(doc);
@@ -634,6 +664,60 @@
       .then(function (buf) { ac.close && ac.close(); return buf; },
             function () { ac.close && ac.close(); throw new Error('this browser cannot decode that audio codec'); });
   }
+  // The sample rate a WAV or FLAC file declares for itself, read from its
+  // header. decodeAudioData resamples to the browser's own rate without
+  // saying so, and the decoded buffer alone cannot reveal it happened.
+  function sourceSampleRate(ctx) {
+    var n = ctx.from === 'wav' ? 512 : ctx.from === 'flac' ? 64 : 0;
+    if (!n) return Promise.resolve(0);
+    return ctx.file.slice(0, n).arrayBuffer().then(function (ab) {
+      var u = new Uint8Array(ab);
+      if (ctx.from === 'flac') {
+        // 'fLaC' + a 4-byte block header, then STREAMINFO: the rate is 20
+        // bits starting at byte 10 of the block (file bytes 18-20).
+        if (u.length < 21 || u[0] !== 0x66 || u[1] !== 0x4C || u[2] !== 0x61 || u[3] !== 0x43) return 0;
+        return (u[18] << 12) | (u[19] << 4) | (u[20] >> 4);
+      }
+      // WAV: walk the RIFF chunks to 'fmt ' — the rate is a little-endian
+      // u32 in the chunk body, after the format and channel counts.
+      if (u.length < 44 || u[0] !== 0x52 || u[1] !== 0x49) return 0;
+      for (var i = 12; i + 16 <= u.length; i += 8 + (u[i + 4] | (u[i + 5] << 8) | (u[i + 6] << 16) | (u[i + 7] << 24))) {
+        if (u[i] === 0x66 && u[i + 1] === 0x6D && u[i + 2] === 0x74 && u[i + 3] === 0x20) {
+          return u[i + 12] | (u[i + 13] << 8) | (u[i + 14] << 16) | (u[i + 15] << 24);
+        }
+      }
+      return 0;
+    }, function () { return 0; });
+  }
+  // Fold a surround buffer into stereo with the usual 5.1 coefficients
+  // (centre and surrounds at -3 dB, LFE left out). The compressed encoders
+  // here are stereo, and channels past the first two used to be discarded
+  // outright — the centre channel, dialogue included, simply vanished.
+  function downmixToStereo(buf) {
+    var n = buf.length;
+    var AC = root.OfflineAudioContext || root.webkitOfflineAudioContext;
+    var out = new AC(2, n, buf.sampleRate).createBuffer(2, n, buf.sampleRate);
+    var L = out.getChannelData(0), R = out.getChannelData(1), ch = [];
+    for (var i = 0; i < buf.numberOfChannels; i++) ch.push(buf.getChannelData(i));
+    for (var s = 0; s < n; s++) {
+      var l = ch[0][s], r = ch.length > 1 ? ch[1][s] : ch[0][s];
+      if (ch.length === 6) {                    // FL FR C LFE SL SR
+        l += 0.7071 * (ch[2][s] + ch[4][s]);
+        r += 0.7071 * (ch[2][s] + ch[5][s]);
+      } else {
+        for (var k = 2; k < ch.length; k++) { l += 0.5 * ch[k][s]; r += 0.5 * ch[k][s]; }
+      }
+      L[s] = Math.max(-1, Math.min(1, l));
+      R[s] = Math.max(-1, Math.min(1, r));
+    }
+    return out;
+  }
+  // Every encoder here is stereo except WAV, which keeps all the channels.
+  function stereoFor(buf, ctx) {
+    if (buf.numberOfChannels <= 2 || ctx.to === 'wav') return buf;
+    ctx.warn(buf.numberOfChannels + '-channel audio was mixed down to stereo — the .' + ctx.to + ' written here holds two channels');
+    return downmixToStereo(buf);
+  }
   function bufferToWav(buf) {
     var chans = [];
     for (var i = 0; i < buf.numberOfChannels; i++) chans.push(buf.getChannelData(i));
@@ -783,12 +867,16 @@
       try { v.currentTime = Math.max(0, Math.min(t, (v.duration || 0) - 0.05)); } catch (e) { rej(e); }
     });
   }
-  function grabFrames(v, opts, onProg) {
-    var width = opts.width || 480;
+  function grabFrames(v, opts, onProg, warn) {
+    // Width 0 is documented as "keeps original", so use the video's own
+    // width — capped at 1280, past which a GIF is unusable in practice.
+    var width = opts.width || Math.min(v.videoWidth || 480, 1280);
     var fps = Math.max(1, Math.min(24, opts.fps || 10));
     var span = Math.min(opts.maxSeconds || 5, v.duration || 5);
     var start = Math.max(0, opts.time || 0);
-    var count = Math.max(1, Math.min(300, Math.round(span * fps)));
+    var wanted = Math.round(span * fps);
+    var count = Math.max(1, Math.min(300, wanted));
+    if (wanted > 300 && warn) warn('a GIF is limited to 300 frames, so this one covers the first ' + (300 / fps).toFixed(1) + ' seconds of the ' + span.toFixed(1) + '-second window — lower the frame rate or shorten the length to fit more of the clip');
     var scale = Math.min(1, width / (v.videoWidth || width));
     var c = canvasOf((v.videoWidth || width) * scale, (v.videoHeight || width) * scale);
     var g = c.getContext('2d', { willReadFrequently: true });
@@ -839,7 +927,10 @@
       total = Math.max(1, Math.round((t1 - t0) * fps));
       ctx.log('source ' + srcW + 'x' + srcH + ', ' + (v.duration || 0).toFixed(1) + ' s — output ' + W + 'x' + H + ' @ ' + fps + ' fps');
       if (ctx.opts.mute) { ctx.log('audio track dropped'); return; }
-      return decodeAudio(ctx.file).then(function (b) { audioBuf = sliceBuffer(b, t0, t1); hasAudio = true; ch = Math.min(2, b.numberOfChannels); },
+      return decodeAudio(ctx.file).then(function (b) {
+        if (b.numberOfChannels > 2) { ctx.warn('the ' + b.numberOfChannels + '-channel soundtrack was mixed down to stereo'); b = downmixToStereo(b); }
+        audioBuf = sliceBuffer(b, t0, t1); hasAudio = true; ch = Math.min(2, b.numberOfChannels);
+      },
                                         function () { ctx.warn('the audio track could not be decoded, so the converted video has no sound'); });
     }).then(function () {
       return need(isMp4 ? 'mp4muxer' : 'webmmuxer');
@@ -1335,7 +1426,7 @@
       return chain.then(function () {
         if (pages.length > 1) ctx.log(pages.length + ' pages embedded, one after another');
         var doc = { title: baseName(ctx.file.name), blocks: blocks };
-        return saveDoc(doc, ctx.to, ctx.opts);
+        return saveDoc(doc, ctx.to, ctx.opts, ctx.warn);
       });
     });
   }, ['width'], 'embeds the picture in a new document');
@@ -1349,13 +1440,13 @@
   add(DOC_IN, DOC_OUT, function (ctx) {
     return loadDoc(ctx).then(function (doc) {
       ctx.log(doc.blocks.length + ' blocks parsed');
-      return saveDoc(doc, ctx.to, ctx.opts);
+      return saveDoc(doc, ctx.to, ctx.opts, ctx.warn);
     });
   }, ['pageSize']);
 
   // document -> page images (laid out as PDF first, then rasterised)
   add(DOC_IN, ['png', 'jpg', 'jpeg', 'webp'], function (ctx) {
-    return loadDoc(ctx).then(function (doc) { return saveDoc(doc, 'pdf', ctx.opts); })
+    return loadDoc(ctx).then(function (doc) { return saveDoc(doc, 'pdf', ctx.opts, ctx.warn); })
       .then(function (pdf) { return renderPdf(pdf, baseName(ctx.file.name), ctx); });
   }, ['pageSize', 'scale', 'allPages'], 'renders the pages as pictures');
 
@@ -1364,6 +1455,9 @@
     return need('xlsx').then(function (XLSX) {
       return readWorkbook(ctx).then(function (wb) {
         ctx.log('sheets: ' + wb.SheetNames.join(', '));
+        if (wb.SheetNames.length > 1 && /^(csv|tsv|dif|dbf|prn|slk|txt)$/.test(ctx.to)) {
+          ctx.warn('this workbook has ' + wb.SheetNames.length + ' sheets — a .' + ctx.to + ' file holds one table, so only the first sheet ("' + wb.SheetNames[0] + '") was written');
+        }
         return bookOut(XLSX, wb, ctx.to);
       });
     });
@@ -1372,7 +1466,7 @@
   add(TABLE_IN, ['pdf', 'docx', 'odt', 'epub', 'tex'], function (ctx) {
     return need('xlsx').then(function (XLSX) {
       return readWorkbook(ctx).then(function (wb) {
-        return saveDoc(workbookToDoc(XLSX, wb, baseName(ctx.file.name)), ctx.to, ctx.opts);
+        return saveDoc(workbookToDoc(XLSX, wb, baseName(ctx.file.name)), ctx.to, ctx.opts, ctx.warn);
       });
     });
   }, ['pageSize']);
@@ -1381,6 +1475,7 @@
     return need('xlsx').then(function (XLSX) {
       return readWorkbook(ctx).then(function (wb) {
         var ws = firstSheet(XLSX, wb);
+        if (wb.SheetNames.length > 1) ctx.warn('this workbook has ' + wb.SheetNames.length + ' sheets (' + wb.SheetNames.join(', ') + ') — only the first, "' + wb.SheetNames[0] + '", was exported');
         if (ctx.to === 'txt') return new Blob([XLSX.utils.sheet_to_csv(ws, { FS: '\t' })], { type: 'text/plain;charset=utf-8' });
         var rows = XLSX.utils.sheet_to_json(ws, { defval: null });
         if (ctx.to === 'sql') return toSql(rows, baseName(ctx.file.name));
@@ -1420,7 +1515,7 @@
     return readData(ctx).then(function (v) {
       var pretty = JSON.stringify(v, null, 2);
       var doc = { title: baseName(ctx.file.name), blocks: [{ t: 'code', runs: [{ text: pretty }] }] };
-      return saveDoc(doc, ctx.to, ctx.opts);
+      return saveDoc(doc, ctx.to, ctx.opts, ctx.warn);
     });
   }, ['pageSize']);
 
@@ -1428,7 +1523,10 @@
   add(AUDIO_IN, AUDIO_OUT, function (ctx) {
     return decodeAudio(ctx.file).then(function (buf) {
       ctx.log(buf.numberOfChannels + ' ch, ' + buf.sampleRate + ' Hz, ' + buf.duration.toFixed(1) + ' s');
-      return audioOut(buf, ctx.to, ctx.opts, ctx.log);
+      return sourceSampleRate(ctx).then(function (rate) {
+        if (rate && rate !== buf.sampleRate) ctx.warn('this file is ' + rate + ' Hz, but the browser decodes audio at ' + buf.sampleRate + ' Hz — the result is resampled to ' + buf.sampleRate + ' Hz');
+        return audioOut(stereoFor(buf, ctx), ctx.to, ctx.opts, ctx.log);
+      });
     });
   }, ['bitrate']);
 
@@ -1436,7 +1534,7 @@
   add(VIDEO_IN, AUDIO_OUT, function (ctx) {
     return decodeAudio(ctx.file).then(function (buf) {
       ctx.log('audio track: ' + buf.duration.toFixed(1) + ' s');
-      return audioOut(buf, ctx.to, ctx.opts, ctx.log);
+      return audioOut(stereoFor(buf, ctx), ctx.to, ctx.opts, ctx.log);
     });
   }, ['bitrate'], 'extracts the audio track');
 
@@ -1451,7 +1549,8 @@
     return loadVideo(ctx.file).then(function (vid) {
       v = vid;
       ctx.log('video ' + v.videoWidth + ' x ' + v.videoHeight + ', ' + (v.duration || 0).toFixed(1) + ' s');
-      return grabFrames(v, ctx.opts, ctx.progress);
+      if (!ctx.opts.width && v.videoWidth > 1280) ctx.warn('the GIF is 1280 px wide (the video is ' + v.videoWidth + ' px) — set a Width to pick a different size');
+      return grabFrames(v, ctx.opts, ctx.progress, ctx.warn);
     }).then(function (r) {
       ctx.log('quantising ' + r.frames.length + ' frames');
       var blob = Enc.gif(r.frames, { dither: ctx.opts.dither !== false });
@@ -1643,7 +1742,7 @@
       glbToGltf: glbToGltf, gltfToGlb: gltfToGlb, glbParse: glbParse, meshToGltfText: meshToGltfText, gltfToMesh: gltfToMesh,
       objToXml: objToXml, rowsOf: rowsOf, b64FromBytes: b64FromBytes, bytesFromB64: bytesFromB64,
       colourCount: colourCount, traceOptions: traceOptions, traceWorthKeeping: traceWorthKeeping,
-      flattenRow: flattenRow,
+      flattenRow: flattenRow, textOutsideWinAnsi: textOutsideWinAnsi,
       toSql: toSql, sfntTables: sfntTables, avcCodecFor: avcCodecFor
     }
   };

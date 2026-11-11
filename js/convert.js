@@ -51,20 +51,33 @@
   function even(n) { return Math.max(2, Math.round(n / 2) * 2); }
 
   /* ------------------------------------------------------- image decoding */
-  function decodeImage(ctx) {
-    var file = ctx.file, ext = ctx.from;
-    if (ext === 'tif' || ext === 'tiff') {
-      return need('utif').then(function (UTIF) {
-        return file.arrayBuffer().then(function (ab) {
-          var ifds = UTIF.decode(ab);
-          if (!ifds.length) throw new Error('no image found in this TIFF');
-          UTIF.decodeImage(ab, ifds[0], ifds);
-          var rgba = UTIF.toRGBA8(ifds[0]), w = ifds[0].width, h = ifds[0].height;
+  // Every page of a TIFF as its own canvas. Scanners write one IFD per page
+  // and the tiff-to-* copy promises each page as its own file, so the
+  // converter rules go through decodeImagePages; decodeImage keeps serving
+  // the single-canvas callers (the stand-alone tools) with page 1.
+  function tiffCanvases(file) {
+    return need('utif').then(function (UTIF) {
+      return file.arrayBuffer().then(function (ab) {
+        var ifds = UTIF.decode(ab);
+        if (!ifds.length) throw new Error('no image found in this TIFF');
+        return ifds.map(function (ifd) {
+          UTIF.decodeImage(ab, ifd, ifds);
+          var rgba = UTIF.toRGBA8(ifd), w = ifd.width, h = ifd.height;
           var c = canvasOf(w, h);
           c.getContext('2d').putImageData(new ImageData(new Uint8ClampedArray(rgba), w, h), 0, 0);
           return c;
         });
       });
+    });
+  }
+  function decodeImagePages(ctx) {
+    if (ctx.from === 'tif' || ctx.from === 'tiff') return tiffCanvases(ctx.file);
+    return decodeImage(ctx).then(function (c) { return [c]; });
+  }
+  function decodeImage(ctx) {
+    var file = ctx.file, ext = ctx.from;
+    if (ext === 'tif' || ext === 'tiff') {
+      return tiffCanvases(file).then(function (pages) { return pages[0]; });
     }
     if (ext === 'ppm' || ext === 'pgm' || ext === 'pbm') {
       return file.arrayBuffer().then(function (ab) {
@@ -435,9 +448,35 @@
     });
   }
   function firstSheet(XLSX, wb) { return wb.Sheets[wb.SheetNames[0]]; }
+  // json_to_sheet writes a nested object or array as an empty cell, while the
+  // json-to-* pages promise dotted-name flattening — so flatten first: nested
+  // objects become 'addr.city' columns, a list of plain values is joined with
+  // '; ', and a list of objects is indexed ('items.0', 'items.1.name'). Dates
+  // pass through untouched; SheetJS knows how to write those.
+  function isDate(v) { return Object.prototype.toString.call(v) === '[object Date]'; }
+  function flattenRow(row, out, prefix) {
+    out = out || {};
+    Object.keys(row).forEach(function (k) {
+      var key = prefix ? prefix + '.' + k : k, v = row[k];
+      if (v !== null && typeof v === 'object' && !isDate(v)) {
+        if (Array.isArray(v)) {
+          if (v.every(function (x) { return x === null || typeof x !== 'object'; })) {
+            out[key] = v.map(function (x) { return x === null || x === undefined ? '' : String(x); }).join('; ');
+          } else {
+            v.forEach(function (x, i) {
+              if (x !== null && typeof x === 'object' && !isDate(x)) flattenRow(x, out, key + '.' + i);
+              else out[key + '.' + i] = x;
+            });
+          }
+        } else if (Object.keys(v).length) flattenRow(v, out, key);
+        else out[key] = '';
+      } else out[key] = v;
+    });
+    return out;
+  }
   function sheetFromRows(XLSX, rows) {
     if (Array.isArray(rows) && rows.length && !Array.isArray(rows[0]) && typeof rows[0] === 'object' && rows[0] !== null) {
-      return XLSX.utils.json_to_sheet(rows);
+      return XLSX.utils.json_to_sheet(rows.map(function (r) { return isDate(r) ? r : flattenRow(r); }));
     }
     if (!Array.isArray(rows)) rows = [rows];
     return XLSX.utils.aoa_to_sheet(rows.map(function (r) { return Array.isArray(r) ? r : [r]; }));
@@ -548,7 +587,7 @@
   }
   // rows -> CREATE TABLE + INSERTs (portable SQL, quoted identifiers).
   function toSql(rows, tableName) {
-    rows = rowsOf(rows).map(function (r) { return (r && typeof r === 'object' && !Array.isArray(r)) ? r : { value: r }; });
+    rows = rowsOf(rows).map(function (r) { return (r && typeof r === 'object' && !Array.isArray(r) && !isDate(r)) ? flattenRow(r) : { value: r }; });
     var cols = [];
     rows.forEach(function (r) { Object.keys(r).forEach(function (k) { if (cols.indexOf(k) < 0) cols.push(k); }); });
     if (!cols.length) throw new Error('no columns found');
@@ -1247,24 +1286,57 @@
 
   // image -> image
   add(IMG_IN, IMG_OUT, function (ctx) {
-    return decodeImage(ctx).then(function (c) {
-      ctx.log('decoded ' + c.width + ' x ' + c.height);
-      return encodeCanvas(resize(c, ctx.opts.width), ctx.to, ctx.opts);
+    return decodeImagePages(ctx).then(function (pages) {
+      ctx.log('decoded ' + pages[0].width + ' x ' + pages[0].height);
+      if (pages.length === 1) return encodeCanvas(resize(pages[0], ctx.opts.width), ctx.to, ctx.opts);
+      // A multi-page TIFF: every page is converted, delivered as a zip of
+      // page files — the same mechanism PDF-to-image uses.
+      ctx.log(pages.length + ' pages in this file');
+      if (ctx.to === 'ico' || ctx.to === 'icns') {
+        ctx.warn('this file has ' + pages.length + ' pages, but an icon holds a single picture — page 1 was used');
+        return encodeCanvas(resize(pages[0], ctx.opts.width), ctx.to, ctx.opts);
+      }
+      var jobs = [], chain = Promise.resolve();
+      pages.forEach(function (c, i) {
+        chain = chain.then(function () {
+          return encodeCanvas(resize(c, ctx.opts.width), ctx.to, ctx.opts).then(function (b) {
+            return b.arrayBuffer().then(function (a) {
+              jobs.push({ name: baseName(ctx.file.name) + '-p' + String(i + 1).padStart(3, '0') + '.' + ctx.to, data: new Uint8Array(a) });
+            });
+          });
+        });
+      });
+      return chain.then(function () {
+        ctx.log(jobs.length + ' pages converted — bundling as a zip');
+        return entriesToZip(jobs).then(function (b) { return { blob: b, ext: 'zip' }; });
+      });
     });
   }, ['width', 'quality', 'dither', 'svgMode']);
 
   // image -> pdf
   add(IMG_IN, ['pdf'], function (ctx) {
-    return decodeImage(ctx).then(function (c) { return canvasesToPdf([resize(c, ctx.opts.width)], ctx.opts); });
+    return decodeImagePages(ctx).then(function (pages) {
+      if (pages.length > 1) ctx.log(pages.length + ' pages in this file — one PDF page each');
+      return canvasesToPdf(pages.map(function (c) { return resize(c, ctx.opts.width); }), ctx.opts);
+    });
   }, ['width', 'pageSize']);
 
   // image -> document with the picture embedded
   add(IMG_IN, ['docx', 'odt', 'html', 'epub', 'rtf', 'md'], function (ctx) {
-    return decodeImage(ctx).then(function (c) {
-      return toBlob(resize(c, ctx.opts.width), 'image/png');
-    }).then(function (png) {
-      var doc = { title: baseName(ctx.file.name), blocks: [DM.imgBlock(png, baseName(ctx.file.name))] };
-      return saveDoc(doc, ctx.to, ctx.opts);
+    return decodeImagePages(ctx).then(function (pages) {
+      var blocks = [], chain = Promise.resolve();
+      pages.forEach(function (c) {
+        chain = chain.then(function () {
+          return toBlob(resize(c, ctx.opts.width), 'image/png').then(function (png) {
+            blocks.push(DM.imgBlock(png, baseName(ctx.file.name)));
+          });
+        });
+      });
+      return chain.then(function () {
+        if (pages.length > 1) ctx.log(pages.length + ' pages embedded, one after another');
+        var doc = { title: baseName(ctx.file.name), blocks: blocks };
+        return saveDoc(doc, ctx.to, ctx.opts);
+      });
     });
   }, ['width'], 'embeds the picture in a new document');
 
@@ -1571,6 +1643,7 @@
       glbToGltf: glbToGltf, gltfToGlb: gltfToGlb, glbParse: glbParse, meshToGltfText: meshToGltfText, gltfToMesh: gltfToMesh,
       objToXml: objToXml, rowsOf: rowsOf, b64FromBytes: b64FromBytes, bytesFromB64: bytesFromB64,
       colourCount: colourCount, traceOptions: traceOptions, traceWorthKeeping: traceWorthKeeping,
+      flattenRow: flattenRow,
       toSql: toSql, sfntTables: sfntTables, avcCodecFor: avcCodecFor
     }
   };

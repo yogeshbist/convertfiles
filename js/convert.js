@@ -255,7 +255,9 @@
           var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + canvas.width + '" height="' + canvas.height +
             '" viewBox="0 0 ' + canvas.width + ' ' + canvas.height + '">' +
             '<image width="' + canvas.width + '" height="' + canvas.height + '" href="' + fr.result + '"/></svg>';
-          res(new Blob([svg], { type: 'image/svg+xml' }));
+          var b = new Blob([svg], { type: 'image/svg+xml' });
+          b.svgKind = 'embed';               // the UI says so honestly on the result card
+          res(b);
         };
         fr.readAsDataURL(png);
       });
@@ -309,6 +311,7 @@
       // colours it counted, so the honest answer is the faithful copy.
       var shapes = (svg.match(/<path/g) || []).length;
       if (mode === 'auto' && !traceWorthKeeping(shapes, svg.length)) return embedSvg(canvas);
+      if (mode === 'trace' && !shapes) throw new Error('Tracing found no shapes in this picture, so no vector file could be made. Try the Exact copy option instead.');
       // The tracer writes the sampled size; restore the real one so the file
       // drops in at the dimensions people expect. The paths are unaffected.
       svg = svg.replace(/^<svg([^>]*)>/, function (m, attrs) {
@@ -317,8 +320,13 @@
         return '<svg' + a + ' width="' + canvas.width + '" height="' + canvas.height + '">';
       });
       if (!/xmlns=/.test(svg)) svg = svg.replace('<svg', '<svg xmlns="http://www.w3.org/2000/svg"');
-      return new Blob([svg], { type: 'image/svg+xml' });
+      var b = new Blob([svg], { type: 'image/svg+xml' });
+      b.svgKind = 'trace'; b.svgShapes = shapes;
+      return b;
     }, function () {
+      // The person explicitly asked for a real vector: fail honestly rather
+      // than silently handing back an embedded copy they did not choose.
+      if (mode === 'trace') throw new Error('The vector tracer could not be loaded, so no file was made. Check your connection and try again, or choose Exact copy.');
       return embedSvg(canvas);          // tracer unreachable: still return a file
     });
   }
@@ -1240,7 +1248,7 @@
       ctx.log('decoded ' + c.width + ' x ' + c.height);
       return encodeCanvas(resize(c, ctx.opts.width), ctx.to, ctx.opts);
     });
-  }, ['width', 'quality', 'dither']);
+  }, ['width', 'quality', 'dither', 'svgMode']);
 
   // image -> pdf
   add(IMG_IN, ['pdf'], function (ctx) {

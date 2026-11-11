@@ -285,7 +285,7 @@
   }
 
   /* ------------------------------------------------------------- options */
-  var OPT_IDS = ['width', 'quality', 'scale', 'fps', 'maxSeconds', 'time', 'bitrate', 'pageSize', 'dither', 'allPages'];
+  var OPT_IDS = ['width', 'quality', 'scale', 'fps', 'maxSeconds', 'time', 'bitrate', 'pageSize', 'dither', 'allPages', 'svgMode'];
   function syncOptions() {
     var r = C.rule(state.from, state.to), ui = (r && r.ui) || [], shown = 0;
     var videoOut = /^(mp4|webm)$/.test(state.to);
@@ -294,6 +294,7 @@
       if (id === 'quality') on = on && (/^(jpg|jpeg|webp|avif|jxl)$/.test(state.to) || videoOut);
       if (id === 'dither') on = on && state.to === 'gif';
       if (id === 'pageSize') on = on && state.to === 'pdf';
+      if (id === 'svgMode') on = on && state.to === 'svg';
       $('#opt-' + id).hidden = !on;
       if (on) shown++;
     });
@@ -317,6 +318,7 @@
       time: parseFloat($('#o-time').value) || 0,
       bitrate: parseInt($('#o-bitrate').value, 10) || 192,
       pageSize: $('#o-pageSize').value,
+      svgMode: $('#o-svgMode').value,
       scale: parseFloat($('#o-scale').value) || 2,
       allPages: $('#o-allPages').checked
     };
@@ -473,6 +475,21 @@
     return s;
   }
 
+  // An .svg can be two very different files — real traced shapes, or the
+  // original picture wrapped in an SVG shell. convert.js tags which one it
+  // made (blob.svgKind); the result card says so plainly, in the page's
+  // language, so nobody mistakes an embedded copy for a vector.
+  var HI_PAGE = (document.documentElement.lang || 'en').toLowerCase().indexOf('hi') === 0;
+  function svgKindNote(blob) {
+    if (!blob || !blob.svgKind) return null;
+    if (blob.svgKind === 'trace') return HI_PAGE
+      ? 'Asal vector: ' + blob.svgShapes + ' shapes — har size par saaf rahega.'
+      : 'Real vector: ' + blob.svgShapes + ' shapes — stays sharp at any size.';
+    return HI_PAGE
+      ? "Exact copy: andar asal tasveer hi hai, zoom par waisi hi dikhegi. Asal vector ke liye options me 'Asal vector' chunein."
+      : "Exact copy: the original picture is embedded, so it zooms like the original. For a real vector, choose 'Real vector' in options.";
+  }
+
   // Every result in one card, each with its own Download, plus one zip of them all.
   function paintDoneMulti(results, to) {
     revokeAll();
@@ -515,6 +532,8 @@
       var info = el('div', 'info');
       info.appendChild(el('div', 'name', r.rec ? r.rec.name : r.file.name));
       info.appendChild(el('div', 'meta' + (r.rec ? '' : ' bad'), r.rec ? F.bytes(r.rec.size) + ' · from ' + r.file.name : r.error));
+      var rowNote = r.rec && r.rec.targetExt === 'svg' ? svgKindNote(r.rec.blob) : null;
+      if (rowNote) info.appendChild(el('div', 'meta', rowNote));
       row.appendChild(info);
       if (r.rec) { var d = btn('Download', 'sm primary', 'download'); d.onclick = function () { download(r.rec.blob, r.rec.name); }; row.appendChild(d); }
       list.appendChild(row);
@@ -548,6 +567,8 @@
     meta.appendChild(chip(rec.sourceExt)); meta.appendChild(el('span', null, '→')); meta.appendChild(chip(rec.targetExt));
     meta.appendChild(el('span', null, '·  ' + F.bytes(rec.size) + '  ·  ' + (rec.durationMs / 1000).toFixed(1) + ' s'));
     body.appendChild(meta);
+    var svgNote = rec.targetExt === 'svg' ? svgKindNote(rec.blob) : null;
+    if (svgNote) body.appendChild(el('p', 'hint', svgNote));
 
     var acts = el('div', 'done-acts');
     var dl = btn('Download ' + rec.name, 'primary lg', 'download');

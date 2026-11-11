@@ -402,12 +402,13 @@
   /* ------------------------------------------------------------- convert */
   function setStatus(msg) { $('#status').textContent = msg; }
   function convertOne(file, from, to, opts, onProgress) {
-    var started = Date.now();
-    return C.run(file, from, to, opts, { log: onProgress, progress: function (p, m) { if (m) onProgress(m); } }).then(function (res) {
+    var started = Date.now(), warnings = [];
+    return C.run(file, from, to, opts, { log: onProgress, warn: function (m) { warnings.push(m); }, progress: function (p, m) { if (m) onProgress(m); } }).then(function (res) {
       var rec = {
         name: res.name, sourceName: file.name, sourceExt: from, targetExt: res.ext,
         sourceSize: file.size, size: res.blob.size, mime: res.blob.type || F.meta(res.ext).mime,
-        durationMs: Date.now() - started, options: opts, createdAt: Date.now(), blob: res.blob
+        durationMs: Date.now() - started, options: opts, createdAt: Date.now(), blob: res.blob,
+        warnings: warnings
       };
       return DB.put(rec).then(function (id) { rec.id = id; return rec; }, function () { return rec; });
     });
@@ -534,6 +535,7 @@
       info.appendChild(el('div', 'meta' + (r.rec ? '' : ' bad'), r.rec ? F.bytes(r.rec.size) + ' · from ' + r.file.name : r.error));
       var rowNote = r.rec && r.rec.targetExt === 'svg' ? svgKindNote(r.rec.blob) : null;
       if (rowNote) info.appendChild(el('div', 'meta', rowNote));
+      if (r.rec) (r.rec.warnings || []).forEach(function (w) { info.appendChild(el('div', 'meta', w)); });
       row.appendChild(info);
       if (r.rec) { var d = btn('Download', 'sm primary', 'download'); d.onclick = function () { download(r.rec.blob, r.rec.name); }; row.appendChild(d); }
       list.appendChild(row);
@@ -569,6 +571,9 @@
     body.appendChild(meta);
     var svgNote = rec.targetExt === 'svg' ? svgKindNote(rec.blob) : null;
     if (svgNote) body.appendChild(el('p', 'hint', svgNote));
+    // Warnings the engine raised (a cap hit, a track dropped, a downmix) stay
+    // on the card — as progress text they vanished the moment this rendered.
+    (rec.warnings || []).forEach(function (w) { body.appendChild(el('p', 'hint', w)); });
 
     var acts = el('div', 'done-acts');
     var dl = btn('Download ' + rec.name, 'primary lg', 'download');

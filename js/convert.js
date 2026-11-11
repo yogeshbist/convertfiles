@@ -342,7 +342,10 @@
         var W = pdf.internal.pageSize.getWidth(), H = pdf.internal.pageSize.getHeight(), M = 24;
         var s = Math.min((W - M * 2) / c.width, (H - M * 2) / c.height);
         var w = c.width * s, h = c.height * s;
-        pdf.addImage(c.toDataURL('image/jpeg', 0.92), 'JPEG', (W - w) / 2, (H - h) / 2, w, h);
+        // JPEG has no alpha: serialising a transparent canvas drops it against
+        // black, so logos and signatures came out on a black page. Flatten onto
+        // white first, like the JPEG encoder path does.
+        pdf.addImage(flatten(c, '#ffffff').toDataURL('image/jpeg', 0.92), 'JPEG', (W - w) / 2, (H - h) / 2, w, h);
       });
       return pdf.output('blob');
     });
@@ -798,7 +801,7 @@
       ctx.log('source ' + srcW + 'x' + srcH + ', ' + (v.duration || 0).toFixed(1) + ' s — output ' + W + 'x' + H + ' @ ' + fps + ' fps');
       if (ctx.opts.mute) { ctx.log('audio track dropped'); return; }
       return decodeAudio(ctx.file).then(function (b) { audioBuf = sliceBuffer(b, t0, t1); hasAudio = true; ch = Math.min(2, b.numberOfChannels); },
-                                        function () { ctx.log('no decodable audio track — video only'); });
+                                        function () { ctx.warn('the audio track could not be decoded, so the converted video has no sound'); });
     }).then(function () {
       return need(isMp4 ? 'mp4muxer' : 'webmmuxer');
     }).then(function (mod) {
@@ -1532,6 +1535,14 @@
       file: file, from: from, to: to, opts: opts || {},
       log: hooks.log || function () {},
       progress: hooks.progress || function () {}
+    };
+    // A warning is a log line the caller also keeps: app.js collects these via
+    // hooks.warn and prints them on the result card, so a truncation or a
+    // quality loss is still visible after the progress text is gone. Plain
+    // ctx.log stays transient progress chatter.
+    ctx.warn = function (msg) {
+      ctx.log(msg);
+      if (hooks.warn) hooks.warn(msg);
     };
     return Promise.resolve().then(function () { return r.run(ctx); }).then(function (res) {
       var blob = res && res.blob ? res.blob : res;

@@ -512,6 +512,13 @@ for _e in EXAMS_SORTED[:4]:
 index = replace_block(index, 'home:exams', ''.join(_ec))
 index = re.sub(r'(<a class="btn sm" href="/exam-forms/">)(?:All exams|See all \d+ sarkari exam forms)(</a>)',
                r'\g<1>See all %d sarkari exam forms\g<2>' % len(OPEN_EXAMS), index)
+# Sitewide footer discovery links for the Results / Admit Card pages (added
+# 13 Nov 2026 for SEO). The anchor sequence includes the following Hindi
+# link, which the inserted links displace — so re-running the build on its
+# own output cannot insert them twice.
+index = index.replace('<a href="/guides/">Guides</a><a href="/hi/guides/"',
+                      '<a href="/guides/">Guides</a><a href="/exam-results/">Exam Results</a>'
+                      '<a href="/admit-cards/">Admit Card</a><a href="/hi/guides/"', 1)
 open('index.html', 'w').write(index)
 GENERATED.append('index.html')
 BASE = index

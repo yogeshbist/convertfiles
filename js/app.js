@@ -1615,25 +1615,36 @@
   var clear = document.getElementById('examClear');
   var go = document.getElementById('examGo');
   var cards = grid.querySelectorAll('.ecard');
-  var total = cards.length;
-  function apply() {
-    var q = input.value.toLowerCase().replace(/^\s+|\s+$/g, '');
-    var words = q ? q.split(/\s+/) : [];
+  /* The same hub page also carries an Exam Results block (closed exams);
+     the one search filters both groups, each with its own count line and
+     empty state. Absent on pages without the block. */
+  var rblock = document.getElementById('exam-results');
+  var rcards = rblock ? rblock.querySelectorAll('.ecard') : [];
+  var rcount = document.getElementById('examCountR');
+  var rnone = document.getElementById('examNoneR');
+  var words = [];
+  function paint(list, countEl, noneEl) {
     var shown = 0;
-    for (var i = 0; i < cards.length; i++) {
-      var hay = cards[i].getAttribute('data-search') || '';
+    for (var i = 0; i < list.length; i++) {
+      var hay = list[i].getAttribute('data-search') || '';
       var ok = true;
       for (var j = 0; j < words.length; j++) {
         if (hay.indexOf(words[j]) === -1) { ok = false; break; }
       }
-      cards[i].style.display = ok ? '' : 'none';
+      list[i].style.display = ok ? '' : 'none';
       if (ok) shown++;
     }
-    if (count) {
-      var tpl = count.getAttribute('data-showing') || '';
-      count.textContent = tpl.replace('{x}', shown).replace('{n}', total);
+    if (countEl) {
+      var tpl = countEl.getAttribute('data-showing') || '';
+      countEl.textContent = tpl.replace('{x}', shown).replace('{n}', list.length);
     }
-    if (none) none.hidden = shown !== 0;
+    if (noneEl) noneEl.hidden = shown !== 0;
+  }
+  function apply() {
+    var q = input.value.toLowerCase().replace(/^\s+|\s+$/g, '');
+    words = q ? q.split(/\s+/) : [];
+    paint(cards, count, none);
+    if (rcards.length) paint(rcards, rcount, rnone);
   }
   input.addEventListener('input', apply);
   input.addEventListener('keydown', function (ev) {

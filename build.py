@@ -216,7 +216,25 @@ def write(path, text):
 # /hi/exam-forms/) list cards sorted by last date; every exam gets a detail
 # page with dates, eligibility, specs, a form kit and the official links.
 EXAMS = load_json('exams')
-EXAMS_SORTED = sorted(EXAMS, key=lambda e: e['dates']['apply_end'])
+
+
+def exam_stage(e):
+    """Lifecycle stage: 'open' while the form runs; 'result-awaited' /
+    'result-out' once it closes. A closed exam is NOT deleted — its page
+    stays and it is listed in the Exam Results block of the hub until the
+    whole result cycle ends. Absent stage means open."""
+    return e.get('stage') or 'open'
+
+
+def exam_closed_date(e):
+    """The day the form fully closed: correction end when there was one."""
+    return e['dates'].get('correction_end') or e['dates']['apply_end']
+
+
+OPEN_EXAMS = [e for e in EXAMS if exam_stage(e) == 'open']
+RESULT_EXAMS = sorted((e for e in EXAMS if exam_stage(e) != 'open'),
+                      key=exam_closed_date, reverse=True)
+EXAMS_SORTED = sorted(OPEN_EXAMS, key=lambda e: e['dates']['apply_end'])
 GUIDE_TO_EXAMS = {}
 for _e in EXAMS:
     for _lang in ('en', 'hi'):
@@ -439,7 +457,7 @@ for _e in EXAMS_SORTED[:4]:
                % (_e['slug'], esc(_e['advt']), _cls, esc(_status), esc(_c['name']), esc(_c['tagline']), ' \u00b7 '.join(_facts)))
 index = replace_block(index, 'home:exams', ''.join(_ec))
 index = re.sub(r'(<a class="btn sm" href="/exam-forms/">)(?:All exams|See all \d+ sarkari exam forms)(</a>)',
-               r'\g<1>See all %d sarkari exam forms\g<2>' % len(EXAMS), index)
+               r'\g<1>See all %d sarkari exam forms\g<2>' % len(OPEN_EXAMS), index)
 open('index.html', 'w').write(index)
 GENERATED.append('index.html')
 BASE = index
@@ -696,7 +714,18 @@ def exam_faqs(e, lang):
     hi = lang == 'hi'
     name = c['name']
     faqs = []
-    if hi:
+    _stage = exam_stage(e)
+    if _stage == 'result-out':
+        faqs.append(('क्या %s का result आ गया है?' % name,
+                     'हाँ। Result %s को घोषित हुआ। इस पेज पर Check Result button दबाओ — वह आधिकारिक result %s पर खोलेगा।' % (dstr(d['result'], 'hi'), e['portal'])) if hi else
+                    ('Has the %s result been declared?' % name,
+                     'Yes. The result was declared on %s. Use the Check Result button on this page — it opens the official result on %s.' % (dstr(d['result']), e['portal'])))
+    elif _stage == 'result-awaited':
+        faqs.append(('%s का result कब आएगा?' % name,
+                     'अभी घोषित नहीं हुआ है। Board result %s पर घोषित करेगा; आधिकारिक result link उसी दिन इस पेज पर लग जाएगा, और यह परीक्षा Exam Form Centre के Exam Results block में track हो रही है।' % e['portal']) if hi else
+                    ('When will the %s result be declared?' % name,
+                     'It has not been declared yet. The board will announce it on %s; the official result link is added to this page the same day, and this exam is tracked in the Exam Results block of the Exam Form Centre.' % e['portal']))
+    elif hi:
         faqs.append(('%s के लिए आवेदन की आखिरी तारीख क्या है?' % name,
                      'Online फॉर्म %s को बंद होगा। शुल्क %s तक भरा जा सकता है।' % (dstr(d['apply_end'], 'hi'), dstr(d['fee_end'], 'hi'))))
     else:
@@ -827,12 +856,51 @@ def exam_card(e, lang, mini=False):
                '\u092a\u0942\u0930\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u2192' if hi else 'Full details \u2192', gbtn))
 
 
+def result_card(e, lang):
+    """Card for the hub's Exam Results block: a closed exam whose result is
+    awaited or out. Same card family as exam_card, but the chip and cells
+    speak result, not form."""
+    c = e[lang]
+    hi = lang == 'hi'
+    out = exam_stage(e) == 'result-out'
+    if out:
+        cls, status = 'out', ('Result आ गया' if hi else 'Result out')
+    else:
+        cls, status = 'result', ('Result का इंतज़ार' if hi else 'Result awaited')
+    path = exam_path(e, lang)
+    cells = []
+    if e.get('posts'):
+        cells.append(('कुल पद' if hi else 'Total posts', '{:,}'.format(e['posts'])))
+    cells.append(('फॉर्म बंद' if hi else 'Form closed', dstr(exam_closed_date(e), lang)))
+    cells.append(('Result', dstr(e['dates']['result'], lang) if out else ('इंतज़ार है' if hi else 'Awaited')))
+    if c.get('qual'):
+        cells.append(('योग्यता' if hi else 'Qualification', esc(c['qual'])))
+    grid = ''.join('<div class="ecell"><span>%s</span><b>%s</b></div>' % (k, v) for k, v in cells)
+    rbtn = ''
+    if out and e['links'].get('result'):
+        rbtn = '<a class="btn primary" href="%s" target="_blank" rel="noopener">%s</a>' % (
+            e['links']['result'], 'Result देखो ↗' if hi else 'Check Result ↗')
+    return ('<article class="ecard rcard" data-search="%s"><div class="ecard-head"><span class="advt-chip">%s</span>'
+            '<span class="status-chip %s">%s</span></div>'
+            '<span class="cat">%s</span><h3><a href="/%s">%s</a></h3>'
+            '<div class="ecard-grid">%s</div>'
+            '<div class="ecard-foot"><a class="btn" href="/%s">%s</a>%s</div></article>'
+            % (_search_text(e), esc(e['advt']), cls, esc(status), esc(e['board_hi' if hi else 'board_en']),
+               path, esc(c['name']), grid, path,
+               'पूरी जानकारी →' if hi else 'Full details →', rbtn))
+
+
 def exam_detail(e, lang):
     c, d = e[lang], e['dates']
     hi = lang == 'hi'
     path = exam_path(e, lang)
     cls, st_en, st_hi = exam_status(e)
     status = st_hi if hi else st_en
+    _stage = exam_stage(e)
+    if _stage == 'result-awaited':
+        cls, status = 'result', ('Result का इंतज़ार' if hi else 'Result awaited')
+    elif _stage == 'result-out':
+        cls, status = 'out', ('Result आ गया' if hi else 'Result out')
     hub_name = 'परीक्षा फॉर्म केंद्र' if hi else 'Exam Form Centre'
     hub_path = 'hi/exam-forms/' if hi else 'exam-forms/'
     crumb_html, crumb_ld = crumbs([('Home', '/'), (hub_name, '/' + hub_path), (c['name'], None)])
@@ -848,6 +916,18 @@ def exam_detail(e, lang):
     body.append('<div class="facts">' + ''.join('<div class="fact"><span>%s</span><b>%s</b></div>' % (esc(k), esc(v)) for k, v in facts) + '</div>')
     if e.get('note_hi' if hi else 'note_en'):
         body.append('<p class="exam-note"><b>%s</b> %s</p>' % ('ध्यान दो:' if hi else 'Check first:', esc(e['note_hi' if hi else 'note_en'])))
+    if _stage == 'result-awaited':
+        body.append('<div class="result-panel"><b>%s</b><p>%s</p><p><a href="/%s#exam-results">%s</a></p></div>' % (
+            'Result का इंतज़ार' if hi else 'Result awaited',
+            'आवेदन बंद हो गए हैं — result की प्रतीक्षा है। Result यहाँ आधिकारिक website से link किया जाएगा।' if hi else
+            'Applications closed — result awaited. The result will be linked here from the official website.',
+            hub_path, 'सभी Exam Results देखो →' if hi else 'See all Exam Results →'))
+    elif _stage == 'result-out':
+        body.append('<div class="result-panel out"><b>%s</b><p>%s</p><p><a class="btn primary" href="%s" target="_blank" rel="noopener">%s</a></p></div>' % (
+            'Result घोषित हो गया' if hi else 'Result declared',
+            ('Result %s को घोषित हुआ।' % dstr(d['result'], lang)) if hi else
+            ('The result was declared on %s.' % dstr(d['result'], lang)),
+            e['links']['result'], 'Result देखो (आधिकारिक)' if hi else 'Check Result (official)'))
     rows = [('फॉर्म शुरू' if hi else 'Form opens', dstr(d['apply_start'], lang)),
             ('आवेदन की अंतिम तिथि' if hi else 'Last date to apply', dstr(d['apply_end'], lang)),
             ('शुल्क भुगतान की अंतिम तिथि' if hi else 'Last date for fee payment', dstr(d['fee_end'], lang))]
@@ -861,7 +941,15 @@ def exam_detail(e, lang):
         rows.append(('Correction window', cv))
     exam_txt = d.get('exam_hi' if hi else 'exam') or ('अभी घोषित नहीं — घोषित होते ही यहाँ update होगा' if hi else 'To be announced — updated here as soon as it is')
     rows.append(('परीक्षा तिथि' if hi else 'Exam date', exam_txt))
-    rows.append(('परिणाम (Result)' if hi else 'Result', 'अभी घोषित नहीं — आते ही यहाँ update होगा' if hi else 'Not declared yet — updated here as soon as it is'))
+    if _stage == 'result-out':
+        _result_txt = ('%s को घोषित — नीचे Check Result button से देखो' % dstr(d['result'], 'hi')) if hi else \
+                      ('Declared on %s — see the Check Result button below' % dstr(d['result']))
+    elif _stage == 'result-awaited':
+        _result_txt = 'अभी घोषित नहीं — आते ही आधिकारिक link यहाँ लगेगा' if hi else \
+                      'Not declared yet — the official link will be added here the day it is'
+    else:
+        _result_txt = 'अभी घोषित नहीं — आते ही यहाँ update होगा' if hi else 'Not declared yet — updated here as soon as it is'
+    rows.append(('परिणाम (Result)' if hi else 'Result', _result_txt))
     body.append('<h2>%s</h2><table class="dates">%s</table>' % ('महत्वपूर्ण तिथियाँ' if hi else 'Important dates',
                 ''.join('<tr><th>%s</th><td>%s</td></tr>' % (esc(k), esc(v)) for k, v in rows)))
     body.append('<h2>%s</h2><ul>%s</ul>' % ('पात्रता और शुल्क' if hi else 'Eligibility & fees',
@@ -897,25 +985,33 @@ def exam_detail(e, lang):
             ''.join(pcards),
             'ये paper exam board का official print है; सही जवाब हरे ✓ निशान के साथ उसी में दिए हैं। Paper पर हक़ board का है — यहाँ सिर्फ़ पढ़ाई के लिए free रखा है।' if hi else
             'This is the exam board\u2019s official print; the correct answers are marked with a green \u2713 inside it. The paper belongs to the board — it is kept here free, for study only.'))
-    kit = []
-    for k in c['kit']:
-        btn = ''
-        if k.get('tool'):
-            tname = TOOL_BY_SLUG[k['tool']]['name'] if k['tool'] in TOOL_BY_SLUG else k['tool']
-            btn = '<a class="btn primary" href="/%s/">%s</a>' % (k['tool'], esc(tname))
-        kit.append('<div class="kitcard"><h3>%s</h3><p>%s</p>%s</div>' % (esc(k['title']), esc(k['text']), btn))
-    body.append('<h2>%s</h2><div class="kit">%s</div><p>%s</p>' % (
-        'Form Kit — फाइलें यहीं तैयार करो (फ्री)' if hi else 'Form Kit — prepare every file here, free',
-        ''.join(kit),
-        'सभी टूल आपके browser में ही चलते हैं — कोई फाइल upload नहीं होती, कोई sign-up नहीं।' if hi else
-        'Every tool runs inside your browser — nothing is uploaded and no sign-up is needed.'))
-    if c.get('mistakes'):
-        body.append('<h2>%s</h2><ul>%s</ul>' % (
-            'फॉर्म भरते समय आम गलतियाँ' if hi else 'Common mistakes that get forms rejected',
-            ''.join('<li>%s</li>' % esc(x) for x in c['mistakes'])))
-    body.append('<h2>%s</h2><ol class="howto">%s</ol>' % ('फॉर्म कैसे भरें — step by step' if hi else 'How to apply — step by step',
-                ''.join('<li>%s</li>' % esc(s) for s in c['steps'])))
-    links = ['<a class="btn primary" href="%s" target="_blank" rel="noopener">%s \u2014 %s</a>' % (e['links']['apply'], 'Apply Online' if not hi else 'ऑनलाइन आवेदन करो', esc(e['portal']))]
+    if _stage == 'open':
+        # The Form Kit, mistake list and apply steps only make sense while
+        # the form can still be filled; a closed exam's page must not
+        # invite applying.
+        kit = []
+        for k in c['kit']:
+            btn = ''
+            if k.get('tool'):
+                tname = TOOL_BY_SLUG[k['tool']]['name'] if k['tool'] in TOOL_BY_SLUG else k['tool']
+                btn = '<a class="btn primary" href="/%s/">%s</a>' % (k['tool'], esc(tname))
+            kit.append('<div class="kitcard"><h3>%s</h3><p>%s</p>%s</div>' % (esc(k['title']), esc(k['text']), btn))
+        body.append('<h2>%s</h2><div class="kit">%s</div><p>%s</p>' % (
+            'Form Kit — फाइलें यहीं तैयार करो (फ्री)' if hi else 'Form Kit — prepare every file here, free',
+            ''.join(kit),
+            'सभी टूल आपके browser में ही चलते हैं — कोई फाइल upload नहीं होती, कोई sign-up नहीं।' if hi else
+            'Every tool runs inside your browser — nothing is uploaded and no sign-up is needed.'))
+        if c.get('mistakes'):
+            body.append('<h2>%s</h2><ul>%s</ul>' % (
+                'फॉर्म भरते समय आम गलतियाँ' if hi else 'Common mistakes that get forms rejected',
+                ''.join('<li>%s</li>' % esc(x) for x in c['mistakes'])))
+        body.append('<h2>%s</h2><ol class="howto">%s</ol>' % ('फॉर्म कैसे भरें — step by step' if hi else 'How to apply — step by step',
+                    ''.join('<li>%s</li>' % esc(s) for s in c['steps'])))
+    links = []
+    if _stage == 'open':
+        links.append('<a class="btn primary" href="%s" target="_blank" rel="noopener">%s \u2014 %s</a>' % (e['links']['apply'], 'Apply Online' if not hi else 'ऑनलाइन आवेदन करो', esc(e['portal'])))
+    elif _stage == 'result-out' and e['links'].get('result'):
+        links.append('<a class="btn primary" href="%s" target="_blank" rel="noopener">%s</a>' % (e['links']['result'], 'Result देखो (आधिकारिक)' if hi else 'Check Result (official)'))
     if e['links'].get('notice'):
         links.append('<a class="btn" href="%s" target="_blank" rel="noopener">%s</a>' % (e['links']['notice'], 'Official notification (PDF)' if not hi else 'आधिकारिक अधिसूचना (PDF)'))
     links.append('<a class="btn" href="%s" target="_blank" rel="noopener">%s</a>' % (e['links']['site'], 'Official website' if not hi else 'आधिकारिक website'))
@@ -928,7 +1024,7 @@ def exam_detail(e, lang):
           ('Correction (सुधार)' if hi else 'Correction', _corr_txt),
           ('Admit Card (प्रवेश पत्र)' if hi else 'Admit card', 'अभी घोषित नहीं' if hi else 'To be announced'),
           ('परीक्षा' if hi else 'Exam', exam_txt),
-          ('Result (परिणाम)' if hi else 'Result', 'अभी घोषित नहीं' if hi else 'Not declared yet')]
+          ('Result (परिणाम)' if hi else 'Result', _result_txt)]
     body.append('<h2>%s</h2><div class="timeline">%s</div>' % (
         'आगे क्या होगा' if hi else 'What happens next',
         ''.join('<div class="tl-step"><b>%s</b><span>%s</span></div>' % (esc(k), esc(v)) for k, v in tl)))
@@ -938,7 +1034,7 @@ def exam_detail(e, lang):
         body.append('<div class="exam-note">%s <a href="/%s"><b>%s</b></a></div>' % (
             'फोटो और हस्ताक्षर के नियम पूरी detail में चाहिए? हमारी गाइड पढ़ो:' if hi else
             'Want the photo and signature rules in full detail? Read the guide:', gpath, esc(GUIDE_BY_SLUG[gsl]['title'])))
-    _others = [x for x in EXAMS if x['slug'] != e['slug']]
+    _others = [x for x in OPEN_EXAMS if x['slug'] != e['slug']]
     _my_end = datetime.date.fromisoformat(d['apply_end'])
     _others.sort(key=lambda x: abs((datetime.date.fromisoformat(x['dates']['apply_end']) - _my_end).days))
     _rel = sorted(_others[:3], key=lambda x: x['dates']['apply_end'])
@@ -951,8 +1047,8 @@ def exam_detail(e, lang):
     body.append('<p class="exam-disc">%s</p>' % (
         'सभी जानकारी आधिकारिक अधिसूचना से ली गई है। फॉर्म अंत में सिर्फ आधिकारिक portal (%s) पर ही submit होता है — Convert Files एक फ्री मदद platform है, कोई सरकारी website नहीं। यहाँ हर चीज़ फ्री है; कोई sign-up नहीं चाहिए।' % e['portal'] if hi else
         'All information here is taken from the official notification. The form is finally submitted only on the official portal (%s) — Convert Files is a free help platform, not a government website. Everything here is free; no sign-up is needed.' % e['portal']))
-    body.append('<p class="seo-more"><a href="/%s">%s</a> \u00b7 <a href="/%s">%s</a></p>' % (
-        hub_path, 'सभी परीक्षाएँ' if hi else 'All exams', 'hi/guides/' if hi else 'guides/', 'गाइड' if hi else 'Guides'))
+    body.append('<p class="seo-more"><a href="/%s">%s</a> \u00b7 <a href="/%s#exam-results">%s</a> \u00b7 <a href="/%s">%s</a></p>' % (
+        hub_path, 'सभी परीक्षाएँ' if hi else 'All exams', hub_path, 'Exam Results', 'hi/guides/' if hi else 'guides/', 'गाइड' if hi else 'Guides'))
     body.append('</section>')
     faq_ld = {'@context': 'https://schema.org', '@type': 'FAQPage',
               'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faqs]}
@@ -960,6 +1056,13 @@ def exam_detail(e, lang):
             ('%s (%s) Online Form 2026 — Last Date, Fees, Photo & Signature Size' % (c['name'], e['advt']))
     desc = c['tagline'] + (' अंतिम तिथि %s। Correction, परीक्षा तिथि और result के update, form kit और आधिकारिक apply link — सब फ्री, कुछ upload नहीं होता।' % dstr(d['apply_end'], 'hi') if hi else
                            ' Last date %s. Correction, exam-date and result updates, the form kit and the official apply link — everything free, nothing uploaded.' % dstr(d['apply_end']))
+    if _stage != 'open':
+        title = ('%s (%s) Result 2026 — Result की तिथि, Merit List और आधिकारिक Result Link' % (c['name'], e['advt'])) if hi else \
+                ('%s (%s) Result 2026 — Result Date, Merit List & Official Result Link' % (c['name'], e['advt']))
+        desc = ('%s आवेदन %s को बंद हुए। Result के update, merit list और आधिकारिक result link — सब यहीं, बिल्कुल फ्री।' % (c['tagline'], dstr(d['apply_end'], 'hi'))) if hi else \
+               ('%s Applications closed on %s. Result updates, the merit list and the official result link — all here, free.' % (c['tagline'], dstr(d['apply_end'])))
+        if _stage == 'result-out':
+            desc += (' Result %s को घोषित हो गया है।' % dstr(d['result'], 'hi')) if hi else (' The result was declared on %s.' % dstr(d['result']))
     page = replace_block(BASE, 'page:meta', page_meta(title, desc, path, extra_meta=exam_hreflang(e), jsonld=[crumb_ld, faq_ld]))
     if hi:
         page = page.replace('<html lang="en">', '<html lang="hi">', 1)
@@ -1000,7 +1103,7 @@ for _lang in ('en', 'hi'):
         'सभी परीक्षाओं की तारीखें — एक नज़र में' if _hi else 'All exam dates — at a glance',
         'परीक्षा' if _hi else 'Exam', 'अंतिम तिथि' if _hi else 'Last date',
         'शुल्क की अंतिम तिथि' if _hi else 'Fee last date', 'Correction', ''.join(_trows)))
-    _hfaqs = [(q, a.replace('{count}', str(len(EXAMS)))) for q, a in HUB_FAQS[_lang]]
+    _hfaqs = [(q, a.replace('{count}', str(len(OPEN_EXAMS)))) for q, a in HUB_FAQS[_lang]]
     _hfaq_ld = {'@context': 'https://schema.org', '@type': 'FAQPage',
                 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in _hfaqs]}
     _hfaq_html = ('<h2>%s</h2><dl class="faq-list">%s</dl>' % (
@@ -1017,15 +1120,38 @@ for _lang in ('en', 'hi'):
                    esc('Exam खोजें' if _hi else 'Search exams'),
                    'खोजें' if _hi else 'Search',
                    esc('{n} में से {x} exam दिख रहे हैं' if _hi else 'Showing {x} of {n} exams'),
-                   ('%d में से %d exam दिख रहे हैं' % (len(EXAMS), len(EXAMS))) if _hi else
-                   ('Showing %d of %d exams' % (len(EXAMS), len(EXAMS)))))
+                   ('%d में से %d exam दिख रहे हैं' % (len(OPEN_EXAMS), len(OPEN_EXAMS))) if _hi else
+                   ('Showing %d of %d exams' % (len(OPEN_EXAMS), len(OPEN_EXAMS)))))
     _none = ('<div class="exam-none" id="examNone" hidden><p>%s</p>'
              '<button type="button" class="btn" id="examClear">%s</button></div>' % (
                  'आपकी search से कोई exam match नहीं हुआ। Board का नाम try करो — जैसे RRB, SSC, IBPS — या Police, Bank, Teacher जैसा शब्द।' if _hi else
                  'No exam matches your search. Try a board name like RRB, SSC, IBPS or a word like Police, Bank, Teacher.',
                  'Search साफ़ करो' if _hi else 'Clear search'))
+    _rpill = ''
+    _rblock = ''
+    if RESULT_EXAMS:
+        _rpill = ('<p class="exam-results-cta"><a href="#exam-results"><b>Exam Results</b><span>%s</span></a></p>' % (
+            'बंद हो चुके फॉर्म के result — घोषित और प्रतीक्षित, सब यहीं ↓' if _hi else
+            'Results of closed forms — declared and awaited, all right here ↓'))
+        _rcount = ('<p class="exam-count" id="examCountR" data-showing="%s">%s</p>' % (
+            esc('{n} में से {x} result दिख रहे हैं' if _hi else 'Showing {x} of {n} results'),
+            ('%d में से %d result दिख रहे हैं' % (len(RESULT_EXAMS), len(RESULT_EXAMS))) if _hi else
+            ('Showing %d of %d results' % (len(RESULT_EXAMS), len(RESULT_EXAMS)))))
+        _rnone = ('<div class="exam-none" id="examNoneR" hidden><p>%s</p></div>' % (
+            'आपकी search से कोई result match नहीं हुआ।' if _hi else
+            'No exam result matches your search.'))
+        _rblock = ('<div class="exam-results" id="exam-results"><h2>%s</h2>'
+                   '<p class="lead">%s</p>%s'
+                   '<div class="exam-grid">%s</div>%s</div>' % (
+                       'Exam Results — सरकारी परीक्षा परिणाम' if _hi else 'Exam Results — Sarkari Exam Results',
+                       'जिन परीक्षाओं के फॉर्म बंद हो चुके हैं, वे यहीं रहती हैं — result घोषित होते ही आधिकारिक result link इसी block में और परीक्षा के अपने पेज पर लग जाता है।' if _hi else
+                       'Exams whose forms have closed stay right here — the day a result is declared, the official result link appears in this block and on the exam\u2019s own page.',
+                       _rcount,
+                       ''.join(result_card(_e, _lang) for _e in RESULT_EXAMS),
+                       _rnone))
     _hb = ['<section class="seo hub exam-hub">', _hc,
            _search,
+           _rpill,
            '<p class="lead">%s</p>' % (
                'अभी खुले हुए सभी सरकारी परीक्षा फॉर्म एक ही जगह — हर सरकारी भर्ती के लिए online form की अंतिम तिथि, शुल्क, correction window, सही फोटो-हस्ताक्षर size और आधिकारिक apply link, साथ में apply करने से पहले फाइलें तैयार करने के फ्री टूल। बिना sign-up, बिल्कुल फ्री। किसी भी परीक्षा पर click करो — उसका पूरा पेज खुलेगा।' if _hi else
                'Every sarkari exam form open right now, in one place — for each sarkari bharti: the online form\u2019s last date, fees, correction window, exact photo-signature size and the official apply link, plus free tools to prepare your files before you apply. No sign-up, nothing to pay. Click any exam for its full page.'),
@@ -1033,6 +1159,7 @@ for _lang in ('en', 'hi'):
            ''.join(_steps3),
            '<div class="exam-grid">' + ''.join(exam_card(_e, _lang) for _e in EXAMS_SORTED) + '</div>',
            _none,
+           _rblock,
            _dates_tbl,
            _hfaq_html,
            '<p class="exam-disc">%s</p>' % (
@@ -1047,16 +1174,16 @@ for _lang in ('en', 'hi'):
     _hp = replace_block(BASE, 'page:meta', page_meta(
         'सरकारी परीक्षा फॉर्म 2026 — सभी सरकारी भर्तियों के ऑनलाइन फॉर्म, अंतिम तिथि व फोटो-हस्ताक्षर साइज़ | ConvertFiles' if _hi else
         'Sarkari Exam Forms 2026 — All Govt Exam Online Forms, Last Dates & Photo-Signature Size | ConvertFiles',
-        ('%d खुले सरकारी परीक्षा फॉर्म एक जगह — हर सरकारी भर्ती की अंतिम तिथि, शुल्क, correction window और सही फोटो-हस्ताक्षर size, साथ में फाइलें तैयार करने के फ्री टूल। बिल्कुल फ्री, बिना sign-up।' % len(EXAMS)) if _hi else
-        ('All %d open sarkari exam forms in one place — last dates, fees, correction windows and exact photo-signature sizes, with free tools to prepare every file. Free, no sign-up.' % len(EXAMS)),
+        ('%d खुले सरकारी परीक्षा फॉर्म एक जगह — हर सरकारी भर्ती की अंतिम तिथि, शुल्क, correction window और सही फोटो-हस्ताक्षर size, साथ में फाइलें तैयार करने के फ्री टूल। बिल्कुल फ्री, बिना sign-up।' % len(OPEN_EXAMS)) if _hi else
+        ('All %d open sarkari exam forms in one place — last dates, fees, correction windows and exact photo-signature sizes, with free tools to prepare every file. Free, no sign-up.' % len(OPEN_EXAMS)),
         _hub_path, extra_meta=_hl, jsonld=[_hc_ld, _hfaq_ld]))
     if _hi:
         _hp = _hp.replace('<html lang="en">', '<html lang="hi">', 1)
     _hp = replace_block(_hp, 'page:body', '\n'.join(_hb))
     _hp = _hp.replace('<h1>Free Online File Converter</h1>', '<h1>%s</h1>' % _hub_name)
     _hp = _hp.replace(HERO_P, ('<p>%s</p>' % (
-        '%d परीक्षाएँ, अंतिम तिथि के क्रम में — फॉर्म, correction और result, सबके update यहीं।' % len(EXAMS) if _hi else
-        '%d exams, sorted by last date — forms, corrections and results, all tracked here.' % len(EXAMS))) + cd_chip(None, _lang))
+        '%d परीक्षाएँ, अंतिम तिथि के क्रम में — फॉर्म, correction और result, सबके update यहीं।' % len(OPEN_EXAMS) if _hi else
+        '%d exams, sorted by last date — forms, corrections and results, all tracked here.' % len(OPEN_EXAMS))) + cd_chip(None, _lang))
     write(_hub_path + 'index.html', hide_converter(strip_home(_hp)))
 
 # ------------------------------------------------------------- tool pages

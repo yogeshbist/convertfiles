@@ -17636,5 +17636,857 @@
         "आखिरी दिन तक इंतज़ार करना — window सिर्फ़ 10 दिन की है"
       ]
     }
+  },
+  {
+    "advt": "Advt 05/2026",
+    "board_en": "Delhi Subordinate Services Selection Board (DSSSB), Government of NCT of Delhi",
+    "board_hi": "दिल्ली अधीनस्थ सेवा चयन बोर्ड (DSSSB), राष्ट्रीय राजधानी क्षेत्र दिल्ली सरकार",
+    "dates": {
+      "apply_end": "2026-11-11",
+      "apply_start": "2026-10-13",
+      "correction_end": null,
+      "correction_start": null,
+      "exam": null,
+      "fee_end": "2026-11-11"
+    },
+    "en": {
+      "checklist": [
+        "Matriculation certificate",
+        "DSSSB OARS registration (User ID + password)",
+        "Date of birth proof (born 2 Jun 1999 – 1 Jun 2008)",
+        "Photo 200×230 px, 20–50 KB; signature 140×60 px, 10–20 KB",
+        "Photo identity proof (scanned)",
+        "Online fee payment (₹100, unless exempt)"
+      ],
+      "documents": [
+        "Matriculation certificate and marksheet",
+        "Date of birth proof",
+        "Caste certificate / PwD certificate (where applicable)",
+        "Photo and signature",
+        "Photo identity proof",
+        "Fee payment receipt"
+      ],
+      "donts": [
+        "Do not apply without Matriculation — both posts need Class 10 pass.",
+        "Do not pay the fee if you are SC/ST/PwBD/ex-serviceman or a woman candidate — you are exempt.",
+        "Do not wait for the last hours — the link closes at 11:00 PM on 11 November 2026.",
+        "Do not skip the preview — wrong details cannot be fixed after final submit."
+      ],
+      "dos": [
+        "Complete your one-time registration (OARS) on dsssbonline.nic.in first — the form needs it.",
+        "Check your date of birth against 2 June 1999 – 1 June 2008 before applying.",
+        "Upload the photo (200×230 px, 20–50 KB) and signature (140×60 px, 10–20 KB) in the exact sizes.",
+        "Preview every column before FINAL SUBMIT.",
+        "Submit before 11 November 2026, 11:00 PM — the link is disabled after that."
+      ],
+      "eligibility": [
+        "25 Group-C vacancies in the District & Sessions Courts, Delhi — Sweeper/Safai Karamchari (Post Code 46/26) 10 and Chowkidar (Post Code 47/26) 15. The vacancies are tentative.",
+        "Education: Matriculation (Class 10) pass or equivalent from a recognised board, for both posts. No experience needed. Qualification is counted as on 11 November 2026.",
+        "Age: 18–27 years as on 1 June 2026 (born between 2 June 1999 and 1 June 2008). Relaxation: SC/ST 5 years, OBC (Delhi) 3 years, PwBD 10 years (UR/EWS), 15 years (SC/ST), 13 years (OBC); ex-servicemen military service + 3 years (maximum 55 years).",
+        "Selection: Objective/MCQ examination (100 marks, 120 minutes — English 25, Hindi 25, General Knowledge including Current Affairs 25, Arithmetic 25; −0.25 per wrong answer; qualifying 50% for UR/EWS, 45% for OBC (Delhi)/SC/ST/PwBD/ESM) → Interview (15 marks, up to 10 times the vacancies called). Final merit on MCQ + interview marks.",
+        "Pay: ₹5,200–20,200 plus Grade Pay ₹2,000 for both posts. One-time registration (OARS) on dsssbonline.nic.in is compulsory before applying."
+      ],
+      "extra_faq": [
+        {
+          "a": "11 November 2026, till 11:00 PM, online only on dsssbonline.nic.in. The fee must also be paid by 11 November 2026, 11:00 PM.",
+          "q": "What is the last date to apply for DSSSB Sweeper & Chowkidar 2026?"
+        },
+        {
+          "a": "SC/ST/PwBD candidates, ex-servicemen and all women candidates pay nothing. General/OBC/EWS candidates pay ₹100 through SBI e-pay.",
+          "q": "Who is exempt from the ₹100 fee?"
+        },
+        {
+          "a": "An objective/MCQ examination (100 marks, 120 minutes; English, Hindi, General Knowledge, Arithmetic; −0.25 per wrong answer) followed by an interview (15 marks). Final merit is on MCQ + interview marks.",
+          "q": "What is the selection process?"
+        }
+      ],
+      "fees": [
+        "Application fee: ₹100 for General/OBC/EWS candidates, paid online through SBI e-pay. The fee is non-refundable.",
+        "SC/ST/PwBD/ex-servicemen and all women candidates pay nothing."
+      ],
+      "fees_short": "₹100 (SC/ST/PwBD/ESM/women: nil)",
+      "kit": [
+        {
+          "text": "The photo must be 200×230 px and 20–50 KB — compress it here with the target set to 35 KB.",
+          "title": "Photo — set target 35 KB",
+          "tool": "compress-image"
+        },
+        {
+          "text": "The signature must be 140×60 px and 10–20 KB — compress the scan here with the target set to 15 KB.",
+          "title": "Signature — set target 15 KB",
+          "tool": "compress-image"
+        }
+      ],
+      "mistakes": [
+        "Applying without Matriculation pass",
+        "Paying the fee despite being exempt (SC/ST/PwBD/ESM/women)",
+        "Uploading a photo or signature outside the exact sizes",
+        "Missing the 11:00 PM deadline on 11 November 2026"
+      ],
+      "name": "DSSSB Sweeper & Chowkidar 2026",
+      "qual": "Matriculation (Class 10) pass + DSSSB OARS registration",
+      "specs": [
+        "Photo: plain white/off-white background, 200×230 pixels, 20–50 KB.",
+        "Signature: 140×60 pixels, 10–20 KB. Also upload a scanned photo identity proof."
+      ],
+      "steps": [
+        "Open dsssbonline.nic.in and complete the one-time registration (OARS) if you have not already",
+        "Log in and select Advertisement No. 05/2026 (Post Code 46/26 or 47/26)",
+        "Fill personal, Matriculation and address details carefully",
+        "Upload the photo (200×230 px, 20–50 KB), signature (140×60 px, 10–20 KB) and photo ID proof",
+        "Pay the ₹100 fee online through SBI e-pay (if applicable)",
+        "Preview, then FINAL SUBMIT before 11 November 2026, 11:00 PM and print the application"
+      ],
+      "tagline": "25 Sweeper and Chowkidar posts in Delhi District & Sessions Courts — Matriculation pass, MCQ test + interview, fee ₹100, last date 11 November 2026 (11 PM)."
+    },
+    "guide": {
+      "en": null,
+      "hi": null
+    },
+    "hi": {
+      "checklist": [
+        "मैट्रिक प्रमाणपत्र",
+        "DSSSB OARS पंजीकरण (User ID + password)",
+        "जन्म तिथि का प्रमाण (जन्म 2 जून 1999 – 1 जून 2008)",
+        "फोटो 200×230 px, 20–50 KB; हस्ताक्षर 140×60 px, 10–20 KB",
+        "फोटो पहचान पत्र (scan)",
+        "ऑनलाइन शुल्क भुगतान (₹100, छूट हो तो नहीं)"
+      ],
+      "documents": [
+        "मैट्रिक प्रमाणपत्र और अंकतालिका",
+        "जन्म तिथि का प्रमाण",
+        "जाति प्रमाणपत्र / PwD प्रमाणपत्र (जहाँ लागू हो)",
+        "फोटो और हस्ताक्षर",
+        "फोटो पहचान पत्र",
+        "शुल्क भुगतान रसीद"
+      ],
+      "donts": [
+        "मैट्रिक के बिना आवेदन मत करो — दोनों पदों के लिए 10वीं पास चाहिए।",
+        "अगर तुम SC/ST/PwBD/भूतपूर्व सैनिक या महिला उम्मीदवार हो तो शुल्क मत भरो — तुम्हें छूट है।",
+        "आखिरी घंटों का इंतज़ार मत करो — लिंक 11 नवंबर 2026, रात 11:00 को बंद होगा।",
+        "Preview मत छोड़ो — final submit के बाद गलत विवरण ठीक नहीं हो सकता।"
+      ],
+      "dos": [
+        "पहले dsssbonline.nic.in पर one-time registration (OARS) पूरा करो — फॉर्म के लिए ज़रूरी है।",
+        "आवेदन से पहले अपनी जन्म तिथि 2 जून 1999 – 1 जून 2008 से मिलाओ।",
+        "फोटो (200×230 px, 20–50 KB) और हस्ताक्षर (140×60 px, 10–20 KB) ठीक उसी size में upload करो।",
+        "FINAL SUBMIT से पहले हर कॉलम preview में जाँचो।",
+        "11 नवंबर 2026, रात 11:00 से पहले submit करो — उसके बाद लिंक बंद हो जाएगा।"
+      ],
+      "eligibility": [
+        "दिल्ली के ज़िला एवं सत्र न्यायालयों में 25 ग्रुप-C रिक्तियाँ — स्वीपर/सफाई कर्मचारी (पद कोड 46/26) 10 और चौकीदार (पद कोड 47/26) 15। रिक्तियाँ अस्थायी हैं।",
+        "शिक्षा: दोनों पदों के लिए मान्यता प्राप्त बोर्ड से मैट्रिक (10वीं) पास या समकक्ष। कोई अनुभव नहीं चाहिए। योग्यता 11 नवंबर 2026 के हिसाब से गिनी जाती है।",
+        "उम्र: 1 जून 2026 को 18–27 वर्ष (जन्म 2 जून 1999 से 1 जून 2008 के बीच)। छूट: SC/ST 5 वर्ष, OBC (दिल्ली) 3 वर्ष, PwBD 10 वर्ष (UR/EWS), 15 वर्ष (SC/ST), 13 वर्ष (OBC); भूतपूर्व सैनिक सैन्य सेवा + 3 वर्ष (अधिकतम 55 वर्ष)।",
+        "चयन: Objective/MCQ परीक्षा (100 अंक, 120 मिनट — अंग्रेज़ी 25, हिंदी 25, सामान्य ज्ञान सहित करेंट अफेयर्स 25, अंकगणित 25; गलत उत्तर पर −0.25; अर्हता UR/EWS के लिए 50%, OBC (दिल्ली)/SC/ST/PwBD/ESM के लिए 45%) → साक्षात्कार (15 अंक, रिक्तियों के 10 गुना तक बुलाए जाते हैं)। अंतिम मेधा MCQ + साक्षात्कार अंकों पर।",
+        "वेतन: दोनों पदों के लिए ₹5,200–20,200 साथ में ग्रेड पे ₹2,000। आवेदन से पहले dsssbonline.nic.in पर one-time registration (OARS) अनिवार्य है।"
+      ],
+      "extra_faq": [
+        {
+          "a": "11 नवंबर 2026, रात 11:00 तक, सिर्फ़ dsssbonline.nic.in पर ऑनलाइन। शुल्क भी 11 नवंबर 2026, रात 11:00 तक भरना होगा।",
+          "q": "DSSSB स्वीपर और चौकीदार 2026 के लिए आवेदन की आखिरी तारीख क्या है?"
+        },
+        {
+          "a": "SC/ST/PwBD उम्मीदवार, भूतपूर्व सैनिक और सभी महिला उम्मीदवार कुछ नहीं भरते। General/OBC/EWS उम्मीदवार SBI e-pay से ₹100 भरते हैं।",
+          "q": "₹100 शुल्क से किसे छूट है?"
+        },
+        {
+          "a": "Objective/MCQ परीक्षा (100 अंक, 120 मिनट; अंग्रेज़ी, हिंदी, सामान्य ज्ञान, अंकगणित; गलत उत्तर पर −0.25) फिर साक्षात्कार (15 अंक)। अंतिम मेधा MCQ + साक्षात्कार अंकों पर बनती है।",
+          "q": "चयन प्रक्रिया क्या है?"
+        }
+      ],
+      "fees": [
+        "आवेदन शुल्क: General/OBC/EWS उम्मीदवारों के लिए ₹100, SBI e-pay से ऑनलाइन भुगतान। शुल्क वापस नहीं होता।",
+        "SC/ST/PwBD/भूतपूर्व सैनिक और सभी महिला उम्मीदवार कुछ नहीं भरते।"
+      ],
+      "fees_short": "₹100 (SC/ST/PwBD/ESM/महिला: निःशुल्क)",
+      "kit": [
+        {
+          "text": "फोटो 200×230 px और 20–50 KB होनी चाहिए — यहाँ target 35 KB रखकर compress करो।",
+          "title": "फोटो — target 35 KB रखो",
+          "tool": "compress-image"
+        },
+        {
+          "text": "हस्ताक्षर 140×60 px और 10–20 KB होना चाहिए — यहाँ target 15 KB रखकर scan compress करो।",
+          "title": "हस्ताक्षर — target 15 KB रखो",
+          "tool": "compress-image"
+        }
+      ],
+      "mistakes": [
+        "मैट्रिक पास हुए बिना आवेदन करना",
+        "छूट होने के बावजूद शुल्क भरना (SC/ST/PwBD/ESM/महिला)",
+        "ठीक size से बाहर फोटो या हस्ताक्षर upload करना",
+        "11 नवंबर 2026, रात 11:00 की deadline चूकना"
+      ],
+      "name": "DSSSB स्वीपर और चौकीदार 2026",
+      "qual": "मैट्रिक (10वीं) पास + DSSSB OARS पंजीकरण",
+      "specs": [
+        "फोटो: सादी सफेद/off-white background, 200×230 pixels, 20–50 KB।",
+        "हस्ताक्षर: 140×60 pixels, 10–20 KB। साथ में फोटो पहचान पत्र का scan भी upload करें।"
+      ],
+      "steps": [
+        "dsssbonline.nic.in खोलो और one-time registration (OARS) पूरा करो (अगर पहले से नहीं किया)",
+        "Log in करो और Advertisement No. 05/2026 (पद कोड 46/26 या 47/26) चुनो",
+        "व्यक्तिगत, मैट्रिक और पता विवरण ध्यान से भरो",
+        "फोटो (200×230 px, 20–50 KB), हस्ताक्षर (140×60 px, 10–20 KB) और फोटो ID प्रमाण upload करो",
+        "₹100 शुल्क SBI e-pay से ऑनलाइन भरो (जहाँ लागू हो)",
+        "Preview करो, फिर 11 नवंबर 2026, रात 11:00 से पहले FINAL SUBMIT करो और आवेदन print करो"
+      ],
+      "tagline": "दिल्ली ज़िला एवं सत्र न्यायालयों में 25 स्वीपर और चौकीदार पद — 10वीं पास, MCQ परीक्षा + साक्षात्कार, शुल्क ₹100, अंतिम तिथि 11 नवंबर 2026 (रात 11 बजे)।"
+    },
+    "links": {
+      "apply": "https://dsssbonline.nic.in",
+      "notice": null,
+      "site": "https://dsssb.delhi.gov.in"
+    },
+    "photo_kind": "upload",
+    "portal": "dsssbonline.nic.in",
+    "posts": 25,
+    "slug": "dsssb-sweeper-chowkidar",
+    "stage": "result-awaited"
+  },
+  {
+    "advt": "TES-57 (July 2027 Course)",
+    "board_en": "Indian Army (Directorate General of Recruiting)",
+    "board_hi": "भारतीय सेना (भर्ती महानिदेशालय)",
+    "dates": {
+      "apply_end": "2026-11-12",
+      "apply_start": "2026-10-14",
+      "correction_end": null,
+      "correction_start": null,
+      "exam": "SSB interview (shortlist expected 4th week of November 2026)",
+      "exam_hi": "SSB साक्षात्कार (शॉर्टलिस्ट नवंबर 2026 के चौथे हफ्ते में अपेक्षित)",
+      "fee_end": "2026-11-12"
+    },
+    "en": {
+      "checklist": [
+        "Class 12 marksheet (PCM 60% aggregate)",
+        "JEE (Main) 2026 admit card / scorecard",
+        "Date of birth proof (born 1 Jan 2008 – 1 Jan 2011)",
+        "Photo and signature in the portal's format",
+        "Unmarried status (male candidates only)",
+        "Two printouts of the submitted application"
+      ],
+      "documents": [
+        "Class 12 marksheet and certificate",
+        "JEE (Main) 2026 scorecard",
+        "Date of birth proof",
+        "Photo and signature",
+        "Aadhaar / ID proof",
+        "Application printout with roll number"
+      ],
+      "donts": [
+        "Do not apply if you did not appear in JEE (Main) 2026 — you are not eligible under this notification.",
+        "Do not treat this as a direct Lieutenant appointment — it is a four-year training entry first.",
+        "Do not miss the noon deadline on 12 November 2026.",
+        "Do not wait for the SSB call without checking the cut-off list on joinindianarmy.nic.in."
+      ],
+      "dos": [
+        "Apply only if you appeared in JEE (Main) 2026 — it is mandatory, not optional.",
+        "Check your date of birth against 1 January 2008 – 1 January 2011 before applying.",
+        "Keep your JEE (Main) 2026 scorecard and Class 12 PCM marksheet ready.",
+        "Submit before 12 November 2026, 12:00 noon — the portal closes at noon, not midnight.",
+        "Keep two self-attested printouts of the application with your roll number for the SSB centre."
+      ],
+      "eligibility": [
+        "90 provisional vacancies under the 10+2 Technical Entry Scheme (TES-57), course commencing July 2027. The number may change with training capacity.",
+        "Only unmarried male candidates. Education: Class 12 (10+2) pass with Physics, Chemistry and Mathematics, with at least 60% aggregate marks in PCM.",
+        "Appearing in JEE (Main) 2026 is mandatory — shortlisting uses the JEE Main 2026 Common Rank List (CRL) and Class 12 PCM marks. Candidates who did not appear in JEE Main 2026 are not eligible.",
+        "Age: 16½–19½ years on 1 July 2027 — born between 1 January 2008 and 1 January 2011 (both dates inclusive).",
+        "Selection: no written exam by the Army. Shortlisted candidates are called for the SSB interview (5 days), followed by medical examination. The shortlist cut-off is expected in the fourth week of November 2026.",
+        "Training: four years of military training with a fully sponsored B.E./B.Tech degree, then commission as Lieutenant on Permanent Commission."
+      ],
+      "extra_faq": [
+        {
+          "a": "Yes. Appearing in JEE (Main) 2026 is mandatory — shortlisting uses the JEE Main 2026 Common Rank List (CRL) along with Class 12 PCM marks. Candidates who did not appear in JEE Main 2026 cannot apply.",
+          "q": "Is JEE Main 2026 mandatory for TES-57?"
+        },
+        {
+          "a": "No. The Indian Army charges no application fee for the 10+2 TES entry.",
+          "q": "Is there any application fee for TES-57?"
+        },
+        {
+          "a": "Selected candidates undergo four years of military training and earn a fully sponsored B.E./B.Tech degree, then commission as Lieutenants on Permanent Commission in the Indian Army.",
+          "q": "What happens after selection in TES-57?"
+        }
+      ],
+      "fees": [
+        "No application fee for any candidate — the application is completely free."
+      ],
+      "fees_short": "No fee",
+      "kit": [
+        {
+          "text": "The notice prints no fixed KB size — compress your photo here to the size the portal asks for when you upload.",
+          "title": "Photo — compress to the portal's size",
+          "tool": "compress-image"
+        },
+        {
+          "text": "Keep your JEE (Main) 2026 scorecard as a clean PDF; compress a large one here before uploading.",
+          "title": "JEE scorecard — PDF",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "Applying without having appeared in JEE (Main) 2026",
+        "Missing the 12:00 noon deadline on 12 November 2026",
+        "Treating TES as a direct Lieutenant appointment",
+        "Wrong date of birth — must be 1 Jan 2008 to 1 Jan 2011"
+      ],
+      "name": "Indian Army 10+2 TES 57 (July 2027 Course)",
+      "qual": "Class 12 PCM 60% + appeared in JEE (Main) 2026 (unmarried male only)",
+      "specs": [
+        "The sources read do not print a fixed KB size for the photo and signature — upload them in the format and size the joinindianarmy.nic.in portal asks for.",
+        "Keep your JEE (Main) 2026 admit card / scorecard and Class 12 marksheet ready — both are needed for shortlisting."
+      ],
+      "steps": [
+        "Open joinindianarmy.nic.in and register or log in",
+        "Open the 10+2 Technical Entry Scheme (TES-57) application",
+        "Fill personal, education and JEE (Main) 2026 details",
+        "Upload the photo and signature in the portal's format",
+        "Review and submit before 12 November 2026, 12:00 noon",
+        "Print two copies of the application with your roll number for the SSB centre"
+      ],
+      "tagline": "90 Technical Entry Scheme seats for the July 2027 course — Class 12 PCM (60%) + JEE Main 2026, no fee, no written exam, SSB interview, last date 12 November 2026 (12 noon)."
+    },
+    "guide": {
+      "en": null,
+      "hi": null
+    },
+    "hi": {
+      "checklist": [
+        "12वीं अंकतालिका (PCM 60% कुल)",
+        "JEE (Main) 2026 admit card / scorecard",
+        "जन्म तिथि का प्रमाण (जन्म 1 जन 2008 – 1 जन 2011)",
+        "portal के format में फोटो और हस्ताक्षर",
+        "अविवाहित स्थिति (सिर्फ़ पुरुष उम्मीदवार)",
+        "जमा किए गए आवेदन के दो printout"
+      ],
+      "documents": [
+        "12वीं अंकतालिका और प्रमाणपत्र",
+        "JEE (Main) 2026 scorecard",
+        "जन्म तिथि का प्रमाण",
+        "फोटो और हस्ताक्षर",
+        "आधार / पहचान पत्र",
+        "roll number वाला आवेदन printout"
+      ],
+      "donts": [
+        "अगर तुम JEE (Main) 2026 में नहीं बैठे तो आवेदन मत करो — इस अधिसूचना के तहत तुम पात्र नहीं हो।",
+        "इसे Lieutenant की सीधी नियुक्ति मत समझो — पहले चार साल का training entry है।",
+        "12 नवंबर 2026, दोपहर 12 बजे की deadline मत चूको।",
+        "cut-off list देखे बिना SSB बुलावे का इंतज़ार मत करो — joinindianarmy.nic.in पर देखते रहो।"
+      ],
+      "dos": [
+        "सिर्फ़ तभी आवेदन करो जब तुम JEE (Main) 2026 में बैठे हो — यह अनिवार्य है, वैकल्पिक नहीं।",
+        "आवेदन से पहले अपनी जन्म तिथि 1 जनवरी 2008 – 1 जनवरी 2011 से मिलाओ।",
+        "JEE (Main) 2026 scorecard और 12वीं PCM अंकतालिका तैयार रखो।",
+        "12 नवंबर 2026, दोपहर 12:00 से पहले submit करो — portal दोपहर में बंद होता है, आधी रात को नहीं।",
+        "SSB केंद्र के लिए roll number वाला आवेदन दो self-attested printout में रखो।"
+      ],
+      "eligibility": [
+        "10+2 Technical Entry Scheme (TES-57) के तहत 90 अस्थायी रिक्तियाँ, कोर्स जुलाई 2027 से शुरू। संख्या training क्षमता के हिसाब से बदल सकती है।",
+        "सिर्फ़ अविवाहित पुरुष उम्मीदवार। शिक्षा: Physics, Chemistry और Mathematics के साथ 12वीं (10+2) पास, PCM में कम से कम 60% कुल अंक।",
+        "JEE (Main) 2026 में उपस्थिति अनिवार्य है — शॉर्टलिस्टिंग JEE Main 2026 Common Rank List (CRL) और 12वीं PCM अंकों से होगी। JEE Main 2026 में नहीं बैठे उम्मीदवार पात्र नहीं हैं।",
+        "उम्र: 1 जुलाई 2027 को 16½–19½ वर्ष — जन्म 1 जनवरी 2008 से 1 जनवरी 2011 के बीच (दोनों तारीखें शामिल)।",
+        "चयन: सेना की कोई लिखित परीक्षा नहीं। शॉर्टलिस्ट उम्मीदवारों को SSB साक्षात्कार (5 दिन) के लिए बुलाया जाता है, फिर चिकित्सा परीक्षण। शॉर्टलिस्ट cut-off नवंबर 2026 के चौथे हफ्ते में अपेक्षित है।",
+        "प्रशिक्षण: पूरी तरह sponsored B.E./B.Tech डिग्री के साथ चार साल का सैन्य प्रशिक्षण, फिर Permanent Commission पर Lieutenant के रूप में नियुक्ति।"
+      ],
+      "extra_faq": [
+        {
+          "a": "हाँ। JEE (Main) 2026 में उपस्थिति अनिवार्य है — शॉर्टलिस्टिंग JEE Main 2026 Common Rank List (CRL) और 12वीं PCM अंकों से होगी। JEE Main 2026 में नहीं बैठे उम्मीदवार आवेदन नहीं कर सकते।",
+          "q": "क्या TES-57 के लिए JEE Main 2026 अनिवार्य है?"
+        },
+        {
+          "a": "नहीं। भारतीय सेना 10+2 TES entry के लिए कोई आवेदन शुल्क नहीं लेती।",
+          "q": "TES-57 के लिए कोई आवेदन शुल्क है?"
+        },
+        {
+          "a": "चुने गए उम्मीदवार चार साल का सैन्य प्रशिक्षण करते हैं और पूरी तरह sponsored B.E./B.Tech डिग्री पाते हैं, फिर भारतीय सेना में Permanent Commission पर Lieutenant बनते हैं।",
+          "q": "TES-57 में चयन के बाद क्या होता है?"
+        }
+      ],
+      "fees": [
+        "किसी भी उम्मीदवार के लिए कोई आवेदन शुल्क नहीं — आवेदन पूरी तरह मुफ़्त है।"
+      ],
+      "fees_short": "कोई शुल्क नहीं",
+      "kit": [
+        {
+          "text": "Notice में फोटो का कोई निश्चित KB size नहीं छपा है — upload करते समय portal के बताए size पर यहाँ compress करो।",
+          "title": "फोटो — portal के size पर compress करो",
+          "tool": "compress-image"
+        },
+        {
+          "text": "JEE (Main) 2026 scorecard साफ़ PDF में रखो; बड़ा हो तो upload से पहले यहाँ compress करो।",
+          "title": "JEE scorecard — PDF",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "JEE (Main) 2026 में बैठे बिना आवेदन करना",
+        "12 नवंबर 2026, दोपहर 12 बजे की deadline चूकना",
+        "TES को Lieutenant की सीधी नियुक्ति समझना",
+        "गलत जन्म तिथि — 1 जन 2008 से 1 जन 2011 के बीच होनी चाहिए"
+      ],
+      "name": "भारतीय सेना 10+2 TES 57 (जुलाई 2027 कोर्स)",
+      "qual": "12वीं PCM 60% + JEE (Main) 2026 में उपस्थिति (सिर्फ़ अविवाहित पुरुष)",
+      "specs": [
+        "पढ़े गए स्रोतों में फोटो और हस्ताक्षर का कोई निश्चित KB size नहीं छपा है — उन्हें joinindianarmy.nic.in portal के बताए format और size में upload करें।",
+        "JEE (Main) 2026 का admit card / scorecard और 12वीं की अंकतालिका तैयार रखो — दोनों शॉर्टलिस्टिंग के लिए चाहिए।"
+      ],
+      "steps": [
+        "joinindianarmy.nic.in खोलो और register या log in करो",
+        "10+2 Technical Entry Scheme (TES-57) आवेदन खोलो",
+        "व्यक्तिगत, शिक्षा और JEE (Main) 2026 विवरण भरो",
+        "portal के format में फोटो और हस्ताक्षर upload करो",
+        "12 नवंबर 2026, दोपहर 12:00 से पहले review करके submit करो",
+        "SSB केंद्र के लिए roll number वाला आवेदन दो प्रतियों में print करो"
+      ],
+      "tagline": "जुलाई 2027 कोर्स के लिए 90 Technical Entry Scheme सीटें — 12वीं PCM (60%) + JEE Main 2026, कोई शुल्क नहीं, कोई लिखित परीक्षा नहीं, SSB साक्षात्कार, अंतिम तिथि 12 नवंबर 2026 (दोपहर 12 बजे)।"
+    },
+    "links": {
+      "apply": "https://joinindianarmy.nic.in/Authentication.aspx",
+      "notice": null,
+      "site": "https://joinindianarmy.nic.in"
+    },
+    "note_en": "This is an officer-training entry, not a direct appointment as a Lieutenant. Selected candidates train for four years and earn a B.E./B.Tech degree before commissioning as Lieutenants on Permanent Commission.",
+    "note_hi": "Ye officer-training entry hai, Lieutenant ki seedhi niyukti nahi. Chune gaye ummeedvaar chaar saal training karenge aur B.E./B.Tech degree ke saath Permanent Commission par Lieutenant banenge.",
+    "photo_kind": "upload",
+    "portal": "joinindianarmy.nic.in",
+    "posts": 90,
+    "slug": "indian-army-tes-57",
+    "stage": "result-awaited"
+  },
+  {
+    "advt": "Advt No. A-12016/14/2026-E-III",
+    "board_en": "Employees' State Insurance Corporation (ESIC), New Delhi",
+    "board_hi": "कर्मचारी राज्य बीमा निगम (ESIC), नई दिल्ली",
+    "dates": {
+      "apply_end": "2026-11-12",
+      "apply_start": "2026-10-22",
+      "correction_end": null,
+      "correction_start": null,
+      "exam": null,
+      "fee_end": "2026-11-12"
+    },
+    "en": {
+      "checklist": [
+        "IAI membership (Fellow/Associate) proof, where applicable",
+        "Experience certificates matching the post",
+        "PG / B.E. degree certificates",
+        "Age proof (max 62 / 50 / 45 as per post)",
+        "Photo and signature in the portal's format",
+        "Application acknowledgement"
+      ],
+      "documents": [
+        "IAI membership certificate",
+        "Degree and PG certificates",
+        "Experience certificates",
+        "Age proof",
+        "Photo and signature",
+        "Application printout"
+      ],
+      "donts": [
+        "Do not treat this as a permanent ESIC job — it is a 3-year contract, extendable by 2 years.",
+        "Do not apply for a designation whose IAI papers or experience you do not have.",
+        "Do not expect a written exam — selection is shortlisting plus interview.",
+        "Do not wait for the last hours — the portal closes on 12 November 2026."
+      ],
+      "dos": [
+        "Read the post-wise qualification and experience table in the advertisement before applying — each of the 14 designations has different requirements.",
+        "Apply only if your experience matches the post — senior roles need 8–15 years.",
+        "Submit before 12 November 2026 — the window closes tomorrow.",
+        "Keep your IAI membership and experience certificates ready for the interview.",
+        "Save the application number after submitting."
+      ],
+      "eligibility": [
+        "19 posts across 14 designations — Actuarial Division 6 and Data Analytics Branch (ICT) 13: Chief Actuary/Actuarial Advisor 1, Senior Actuarial Specialist (Valuation) 1, Senior Actuarial Specialist (Policy) 1, Actuarial Analyst/Modeller 2, Statistical/Research Officer 1, Chief Data & Analytics Officer 1, Data Governance Officer 1, Data Engineering Officer 1, Data Analytics Officer 1, Data Protection Officer 1, Technical Officers (Data Quality 1, Data Engineer 3, Data Analyst 3, Data Privacy 1).",
+        "Chief Actuary: Fellow of the Institute of Actuaries of India with at least 15 years of post-fellowship experience, including 5 years in senior leadership. Senior Specialists: Associate or Fellow of IAI with 8–10 years of experience. Analysts: a Bachelor's degree with 2–6 IAI papers and 3–6 years of experience. Data roles: PG or B.E. in Statistics, Economics, Data, Computer Science, Engineering or Law as per the post, with 5–15 years of experience.",
+        "Maximum age: 62 years (Chief Actuary, Chief Data & Analytics Officer); 50 years (Senior Specialists, Governance, Engineering, Analytics and Data Protection Officers); 45 years (Analysts, Statistical/Research Officer and Technical Officers).",
+        "Selection: preliminary scrutiny and shortlisting (up to a 1:10 ratio) followed by a personal interview. There is no written exam.",
+        "Apply online on the ESIC engagement portal (portal.esic.gov.in) from 22 October to 12 November 2026. There is no correction window stated."
+      ],
+      "extra_faq": [
+        {
+          "a": "12 November 2026, online only on the ESIC engagement portal (portal.esic.gov.in). The window opened on 22 October 2026.",
+          "q": "What is the last date to apply for ESIC Professionals 2026?"
+        },
+        {
+          "a": "No. They are purely contractual engagements — an initial term of 3 years, extendable by 2 years (1+1). Pay is a consolidated ₹80,000–₹3,30,000 per month, post-wise.",
+          "q": "Are ESIC Professional posts permanent?"
+        },
+        {
+          "a": "No. Selection is by preliminary scrutiny and shortlisting (up to a 1:10 ratio) followed by a personal interview.",
+          "q": "Is there a written exam for ESIC Professionals?"
+        }
+      ],
+      "fees": [
+        "No application fee is specified in the notice — applying is free."
+      ],
+      "fees_short": "No fee",
+      "kit": [
+        {
+          "text": "The notice prints no fixed KB size — compress your photo here to the size the portal asks for when you upload.",
+          "title": "Photo — compress to the portal's size",
+          "tool": "compress-image"
+        },
+        {
+          "text": "Keep your IAI membership and experience certificates as clean PDFs; compress a large one here before uploading.",
+          "title": "Experience certificates — PDF",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "Treating a 3-year contract as a permanent ESIC job",
+        "Applying for a designation without the required IAI papers or experience",
+        "Expecting a written exam",
+        "Missing the 12 November 2026 deadline"
+      ],
+      "name": "ESIC Professionals — Actuarial & Data Analytics 2026",
+      "qual": "Post-wise: Fellow/Associate of Institute of Actuaries of India, or PG/BE in Statistics, Economics, Data, CS, Engineering or Law + experience",
+      "specs": [
+        "Upload the photo and signature in the format the ESIC engagement portal asks for.",
+        "The sources read do not print fixed KB or pixel sizes for the photo and signature — follow the portal's instructions at upload time."
+      ],
+      "steps": [
+        "Open esic.gov.in and read Advertisement A-12016/14/2026-E-III",
+        "Open the ESIC engagement portal and register",
+        "Choose the designation matching your qualification and experience",
+        "Fill the online form and upload the photo and signature",
+        "Submit before 12 November 2026 and save the acknowledgement",
+        "Wait for the shortlist — selection is by personal interview"
+      ],
+      "tagline": "19 contractual professional posts at ESIC — Chief Actuary, Actuarial Specialists, Data Officers and more — interview only, no written exam, no fee, last date 12 November 2026."
+    },
+    "guide": {
+      "en": null,
+      "hi": null
+    },
+    "hi": {
+      "checklist": [
+        "IAI सदस्यता (Fellow/Associate) का प्रमाण, जहाँ लागू हो",
+        "पद से मेल खाते अनुभव प्रमाणपत्र",
+        "PG / B.E. डिग्री प्रमाणपत्र",
+        "उम्र का प्रमाण (पद के अनुसार अधिकतम 62 / 50 / 45)",
+        "portal के format में फोटो और हस्ताक्षर",
+        "आवेदन पावती"
+      ],
+      "documents": [
+        "IAI सदस्यता प्रमाणपत्र",
+        "डिग्री और PG प्रमाणपत्र",
+        "अनुभव प्रमाणपत्र",
+        "उम्र का प्रमाण",
+        "फोटो और हस्ताक्षर",
+        "आवेदन printout"
+      ],
+      "donts": [
+        "इसे ESIC की permanent नौकरी मत समझो — यह 3 साल का contract है, 2 साल तक बढ़ सकता है।",
+        "जिस पदनाम के IAI पेपर या अनुभव तुम्हारे पास नहीं हैं, उसके लिए आवेदन मत करो।",
+        "लिखित परीक्षा की उम्मीद मत करो — चयन शॉर्टलिस्टिंग और साक्षात्कार से होगा।",
+        "आखिरी घंटों का इंतज़ार मत करो — portal 12 नवंबर 2026 को बंद हो जाएगा।"
+      ],
+      "dos": [
+        "आवेदन से पहले विज्ञापन में पद के अनुसार योग्यता और अनुभव की तालिका पढ़ो — 14 पदनामों में से हर एक की अलग शर्तें हैं।",
+        "सिर्फ़ तभी आवेदन करो जब तुम्हारा अनुभव पद से मेल खाता हो — सीनियर पदों के लिए 8–15 साल चाहिए।",
+        "12 नवंबर 2026 से पहले submit करो — window कल बंद हो रही है।",
+        "साक्षात्कार के लिए IAI सदस्यता और अनुभव प्रमाणपत्र तैयार रखो।",
+        "Submit के बाद आवेदन संख्या संभालकर रखो।"
+      ],
+      "eligibility": [
+        "14 पदनामों में 19 पद — एक्चुरियल डिवीज़न 6 और डेटा एनालिटिक्स शाखा (ICT) 13: चीफ एक्चुअरी/एक्चुरियल एडवाइज़र 1, सीनियर एक्चुरियल स्पेशलिस्ट (वैल्यूएशन) 1, सीनियर एक्चुरियल स्पेशलिस्ट (पॉलिसी) 1, एक्चुरियल एनालिस्ट/मॉडलर 2, स्टैटिस्टिकल/रिसर्च ऑफिसर 1, चीफ डेटा और एनालिटिक्स ऑफिसर 1, डेटा गवर्नेंस ऑफिसर 1, डेटा इंजीनियरिंग ऑफिसर 1, डेटा एनालिटिक्स ऑफिसर 1, डेटा प्रोटेक्शन ऑफिसर 1, टेक्निकल ऑफिसर (डेटा क्वालिटी 1, डेटा इंजीनियर 3, डेटा एनालिस्ट 3, डेटा प्राइवेसी 1)।",
+        "चीफ एक्चुअरी: Institute of Actuaries of India के Fellow साथ में fellowship के बाद कम से कम 15 साल का अनुभव, जिसमें 5 साल सीनियर नेतृत्व में। सीनियर स्पेशलिस्ट: IAI के Associate या Fellow साथ में 8–10 साल का अनुभव। एनालिस्ट: स्नातक डिग्री साथ में 2–6 IAI पेपर और 3–6 साल का अनुभव। डेटा पद: पद के अनुसार सांख्यिकी, अर्थशास्त्र, डेटा, कंप्यूटर साइंस, इंजीनियरिंग या कानून में PG या B.E., साथ में 5–15 साल का अनुभव।",
+        "अधिकतम उम्र: 62 वर्ष (चीफ एक्चुअरी, चीफ डेटा और एनालिटिक्स ऑफिसर); 50 वर्ष (सीनियर स्पेशलिस्ट, गवर्नेंस, इंजीनियरिंग, एनालिटिक्स और डेटा प्रोटेक्शन ऑफिसर); 45 वर्ष (एनालिस्ट, स्टैटिस्टिकल/रिसर्च ऑफिसर और टेक्निकल ऑफिसर)।",
+        "चयन: शुरुआती जाँच और शॉर्टलिस्टिंग (1:10 तक अनुपात) फिर व्यक्तिगत साक्षात्कार। कोई लिखित परीक्षा नहीं है।",
+        "आवेदन ESIC engagement portal (portal.esic.gov.in) पर ऑनलाइन, 22 अक्टूबर से 12 नवंबर 2026 तक। कोई correction window नहीं दी गई है।"
+      ],
+      "extra_faq": [
+        {
+          "a": "12 नवंबर 2026, सिर्फ़ ESIC engagement portal (portal.esic.gov.in) पर ऑनलाइन। Window 22 अक्टूबर 2026 से खुली है।",
+          "q": "ESIC प्रोफेशनल 2026 के लिए आवेदन की आखिरी तारीख क्या है?"
+        },
+        {
+          "a": "नहीं। ये पूरी तरह contractual engagement हैं — शुरुआती term 3 साल, 2 साल तक बढ़ सकता है (1+1)। वेतन consolidated ₹80,000–₹3,30,000 प्रति माह है, पद के हिसाब से।",
+          "q": "क्या ESIC प्रोफेशनल पद permanent हैं?"
+        },
+        {
+          "a": "नहीं। चयन शुरुआती जाँच और शॉर्टलिस्टिंग (1:10 तक अनुपात) फिर व्यक्तिगत साक्षात्कार से होगा।",
+          "q": "क्या ESIC प्रोफेशनल के लिए लिखित परीक्षा है?"
+        }
+      ],
+      "fees": [
+        "Notice में कोई आवेदन शुल्क नहीं दिया गया है — आवेदन मुफ़्त है।"
+      ],
+      "fees_short": "कोई शुल्क नहीं",
+      "kit": [
+        {
+          "text": "Notice में फोटो का कोई निश्चित KB size नहीं छपा है — upload करते समय portal के बताए size पर यहाँ compress करो।",
+          "title": "फोटो — portal के size पर compress करो",
+          "tool": "compress-image"
+        },
+        {
+          "text": "IAI सदस्यता और अनुभव प्रमाणपत्र साफ़ PDF में रखो; बड़ा हो तो upload से पहले यहाँ compress करो।",
+          "title": "अनुभव प्रमाणपत्र — PDF",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "3 साल के contract को ESIC की permanent नौकरी समझना",
+        "ज़रूरी IAI पेपर या अनुभव के बिना किसी पदनाम के लिए आवेदन करना",
+        "लिखित परीक्षा की उम्मीद करना",
+        "12 नवंबर 2026 की deadline चूकना"
+      ],
+      "name": "ESIC प्रोफेशनल — एक्चुरियल और डेटा एनालिटिक्स 2026",
+      "qual": "पद के अनुसार: Institute of Actuaries of India के Fellow/Associate, या सांख्यिकी, अर्थशास्त्र, डेटा, CS, इंजीनियरिंग या कानून में PG/BE + अनुभव",
+      "specs": [
+        "ESIC engagement portal के बताए format में फोटो और हस्ताक्षर upload करें।",
+        "पढ़े गए स्रोतों में फोटो और हस्ताक्षर का कोई निश्चित KB या pixel size नहीं छपा है — upload के समय portal के निर्देश देखो।"
+      ],
+      "steps": [
+        "esic.gov.in खोलो और विज्ञापन A-12016/14/2026-E-III पढ़ो",
+        "ESIC engagement portal खोलो और पंजीकरण करो",
+        "अपनी योग्यता और अनुभव से मेल खाता पदनाम चुनो",
+        "ऑनलाइन फॉर्म भरो और फोटो व हस्ताक्षर upload करो",
+        "12 नवंबर 2026 से पहले submit करो और पावती संभालो",
+        "शॉर्टलिस्ट का इंतज़ार करो — चयन व्यक्तिगत साक्षात्कार से होगा"
+      ],
+      "tagline": "ESIC में 19 contractual प्रोफेशनल पद — चीफ एक्चुअरी, एक्चुरियल स्पेशलिस्ट, डेटा ऑफिसर आदि — सिर्फ़ साक्षात्कार, कोई लिखित परीक्षा नहीं, कोई शुल्क नहीं, अंतिम तिथि 12 नवंबर 2026।"
+    },
+    "links": {
+      "apply": "https://portal.esic.gov.in/ESICInsurance1/ESICEngagementRecruitment/Login.aspx",
+      "notice": null,
+      "site": "https://esic.gov.in"
+    },
+    "note_en": "These are purely contractual engagements — an initial term of 3 years, extendable by 2 years (1+1) — not permanent ESIC posts. Pay is a consolidated ₹80,000–₹3,30,000 per month, post-wise.",
+    "note_hi": "Ye sirf contractual engagement hai — shuruaati term 3 saal, 2 saal tak badh sakta hai (1+1) — ESIC ki permanent post nahi hai. Vetan consolidated ₹80,000–₹3,30,000 prati mahina hai, pad ke hisaab se.",
+    "photo_kind": "upload",
+    "portal": "esic.gov.in",
+    "posts": 19,
+    "slug": "esic-professionals-actuarial-data",
+    "stage": "result-awaited"
+  },
+  {
+    "advt": "Advt 01-CRE-2026 (OUSSSC)",
+    "board_en": "Odisha Uniformed Services Staff Selection Commission (OUSSSC)",
+    "board_hi": "ओडिशा यूनिफ़ॉर्म्ड सर्विसेज़ स्टाफ़ सिलेक्शन कमीशन (OUSSSC)",
+    "dates": {
+      "apply_end": "2026-11-12",
+      "apply_start": "2026-10-23",
+      "correction_end": null,
+      "correction_start": null,
+      "exam": null,
+      "fee_end": "2026-11-13"
+    },
+    "en": {
+      "checklist": [
+        "Your registration on ousssc.odisha.gov.in — remember, only ONE application is accepted",
+        "Photo ready in the 40-100 KB band (aim for about 70 KB)",
+        "Signature ready in the 20-50 KB band (aim for about 35 KB)",
+        "Left thumb impression ready in the 20-50 KB band",
+        "Certificates and documents ready as PDF files",
+        "A final check of every detail before submitting — after final submission NOTHING can be changed (there is no correction window)"
+      ],
+      "documents": [
+        "Photo — 40-100 KB",
+        "Signature — 20-50 KB",
+        "Left thumb impression — 20-50 KB",
+        "Supporting certificates and documents — PDF"
+      ],
+      "donts": [
+        "Do not submit in a hurry — there is no correction window to fix a mistake later",
+        "Do not submit more than one application",
+        "Do not let the signature or thumb impression slip below 20 KB — below the band is rejected too",
+        "Do not wait for the last evening — registration closes at 10 PM on 12 November 2026"
+      ],
+      "dos": [
+        "Aim for the middle of each size band — about 70 KB for the photo, about 35 KB for the signature and thumb impression",
+        "Sign in your normal running handwriting on plain white paper and crop the scan tight",
+        "Check every name, date and category detail twice before final submission",
+        "Keep copies of the final uploaded files with your application details"
+      ],
+      "eligibility": [
+        "7,268 posts in all: Constable (Civil) 4,219; Constable OISF 2,212; Firefighter 317; Constable (Communication) 300; Driver PMT 154; Firefighting Driver 62; Traffic Constable 4.",
+        "Most posts need 10+2. Constable (Communication) needs +2 Science (PCM) or a 3-year Engineering Diploma.",
+        "Driver posts (Driver PMT, Firefighting Driver, Traffic Constable) need a valid HMV/LMV driving licence, as the notice asks.",
+        "You must be able to read, write and speak Odia.",
+        "Age (as on 1 January 2026): Constable (Civil) 18-26; Constable (Communication) 18-23; OISF 18-23; Firefighter 18-25; Firefighting Driver 18-25; Driver PMT 18-23; Traffic Constable 21-32. SC/ST/SEBC and women candidates get 5 years' relaxation in the upper age."
+      ],
+      "extra_faq": [
+        {
+          "a": "No. This recruitment has NO correction window — only one application is accepted and nothing can be changed after final submission. Check every detail carefully before you submit.",
+          "q": "Can I correct a mistake after submitting the form?"
+        },
+        {
+          "a": "A written exam (100 MCQ, 100 marks, 120 minutes, −0.25 for a wrong answer; separate papers for the Communication and Driver posts), then physical measurement, PET, a driving test where the post needs it, medical examination and document verification.",
+          "q": "What is the selection process?"
+        },
+        {
+          "a": "₹500 for all categories, except SC and ST candidates, who pay no fee. Registration closes at 10 PM on 12 November 2026; fee payment and final submission end on 13 November 2026.",
+          "q": "How much is the application fee?"
+        }
+      ],
+      "fees": [
+        "Application fee: ₹500 for all categories — SC and ST candidates pay no fee.",
+        "Registration closes 12 November 2026 (10 PM); fee payment and final submission by 13 November 2026."
+      ],
+      "fees_short": "₹500 (SC/ST: nil)",
+      "kit": [
+        {
+          "text": "Compress your photo with the target set to 70 KB — safely inside the 40-100 KB band. Below 40 KB is rejected too.",
+          "title": "Photo — set target 70 KB",
+          "tool": "compress-image"
+        },
+        {
+          "text": "Compress your signature scan with the target set to 35 KB — the middle of the 20-50 KB band.",
+          "title": "Signature — set target 35 KB",
+          "tool": "compress-image"
+        },
+        {
+          "text": "The left thumb impression also sits in the 20-50 KB band — compress it here to a 35 KB target.",
+          "title": "Thumb impression — set target 35 KB",
+          "tool": "compress-image"
+        },
+        {
+          "text": "Supporting documents go as PDF. If a certificate PDF runs large, compress it here before uploading.",
+          "title": "Documents — PDF",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "A spelling or date-of-birth mistake in the form — with no correction window, it cannot be fixed after final submission",
+        "Photo or signature outside the size band — under the minimum fails just like over the maximum",
+        "Final-submitting before checking every section — final submission locks everything",
+        "Applying for a driver post without the licence the notice asks for"
+      ],
+      "name": "Odisha Police Constable & Other Posts (OUSSSC)",
+      "qual": "10+2 (post-wise)",
+      "specs": [
+        "Photo: upload, 40-100 KB — a clear, recent passport-style photograph.",
+        "Signature: upload, 20-50 KB — sign in your normal running hand on plain white paper.",
+        "Left thumb impression: upload, 20-50 KB.",
+        "Supporting documents: upload as PDF files."
+      ],
+      "steps": [
+        "Register on the official portal ousssc.odisha.gov.in",
+        "Fill in your personal and education details very carefully — nothing can be changed later",
+        "Upload the photo (40-100 KB), signature (20-50 KB) and left thumb impression (20-50 KB)",
+        "Upload the supporting documents as PDF",
+        "Pay the fee online (₹500; SC/ST candidates pay no fee)",
+        "Final-submit by 13 November 2026 and save or print the application copy"
+      ],
+      "tagline": "7,268 Odisha Police posts (Advt 01-CRE-2026): Constable, OISF, Firefighter, Driver and more — dates, photo-signature sizes and free tools to prepare your files."
+    },
+    "guide": {
+      "en": null,
+      "hi": null
+    },
+    "hi": {
+      "checklist": [
+        "ousssc.odisha.gov.in पर आपका रजिस्ट्रेशन — याद रखो, सिर्फ़ एक ही आवेदन मान्य है",
+        "फोटो 40-100 KB band में तैयार (करीब 70 KB का target रखो)",
+        "हस्ताक्षर 20-50 KB band में तैयार (करीब 35 KB)",
+        "बाएँ अंगूठे का निशान 20-50 KB band में तैयार",
+        "प्रमाणपत्र और दस्तावेज़ PDF के रूप में तैयार",
+        "Submit से पहले हर detail की final जाँच — final submission के बाद कुछ भी नहीं बदलेगा (कोई correction window नहीं है)"
+      ],
+      "documents": [
+        "फोटो — 40-100 KB",
+        "हस्ताक्षर — 20-50 KB",
+        "बाएँ अंगूठे का निशान — 20-50 KB",
+        "सहायक प्रमाणपत्र और दस्तावेज़ — PDF"
+      ],
+      "donts": [
+        "जल्दबाज़ी में submit मत करो — बाद में गलती सुधारने के लिए कोई correction window नहीं है",
+        "एक से ज़्यादा आवेदन submit मत करो",
+        "हस्ताक्षर या अंगूठे का निशान 20 KB से नीचे न जाने दो — band से नीचे भी reject होता है",
+        "आखिरी शाम का इंतज़ार मत करो — रजिस्ट्रेशन 12 नवंबर 2026 को रात 10 बजे बंद होगा"
+      ],
+      "dos": [
+        "हर size band के बीच का target रखो — फोटो करीब 70 KB, हस्ताक्षर और अंगूठे का निशान करीब 35 KB",
+        "सादे सफेद कागज़ पर सामान्य चलती लिखावट में हस्ताक्षर करो और scan को tight crop करो",
+        "Final submission से पहले नाम, तारीख और श्रेणी की हर detail दो बार जाँचो",
+        "अंतिम upload हुई फाइलों की copy अपनी आवेदन details के साथ रखो"
+      ],
+      "eligibility": [
+        "कुल 7,268 पद: कांस्टेबल (सिविल) 4,219; कांस्टेबल OISF 2,212; फायरफाइटर 317; कांस्टेबल (कम्युनिकेशन) 300; ड्राइवर PMT 154; फायरफाइटिंग ड्राइवर 62; ट्रैफ़िक कांस्टेबल 4।",
+        "ज़्यादातर पदों के लिए 10+2 चाहिए। कांस्टेबल (कम्युनिकेशन) के लिए +2 Science (PCM) या 3-वर्षीय Engineering Diploma चाहिए।",
+        "ड्राइवर पदों (ड्राइवर PMT, फायरफाइटिंग ड्राइवर, ट्रैफ़िक कांस्टेबल) के लिए notice के अनुसार वैध HMV/LMV ड्राइविंग लाइसेंस चाहिए।",
+        "उड़िया पढ़ना, लिखना और बोलना आना चाहिए।",
+        "उम्र (1 जनवरी 2026 को): कांस्टेबल (सिविल) 18-26; कांस्टेबल (कम्युनिकेशन) 18-23; OISF 18-23; फायरफाइटर 18-25; फायरफाइटिंग ड्राइवर 18-25; ड्राइवर PMT 18-23; ट्रैफ़िक कांस्टेबल 21-32। SC/ST/SEBC और महिला उम्मीदवारों को ऊपरी उम्र में 5 वर्ष की छूट।"
+      ],
+      "extra_faq": [
+        {
+          "a": "नहीं। इस भर्ती में कोई correction window नहीं है — सिर्फ़ एक आवेदन मान्य है और final submission के बाद कुछ भी नहीं बदलेगा। Submit से पहले हर detail ध्यान से जाँचो।",
+          "q": "क्या submit के बाद फ़ॉर्म में गलती सुधार सकते हैं?"
+        },
+        {
+          "a": "लिखित परीक्षा (100 MCQ, 100 अंक, 120 मिनट, गलत उत्तर पर −0.25; कम्युनिकेशन और ड्राइवर पदों के लिए अलग पेपर), फिर शारीरिक माप, PET, जहाँ पद के लिए ज़रूरी हो वहाँ ड्राइविंग टेस्ट, चिकित्सा परीक्षण और दस्तावेज़ सत्यापन।",
+          "q": "चयन प्रक्रिया क्या है?"
+        },
+        {
+          "a": "सभी श्रेणियों के लिए ₹500, सिवाय SC और ST उम्मीदवारों के — उनका कोई शुल्क नहीं है। रजिस्ट्रेशन 12 नवंबर 2026 को रात 10 बजे बंद होगा; शुल्क भुगतान और final submission 13 नवंबर 2026 तक है।",
+          "q": "आवेदन शुल्क कितना है?"
+        }
+      ],
+      "fees": [
+        "आवेदन शुल्क: सभी श्रेणियों के लिए ₹500 — SC और ST उम्मीदवारों का कोई शुल्क नहीं।",
+        "रजिस्ट्रेशन 12 नवंबर 2026 (रात 10 बजे) बंद होगा; शुल्क भुगतान और final submission 13 नवंबर 2026 तक।"
+      ],
+      "fees_short": "₹500 (SC/ST: शून्य)",
+      "kit": [
+        {
+          "text": "अपनी फोटो को compress करके target 70 KB रखो — 40-100 KB band के बीच में सबसे safe। 40 KB से कम भी reject होता है।",
+          "title": "फोटो — target 70 KB रखो",
+          "tool": "compress-image"
+        },
+        {
+          "text": "अपने हस्ताक्षर के scan को compress करके target 35 KB रखो — 20-50 KB band के ठीक बीच में।",
+          "title": "हस्ताक्षर — target 35 KB रखो",
+          "tool": "compress-image"
+        },
+        {
+          "text": "बाएँ अंगूठे का निशान भी 20-50 KB band में है — यहाँ compress करके 35 KB target पर लाओ।",
+          "title": "अंगूठे का निशान — target 35 KB रखो",
+          "tool": "compress-image"
+        },
+        {
+          "text": "सहायक दस्तावेज़ PDF में जाते हैं। कोई certificate PDF बड़ा हो तो upload से पहले यहाँ compress करो।",
+          "title": "दस्तावेज़ — PDF",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "फ़ॉर्म में नाम की spelling या जन्मतिथि की गलती — correction window न होने से final submission के बाद यह ठीक नहीं होगी",
+        "फोटो या हस्ताक्षर size band से बाहर — न्यूनतम से कम भी उतना ही fail होता है जितना अधिकतम से ज़्यादा",
+        "हर section जाँचे बिना final submit — final submission सब कुछ lock कर देता है",
+        "ड्राइवर पद के लिए आवेदन, जबकि notice में माँगा लाइसेंस न हो"
+      ],
+      "name": "ओडिशा पुलिस कांस्टेबल व अन्य पद (OUSSSC)",
+      "qual": "10+2 (पद के हिसाब से)",
+      "specs": [
+        "फोटो: upload, 40-100 KB — साफ़, ताज़ा passport-style फोटो रखो।",
+        "हस्ताक्षर: upload, 20-50 KB — सादे सफेद कागज़ पर अपनी सामान्य चलती लिखावट में हस्ताक्षर करो।",
+        "बाएँ अंगूठे का निशान: upload, 20-50 KB।",
+        "सहायक दस्तावेज़: PDF फ़ाइल के रूप में upload करो।"
+      ],
+      "steps": [
+        "आधिकारिक portal ousssc.odisha.gov.in पर register करो",
+        "अपनी personal और education details बहुत ध्यान से भरो — बाद में कुछ नहीं बदलेगा",
+        "फोटो (40-100 KB), हस्ताक्षर (20-50 KB) और बाएँ अंगूठे का निशान (20-50 KB) upload करो",
+        "सहायक दस्तावेज़ PDF में upload करो",
+        "शुल्क online भरो (₹500; SC/ST उम्मीदवारों का शुल्क नहीं है)",
+        "13 नवंबर 2026 तक final-submit करो और आवेदन की copy save/print कर लो"
+      ],
+      "tagline": "7,268 ओडिशा पुलिस पद (विज्ञापन 01-CRE-2026): कांस्टेबल, OISF, फायरफाइटर, ड्राइवर व अन्य — तारीखें, फोटो-हस्ताक्षर के size और फाइलें तैयार करने के फ्री टूल।"
+    },
+    "links": {
+      "apply": "https://ousssc.odisha.gov.in/Public/OUSSSC/Default.aspx",
+      "notice": null,
+      "site": "https://ousssc.odisha.gov.in/"
+    },
+    "no_correction": true,
+    "note_en": "No correction window: only ONE application is accepted and nothing can be changed after final submission — fill the form very carefully.",
+    "note_hi": "कोई correction window नहीं है: सिर्फ़ एक ही आवेदन मान्य है और final submission के बाद कुछ भी नहीं बदलेगा — फ़ॉर्म बहुत ध्यान से भरो।",
+    "photo_kind": "upload",
+    "portal": "ousssc.odisha.gov.in",
+    "posts": 7268,
+    "slug": "odisha-police-constable",
+    "stage": "result-awaited"
   }
 ]

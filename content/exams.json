@@ -11385,215 +11385,6 @@
     }
   },
   {
-    "slug": "indian-army-tes-57",
-    "advt": "TES-57 (July 2027 Course)",
-    "board_en": "Indian Army (Directorate General of Recruiting)",
-    "board_hi": "भारतीय सेना (भर्ती महानिदेशालय)",
-    "portal": "joinindianarmy.nic.in",
-    "posts": 90,
-    "dates": {
-      "apply_end": "2026-11-12",
-      "apply_start": "2026-10-14",
-      "correction_end": null,
-      "correction_start": null,
-      "exam": "SSB interview (shortlist expected 4th week of November 2026)",
-      "exam_hi": "SSB साक्षात्कार (शॉर्टलिस्ट नवंबर 2026 के चौथे हफ्ते में अपेक्षित)",
-      "fee_end": "2026-11-12"
-    },
-    "photo_kind": "upload",
-    "note_en": "This is an officer-training entry, not a direct appointment as a Lieutenant. Selected candidates train for four years and earn a B.E./B.Tech degree before commissioning as Lieutenants on Permanent Commission.",
-    "note_hi": "Ye officer-training entry hai, Lieutenant ki seedhi niyukti nahi. Chune gaye ummeedvaar chaar saal training karenge aur B.E./B.Tech degree ke saath Permanent Commission par Lieutenant banenge.",
-    "guide": {
-      "en": null,
-      "hi": null
-    },
-    "links": {
-      "apply": "https://joinindianarmy.nic.in/Authentication.aspx",
-      "notice": null,
-      "site": "https://joinindianarmy.nic.in"
-    },
-    "en": {
-      "name": "Indian Army 10+2 TES 57 (July 2027 Course)",
-      "tagline": "90 Technical Entry Scheme seats for the July 2027 course — Class 12 PCM (60%) + JEE Main 2026, no fee, no written exam, SSB interview, last date 12 November 2026 (12 noon).",
-      "qual": "Class 12 PCM 60% + appeared in JEE (Main) 2026 (unmarried male only)",
-      "fees": [
-        "No application fee for any candidate — the application is completely free."
-      ],
-      "fees_short": "No fee",
-      "specs": [
-        "The sources read do not print a fixed KB size for the photo and signature — upload them in the format and size the joinindianarmy.nic.in portal asks for.",
-        "Keep your JEE (Main) 2026 admit card / scorecard and Class 12 marksheet ready — both are needed for shortlisting."
-      ],
-      "eligibility": [
-        "90 provisional vacancies under the 10+2 Technical Entry Scheme (TES-57), course commencing July 2027. The number may change with training capacity.",
-        "Only unmarried male candidates. Education: Class 12 (10+2) pass with Physics, Chemistry and Mathematics, with at least 60% aggregate marks in PCM.",
-        "Appearing in JEE (Main) 2026 is mandatory — shortlisting uses the JEE Main 2026 Common Rank List (CRL) and Class 12 PCM marks. Candidates who did not appear in JEE Main 2026 are not eligible.",
-        "Age: 16½–19½ years on 1 July 2027 — born between 1 January 2008 and 1 January 2011 (both dates inclusive).",
-        "Selection: no written exam by the Army. Shortlisted candidates are called for the SSB interview (5 days), followed by medical examination. The shortlist cut-off is expected in the fourth week of November 2026.",
-        "Training: four years of military training with a fully sponsored B.E./B.Tech degree, then commission as Lieutenant on Permanent Commission."
-      ],
-      "dos": [
-        "Apply only if you appeared in JEE (Main) 2026 — it is mandatory, not optional.",
-        "Check your date of birth against 1 January 2008 – 1 January 2011 before applying.",
-        "Keep your JEE (Main) 2026 scorecard and Class 12 PCM marksheet ready.",
-        "Submit before 12 November 2026, 12:00 noon — the portal closes at noon, not midnight.",
-        "Keep two self-attested printouts of the application with your roll number for the SSB centre."
-      ],
-      "donts": [
-        "Do not apply if you did not appear in JEE (Main) 2026 — you are not eligible under this notification.",
-        "Do not treat this as a direct Lieutenant appointment — it is a four-year training entry first.",
-        "Do not miss the noon deadline on 12 November 2026.",
-        "Do not wait for the SSB call without checking the cut-off list on joinindianarmy.nic.in."
-      ],
-      "checklist": [
-        "Class 12 marksheet (PCM 60% aggregate)",
-        "JEE (Main) 2026 admit card / scorecard",
-        "Date of birth proof (born 1 Jan 2008 – 1 Jan 2011)",
-        "Photo and signature in the portal's format",
-        "Unmarried status (male candidates only)",
-        "Two printouts of the submitted application"
-      ],
-      "documents": [
-        "Class 12 marksheet and certificate",
-        "JEE (Main) 2026 scorecard",
-        "Date of birth proof",
-        "Photo and signature",
-        "Aadhaar / ID proof",
-        "Application printout with roll number"
-      ],
-      "steps": [
-        "Open joinindianarmy.nic.in and register or log in",
-        "Open the 10+2 Technical Entry Scheme (TES-57) application",
-        "Fill personal, education and JEE (Main) 2026 details",
-        "Upload the photo and signature in the portal's format",
-        "Review and submit before 12 November 2026, 12:00 noon",
-        "Print two copies of the application with your roll number for the SSB centre"
-      ],
-      "extra_faq": [
-        {
-          "q": "Is JEE Main 2026 mandatory for TES-57?",
-          "a": "Yes. Appearing in JEE (Main) 2026 is mandatory — shortlisting uses the JEE Main 2026 Common Rank List (CRL) along with Class 12 PCM marks. Candidates who did not appear in JEE Main 2026 cannot apply."
-        },
-        {
-          "q": "Is there any application fee for TES-57?",
-          "a": "No. The Indian Army charges no application fee for the 10+2 TES entry."
-        },
-        {
-          "q": "What happens after selection in TES-57?",
-          "a": "Selected candidates undergo four years of military training and earn a fully sponsored B.E./B.Tech degree, then commission as Lieutenants on Permanent Commission in the Indian Army."
-        }
-      ],
-      "kit": [
-        {
-          "title": "Photo — compress to the portal's size",
-          "text": "The notice prints no fixed KB size — compress your photo here to the size the portal asks for when you upload.",
-          "tool": "compress-image"
-        },
-        {
-          "title": "JEE scorecard — PDF",
-          "text": "Keep your JEE (Main) 2026 scorecard as a clean PDF; compress a large one here before uploading.",
-          "tool": "compress-pdf"
-        }
-      ],
-      "mistakes": [
-        "Applying without having appeared in JEE (Main) 2026",
-        "Missing the 12:00 noon deadline on 12 November 2026",
-        "Treating TES as a direct Lieutenant appointment",
-        "Wrong date of birth — must be 1 Jan 2008 to 1 Jan 2011"
-      ]
-    },
-    "hi": {
-      "name": "भारतीय सेना 10+2 TES 57 (जुलाई 2027 कोर्स)",
-      "tagline": "जुलाई 2027 कोर्स के लिए 90 Technical Entry Scheme सीटें — 12वीं PCM (60%) + JEE Main 2026, कोई शुल्क नहीं, कोई लिखित परीक्षा नहीं, SSB साक्षात्कार, अंतिम तिथि 12 नवंबर 2026 (दोपहर 12 बजे)।",
-      "qual": "12वीं PCM 60% + JEE (Main) 2026 में उपस्थिति (सिर्फ़ अविवाहित पुरुष)",
-      "fees": [
-        "किसी भी उम्मीदवार के लिए कोई आवेदन शुल्क नहीं — आवेदन पूरी तरह मुफ़्त है।"
-      ],
-      "fees_short": "कोई शुल्क नहीं",
-      "specs": [
-        "पढ़े गए स्रोतों में फोटो और हस्ताक्षर का कोई निश्चित KB size नहीं छपा है — उन्हें joinindianarmy.nic.in portal के बताए format और size में upload करें।",
-        "JEE (Main) 2026 का admit card / scorecard और 12वीं की अंकतालिका तैयार रखो — दोनों शॉर्टलिस्टिंग के लिए चाहिए।"
-      ],
-      "eligibility": [
-        "10+2 Technical Entry Scheme (TES-57) के तहत 90 अस्थायी रिक्तियाँ, कोर्स जुलाई 2027 से शुरू। संख्या training क्षमता के हिसाब से बदल सकती है।",
-        "सिर्फ़ अविवाहित पुरुष उम्मीदवार। शिक्षा: Physics, Chemistry और Mathematics के साथ 12वीं (10+2) पास, PCM में कम से कम 60% कुल अंक।",
-        "JEE (Main) 2026 में उपस्थिति अनिवार्य है — शॉर्टलिस्टिंग JEE Main 2026 Common Rank List (CRL) और 12वीं PCM अंकों से होगी। JEE Main 2026 में नहीं बैठे उम्मीदवार पात्र नहीं हैं।",
-        "उम्र: 1 जुलाई 2027 को 16½–19½ वर्ष — जन्म 1 जनवरी 2008 से 1 जनवरी 2011 के बीच (दोनों तारीखें शामिल)।",
-        "चयन: सेना की कोई लिखित परीक्षा नहीं। शॉर्टलिस्ट उम्मीदवारों को SSB साक्षात्कार (5 दिन) के लिए बुलाया जाता है, फिर चिकित्सा परीक्षण। शॉर्टलिस्ट cut-off नवंबर 2026 के चौथे हफ्ते में अपेक्षित है।",
-        "प्रशिक्षण: पूरी तरह sponsored B.E./B.Tech डिग्री के साथ चार साल का सैन्य प्रशिक्षण, फिर Permanent Commission पर Lieutenant के रूप में नियुक्ति।"
-      ],
-      "dos": [
-        "सिर्फ़ तभी आवेदन करो जब तुम JEE (Main) 2026 में बैठे हो — यह अनिवार्य है, वैकल्पिक नहीं।",
-        "आवेदन से पहले अपनी जन्म तिथि 1 जनवरी 2008 – 1 जनवरी 2011 से मिलाओ।",
-        "JEE (Main) 2026 scorecard और 12वीं PCM अंकतालिका तैयार रखो।",
-        "12 नवंबर 2026, दोपहर 12:00 से पहले submit करो — portal दोपहर में बंद होता है, आधी रात को नहीं।",
-        "SSB केंद्र के लिए roll number वाला आवेदन दो self-attested printout में रखो।"
-      ],
-      "donts": [
-        "अगर तुम JEE (Main) 2026 में नहीं बैठे तो आवेदन मत करो — इस अधिसूचना के तहत तुम पात्र नहीं हो।",
-        "इसे Lieutenant की सीधी नियुक्ति मत समझो — पहले चार साल का training entry है।",
-        "12 नवंबर 2026, दोपहर 12 बजे की deadline मत चूको।",
-        "cut-off list देखे बिना SSB बुलावे का इंतज़ार मत करो — joinindianarmy.nic.in पर देखते रहो।"
-      ],
-      "checklist": [
-        "12वीं अंकतालिका (PCM 60% कुल)",
-        "JEE (Main) 2026 admit card / scorecard",
-        "जन्म तिथि का प्रमाण (जन्म 1 जन 2008 – 1 जन 2011)",
-        "portal के format में फोटो और हस्ताक्षर",
-        "अविवाहित स्थिति (सिर्फ़ पुरुष उम्मीदवार)",
-        "जमा किए गए आवेदन के दो printout"
-      ],
-      "documents": [
-        "12वीं अंकतालिका और प्रमाणपत्र",
-        "JEE (Main) 2026 scorecard",
-        "जन्म तिथि का प्रमाण",
-        "फोटो और हस्ताक्षर",
-        "आधार / पहचान पत्र",
-        "roll number वाला आवेदन printout"
-      ],
-      "steps": [
-        "joinindianarmy.nic.in खोलो और register या log in करो",
-        "10+2 Technical Entry Scheme (TES-57) आवेदन खोलो",
-        "व्यक्तिगत, शिक्षा और JEE (Main) 2026 विवरण भरो",
-        "portal के format में फोटो और हस्ताक्षर upload करो",
-        "12 नवंबर 2026, दोपहर 12:00 से पहले review करके submit करो",
-        "SSB केंद्र के लिए roll number वाला आवेदन दो प्रतियों में print करो"
-      ],
-      "extra_faq": [
-        {
-          "q": "क्या TES-57 के लिए JEE Main 2026 अनिवार्य है?",
-          "a": "हाँ। JEE (Main) 2026 में उपस्थिति अनिवार्य है — शॉर्टलिस्टिंग JEE Main 2026 Common Rank List (CRL) और 12वीं PCM अंकों से होगी। JEE Main 2026 में नहीं बैठे उम्मीदवार आवेदन नहीं कर सकते।"
-        },
-        {
-          "q": "TES-57 के लिए कोई आवेदन शुल्क है?",
-          "a": "नहीं। भारतीय सेना 10+2 TES entry के लिए कोई आवेदन शुल्क नहीं लेती।"
-        },
-        {
-          "q": "TES-57 में चयन के बाद क्या होता है?",
-          "a": "चुने गए उम्मीदवार चार साल का सैन्य प्रशिक्षण करते हैं और पूरी तरह sponsored B.E./B.Tech डिग्री पाते हैं, फिर भारतीय सेना में Permanent Commission पर Lieutenant बनते हैं।"
-        }
-      ],
-      "kit": [
-        {
-          "title": "फोटो — portal के size पर compress करो",
-          "text": "Notice में फोटो का कोई निश्चित KB size नहीं छपा है — upload करते समय portal के बताए size पर यहाँ compress करो।",
-          "tool": "compress-image"
-        },
-        {
-          "title": "JEE scorecard — PDF",
-          "text": "JEE (Main) 2026 scorecard साफ़ PDF में रखो; बड़ा हो तो upload से पहले यहाँ compress करो।",
-          "tool": "compress-pdf"
-        }
-      ],
-      "mistakes": [
-        "JEE (Main) 2026 में बैठे बिना आवेदन करना",
-        "12 नवंबर 2026, दोपहर 12 बजे की deadline चूकना",
-        "TES को Lieutenant की सीधी नियुक्ति समझना",
-        "गलत जन्म तिथि — 1 जन 2008 से 1 जन 2011 के बीच होनी चाहिए"
-      ]
-    }
-  },
-  {
     "slug": "isro-ursc-technician-driver",
     "advt": "Advt URSC:04:2026",
     "board_en": "U R Rao Satellite Centre (URSC), Indian Space Research Organisation (ISRO), Bengaluru",
@@ -13448,212 +13239,6 @@
         "अनुभव ज़रूरी समझना",
         "20 नवंबर 2026 के बाद शुल्क भरना",
         "17 जनवरी 2027 के सामान्य अध्ययन पेपर की तारीख भूलना"
-      ]
-    }
-  },
-  {
-    "slug": "esic-professionals-actuarial-data",
-    "advt": "Advt No. A-12016/14/2026-E-III",
-    "board_en": "Employees' State Insurance Corporation (ESIC), New Delhi",
-    "board_hi": "कर्मचारी राज्य बीमा निगम (ESIC), नई दिल्ली",
-    "portal": "esic.gov.in",
-    "posts": 19,
-    "dates": {
-      "apply_end": "2026-11-12",
-      "apply_start": "2026-10-22",
-      "correction_end": null,
-      "correction_start": null,
-      "exam": null,
-      "fee_end": "2026-11-12"
-    },
-    "photo_kind": "upload",
-    "note_en": "These are purely contractual engagements — an initial term of 3 years, extendable by 2 years (1+1) — not permanent ESIC posts. Pay is a consolidated ₹80,000–₹3,30,000 per month, post-wise.",
-    "note_hi": "Ye sirf contractual engagement hai — shuruaati term 3 saal, 2 saal tak badh sakta hai (1+1) — ESIC ki permanent post nahi hai. Vetan consolidated ₹80,000–₹3,30,000 prati mahina hai, pad ke hisaab se.",
-    "guide": {
-      "en": null,
-      "hi": null
-    },
-    "links": {
-      "apply": "https://portal.esic.gov.in/ESICInsurance1/ESICEngagementRecruitment/Login.aspx",
-      "notice": null,
-      "site": "https://esic.gov.in"
-    },
-    "en": {
-      "name": "ESIC Professionals — Actuarial & Data Analytics 2026",
-      "tagline": "19 contractual professional posts at ESIC — Chief Actuary, Actuarial Specialists, Data Officers and more — interview only, no written exam, no fee, last date 12 November 2026.",
-      "qual": "Post-wise: Fellow/Associate of Institute of Actuaries of India, or PG/BE in Statistics, Economics, Data, CS, Engineering or Law + experience",
-      "fees": [
-        "No application fee is specified in the notice — applying is free."
-      ],
-      "fees_short": "No fee",
-      "specs": [
-        "Upload the photo and signature in the format the ESIC engagement portal asks for.",
-        "The sources read do not print fixed KB or pixel sizes for the photo and signature — follow the portal's instructions at upload time."
-      ],
-      "eligibility": [
-        "19 posts across 14 designations — Actuarial Division 6 and Data Analytics Branch (ICT) 13: Chief Actuary/Actuarial Advisor 1, Senior Actuarial Specialist (Valuation) 1, Senior Actuarial Specialist (Policy) 1, Actuarial Analyst/Modeller 2, Statistical/Research Officer 1, Chief Data & Analytics Officer 1, Data Governance Officer 1, Data Engineering Officer 1, Data Analytics Officer 1, Data Protection Officer 1, Technical Officers (Data Quality 1, Data Engineer 3, Data Analyst 3, Data Privacy 1).",
-        "Chief Actuary: Fellow of the Institute of Actuaries of India with at least 15 years of post-fellowship experience, including 5 years in senior leadership. Senior Specialists: Associate or Fellow of IAI with 8–10 years of experience. Analysts: a Bachelor's degree with 2–6 IAI papers and 3–6 years of experience. Data roles: PG or B.E. in Statistics, Economics, Data, Computer Science, Engineering or Law as per the post, with 5–15 years of experience.",
-        "Maximum age: 62 years (Chief Actuary, Chief Data & Analytics Officer); 50 years (Senior Specialists, Governance, Engineering, Analytics and Data Protection Officers); 45 years (Analysts, Statistical/Research Officer and Technical Officers).",
-        "Selection: preliminary scrutiny and shortlisting (up to a 1:10 ratio) followed by a personal interview. There is no written exam.",
-        "Apply online on the ESIC engagement portal (portal.esic.gov.in) from 22 October to 12 November 2026. There is no correction window stated."
-      ],
-      "dos": [
-        "Read the post-wise qualification and experience table in the advertisement before applying — each of the 14 designations has different requirements.",
-        "Apply only if your experience matches the post — senior roles need 8–15 years.",
-        "Submit before 12 November 2026 — the window closes tomorrow.",
-        "Keep your IAI membership and experience certificates ready for the interview.",
-        "Save the application number after submitting."
-      ],
-      "donts": [
-        "Do not treat this as a permanent ESIC job — it is a 3-year contract, extendable by 2 years.",
-        "Do not apply for a designation whose IAI papers or experience you do not have.",
-        "Do not expect a written exam — selection is shortlisting plus interview.",
-        "Do not wait for the last hours — the portal closes on 12 November 2026."
-      ],
-      "checklist": [
-        "IAI membership (Fellow/Associate) proof, where applicable",
-        "Experience certificates matching the post",
-        "PG / B.E. degree certificates",
-        "Age proof (max 62 / 50 / 45 as per post)",
-        "Photo and signature in the portal's format",
-        "Application acknowledgement"
-      ],
-      "documents": [
-        "IAI membership certificate",
-        "Degree and PG certificates",
-        "Experience certificates",
-        "Age proof",
-        "Photo and signature",
-        "Application printout"
-      ],
-      "steps": [
-        "Open esic.gov.in and read Advertisement A-12016/14/2026-E-III",
-        "Open the ESIC engagement portal and register",
-        "Choose the designation matching your qualification and experience",
-        "Fill the online form and upload the photo and signature",
-        "Submit before 12 November 2026 and save the acknowledgement",
-        "Wait for the shortlist — selection is by personal interview"
-      ],
-      "extra_faq": [
-        {
-          "q": "What is the last date to apply for ESIC Professionals 2026?",
-          "a": "12 November 2026, online only on the ESIC engagement portal (portal.esic.gov.in). The window opened on 22 October 2026."
-        },
-        {
-          "q": "Are ESIC Professional posts permanent?",
-          "a": "No. They are purely contractual engagements — an initial term of 3 years, extendable by 2 years (1+1). Pay is a consolidated ₹80,000–₹3,30,000 per month, post-wise."
-        },
-        {
-          "q": "Is there a written exam for ESIC Professionals?",
-          "a": "No. Selection is by preliminary scrutiny and shortlisting (up to a 1:10 ratio) followed by a personal interview."
-        }
-      ],
-      "kit": [
-        {
-          "title": "Photo — compress to the portal's size",
-          "text": "The notice prints no fixed KB size — compress your photo here to the size the portal asks for when you upload.",
-          "tool": "compress-image"
-        },
-        {
-          "title": "Experience certificates — PDF",
-          "text": "Keep your IAI membership and experience certificates as clean PDFs; compress a large one here before uploading.",
-          "tool": "compress-pdf"
-        }
-      ],
-      "mistakes": [
-        "Treating a 3-year contract as a permanent ESIC job",
-        "Applying for a designation without the required IAI papers or experience",
-        "Expecting a written exam",
-        "Missing the 12 November 2026 deadline"
-      ]
-    },
-    "hi": {
-      "name": "ESIC प्रोफेशनल — एक्चुरियल और डेटा एनालिटिक्स 2026",
-      "tagline": "ESIC में 19 contractual प्रोफेशनल पद — चीफ एक्चुअरी, एक्चुरियल स्पेशलिस्ट, डेटा ऑफिसर आदि — सिर्फ़ साक्षात्कार, कोई लिखित परीक्षा नहीं, कोई शुल्क नहीं, अंतिम तिथि 12 नवंबर 2026।",
-      "qual": "पद के अनुसार: Institute of Actuaries of India के Fellow/Associate, या सांख्यिकी, अर्थशास्त्र, डेटा, CS, इंजीनियरिंग या कानून में PG/BE + अनुभव",
-      "fees": [
-        "Notice में कोई आवेदन शुल्क नहीं दिया गया है — आवेदन मुफ़्त है।"
-      ],
-      "fees_short": "कोई शुल्क नहीं",
-      "specs": [
-        "ESIC engagement portal के बताए format में फोटो और हस्ताक्षर upload करें।",
-        "पढ़े गए स्रोतों में फोटो और हस्ताक्षर का कोई निश्चित KB या pixel size नहीं छपा है — upload के समय portal के निर्देश देखो।"
-      ],
-      "eligibility": [
-        "14 पदनामों में 19 पद — एक्चुरियल डिवीज़न 6 और डेटा एनालिटिक्स शाखा (ICT) 13: चीफ एक्चुअरी/एक्चुरियल एडवाइज़र 1, सीनियर एक्चुरियल स्पेशलिस्ट (वैल्यूएशन) 1, सीनियर एक्चुरियल स्पेशलिस्ट (पॉलिसी) 1, एक्चुरियल एनालिस्ट/मॉडलर 2, स्टैटिस्टिकल/रिसर्च ऑफिसर 1, चीफ डेटा और एनालिटिक्स ऑफिसर 1, डेटा गवर्नेंस ऑफिसर 1, डेटा इंजीनियरिंग ऑफिसर 1, डेटा एनालिटिक्स ऑफिसर 1, डेटा प्रोटेक्शन ऑफिसर 1, टेक्निकल ऑफिसर (डेटा क्वालिटी 1, डेटा इंजीनियर 3, डेटा एनालिस्ट 3, डेटा प्राइवेसी 1)।",
-        "चीफ एक्चुअरी: Institute of Actuaries of India के Fellow साथ में fellowship के बाद कम से कम 15 साल का अनुभव, जिसमें 5 साल सीनियर नेतृत्व में। सीनियर स्पेशलिस्ट: IAI के Associate या Fellow साथ में 8–10 साल का अनुभव। एनालिस्ट: स्नातक डिग्री साथ में 2–6 IAI पेपर और 3–6 साल का अनुभव। डेटा पद: पद के अनुसार सांख्यिकी, अर्थशास्त्र, डेटा, कंप्यूटर साइंस, इंजीनियरिंग या कानून में PG या B.E., साथ में 5–15 साल का अनुभव।",
-        "अधिकतम उम्र: 62 वर्ष (चीफ एक्चुअरी, चीफ डेटा और एनालिटिक्स ऑफिसर); 50 वर्ष (सीनियर स्पेशलिस्ट, गवर्नेंस, इंजीनियरिंग, एनालिटिक्स और डेटा प्रोटेक्शन ऑफिसर); 45 वर्ष (एनालिस्ट, स्टैटिस्टिकल/रिसर्च ऑफिसर और टेक्निकल ऑफिसर)।",
-        "चयन: शुरुआती जाँच और शॉर्टलिस्टिंग (1:10 तक अनुपात) फिर व्यक्तिगत साक्षात्कार। कोई लिखित परीक्षा नहीं है।",
-        "आवेदन ESIC engagement portal (portal.esic.gov.in) पर ऑनलाइन, 22 अक्टूबर से 12 नवंबर 2026 तक। कोई correction window नहीं दी गई है।"
-      ],
-      "dos": [
-        "आवेदन से पहले विज्ञापन में पद के अनुसार योग्यता और अनुभव की तालिका पढ़ो — 14 पदनामों में से हर एक की अलग शर्तें हैं।",
-        "सिर्फ़ तभी आवेदन करो जब तुम्हारा अनुभव पद से मेल खाता हो — सीनियर पदों के लिए 8–15 साल चाहिए।",
-        "12 नवंबर 2026 से पहले submit करो — window कल बंद हो रही है।",
-        "साक्षात्कार के लिए IAI सदस्यता और अनुभव प्रमाणपत्र तैयार रखो।",
-        "Submit के बाद आवेदन संख्या संभालकर रखो।"
-      ],
-      "donts": [
-        "इसे ESIC की permanent नौकरी मत समझो — यह 3 साल का contract है, 2 साल तक बढ़ सकता है।",
-        "जिस पदनाम के IAI पेपर या अनुभव तुम्हारे पास नहीं हैं, उसके लिए आवेदन मत करो।",
-        "लिखित परीक्षा की उम्मीद मत करो — चयन शॉर्टलिस्टिंग और साक्षात्कार से होगा।",
-        "आखिरी घंटों का इंतज़ार मत करो — portal 12 नवंबर 2026 को बंद हो जाएगा।"
-      ],
-      "checklist": [
-        "IAI सदस्यता (Fellow/Associate) का प्रमाण, जहाँ लागू हो",
-        "पद से मेल खाते अनुभव प्रमाणपत्र",
-        "PG / B.E. डिग्री प्रमाणपत्र",
-        "उम्र का प्रमाण (पद के अनुसार अधिकतम 62 / 50 / 45)",
-        "portal के format में फोटो और हस्ताक्षर",
-        "आवेदन पावती"
-      ],
-      "documents": [
-        "IAI सदस्यता प्रमाणपत्र",
-        "डिग्री और PG प्रमाणपत्र",
-        "अनुभव प्रमाणपत्र",
-        "उम्र का प्रमाण",
-        "फोटो और हस्ताक्षर",
-        "आवेदन printout"
-      ],
-      "steps": [
-        "esic.gov.in खोलो और विज्ञापन A-12016/14/2026-E-III पढ़ो",
-        "ESIC engagement portal खोलो और पंजीकरण करो",
-        "अपनी योग्यता और अनुभव से मेल खाता पदनाम चुनो",
-        "ऑनलाइन फॉर्म भरो और फोटो व हस्ताक्षर upload करो",
-        "12 नवंबर 2026 से पहले submit करो और पावती संभालो",
-        "शॉर्टलिस्ट का इंतज़ार करो — चयन व्यक्तिगत साक्षात्कार से होगा"
-      ],
-      "extra_faq": [
-        {
-          "q": "ESIC प्रोफेशनल 2026 के लिए आवेदन की आखिरी तारीख क्या है?",
-          "a": "12 नवंबर 2026, सिर्फ़ ESIC engagement portal (portal.esic.gov.in) पर ऑनलाइन। Window 22 अक्टूबर 2026 से खुली है।"
-        },
-        {
-          "q": "क्या ESIC प्रोफेशनल पद permanent हैं?",
-          "a": "नहीं। ये पूरी तरह contractual engagement हैं — शुरुआती term 3 साल, 2 साल तक बढ़ सकता है (1+1)। वेतन consolidated ₹80,000–₹3,30,000 प्रति माह है, पद के हिसाब से।"
-        },
-        {
-          "q": "क्या ESIC प्रोफेशनल के लिए लिखित परीक्षा है?",
-          "a": "नहीं। चयन शुरुआती जाँच और शॉर्टलिस्टिंग (1:10 तक अनुपात) फिर व्यक्तिगत साक्षात्कार से होगा।"
-        }
-      ],
-      "kit": [
-        {
-          "title": "फोटो — portal के size पर compress करो",
-          "text": "Notice में फोटो का कोई निश्चित KB size नहीं छपा है — upload करते समय portal के बताए size पर यहाँ compress करो।",
-          "tool": "compress-image"
-        },
-        {
-          "title": "अनुभव प्रमाणपत्र — PDF",
-          "text": "IAI सदस्यता और अनुभव प्रमाणपत्र साफ़ PDF में रखो; बड़ा हो तो upload से पहले यहाँ compress करो।",
-          "tool": "compress-pdf"
-        }
-      ],
-      "mistakes": [
-        "3 साल के contract को ESIC की permanent नौकरी समझना",
-        "ज़रूरी IAI पेपर या अनुभव के बिना किसी पदनाम के लिए आवेदन करना",
-        "लिखित परीक्षा की उम्मीद करना",
-        "12 नवंबर 2026 की deadline चूकना"
       ]
     }
   },
@@ -17399,6 +16984,883 @@
         "OTPR पूरा किए बिना आवेदन करना",
         "परीक्षा शुल्क हर पद के लिए एक-सा समझना",
         "26 नवंबर 2026 की deadline चूकना"
+      ]
+    }
+  },
+  {
+    "slug": "assam-rifles-technical-tradesman-rally",
+    "advt": "Memo No. I.12016/A Branch (Rect Cell)/2026/1892",
+    "board_en": "Directorate General Assam Rifles (Ministry of Home Affairs)",
+    "board_hi": "महानिदेशालय असम राइफल्स (गृह मंत्रालय)",
+    "portal": "assamrifles.gov.in",
+    "posts": 354,
+    "dates": {
+      "apply_end": "2026-12-14",
+      "apply_start": "2026-11-15",
+      "correction_end": null,
+      "correction_start": null,
+      "exam": "18 January 2027 onwards",
+      "exam_hi": "18 जनवरी 2027 से",
+      "fee_end": "2026-12-14"
+    },
+    "photo_kind": "upload",
+    "guide": {
+      "en": null,
+      "hi": null
+    },
+    "links": {
+      "apply": "https://www.assamrifles.gov.in/",
+      "notice": null,
+      "site": "https://www.assamrifles.gov.in/"
+    },
+    "en": {
+      "name": "Assam Rifles Technical & Tradesman Rally 2026",
+      "tagline": "354 Group C posts in 17 trades — Warrant Officer (Cipher) 124, Rifleman and Havildar trades — male candidates only, rally from 18 January 2027, last date 14 December 2026.",
+      "qual": "10th / 12th / ITI / Diploma (trade-wise)",
+      "fees": [
+        "₹100 for General/OBC/EWS candidates — pay online, or in cash at any SBI branch into SBI Current Account No. 37088046712 (HQ DGAR, Recruitment Branch, Shillong). Upload the receipt/challan online and carry the original to the PST/PET. The fee is non-refundable.",
+        "SC, ST and ex-servicemen candidates pay no fee."
+      ],
+      "fees_short": "₹100 (SC/ST/ESM: nil)",
+      "specs": [
+        "The notification does not print a fixed KB size for the photo and signature — upload them in the format and size the portal asks for on the upload screen.",
+        "Keep your domicile/PRC certificate and category certificate ready — the state and trade cannot be changed after submission.",
+        "Carry the printed application form and a copy of the notification to the PST/PET — both are required there."
+      ],
+      "eligibility": [
+        "354 Group C posts in 17 trades — Warrant Officer (Cipher) 124, Rifleman (Electrical Fitter Signal) 32, Rifleman (Armourer) 29, Rifleman (Mason) 29, Rifleman (Vehicle Mechanic/Fitter) 23, Rifleman (Electrician Mechanic Vehicle) 22, Rifleman (Lineman Field) 21, Rifleman (Metalsmith) 19, Rifleman (Store Keeper Technical) 16, Rifleman (Recovery Vehicle Mechanic) 13, Rifleman (Engineer Equipment Mechanic) 10, Havildar (Instrument Repairer/Mechanic) 6, Rifleman (Upholster) 3, Rifleman (Welder) 2, Warrant Officer (Draughtsman) 2, Warrant Officer (Physiotherapist) 2, Warrant Officer (Operation Theatre Technician) 1. The notification is Memo No. I.12016/A Branch (Rect Cell)/2026/1892, dated 3 November 2026 (Employment News 14–20 November 2026).",
+        "Male Indian citizens only, from across India — a valid domicile or Permanent Resident Certificate (PRC) is required. Persons with disabilities are not eligible for this rally. Vacancies are all-India, all-class — there is no state-wise quota. 10% of vacancies in every trade are reserved for ex-servicemen.",
+        "Age as on 1 July 2026: 18–23 years for most trades; 18–25 years for Cipher, Recovery Vehicle Mechanic and Draughtsman. Relaxation: SC/ST +5 years, OBC +3 years, ex-servicemen as per rules. Only the date of birth on the matriculation (10th) certificate is accepted.",
+        "Qualification is trade-wise: Cipher — 12th pass + 2-year ITI in Radio & Television or Electronics, or a Bachelor's degree in Electronics or IT. Most Rifleman trades — 10th pass, with an ITI in the trade where specified (Lineman Field, Engineer Equipment Mechanic, Recovery Vehicle Mechanic, Electrician Mechanic Vehicle, Metalsmith, Upholster, Welder). Havildar (Instrument Repairer/Mechanic) — 12th pass + ITI in Instrumentation. Draughtsman — 12th + 3-year Diploma in Architectural Assistantship. Operation Theatre Technician — 12th + Diploma in Operation Theatre Technician. Physiotherapist — 12th + Diploma in Physiotherapy.",
+        "Selection in six stages: Physical Standard Test (height/chest/weight) and document check → Physical Efficiency Test (5 km run in 24 minutes; 1.6 km in 7 minutes for Ladakh) → Computer Based Test, 100 marks (pass 35% for General/EWS, 33% for SC/ST/OBC) → Trade Skill Test (qualifying only) → Document Verification and Detailed Medical Examination (Review Medical Examination available) → trade-wise, category-wise merit list.",
+        "Physical standards: height 170 cm (165 cm for Garhwalis, Kumaonis, Dogras, Marathas and candidates from Assam, Nagaland, Manipur, Mizoram, Tripura, Arunachal Pradesh, Meghalaya, Himachal Pradesh and Kashmir/Leh/Ladakh; 162.5 cm for ST), chest 80/85 cm (78/83 cm and 76/81 cm for the relaxed groups). PST/PET are held with RFID tracking at Jorhat or Diphu (Assam); the rally is tentatively scheduled from 18 January 2027 onwards.",
+        "Pay and allowances as applicable to Assam Rifles personnel — 7th CPC levels: Rifleman Level 3 (₹21,700–69,100), Havildar Level 4 (₹25,500–81,100), Warrant Officer Level 5 (₹29,200–92,300), plus DA, HRA and ration money. Selected candidates serve a 2-year probation."
+      ],
+      "dos": [
+        "Apply only on assamrifles.gov.in from 15 November 2026 — use the 'Online Application' option for this rally.",
+        "Choose your trade and state of domicile very carefully — neither can be changed later.",
+        "Keep your domicile/PRC and category certificates ready before you start.",
+        "Pay the ₹100 fee (if applicable) and upload the receipt/challan; carry the original to the PST/PET.",
+        "Start running practice now — the PET is a 5 km run in 24 minutes."
+      ],
+      "donts": [
+        "Do not submit more than one application — multiple applications are rejected.",
+        "Do not expect any correction window — no changes are allowed after submission.",
+        "Do not apply if you are a female candidate or a person with disability — this rally is male-only and PwD candidates are not eligible.",
+        "Do not use the earlier (25 September 2026) advertisement — it was cancelled on 30 October 2026; only the 3 November 2026 notification counts, and any fee paid under the cancelled one is refunded to the same bank account."
+      ],
+      "checklist": [
+        "Domicile / Permanent Resident Certificate (PRC)",
+        "10th certificate (age proof — only this date of birth counts)",
+        "ITI / Diploma / Degree certificate for your trade",
+        "Caste / EWS / ex-serviceman certificate, if applicable",
+        "Fee payment receipt or challan (₹100, if applicable)",
+        "Recent colour photograph and signature scan"
+      ],
+      "documents": [
+        "10th marksheet and certificate",
+        "Domicile / Permanent Resident Certificate",
+        "ITI / Diploma / Degree certificate (trade-wise)",
+        "Caste certificate (SC/ST/OBC/EWS), if applicable",
+        "Ex-serviceman certificate, if applicable",
+        "Fee payment receipt or challan"
+      ],
+      "kit": [
+        {
+          "title": "Passport photo ready rakho",
+          "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+          "tool": "compress-image"
+        },
+        {
+          "title": "Certificates ek PDF me jodo",
+          "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "Purani (25 September 2026 wali) cancelled advertisement se apply karna",
+        "Trade ya state galat chunna — baad me badla nahi ja sakta",
+        "Ek se zyada application bharna — sab reject ho jayengi",
+        "Fee ki receipt upload kiye bina form submit karna"
+      ],
+      "steps": [
+        "assamrifles.gov.in kholo aur Memo No. I.12016/A Branch (Rect Cell)/2026/1892 (3 November 2026) wali notification padho.",
+        "15 November 2026 se 'Online Application' par click karke mobile number aur email se register karo.",
+        "Trade aur domicile state dhyaan se chuno — ye baad me nahi badlega.",
+        "Domicile/PRC aur category certificates upload karo.",
+        "₹100 fee (lagu ho to) online ya SBI branch me jama karke receipt upload karo.",
+        "Form submit karo, printout nikalo aur 14 December 2026, raat 11:59 se pehle poora karo."
+      ],
+      "extra_faq": [
+        {
+          "q": "How many vacancies are there in the Assam Rifles Technical & Tradesman Rally 2026?",
+          "a": "354 Group C vacancies across 17 trades — the biggest is Warrant Officer (Cipher) with 124 posts. The notification is Memo No. I.12016/A Branch (Rect Cell)/2026/1892, dated 3 November 2026."
+        },
+        {
+          "q": "Can female candidates apply for the Assam Rifles rally?",
+          "a": "No. All trades in this rally are open to male candidates only. Persons with disabilities are also not eligible."
+        },
+        {
+          "q": "What is the selection process for the Assam Rifles Tradesman Rally?",
+          "a": "Six stages: PST and document check, PET (5 km run in 24 minutes), CBT of 100 marks (pass 35% General/EWS, 33% SC/ST/OBC), Trade Skill Test (qualifying only), document verification and detailed medical examination, then a trade-wise, category-wise merit list."
+        },
+        {
+          "q": "What happened to the earlier Assam Rifles advertisement of September 2026?",
+          "a": "The earlier advertisement (25 September 2026) was cancelled on 30 October 2026. Only the fresh notification dated 3 November 2026 counts; the ₹100 fee paid under the cancelled advertisement is refunded to the payee's same bank account."
+        }
+      ]
+    },
+    "hi": {
+      "name": "असम राइफल्स टेक्निकल और ट्रेड्समैन रैली 2026",
+      "tagline": "17 ट्रेडों में 354 ग्रुप C पद — वारंट ऑफिसर (साइफर) 124, राइफलमैन और हवलदार ट्रेड — सिर्फ़ पुरुष उम्मीदवार, रैली 18 जनवरी 2027 से, अंतिम तिथि 14 दिसंबर 2026।",
+      "qual": "10वीं / 12वीं / ITI / डिप्लोमा (ट्रेड के हिसाब से)",
+      "fees": [
+        "सामान्य/OBC/EWS उम्मीदवारों के लिए ₹100 — ऑनलाइन भुगतान करो, या किसी भी SBI शाखा में नकद जमा करो (SBI चालू खाता संख्या 37088046712, HQ DGAR, भर्ती शाखा, शिलांग)। रसीद/चालान ऑनलाइन upload करो और मूल प्रति PST/PET में साथ ले जाओ। शुल्क वापस नहीं होगा।",
+        "SC, ST और भूतपूर्व सैनिक उम्मीदवारों के लिए कोई शुल्क नहीं है।"
+      ],
+      "fees_short": "₹100 (SC/ST/भूतपूर्व सैनिक: शून्य)",
+      "specs": [
+        "अधिसूचना में फोटो और हस्ताक्षर के लिए कोई निश्चित KB size नहीं दी गई है — portal की upload screen पर जो format और size माँगा जाए, उसी में upload करो।",
+        "Domicile/PRC प्रमाणपत्र और श्रेणी प्रमाणपत्र पहले से ready रखो — state और trade submit के बाद बदले नहीं जा सकते।",
+        "आवेदन पत्र का printout और अधिसूचना की प्रति PST/PET में साथ ले जाओ — दोनों वहाँ ज़रूरी हैं।"
+      ],
+      "eligibility": [
+        "17 ट्रेडों में 354 ग्रुप C पद — वारंट ऑफिसर (साइफर) 124, राइफलमैन (इलेक्ट्रिकल फिटर सिग्नल) 32, राइफलमैन (आर्मरर) 29, राइफलमैन (मेसन) 29, राइफलमैन (व्हीकल मैकेनिक/फिटर) 23, राइफलमैन (इलेक्ट्रिशियन मैकेनिक व्हीकल) 22, राइफलमैन (लाइनमैन फील्ड) 21, राइफलमैन (मेटलस्मिथ) 19, राइफलमैन (स्टोर कीपर टेक्निकल) 16, राइफलमैन (रिकवरी व्हीकल मैकेनिक) 13, राइफलमैन (इंजीनियर इक्विपमेंट मैकेनिक) 10, हवलदार (इंस्ट्रूमेंट रिपेयरर/मैकेनिक) 6, राइफलमैन (अपहोल्स्टर) 3, राइफलमैन (वेल्डर) 2, वारंट ऑफिसर (ड्राफ्ट्समैन) 2, वारंट ऑफिसर (फिजियोथेरेपिस्ट) 2, वारंट ऑफिसर (ऑपरेशन थिएटर टेक्निशियन) 1। अधिसूचना Memo No. I.12016/A Branch (Rect Cell)/2026/1892, दिनांक 3 नवंबर 2026 (रोज़गार समाचार 14–20 नवंबर 2026) है।",
+        "सिर्फ़ पुरुष भारतीय नागरिक, पूरे भारत से — वैध domicile या स्थायी निवासी प्रमाणपत्र (PRC) ज़रूरी है। दिव्यांग व्यक्ति इस रैली के लिए पात्र नहीं हैं। रिक्तियाँ अखिल भारतीय, सभी वर्गों के लिए हैं — कोई राज्य-वार कोटा नहीं है। हर ट्रेड की 10% रिक्तियाँ भूतपूर्व सैनिकों के लिए आरक्षित हैं।",
+        "उम्र 1 जुलाई 2026 को: अधिकांश ट्रेडों के लिए 18–23 वर्ष; साइफर, रिकवरी व्हीकल मैकेनिक और ड्राफ्ट्समैन के लिए 18–25 वर्ष। छूट: SC/ST +5 वर्ष, OBC +3 वर्ष, भूतपूर्व सैनिक नियमानुसार। जन्म तिथि सिर्फ़ मैट्रिक (10वीं) प्रमाणपत्र वाली मानी जाएगी।",
+        "योग्यता ट्रेड के हिसाब से है: साइफर — 12वीं + रेडियो और टेलीविजन या इलेक्ट्रॉनिक्स में 2-साला ITI, या इलेक्ट्रॉनिक्स/IT में स्नातक डिग्री। अधिकांश राइफलमैन ट्रेड — 10वीं पास, जहाँ लिखा हो वहाँ ट्रेड में ITI (लाइनमैन फील्ड, इंजीनियर इक्विपमेंट मैकेनिक, रिकवरी व्हीकल मैकेनिक, इलेक्ट्रिशियन मैकेनिक व्हीकल, मेटलस्मिथ, अपहोल्स्टर, वेल्डर)। हवलदार (इंस्ट्रूमेंट रिपेयरर/मैकेनिक) — 12वीं + इंस्ट्रूमेंटेशन में ITI। ड्राफ्ट्समैन — 12वीं + आर्किटेक्चरल असिस्टेंटशिप में 3-साला डिप्लोमा। ऑपरेशन थिएटर टेक्निशियन — 12वीं + ऑपरेशन थिएटर टेक्निशियन डिप्लोमा। फिजियोथेरेपिस्ट — 12वीं + फिजियोथेरेपी डिप्लोमा।",
+        "चयन छह चरणों में: शारीरिक मानक परीक्षण (ऊँचाई/छाती/वज़न) और दस्तावेज़ जाँच → शारीरिक दक्षता परीक्षा (5 km दौड़ 24 मिनट में; लद्दाख के लिए 1.6 km, 7 मिनट में) → कंप्यूटर आधारित परीक्षा, 100 अंक (पास: सामान्य/EWS 35%, SC/ST/OBC 33%) → ट्रेड कौशल परीक्षा (सिर्फ़ qualifying) → दस्तावेज़ सत्यापन और विस्तृत चिकित्सा परीक्षा (समीक्षा चिकित्सा परीक्षा उपलब्ध) → ट्रेड-वार, श्रेणी-वार मेधा सूची।",
+        "शारीरिक मानक: ऊँचाई 170 cm (गढ़वाली, कुमाऊँनी, डोगरा, मराठा और असम, नागालैंड, मणिपुर, मिज़ोरम, त्रिपुरा, अरुणाचल प्रदेश, मेघालय, हिमाचल प्रदेश व कश्मीर/लेह/लद्दाख के उम्मीदवारों के लिए 165 cm; ST के लिए 162.5 cm), छाती 80/85 cm (छूट वाले समूहों के लिए 78/83 cm और 76/81 cm)। PST/PET असम के जोरहाट या दीफू में RFID ट्रैकिंग के साथ होंगे; रैली अस्थायी रूप से 18 जनवरी 2027 से तय है।",
+        "वेतन और भत्ते असम राइफल्स कर्मियों पर लागू दरों से — 7वें वेतन आयोग के स्तर: राइफलमैन लेवल 3 (₹21,700–69,100), हवलदार लेवल 4 (₹25,500–81,100), वारंट ऑफिसर लेवल 5 (₹29,200–92,300), साथ में DA, HRA और राशन भत्ता। चयनित उम्मीदवार 2 साल की परिवीक्षा पर रहेंगे।"
+      ],
+      "dos": [
+        "15 नवंबर 2026 से सिर्फ़ assamrifles.gov.in पर apply करो — इस रैली के लिए 'Online Application' विकल्प चुनो।",
+        "Trade और domicile state बहुत ध्यान से चुनो — बाद में दोनों बदले नहीं जा सकते।",
+        "Domicile/PRC और श्रेणी प्रमाणपत्र पहले से ready रखो।",
+        "₹100 शुल्क (लागू हो तो) जमा करके रसीद/challan upload करो; मूल प्रति PST/PET में साथ ले जाओ।",
+        "अभी से दौड़ की तैयारी शुरू कर दो — PET में 5 km दौड़ 24 मिनट में पूरी करनी है।"
+      ],
+      "donts": [
+        "एक से ज़्यादा आवेदन मत भरो — कई आवेदन reject हो जाते हैं।",
+        "Correction window की उम्मीद मत करो — submit के बाद कोई बदलाव नहीं होगा।",
+        "महिला उम्मीदवार या दिव्यांग व्यक्ति apply मत करें — यह रैली सिर्फ़ पुरुषों के लिए है और PwD पात्र नहीं हैं।",
+        "पुरानी (25 सितंबर 2026 वाली) अधिसूचना से apply मत करो — वह 30 अक्टूबर 2026 को रद्द हो गई थी; सिर्फ़ 3 नवंबर 2026 वाली नई अधिसूचना मान्य है, और रद्द वाली के तहत जमा ₹100 उसी बैंक खाते में वापस किए जाएँगे।"
+      ],
+      "checklist": [
+        "Domicile / स्थायी निवासी प्रमाणपत्र (PRC)",
+        "10वीं प्रमाणपत्र (उम्र का प्रमाण — सिर्फ़ यही जन्म तिथि मानी जाएगी)",
+        "Trade के अनुसार ITI / डिप्लोमा / डिग्री प्रमाणपत्र",
+        "जाति / EWS / भूतपूर्व सैनिक प्रमाणपत्र, यदि लागू हो",
+        "शुल्क भुगतान की रसीद या चालान (₹100, यदि लागू हो)",
+        "नयी रंगीन फोटो और हस्ताक्षर का scan"
+      ],
+      "documents": [
+        "10वीं की marksheet और प्रमाणपत्र",
+        "Domicile / स्थायी निवासी प्रमाणपत्र",
+        "Trade के अनुसार ITI / डिप्लोमा / डिग्री प्रमाणपत्र",
+        "जाति प्रमाणपत्र (SC/ST/OBC/EWS), यदि लागू हो",
+        "भूतपूर्व सैनिक प्रमाणपत्र, यदि लागू हो",
+        "शुल्क भुगतान की रसीद या चालान"
+      ],
+      "steps": [
+        "assamrifles.gov.in खोलो और Memo No. I.12016/A Branch (Rect Cell)/2026/1892 (3 नवंबर 2026) वाली अधिसूचना पढ़ो।",
+        "15 नवंबर 2026 से 'Online Application' पर click करके मोबाइल नंबर और email से register करो।",
+        "Trade और domicile state ध्यान से चुनो — ये बाद में नहीं बदलेंगे।",
+        "Domicile/PRC और श्रेणी प्रमाणपत्र upload करो।",
+        "₹100 शुल्क (लागू हो तो) ऑनलाइन या SBI शाखा में जमा करके रसीद upload करो।",
+        "Form submit करो, printout निकालो और 14 दिसंबर 2026, रात 11:59 से पहले पूरा करो।"
+      ],
+      "extra_faq": [
+        {
+          "q": "असम राइफल्स टेक्निकल और ट्रेड्समैन रैली 2026 में कितनी रिक्तियाँ हैं?",
+          "a": "17 ट्रेडों में 354 ग्रुप C रिक्तियाँ हैं — सबसे बड़ी वारंट ऑफिसर (साइफर) की 124 पदों वाली है। अधिसूचना Memo No. I.12016/A Branch (Rect Cell)/2026/1892, दिनांक 3 नवंबर 2026 है।"
+        },
+        {
+          "q": "क्या महिला उम्मीदवार असम राइफल्स रैली के लिए apply कर सकती हैं?",
+          "a": "नहीं। इस रैली के सभी ट्रेड सिर्फ़ पुरुष उम्मीदवारों के लिए हैं। दिव्यांग व्यक्ति भी पात्र नहीं हैं।"
+        },
+        {
+          "q": "असम राइफल्स ट्रेड्समैन रैली की चयन प्रक्रिया क्या है?",
+          "a": "छह चरण: PST और दस्तावेज़ जाँच, PET (5 km दौड़ 24 मिनट में), 100 अंकों की CBT (पास: सामान्य/EWS 35%, SC/ST/OBC 33%), ट्रेड कौशल परीक्षा (सिर्फ़ qualifying), दस्तावेज़ सत्यापन और विस्तृत चिकित्सा परीक्षा, फिर ट्रेड-वार, श्रेणी-वार मेधा सूची।"
+        },
+        {
+          "q": "सितंबर 2026 वाली पुरानी असम राइफल्स अधिसूचना का क्या हुआ?",
+          "a": "पुरानी अधिसूचना (25 सितंबर 2026) 30 अक्टूबर 2026 को रद्द कर दी गई थी। सिर्फ़ 3 नवंबर 2026 वाली नई अधिसूचना मान्य है; रद्द वाली के तहत जमा ₹100 शुल्क उसी बैंक खाते में वापस किया जाएगा।"
+        }
+      ],
+      "kit": [
+        {
+          "title": "पासपोर्ट फोटो ready रखो",
+          "text": "नयी सफेद-background वाली रंगीन फोटो scan करके रखो; बड़ी file को यहीं छोटी कर सकते हो।",
+          "tool": "compress-image"
+        },
+        {
+          "title": "Certificates एक PDF में जोड़ो",
+          "text": "सारे documents को एक साफ़ PDF में जोड़कर upload के लिए ready रखो।",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "पुरानी (25 सितंबर 2026 वाली) रद्द अधिसूचना से apply करना",
+        "Trade या state गलत चुनना — बाद में बदला नहीं जा सकता",
+        "एक से ज़्यादा आवेदन भरना — सब reject हो जाएँगे",
+        "शुल्क की रसीद upload किए बिना form submit करना"
+      ]
+    }
+  },
+  {
+    "slug": "iocl-marketing-er-apprentice",
+    "advt": "Advt No. IOCL/MKTG/ER/APPR/2026-27",
+    "board_en": "Indian Oil Corporation Ltd (IOCL) — Marketing Division, Eastern Region",
+    "board_hi": "इंडियन ऑयल कॉर्पोरेशन लि. (IOCL) — मार्केटिंग डिवीजन, पूर्वी क्षेत्र",
+    "portal": "NAPS / NATS portal",
+    "posts": 409,
+    "dates": {
+      "apply_end": "2026-12-12",
+      "apply_start": "2026-11-13",
+      "correction_end": null,
+      "correction_start": null,
+      "exam": null,
+      "fee_end": "2026-12-12"
+    },
+    "photo_kind": "upload",
+    "note_en": "This is apprenticeship training under the Apprentices Act, 1961 — not a permanent job. A monthly stipend is paid during the 12-month training, and completing it does not guarantee a regular IOCL post.",
+    "note_hi": "यह Apprentices Act, 1961 के तहत apprenticeship training है — permanent नौकरी नहीं। 12 महीने की training के दौरान monthly stipend मिलेगा, और training पूरी करने से regular IOCL post की guarantee नहीं मिलती।",
+    "guide": {
+      "en": null,
+      "hi": null
+    },
+    "links": {
+      "apply": "https://iocl.com/apprenticeships",
+      "notice": null,
+      "site": "https://iocl.com/apprenticeships"
+    },
+    "en": {
+      "name": "IOCL Marketing Division (Eastern Region) Apprentice 2026-27",
+      "tagline": "409 apprentice seats across 13 states/UT of the Eastern Region — Technician 206, Trade 97, Graduate 70, Data Entry Operator 20 — no fee, no exam, merit-based, last date 12 December 2026.",
+      "qual": "10th + ITI / 12th / Diploma / Graduation (discipline-wise)",
+      "fees": [
+        "No application fee is mentioned in the advertisement — applications are made only through the NAPS portal (ITI/DEO seats) or the NATS portal (Technician/Graduate seats), plus the mandatory Microsoft Form."
+      ],
+      "fees_short": "No fee",
+      "specs": [
+        "The advertisement does not print a fixed KB size for the photo and signature — upload them in the format and size the portal asks for.",
+        "Register on the correct portal — NAPS for ITI/DEO seats (Establishment ID E05201900011), NATS for Technician/Graduate seats (Establishment ID EWBKOC000077).",
+        "After the portal application, the mandatory Microsoft Form for training-location preferences and document verification must also be completed by 12 December 2026 — a portal-only application may not be considered."
+      ],
+      "eligibility": [
+        "409 apprentice seats announced in the advertisement — Technician Apprentice 206, Trade Apprentice (ITI) 97, Graduate Apprentice 70, Trade Apprentice – Data Entry Operator 20 (16 freshers + 4 skill-certificate holders). Note honestly: the state-wise vacancy table printed in the same advertisement adds up to 393 seats; the advertisement's announced total is 409, and that figure governs until IOCL issues a clarification.",
+        "Age 18–24 years as on 30 November 2026. Relaxation: SC/ST +5 years, OBC (NCL) +3 years, PwBD +10 to 15 years as per rules.",
+        "Qualification is discipline-wise and must be a regular full-time course — distance, part-time or correspondence qualifications are not eligible. Technician Apprentice: 3-year full-time Diploma in the discipline (50% marks for General/EWS/OBC-NCL, 45% for SC/ST/PwBD on reserved seats). Trade Apprentice: Matriculation + regular full-time 2-year ITI in the trade (NCVT/SCVT). Graduate Apprentice: regular full-time Bachelor's degree — BA, B.Com, B.Sc or BBA (50%/45%). Data Entry Operator (Fresher): Class 12 pass, below graduate level; (Skill Certificate Holder): Class 12 pass + recognised Domestic Data Entry Operator skill certificate (training under 1 year).",
+        "Higher-qualification bar: candidates holding or about to complete B.E./B.Tech, MBA, MCA, CA, ICWA, LLB or an equivalent professional qualification are NOT eligible for the Graduate Apprentice seats. The qualifying examination must have been passed between 1 April 2023 and 30 November 2026 (Graduate/Technician) or 1 April 2022 and 30 November 2026 (ITI/DEO).",
+        "Apply for only ONE discipline code — applying for more than one discipline code leads to summary rejection of all applications. The engagement covers West Bengal, Bihar, Odisha, Jharkhand, Assam, Sikkim, Tripura, Nagaland, Mizoram, Meghalaya, Manipur, Arunachal Pradesh and Andaman & Nicobar Islands.",
+        "Selection is on the merit of qualifying-examination marks, followed by document verification and a pre-engagement medical fitness assessment — there is no written examination and no interview. The apprenticeship is for 12 months; the stipend is paid as per the Apprentices Act and Rules (the advertisement does not print a fixed rupee figure per discipline)."
+      ],
+      "dos": [
+        "Register on the correct portal — NAPS for ITI/DEO seats, NATS for Technician/Graduate seats.",
+        "Choose only ONE discipline code — your single best-matching one.",
+        "Complete the mandatory Microsoft Form after the portal application — both stages by 12 December 2026, 5:00 PM.",
+        "Check your marks percentage — selection is purely on merit.",
+        "Keep the qualifying-exam marksheet ready; selection is on its marks."
+      ],
+      "donts": [
+        "Do not treat this as a permanent IOCL job — it is 12-month apprenticeship training.",
+        "Do not apply for more than one discipline code — all your applications will be rejected.",
+        "Do not apply with a distance, part-time or correspondence qualification — only regular full-time courses count.",
+        "Do not skip the Microsoft Form — a portal-only application may not be considered.",
+        "Do not apply for Graduate Apprentice if you hold (or will soon hold) B.E./B.Tech, MBA, MCA, CA, ICWA or LLB."
+      ],
+      "checklist": [
+        "NAPS or NATS registration number ready",
+        "Qualifying exam marksheet and certificate scanned",
+        "10th certificate (age proof) scanned",
+        "Caste / PwBD certificate scanned, if applicable",
+        "Recent colour photograph scanned",
+        "Microsoft Form link from the advertisement saved"
+      ],
+      "documents": [
+        "10th marksheet and certificate",
+        "Qualifying examination marksheet and certificate (ITI / Diploma / Degree as per discipline)",
+        "Caste certificate (SC/ST/OBC-NCL), if applicable",
+        "PwBD certificate, if applicable",
+        "Aadhaar card",
+        "Bank account details for stipend payment"
+      ],
+      "kit": [
+        {
+          "title": "Passport photo ready rakho",
+          "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+          "tool": "compress-image"
+        },
+        {
+          "title": "Certificates ek PDF me jodo",
+          "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "Ek se zyada discipline code ke liye apply karna — sab applications reject",
+        "Microsoft Form bhare bina sirf portal par apply karna",
+        "Distance ya part-time qualification se apply karna",
+        "Apprenticeship ko permanent naukri samajhna"
+      ],
+      "steps": [
+        "iocl.com/apprenticeships par Advt IOCL/MKTG/ER/APPR/2026-27 padho aur apne discipline ki yogyata note karo.",
+        "ITI/DEO seats ke liye apprenticeshipindia.gov.in (NAPS, Establishment ID E05201900011) par, Technician/Graduate seats ke liye nats.education.gov.in (NATS, Establishment ID EWBKOC000077) par register karo.",
+        "Apne discipline code me IOCL (Marketing Division) – Eastern Region ki apprenticeship ke liye apply karo.",
+        "Advertisement me diya mandatory Microsoft Form bharo (training-location preference aur document verification ke liye).",
+        "Documents upload karke 12 December 2026, shaam 5:00 se pehle dono stages poore karo.",
+        "Submitted application sambhal kar rakho aur merit list ka intezaar karo — koi pariksha nahi hai."
+      ],
+      "extra_faq": [
+        {
+          "q": "Is the IOCL Eastern Region apprentice a permanent job?",
+          "a": "No. It is 12 months of apprenticeship training under the Apprentices Act, 1961 with a monthly stipend as per the Apprentices Act and Rules. The advertisement does not promise a regular IOCL post after training."
+        },
+        {
+          "q": "Is there any application fee or written exam for IOCL ER Apprentice 2026-27?",
+          "a": "No fee is mentioned in the advertisement, and there is no written exam or interview — selection is on the merit of your qualifying-examination marks, followed by document verification and medical fitness."
+        },
+        {
+          "q": "How many seats are there — 409 or 393?",
+          "a": "The advertisement announces 409 seats, but its state-wise vacancy table adds up to 393. The announced total of 409 governs until IOCL issues a clarification or corrigendum."
+        },
+        {
+          "q": "Can I apply for more than one discipline code?",
+          "a": "No. Candidates are permitted to apply for only one discipline code; applying for more than one leads to summary rejection of all applications."
+        }
+      ]
+    },
+    "hi": {
+      "name": "IOCL मार्केटिंग डिवीजन (पूर्वी क्षेत्र) अपरेंटिस 2026-27",
+      "tagline": "पूर्वी क्षेत्र के 13 राज्यों/केंद्र शासित प्रदेशों में 409 अपरेंटिस सीटें — टेक्निशियन 206, ट्रेड 97, ग्रेजुएट 70, डेटा एंट्री ऑपरेटर 20 — कोई शुल्क नहीं, कोई परीक्षा नहीं, मेधा-आधारित, अंतिम तिथि 12 दिसंबर 2026।",
+      "qual": "10वीं + ITI / 12वीं / डिप्लोमा / स्नातक (विषय के हिसाब से)",
+      "fees": [
+        "विज्ञापन में कोई आवेदन शुल्क नहीं दिया गया है — आवेदन सिर्फ़ NAPS portal (ITI/DEO सीटें) या NATS portal (टेक्निशियन/ग्रेजुएट सीटें) से होता है, साथ में अनिवार्य Microsoft Form भी भरना है।"
+      ],
+      "fees_short": "कोई शुल्क नहीं",
+      "specs": [
+        "विज्ञापन में फोटो और हस्ताक्षर के लिए कोई निश्चित KB size नहीं दी गई है — portal जो format और size माँगे, उसी में upload करो।",
+        "सही portal पर register करो — ITI/DEO सीटों के लिए NAPS (Establishment ID E05201900011), टेक्निशियन/ग्रेजुएट सीटों के लिए NATS (Establishment ID EWBKOC000077)।",
+        "Portal पर आवेदन के बाद training-location preference और document verification के लिए अनिवार्य Microsoft Form भी 12 दिसंबर 2026 तक भरना है — सिर्फ़ portal वाला आवेदन विचार में नहीं आ सकता।"
+      ],
+      "eligibility": [
+        "विज्ञापन में 409 अपरेंटिस सीटें घोषित हैं — टेक्निशियन अपरेंटिस 206, ट्रेड अपरेंटिस (ITI) 97, ग्रेजुएट अपरेंटिस 70, ट्रेड अपरेंटिस – डेटा एंट्री ऑपरेटर 20 (16 freshers + 4 skill-certificate holders)। ईमानदारी से नोट करें: उसी विज्ञापन की राज्य-वार रिक्ति तालिका का योग 393 सीटें होता है; विज्ञापन का घोषित कुल 409 ही मान्य है, जब तक IOCL कोई स्पष्टीकरण जारी न करे।",
+        "उम्र 30 नवंबर 2026 को 18–24 वर्ष। छूट: SC/ST +5 वर्ष, OBC (NCL) +3 वर्ष, PwBD नियमानुसार +10 से 15 वर्ष।",
+        "योग्यता discipline के हिसाब से है और regular full-time course होनी चाहिए — distance, part-time या correspondence योग्यता मान्य नहीं है। टेक्निशियन अपरेंटिस: संबंधित विषय में 3-साला full-time डिप्लोमा (सामान्य/EWS/OBC-NCL के लिए 50% अंक, आरक्षित सीटों पर SC/ST/PwBD के लिए 45%)। ट्रेड अपरेंटिस: मैट्रिक + संबंधित ट्रेड में regular full-time 2-साला ITI (NCVT/SCVT)। ग्रेजुएट अपरेंटिस: regular full-time स्नातक डिग्री — BA, B.Com, B.Sc या BBA (50%/45%)। डेटा एंट्री ऑपरेटर (Fresher): 12वीं पास, स्नातक स्तर से नीचे; (Skill Certificate Holder): 12वीं पास + मान्यता प्राप्त Domestic डेटा एंट्री ऑपरेटर skill certificate (1 साल से कम की training)।",
+        "उच्च-योग्यता प्रतिबंध: B.E./B.Tech, MBA, MCA, CA, ICWA, LLB या समकक्ष पेशेवर योग्यता रखने वाले (या जल्द पूरी करने वाले) उम्मीदवार ग्रेजुएट अपरेंटिस सीटों के लिए पात्र नहीं हैं। योग्यता परीक्षा 1 अप्रैल 2023 से 30 नवंबर 2026 (ग्रेजुएट/टेक्निशियन) या 1 अप्रैल 2022 से 30 नवंबर 2026 (ITI/DEO) के बीच पास की होनी चाहिए।",
+        "सिर्फ़ ONE discipline code के लिए apply करो — एक से ज़्यादा discipline code के लिए आवेदन करने पर सभी आवेदन सीधे reject हो जाएँगे। यह engagement पश्चिम बंगाल, बिहार, ओडिशा, झारखंड, असम, सिक्किम, त्रिपुरा, नागालैंड, मिज़ोरम, मेघालय, मणिपुर, अरुणाचल प्रदेश और अंडमान व निकोबार द्वीप समूह में है।",
+        "चयन योग्यता परीक्षा के अंकों की मेधा पर होगा, फिर document verification और pre-engagement चिकित्सा जाँच — कोई लिखित परीक्षा नहीं है, कोई साक्षात्कार नहीं है। Apprenticeship 12 महीने की है; stipend Apprentices Act और Rules के अनुसार मिलेगा (विज्ञापन में प्रति discipline कोई निश्चित रुपये की राशि नहीं दी गई है)।"
+      ],
+      "dos": [
+        "सही portal पर register करो — ITI/DEO सीटों के लिए NAPS, टेक्निशियन/ग्रेजुएट सीटों के लिए NATS।",
+        "सिर्फ़ ONE discipline code चुनो — अपनी सबसे अच्छी मेल खाती एक।",
+        "Portal पर आवेदन के बाद अनिवार्य Microsoft Form भी भरो — दोनों stages 12 दिसंबर 2026, शाम 5:00 तक पूरे करो।",
+        "अपना अंक-प्रतिशत जाँचो — चयन पूरी तरह मेधा से होगा।",
+        "Qualifying exam की marksheet ready रखो; चयन उसी के अंकों पर है।"
+      ],
+      "donts": [
+        "इसे IOCL की permanent नौकरी मत समझो — यह 12 महीने की apprenticeship training है।",
+        "एक से ज़्यादा discipline code के लिए apply मत करो — तुम्हारे सभी आवेदन reject हो जाएँगे।",
+        "Distance, part-time या correspondence योग्यता से apply मत करो — सिर्फ़ regular full-time course मान्य है।",
+        "Microsoft Form भरना मत भूलो — सिर्फ़ portal वाला आवेदन विचार में नहीं आ सकता।",
+        "B.E./B.Tech, MBA, MCA, CA, ICWA या LLB रखते हो तो ग्रेजुएट अपरेंटिस के लिए apply मत करो।"
+      ],
+      "checklist": [
+        "NAPS या NATS पंजीकरण संख्या ready",
+        "Qualifying exam की marksheet और certificate scan किए हुए",
+        "10वीं certificate (उम्र का प्रमाण) scan किया हुआ",
+        "जाति / PwBD certificate scan किया हुआ, यदि लागू हो",
+        "नयी रंगीन फोटो scan की हुई",
+        "विज्ञापन से Microsoft Form का link संभाल कर रखा हुआ"
+      ],
+      "documents": [
+        "10वीं की marksheet और certificate",
+        "Qualifying परीक्षा की marksheet और certificate (discipline के हिसाब से ITI / डिप्लोमा / डिग्री)",
+        "जाति प्रमाणपत्र (SC/ST/OBC-NCL), यदि लागू हो",
+        "PwBD प्रमाणपत्र, यदि लागू हो",
+        "आधार कार्ड",
+        "Stipend के लिए बैंक खाता विवरण"
+      ],
+      "steps": [
+        "iocl.com/apprenticeships पर Advt IOCL/MKTG/ER/APPR/2026-27 पढ़ो और अपने discipline की योग्यता note करो।",
+        "ITI/DEO सीटों के लिए apprenticeshipindia.gov.in (NAPS, Establishment ID E05201900011) पर, टेक्निशियन/ग्रेजुएट सीटों के लिए nats.education.gov.in (NATS, Establishment ID EWBKOC000077) पर register करो।",
+        "अपने discipline code में IOCL (Marketing Division) – Eastern Region की apprenticeship के लिए apply करो।",
+        "विज्ञापन में दिया अनिवार्य Microsoft Form भरो (training-location preference और document verification के लिए)।",
+        "Documents upload करके 12 दिसंबर 2026, शाम 5:00 से पहले दोनों stages पूरे करो।",
+        "Submitted application संभाल कर रखो और मेधा सूची का इंतज़ार करो — कोई परीक्षा नहीं है।"
+      ],
+      "extra_faq": [
+        {
+          "q": "क्या IOCL पूर्वी क्षेत्र अपरेंटिस permanent नौकरी है?",
+          "a": "नहीं। यह Apprentices Act, 1961 के तहत 12 महीने की apprenticeship training है जिसमें Apprentices Act और Rules के अनुसार monthly stipend मिलता है। विज्ञापन में training के बाद regular IOCL post का कोई वादा नहीं है।"
+        },
+        {
+          "q": "क्या IOCL ER अपरेंटिस 2026-27 के लिए कोई आवेदन शुल्क या लिखित परीक्षा है?",
+          "a": "विज्ञापन में कोई शुल्क नहीं दिया गया है, और कोई लिखित परीक्षा या साक्षात्कार भी नहीं है — चयन योग्यता परीक्षा के अंकों की मेधा पर होगा, फिर document verification और चिकित्सा जाँच होगी।"
+        },
+        {
+          "q": "कुल सीटें 409 हैं या 393?",
+          "a": "विज्ञापन में 409 सीटें घोषित हैं, लेकिन उसकी राज्य-वार रिक्ति तालिका का योग 393 होता है। घोषित कुल 409 ही मान्य है, जब तक IOCL कोई स्पष्टीकरण या corrigendum जारी न करे।"
+        },
+        {
+          "q": "क्या मैं एक से ज़्यादा discipline code के लिए apply कर सकता हूँ?",
+          "a": "नहीं। उम्मीदवार सिर्फ़ एक discipline code के लिए apply कर सकते हैं; एक से ज़्यादा के लिए आवेदन करने पर सभी आवेदन सीधे reject हो जाएँगे।"
+        }
+      ],
+      "kit": [
+        {
+          "title": "पासपोर्ट फोटो ready रखो",
+          "text": "नयी सफेद-background वाली रंगीन फोटो scan करके रखो; बड़ी file को यहीं छोटी कर सकते हो।",
+          "tool": "compress-image"
+        },
+        {
+          "title": "Certificates एक PDF में जोड़ो",
+          "text": "सारे documents को एक साफ़ PDF में जोड़कर upload के लिए ready रखो।",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "एक से ज़्यादा discipline code के लिए apply करना — सब applications reject",
+        "Microsoft Form भरे बिना सिर्फ़ portal पर apply करना",
+        "Distance या part-time योग्यता से apply करना",
+        "Apprenticeship को permanent नौकरी समझना"
+      ]
+    }
+  },
+  {
+    "slug": "goa-collectorate-group-c",
+    "advt": "Advt No. 95/3/2026/Recruitment/COM/CAB",
+    "board_en": "Office of the Collector, North Goa (Panaji) & South Goa (Margao) — Civil Administration Branch",
+    "board_hi": "जिलाधिकारी कार्यालय, उत्तर गोवा (पणजी) और दक्षिण गोवा (मडगांव) — नागरिक प्रशासन शाखा",
+    "portal": "itggoa.formsubmit.in",
+    "posts": 94,
+    "dates": {
+      "apply_end": "2026-11-27",
+      "apply_start": "2026-11-10",
+      "correction_end": null,
+      "correction_start": null,
+      "exam": null,
+      "fee_end": "2026-11-27"
+    },
+    "photo_kind": "upload",
+    "guide": {
+      "en": null,
+      "hi": null
+    },
+    "links": {
+      "apply": "https://itggoa.formsubmit.in",
+      "notice": null,
+      "site": "https://northgoa.gov.in"
+    },
+    "en": {
+      "name": "Goa Collectorate Group C (UDC, LDC & MTS) 2026",
+      "tagline": "94 regular Group C posts — Upper Division Clerk 11, Lower Division Clerk 74, Multi Tasking Staff 9 — in the North and South Goa Collectorates, last date 27 November 2026.",
+      "qual": "Bachelor's / 12th / 10th or ITI + Konkani + 15-year Goa residence",
+      "fees": [
+        "UR ₹600, OBC ₹300, EWS ₹300, SC/ST ₹200, PwD nil. Pay online only — Internet Banking, Debit Card, Credit Card or UPI; no physical payment is accepted."
+      ],
+      "fees_short": "₹600 (UR); ₹300 OBC/EWS; ₹200 SC/ST; PwD nil",
+      "specs": [
+        "The notification does not print a fixed KB size for the photograph — upload a recent passport-size photograph in the format and size the portal asks for.",
+        "Keep your 15-year Goa residence certificate and Employment Exchange registration card ready — both are among the documents to enclose.",
+        "File a separate application for each category of post you apply for."
+      ],
+      "eligibility": [
+        "94 regular Group C posts — Upper Division Clerk (North Goa) 11, Lower Division Clerk (North Goa) 33, Lower Division Clerk (South Goa) 41, Multi Tasking Staff (North Goa) 4, Multi Tasking Staff (South Goa) 5. The advertisement is No. 95/3/2026/Recruitment/COM/CAB, dated 10 November 2026.",
+        "Upper Division Clerk: Bachelor's degree from a recognised university + 1 year experience in administrative work + minimum 6-month certificate course in computers + knowledge of Konkani. Lower Division Clerk: Higher Secondary School Certificate (12th) + computer knowledge with English typing speed of 30 wpm + at least 1 year working experience + knowledge of Konkani. Multi Tasking Staff: Secondary School Certificate (10th) or an ITI certificate course in the relevant trade + at least 1 year working experience + knowledge of Konkani. Knowledge of Marathi is desirable for all posts.",
+        "Knowledge of Konkani is essential for every post, and a 15-year residence certificate in Goa (issued by the competent authority) is required. The Employment Exchange registration card is among the documents to enclose.",
+        "Age: maximum 45 years as on 27 November 2026 (the last date). Relaxation: SC/ST +5 years, OBC +3 years, PwD +10 years (PwD-SC/ST +15, PwD-OBC +13), ex-servicemen and government servants as per rules; overall maximum 56 years for all categories. PwD candidates are exempted from the essential experience requirement.",
+        "Selection: objective-type written test — Post-specific Subject Knowledge 25%, General Knowledge, Reasoning, Mathematics and Basic Computer Awareness 60%, Konkani Language 15% — then a merit list on written-test marks, a skill test wherever applicable for merit-listed candidates, and verification of essential documents. The syllabus will be available by 16 November 2026 on itggoa.formsubmit.in, northgoa.gov.in and southgoa.nic.in.",
+        "Pay: Upper Division Clerk Level 4, Lower Division Clerk Level 2, Multi Tasking Staff Level 1. File a separate application for each category of post you apply for. No documents need to be furnished at the time of applying — shortlisted candidates found ineligible at document verification will not be considered."
+      ],
+      "dos": [
+        "Apply only on itggoa.formsubmit.in — read the general instructions on the same portal first.",
+        "File a separate application for each post category you apply for.",
+        "Keep your 15-year Goa residence certificate ready.",
+        "Check the syllabus when it is published (by 16 November 2026) — Konkani carries 15% weightage.",
+        "Pay the fee online only and submit by 27 November 2026."
+      ],
+      "donts": [
+        "Do not apply without knowledge of Konkani — it is essential for every post.",
+        "Do not apply without a valid OBC certificate and expect OBC benefits — without it, apply under UR.",
+        "Do not file one combined application for two post categories — each needs its own application.",
+        "Do not wait for a correction window — the advertisement announces none."
+      ],
+      "checklist": [
+        "15-year Goa residence certificate",
+        "Employment Exchange registration card",
+        "Degree / 12th / 10th or ITI certificate (post-wise)",
+        "Experience certificate (1 year, post-wise)",
+        "Computer certificate (6 months for UDC; typing proof for LDC)",
+        "Caste / EWS / PwD certificate, if applicable",
+        "Recent passport-size photograph"
+      ],
+      "documents": [
+        "Recent passport-size photograph",
+        "15-year residence certificate",
+        "Employment Exchange registration card",
+        "Birth, caste, disability, EWS, experience and ex-serviceman certificates as applicable",
+        "Diploma / course certificate in computers"
+      ],
+      "kit": [
+        {
+          "title": "Passport photo ready rakho",
+          "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+          "tool": "compress-image"
+        },
+        {
+          "title": "Certificates ek PDF me jodo",
+          "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "Konkani ke bina apply karna — ye har pad ke liye anivarya hai",
+        "Do padon ke liye ek hi combined application bharna",
+        "15 saal ke Goa residence certificate ke bina apply karna",
+        "Correction window ka intezaar karna — vigyapan me koi nahi hai"
+      ],
+      "steps": [
+        "itggoa.formsubmit.in kholo aur Advt No. 95/3/2026/Recruitment/COM/CAB padho.",
+        "Portal par general instructions padho.",
+        "Apne pad ke liye alag application bharo aur recent passport-size photo upload karo.",
+        "Fee online pay karo (UR ₹600, OBC/EWS ₹300, SC/ST ₹200, PwD nil).",
+        "27 November 2026 se pehle submit karo.",
+        "16 November 2026 ke baad syllabus download karke likhit pariksha ki taiyari karo."
+      ],
+      "extra_faq": [
+        {
+          "q": "How many vacancies are there in the Goa Collectorate Group C recruitment 2026?",
+          "a": "94 regular Group C posts: Upper Division Clerk (North Goa) 11, Lower Division Clerk (North Goa) 33, Lower Division Clerk (South Goa) 41, Multi Tasking Staff (North Goa) 4 and Multi Tasking Staff (South Goa) 5."
+        },
+        {
+          "q": "Is knowledge of Konkani compulsory for Goa Collectorate posts?",
+          "a": "Yes. Knowledge of Konkani is essential for every post — UDC, LDC and MTS. A 15-year residence certificate in Goa is also required."
+        },
+        {
+          "q": "What is the selection process for Goa Collectorate Group C 2026?",
+          "a": "An objective-type written test (Subject Knowledge 25%, GK/Reasoning/Maths/Basic Computer 60%, Konkani 15%), then a merit list on written-test marks, a skill test wherever applicable, and verification of essential documents."
+        },
+        {
+          "q": "What is the age limit for Goa Collectorate Group C posts?",
+          "a": "Maximum 45 years as on 27 November 2026 (the last date), with relaxation for SC/ST (+5), OBC (+3), PwD (+10 to 15) and ex-servicemen as per rules; overall maximum 56 years."
+        }
+      ]
+    },
+    "hi": {
+      "name": "गोवा कलेक्ट्रेट ग्रुप C (UDC, LDC और MTS) 2026",
+      "tagline": "94 नियमित ग्रुप C पद — अपर डिवीजन क्लर्क 11, लोअर डिवीजन क्लर्क 74, मल्टी टास्किंग स्टाफ 9 — उत्तर और दक्षिण गोवा कलेक्ट्रेट में, अंतिम तिथि 27 नवंबर 2026।",
+      "qual": "स्नातक / 12वीं / 10वीं या ITI + कोंकणी + गोवा में 15 साल का निवास",
+      "fees": [
+        "UR ₹600, OBC ₹300, EWS ₹300, SC/ST ₹200, PwD शून्य। सिर्फ़ ऑनलाइन भुगतान करें — इंटरनेट बैंकिंग, डेबिट कार्ड, क्रेडिट कार्ड या UPI; कोई भौतिक भुगतान स्वीकार नहीं किया जाता।"
+      ],
+      "fees_short": "₹600 (UR); ₹300 OBC/EWS; ₹200 SC/ST; PwD शून्य",
+      "specs": [
+        "अधिसूचना में फोटो के लिए कोई निश्चित KB size नहीं दी गई है — portal जो format और size माँगे, उसी में नयी पासपोर्ट-size फोटो upload करो।",
+        "गोवा में 15 साल के निवास का प्रमाणपत्र और रोज़गार कार्यालय पंजीकरण कार्ड ready रखो — दोनों संलग्न करने वाले दस्तावेज़ों में हैं।",
+        "जिस पद-श्रेणी के लिए apply कर रहे हो, उसके लिए अलग आवेदन भरो।"
+      ],
+      "eligibility": [
+        "94 नियमित ग्रुप C पद — अपर डिवीजन क्लर्क (उत्तर गोवा) 11, लोअर डिवीजन क्लर्क (उत्तर गोवा) 33, लोअर डिवीजन क्लर्क (दक्षिण गोवा) 41, मल्टी टास्किंग स्टाफ (उत्तर गोवा) 4, मल्टी टास्किंग स्टाफ (दक्षिण गोवा) 5। विज्ञापन संख्या 95/3/2026/Recruitment/COM/CAB, दिनांक 10 नवंबर 2026 है।",
+        "अपर डिवीजन क्लर्क: मान्यता प्राप्त विश्वविद्यालय से स्नातक डिग्री + प्रशासनिक कार्य में 1 साल का अनुभव + कंप्यूटर में कम से कम 6 महीने का certificate course + कोंकणी का ज्ञान। लोअर डिवीजन क्लर्क: उच्च माध्यमिक विद्यालय प्रमाणपत्र (12वीं) + अंग्रेज़ी में 30 wpm टाइपिंग गति के साथ कंप्यूटर ज्ञान + कम से कम 1 साल का कार्य अनुभव + कोंकणी का ज्ञान। मल्टी टास्किंग स्टाफ: माध्यमिक विद्यालय प्रमाणपत्र (10वीं) या संबंधित ट्रेड में ITI certificate course + कम से कम 1 साल का कार्य अनुभव + कोंकणी का ज्ञान। सभी पदों के लिए मराठी का ज्ञान वांछनीय है।",
+        "कोंकणी का ज्ञान हर पद के लिए अनिवार्य है, और गोवा में 15 साल के निवास का प्रमाणपत्र (सक्षम प्राधिकारी द्वारा जारी) ज़रूरी है। रोज़गार कार्यालय पंजीकरण कार्ड भी संलग्न करने वाले दस्तावेज़ों में है।",
+        "उम्र: 27 नवंबर 2026 (अंतिम तिथि) को अधिकतम 45 वर्ष। छूट: SC/ST +5 वर्ष, OBC +3 वर्ष, PwD +10 वर्ष (PwD-SC/ST +15, PwD-OBC +13), भूतपूर्व सैनिक और सरकारी कर्मचारी नियमानुसार; सभी श्रेणियों के लिए कुल अधिकतम 56 वर्ष। PwD उम्मीदवारों को अनिवार्य अनुभव से छूट है।",
+        "चयन: वस्तुनिष्ठ प्रकार की लिखित परीक्षा — पद-विशिष्ट विषय ज्ञान 25%, सामान्य ज्ञान, तर्कशक्ति, गणित और बुनियादी कंप्यूटर जागरूकता 60%, कोंकणी भाषा 15% — फिर लिखित परीक्षा के अंकों पर मेधा सूची, जहाँ लागू हो वहाँ मेधा सूची वाले उम्मीदवारों के लिए कौशल परीक्षा, और आवश्यक दस्तावेज़ों का सत्यापन। पाठ्यक्रम 16 नवंबर 2026 तक itggoa.formsubmit.in, northgoa.gov.in और southgoa.nic.in पर उपलब्ध होगा।",
+        "वेतन: अपर डिवीजन क्लर्क लेवल 4, लोअर डिवीजन क्लर्क लेवल 2, मल्टी टास्किंग स्टाफ लेवल 1। जिस पद-श्रेणी के लिए apply कर रहे हो, उसके लिए अलग आवेदन भरो। आवेदन के समय कोई दस्तावेज़ देने की ज़रूरत नहीं है — दस्तावेज़ सत्यापन में अयोग्य पाए गए shortlisted उम्मीदवारों पर विचार नहीं किया जाएगा।"
+      ],
+      "dos": [
+        "सिर्फ़ itggoa.formsubmit.in पर apply करो — पहले उसी portal पर general instructions पढ़ो।",
+        "जिस पद-श्रेणी के लिए apply कर रहे हो, उसके लिए अलग आवेदन भरो।",
+        "गोवा में 15 साल के निवास का प्रमाणपत्र ready रखो।",
+        "पाठ्यक्रम प्रकाशित होने पर (16 नवंबर 2026 तक) देखो — कोंकणी का 15% weightage है।",
+        "शुल्क सिर्फ़ ऑनलाइन pay करो और 27 नवंबर 2026 से पहले submit करो।"
+      ],
+      "donts": [
+        "कोंकणी जाने बिना apply मत करो — यह हर पद के लिए अनिवार्य है।",
+        "वैध OBC प्रमाणपत्र के बिना OBC लाभ की उम्मीद मत करो — उसके बिना UR में apply करो।",
+        "दो पद-श्रेणियों के लिए एक combined आवेदन मत भरो — हर एक के लिए अलग आवेदन चाहिए।",
+        "Correction window का इंतज़ार मत करो — विज्ञापन में कोई नहीं है।"
+      ],
+      "checklist": [
+        "गोवा में 15 साल के निवास का प्रमाणपत्र",
+        "रोज़गार कार्यालय पंजीकरण कार्ड",
+        "पद के अनुसार डिग्री / 12वीं / 10वीं या ITI प्रमाणपत्र",
+        "अनुभव प्रमाणपत्र (1 साल, पद के अनुसार)",
+        "कंप्यूटर प्रमाणपत्र (UDC के लिए 6 महीने; LDC के लिए टाइपिंग प्रमाण)",
+        "जाति / EWS / PwD प्रमाणपत्र, यदि लागू हो",
+        "नयी पासपोर्ट-size फोटो"
+      ],
+      "documents": [
+        "नयी पासपोर्ट-size फोटो",
+        "15 साल के निवास का प्रमाणपत्र",
+        "रोज़गार कार्यालय पंजीकरण कार्ड",
+        "जन्म, जाति, दिव्यांगता, EWS, अनुभव, भूतपूर्व सैनिक प्रमाणपत्र, जहाँ लागू हो",
+        "कंप्यूटर में डिप्लोमा / course certificate"
+      ],
+      "steps": [
+        "itggoa.formsubmit.in खोलो और Advt No. 95/3/2026/Recruitment/COM/CAB पढ़ो।",
+        "Portal पर general instructions पढ़ो।",
+        "अपने पद के लिए अलग आवेदन भरो और नयी पासपोर्ट-size फोटो upload करो।",
+        "शुल्क ऑनलाइन pay करो (UR ₹600, OBC/EWS ₹300, SC/ST ₹200, PwD शून्य)।",
+        "27 नवंबर 2026 से पहले submit करो।",
+        "16 नवंबर 2026 के बाद syllabus download करके लिखित परीक्षा की तैयारी करो।"
+      ],
+      "extra_faq": [
+        {
+          "q": "गोवा कलेक्ट्रेट ग्रुप C भर्ती 2026 में कितनी रिक्तियाँ हैं?",
+          "a": "94 नियमित ग्रुप C पद: अपर डिवीजन क्लर्क (उत्तर गोवा) 11, लोअर डिवीजन क्लर्क (उत्तर गोवा) 33, लोअर डिवीजन क्लर्क (दक्षिण गोवा) 41, मल्टी टास्किंग स्टाफ (उत्तर गोवा) 4 और मल्टी टास्किंग स्टाफ (दक्षिण गोवा) 5।"
+        },
+        {
+          "q": "क्या गोवा कलेक्ट्रेट पदों के लिए कोंकणी जानना अनिवार्य है?",
+          "a": "हाँ। कोंकणी का ज्ञान हर पद — UDC, LDC और MTS — के लिए अनिवार्य है। गोवा में 15 साल के निवास का प्रमाणपत्र भी ज़रूरी है।"
+        },
+        {
+          "q": "गोवा कलेक्ट्रेट ग्रुप C 2026 की चयन प्रक्रिया क्या है?",
+          "a": "वस्तुनिष्ठ प्रकार की लिखित परीक्षा (विषय ज्ञान 25%, सामान्य ज्ञान/तर्कशक्ति/गणित/बुनियादी कंप्यूटर 60%, कोंकणी 15%), फिर लिखित परीक्षा के अंकों पर मेधा सूची, जहाँ लागू हो वहाँ कौशल परीक्षा, और आवश्यक दस्तावेज़ों का सत्यापन।"
+        },
+        {
+          "q": "गोवा कलेक्ट्रेट ग्रुप C पदों की उम्र-सीमा क्या है?",
+          "a": "27 नवंबर 2026 (अंतिम तिथि) को अधिकतम 45 वर्ष, SC/ST (+5), OBC (+3), PwD (+10 से 15) और भूतपूर्व सैनिकों के लिए नियमानुसार छूट; कुल अधिकतम 56 वर्ष।"
+        }
+      ],
+      "kit": [
+        {
+          "title": "पासपोर्ट फोटो ready रखो",
+          "text": "नयी सफेद-background वाली रंगीन फोटो scan करके रखो; बड़ी file को यहीं छोटी कर सकते हो।",
+          "tool": "compress-image"
+        },
+        {
+          "title": "Certificates एक PDF में जोड़ो",
+          "text": "सारे documents को एक साफ़ PDF में जोड़कर upload के लिए ready रखो।",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "कोंकणी के बिना apply करना — यह हर पद के लिए अनिवार्य है",
+        "दो पदों के लिए एक ही combined आवेदन भरना",
+        "15 साल के गोवा निवास प्रमाणपत्र के बिना apply करना",
+        "Correction window का इंतज़ार करना — विज्ञापन में कोई नहीं है"
+      ]
+    }
+  },
+  {
+    "slug": "hartron-deo-panel",
+    "advt": "Advt No. Hartron/ICTET/2026-27/04",
+    "board_en": "Haryana State Electronics Development Corporation Ltd (HARTRON)",
+    "board_hi": "हरियाणा राज्य इलेक्ट्रॉनिक्स विकास निगम लि. (हार्ट्रॉन)",
+    "portal": "hartron.org.in",
+    "posts": 110,
+    "dates": {
+      "apply_end": "2026-11-22",
+      "apply_start": "2026-11-13",
+      "correction_end": null,
+      "correction_start": null,
+      "exam": null,
+      "fee_end": "2026-11-22"
+    },
+    "photo_kind": "upload",
+    "note_en": "This is a JOB-WORK BASIS PANEL, not a regular government post. Clearing the test only puts you on a 2-year panel — deployment happens only when a Haryana government department or organisation raises a requisition, and is not guaranteed.",
+    "note_hi": "यह JOB-WORK BASIS पर PANEL है, regular सरकारी पद नहीं। परीक्षा पास करने पर सिर्फ़ 2 साल के panel में नाम आता है — deployment तभी होगी जब कोई हरियाणा सरकारी विभाग या संस्था requisition देगी, और इसकी कोई guarantee नहीं है।",
+    "guide": {
+      "en": null,
+      "hi": null
+    },
+    "links": {
+      "apply": "https://www.hartron.org.in/",
+      "notice": null,
+      "site": "https://www.hartron.org.in/"
+    },
+    "en": {
+      "name": "HARTRON Data Entry Operator (DEO) Panel 2026",
+      "tagline": "110 Data Entry Operator panel slots across 7 Haryana districts — Panchkula 50, six districts 10 each — job-work basis, ₹18,000/month, last date 22 November 2026.",
+      "qual": "10+2 / Graduation + 1-year computer course, or BCA / B.Sc (IT/CS) / Diploma + 9,000 KPH",
+      "fees": [
+        "₹354 including 18% GST for all categories (General/EWS/BC/SC/PwBD/ESM) — pay online only (Debit Card, Credit Card, Net Banking or UPI) on the HARTRON portal."
+      ],
+      "fees_short": "₹354 (incl. GST, all categories)",
+      "specs": [
+        "The advertisement does not print a fixed KB size for the photograph and signature — upload clear scanned images in the format and size the portal asks for.",
+        "Choose your single district very carefully before submitting — an individual can apply for only ONE district.",
+        "Choose your test centre — IDDC, Ambala or HMSDC, Gurugram — while filling the form."
+      ],
+      "eligibility": [
+        "110 panel positions for Data Entry Operator — Panchkula 50, Gurugram 10, Jhajjar 10, Karnal 10, Palwal 10, Rewari 10, Sonepat 10. The advertisement is Hartron/ICTET/2026-27/04, issued 12 November 2026. Apply for only ONE district — a candidate applying for more than one district is not allowed.",
+        "Qualification — any one of these, plus the mandatory typing speed: (1) 10+2 with 50% marks, or Graduation, with an 'O' Level / one-year computer course from a recognised institution; (2) three-year Diploma in any stream, BCA, or B.Sc (Computer Science/IT); (3) Matriculation with 50% marks + two-year Diploma in Office Management and Computer Applications; (4) post-matric one-year ITI course in Stenography/NCVT with 60% marks.",
+        "Mandatory data punching speed: 9,000 key depressions per hour in English (150 per minute, about 30 words per minute).",
+        "Age 18–42 years as on 1 November 2026. Relaxation for SC, BC-A, BC-B, PwBD and ex-servicemen candidates as per Haryana government reservation policy.",
+        "Selection: a two-part practical computer examination — Part I: online multiple-choice test on computer awareness, MS Office (Word, Excel, PowerPoint), Internet, Networking and basic IT concepts; Part II: data entry/typing speed test at the 9,000 key-depressions-per-hour benchmark. Tests are held only at IDDC, Ambala and HMSDC, Gurugram. Admit cards can be downloaded from 1 December 2026; the test is in December 2026.",
+        "Remuneration ₹18,000 per month on deployment. The panel is valid for 2 years from the date of result publication (extendable if required). This panel updation is for deployment to indenting Haryana government departments and organisations, including Kurukshetra University."
+      ],
+      "dos": [
+        "Apply only on hartron.org.in between 13 and 22 November 2026.",
+        "Choose ONE district only — pick the district you actually want to work in.",
+        "Practise data punching to the 9,000 key-depressions-per-hour benchmark before the test.",
+        "Pay the ₹354 fee online and submit before 22 November 2026, 11:59 PM.",
+        "Download your admit card from 1 December 2026 onwards."
+      ],
+      "donts": [
+        "Do not treat the panel as a regular government job — it is a job-work basis panel with no deployment guarantee.",
+        "Do not apply for more than one district.",
+        "Do not assume clearing the test means immediate work — deployment depends on requisitions from indenting departments.",
+        "Do not wait for the last day — the window is only 10 days."
+      ],
+      "checklist": [
+        "10+2 / Graduation / Diploma / BCA / B.Sc certificate (as per option)",
+        "'O' Level / one-year computer course certificate, if applicable",
+        "Age proof (18–42 years on 1 November 2026)",
+        "Caste / PwBD / ESM certificate, if applicable",
+        "Haryana address proof",
+        "Recent colour photograph and signature scan"
+      ],
+      "documents": [
+        "10th / 12th / Graduation / Diploma certificate and marksheets",
+        "Computer course certificate ('O' Level / one-year course / BCA / B.Sc)",
+        "Age proof",
+        "Caste certificate (SC/BC), if applicable",
+        "PwBD / ESM certificate, if applicable",
+        "Photo and signature"
+      ],
+      "kit": [
+        {
+          "title": "Passport photo ready rakho",
+          "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+          "tool": "compress-image"
+        },
+        {
+          "title": "Certificates ek PDF me jodo",
+          "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "Panel ko regular सरकारी नौकरी समझना — deployment की कोई guarantee नहीं है",
+        "एक से ज़्यादा districts के लिए apply करना",
+        "9,000 key depressions प्रति घंटे की speed के बिना test में जाना",
+        "आखिरी दिन तक इंतज़ार करना — window सिर्फ़ 10 दिन की है"
+      ],
+      "steps": [
+        "hartron.org.in खोलो और Advt No. Hartron/ICTET/2026-27/04 — 'Updation of Panel of Data Entry Operators' पढ़ो।",
+        "Recruitment / What's New section me DEO panel updation ka link kholo.",
+        "Mobile number aur email se register karo aur apna EK district chuno (Panchkula, Gurugram, Jhajjar, Karnal, Palwal, Rewari ya Sonepat).",
+        "Test centre chuno — IDDC, Ambala ya HMSDC, Gurugram.",
+        "Personal aur academic details bharo, photo aur signature upload karo.",
+        "₹354 fee online pay karo, form submit karo aur 22 November 2026, raat 11:59 se pehle acknowledgement print karo.",
+        "1 December 2026 se admit card download karo aur December 2026 me test do."
+      ],
+      "extra_faq": [
+        {
+          "q": "Is the HARTRON DEO panel a regular government job?",
+          "a": "No. It is a job-work basis panel of computer professionals, valid for 2 years from the result date. Clearing the test only puts you on the panel — deployment happens only when an indenting Haryana government department or organisation raises a requisition, and is not guaranteed."
+        },
+        {
+          "q": "How many districts can I apply for in the HARTRON DEO panel 2026?",
+          "a": "Only ONE district. The 110 slots are Panchkula 50 and Gurugram, Jhajjar, Karnal, Palwal, Rewari and Sonepat 10 each. If you are already empanelled in another district and make this panel, you must choose one district and your name is struck off the earlier panel."
+        },
+        {
+          "q": "What is the typing speed required for HARTRON DEO?",
+          "a": "A data punching speed of 9,000 key depressions per hour in English (150 per minute, about 30 words per minute), tested in Part II of the computer examination."
+        },
+        {
+          "q": "What is the fee and age limit for HARTRON DEO 2026?",
+          "a": "The fee is ₹354 including 18% GST for all categories, payable online only. The age limit is 18–42 years as on 1 November 2026, with relaxation for SC, BC-A, BC-B, PwBD and ex-servicemen as per Haryana policy."
+        }
+      ]
+    },
+    "hi": {
+      "name": "हार्ट्रॉन डेटा एंट्री ऑपरेटर (DEO) पैनल 2026",
+      "tagline": "हरियाणा के 7 जिलों में 110 डेटा एंट्री ऑपरेटर पैनल स्लॉट — पंचकूला 50, छह जिले 10-10 — जॉब-वर्क आधार, ₹18,000/माह, अंतिम तिथि 22 नवंबर 2026।",
+      "qual": "10+2 / स्नातक + 1-साला कंप्यूटर कोर्स, या BCA / B.Sc (IT/CS) / डिप्लोमा + 9,000 KPH",
+      "fees": [
+        "सभी श्रेणियों (सामान्य/EWS/BC/SC/PwBD/ESM) के लिए 18% GST सहित ₹354 — सिर्फ़ ऑनलाइन भुगतान करें (डेबिट कार्ड, क्रेडिट कार्ड, नेट बैंकिंग या UPI) हार्ट्रॉन portal पर।"
+      ],
+      "fees_short": "₹354 (GST सहित, सभी श्रेणियाँ)",
+      "specs": [
+        "विज्ञापन में फोटो और हस्ताक्षर के लिए कोई निश्चित KB size नहीं दी गई है — portal जो format और size माँगे, उसी में साफ़ scanned images upload करो।",
+        "Submit करने से पहले अपना एक जिला बहुत ध्यान से चुनो — एक व्यक्ति सिर्फ़ ONE जिले के लिए apply कर सकता है।",
+        "Form भरते समय test centre चुनो — IDDC, अंबाला या HMSDC, गुरुग्राम।"
+      ],
+      "eligibility": [
+        "डेटा एंट्री ऑपरेटर के लिए 110 पैनल पद — पंचकूला 50, गुरुग्राम 10, झज्जर 10, करनाल 10, पलवल 10, रेवाड़ी 10, सोनीपत 10। विज्ञापन Hartron/ICTET/2026-27/04 है, 12 नवंबर 2026 को जारी। सिर्फ़ ONE जिले के लिए apply करो — एक से ज़्यादा जिले के लिए आवेदन की अनुमति नहीं है।",
+        "योग्यता — इनमें से कोई एक, साथ में अनिवार्य टाइपिंग गति: (1) 50% अंकों के साथ 10+2, या स्नातक, साथ में मान्यता प्राप्त संस्थान से 'O' लेवल / एक-साला कंप्यूटर कोर्स; (2) किसी भी stream में तीन-साला डिप्लोमा, BCA, या B.Sc (कंप्यूटर साइंस/IT); (3) 50% अंकों के साथ मैट्रिक + ऑफिस मैनेजमेंट और कंप्यूटर एप्लीकेशन्स में दो-साला डिप्लोमा; (4) 60% अंकों के साथ पोस्ट-मैट्रिक एक-साला ITI कोर्स (स्टेनोग्राफी/NCVT)।",
+        "अनिवार्य डेटा पंचिंग गति: अंग्रेज़ी में 9,000 key depressions प्रति घंटा (150 प्रति मिनट, लगभग 30 शब्द प्रति मिनट)।",
+        "उम्र 1 नवंबर 2026 को 18–42 वर्ष। हरियाणा सरकार की आरक्षण नीति के अनुसार SC, BC-A, BC-B, PwBD और भूतपूर्व सैनिक उम्मीदवारों के लिए छूट।",
+        "चयन: दो-भाग वाली व्यावहारिक कंप्यूटर परीक्षा — भाग I: कंप्यूटर जागरूकता, MS Office (Word, Excel, PowerPoint), इंटरनेट, नेटवर्किंग और बुनियादी IT अवधारणाओं पर ऑनलाइन बहुविकल्पीय परीक्षा; भाग II: 9,000 key depressions प्रति घंटे के benchmark पर डेटा एंट्री/टाइपिंग गति परीक्षा। परीक्षाएँ सिर्फ़ IDDC, अंबाला और HMSDC, गुरुग्राम में होंगी। Admit card 1 दिसंबर 2026 से download किए जा सकते हैं; परीक्षा दिसंबर 2026 में है।",
+        "Deployment पर पारिश्रमिक ₹18,000 प्रति माह। पैनल परिणाम प्रकाशन की तिथि से 2 साल के लिए वैध है (आवश्यकता होने पर बढ़ाया जा सकता है)। यह पैनल updation हरियाणा सरकारी विभागों और संस्थाओं — कुरुक्षेत्र विश्वविद्यालय सहित — में deployment के लिए है।"
+      ],
+      "dos": [
+        "13 से 22 नवंबर 2026 के बीच सिर्फ़ hartron.org.in पर apply करो।",
+        "सिर्फ़ ONE जिला चुनो — वही जिला चुनो जहाँ तुम सच में काम करना चाहते हो।",
+        "परीक्षा से पहले 9,000 key depressions प्रति घंटे की benchmark गति पर डेटा पंचिंग का अभ्यास करो।",
+        "₹354 शुल्क ऑनलाइन pay करो और 22 नवंबर 2026, रात 11:59 से पहले submit करो।",
+        "1 दिसंबर 2026 से admit card download करो।"
+      ],
+      "donts": [
+        "पैनल को regular सरकारी नौकरी मत समझो — यह job-work basis पैनल है, deployment की कोई guarantee नहीं है।",
+        "एक से ज़्यादा जिलों के लिए apply मत करो।",
+        "परीक्षा पास करना ही तुरंत काम मिलने का मतलब मत समझो — deployment indenting विभागों की requisition पर निर्भर है।",
+        "आखिरी दिन तक इंतज़ार मत करो — window सिर्फ़ 10 दिन की है।"
+      ],
+      "checklist": [
+        "विकल्प के अनुसार 10+2 / स्नातक / डिप्लोमा / BCA / B.Sc प्रमाणपत्र",
+        "'O' लेवल / एक-साला कंप्यूटर कोर्स प्रमाणपत्र, यदि लागू हो",
+        "उम्र का प्रमाण (1 नवंबर 2026 को 18–42 वर्ष)",
+        "जाति / PwBD / ESM प्रमाणपत्र, यदि लागू हो",
+        "हरियाणा पते का प्रमाण",
+        "नयी रंगीन फोटो और हस्ताक्षर का scan"
+      ],
+      "documents": [
+        "10वीं / 12वीं / स्नातक / डिप्लोमा प्रमाणपत्र और अंकतालिकाएँ",
+        "कंप्यूटर कोर्स प्रमाणपत्र ('O' लेवल / एक-साला कोर्स / BCA / B.Sc)",
+        "उम्र का प्रमाण",
+        "जाति प्रमाणपत्र (SC/BC), यदि लागू हो",
+        "PwBD / ESM प्रमाणपत्र, यदि लागू हो",
+        "फोटो और हस्ताक्षर"
+      ],
+      "steps": [
+        "hartron.org.in खोलो और Advt No. Hartron/ICTET/2026-27/04 — 'Updation of Panel of Data Entry Operators' पढ़ो।",
+        "Recruitment / What's New section में DEO panel updation का link खोलो।",
+        "मोबाइल नंबर और email से register करो और अपना EK जिला चुनो (पंचकूला, गुरुग्राम, झज्जर, करनाल, पलवल, रेवाड़ी या सोनीपत)।",
+        "Test centre चुनो — IDDC, अंबाला या HMSDC, गुरुग्राम।",
+        "Personal और academic details भरो, फोटो और हस्ताक्षर upload करो।",
+        "₹354 शुल्क ऑनलाइन pay करो, form submit करो और 22 नवंबर 2026, रात 11:59 से पहले acknowledgement print करो।",
+        "1 दिसंबर 2026 से admit card download करो और दिसंबर 2026 में test दो।"
+      ],
+      "extra_faq": [
+        {
+          "q": "क्या हार्ट्रॉन DEO पैनल regular सरकारी नौकरी है?",
+          "a": "नहीं। यह कंप्यूटर पेशेवरों का job-work basis पैनल है, परिणाम की तिथि से 2 साल के लिए वैध। परीक्षा पास करने पर सिर्फ़ पैनल में नाम आता है — deployment तभी होगी जब कोई indenting हरियाणा सरकारी विभाग या संस्था requisition देगी, और इसकी कोई guarantee नहीं है।"
+        },
+        {
+          "q": "हार्ट्रॉन DEO पैनल 2026 में मैं कितने जिलों के लिए apply कर सकता हूँ?",
+          "a": "सिर्फ़ ONE जिला। 110 स्लॉट पंचकूला 50 और गुरुग्राम, झज्जर, करनाल, पलवल, रेवाड़ी व सोनीपत 10-10 हैं। अगर तुम पहले से किसी दूसरे जिले के पैनल में हो और इस पैनल में भी आ जाते हो, तो तुम्हें एक जिला चुनना होगा और पहले वाले पैनल से तुम्हारा नाम हटा दिया जाएगा।"
+        },
+        {
+          "q": "हार्ट्रॉन DEO के लिए कितनी टाइपिंग गति चाहिए?",
+          "a": "अंग्रेज़ी में 9,000 key depressions प्रति घंटे की डेटा पंचिंग गति (150 प्रति मिनट, लगभग 30 शब्द प्रति मिनट), जिसकी जाँच कंप्यूटर परीक्षा के भाग II में होगी।"
+        },
+        {
+          "q": "हार्ट्रॉन DEO 2026 का शुल्क और उम्र-सीमा क्या है?",
+          "a": "शुल्क सभी श्रेणियों के लिए 18% GST सहित ₹354 है, सिर्फ़ ऑनलाइन भुगतान। उम्र-सीमा 1 नवंबर 2026 को 18–42 वर्ष है, हरियाणा नीति के अनुसार SC, BC-A, BC-B, PwBD और भूतपूर्व सैनिकों के लिए छूट है।"
+        }
+      ],
+      "kit": [
+        {
+          "title": "पासपोर्ट फोटो ready रखो",
+          "text": "नयी सफेद-background वाली रंगीन फोटो scan करके रखो; बड़ी file को यहीं छोटी कर सकते हो।",
+          "tool": "compress-image"
+        },
+        {
+          "title": "Certificates एक PDF में जोड़ो",
+          "text": "सारे documents को एक साफ़ PDF में जोड़कर upload के लिए ready रखो।",
+          "tool": "compress-pdf"
+        }
+      ],
+      "mistakes": [
+        "पैनल को regular सरकारी नौकरी समझना — deployment की कोई guarantee नहीं है",
+        "एक से ज़्यादा जिलों के लिए apply करना",
+        "9,000 key depressions प्रति घंटे की गति के बिना test में जाना",
+        "आखिरी दिन तक इंतज़ार करना — window सिर्फ़ 10 दिन की है"
       ]
     }
   }

@@ -231,6 +231,60 @@ def exam_closed_date(e):
     return e['dates'].get('correction_end') or e['dates']['apply_end']
 
 
+# ------------------------------------------------- Sarkari-scan notices
+# content/notices.json holds result / admit-card entries found by scanning
+# boards and aggregators (fields: name, type, official_url, date, exam_slug,
+# link_status). An entry whose exam_slug matches one of our exams is NOT
+# rendered separately — its official link attaches to that exam (a result
+# link promotes the exam to result-out; an admit-card link marks its admit
+# card out). Entries with no matching exam render as their own rows, always
+# linking straight to the official page. Entries without a verified
+# official_url never render.
+NOTICES = load_json('notices') if os.path.exists('content/notices.json') else []
+EXT_NOTICES = {'result': [], 'admit-card': []}
+_EXAM_BY_SLUG = {e['slug']: e for e in EXAMS}
+for _n in NOTICES:
+    if not _n.get('official_url') or _n.get('link_status') == 'unverified-link':
+        continue
+    _e = _EXAM_BY_SLUG.get(_n.get('exam_slug') or '')
+    if _e is None:
+        if _n.get('type') in EXT_NOTICES:
+            EXT_NOTICES[_n['type']].append(_n)
+        continue
+    if _n.get('type') == 'result' and exam_stage(_e) != 'result-out':
+        _e['links']['result'] = _n['official_url']
+        if _n.get('date'):
+            _e['dates']['result'] = _n['date']
+        _e['stage'] = 'result-out'
+    elif _n.get('type') == 'admit-card' and (_e.get('admit') or {}).get('status') != 'out':
+        _e['admit'] = {'status': 'out', 'date': _n.get('date'), 'link': _n['official_url']}
+
+
+def _item_sort_out(item):
+    """Declared items: newest date first; a missing date sinks."""
+    return item.get('date') or ''
+
+
+# One rendering model for the sidebar panels and the /exam-results/ +
+# /admit-cards/ pages: declared items first (date desc), then the
+# awaited/expected ones. Each item is {'exam': e} or {'notice': n}.
+RESULT_ITEMS = (
+    sorted(({'exam': e, 'date': e['dates'].get('result')} for e in EXAMS if exam_stage(e) == 'result-out'),
+           key=_item_sort_out, reverse=True) +
+    sorted(({'notice': n, 'date': n.get('date')} for n in EXT_NOTICES['result']),
+           key=_item_sort_out, reverse=True) +
+    [{'exam': e} for e in sorted((e for e in EXAMS if exam_stage(e) == 'result-awaited'),
+                                 key=exam_closed_date, reverse=True)])
+ADMIT_ITEMS = (
+    sorted(({'exam': e, 'date': (e.get('admit') or {}).get('date')} for e in EXAMS
+            if (e.get('admit') or {}).get('status') == 'out'),
+           key=_item_sort_out, reverse=True) +
+    sorted(({'notice': n, 'date': n.get('date')} for n in EXT_NOTICES['admit-card']),
+           key=_item_sort_out, reverse=True) +
+    sorted(({'exam': e, 'date': (e.get('admit') or {}).get('date')} for e in EXAMS
+            if (e.get('admit') or {}).get('status') == 'expected'),
+           key=lambda it: it['date'] or '9999'))
+
 OPEN_EXAMS = [e for e in EXAMS if exam_stage(e) == 'open']
 RESULT_EXAMS = sorted((e for e in EXAMS if exam_stage(e) != 'open'),
                       key=exam_closed_date, reverse=True)
@@ -872,7 +926,7 @@ def result_card(e, lang):
     if e.get('posts'):
         cells.append(('कुल पद' if hi else 'Total posts', '{:,}'.format(e['posts'])))
     cells.append(('फॉर्म बंद' if hi else 'Form closed', dstr(exam_closed_date(e), lang)))
-    cells.append(('Result', dstr(e['dates']['result'], lang) if out else ('इंतज़ार है' if hi else 'Awaited')))
+    cells.append(('Result', (dstr(e['dates']['result'], lang) if e['dates'].get('result') else ('घोषित हो गया' if hi else 'Declared')) if out else ('इंतज़ार है' if hi else 'Awaited')))
     if c.get('qual'):
         cells.append(('योग्यता' if hi else 'Qualification', esc(c['qual'])))
     grid = ''.join('<div class="ecell"><span>%s</span><b>%s</b></div>' % (k, v) for k, v in cells)
@@ -888,6 +942,182 @@ def result_card(e, lang):
             % (_search_text(e), esc(e['advt']), cls, esc(status), esc(e['board_hi' if hi else 'board_en']),
                path, esc(c['name']), grid, path,
                'पूरी जानकारी →' if hi else 'Full details →', rbtn))
+
+
+def exam_tabs(active, lang):
+    """Segmented tab bar shared by the three Exam Centre pages (Sample 2,
+    approved 13 Nov 2026): Exam Forms | Results | Admit Card. The active
+    tab is a filled span; the others link to their page."""
+    hi = lang == 'hi'
+    base = 'hi/' if hi else ''
+    tabs = [('forms', 'परीक्षा फॉर्म' if hi else 'Exam Forms', base + 'exam-forms/'),
+            ('results', 'Results' if hi else 'Results', base + 'exam-results/'),
+            ('admit', 'Admit Card', base + 'admit-cards/')]
+    parts = []
+    for key, label, path in tabs:
+        if key == active:
+            parts.append('<span class="cur" aria-current="page">%s</span>' % label)
+        else:
+            parts.append('<a href="/%s">%s</a>' % (path, label))
+    return '<nav class="exam-seg" aria-label="%s">%s</nav>' % (
+        'परीक्षा केंद्र के भाग' if hi else 'Exam Centre sections', ''.join(parts))
+
+
+def _result_row(item, lang):
+    """One compact sidebar row for a result item. Declared results link
+    straight to the official result page (no intermediate page); awaited
+    ones link to the exam's own page, where the link will appear."""
+    hi = lang == 'hi'
+    e = item.get('exam')
+    if e is not None:
+        name = esc(e[lang]['name'])
+        if exam_stage(e) == 'result-out':
+            sub = '%s · %s' % (esc(e['advt']), ('%s को घोषित' % dstr(e['dates']['result'], 'hi')) if hi and e['dates'].get('result')
+                               else ('Declared on %s' % dstr(e['dates']['result'])) if e['dates'].get('result')
+                               else ('घोषित हो गया' if hi else 'Declared'))
+            return ('<a class="prow" href="%s" target="_blank" rel="noopener"><span class="prow-tx">'
+                    '<span class="nm">%s</span><span class="sub">%s</span></span>'
+                    '<span class="stag out">%s</span></a>'
+                    % (e['links']['result'], name, sub, 'Result आ गया' if hi else 'Result out'))
+        sub = '%s · %s %s' % (esc(e['advt']), 'फ़ॉर्म बंद' if hi else 'form closed', dstr(exam_closed_date(e), lang))
+        return ('<a class="prow" href="/%s"><span class="prow-tx">'
+                '<span class="nm">%s</span><span class="sub">%s</span></span>'
+                '<span class="stag await">%s</span></a>'
+                % (exam_path(e, lang), name, sub, 'Result का इंतज़ार' if hi else 'Result awaited'))
+    n = item['notice']
+    sub = esc(n.get('date') or '')
+    return ('<a class="prow" href="%s" target="_blank" rel="noopener"><span class="prow-tx">'
+            '<span class="nm">%s</span><span class="sub">%s</span></span>'
+            '<span class="stag out">%s</span></a>'
+            % (n['official_url'], esc(n['name']), sub, 'Result आ गया' if hi else 'Result out'))
+
+
+def _admit_row(item, lang):
+    """One compact sidebar row for an admit-card item. A card that is out
+    links straight to the official download page; an expected one links to
+    the exam's own page."""
+    hi = lang == 'hi'
+    e = item.get('exam')
+    if e is not None:
+        a = e.get('admit') or {}
+        name = esc(e[lang]['name'])
+        if a.get('status') == 'out':
+            sub = '%s · %s' % (esc(e['advt']), ('%s से उपलब्ध' % dstr(a['date'], 'hi')) if hi and a.get('date')
+                               else ('Available from %s' % dstr(a['date'])) if a.get('date')
+                               else ('अब उपलब्ध है' if hi else 'Available now'))
+            return ('<a class="prow" href="%s" target="_blank" rel="noopener"><span class="prow-tx">'
+                    '<span class="nm">%s</span><span class="sub">%s</span></span>'
+                    '<span class="stag out">%s</span></a>'
+                    % (a['link'], name, sub, 'आ गया' if hi else 'Out now'))
+        sub = esc(a.get('note_hi' if hi else 'note_en') or
+                  (('अपेक्षित %s' % dstr(a['date'], 'hi')) if hi and a.get('date') else
+                   ('Expected %s' % dstr(a['date'])) if a.get('date') else
+                   ('जल्द अपेक्षित' if hi else 'Expected soon')))
+        chip = esc(a.get('chip_hi' if hi else 'chip_en') or ('अपेक्षित' if hi else 'Expected'))
+        return ('<a class="prow" href="/%s"><span class="prow-tx">'
+                '<span class="nm">%s</span><span class="sub">%s</span></span>'
+                '<span class="stag exp">%s</span></a>'
+                % (exam_path(e, lang), name, sub, chip))
+    n = item['notice']
+    sub = esc(n.get('date') or '')
+    return ('<a class="prow" href="%s" target="_blank" rel="noopener"><span class="prow-tx">'
+            '<span class="nm">%s</span><span class="sub">%s</span></span>'
+            '<span class="stag out">%s</span></a>'
+            % (n['official_url'], esc(n['name']), sub, 'आ गया' if hi else 'Out now'))
+
+
+def side_panel(kind, lang):
+    """Hub sidebar panel (Sample 2): the 12 most relevant results or admit
+    cards, with a View-all footer to the full page. The Results panel keeps
+    id="exam-results" so detail-page links to /exam-forms/#exam-results
+    land on it now that the old bottom block is gone."""
+    hi = lang == 'hi'
+    base = 'hi/' if hi else ''
+    if kind == 'result':
+        items, row = RESULT_ITEMS, _result_row
+        title, icon, foot = ('Exam Results', '🏆', 'सभी results देखो →' if hi else 'View all results →')
+        pid, foot_path = ' id="exam-results"', base + 'exam-results/'
+        aria = 'Exam Results'
+    else:
+        items, row = ADMIT_ITEMS, _admit_row
+        title, icon, foot = ('Admit Card', '🎫', 'सभी admit card देखो →' if hi else 'View all admit cards →')
+        pid, foot_path = '', base + 'admit-cards/'
+        aria = 'Admit Card'
+    if not items:
+        return ''
+    return ('<div class="side-panel %s"%s role="region" aria-label="%s">'
+            '<div class="panel-head"><span class="picon" aria-hidden="true">%s</span><h3>%s</h3>'
+            '<span class="live">%s</span></div>%s'
+            '<a class="pfoot" href="/%s">%s</a></div>'
+            % ('res' if kind == 'result' else 'adm', pid, aria, icon,
+               'परीक्षा परिणाम' if hi and kind == 'result' else title,
+               'ताज़ा' if hi else 'Recent',
+               ''.join(row(it, lang) for it in items[:12]), foot_path, foot))
+
+
+def admit_card(e, lang):
+    """Full-page card for /admit-cards/: our exam whose admit card is out or
+    officially expected. Same card family as exam_card / result_card."""
+    c = e[lang]
+    hi = lang == 'hi'
+    a = e.get('admit') or {}
+    out = a.get('status') == 'out'
+    if out:
+        cls, status = 'out', ('Admit Card आ गया' if hi else 'Admit card out')
+    else:
+        cls = 'soon'
+        status = a.get('chip_hi' if hi else 'chip_en') or ('अपेक्षित' if hi else 'Expected')
+    path = exam_path(e, lang)
+    cells = []
+    if e.get('posts'):
+        cells.append(('कुल पद' if hi else 'Total posts', '{:,}'.format(e['posts'])))
+    exam_txt = e['dates'].get('exam_hi' if hi else 'exam')
+    if exam_txt:
+        cells.append(('परीक्षा' if hi else 'Exam', esc(exam_txt)))
+    if out:
+        aval = (dstr(a['date'], lang) if a.get('date') else ('अब उपलब्ध है' if hi else 'Available now'))
+    else:
+        aval = a.get('note_hi' if hi else 'note_en') or (dstr(a['date'], lang) if a.get('date') else ('जल्द अपेक्षित' if hi else 'Expected soon'))
+    cells.append(('Admit Card', esc(aval)))
+    if c.get('qual'):
+        cells.append(('योग्यता' if hi else 'Qualification', esc(c['qual'])))
+    grid = ''.join('<div class="ecell"><span>%s</span><b>%s</b></div>' % (k, v) for k, v in cells)
+    dbtn = ''
+    if out and a.get('link'):
+        dbtn = '<a class="btn primary" href="%s" target="_blank" rel="noopener">%s</a>' % (
+            a['link'], 'Admit Card Download करो ↗' if hi else 'Download Admit Card ↗')
+    return ('<article class="ecard acard" data-search="%s"><div class="ecard-head"><span class="advt-chip">%s</span>'
+            '<span class="status-chip %s">%s</span></div>'
+            '<span class="cat">%s</span><h3><a href="/%s">%s</a></h3>'
+            '<div class="ecard-grid">%s</div>'
+            '<div class="ecard-foot"><a class="btn" href="/%s">%s</a>%s</div></article>'
+            % (_search_text(e), esc(e['advt']), cls, esc(status), esc(e['board_hi' if hi else 'board_en']),
+               path, esc(c['name']), grid, path,
+               'पूरी जानकारी →' if hi else 'Full details →', dbtn))
+
+
+def notice_card(n, kind, lang):
+    """Full-page card for an external scanned entry (an exam we do not
+    carry). The whole card points at the official page — clicking must land
+    on the result / admit-card page directly, with no stop in between."""
+    hi = lang == 'hi'
+    is_res = kind == 'result'
+    chip = 'Result' if is_res else 'Admit Card'
+    status = 'घोषित' if hi else 'Declared'
+    cells = []
+    if n.get('date'):
+        cells.append(('तारीख़' if hi else 'Date', esc(n['date'])))
+    cells.append((chip, 'आधिकारिक page पर उपलब्ध' if hi else 'Available on the official page'))
+    grid = ''.join('<div class="ecell"><span>%s</span><b>%s</b></div>' % (k, v) for k, v in cells)
+    btn = 'Result देखो ↗' if hi and is_res else 'Check Result ↗' if is_res else \
+          'Admit Card Download करो ↗' if hi else 'Download Admit Card ↗'
+    return ('<article class="ecard ncard" data-search="%s"><div class="ecard-head"><span class="advt-chip">%s</span>'
+            '<span class="status-chip out">%s</span></div>'
+            '<h3><a href="%s" target="_blank" rel="noopener">%s</a></h3>'
+            '<div class="ecard-grid">%s</div>'
+            '<div class="ecard-foot"><a class="btn primary" href="%s" target="_blank" rel="noopener">%s</a></div></article>'
+            % (esc(n['name'].lower()), chip, status, n['official_url'], esc(n['name']),
+               grid, n['official_url'], btn))
 
 
 def exam_detail(e, lang):
@@ -925,8 +1155,8 @@ def exam_detail(e, lang):
     elif _stage == 'result-out':
         body.append('<div class="result-panel out"><b>%s</b><p>%s</p><p><a class="btn primary" href="%s" target="_blank" rel="noopener">%s</a></p></div>' % (
             'Result घोषित हो गया' if hi else 'Result declared',
-            ('Result %s को घोषित हुआ।' % dstr(d['result'], lang)) if hi else
-            ('The result was declared on %s.' % dstr(d['result'], lang)),
+            (('Result %s को घोषित हुआ।' % dstr(d['result'], 'hi')) if d.get('result') else 'Result घोषित हो गया है।') if hi else
+            (('The result was declared on %s.' % dstr(d['result'])) if d.get('result') else 'The result has been declared.'),
             e['links']['result'], 'Result देखो (आधिकारिक)' if hi else 'Check Result (official)'))
     rows = [('फॉर्म शुरू' if hi else 'Form opens', dstr(d['apply_start'], lang)),
             ('आवेदन की अंतिम तिथि' if hi else 'Last date to apply', dstr(d['apply_end'], lang)),
@@ -942,8 +1172,8 @@ def exam_detail(e, lang):
     exam_txt = d.get('exam_hi' if hi else 'exam') or ('अभी घोषित नहीं — घोषित होते ही यहाँ update होगा' if hi else 'To be announced — updated here as soon as it is')
     rows.append(('परीक्षा तिथि' if hi else 'Exam date', exam_txt))
     if _stage == 'result-out':
-        _result_txt = ('%s को घोषित — नीचे Check Result button से देखो' % dstr(d['result'], 'hi')) if hi else \
-                      ('Declared on %s — see the Check Result button below' % dstr(d['result']))
+        _result_txt = (('%s को घोषित — नीचे Check Result button से देखो' % dstr(d['result'], 'hi')) if d.get('result') else 'घोषित हो गया — नीचे Check Result button से देखो') if hi else \
+                      (('Declared on %s — see the Check Result button below' % dstr(d['result'])) if d.get('result') else 'Declared — see the Check Result button below')
     elif _stage == 'result-awaited':
         _result_txt = 'अभी घोषित नहीं — आते ही आधिकारिक link यहाँ लगेगा' if hi else \
                       'Not declared yet — the official link will be added here the day it is'
@@ -1047,8 +1277,10 @@ def exam_detail(e, lang):
     body.append('<p class="exam-disc">%s</p>' % (
         'सभी जानकारी आधिकारिक अधिसूचना से ली गई है। फॉर्म अंत में सिर्फ आधिकारिक portal (%s) पर ही submit होता है — Convert Files एक फ्री मदद platform है, कोई सरकारी website नहीं। यहाँ हर चीज़ फ्री है; कोई sign-up नहीं चाहिए।' % e['portal'] if hi else
         'All information here is taken from the official notification. The form is finally submitted only on the official portal (%s) — Convert Files is a free help platform, not a government website. Everything here is free; no sign-up is needed.' % e['portal']))
-    body.append('<p class="seo-more"><a href="/%s">%s</a> \u00b7 <a href="/%s#exam-results">%s</a> \u00b7 <a href="/%s">%s</a></p>' % (
-        hub_path, 'सभी परीक्षाएँ' if hi else 'All exams', hub_path, 'Exam Results', 'hi/guides/' if hi else 'guides/', 'गाइड' if hi else 'Guides'))
+    body.append('<p class="seo-more"><a href="/%s">%s</a> \u00b7 <a href="/%s#exam-results">%s</a> \u00b7 <a href="/%s">%s</a> \u00b7 <a href="/%s">%s</a></p>' % (
+        hub_path, 'सभी परीक्षाएँ' if hi else 'All exams', hub_path, 'Exam Results',
+        'hi/admit-cards/' if hi else 'admit-cards/', 'Admit Card',
+        'hi/guides/' if hi else 'guides/', 'गाइड' if hi else 'Guides'))
     body.append('</section>')
     faq_ld = {'@context': 'https://schema.org', '@type': 'FAQPage',
               'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faqs]}
@@ -1061,7 +1293,7 @@ def exam_detail(e, lang):
                 ('%s (%s) Result 2026 — Result Date, Merit List & Official Result Link' % (c['name'], e['advt']))
         desc = ('%s आवेदन %s को बंद हुए। Result के update, merit list और आधिकारिक result link — सब यहीं, बिल्कुल फ्री।' % (c['tagline'], dstr(d['apply_end'], 'hi'))) if hi else \
                ('%s Applications closed on %s. Result updates, the merit list and the official result link — all here, free.' % (c['tagline'], dstr(d['apply_end'])))
-        if _stage == 'result-out':
+        if _stage == 'result-out' and d.get('result'):
             desc += (' Result %s को घोषित हो गया है।' % dstr(d['result'], 'hi')) if hi else (' The result was declared on %s.' % dstr(d['result']))
     page = replace_block(BASE, 'page:meta', page_meta(title, desc, path, extra_meta=exam_hreflang(e), jsonld=[crumb_ld, faq_ld]))
     if hi:
@@ -1127,39 +1359,22 @@ for _lang in ('en', 'hi'):
                  'आपकी search से कोई exam match नहीं हुआ। Board का नाम try करो — जैसे RRB, SSC, IBPS — या Police, Bank, Teacher जैसा शब्द।' if _hi else
                  'No exam matches your search. Try a board name like RRB, SSC, IBPS or a word like Police, Bank, Teacher.',
                  'Search साफ़ करो' if _hi else 'Clear search'))
-    _rpill = ''
-    _rblock = ''
-    if RESULT_EXAMS:
-        _rpill = ('<p class="exam-results-cta"><a href="#exam-results"><b>Exam Results</b><span>%s</span></a></p>' % (
-            'बंद हो चुके फॉर्म के result — घोषित और प्रतीक्षित, सब यहीं ↓' if _hi else
-            'Results of closed forms — declared and awaited, all right here ↓'))
-        _rcount = ('<p class="exam-count" id="examCountR" data-showing="%s">%s</p>' % (
-            esc('{n} में से {x} result दिख रहे हैं' if _hi else 'Showing {x} of {n} results'),
-            ('%d में से %d result दिख रहे हैं' % (len(RESULT_EXAMS), len(RESULT_EXAMS))) if _hi else
-            ('Showing %d of %d results' % (len(RESULT_EXAMS), len(RESULT_EXAMS)))))
-        _rnone = ('<div class="exam-none" id="examNoneR" hidden><p>%s</p></div>' % (
-            'आपकी search से कोई result match नहीं हुआ।' if _hi else
-            'No exam result matches your search.'))
-        _rblock = ('<div class="exam-results" id="exam-results"><h2>%s</h2>'
-                   '<p class="lead">%s</p>%s'
-                   '<div class="exam-grid">%s</div>%s</div>' % (
-                       'Exam Results — सरकारी परीक्षा परिणाम' if _hi else 'Exam Results — Sarkari Exam Results',
-                       'जिन परीक्षाओं के फॉर्म बंद हो चुके हैं, वे यहीं रहती हैं — result घोषित होते ही आधिकारिक result link इसी block में और परीक्षा के अपने पेज पर लग जाता है।' if _hi else
-                       'Exams whose forms have closed stay right here — the day a result is declared, the official result link appears in this block and on the exam\u2019s own page.',
-                       _rcount,
-                       ''.join(result_card(_e, _lang) for _e in RESULT_EXAMS),
-                       _rnone))
+    _panels = ''.join(x for x in (side_panel('result', _lang), side_panel('admit', _lang)) if x)
+    _grid_html = '<div class="exam-grid">' + ''.join(exam_card(_e, _lang) for _e in EXAMS_SORTED) + '</div>'
+    if _panels:
+        _main_html = ('<div class="hub-cols"><aside class="hub-side">%s</aside>'
+                      '<div class="hub-main">%s%s</div></div>' % (_panels, _grid_html, _none))
+    else:
+        _main_html = _grid_html + _none
     _hb = ['<section class="seo hub exam-hub">', _hc,
            _search,
-           _rpill,
+           exam_tabs('forms', _lang),
            '<p class="lead">%s</p>' % (
                'अभी खुले हुए सभी सरकारी परीक्षा फॉर्म एक ही जगह — हर सरकारी भर्ती के लिए online form की अंतिम तिथि, शुल्क, correction window, सही फोटो-हस्ताक्षर size और आधिकारिक apply link, साथ में apply करने से पहले फाइलें तैयार करने के फ्री टूल। बिना sign-up, बिल्कुल फ्री। किसी भी परीक्षा पर click करो — उसका पूरा पेज खुलेगा।' if _hi else
                'Every sarkari exam form open right now, in one place — for each sarkari bharti: the online form\u2019s last date, fees, correction window, exact photo-signature size and the official apply link, plus free tools to prepare your files before you apply. No sign-up, nothing to pay. Click any exam for its full page.'),
            _trust,
            ''.join(_steps3),
-           '<div class="exam-grid">' + ''.join(exam_card(_e, _lang) for _e in EXAMS_SORTED) + '</div>',
-           _none,
-           _rblock,
+           _main_html,
            _dates_tbl,
            _hfaq_html,
            '<p class="exam-disc">%s</p>' % (
@@ -1185,6 +1400,99 @@ for _lang in ('en', 'hi'):
         '%d परीक्षाएँ, अंतिम तिथि के क्रम में — फॉर्म, correction और result, सबके update यहीं।' % len(OPEN_EXAMS) if _hi else
         '%d exams, sorted by last date — forms, corrections and results, all tracked here.' % len(OPEN_EXAMS))) + cd_chip(None, _lang))
     write(_hub_path + 'index.html', hide_converter(strip_home(_hp)))
+
+# ------------------------------------------- Exam Results + Admit Card pages
+# The two full lists behind the hub sidebar's View-all links. Same hub
+# family: segmented tabs (respective tab active), the same pill search
+# filtering the cards (js/app.js, unchanged), truthful counts. Declared
+# entries link straight to the official page; awaited/expected entries for
+# our own exams link to the exam's page.
+for _kind in ('result', 'admit'):
+    _is_res = _kind == 'result'
+    _items_all = RESULT_ITEMS if _is_res else ADMIT_ITEMS
+    for _lang in ('en', 'hi'):
+        _hi = _lang == 'hi'
+        _base = 'hi/' if _hi else ''
+        _path = _base + ('exam-results/' if _is_res else 'admit-cards/')
+        _hub_name = 'परीक्षा फॉर्म केंद्र' if _hi else 'Exam Form Centre'
+        _page_name = 'Exam Results' if _is_res else 'Admit Card'
+        _cc, _cc_ld = crumbs([('Home', '/'), (_hub_name, '/' + _base + 'exam-forms/'), (_page_name, None)])
+        _noun = ('results' if _is_res else 'admit cards')
+        _search_l = ('<div class="exam-search">'
+                     '<div class="exam-search-pill"><span class="exam-search-ic" aria-hidden="true"><svg><use href="#i-search"/></svg></span>'
+                     '<input type="search" id="examSearch" autocomplete="off" '
+                     'placeholder="%s" aria-label="%s">'
+                     '<button type="button" class="exam-search-btn" id="examGo">%s</button></div>'
+                     '<p class="exam-count" id="examCount" data-showing="%s">%s</p></div>' % (
+                         esc('खोजें — जैसे NTPC, Police, Bank…' if _hi else 'Search — try NTPC, Police, Bank…'),
+                         esc('खोजें' if _hi else 'Search'),
+                         'खोजें' if _hi else 'Search',
+                         esc(('{n} में से {x} ' + _noun + ' दिख रहे हैं') if _hi else ('Showing {x} of {n} ' + _noun)),
+                         (('%d में से %d ' % (len(_items_all), len(_items_all))) + _noun + ' दिख रहे हैं') if _hi else
+                         ('Showing %d of %d %s' % (len(_items_all), len(_items_all), _noun))))
+        _none_l = ('<div class="exam-none" id="examNone" hidden><p>%s</p>'
+                   '<button type="button" class="btn" id="examClear">%s</button></div>' % (
+                       'आपकी search से कुछ match नहीं हुआ। Board का नाम try करो — जैसे RRB, SSC, IBPS।' if _hi else
+                       'Nothing matches your search. Try a board name like RRB, SSC, IBPS.',
+                       'Search साफ़ करो' if _hi else 'Clear search'))
+        _cards = []
+        _ld_items = []
+        for _it in _items_all:
+            _e = _it.get('exam')
+            if _e is not None:
+                _cards.append(result_card(_e, _lang) if _is_res else admit_card(_e, _lang))
+                _ld_items.append({'@type': 'ListItem', 'position': len(_ld_items) + 1,
+                                  'name': _e[_lang]['name'], 'url': DOMAIN + '/' + exam_path(_e, _lang)})
+            else:
+                _cards.append(notice_card(_it['notice'], _kind, _lang))
+                _ld_items.append({'@type': 'ListItem', 'position': len(_ld_items) + 1,
+                                  'name': _it['notice']['name'], 'url': _it['notice']['official_url']})
+        _list_ld = {'@context': 'https://schema.org', '@type': 'ItemList',
+                    'name': _page_name, 'itemListElement': _ld_items}
+        _lead = ('जिन परीक्षाओं के फॉर्म बंद हो चुके हैं, उनके result यहीं मिलते हैं — घोषित result पर click करते ही आधिकारिक result page सीधे खुलता है, बीच में कोई और page नहीं। जिनका result अभी नहीं आया, वे प्रतीक्षा सूची में हैं और उनके अपने page पर link उसी दिन लगेगा।' if _hi else
+                 'Results for every exam whose form has closed — click a declared result and the official result page opens directly, with no page in between. Results not yet declared are listed as awaited, and the official link lands on the exam\u2019s own page the day it is out.') if _is_res else \
+                ('जिन परीक्षाओं के admit card आ गए हैं, उन पर click करते ही आधिकारिक download page सीधे खुलता है। जिनके card अभी आने हैं, उनके सामने आधिकारिक schedule के हिसाब से अपेक्षित तिथि दी है — card आते ही यहाँ direct link लग जाएगा।' if _hi else
+                 'Where an admit card is out, clicking opens the official download page directly. Where it is still to come, the expected date from the official schedule is shown — the direct link appears here the day the card is released.')
+        _lb = ['<section class="seo hub exam-hub notice-hub">', _cc,
+               _search_l,
+               exam_tabs('results' if _is_res else 'admit', _lang),
+               '<p class="lead">%s</p>' % _lead,
+               '<div class="exam-grid">' + ''.join(_cards) + '</div>',
+               _none_l,
+               '<p class="exam-disc">%s</p>' % (
+                   'सभी link आधिकारिक board website के हैं। Convert Files एक फ्री मदद platform है, कोई सरकारी website नहीं — result और admit card हमेशा आधिकारिक page पर ही खुलते हैं।' if _hi else
+                   'Every link points to the official board website. Convert Files is a free help platform, not a government website — results and admit cards always open on the official page itself.'),
+               '<p class="seo-more"><a href="/%sexam-forms/">%s</a> \u00b7 <a href="/%s">%s</a></p>' % (
+                   _base, 'सभी परीक्षा फॉर्म' if _hi else 'All exam forms',
+                   _base + ('admit-cards/' if _is_res else 'exam-results/'),
+                   'Admit Card' if _is_res else 'Exam Results'),
+               '</section>']
+        _ll = ('<link rel="alternate" hreflang="en" href="%s/%s">'
+               '<link rel="alternate" hreflang="hi" href="%s/hi/%s">'
+               '<link rel="alternate" hreflang="x-default" href="%s/%s">') % (
+                   DOMAIN, 'exam-results/' if _is_res else 'admit-cards/',
+                   DOMAIN, 'exam-results/' if _is_res else 'admit-cards/',
+                   DOMAIN, 'exam-results/' if _is_res else 'admit-cards/')
+        _title = ('सरकारी परीक्षा परिणाम 2026 — घोषित व प्रतीक्षित Results | ConvertFiles' if _hi else
+                  'Sarkari Exam Results 2026 — Declared & Awaited Results | ConvertFiles') if _is_res else \
+                 ('सरकारी परीक्षा Admit Card 2026 — Hall Ticket Download व अपेक्षित तिथियाँ | ConvertFiles' if _hi else
+                  'Sarkari Exam Admit Cards 2026 — Hall Ticket Downloads & Expected Dates | ConvertFiles')
+        _desc = ('%d परीक्षा परिणाम एक जगह — घोषित result के लिए सीधा आधिकारिक link, बाक़ी के लिए प्रतीक्षा स्थिति। बिल्कुल फ्री।' % len(_items_all) if _hi else
+                 'All %d exam results in one place — a direct official link for every declared result, awaited status for the rest. Free.' % len(_items_all)) if _is_res else \
+                ('%d परीक्षाओं के admit card एक जगह — आए हुए card के लिए सीधा आधिकारिक download link, बाक़ी के लिए आधिकारिक schedule से अपेक्षित तिथि। बिल्कुल फ्री।' % len(_items_all) if _hi else
+                 'Admit cards for %d exams in one place — a direct official download link for every card that is out, the expected date from the official schedule for the rest. Free.' % len(_items_all))
+        _lp = replace_block(BASE, 'page:meta', page_meta(_title, _desc, _path, extra_meta=_ll, jsonld=[_cc_ld, _list_ld]))
+        if _hi:
+            _lp = _lp.replace('<html lang="en">', '<html lang="hi">', 1)
+        _lp = replace_block(_lp, 'page:body', '\n'.join(_lb))
+        _lp = _lp.replace('<h1>Free Online File Converter</h1>', '<h1>%s</h1>' % (
+            'परीक्षा परिणाम' if _hi and _is_res else _page_name))
+        _lp = _lp.replace(HERO_P, '<p>%s</p>' % (
+            ('%d results — घोषित और प्रतीक्षित, सब एक जगह।' % len(_items_all)) if _hi and _is_res else
+            ('%d results — declared and awaited, all in one place.' % len(_items_all)) if _is_res else
+            ('%d परीक्षाओं के admit card — आए हुए और आने वाले, सब एक जगह।' % len(_items_all)) if _hi else
+            ('Admit cards for %d exams — out now and expected, all in one place.' % len(_items_all))))
+        write(_path + 'index.html', hide_converter(strip_home(_lp)))
 
 # ------------------------------------------------------------- tool pages
 # /compress-image/, /merge-pdf/ and friends: the converter's shell, the drop

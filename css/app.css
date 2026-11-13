@@ -645,13 +645,37 @@ table.dates.wide th:first-child{width:32%}
 .status-chip.closed{background:var(--surface-2);color:var(--muted)}
 .status-chip.result{background:color-mix(in srgb,#A78BFA 18%,transparent);color:#C4B5FD}
 .status-chip.out{background:var(--ok-soft);color:var(--ok)}
-/* Exam Results: in-centre block, anchor pill and detail-page panel */
-.exam-results-cta{margin:2px 0 14px}
-.exam-results-cta a{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:linear-gradient(90deg,color-mix(in srgb,var(--accent) 16%,transparent),color-mix(in srgb,#A78BFA 20%,transparent));border:1px solid color-mix(in srgb,#A78BFA 55%,var(--line-2));border-radius:99px;padding:12px 22px;text-decoration:none;color:var(--ink);box-shadow:0 10px 28px rgba(0,0,0,.42);transition:transform .2s ease,box-shadow .2s ease}
-.exam-results-cta a:hover{transform:translateY(-1px);box-shadow:0 14px 32px rgba(0,0,0,.5)}
-.exam-results-cta b{font-size:16.5px;letter-spacing:-.01em}
-.exam-results-cta span{color:var(--muted);font-size:13.5px;font-weight:600}
-.exam-results{scroll-margin-top:84px;margin-top:30px;border-top:1px solid var(--line);padding-top:10px}
+/* Exam Centre sections (Sample 2, approved 13 Nov 2026): segmented tabs,
+   a left sidebar with the recent-results and admit-card panels, and the
+   two full list pages. The old bottom results block + anchor pill from
+   d7652b5d4 are superseded by this layout. */
+.exam-seg{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:4px;margin:14px 0 4px;max-width:560px}
+.exam-seg a,.exam-seg span{flex:1;text-align:center;font-size:14px;font-weight:700;padding:9px 6px;border-radius:9px;color:var(--muted);text-decoration:none}
+.exam-seg .cur{background:var(--accent);color:#08222F}
+.exam-seg a:hover{color:var(--ink)}
+.exam-hub .hub-cols{display:grid;grid-template-columns:348px 1fr;gap:20px;margin-top:16px;align-items:start}
+.exam-hub .hub-cols .exam-grid{grid-template-columns:repeat(2,1fr)}
+@media (max-width:900px){.exam-hub .hub-cols{grid-template-columns:1fr}}
+@media (max-width:620px){.exam-hub .hub-cols .exam-grid{grid-template-columns:1fr}}
+.side-panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;scroll-margin-top:84px}
+.side-panel + .side-panel{margin-top:16px}
+.side-panel .panel-head{display:flex;align-items:center;gap:9px;padding:13px 16px 11px;border-bottom:1px solid var(--line)}
+.side-panel .picon{width:30px;height:30px;flex:none;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px;background:var(--pop-soft)}
+.side-panel.adm .picon{background:var(--accent-soft)}
+.side-panel .panel-head h3{font-family:var(--display);font-size:16px;font-weight:600;margin:0;letter-spacing:-.01em;color:var(--ink)}
+.side-panel .live{margin-left:auto;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.prow{display:flex;gap:10px;align-items:flex-start;padding:9px 16px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.prow:last-of-type{border-bottom:0}
+a.prow:hover{background:var(--surface-2)}
+.prow .nm{display:block;font-size:13.8px;font-weight:600;line-height:1.35;color:var(--ink)}
+.prow .sub{display:block;font-size:12.3px;color:var(--muted);margin-top:1px;line-height:1.4}
+.stag{flex:none;font-size:10.8px;font-weight:700;padding:2px 8px;border-radius:99px;margin-top:2px;white-space:nowrap}
+.stag.await{background:var(--pop-soft);color:#C4B5FD}
+.stag.exp{background:var(--accent-soft);color:var(--accent-d)}
+.stag.out{background:var(--ok-soft);color:var(--ok)}
+.pfoot{display:block;padding:11px 16px;font-weight:700;font-size:14px;color:var(--accent-d);text-decoration:none;background:var(--surface-2);border-top:1px solid var(--line)}
+.pfoot:hover{text-decoration:underline}
+.exam-hub.notice-hub .exam-grid{grid-template-columns:1fr;max-width:880px}
 .result-panel{background:var(--surface);border:1px solid var(--line-2);border-left:4px solid #A78BFA;border-radius:var(--r-lg);padding:16px 18px;margin:14px 0}
 .result-panel.out{border-left-color:var(--ok)}
 .result-panel b{font-size:16.5px;color:var(--ink)}

@@ -214,7 +214,15 @@
   "photo_kind": "live",
   "portal": "rrbapply.gov.in",
   "posts": 3548,
-  "slug": "rrb-ntpc-graduate"
+  "slug": "rrb-ntpc-graduate",
+  "admit": {
+   "status": "expected",
+   "date": "2026-12-15",
+   "chip_en": "City slip first",
+   "chip_hi": "पहले city slip",
+   "note_en": "City slip ~10 days before CBT · CBT-1 in the 4th week of Dec 2026",
+   "note_hi": "City slip CBT से ~10 दिन पहले · CBT-1 Dec 2026 के चौथे हफ़्ते में"
+  }
  },
  {
   "advt": "CEN 07/2026",
@@ -623,7 +631,15 @@
   "photo_kind": "upload",
   "portal": "apply.upessc.org",
   "posts": 17735,
-  "slug": "up-tgt"
+  "slug": "up-tgt",
+  "admit": {
+   "status": "expected",
+   "date": "2026-12-20",
+   "chip_en": "Before exam",
+   "chip_hi": "परीक्षा से पहले",
+   "note_en": "Exam 23-24 Dec 2026 · card ~3 days before",
+   "note_hi": "परीक्षा 23-24 Dec 2026 · card ~3 दिन पहले"
+  }
  },
  {
   "advt": "Advt 08/2026",
@@ -4626,6 +4642,14 @@
      "a": "SGT, School Assistant (non-language) aur TGT padon ke liye notification ke anusar APTET/CTET yogyata zaroori hai, aur SA/SGT/TGT ki merit me TET score ka 20% weightage bhi milta hai. Principal, PGT, PET aur Physical Director ki merit 100% CBT par hoti hai."
     }
    ]
+  },
+  "admit": {
+   "status": "expected",
+   "date": "2026-12-14",
+   "chip_en": "From 14 Dec",
+   "chip_hi": "14 दिस से",
+   "note_en": "Hall ticket download from 14 Dec 2026 (official schedule)",
+   "note_hi": "Hall ticket download 14 Dec 2026 से (आधिकारिक schedule)"
   }
  },
  {
@@ -5695,6 +5719,14 @@
      "a": "Haan. Is pad ke liye Class 10 + usi trade me NTC (ITI) + NAC chahiye, dono certificates me kam se kam 60% ank (SC/ST ke liye 55%)."
     }
    ]
+  },
+  "admit": {
+   "status": "expected",
+   "date": "2026-12-11",
+   "chip_en": "Before exam",
+   "chip_hi": "परीक्षा से पहले",
+   "note_en": "CBT 11 Dec 2026 (tentative) · card before the exam",
+   "note_hi": "CBT 11 Dec 2026 (संभावित) · card परीक्षा से पहले"
   }
  },
  {
@@ -11570,6 +11602,14 @@
     "Review किए बिना FINAL SUBMIT दबाना — उसके बाद कोई edit नहीं",
     "15 नवंबर 2026, रात 11:59 की deadline चूकना"
    ]
+  },
+  "admit": {
+   "status": "expected",
+   "date": "2026-11-22",
+   "chip_en": "Expected soon",
+   "chip_hi": "जल्द अपेक्षित",
+   "note_en": "Test from 22 Nov 2026 · card by email / SAMEER website",
+   "note_hi": "परीक्षा 22 Nov 2026 से · card email / SAMEER website पर आएगा"
   }
  },
  {
@@ -15509,6 +15549,14 @@
     "Contract को permanent नौकरी समझना",
     "22 नवंबर 2026 की deadline चूकना"
    ]
+  },
+  "admit": {
+   "status": "expected",
+   "date": "2026-11-29",
+   "chip_en": "To be notified",
+   "chip_hi": "सूचना बाकी",
+   "note_en": "Written test 29 Nov 2026 · admit card to be notified by RITES",
+   "note_hi": "लिखित परीक्षा 29 Nov 2026 · admit card की सूचना RITES देगा"
   }
  },
  {

@@ -101,10 +101,11 @@ def site_head():
            'ads': {'client': ads, 'slots': SITE.get('adsense_slots', {})} if ads else None}
     lines = ['<script>window.SITE = ' + json.dumps(cfg) + ';</script>']
     # Theme: set <html data-theme> from localStorage before first paint
-    # (default 'aurora'). js/theme.js owns the picker; css/app.css the looks.
+    # (default 'liquid' — Liquid Glass, the light theme, per Yogesh 14 Nov).
+    # js/theme.js owns the picker; css/app.css the looks.
     lines.insert(0, '<script>try{var _t=localStorage.getItem("cf-theme");'
-                    'if(["aurora","neon","liquid","ocean","candy","mono","sunset","forest","cyber","starfield"].indexOf(_t)<0)_t="aurora";'
-                    'document.documentElement.setAttribute("data-theme",_t)}catch(e){document.documentElement.setAttribute("data-theme","aurora")}</script>')
+                    'if(["aurora","neon","liquid","ocean","candy","mono","sunset","forest","cyber","starfield"].indexOf(_t)<0)_t="liquid";'
+                    'document.documentElement.setAttribute("data-theme",_t)}catch(e){document.documentElement.setAttribute("data-theme","liquid")}</script>')
     # Search Console / Bing Webmaster verification. Paste the content value of
     # the <meta> tag they give you into site.json and rebuild.
     gsv = SITE.get('google_site_verification', '').strip()
@@ -208,7 +209,43 @@ def strip_home(page):
     return page.replace('<div class="convert-grid two">', '<div class="convert-grid">', 1)
 
 
+# ------------------------------------------------------- active nav tab
+# The shared header is stamped from the home page, where Convert carries
+# aria-current="page". Without this, EVERY page would show Convert as the
+# current tab (Yogesh's bug report, 14 Nov 2026). write() re-marks the tab
+# for the section the page actually belongs to; the home page itself never
+# passes through write() and keeps its JS-driven marking exactly as-is.
+NAV_SECTIONS = (('exam-forms/', 'exams'), ('exam-results/', 'exams'), ('admit-cards/', 'exams'),
+                ('guides/', 'guides'), ('formats/', 'formats'), ('tools/', 'tools'))
+
+def nav_section(path):
+    if path == 'index.html':
+        return 'convert'
+    for pre, sec in NAV_SECTIONS:
+        if path.startswith(pre) or path.startswith('hi/' + pre):
+            return sec
+    # Converter and preset pages live at the root (/jpg-to-pdf/,
+    # /compress-pdf-to-300kb/, ...): a single-segment directory is a tool.
+    if path.count('/') == 1 and path.endswith('/index.html') and path != 'widget/index.html':
+        return 'tools'
+    return None
+
+def mark_nav(path, text):
+    if 'class="tab" id="nav-' not in text:
+        return text
+    sec = nav_section(path)
+
+    def repl(m):
+        attrs = m.group(2).replace(' aria-current="page"', '')
+        if m.group(1) == sec:
+            attrs += ' aria-current="page"'
+        return '<a class="tab" id="nav-%s"%s>' % (m.group(1), attrs)
+
+    return re.sub(r'<a class="tab" id="nav-([a-z]+)"([^>]*?)>', repl, text)
+
+
 def write(path, text):
+    text = mark_nav(path, text)
     d = os.path.dirname(path)
     if d:
         os.makedirs(d, exist_ok=True)

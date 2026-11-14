@@ -20,7 +20,7 @@
   if (!btn || !panel) return;
 
   function current() {
-    return document.documentElement.getAttribute('data-theme') || 'aurora';
+    return document.documentElement.getAttribute('data-theme') || 'liquid';
   }
   function mark() {
     var cur = current();

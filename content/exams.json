@@ -6272,6 +6272,10 @@
         {
           "q": "Is the OPSC ASO fee refundable?",
           "a": "The ₹700 fee is refunded only to candidates who actually appear in the written examination. SC/ST candidates of Odisha and PwD candidates do not pay the fee at all."
+        },
+        {
+          "q": "Is a computer certificate necessary for OPSC ASO?",
+          "a": "No. Advertisement 15 of 2026-27 does not ask for any computer certificate — no computer certificate appears in the documents to be uploaded (Para-13), and no certificate course is named anywhere in it. With a Bachelor's degree you must have 'adequate knowledge in Computer Application as specified in the Schedule', and that knowledge is proven in a test, not on paper: shortlisted candidates take a practical Skill Test in Computer Application (Paper-IV, 50 marks, 5 tasks in 1 hour — Windows, MS Office, MS Access and internet services), which is qualifying only and needs at least 40% to pass."
         }
       ]
     },
@@ -6366,6 +6370,10 @@
         {
           "q": "Kya OPSC ASO ki fee wapas milti hai?",
           "a": "₹700 fee sirf un ummeedwaron ko wapas milti hai jo asal me likhit pariksha me baithte hain. Odisha ke SC/ST ummeedwaron aur PwD ummeedwaron ko fee deni hi nahi padti."
+        },
+        {
+          "q": "Kya OPSC ASO ke liye computer certificate zaroori hai?",
+          "a": "Nahi. Vigyapan 15 of 2026-27 me koi computer certificate manga hi nahi gaya hai — upload karne wale documents ki list (Para-13) me computer certificate hai hi nahi, aur poore vigyapan me koi certificate course bhi nahi bataya gaya hai. Bachelor's degree ke saath bas 'Schedule ke anusar Computer Application ka adequate knowledge' chahiye, aur wo jnana kagaz par nahi, test me sabit hota hai: chhante gaye ummeedwaron ka practical Skill Test in Computer Application hota hai (Paper-IV, 50 ank, 1 ghante me 5 kaam — Windows, MS Office, MS Access aur internet services), jo sirf qualifying hai aur usme kam se kam 40% lane zaroori hain."
         }
       ]
     }

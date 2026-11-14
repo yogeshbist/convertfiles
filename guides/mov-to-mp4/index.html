@@ -28,7 +28,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=9b8bf4cc">
+<link rel="stylesheet" href="/css/app.css?v=9ec93b09">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": {"client": "ca-pub-3081346168059285", "slots": {"result": "8055560270", "home": "4307886954", "article": "3651168992"}}};</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3081346168059285" crossorigin="anonymous"></script>
@@ -231,8 +231,9 @@
 <h2>Settings that matter</h2>
 <ul><li>Width — leave at 0 to keep the size, or set 1280 for a much smaller file that still looks good on a phone</li><li>Frames per second — 30 is right for almost everything; 60 doubles the work for sports and games footage</li><li>Quality — 85% is the sweet spot; lower if the file must be tiny</li></ul>
 <h2>WebM instead?</h2>
-<p>If the video is going onto a website you build, <code>.webm</code> (VP9 + Opus) is usually smaller than MP4 at the same quality and is supported by all modern browsers. For anything else, MP4.</p>
+<p>If the video is going onto a website you build, <code>.webm</code> (VP9 + Opus) is usually smaller than MP4 at the same quality and is supported by all modern browsers. For anything else, MP4. And if a WebM has to become a picture instead — a poster frame or a thumbnail — <a href="/webm-to-png/">WEBM to PNG</a> saves one frame as a PNG.</p>
 <p>Only the audio? Choose <code>.mp3</code> or <code>.m4a</code> as the target and the video track is dropped entirely.</p>
+<p>Only a picture? If all you need is one still frame from the clip — a thumbnail, a cover image, a moment to share as a photo — <a href="/mov-to-jpg/">MOV to JPG</a> pulls that frame out as a JPG.</p>
 <h2>Container and codec are not the same thing</h2>
 <p>This is the whole confusion in one sentence: MOV and MP4 are boxes, and H.264, HEVC and AV1 are what goes in them. MP4 was standardised <em>from</em> Apple's QuickTime file format, so the two boxes are nearly the same shape internally. A .mov and a .mp4 from the same iPhone very often contain a byte-identical video stream, differing mainly in the label on the outside.</p>
 <p>Which is why the failure is so infuriating. The player can decode the video perfectly well. It just does not like the box.</p>
@@ -278,13 +279,13 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script defer src="/js/formats.js?v=9b8bf4cc"></script>
-<script defer src="/js/encoders.js?v=9b8bf4cc"></script>
-<script defer src="/js/docmodel.js?v=9b8bf4cc"></script>
-<script defer src="/js/convert.js?v=9b8bf4cc"></script>
-<script defer src="/js/db.js?v=9b8bf4cc"></script>
-<script defer src="/js/lang.js?v=9b8bf4cc"></script>
-<script defer src="/js/content.js?v=9b8bf4cc"></script>
-<script defer src="/js/app.js?v=9b8bf4cc"></script>
+<script defer src="/js/formats.js?v=9ec93b09"></script>
+<script defer src="/js/encoders.js?v=9ec93b09"></script>
+<script defer src="/js/docmodel.js?v=9ec93b09"></script>
+<script defer src="/js/convert.js?v=9ec93b09"></script>
+<script defer src="/js/db.js?v=9ec93b09"></script>
+<script defer src="/js/lang.js?v=9ec93b09"></script>
+<script defer src="/js/content.js?v=9ec93b09"></script>
+<script defer src="/js/app.js?v=9ec93b09"></script>
 </body>
 </html>

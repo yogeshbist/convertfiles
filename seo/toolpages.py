@@ -128,9 +128,9 @@ TOOLS = [
          related=['organize-pdf', 'split-pdf', 'merge-pdf']),
 
     dict(slug='organize-pdf', group='pdf', name='Organise PDF pages',
-         title='Free PDF Page Organizer — Reorder, Rotate, Delete Online',
+         title='Reorder PDF Pages Online — Free, Rotate & Delete, No Sign-up',
          h1='Free PDF page organiser: reorder, rotate, delete',
-         desc='See every page as a thumbnail, then rearrange, reorder, rotate or delete pages and save a new PDF. Free, in your browser, nothing uploaded.',
+         desc='Reorder PDF pages free in your browser: see every page as a thumbnail, drag it into place, rotate or delete pages and save a new PDF. No sign-up, nothing uploaded.',
          intro='Every page appears as a thumbnail. Move pages with the arrows, rotate the sideways ones, cross out the ones to delete, and save. ' + NOTHING,
          steps=[('Drop the PDF', ''), ('Arrange the pages', 'Arrows move, the circle rotates, the cross deletes (press again to keep).'), ('Save the new PDF', '')],
          faq=[('How do I delete pages from a PDF?', 'Drop it here, press the cross on each page you want gone, then save. The other pages are copied exactly as they were.'),
@@ -166,7 +166,7 @@ TOOLS = [
               ('Can I change the page order?', 'Yes — the arrows on each image move it up or down before you build the PDF. To rotate pages or remove some afterwards, run the finished file through the organise PDF tool.'),
               ('Will the text in my scans stay selectable?', 'No. Every page is a picture of your image, so words cannot be selected or searched. If you need the text itself, run the finished PDF through the image to text tool.'),
               ('How do I keep the file small enough to email?', 'Lower the JPEG quality a notch — scans tolerate 80% well. If it is still too big for the upload limit, the compress PDF tool squeezes it further.')],
-         related=['compress-pdf', 'merge-pdf', 'pdf-to-jpg']),
+         related=['compress-pdf', 'merge-pdf', 'pdf-to-jpg', 'organize-pdf']),
 
     dict(slug='image-to-text', group='other', name='Image to text (OCR)',
          title='Free Image to Text Converter — OCR Online, No Upload',

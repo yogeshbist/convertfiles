@@ -559,6 +559,17 @@ for f, t in SEO_PAIRS:
     # the H1 carries the exact extension too, so "Free PDF to Word (DOCX) converter"
     h1 = 'Free %s to %s converter' % (SF + (' (%s)' % F if SF != F else ''), ST + (' (%s)' % T if ST != T else ''))
     desc = meta_desc(F, T, why, what)
+    # Per-pair title/desc overrides where the searched phrasing differs from
+    # the template's (GSC queries, 14 Nov 2026). Only the two pairs below;
+    # every other pair keeps the generated title and description.
+    SEO_OVERRIDE = {
+        ('webm', 'png'): ('WEBM to PNG Converter \u2014 Free Online, No Sign-up, Nothing Uploaded',
+                          'WEBM to PNG free in your browser \u2014 pick a point in the clip and save that frame as a PNG image. No sign-up, nothing is uploaded.'),
+        ('mov', 'jpg'): ('MOV to JPEG (JPG) Converter \u2014 Free Online, Nothing Uploaded',
+                         'MOV to JPEG free in your browser \u2014 pick a point in an iPhone MOV clip and save the frame as a JPG image. No sign-up, nothing is uploaded.'),
+    }
+    if (f, t) in SEO_OVERRIDE:
+        title, desc = SEO_OVERRIDE[(f, t)]
     crumb_html, crumb_ld = crumbs([('Home', '/'), (group_title, '/formats/'), ('%s to %s' % (F, T), None)])
 
     steps = [

@@ -34,5 +34,13 @@
   {
     "q": "Which browser works best?",
     "a": "A current Chrome or Edge has the widest support, including video re-encoding and HEIC. Safari and Firefox handle images, documents, spreadsheets, audio and 3D; they lack some of the video encoders."
+  },
+  {
+    "q": "How do I compress a file to an exact size, like 50 KB?",
+    "a": "Use the compress image or compress PDF tool and type the size the form asks for — 50 KB, 100 KB, 200 KB. The tool tries qualities from high to low and, if the file is still too large, shrinks the pixels or redraws the pages until the result lands at or under the size you set. The final size is shown before you download."
+  },
+  {
+    "q": "Is it safe to use for exam forms and ID documents?",
+    "a": "Yes. Nothing is uploaded, so your Aadhaar, certificates and photos never leave your device — the conversion runs entirely in your browser. You can check this yourself: open your browser's developer tools, watch the Network tab while you convert, and you will see no request carrying your file out."
   }
 ]

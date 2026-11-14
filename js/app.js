@@ -985,7 +985,7 @@
     ab.appendChild(left); ab.appendChild(right);
     renderSupport();
     var fq = $('#faq');
-    K.FAQ.forEach(function (qa) {
+    if (fq && !fq.children.length) K.FAQ.forEach(function (qa) {
       var d = el('details'); d.appendChild(el('summary', null, qa[0])); d.appendChild(el('p', null, qa[1])); fq.appendChild(d);
     });
   }

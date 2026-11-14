@@ -431,17 +431,34 @@ def exam_path(e, lang):
 index = open('index.html').read()
 index = re.sub(r'\?v=[0-9a-f]+', '?v=' + VER, index)
 index = replace_block(index, 'site:head', site_head())
-home_jsonld = {
+home_jsonld = [{
     '@context': 'https://schema.org', '@type': 'WebApplication', 'name': 'Convert Files', 'url': DOMAIN + '/',
     'applicationCategory': 'UtilitiesApplication', 'operatingSystem': 'Any', 'browserRequirements': 'Requires a modern browser',
     'offers': {'@type': 'Offer', 'price': '0', 'priceCurrency': 'INR'},
     'description': 'Free online file converter that runs entirely in your browser. Images, PDF, Word, Excel, audio, video, fonts and 3D models. Nothing is uploaded.'
-}
+}, {
+    '@context': 'https://schema.org', '@type': 'Organization', 'name': 'Convert Files', 'url': DOMAIN + '/',
+    'logo': DOMAIN + '/assets/icon-512.png',
+    'sameAs': ['https://www.pinterest.com/convertfilesin/', 'https://www.quora.com/profile/Yogesh-Bisht-38']
+}, {
+    '@context': 'https://schema.org', '@type': 'WebSite', 'name': 'Convert Files', 'url': DOMAIN + '/',
+    'publisher': {'@type': 'Organization', 'name': 'Convert Files', 'url': DOMAIN + '/'}
+}, {
+    '@context': 'https://schema.org', '@type': 'FAQPage',
+    'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in CONTENT['FAQ']]
+}]
 index = replace_block(index, 'page:meta', page_meta(
     'Free Online File Converter \u2014 No Upload | Convert Files',
     'Free online file converter for images, PDF, Word, Excel, audio, video, fonts and 3D models \u2014 converted in your browser in seconds. No upload, no account.',
     '', jsonld=home_jsonld))
 index = replace_block(index, 'page:body', '')
+# Pre-render the homepage FAQ (the app fills #faq itself only when it is
+# still empty, so JS visitors see the same list exactly once). The regex
+# replaces whatever a previous build left there, so faq.json edits flow
+# through on the next build instead of going stale.
+_home_faq = ''.join('<details><summary>%s</summary><p>%s</p></details>' % (esc(q), esc(a)) for q, a in CONTENT['FAQ'])
+index = re.sub(r'<div class="faq" id="faq">.*?</div>',
+               lambda m: '<div class="faq" id="faq">' + _home_faq + '</div>', index, count=1, flags=re.S)
 
 
 def chip_html(ext):

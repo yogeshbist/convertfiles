@@ -11395,7 +11395,8 @@
         "₹500 शुल्क को पूरी तरह non-refundable समझना",
         "isro.gov.in / ursc.gov.in के बजाय ऑफलाइन आवेदन करना"
       ]
-    }
+    },
+    "stage": "result-awaited"
   },
   {
     "slug": "sameer-contract-positions",

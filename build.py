@@ -1563,6 +1563,19 @@ def related_links(slugs):
     return ''.join(out)
 
 
+def tool_hero_answer(t):
+    """Direct-answer lead shown directly under the tool page H1, before the
+    tool UI: the tool's own description plus the first sentences of its
+    intro, so the answer is extractable without scrolling past the tool.
+    Facts come only from the tool's existing metadata."""
+    txt = t['desc']
+    for s in re.split(r'(?<=[.!?])\s+(?=[A-Z0-9\u201c])', t['intro']):
+        if len(txt) + len(s) + 1 > 340:
+            break
+        txt += ' ' + s
+    return txt
+
+
 for t in TOOLPAGES.all_pages():
     path = t['slug'] + '/'
     tool_id = t.get('parent') or t['slug']
@@ -1591,7 +1604,7 @@ for t in TOOLPAGES.all_pages():
     page = replace_block(BASE, 'page:meta', page_meta(t['title'], t['desc'], path, extra_meta=extra, jsonld=[crumb_ld, howto_ld, faq_ld, app_ld]))
     page = replace_block(page, 'page:body', '\n'.join(body))
     page = page.replace('<h1>Free Online File Converter</h1>', '<h1>%s</h1>' % esc(t['h1']))
-    page = page.replace(HERO_P, '<p>%s</p>' % esc(t['desc']))
+    page = page.replace(HERO_P, '<p>%s</p>' % esc(tool_hero_answer(t)))
     page = page.replace('<div class="section">', '<div class="section" hidden>', 1)          # the format chooser is the converter's, not ours
     page = page.replace('</body>', TOOL_JS + '\n</body>')
     write(path + 'index.html', strip_home(page))

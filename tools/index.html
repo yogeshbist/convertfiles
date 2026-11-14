@@ -26,8 +26,9 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=544f39b4">
+<link rel="stylesheet" href="/css/app.css?v=07a586c2">
 <!-- site:head -->
+<script>try{var _t=localStorage.getItem("cf-theme");if(["aurora","neon","liquid","ocean","candy","mono","sunset","forest","cyber","starfield"].indexOf(_t)<0)_t="aurora";document.documentElement.setAttribute("data-theme",_t)}catch(e){document.documentElement.setAttribute("data-theme","aurora")}</script>
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": {"client": "ca-pub-3081346168059285", "slots": {"result": "8055560270", "home": "4307886954", "article": "3651168992"}}};</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3081346168059285" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BQY4N5R18"></script>
@@ -93,6 +94,10 @@
         <input id="langSearch" type="search" placeholder="Search languages&hellip;" aria-label="Search languages" autocomplete="off">
         <ul id="langList"></ul>
       </div>
+    </div>
+    <div class="theme-wrap notranslate" translate="no">
+      <button id="themeBtn" class="theme-btn" aria-haspopup="listbox" aria-expanded="false" title="Change theme"><span aria-hidden="true">🎨</span><span class="theme-btn-label">Theme</span></button>
+      <div id="themePanel" class="theme-panel" role="listbox" aria-label="Choose theme" hidden></div>
     </div>
   </div>
 </header>
@@ -289,13 +294,14 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script defer src="/js/formats.js?v=544f39b4"></script>
-<script defer src="/js/encoders.js?v=544f39b4"></script>
-<script defer src="/js/docmodel.js?v=544f39b4"></script>
-<script defer src="/js/convert.js?v=544f39b4"></script>
-<script defer src="/js/db.js?v=544f39b4"></script>
-<script defer src="/js/lang.js?v=544f39b4"></script>
-<script defer src="/js/content.js?v=544f39b4"></script>
-<script defer src="/js/app.js?v=544f39b4"></script>
+<script defer src="/js/formats.js?v=07a586c2"></script>
+<script defer src="/js/encoders.js?v=07a586c2"></script>
+<script defer src="/js/docmodel.js?v=07a586c2"></script>
+<script defer src="/js/convert.js?v=07a586c2"></script>
+<script defer src="/js/db.js?v=07a586c2"></script>
+<script defer src="/js/lang.js?v=07a586c2"></script>
+<script defer src="/js/content.js?v=07a586c2"></script>
+<script defer src="/js/app.js?v=07a586c2"></script>
+<script defer src="/js/theme.js?v=07a586c2"></script>
 </body>
 </html>

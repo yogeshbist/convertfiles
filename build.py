@@ -100,6 +100,11 @@ def site_head():
     cfg = {'domain': DOMAIN, 'contact': SITE.get('contact_email', ''), 'api': SITE.get('api_base', '').rstrip('/'),
            'ads': {'client': ads, 'slots': SITE.get('adsense_slots', {})} if ads else None}
     lines = ['<script>window.SITE = ' + json.dumps(cfg) + ';</script>']
+    # Theme: set <html data-theme> from localStorage before first paint
+    # (default 'aurora'). js/theme.js owns the picker; css/app.css the looks.
+    lines.insert(0, '<script>try{var _t=localStorage.getItem("cf-theme");'
+                    'if(["aurora","neon","liquid","ocean","candy","mono","sunset","forest","cyber","starfield"].indexOf(_t)<0)_t="aurora";'
+                    'document.documentElement.setAttribute("data-theme",_t)}catch(e){document.documentElement.setAttribute("data-theme","aurora")}</script>')
     # Search Console / Bing Webmaster verification. Paste the content value of
     # the <meta> tag they give you into site.json and rebuild.
     gsv = SITE.get('google_site_verification', '').strip()

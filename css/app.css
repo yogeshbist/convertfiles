@@ -768,3 +768,195 @@ html.js-rv .timeline.rv.rv-in .tl-step:nth-child(5){transition-delay:.2s}
   .ecard:hover{transform:none}
   html.js-rv .timeline.rv .tl-step{opacity:1;transform:none;transition:none}
 }
+
+/* ---------- themes (owner-approved 2026-11-14) ----------
+   Ten animated themes behind the header Theme picker. :root above stays
+   Deep Slate as the no-JS / unknown-theme fallback; the inline <head>
+   script sets <html data-theme="..."> from localStorage (default
+   'aurora') before paint, and js/theme.js switches without a reload.
+   Every theme only re-points the tokens, plus a fixed ambient layer
+   (body::before/::after, transform/opacity keyframes only, slow cycles).
+   No gold in any theme. */
+.theme-wrap{position:relative}
+.theme-btn{display:flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:7px 13px;font-size:13.5px;font-weight:600;color:var(--ink-2)}
+.theme-btn:hover{border-color:var(--accent);color:var(--ink)}
+.theme-panel{position:absolute;top:calc(100% + 8px);right:0;width:232px;max-width:86vw;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow-lg);padding:6px;z-index:50}
+.theme-opt{display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:0;background:transparent;padding:8px 10px;border-radius:8px;font-size:14px;color:var(--ink);cursor:pointer}
+.theme-opt:hover{background:var(--surface-2)}
+.theme-opt[aria-selected="true"]{background:var(--accent-soft);font-weight:700}
+.theme-dot{width:18px;height:18px;border-radius:50%;flex:none;border:1px solid rgba(128,128,128,.45)}
+.theme-check{margin-left:auto;color:var(--accent);font-weight:800}
+@media (max-width:520px){.theme-btn-label{display:none}.theme-btn{padding:7px 10px}}
+
+body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none}
+@keyframes amb-drift{from{transform:translate(-3%,-2%) scale(1)}to{transform:translate(3%,2%) scale(1.08)}}
+@keyframes amb-drift-x{from{transform:translateX(-4%)}to{transform:translateX(4%)}}
+@keyframes amb-rise{from{transform:translateY(300px)}to{transform:translateY(0)}}
+@keyframes amb-grid{from{transform:translateY(0)}to{transform:translateY(44px)}}
+@keyframes amb-twinkle{from{opacity:.4}to{opacity:1}}
+@keyframes amb-pulse{from{opacity:.55}to{opacity:1}}
+@keyframes amb-sweep{from{transform:translateX(-38%)}to{transform:translateX(38%)}}
+
+/* 1 — Aurora Flow: deep indigo, drifting aurora blobs, glassy surfaces */
+[data-theme="aurora"]{color-scheme:dark;
+  --bg:#14102E; --surface:#1E1B3D; --surface-2:#272350; --surface-3:#332C66;
+  --ink:#F4F2FF; --ink-2:#D9D5F5; --muted:#A79FD1;
+  --line:#37316B; --line-2:#4A4385;
+  --accent:#9D8CFF; --accent-d:#C4B5FD; --accent-soft:#2A2160; --accent-ink:#171233;
+  --pop:#38BDF8; --pop-soft:#12314A;
+  --ok:#3CC98A; --ok-soft:#12362A; --err:#F0796A; --err-soft:#3D1E2A}
+[data-theme="aurora"] body::before{inset:-12%;
+  background:radial-gradient(60% 50% at 18% 12%,rgba(124,58,237,.40),transparent 70%),radial-gradient(55% 45% at 85% 18%,rgba(14,165,233,.30),transparent 70%),radial-gradient(50% 42% at 62% 92%,rgba(236,72,153,.24),transparent 70%),radial-gradient(42% 36% at 12% 88%,rgba(45,212,191,.22),transparent 70%);
+  animation:amb-drift 16s ease-in-out infinite alternate}
+
+/* 2 — Neon Night: near-black blue, cyan + magenta glow */
+[data-theme="neon"]{color-scheme:dark;
+  --bg:#04050E; --surface:#080C1E; --surface-2:#0B1023; --surface-3:#131B3D;
+  --ink:#E6F6FF; --ink-2:#BFE9F7; --muted:#8FB8CC;
+  --line:#17384A; --line-2:#1F5468;
+  --accent:#22D3EE; --accent-d:#67E8F9; --accent-soft:#062A33; --accent-ink:#03222B;
+  --pop:#F0ABFC; --pop-soft:#33083D;
+  --ok:#34D399; --ok-soft:#06382A; --err:#FB7185; --err-soft:#3D0A18}
+[data-theme="neon"] body::before{
+  background:radial-gradient(46% 38% at 8% 0%,rgba(34,211,238,.14),transparent 70%),radial-gradient(46% 38% at 94% 100%,rgba(217,70,239,.12),transparent 70%);
+  animation:amb-pulse 9s ease-in-out infinite alternate}
+[data-theme="neon"] .nav{border-bottom-color:rgba(34,211,238,.35)}
+[data-theme="neon"] .btn.primary{box-shadow:0 0 14px rgba(34,211,238,.4)}
+
+/* 3 — Liquid Glass (light): frosted white over a soft pastel wash */
+[data-theme="liquid"]{color-scheme:light;
+  --bg:#F4F1FA; --surface:#FFFFFF; --surface-2:#F3F0FA; --surface-3:#E9E4F5;
+  --ink:#1F2937; --ink-2:#374151; --muted:#6B7280;
+  --line:#E3DEF2; --line-2:#CFC8E6;
+  --accent:#7C3AED; --accent-d:#6D28D9; --accent-soft:#EDE9FE; --accent-ink:#FFFFFF;
+  --pop:#0284C7; --pop-soft:#E0F2FE;
+  --ok:#15803D; --ok-soft:#DCFCE7; --err:#DC2626; --err-soft:#FEE2E2;
+  --shadow:0 1px 2px rgba(31,41,55,.06),0 10px 30px rgba(31,41,55,.10);
+  --shadow-lg:0 2px 4px rgba(31,41,55,.08),0 24px 60px rgba(31,41,55,.16);
+  --shadow-pop:0 4px 10px rgba(31,41,55,.12),0 32px 64px rgba(31,41,55,.22)}
+[data-theme="liquid"] body{background:linear-gradient(130deg,#FDE7F3,#E0F2FE 45%,#FEF9C3 95%) fixed}
+[data-theme="liquid"] body::before{inset:-10%;
+  background:radial-gradient(34% 30% at 82% 8%,rgba(125,211,252,.50),transparent 70%),radial-gradient(30% 28% at 8% 88%,rgba(249,168,212,.45),transparent 70%);
+  animation:amb-drift-x 12s ease-in-out infinite alternate}
+[data-theme="liquid"] body::after{inset:-10%;
+  background:radial-gradient(26% 24% at 18% 10%,rgba(253,224,71,.35),transparent 70%),radial-gradient(28% 26% at 88% 82%,rgba(167,243,208,.45),transparent 70%);
+  animation:amb-drift-x 15s ease-in-out infinite alternate-reverse}
+
+/* 4 — Ocean Depth: deep teal, rising bubbles + a slow sheen */
+[data-theme="ocean"]{color-scheme:dark;
+  --bg:#03202F; --surface:#07333F; --surface-2:#0A4050; --surface-3:#0E5064;
+  --ink:#E8FAF6; --ink-2:#C9EDE4; --muted:#8FC4B8;
+  --line:#0E4A56; --line-2:#14616F;
+  --accent:#2DD4BF; --accent-d:#5EEAD4; --accent-soft:#063A35; --accent-ink:#04211C;
+  --pop:#38BDF8; --pop-soft:#0A2E4A;
+  --ok:#3CC98A; --ok-soft:#0A352A; --err:#F0796A; --err-soft:#3A1F1B}
+[data-theme="ocean"] body::before{inset:-300px 0 0;
+  background-image:radial-gradient(circle,rgba(153,246,228,.5) 2.2px,transparent 3px),radial-gradient(circle,rgba(125,211,252,.4) 1.6px,transparent 2.6px),radial-gradient(circle,rgba(153,246,228,.3) 1.2px,transparent 2px);
+  background-size:300px 300px;background-position:20px 40px,120px 150px,210px 80px;opacity:.5;
+  animation:amb-rise 18s linear infinite}
+[data-theme="ocean"] body::after{
+  background:linear-gradient(115deg,transparent 32%,rgba(45,212,191,.08) 50%,transparent 68%);
+  animation:amb-pulse 12s ease-in-out infinite alternate}
+
+/* 5 — Candy Pop (light): warm cream, rose accent, drifting pastel blobs */
+[data-theme="candy"]{color-scheme:light;
+  --bg:#FFF7ED; --surface:#FFFFFF; --surface-2:#FEF3E2; --surface-3:#FDEBD3;
+  --ink:#1F2937; --ink-2:#374151; --muted:#78716C;
+  --line:#F3D9BE; --line-2:#EAB892;
+  --accent:#F43F5E; --accent-d:#E11D48; --accent-soft:#FFE4E6; --accent-ink:#FFFFFF;
+  --pop:#7C3AED; --pop-soft:#EDE9FE;
+  --ok:#16A34A; --ok-soft:#DCFCE7; --err:#DC2626; --err-soft:#FEE2E2;
+  --shadow:0 1px 2px rgba(120,53,15,.07),0 10px 30px rgba(120,53,15,.12);
+  --shadow-lg:0 2px 4px rgba(120,53,15,.09),0 24px 60px rgba(120,53,15,.18);
+  --shadow-pop:0 4px 10px rgba(120,53,15,.13),0 32px 64px rgba(120,53,15,.24)}
+[data-theme="candy"] body::before{inset:-10%;
+  background:radial-gradient(30% 26% at 12% 10%,rgba(249,168,212,.38),transparent 70%),radial-gradient(28% 24% at 88% 16%,rgba(253,224,71,.34),transparent 70%),radial-gradient(30% 26% at 78% 90%,rgba(125,211,252,.34),transparent 70%),radial-gradient(26% 22% at 16% 88%,rgba(134,239,172,.34),transparent 70%);
+  animation:amb-drift 16s ease-in-out infinite alternate}
+
+/* 6 — Mono Luxe: black & white premium, slow light sweep */
+[data-theme="mono"]{color-scheme:dark;
+  --bg:#050505; --surface:#0A0A0A; --surface-2:#171717; --surface-3:#262626;
+  --ink:#FAFAFA; --ink-2:#D4D4D4; --muted:#A3A3A3;
+  --line:#2A2A2A; --line-2:#3D3D3D;
+  --accent:#FAFAFA; --accent-d:#FFFFFF; --accent-soft:#1F1F1F; --accent-ink:#000000;
+  --pop:#D4D4D4; --pop-soft:#1F1F1F;
+  --ok:#A3A3A3; --ok-soft:#1F1F1F; --err:#E5E5E5; --err-soft:#262626}
+[data-theme="mono"] body::before{
+  background:radial-gradient(52% 40% at 50% 0%,rgba(255,255,255,.06),transparent 70%)}
+[data-theme="mono"] body::after{inset:0 -60%;
+  background:linear-gradient(105deg,transparent 42%,rgba(255,255,255,.055) 50%,transparent 58%);
+  animation:amb-sweep 16s ease-in-out infinite alternate}
+
+/* 7 — Sunset Drift: dusk plum, rose → violet drift (no gold, no orange lead) */
+[data-theme="sunset"]{color-scheme:dark;
+  --bg:#22101F; --surface:#2E1830; --surface-2:#3B2040; --surface-3:#4A2A50;
+  --ink:#FDF2F8; --ink-2:#F5D9E8; --muted:#C79BB8;
+  --line:#4A2A48; --line-2:#5E3860;
+  --accent:#FB7185; --accent-d:#FDA4AF; --accent-soft:#471C33; --accent-ink:#2A0A18;
+  --pop:#A78BFA; --pop-soft:#2E1B4E;
+  --ok:#3CC98A; --ok-soft:#14352A; --err:#F0796A; --err-soft:#3A1F1B}
+[data-theme="sunset"] body::before{inset:-12%;
+  background:radial-gradient(55% 45% at 15% 10%,rgba(251,113,133,.30),transparent 70%),radial-gradient(58% 48% at 85% 90%,rgba(167,139,250,.30),transparent 70%),radial-gradient(40% 34% at 80% 12%,rgba(236,72,153,.18),transparent 70%);
+  animation:amb-drift 20s ease-in-out infinite alternate}
+
+/* 8 — Forest Mist: deep green-teal, two slow mist layers */
+[data-theme="forest"]{color-scheme:dark;
+  --bg:#0A1F1A; --surface:#0F2A21; --surface-2:#143628; --surface-3:#1B4531;
+  --ink:#ECFDF5; --ink-2:#CDEEDD; --muted:#93BFA9;
+  --line:#1E4634; --line-2:#2A5A44;
+  --accent:#34D399; --accent-d:#6EE7B7; --accent-soft:#0B3527; --accent-ink:#052A1E;
+  --pop:#2DD4BF; --pop-soft:#0A3532;
+  --ok:#3CC98A; --ok-soft:#0B3527; --err:#F0796A; --err-soft:#3A1F1B}
+[data-theme="forest"] body::before{inset:-10%;
+  background:radial-gradient(48% 30% at 22% 30%,rgba(236,253,245,.07),transparent 70%),radial-gradient(42% 28% at 74% 62%,rgba(52,211,153,.10),transparent 70%);
+  animation:amb-drift-x 18s ease-in-out infinite alternate}
+[data-theme="forest"] body::after{inset:-10%;opacity:.7;
+  background:radial-gradient(44% 26% at 68% 22%,rgba(236,253,245,.05),transparent 70%),radial-gradient(46% 30% at 28% 78%,rgba(45,212,191,.08),transparent 70%);
+  animation:amb-drift-x 25s ease-in-out infinite alternate-reverse}
+
+/* 9 — Cyber Grid: near-black indigo, slow grid crawl + scanline shimmer */
+[data-theme="cyber"]{color-scheme:dark;
+  --bg:#05060F; --surface:#0A0D1F; --surface-2:#10142B; --surface-3:#171D3D;
+  --ink:#E8F6FF; --ink-2:#C3D9F2; --muted:#8498B8;
+  --line:#1B2A52; --line-2:#27397A;
+  --accent:#22D3EE; --accent-d:#67E8F9; --accent-soft:#07303D; --accent-ink:#03222B;
+  --pop:#818CF8; --pop-soft:#1B1B45;
+  --ok:#34D399; --ok-soft:#06382A; --err:#FB7185; --err-soft:#3D0A18}
+[data-theme="cyber"] body::before{inset:-44px 0 0;
+  background-image:linear-gradient(rgba(34,211,238,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(34,211,238,.07) 1px,transparent 1px);
+  background-size:44px 44px;
+  animation:amb-grid 10s linear infinite}
+[data-theme="cyber"] body::after{
+  background:repeating-linear-gradient(0deg,rgba(255,255,255,.025) 0 1px,transparent 1px 3px);
+  animation:amb-pulse 8s ease-in-out infinite alternate}
+
+/* 10 — Starfield: deep space navy, twinkling stars over soft nebulae */
+[data-theme="starfield"]{color-scheme:dark;
+  --bg:#060A1D; --surface:#0C1229; --surface-2:#121A3A; --surface-3:#1A2450;
+  --ink:#EEF1FF; --ink-2:#D3D9F7; --muted:#9AA5D6;
+  --line:#232C58; --line-2:#303C78;
+  --accent:#A5B4FC; --accent-d:#C7D2FE; --accent-soft:#1B2150; --accent-ink:#0B0F2E;
+  --pop:#A78BFA; --pop-soft:#251B52;
+  --ok:#3CC98A; --ok-soft:#12362A; --err:#F0796A; --err-soft:#3A1F2E}
+[data-theme="starfield"] body::before{inset:-30px;
+  background-image:radial-gradient(circle,rgba(255,255,255,.85) 1.1px,transparent 1.8px),radial-gradient(circle,rgba(199,210,254,.7) .8px,transparent 1.5px);
+  background-size:260px 260px,180px 180px;background-position:10px 20px,70px 90px;
+  animation:amb-drift 26s ease-in-out infinite alternate}
+[data-theme="starfield"] body::after{
+  background-image:radial-gradient(circle,rgba(255,255,255,.9) 1.3px,transparent 2px),radial-gradient(circle,rgba(240,171,252,.65) .9px,transparent 1.6px);
+  background-size:340px 340px,220px 220px;background-position:120px 60px,30px 150px;
+  animation:amb-twinkle 5s ease-in-out infinite alternate}
+[data-theme="starfield"] main::before{content:"";position:fixed;inset:-10%;z-index:-1;pointer-events:none;
+  background:radial-gradient(44% 36% at 82% 12%,rgba(124,58,237,.16),transparent 70%),radial-gradient(40% 32% at 10% 86%,rgba(14,165,233,.12),transparent 70%)}
+
+/* Light-theme touch-ups: a few exam-centre rules hardcode Deep Slate's
+   violet-on-dark pairings; re-point them at the tokens on light themes. */
+[data-theme="liquid"] .status-chip.result,[data-theme="candy"] .status-chip.result{background:color-mix(in srgb,var(--pop) 16%,transparent);color:var(--pop)}
+[data-theme="liquid"] .stag.await,[data-theme="candy"] .stag.await{background:var(--pop-soft);color:var(--pop)}
+[data-theme="liquid"] .result-panel,[data-theme="candy"] .result-panel{border-left-color:var(--pop)}
+[data-theme="liquid"] .exam-seg .cur{color:#FFFFFF}
+[data-theme="liquid"] .chip,[data-theme="liquid"] .badge,[data-theme="candy"] .chip,[data-theme="candy"] .badge{color:color-mix(in srgb,var(--fam,var(--ink-2)) 72%,#1F2937)}
+
+@media (prefers-reduced-motion: reduce){
+  body::before,body::after,[data-theme="starfield"] main::before{animation:none !important}
+}

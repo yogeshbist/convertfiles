@@ -876,16 +876,46 @@ body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-ev
 /* 6 — Mono Luxe: black & white premium, slow light sweep */
 [data-theme="mono"]{color-scheme:dark;
   --bg:#050505; --surface:#0A0A0A; --surface-2:#171717; --surface-3:#262626;
-  --ink:#FAFAFA; --ink-2:#D4D4D4; --muted:#A3A3A3;
+  --ink:#FFFFFF; --ink-2:#D4D4D4; --muted:#A3A3A3;
   --line:#2A2A2A; --line-2:#3D3D3D;
-  --accent:#FAFAFA; --accent-d:#FFFFFF; --accent-soft:#1F1F1F; --accent-ink:#000000;
+  --accent:#FFFFFF; --accent-d:#FFFFFF; --accent-soft:#1F1F1F; --accent-ink:#000000;
   --pop:#D4D4D4; --pop-soft:#1F1F1F;
-  --ok:#A3A3A3; --ok-soft:#1F1F1F; --err:#E5E5E5; --err-soft:#262626}
+  --ok:#A3A3A3; --ok-soft:#1F1F1F; --err:#FFFFFF; --err-soft:#262626}
 [data-theme="mono"] body::before{
-  background:radial-gradient(52% 40% at 50% 0%,rgba(255,255,255,.06),transparent 70%)}
+  background:radial-gradient(52% 40% at 50% 0%,rgba(255,255,255,.10),transparent 70%)}
 [data-theme="mono"] body::after{inset:0 -60%;
-  background:linear-gradient(105deg,transparent 42%,rgba(255,255,255,.055) 50%,transparent 58%);
+  background:linear-gradient(105deg,transparent 42%,rgba(255,255,255,.085) 50%,transparent 58%);
   animation:amb-sweep 16s ease-in-out infinite alternate}
+
+/* Mono Luxe extras (14 Nov): entrance rise, sheen sweep across the white
+   CTA band, heading rule pulse, card/tile hover lift + border sweep.
+   Monochrome only; the global reduced-motion rule stills all of it. */
+@keyframes mono-rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes mono-sheen{0%{transform:translateX(-130%) skewX(-12deg)}32%,100%{transform:translateX(240%) skewX(-12deg)}}
+@keyframes mono-rule{from{transform:scaleX(.45);opacity:.5}to{transform:scaleX(1);opacity:1}}
+@media (prefers-reduced-motion:no-preference){
+  [data-theme="mono"] .card,[data-theme="mono"] .gcard,[data-theme="mono"] .tile,[data-theme="mono"] .section,[data-theme="mono"] .stat,[data-theme="mono"] .kpi,[data-theme="mono"] .stepc{animation:mono-rise .7s ease-out backwards}
+  [data-theme="mono"] .exam-grid>*:nth-child(2){animation-delay:.05s}
+  [data-theme="mono"] .exam-grid>*:nth-child(3){animation-delay:.1s}
+  [data-theme="mono"] .exam-grid>*:nth-child(4){animation-delay:.15s}
+  [data-theme="mono"] .exam-grid>*:nth-child(5){animation-delay:.2s}
+  [data-theme="mono"] .exam-grid>*:nth-child(6){animation-delay:.25s}
+  [data-theme="mono"] .exam-grid>*:nth-child(7){animation-delay:.3s}
+  [data-theme="mono"] .exam-grid>*:nth-child(8){animation-delay:.35s}
+  [data-theme="mono"] .cta::after{animation:mono-sheen 7s ease-in-out infinite}
+  [data-theme="mono"] .home-h h2::before,[data-theme="mono"] .page-h h1::before,[data-theme="mono"] .page-h .view-title::before{animation:mono-rule 5s ease-in-out infinite alternate}
+}
+[data-theme="mono"] .cta{position:relative;overflow:hidden}
+[data-theme="mono"] .cta::after{content:"";position:absolute;top:0;bottom:0;left:0;width:45%;pointer-events:none;
+  background:linear-gradient(100deg,transparent,rgba(0,0,0,.10),transparent);transform:translateX(-130%) skewX(-12deg)}
+[data-theme="mono"] .card{position:relative;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+[data-theme="mono"] .card::after,[data-theme="mono"] .tile::after{content:"";position:absolute;left:0;right:0;top:0;height:2px;z-index:2;pointer-events:none;
+  background:#FFFFFF;transform:scaleX(0);transform-origin:left center;transition:transform .45s ease}
+[data-theme="mono"] .card:hover{transform:translateY(-3px);border-color:#525252;box-shadow:0 16px 36px rgba(0,0,0,.6)}
+[data-theme="mono"] .tile{transition:border-color .2s ease,background .2s ease,transform .25s ease,box-shadow .25s ease}
+[data-theme="mono"] .tile:hover{transform:translateY(-2px);border-color:#525252}
+[data-theme="mono"] .card:hover::after,[data-theme="mono"] .tile:hover::after{transform:scaleX(1)}
+[data-theme="mono"] .home-h h2::before,[data-theme="mono"] .page-h h1::before,[data-theme="mono"] .page-h .view-title::before{transform-origin:left center}
 
 /* 7 — Sunset Drift: dusk plum, rose → violet drift (no gold, no orange lead) */
 [data-theme="sunset"]{color-scheme:dark;

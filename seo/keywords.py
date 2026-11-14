@@ -56,11 +56,33 @@ def search_name(ext):
     return SEARCH_NAME.get(ext, ext.upper())
 
 
+# Yogesh's standing rule (14 Nov 2026): no other company's name anywhere on
+# the site. Autocomplete happily suggests competitor brands ("… ilovepdf",
+# "… cloudconvert"); those phrases are never stored and never read back, so
+# a refresh cannot bring them in. Only the joined FreeConvert token is
+# blocked — "free convert png to tga" is plain English, not the brand.
+BRAND_BLOCKLIST = tuple(re.compile(p, re.I) for p in (
+    r'ilove\s?pdf', r'small\s?pdf', r'\bsejda\b', r'\bpdf24\b',
+    r'cloud\s?convert', r'\bzamzar\b', r'\bconvertio\b', r'soda\s?pdf',
+    r'\bpdf2go\b', r'\bhipdf\b', r'ease\s?pdf', r'online\s?convert\s?free',
+    r'freeconvert', r'pdf\s?candy', r'\badobe\b', r'\bacrobat\b',
+    r'\bcanva\b', r'\bcamscanner\b', r'\bezgif\b',
+))
+
+
+def blocked(phrase):
+    """True when a phrase names a competitor brand and must be dropped."""
+    return any(rx.search(phrase) for rx in BRAND_BLOCKLIST)
+
+
 def _load():
     try:
-        return json.loads(STORE.read_text())
+        data = json.loads(STORE.read_text())
     except FileNotFoundError:
         return {}
+    # Sanitise on read as well, so a store written before the rule (or by
+    # hand) can never feed a brand phrase into the build.
+    return {k: [p for p in phrases if not blocked(p)] for k, phrases in data.items()}
 
 
 _DATA = None
@@ -109,7 +131,7 @@ def refresh():
             time.sleep(0.12)
         seen, uniq = set(), []
         for p in phrases:
-            if p not in seen:
+            if p not in seen and not blocked(p):
                 seen.add(p)
                 uniq.append(p)
         data[key] = uniq

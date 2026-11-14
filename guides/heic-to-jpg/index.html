@@ -21,6 +21,7 @@
 <meta name="cf-guide" content="heic-to-jpg">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://convertfiles.in/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://convertfiles.in/guides/"}, {"@type": "ListItem", "position": 3, "name": "HEIC to JPG: why iPhone photos will not open on Windows and Android"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "HEIC to JPG: why iPhone photos will not open on Windows and Android", "description": "Since iOS 11 the iPhone saves photos as HEIC. Here is why other devices choke on them, and how to fix it in one step.", "author": {"@type": "Organization", "name": "Convert Files"}, "publisher": {"@type": "Organization", "name": "Convert Files"}, "mainEntityOfPage": "https://convertfiles.in/guides/heic-to-jpg/", "image": "https://convertfiles.in/assets/og.png"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why won't my iPhone photos open on Windows or Android?", "acceptedAnswer": {"@type": "Answer", "text": "Because since iOS 11, iPhones save photos as HEIC by default, and most Windows software, Android phones, government portals and older photo printers cannot open HEIC. Converting the photo to JPG fixes it, because JPG opens everywhere. Converting also removes the unsupported-format problem permanently for that copy of the photo."}}, {"@type": "Question", "name": "Can I convert HEIC to JPG without uploading my photos?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. On this site the conversion runs in your browser, on your device, and the photo never leaves it — you can check in the Network tab, or load the page and convert with wi-fi off. That matters because the photos people most want to convert are the personal ones: family, documents, ID."}}, {"@type": "Question", "name": "Will converting to JPG lose quality or my Live Photo?", "acceptedAnswer": {"@type": "Answer", "text": "Some quality, unavoidably — JPG is lossy, so convert from the original HEIC rather than from an already-converted copy. A Live Photo is a still image plus a short video; the converter takes the still, and the motion part does not come across. Keep the original HEIC whenever the photo matters."}}, {"@type": "Question", "name": "How do I stop my iPhone making HEIC files?", "acceptedAnswer": {"@type": "Answer", "text": "Open Settings, then Camera, then Formats, and choose Most Compatible. The iPhone then saves JPG and H.264 instead of HEIC and HEVC. Photos get bigger, but they open everywhere without converting — worth it if you share photos with Windows or Android users often."}}]}</script>
 <!-- /page:meta -->
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -28,7 +29,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=9ec93b09">
+<link rel="stylesheet" href="/css/app.css?v=de028318">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": {"client": "ca-pub-3081346168059285", "slots": {"result": "8055560270", "home": "4307886954", "article": "3651168992"}}};</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3081346168059285" crossorigin="anonymous"></script>
@@ -246,6 +247,7 @@
 <p>Select as many HEIC files as you like in one go &mdash; the converter works through them one after another and offers a zip of the results at the end. There is no per-file wait and no queue, because nothing is being uploaded to wait behind anyone else's job. A few hundred photos on a normal laptop takes a couple of minutes.</p>
 <h2>HEIC, HEIF, HEVC: which is which</h2>
 <p>HEIF is the container format. HEVC (also called H.265) is the compression used for the picture inside it. HEIC is the name Apple uses for the combination, and it is the extension you see on the phone. When Windows asks you to install “HEVC Video Extensions” to open a photo, this is why &mdash; it needs the video decoder to read the still image.</p></div>
+<h2>Questions</h2><dl class="faq-list"><dt>Why won&#x27;t my iPhone photos open on Windows or Android?</dt><dd>Because since iOS 11, iPhones save photos as HEIC by default, and most Windows software, Android phones, government portals and older photo printers cannot open HEIC. Converting the photo to JPG fixes it, because JPG opens everywhere. Converting also removes the unsupported-format problem permanently for that copy of the photo.</dd><dt>Can I convert HEIC to JPG without uploading my photos?</dt><dd>Yes. On this site the conversion runs in your browser, on your device, and the photo never leaves it — you can check in the Network tab, or load the page and convert with wi-fi off. That matters because the photos people most want to convert are the personal ones: family, documents, ID.</dd><dt>Will converting to JPG lose quality or my Live Photo?</dt><dd>Some quality, unavoidably — JPG is lossy, so convert from the original HEIC rather than from an already-converted copy. A Live Photo is a still image plus a short video; the converter takes the still, and the motion part does not come across. Keep the original HEIC whenever the photo matters.</dd><dt>How do I stop my iPhone making HEIC files?</dt><dd>Open Settings, then Camera, then Formats, and choose Most Compatible. The iPhone then saves JPG and H.264 instead of HEIC and HEVC. Photos get bigger, but they open everywhere without converting — worth it if you share photos with Windows or Android users often.</dd></dl>
 <div class="try"><span class="t">Try it: convert a .heic to .jpg — free, in your browser.</span><a class="btn primary" href="/heic-to-jpg/">Convert .heic to .jpg</a></div></article>
   </section>
 
@@ -278,13 +280,13 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script defer src="/js/formats.js?v=9ec93b09"></script>
-<script defer src="/js/encoders.js?v=9ec93b09"></script>
-<script defer src="/js/docmodel.js?v=9ec93b09"></script>
-<script defer src="/js/convert.js?v=9ec93b09"></script>
-<script defer src="/js/db.js?v=9ec93b09"></script>
-<script defer src="/js/lang.js?v=9ec93b09"></script>
-<script defer src="/js/content.js?v=9ec93b09"></script>
-<script defer src="/js/app.js?v=9ec93b09"></script>
+<script defer src="/js/formats.js?v=de028318"></script>
+<script defer src="/js/encoders.js?v=de028318"></script>
+<script defer src="/js/docmodel.js?v=de028318"></script>
+<script defer src="/js/convert.js?v=de028318"></script>
+<script defer src="/js/db.js?v=de028318"></script>
+<script defer src="/js/lang.js?v=de028318"></script>
+<script defer src="/js/content.js?v=de028318"></script>
+<script defer src="/js/app.js?v=de028318"></script>
 </body>
 </html>

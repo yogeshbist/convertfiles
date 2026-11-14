@@ -662,6 +662,14 @@ def render_body(lines):
         kind, text = line[:1], line[2:]
         if line.startswith('ul:'):
             out.append('<ul>' + ''.join('<li>%s</li>' % t for t in line[3:].split('|')) + '</ul>')
+        elif kind == 't':
+            # spec table: rows split by '||', cells by '|', first row is the header
+            tbl = ['<table class="dates wide">']
+            for ri, row in enumerate(text.split('||')):
+                tag = 'th' if ri == 0 else 'td'
+                tbl.append('<tr>' + ''.join('<%s>%s</%s>' % (tag, c, tag) for c in row.split('|')) + '</tr>')
+            tbl.append('</table>')
+            out.append('\n'.join(tbl))
         elif kind == 'h':
             out.append('<h2>%s</h2>' % text)
         else:
@@ -694,6 +702,10 @@ for gd in CONTENT['GUIDES']:
     article = ['<div class="cat">%s</div>' % esc(gd['cat']), '<h1>%s</h1>' % esc(gd['title']),
                '<div class="meta">%s</div>' % (('%d मिनट में पढ़ें · Convert Files' % max(2, round(words / 180))) if hindi else ('%d min read · Convert Files guides' % max(2, round(words / 200)))),
                '<div class="body">' + render_body(gd['body']) + '</div>']
+    if gd.get('faq'):
+        article.append('<h2>%s</h2><dl class="faq-list">%s</dl>' % (
+            'आम सवाल' if hindi else 'Questions',
+            ''.join('<dt>%s</dt><dd>%s</dd>' % (esc(q), esc(a)) for q, a in gd['faq'])))
     if gd.get('tryTool'):
         article.append('<div class="try"><span class="t">%s</span><a class="btn primary" href="/%s/">%s</a></div>'
                        % (esc(gd.get('tryLabel') or 'Try it — free, in your browser.'), gd['tryTool'], esc(TOOL_BY_SLUG[gd['tryTool']]['name'] if gd['tryTool'] in TOOL_BY_SLUG else gd['tryTool'])))
@@ -714,6 +726,9 @@ for gd in CONTENT['GUIDES']:
     jsonld = [gcrumb_ld, {'@context': 'https://schema.org', '@type': 'Article', 'headline': gd['title'], 'description': gd['teaser'],
               'author': {'@type': 'Organization', 'name': 'Convert Files'}, 'publisher': {'@type': 'Organization', 'name': 'Convert Files'},
               'mainEntityOfPage': DOMAIN + '/' + path, 'image': DOMAIN + '/assets/og.png'}]
+    if gd.get('faq'):
+        jsonld.append({'@context': 'https://schema.org', '@type': 'FAQPage',
+                       'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in gd['faq']]})
     page = replace_block(BASE, 'page:meta', page_meta(gd.get('seo_title', gd['title']) + ' \u00b7 Convert Files', gd['teaser'], path, kind='article',
                                                        extra_meta='<meta name="cf-guide" content="%s">' % gd['slug'] + hreflang_links(gd), jsonld=jsonld))
     if hindi:

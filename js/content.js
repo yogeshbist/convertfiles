@@ -241,6 +241,7 @@
    "tryLabel": "Set your photo or signature to 50 KB — the safe middle of the 10-100 KB band, free in your browser.",
    "body": [
     "p:The UP Education Service Selection Commission (UPESSC) is hiring 17,735 Trained Graduate Teachers (TGT) for aided secondary schools — Advertisement 07/2026, applications from 24 October to 23 November 2026, correction window till 26 November, and the written exam on 23-24 December 2026. Applying is a two-step process: first a One Time Registration (OTR) on apply.upessc.org, then the application form itself. The step that stalls people is the uploads. UPESSC's band is generous — photo and signature both between 10 KB and 100 KB — but a file outside the band, or in the wrong format, still gets refused, and most phone photos are several MB.",
+    "t:What|Format|Size||Photo|JPG upload|10–100 KB — about 50 KB is safest||Signature|JPG upload, in running hand|10–100 KB||Certificates|PDF upload, one file for each|20–200 KB each",
     "h:The photo — JPG, 10 to 100 KB",
     "p:Upload a recent, clear photograph as a JPG or JPEG file between 10 KB and 100 KB. A photo straight from your phone camera will almost always be too big, so compress it to a target of about 50 KB — the middle of the band. Do not over-shrink it either: a file that drops below 10 KB is rejected just as firmly as one over 100 KB, and a blurry, over-compressed face creates problems later at verification. Keep the face clear and the background plain.",
     "h:The signature — JPG, 10 to 100 KB, on white paper",
@@ -249,7 +250,25 @@
     "p:Certificates upload as PDF files, each between 20 KB and 200 KB — marksheets, your B.Ed degree and your TET certificate. If a scan runs bigger, compress the PDF to a target inside the band rather than re-scanning at unreadable quality. Eligibility in one line: a bachelor's degree in the subject with 50% marks (or a master's with 45%), B.Ed, and the upper-primary (Class 6-8) TET or CTET; age 21 to 62 years as on 1 July 2026, with relaxations as per the rules. Before you submit, read the file sizes back one last time — photo 10-100 KB, signature 10-100 KB, every PDF 20-200 KB. Everything above is free to prepare in your browser; the files never leave your device."
    ],
    "hot": true,
-   "tryUrl": "/compress-image-to-50kb/"
+   "tryUrl": "/compress-image-to-50kb/",
+   "faq": [
+    [
+     "What file sizes does the UP TGT form accept?",
+     "The photograph and the signature each go as a JPG between 10 and 100 KB, and your certificates go as PDFs between 20 and 200 KB each. The wide bands make this form forgiving: a photo anywhere near 50 KB sits safely in the middle, and a signature the same."
+    ],
+    [
+     "Do I need OTR before filling the UP TGT form?",
+     "Yes. UPESSC recruitments run through OTR (One Time Registration) on apply.upessc.org, and you register once with your details and documents before any application opens to you. Do the OTR on a quiet day, not on the last date of a form you want, because a slow OTR step can cost you the application."
+    ],
+    [
+     "My certificate PDF is bigger than 200 KB. What should I do?",
+     "Compress it into the 20 to 200 KB band before you start the form. On this site you can compress a PDF to an exact size such as 100 KB, in your browser, with nothing uploaded. Scan mark sheets at 200 DPI in greyscale rather than 300 DPI in colour if you are scanning them yourself."
+    ],
+    [
+     "Will my signature be checked again later?",
+     "Yes. The signature you upload is matched against the one you sign in the exam hall, and a clear mismatch can end your candidature. Sign the scan in your ordinary running handwriting — the way you sign every day — and never in block capital letters."
+    ]
+   ]
   },
   {
    "slug": "up-tgt-photo-signature-hindi",
@@ -264,6 +283,7 @@
    "tryLabel": "अपनी फोटो या हस्ताक्षर को 50 KB पर सेट करें — 10-100 KB band के बीच में सबसे सुरक्षित, फ्री, ब्राउज़र में।",
    "body": [
     "p:उत्तर प्रदेश शिक्षा सेवा चयन आयोग (UPESSC) सहायता प्राप्त माध्यमिक विद्यालयों के लिए 17,735 प्रशिक्षित स्नातक शिक्षक (TGT) भर्ती कर रहा है — विज्ञापन 07/2026, आवेदन 24 अक्टूबर से 23 नवंबर 2026 तक, correction 26 नवंबर तक, और लिखित परीक्षा 23-24 दिसंबर 2026 को। आवेदन दो चरणों में है: पहले apply.upessc.org पर One Time Registration (OTR), फिर आवेदन फॉर्म। सबसे ज़्यादा लोग uploads पर अटकते हैं। UPESSC का band बड़ा है — फोटो और हस्ताक्षर दोनों 10 KB से 100 KB के बीच — लेकिन band से बाहर की या गलत format की फाइल फिर भी रुक जाती है, और फोन की ज़्यादातर फोटो कई MB की होती हैं।",
+    "t:क्या|फॉर्मेट|साइज़||फोटो|JPG अपलोड|10–100 KB — करीब 50 KB सबसे सुरक्षित||सिग्नेचर|JPG अपलोड, रनिंग हैंड में|10–100 KB||प्रमाण पत्र|PDF अपलोड, हर एक के लिए एक फाइल|हर एक 20–200 KB",
     "h:फोटो — JPG, 10 से 100 KB",
     "p:ताज़ा, साफ़ फोटो JPG या JPEG फाइल में 10 KB से 100 KB के बीच upload करें। फोन के कैमरे से आई फोटो लगभग हमेशा इससे बड़ी होगी, इसलिए उसे करीब 50 KB के target पर छोटा करें — band के ठीक बीच में। ज़रूरत से ज़्यादा छोटा भी न करें: 10 KB से नीचे गई फाइल भी उतनी ही पक्की तरह reject होती है जितनी 100 KB से ऊपर गई हुई, और धुंधली फोटो बाद में verification में दिक्कत करती है। चेहरा साफ़ और पृष्ठभूमि सादी रखें।",
     "h:हस्ताक्षर — JPG, 10 से 100 KB, सफेद कागज़ पर",
@@ -272,7 +292,25 @@
     "p:प्रमाणपत्र PDF में upload होते हैं, हर एक 20 KB से 200 KB के बीच — अंकपत्र, B.Ed की डिग्री और TET प्रमाणपत्र। Scan इससे बड़ा हो तो PDF को band के अंदर के target पर छोटा करें, दोबारा खराब quality में scan न करें। योग्यता एक लाइन में: विषय में स्नातक 50% अंकों के साथ (या स्नातकोत्तर 45%), B.Ed, और upper-primary (कक्षा 6-8) TET या CTET; उम्र 1 जुलाई 2026 को 21 से 62 वर्ष, नियमों के अनुसार छूट के साथ। Submit से पहले size दोबारा पढ़ लें — फोटो 10-100 KB, हस्ताक्षर 10-100 KB, हर PDF 20-200 KB। ऊपर की सारी तैयारी ब्राउज़र में मुफ़्त होती है; आपकी फाइलें आपके device से बाहर नहीं जातीं।"
    ],
    "hot": true,
-   "tryUrl": "/compress-image-to-50kb/"
+   "tryUrl": "/compress-image-to-50kb/",
+   "faq": [
+    [
+     "UP TGT फॉर्म में फाइलों के साइज़ कितने स्वीकार होते हैं?",
+     "फोटो और सिग्नेचर दोनों JPG के रूप में 10 से 100 KB के बीच जाते हैं, और आपके प्रमाण पत्र PDF के रूप में 20 से 200 KB के बीच जाते हैं। ये चौड़ी सीमाएं इस फॉर्म को आसान बनाती हैं: 50 KB के आसपास की फोटो बीच में सुरक्षित रहती है, और सिग्नेचर भी ऐसा ही।"
+    ],
+    [
+     "क्या UP TGT फॉर्म भरने से पहले OTR ज़रूरी है?",
+     "हां। UPESSC की भर्तियां apply.upessc.org पर OTR (One Time Registration) से चलती हैं, और कोई भी आवेदन खुलने से पहले आप अपनी जानकारी और दस्तावेज़ों के साथ एक बार रजिस्टर करते हैं। OTR किसी शांत दिन करें, जिस फॉर्म की आखिरी तारीख हो उस दिन नहीं, क्योंकि OTR का धीमा कदम आपका आवेदन छीन सकता है।"
+    ],
+    [
+     "मेरे प्रमाण पत्र की PDF 200 KB से बड़ी है। क्या करूं?",
+     "फॉर्म शुरू करने से पहले उसे 20 से 200 KB की सीमा में कंप्रेस करें। इस साइट पर आप PDF को ठीक 100 KB जैसे तय साइज़ में, अपने ब्राउज़र में, बिना कुछ अपलोड किए कंप्रेस कर सकते हैं। अगर आप खुद स्कैन कर रहे हैं, तो मार्कशीट 300 DPI रंगीन के बजाय 200 DPI ग्रेस्केल में स्कैन करें।"
+    ],
+    [
+     "क्या मेरा सिग्नेचर बाद में फिर जांचा जाएगा?",
+     "हां। आप जो सिग्नेचर अपलोड करते हैं, उसकी तुलना परीक्षा हॉल में किए गए सिग्नेचर से होती है, और साफ़ फ़र्क आपकी उम्मीदवारी खत्म कर सकता है। स्कैन में अपनी आम रनिंग लिखावट में सिग्नेचर करें — जिस तरह आप रोज़ करते हैं — और कभी ब्लॉक कैपिटल अक्षरों में नहीं।"
+    ]
+   ]
   },
   {
    "slug": "rrb-ntpc-photo-signature-size",
@@ -286,6 +324,7 @@
    "tryLabel": "Set your signature to exactly 40 KB — free, in your browser.",
    "body": [
     "p:Two things trip up RRB NTPC applicants this year. First, the photograph: the 2026 NTPC forms (CEN 06/2026 for graduates, applications till 8 November 2026 (extended by Corrigendum-1), and CEN 07/2026 for 12th-level posts, till 13 November 2026) capture your photo live through the camera during the application — an old studio file may not be accepted the way it was in earlier years. Second, the signature: Railways ask for a JPG between 30 KB and 49 KB, which is a different band from the 10-20 KB that SSC and bank exams use. People who reuse their bank-exam signature file get rejected on size alone.",
+    "t:What|How it is taken|Size||Photo|Captured live inside the form; keep a standby JPG ready|35 × 45 mm, about 20–50 KB (standby spec)||Signature|JPG upload, in running hand, minimum 140 × 60 px|30–49 KB — aim for about 40 KB",
     "h:The live photo — what to do",
     "p:Because the photo is captured live, preparation means you, not a file. Sit facing a plain, light-coloured wall with the light on your face, not behind you. No cap, no sunglasses, and keep the camera at eye level so the full face is visible and sharp. If the portal also offers an upload option in your category, the standby specification from the notice is a 35 x 45 mm passport-style photo, JPG, roughly 20-50 KB, on a white or light background — the passport photo maker here prepares exactly that, with a head guide and a file-size cap.",
     "h:The signature — 30 to 49 KB, running hand",
@@ -294,7 +333,25 @@
     "p:Check three things. One, the signature file size reads between 30 and 49 KB (long-press the file and look at Details). Two, the signature is your running hand, the same style you will sign in the exam hall — mismatches cause trouble at document verification. Three, keep copies of the final files with the application number; the correction window, when it opens, is short. Everything above is free to prepare in your browser — the files never leave your device."
    ],
    "hot": true,
-   "tryUrl": "/compress-image-to-40kb/"
+   "tryUrl": "/compress-image-to-40kb/",
+   "faq": [
+    [
+     "Does RRB NTPC still accept an uploaded photo?",
+     "No. The photograph is captured live inside the application, and your webcam or phone camera takes it while you fill the form. Keep a scanned photograph with the standby specification — 35 × 45 mm, JPG, about 20 to 50 KB, on a white or light background — ready anyway, in case the portal asks for an upload or the capture fails."
+    ],
+    [
+     "What size signature does the RRB NTPC form accept?",
+     "The signature is uploaded as a JPG between 30 and 49 KB — a narrow band, and files below it are rejected just as files above it are. The minimum pixel size is 140 × 60, and the signature must be in running hand, not block letters. Aim for the middle of the band, around 40 KB."
+    ],
+    [
+     "Why is my NTPC signature being rejected even though it is under 50 KB?",
+     "Probably because it is also under 30 KB, or because the scan is a whole A4 page that is mostly blank paper. Sign on a small strip of plain white paper, scan only that strip, crop tight, and save as JPG. A full-page scan wastes most of the file on blank paper and portal checkers often read the result as out of range."
+    ],
+    [
+     "Can I fix the signature size without a scanner?",
+     "Yes. Photograph the signature strip with your phone, crop it tightly, and save it as JPG. Then compress it into the 30 to 49 KB band — on this site you can compress an image to an exact target such as 40 KB, in your browser, with nothing uploaded."
+    ]
+   ]
   },
   {
    "slug": "rrb-ntpc-photo-signature-hindi",
@@ -309,6 +366,7 @@
    "tryLabel": "अपने हस्ताक्षर को ठीक 40 KB पर सेट करें — फ्री, ब्राउज़र में।",
    "body": [
     "p:इस साल RRB NTPC के फॉर्म में दो बातें सबसे ज़्यादा लोगों को फंसाती हैं। पहली, फोटो: 2026 के NTPC फॉर्म (graduate के लिए CEN 06/2026, आवेदन 8 नवंबर 2026 तक (Corrigendum-1 से बढ़ा दी गई), और 12वीं स्तर के पदों के लिए CEN 07/2026, 13 नवंबर 2026 तक) में फोटो आवेदन के समय कैमरे से live लिया जाता है — पुरानी studio वाली फाइल पहले की तरह स्वीकार हो, ये ज़रूरी नहीं। दूसरी, हस्ताक्षर: रेलवे को JPG फाइल 30 KB से 49 KB के बीच चाहिए, जबकि SSC और बैंक परीक्षाओं में 10-20 KB चलता है। जो लोग बैंक वाली signature फाइल ही लगा देते हैं, उनका फॉर्म सिर्फ size की वजह से अटक जाता है।",
+    "t:क्या|कैसे लिया जाता है|साइज़||फोटो|फॉर्म के अंदर लाइव कैप्चर; एक स्टैंडबाय JPG तैयार रखें|35 × 45 मिमी, करीब 20–50 KB (स्टैंडबाय स्पेसिफिकेशन)||सिग्नेचर|JPG अपलोड, रनिंग हैंड में, न्यूनतम 140 × 60 पिक्सल|30–49 KB — करीब 40 KB का लक्ष्य रखें",
     "h:Live फोटो — क्या करें",
     "p:फोटो live लिया जाएगा, इसलिए तैयारी फाइल की नहीं, आपकी है। किसी सादी, हल्के रंग की दीवार के सामने बैठें, रोशनी चेहरे पर पड़े, पीछे से नहीं। टोपी या धूप का चश्मा नहीं, कैमरा आंखों के बराबर रखें ताकि पूरा चेहरा साफ़ दिखे। अगर आपके वर्ग में upload का विकल्प भी मिले, तो notice का standby नियम है: 35 x 45 mm की passport-style फोटो, JPG, करीब 20-50 KB, सफेद या हल्की पृष्ठभूमि पर — यहां का passport photo maker ठीक यही तैयार करता है, सिर के लिए guide और file size की सीमा के साथ।",
     "h:हस्ताक्षर — 30 से 49 KB, चलती हुई लिखावट में",
@@ -317,7 +375,25 @@
     "p:तीन बातें जांच लें। एक, signature फाइल का size 30 से 49 KB के बीच दिखे (फाइल को देर तक दबाकर Details देखें)। दो, हस्ताक्षर आपकी चलती हुई लिखावट के हों — परीक्षा हॉल में भी वही हस्ताक्षर करने होंगे, गड़बड़ हुई तो document verification में दिक्कत आती है। तीन, तैयार फाइलों की copy आवेदन संख्या के साथ संभाल कर रखें; correction window जब खुलता है, छोटा होता है। ये सारी तैयारी आपके ब्राउज़र में फ्री में हो जाती है — फाइलें आपके फोन से बाहर जाती ही नहीं।"
    ],
    "hot": true,
-   "tryUrl": "/compress-image-to-40kb/"
+   "tryUrl": "/compress-image-to-40kb/",
+   "faq": [
+    [
+     "क्या RRB NTPC अब भी अपलोड की हुई फोटो स्वीकार करता है?",
+     "नहीं। फोटो आवेदन के अंदर लाइव कैप्चर होती है, और फॉर्म भरते समय आपका वेबकैम या फोन कैमरा उसे लेता है। फिर भी स्टैंडबाय स्पेसिफिकेशन वाली स्कैन फोटो तैयार रखें — 35 × 45 मिमी, JPG, करीब 20 से 50 KB, सफेद या हल्के बैकग्राउंड पर — ताकि पोर्टल अपलोड मांगे या कैप्चर असफल हो तो काम आए।"
+    ],
+    [
+     "RRB NTPC फॉर्म में सिग्नेचर का साइज़ कितना स्वीकार होता है?",
+     "सिग्नेचर JPG के रूप में 30 से 49 KB के बीच अपलोड होता है — यह एक संकरी सीमा है, और इससे नीचे की फाइलें भी उतनी ही रिजेक्ट होती हैं जितनी ऊपर की। न्यूनतम पिक्सल साइज़ 140 × 60 है, और सिग्नेचर रनिंग हैंड में होना चाहिए, ब्लॉक अक्षरों में नहीं। सीमा के बीच का लक्ष्य रखें, करीब 40 KB।"
+    ],
+    [
+     "मेरा NTPC सिग्नेचर 50 KB से कम होने पर भी रिजेक्ट क्यों हो रहा है?",
+     "शायद इसलिए कि वह 30 KB से भी कम है, या स्कैन पूरी A4 शीट है जिसमें ज़्यादातर खाली कागज़ है। सादे सफेद कागज़ की छोटी पट्टी पर सिग्नेचर करें, सिर्फ़ उसी पट्टी को स्कैन करें, कसकर क्रॉप करें और JPG में सेव करें। पूरी शीट की स्कैन फाइल का बड़ा हिस्सा खाली कागज़ पर बर्बाद होता है और पोर्टल अक्सर उसे सीमा से बाहर पढ़ता है।"
+    ],
+    [
+     "क्या बिना स्कैनर के सिग्नेचर का साइज़ ठीक कर सकता हूं?",
+     "हां। फोन से सिग्नेचर वाली पट्टी की फोटो लें, उसे कसकर क्रॉप करें और JPG में सेव करें। फिर उसे 30 से 49 KB की सीमा में कंप्रेस करें — इस साइट पर आप इमेज को ठीक 40 KB जैसे तय लक्ष्य तक कंप्रेस कर सकते हैं, अपने ब्राउज़र में, बिना कुछ अपलोड किए।"
+    ]
+   ]
   },
   {
    "slug": "rrb-station-master-photo-signature-size",
@@ -331,6 +407,7 @@
    "tryLabel": "Set your signature to exactly 40 KB — free, in your browser.",
    "body": [
     "p:Station Master has its own notification this year — CEN 08/2026, separate from RRB NTPC. The detailed notification came out on 26 October 2026, applications run from 27 October to 25 November 2026 (fee till 27 November), and two things trip up applicants. First, the photograph: it is captured live through the camera during the application — there is no photo file to upload. Second, the signature: Railways ask for a JPG between 30 KB and 49 KB, a different band from the 10-20 KB that SSC and bank exams use. People who reuse their bank-exam signature file get rejected on size alone.",
+    "t:What|How it is taken|Size||Photo|Captured live inside the form — there is no upload box|No file; nothing is uploaded||Signature|JPG upload, in running hand, minimum 140 × 60 px|30–49 KB — aim for about 40 KB||Class 10 certificate|PDF upload of the marksheet or certificate|Scanned PDF||Caste certificate (SC/ST only)|PDF upload|Under 400 KB",
     "h:The live photo — what to do",
     "p:Because the photo is captured live, preparation means you, not a file. Sit facing a plain white background, in dark-coloured clothing, with the light on your face, not behind you. No cap, no mask, no spectacles, and keep the camera at eye level so your head covers at least half the frame and your face is sharp. A photograph of a printed or on-screen photo is rejected — the portal wants your live face, captured by webcam or your phone's front camera.",
     "h:The signature — 30 to 49 KB, running hand",
@@ -339,7 +416,29 @@
     "p:Check four things. One, the signature file size reads between 30 and 49 KB. Two, your name and date of birth in Aadhaar match your Class 10 certificate 100% — the short notice itself warns to get Aadhaar updated before applying if they differ. Three, apply to only one RRB: the board you choose cannot be changed later, not even in the correction window. Four, remember the correction window itself: 28 November to 7 December 2026, ₹250 per change, but account-creation details and the chosen RRB stay locked. Eligibility is graduation in any stream, age 20 to 33 years as on 1 January 2027 (relaxations apply). Everything above is free to prepare in your browser — the files never leave your device."
    ],
    "hot": true,
-   "tryUrl": "/compress-image-to-40kb/"
+   "tryUrl": "/compress-image-to-40kb/",
+   "faq": [
+    [
+     "What photo and signature does the Station Master form need?",
+     "The photograph is captured live inside the form — there is no photo upload box. The signature is uploaded as a scanned JPG between 30 and 49 KB, at least 140 × 60 pixels, in running hand and not block letters. Aim for the middle of the band, around 40 KB, because files below 30 KB are rejected too."
+    ],
+    [
+     "Which RRB should I apply to for Station Master?",
+     "Only one. Under CEN 08/2026 you may apply to a single RRB for Station Master, and applying to more than one gets both applications rejected. Choose the RRB whose zone you actually want before you start, because the choice cannot be changed after submission."
+    ],
+    [
+     "My Aadhaar name does not match my Class 10 certificate. Can I still apply?",
+     "The form cross-checks your Aadhaar name and date of birth against your Class 10 certificate, and a mismatch stops the application. Correct whichever document is wrong first — Aadhaar details can be updated at an Aadhaar centre, a certificate error goes through the board — and only then fill the form."
+    ],
+    [
+     "What documents do I need as PDFs, and what size?",
+     "The Class 10 marksheet or certificate goes as a PDF, and SC and ST candidates also upload the caste certificate as a PDF under 400 KB. If the caste certificate PDF is bigger, compress it to 400 KB or below before you start — on this site that compression happens in your browser, with nothing uploaded."
+    ],
+    [
+     "Can I correct the form after submitting?",
+     "Yes. The correction window for CEN 08/2026 runs from 28 November to 7 December 2026 and costs ₹250, and it covers most fields. Some things cannot be changed at all, so treat the first submission as final and use the window only for genuine mistakes."
+    ]
+   ]
   },
   {
    "slug": "rrb-station-master-photo-signature-hindi",
@@ -354,6 +453,7 @@
    "tryLabel": "अपने हस्ताक्षर को ठीक 40 KB पर सेट करें — फ्री, ब्राउज़र में।",
    "body": [
     "p:इस साल Station Master की अपनी अलग अधिसूचना है — CEN 08/2026, RRB NTPC से अलग। विस्तृत अधिसूचना 26 अक्टूबर 2026 को आई, आवेदन 27 अक्टूबर से 25 नवंबर 2026 तक चलेंगे (फीस 27 नवंबर तक), और दो बातें सबसे ज़्यादा लोगों को फंसाती हैं। पहली, फोटो: आवेदन के समय कैमरे से live ली जाती है — upload करने के लिए कोई फोटो फाइल नहीं है। दूसरी, हस्ताक्षर: रेलवे को JPG फाइल 30 KB से 49 KB के बीच चाहिए, जबकि SSC और बैंक परीक्षाओं में 10-20 KB चलता है। जो लोग बैंक वाली signature फाइल ही लगा देते हैं, उनका फॉर्म सिर्फ size की वजह से अटक जाता है।",
+    "t:क्या|कैसे लिया जाता है|साइज़||फोटो|फॉर्म के अंदर लाइव कैप्चर — अपलोड का कोई बॉक्स नहीं|कोई फाइल नहीं; कुछ अपलोड नहीं होता||सिग्नेचर|JPG अपलोड, रनिंग हैंड में, न्यूनतम 140 × 60 पिक्सल|30–49 KB — करीब 40 KB का लक्ष्य रखें||कक्षा 10 प्रमाण पत्र|मार्कशीट या सर्टिफिकेट की PDF अपलोड|स्कैन की हुई PDF||जाति प्रमाण पत्र (सिर्फ़ SC/ST)|PDF अपलोड|400 KB से कम",
     "h:Live फोटो — क्या करें",
     "p:फोटो live ली जाएगी, इसलिए तैयारी फाइल की नहीं, आपकी है। सादी सफेद पृष्ठभूमि के सामने, गहरे रंग के कपड़ों में बैठें, रोशनी चेहरे पर पड़े, पीछे से नहीं। टोपी, मास्क या चश्मा नहीं, कैमरा आंखों के बराबर रखें ताकि सिर फ्रेम का कम से कम आधा हिस्सा घेरे और चेहरा साफ़ दिखे। छपी हुई या स्क्रीन पर दिखती फोटो की फोटो reject हो जाती है — पोर्टल को webcam या फोन के front camera से आपका live चेहरा चाहिए।",
     "h:हस्ताक्षर — 30 से 49 KB, चलती हुई लिखावट में",
@@ -362,7 +462,29 @@
     "p:चार बातें जांच लें। एक, signature फाइल का size 30 से 49 KB के बीच दिखे। दो, Aadhaar में आपका नाम और जन्मतिथि Class 10 के certificate से 100% मिले — short notice में ही कहा गया है कि फर्क हो तो आवेदन से पहले Aadhaar update करा लें। तीन, सिर्फ एक RRB को चुनें: चुना हुआ बोर्ड बाद में बदला नहीं जा सकता, correction window में भी नहीं। चार, correction window याद रखें: 28 नवंबर से 7 दिसंबर 2026, हर बदलाव पर ₹250, लेकिन account बनाने की जानकारी और चुना हुआ RRB locked रहेंगे। पात्रता: किसी भी stream में graduation, उम्र 1 जनवरी 2027 को 20 से 33 साल (छूट लागू)। ये सारी तैयारी आपके ब्राउज़र में फ्री में हो जाती है — फाइलें आपके फोन से बाहर जाती ही नहीं।"
    ],
    "hot": true,
-   "tryUrl": "/compress-image-to-40kb/"
+   "tryUrl": "/compress-image-to-40kb/",
+   "faq": [
+    [
+     "स्टेशन मास्टर फॉर्म में फोटो और सिग्नेचर क्या चाहिए?",
+     "फोटो फॉर्म के अंदर लाइव कैप्चर होती है — फोटो अपलोड का कोई बॉक्स नहीं है। सिग्नेचर स्कैन की हुई JPG के रूप में 30 से 49 KB के बीच, कम से कम 140 × 60 पिक्सल, रनिंग हैंड में अपलोड होता है, ब्लॉक अक्षरों में नहीं। सीमा के बीच का लक्ष्य रखें, करीब 40 KB, क्योंकि 30 KB से नीचे की फाइल भी रिजेक्ट होती है।"
+    ],
+    [
+     "स्टेशन मास्टर के लिए किस RRB में आवेदन करूं?",
+     "सिर्फ़ एक में। CEN 08/2026 के तहत आप स्टेशन मास्टर के लिए एक ही RRB में आवेदन कर सकते हैं, और एक से ज़्यादा में आवेदन करने पर दोनों आवेदन रिजेक्ट हो जाते हैं। शुरू करने से पहले वही RRB चुनें जिसका ज़ोन आप सच में चाहते हैं, क्योंकि जमा करने के बाद चुनाव बदला नहीं जा सकता।"
+    ],
+    [
+     "मेरे आधार में नाम कक्षा 10 के सर्टिफिकेट से मेल नहीं खाता। क्या मैं फिर भी आवेदन कर सकता हूं?",
+     "फॉर्म आपके आधार के नाम और जन्मतिथि की जांच कक्षा 10 के सर्टिफिकेट से करता है, और मेल न खाने पर आवेदन रुक जाता है। पहले जो दस्तावेज़ गलत है उसे ठीक कराएं — आधार की जानकारी आधार केंद्र पर अपडेट हो सकती है, सर्टिफिकेट की गलती बोर्ड से ठीक होती है — और उसके बाद ही फॉर्म भरें।"
+    ],
+    [
+     "मुझे कौन-से दस्तावेज़ PDF में चाहिए, और किस साइज़ में?",
+     "कक्षा 10 की मार्कशीट या सर्टिफिकेट PDF में जाता है, और SC व ST उम्मीदवार जाति प्रमाण पत्र भी 400 KB से कम की PDF में अपलोड करते हैं। अगर जाति प्रमाण पत्र की PDF बड़ी है, तो शुरू करने से पहले उसे 400 KB या उससे कम में कंप्रेस कर लें — इस साइट पर यह कंप्रेसन आपके ब्राउज़र में होता है, बिना कुछ अपलोड किए।"
+    ],
+    [
+     "क्या जमा करने के बाद फॉर्म में सुधार कर सकता हूं?",
+     "हां। CEN 08/2026 के लिए सुधार विंडो 28 नवंबर से 7 दिसंबर 2026 तक है और इसकी फीस ₹250 है; यह ज़्यादातर फ़ील्ड कवर करती है। कुछ चीज़ें बिल्कुल नहीं बदली जा सकतीं, इसलिए पहले सबमिशन को ही अंतिम मानें और विंडो का इस्तेमाल सिर्फ़ असली गलतियों के लिए करें।"
+    ]
+   ]
   },
   {
    "slug": "up-principal-photo-signature-size",
@@ -376,6 +498,7 @@
    "tryLabel": "Set your photo or signature to 50 KB — the safe middle of the 10-100 KB band, free in your browser.",
    "body": [
     "p:UPESSC is hiring 1,475 Principals for aided inter colleges under Advertisement 08/2026 — applications from 23 October to 22 November 2026, correction window till 25 November, and the written exam on 7 January 2027. As with all UPESSC forms, you complete a One Time Registration (OTR) on apply.upessc.org first, then fill the application. For experienced teachers the paperwork is heavier than for a fresher exam — your experience certificates upload too — and every file has a size band: photo and signature as JPG between 10 KB and 100 KB, documents as PDF between 20 KB and 200 KB each.",
+    "t:What|Format|Size||Photo|JPG upload|10–100 KB — about 50 KB is safest||Signature|JPG upload, in running hand|10–100 KB||Certificates|PDF upload, one file for each|20–200 KB each",
     "h:The photo — JPG, 10 to 100 KB",
     "p:Upload a recent, clear photograph as a JPG or JPEG file between 10 KB and 100 KB. Phone photos are usually several MB, so compress yours to a target of about 50 KB, the safe middle of the band. Files below 10 KB are rejected too, and a squeezed, blurry face invites trouble at document verification. Plain background, face clear and well lit.",
     "h:The signature — JPG, 10 to 100 KB, on white paper",
@@ -384,7 +507,25 @@
     "p:Your postgraduate and B.Ed certificates — and, crucially for this post, your experience certificates — upload as PDF files, each between 20 KB and 200 KB. Multi-page scans often cross 200 KB; compress the PDF to a target inside the band instead of splitting it into unreadable pieces. Eligibility in one line: a postgraduate degree with 50% marks, B.Ed, and at least 4 years teaching Classes 9-12 as a lecturer or assistant teacher — or 4 years as a high-school headmaster; age 30 to 62 years as on 1 July 2026. Before submitting, read every size back: photo 10-100 KB, signature 10-100 KB, every PDF 20-200 KB. Everything above is free to prepare in your browser; the files never leave your device."
    ],
    "hot": true,
-   "tryUrl": "/compress-image-to-50kb/"
+   "tryUrl": "/compress-image-to-50kb/",
+   "faq": [
+    [
+     "What photo, signature and certificate sizes does this form accept?",
+     "The photograph and signature each go as a JPG or JPEG between 10 KB and 100 KB, and certificates — postgraduate degree, B.Ed and your experience certificates — upload as PDFs, each between 20 KB and 200 KB. Aim for the middle of each band: a photo near 50 KB and each certificate near 100 KB."
+    ],
+    [
+     "My experience certificate scan is over 200 KB. Should I split it?",
+     "No. Multi-page scans often cross 200 KB, and splitting the certificate into pieces makes it unreadable. Compress the PDF to a target inside the 20 to 200 KB band instead — on this site you can compress a PDF to an exact size such as 100 KB, in your browser, with nothing uploaded."
+    ],
+    [
+     "Do I need OTR before applying for the Principal post?",
+     "Yes. As with all UPESSC forms, you complete a One Time Registration (OTR) on apply.upessc.org first, then fill the application. Applications under Advertisement 08/2026 run from 23 October to 22 November 2026, so finish the OTR early rather than on the last date."
+    ],
+    [
+     "Will my uploaded signature be checked at the exam?",
+     "Yes. It is matched against the signature you sign at the exam and later stages, so keep it identical to your everyday signature on official records. Sign in your normal running hand — not block capitals — with a dark pen on plain white paper, and scan or photograph only the signature, cropped tight."
+    ]
+   ]
   },
   {
    "slug": "up-principal-photo-signature-hindi",
@@ -399,6 +540,7 @@
    "tryLabel": "अपनी फोटो या हस्ताक्षर को 50 KB पर सेट करें — 10-100 KB band के बीच में सबसे सुरक्षित, फ्री, ब्राउज़र में।",
    "body": [
     "p:UPESSC विज्ञापन 08/2026 के तहत सहायता प्राप्त इंटर कॉलेजों के लिए 1,475 प्रधानाचार्य (Principal) भर्ती कर रहा है — आवेदन 23 अक्टूबर से 22 नवंबर 2026 तक, correction 25 नवंबर तक, और लिखित परीक्षा 7 जनवरी 2027 को। हर UPESSC फॉर्म की तरह पहले apply.upessc.org पर One Time Registration (OTR), फिर आवेदन। अनुभवी शिक्षकों के लिए कागज़ात नए उम्मीदवारों से ज़्यादा होते हैं — अनुभव प्रमाणपत्र भी upload होते हैं — और हर फाइल का size band है: फोटो और हस्ताक्षर JPG में 10 KB से 100 KB, दस्तावेज़ PDF में हर एक 20 KB से 200 KB।",
+    "t:क्या|फॉर्मेट|साइज़||फोटो|JPG अपलोड|10–100 KB — करीब 50 KB सबसे सुरक्षित||सिग्नेचर|JPG अपलोड, रनिंग हैंड में|10–100 KB||प्रमाण पत्र|PDF अपलोड, हर एक के लिए एक फाइल|हर एक 20–200 KB",
     "h:फोटो — JPG, 10 से 100 KB",
     "p:ताज़ा, साफ़ फोटो JPG या JPEG में 10 KB से 100 KB के बीच upload करें। फोन की फोटो आमतौर पर कई MB की होती है, इसलिए उसे करीब 50 KB के target पर छोटा करें — band के बीच में सबसे सुरक्षित। 10 KB से छोटी फाइल भी reject होती है, और ज़्यादा दबाई हुई धुंधली फोटो document verification में परेशानी करती है। पृष्ठभूमि सादी, चेहरा साफ़ और रोशनी ठीक रखें।",
     "h:हस्ताक्षर — JPG, 10 से 100 KB, सफेद कागज़ पर",
@@ -407,7 +549,25 @@
     "p:स्नातकोत्तर और B.Ed के प्रमाणपत्र — और इस पद के लिए सबसे ज़रूरी, अनुभव प्रमाणपत्र — PDF में upload होते हैं, हर एक 20 KB से 200 KB के बीच। कई पन्नों वाले scan अक्सर 200 KB पार कर जाते हैं; PDF को टुकड़ों में बांटने के बजाय band के अंदर के target पर छोटा करें। योग्यता एक लाइन में: स्नातकोत्तर 50% अंकों के साथ, B.Ed, और कक्षा 9-12 में प्रवक्ता या सहायक अध्यापक के रूप में कम से कम 4 वर्ष पढ़ाने का अनुभव — या 4 वर्ष high school प्रधानाध्यापक का अनुभव; उम्र 1 जुलाई 2026 को 30 से 62 वर्ष। Submit से पहले हर size दोबारा पढ़ लें: फोटो 10-100 KB, हस्ताक्षर 10-100 KB, हर PDF 20-200 KB। सारी तैयारी ब्राउज़र में मुफ़्त होती है; फाइलें आपके device से बाहर नहीं जातीं।"
    ],
    "hot": true,
-   "tryUrl": "/compress-image-to-50kb/"
+   "tryUrl": "/compress-image-to-50kb/",
+   "faq": [
+    [
+     "इस फॉर्म में फोटो, सिग्नेचर और प्रमाण पत्र के साइज़ कितने स्वीकार होते हैं?",
+     "फोटो और सिग्नेचर दोनों JPG या JPEG के रूप में 10 से 100 KB के बीच जाते हैं, और प्रमाण पत्र — स्नातकोत्तर डिग्री, B.Ed और आपके अनुभव प्रमाण पत्र — PDF के रूप में, हर एक 20 से 200 KB के बीच अपलोड होते हैं। हर सीमा के बीच का लक्ष्य रखें: फोटो करीब 50 KB और हर प्रमाण पत्र करीब 100 KB।"
+    ],
+    [
+     "मेरे अनुभव प्रमाण पत्र की स्कैन फाइल 200 KB से बड़ी है। क्या उसे बांट दूं?",
+     "नहीं। कई पन्नों वाले स्कैन अक्सर 200 KB पार कर जाते हैं, और प्रमाण पत्र को टुकड़ों में बांटने से वह पढ़ने लायक नहीं रहता। इसके बजाय PDF को 20 से 200 KB की सीमा के अंदर किसी लक्ष्य तक कंप्रेस करें — इस साइट पर आप PDF को ठीक 100 KB जैसे तय साइज़ में, अपने ब्राउज़र में, बिना कुछ अपलोड किए कंप्रेस कर सकते हैं।"
+    ],
+    [
+     "क्या प्रिंसिपल पद के लिए आवेदन से पहले OTR ज़रूरी है?",
+     "हां। सभी UPESSC फॉर्म की तरह, पहले आप apply.upessc.org पर One Time Registration (OTR) पूरा करते हैं, फिर आवेदन भरते हैं। विज्ञापन 08/2026 के तहत आवेदन 23 अक्टूबर से 22 नवंबर 2026 तक हैं, इसलिए OTR आखिरी तारीख के बजाय पहले ही पूरा कर लें।"
+    ],
+    [
+     "क्या परीक्षा में मेरा अपलोड किया सिग्नेचर जांचा जाएगा?",
+     "हां। उसकी तुलना परीक्षा और बाद के चरणों में किए गए सिग्नेचर से होती है, इसलिए वह आधिकारिक रिकॉर्ड पर आपके रोज़ के सिग्नेचर जैसा ही रखें। अपने आम रनिंग हैंड में — ब्लॉक कैपिटल में नहीं — सादे सफेद कागज़ पर गहरे पेन से सिग्नेचर करें, और सिर्फ़ सिग्नेचर को कसकर क्रॉप करके स्कैन या फोटो करें।"
+    ]
+   ]
   },
   {
    "slug": "up-headmaster-photo-signature-size",
@@ -421,6 +581,7 @@
    "tryLabel": "Set your photo or signature to 50 KB — the safe middle of the 10-100 KB band, free in your browser.",
    "body": [
     "p:UPESSC is hiring 1,172 Headmasters for aided high schools under Advertisement 09/2026 — applications from 23 October to 22 November 2026, correction window till 25 November, and the written exam on 7 January 2027. The route is the standard UPESSC one: One Time Registration (OTR) on apply.upessc.org, then the application form. The uploads follow the commission's usual bands — photo and signature as JPG files between 10 KB and 100 KB, and documents, including your experience certificates, as PDFs between 20 KB and 200 KB each. Most rejections happen on exactly these files, so prepare them before you sit down to fill the form.",
+    "t:What|Format|Size||Photo|JPG upload|10–100 KB — about 50 KB is safest||Signature|JPG upload, in running hand|10–100 KB||Certificates|PDF upload, one file for each|20–200 KB each",
     "h:The photo — JPG, 10 to 100 KB",
     "p:Upload a recent, clear photograph as a JPG or JPEG file between 10 KB and 100 KB. A phone photo will be far larger than that, so compress it to a target of about 50 KB — mid-band is the safe landing spot. Do not squeeze it below 10 KB either; undersize files are rejected too, and a blurry face creates problems when your documents are verified. Plain background, face clear.",
     "h:The signature — JPG, 10 to 100 KB, on white paper",
@@ -429,7 +590,25 @@
     "p:Certificates upload as PDF files, each between 20 KB and 200 KB — postgraduate degree, B.Ed or B.P.Ed, and your experience certificates. If a scan crosses 200 KB, compress the PDF to a target inside the band rather than splitting it. Eligibility in one line: a postgraduate degree with 50% marks, B.Ed or B.P.Ed, and at least 4 years teaching Classes 9-12 as a lecturer or assistant teacher — or 4 years as a junior high school headmaster; age 30 to 62 years as on 1 July 2026. Final check before you submit: photo 10-100 KB, signature 10-100 KB, every PDF 20-200 KB. Everything above is free to prepare in your browser; the files never leave your device."
    ],
    "hot": true,
-   "tryUrl": "/compress-image-to-50kb/"
+   "tryUrl": "/compress-image-to-50kb/",
+   "faq": [
+    [
+     "What photo, signature and certificate sizes does this form accept?",
+     "The photograph and signature each go as a JPG or JPEG between 10 KB and 100 KB, and certificates — postgraduate degree, B.Ed and your experience certificates — upload as PDFs, each between 20 KB and 200 KB. Aim for the middle of each band: a photo near 50 KB and each certificate near 100 KB."
+    ],
+    [
+     "My experience certificate scan is over 200 KB. Should I split it?",
+     "No. Multi-page scans often cross 200 KB, and splitting the certificate into pieces makes it unreadable. Compress the PDF to a target inside the 20 to 200 KB band instead — on this site you can compress a PDF to an exact size such as 100 KB, in your browser, with nothing uploaded."
+    ],
+    [
+     "Do I need OTR before applying for the Headmaster post?",
+     "Yes. As with all UPESSC forms, you complete a One Time Registration (OTR) on apply.upessc.org first, then fill the application. Applications under Advertisement 09/2026 run from 23 October to 22 November 2026, so finish the OTR early rather than on the last date."
+    ],
+    [
+     "Will my uploaded signature be checked at the exam?",
+     "Yes. It is matched against the signature you sign at the exam and later stages, so keep it identical to your everyday signature on official records. Sign in your normal running hand — not block capitals — with a dark pen on plain white paper, and scan or photograph only the signature, cropped tight."
+    ]
+   ]
   },
   {
    "slug": "up-headmaster-photo-signature-hindi",
@@ -444,6 +623,7 @@
    "tryLabel": "अपनी फोटो या हस्ताक्षर को 50 KB पर सेट करें — 10-100 KB band के बीच में सबसे सुरक्षित, फ्री, ब्राउज़र में।",
    "body": [
     "p:UPESSC विज्ञापन 09/2026 के तहत सहायता प्राप्त हाई स्कूलों के लिए 1,172 प्रधानाध्यापक (Headmaster) भर्ती कर रहा है — आवेदन 23 अक्टूबर से 22 नवंबर 2026 तक, correction 25 नवंबर तक, और लिखित परीक्षा 7 जनवरी 2027 को। रास्ता UPESSC का सामान्य वाला है: apply.upessc.org पर One Time Registration (OTR), फिर आवेदन फॉर्म। Uploads आयोग के तय bands में होते हैं — फोटो और हस्ताक्षर JPG में 10 KB से 100 KB, और दस्तावेज़, अनुभव प्रमाणपत्रों समेत, PDF में हर एक 20 KB से 200 KB। ज़्यादातर फॉर्म इन्हीं फाइलों पर अटकते हैं, इसलिए फॉर्म भरने बैठने से पहले इन्हें तैयार कर लें।",
+    "t:क्या|फॉर्मेट|साइज़||फोटो|JPG अपलोड|10–100 KB — करीब 50 KB सबसे सुरक्षित||सिग्नेचर|JPG अपलोड, रनिंग हैंड में|10–100 KB||प्रमाण पत्र|PDF अपलोड, हर एक के लिए एक फाइल|हर एक 20–200 KB",
     "h:फोटो — JPG, 10 से 100 KB",
     "p:ताज़ा, साफ़ फोटो JPG या JPEG में 10 KB से 100 KB के बीच upload करें। फोन की फोटो इससे कहीं बड़ी होगी, इसलिए उसे करीब 50 KB के target पर छोटा करें — band के बीच में रहना सबसे सुरक्षित है। 10 KB से नीचे भी न ले जाएं; छोटी फाइल भी reject होती है, और धुंधला चेहरा document verification में दिक्कत करता है। पृष्ठभूमि सादी, चेहरा साफ़ रखें।",
     "h:हस्ताक्षर — JPG, 10 से 100 KB, सफेद कागज़ पर",
@@ -452,7 +632,25 @@
     "p:प्रमाणपत्र PDF में upload होते हैं, हर एक 20 KB से 200 KB के बीच — स्नातकोत्तर डिग्री, B.Ed या B.P.Ed, और अनुभव प्रमाणपत्र। Scan 200 KB पार करे तो PDF को बांटने के बजाय band के अंदर के target पर छोटा करें। योग्यता एक लाइन में: स्नातकोत्तर 50% अंकों के साथ, B.Ed या B.P.Ed, और कक्षा 9-12 में प्रवक्ता या सहायक अध्यापक के रूप में कम से कम 4 वर्ष का अनुभव — या 4 वर्ष junior high school प्रधानाध्यापक का अनुभव; उम्र 1 जुलाई 2026 को 30 से 62 वर्ष। Submit से पहले आखिरी जांच: फोटो 10-100 KB, हस्ताक्षर 10-100 KB, हर PDF 20-200 KB। सारी तैयारी ब्राउज़र में मुफ़्त होती है; फाइलें आपके device से बाहर नहीं जातीं।"
    ],
    "hot": true,
-   "tryUrl": "/compress-image-to-50kb/"
+   "tryUrl": "/compress-image-to-50kb/",
+   "faq": [
+    [
+     "इस फॉर्म में फोटो, सिग्नेचर और प्रमाण पत्र के साइज़ कितने स्वीकार होते हैं?",
+     "फोटो और सिग्नेचर दोनों JPG या JPEG के रूप में 10 से 100 KB के बीच जाते हैं, और प्रमाण पत्र — स्नातकोत्तर डिग्री, B.Ed और आपके अनुभव प्रमाण पत्र — PDF के रूप में, हर एक 20 से 200 KB के बीच अपलोड होते हैं। हर सीमा के बीच का लक्ष्य रखें: फोटो करीब 50 KB और हर प्रमाण पत्र करीब 100 KB।"
+    ],
+    [
+     "मेरे अनुभव प्रमाण पत्र की स्कैन फाइल 200 KB से बड़ी है। क्या उसे बांट दूं?",
+     "नहीं। कई पन्नों वाले स्कैन अक्सर 200 KB पार कर जाते हैं, और प्रमाण पत्र को टुकड़ों में बांटने से वह पढ़ने लायक नहीं रहता। इसके बजाय PDF को 20 से 200 KB की सीमा के अंदर किसी लक्ष्य तक कंप्रेस करें — इस साइट पर आप PDF को ठीक 100 KB जैसे तय साइज़ में, अपने ब्राउज़र में, बिना कुछ अपलोड किए कंप्रेस कर सकते हैं।"
+    ],
+    [
+     "क्या हेडमास्टर पद के लिए आवेदन से पहले OTR ज़रूरी है?",
+     "हां। सभी UPESSC फॉर्म की तरह, पहले आप apply.upessc.org पर One Time Registration (OTR) पूरा करते हैं, फिर आवेदन भरते हैं। विज्ञापन 09/2026 के तहत आवेदन 23 अक्टूबर से 22 नवंबर 2026 तक हैं, इसलिए OTR आखिरी तारीख के बजाय पहले ही पूरा कर लें।"
+    ],
+    [
+     "क्या परीक्षा में मेरा अपलोड किया सिग्नेचर जांचा जाएगा?",
+     "हां। उसकी तुलना परीक्षा और बाद के चरणों में किए गए सिग्नेचर से होती है, इसलिए वह आधिकारिक रिकॉर्ड पर आपके रोज़ के सिग्नेचर जैसा ही रखें। अपने आम रनिंग हैंड में — ब्लॉक कैपिटल में नहीं — सादे सफेद कागज़ पर गहरे पेन से सिग्नेचर करें, और सिर्फ़ सिग्नेचर को कसकर क्रॉप करके स्कैन या फोटो करें।"
+    ]
+   ]
   },
   {
    "slug": "exam-form-photo-signature-size",
@@ -466,6 +664,7 @@
    "tryLabel": "Compress your photo to the exact KB — free, in your browser.",
    "body": [
     "p:Almost every government exam form in India — SSC, IBPS, UPSC, railways, state police — asks for the same two uploads: a passport photo and a signature, both as JPG, both inside a strict kilobyte limit. Get the size wrong and the portal rejects the file; get it very wrong and the application itself is at risk. The limits are small because the portals store lakhs of applications, and a 4 MB phone photo would grind them to a halt.",
+    "t:Board|Photo|Signature||SSC|JPG, 20–50 KB — the photo is now captured live in the form|JPG, 10–20 KB||Bank exams (IBPS pattern)|JPG, 20–50 KB, 200 × 230 px|JPG, 10–20 KB, 140 × 60 px||RRB NTPC|Captured live in the form; standby JPG 35 × 45 mm, about 20–50 KB|JPG, 30–49 KB, minimum 140 × 60 px||UPSC|JPG — read the size line in your notification; UPSC changes the numbers between cycles|JPG — running hand; keep the scan inside the size your notification gives",
     "h:What the portals actually ask for",
     "p:There is no single rule — each notification sets its own — but the pattern barely changes. A photograph is usually wanted as a JPG between 20 KB and 50 KB, roughly passport-sized. A signature is usually a JPG between 10 KB and 20 KB, signed in black or blue ink on plain white paper. UPSC and IBPS follow the same shape with slightly different numbers, which is why the first rule of this whole exercise is: read the file-size line in <em>your</em> notification, not someone's blog summary of last year's.",
     "p:One real change to know: SSC CGL moved to <em>live</em> photo capture — the photo is taken through your webcam or phone during the application, and uploading an old photo gets the form rejected. The signature, though, is still an uploaded JPG of 10–20 KB. Other exams still take uploaded photos, so the steps below cover both.",
@@ -477,7 +676,29 @@
     "p:Exam documents are identity documents, and uploading them to a random converter is exactly the kind of thing you should not do. Everything here runs inside your browser: the photo never leaves your device, there is no account, and nothing is stored. Compress, download, upload to the portal, done.",
     "p:Applying this season? The <a href=\"/exam-forms/\">Exam Form Centre — sarkari exam forms, last dates and photo-signature sizes</a> lists every open government exam form in one place, sorted by last date — check your exam’s exact photo-signature size, fees and deadline there before you start."
    ],
-   "tryUrl": "/compress-image-to-50kb/"
+   "tryUrl": "/compress-image-to-50kb/",
+   "faq": [
+    [
+     "What size should my photo and signature be for an exam form?",
+     "Most Indian exam forms ask for the photo as a JPG between 20 and 50 KB, roughly passport-sized, and the signature as a JPG between 10 and 20 KB, signed in black or blue ink on white paper and scanned flat. Exact numbers change with every notification, so read the size line in your exam's notification before uploading."
+    ],
+    [
+     "My photo takes up the full frame. Will the portal accept it?",
+     "Often not. A face fills the frame when you stand close to the phone, so stand about a metre away, leave a gap of chest and neck below the chin, and crop afterwards. Portals auto-check the photo and reject headshots that fill the box, and this is the most common live-capture failure."
+    ],
+    [
+     "What does live capture or live photo mean in SSC and RRB forms?",
+     "It means the portal opens your webcam or phone camera during the form and photographs you then and there; your ordinary gallery photo does not go anywhere. SSC now takes the photo live while the signature is still uploaded as a JPG of 10 to 20 KB, and RRB forms capture the photo live and take the signature as a JPG."
+    ],
+    [
+     "My signature scan is bigger than 20 KB. How do I reduce it?",
+     "The usual fault is a full A4 scan carrying mostly blank paper. Crop tightly around the signature, save the cropped file as JPG, and then compress it into the 10 to 20 KB band. Sign big with a dark pen on a plain white sheet so the strokes stay dark and clear at that size."
+    ],
+    [
+     "The portal says my photo or signature is not in range. How do I fix the exact size?",
+     "Adjust the slider on the compress tools here until the result lands inside the band, not just under the top of it. On this site you can compress a photo or a PDF to an exact size such as 50 KB, and the file is processed in your browser, so nothing is uploaded."
+    ]
+   ]
   },
   {
    "slug": "exam-form-photo-signature-hindi",
@@ -492,6 +713,7 @@
    "tryLabel": "अपनी फोटो को सही KB में कंप्रेस करें — फ्री, आपके ब्राउज़र में।",
    "body": [
     "p:भारत में लगभग हर सरकारी एग्ज़ाम फॉर्म — SSC, IBPS, UPSC, रेलवे, राज्य पुलिस — दो फाइलें मांगता है: पासपोर्ट फोटो और हस्ताक्षर, दोनों JPG में, दोनों एक तय KB सीमा के अंदर। साइज़ गलत हुआ तो पोर्टल फाइल रिजेक्ट कर देता है। सीमा छोटी इसलिए होती है क्योंकि पोर्टल पर लाखों आवेदन आते हैं; 4 MB की फोन फोटो सब कुछ धीमा कर देगी।",
+    "t:बोर्ड|फोटो|सिग्नेचर||SSC|JPG, 20–50 KB — फोटो अब फॉर्म में लाइव कैप्चर होती है|JPG, 10–20 KB||बैंक परीक्षा (IBPS पैटर्न)|JPG, 20–50 KB, 200 × 230 पिक्सल|JPG, 10–20 KB, 140 × 60 पिक्सल||RRB NTPC|फॉर्म में लाइव कैप्चर; स्टैंडबाय JPG 35 × 45 मिमी, करीब 20–50 KB|JPG, 30–49 KB, न्यूनतम 140 × 60 पिक्सल||UPSC|JPG — अपने नोटिफिकेशन में साइज़ वाली लाइन पढ़ें; UPSC हर चक्र में नंबर बदलता है|JPG — रनिंग हैंड; स्कैन को नोटिफिकेशन में दिए साइज़ के अंदर रखें",
     "h:पोर्टल असल में क्या मांगते हैं",
     "p:कोई एक नियम नहीं है — हर नोटिफिकेशन अपना नियम देता है — लेकिन तरीका लगभग एक जैसा है। फोटो आमतौर पर 20 KB से 50 KB के बीच JPG में, लगभग पासपोर्ट साइज़। हस्ताक्षर आमतौर पर 10 KB से 20 KB के बीच JPG में, सादे सफेद कागज़ पर काले या नीले पेन से। UPSC और IBPS में नंबर थोड़े अलग हो सकते हैं, इसलिए सबसे पहला नियम: <em>अपने</em> नोटिफिकेशन में फाइल साइज़ वाली लाइन पढ़ें, किसी ब्लॉग का पुराना सारांश नहीं।",
     "p:एक ज़रूरी बदलाव: SSC CGL में अब फोटो <em>लाइव</em> ली जाती है — आवेदन के समय वेबकैम या फोन से, और पुरानी फोटो अपलोड करने पर फॉर्म रिजेक्ट हो जाता है। हस्ताक्षर फिर भी 10–20 KB की JPG फाइल के रूप में अपलोड होता है। बाकी परीक्षाओं में फोटो अपलोड होती है, इसलिए नीचे दोनों के तरीके दिए हैं।",
@@ -503,7 +725,29 @@
     "p:परीक्षा के दस्तावेज़ पहचान के दस्तावेज़ होते हैं — इन्हें किसी अनजान कन्वर्टर पर अपलोड करना ठीक नहीं। यहां सब कुछ आपके ब्राउज़र में होता है: फोटो आपके डिवाइस से बाहर नहीं जाती, कोई अकाउंट नहीं, कुछ स्टोर नहीं होता। कंप्रेस करें, डाउनलोड करें, पोर्टल पर अपलोड करें — हो गया।",
     "p:इस season form भर रहे हो? <a href=\"/hi/exam-forms/\">परीक्षा फॉर्म केंद्र — सरकारी परीक्षा फॉर्म, अंतिम तिथि और फोटो-हस्ताक्षर size</a> पर हर खुला सरकारी परीक्षा फॉर्म एक जगह, अंतिम तिथि के क्रम में मिलता है — शुरू करने से पहले अपनी परीक्षा का सही size, शुल्क और अंतिम तिथि वहाँ देख लो।"
    ],
-   "tryUrl": "/compress-image-to-50kb/"
+   "tryUrl": "/compress-image-to-50kb/",
+   "faq": [
+    [
+     "परीक्षा फॉर्म के लिए फोटो और सिग्नेचर का साइज़ कितना होना चाहिए?",
+     "अधिकांश भारतीय परीक्षा फॉर्म में फोटो JPG फॉर्मेट में 20 से 50 KB के बीच, लगभग पासपोर्ट साइज़ की मांगी जाती है, और सिग्नेचर JPG में 10 से 20 KB के बीच, सफेद कागज़ पर काली या नीली स्याही से किया हुआ और सीधा स्कैन किया हुआ। सही नंबर हर नोटिफिकेशन के साथ बदलते हैं, इसलिए अपलोड करने से पहले अपने परीक्षा के नोटिफिकेशन में साइज़ वाली लाइन ज़रूर पढ़ें।"
+    ],
+    [
+     "मेरी फोटो पूरे फ्रेम में भरी हुई है। क्या पोर्टल उसे स्वीकार करेगा?",
+     "अक्सर नहीं। फोन के पास खड़े होने पर चेहरा फ्रेम भर देता है, इसलिए करीब एक मीटर दूर खड़े हों, ठुड्डी के नीचे सीने और गर्दन की थोड़ी जगह छोड़ें, और बाद में क्रॉप करें। पोर्टल फोटो को अपने आप जांचते हैं और फ्रेम भरने वाले हेडशॉट रिजेक्ट कर देते हैं; यही लाइव कैप्चर की सबसे आम असफलता है।"
+    ],
+    [
+     "SSC और RRB फॉर्म में लाइव कैप्चर या लाइव फोटो का क्या मतलब है?",
+     "इसका मतलब है कि फॉर्म भरते समय पोर्टल आपका वेबकैम या फोन कैमरा खोलकर उसी समय आपकी फोटो लेता है; आपकी गैलरी वाली फोटो कहीं नहीं जाती। SSC अब फोटो लाइव लेता है, जबकि सिग्नेचर अब भी 10 से 20 KB की JPG के रूप में अपलोड होता है, और RRB फॉर्म में फोटो लाइव कैप्चर होती है और सिग्नेचर JPG में लिया जाता है।"
+    ],
+    [
+     "मेरी सिग्नेचर की स्कैन फाइल 20 KB से बड़ी है। साइज़ कैसे कम करूं?",
+     "आम वजह पूरी A4 शीट की स्कैन फाइल होती है, जिसमें ज़्यादातर खाली कागज़ होता है। सिग्नेचर के आसपास कसकर क्रॉप करें, क्रॉप की हुई फाइल JPG में सेव करें, और फिर उसे 10 से 20 KB की सीमा में कंप्रेस करें। सफेद सादे कागज़ पर गहरे पेन से बड़ा सिग्नेचर करें, ताकि इस साइज़ पर भी लकीरें गहरी और साफ़ रहें।"
+    ],
+    [
+     "पोर्टल कह रहा है कि मेरी फोटो या सिग्नेचर तय सीमा में नहीं है। सही साइज़ कैसे बनाऊं?",
+     "यहां के कंप्रेस टूल पर स्लाइडर तब तक एडजस्ट करें जब तक नतीजा सीमा के अंदर न आ जाए, सिर्फ़ ऊपर की सीमा से नीचे नहीं। इस साइट पर आप फोटो या PDF को ठीक 50 KB जैसे तय साइज़ में कंप्रेस कर सकते हैं, और फाइल आपके ब्राउज़र में ही प्रोसेस होती है, इसलिए कुछ अपलोड नहीं होता।"
+    ]
+   ]
   },
   {
    "slug": "compress-pdf-to-100kb",
@@ -526,7 +770,25 @@
     "h:If the portal wants a different size",
     "p:The same tool takes any target — 200 KB and 500 KB are one tap presets, and you can type any number the form asks for. For photographs and signatures the companion tool compresses images to exact sizes like 20 KB or 50 KB. One habit worth keeping: after compressing, open the result once and zoom in. Ten seconds of checking beats a rejected application."
    ],
-   "tryUrl": "/compress-pdf-to-100kb/"
+   "tryUrl": "/compress-pdf-to-100kb/",
+   "faq": [
+    [
+     "How do I compress a PDF to 100 KB or less?",
+     "Open the PDF compressor here, drop your PDF in, set the target to 100 KB and download the result. The compressor aims at exactly the size you set rather than a vague quality level, so the file lands at or under 100 KB — the size most often demanded by Indian admission and government portals."
+    ],
+    [
+     "Why does my PDF stay too big even at the lowest quality?",
+     "Because the weight is in the photographs of you and your family, not in the compression settings. One phone photograph is typically 2 to 5 MB — as much as twenty A4 pages of text — and a scanned mark sheet is mostly a picture of writing. Recompressing the images inside is what moves the number; that is why compressing photos first is so common."
+    ],
+    [
+     "Will compressing to 100 KB make my document unreadable?",
+     "It depends on the page count. A one or two page document at 100 KB is text with a few soft edges, and portals only need it legible. A dense 40-page file at 100 KB is a smear. Balance quality against size for the job: scanned certificates read fine at 150 to 200 DPI, and portals rarely ask for more."
+    ],
+    [
+     "Is my PDF uploaded to a server?",
+     "No. The compression runs entirely in your browser, on your own device, and the file never leaves it. You can verify this in your browser's Network tab while you compress, or load the page, switch off your wi-fi and compress offline — it still works."
+    ]
+   ]
   },
   {
    "slug": "compress-pdf-100kb-hindi",
@@ -550,7 +812,25 @@
     "h:अगर पोर्टल को कोई और साइज़ चाहिए",
     "p:यही टूल कोई भी target लेता है — 200 KB और 500 KB के बटन तैयार हैं, और फॉर्म जो भी नंबर मांगे वो आप खुद लिख सकते हैं। फोटो और हस्ताक्षर के लिए साथ वाला टूल तस्वीरों को 20 KB या 50 KB जैसे exact साइज़ में compress करता है। एक आदत बना लें: compress करने के बाद फाइल एक बार खोलकर zoom करके देख लें। दस सेकंड की जांच, रिजेक्ट हुए फॉर्म से कहीं सस्ती है।"
    ],
-   "tryUrl": "/compress-pdf-to-100kb/"
+   "tryUrl": "/compress-pdf-to-100kb/",
+   "faq": [
+    [
+     "PDF को 100 KB या उससे कम में कैसे कंप्रेस करूं?",
+     "यहां PDF कंप्रेसर खोलें, अपनी PDF डालें, लक्ष्य 100 KB सेट करें और नतीजा डाउनलोड करें। कंप्रेसर किसी धुंधले क्वालिटी स्तर के बजाय ठीक आपके तय किए साइज़ का लक्ष्य रखता है, इसलिए फाइल 100 KB पर या उससे नीचे आती है — यही साइज़ भारतीय दाखिला और सरकारी पोर्टलों पर सबसे ज़्यादा मांगा जाता है।"
+    ],
+    [
+     "सबसे कम क्वालिटी पर भी मेरी PDF बड़ी क्यों रहती है?",
+     "क्योंकि वज़न आपकी और आपके परिवार की फोटो में है, कंप्रेशन सेटिंग में नहीं। फोन की एक फोटो आम तौर पर 2 से 5 MB की होती है — टेक्स्ट के बीस A4 पन्नों के बराबर — और स्कैन की हुई मार्कशीट असल में लिखावट की एक तस्वीर होती है। अंदर की तस्वीरों को फिर से कंप्रेस करना ही नंबर घटाता है; इसीलिए पहले फोटो कंप्रेस करना इतना आम है।"
+    ],
+    [
+     "क्या 100 KB तक कंप्रेस करने से मेरा दस्तावेज़ पढ़ने लायक नहीं रहेगा?",
+     "यह पन्नों की संख्या पर निर्भर करता है। एक या दो पन्नों का दस्तावेज़ 100 KB पर हल्के नरम किनारों वाला टेक्स्ट रहता है, और पोर्टलों को सिर्फ़ पढ़ने लायक चाहिए। 40 पन्नों की घनी फाइल 100 KB पर धब्बा बन जाती है। काम के हिसाब से क्वालिटी और साइज़ संतुलित करें: स्कैन प्रमाण पत्र 150 से 200 DPI पर ठीक पढ़े जाते हैं, और पोर्टल शायद ही ज़्यादा मांगते हैं।"
+    ],
+    [
+     "क्या मेरी PDF किसी सर्वर पर अपलोड होती है?",
+     "नहीं। कंप्रेसन पूरी तरह आपके ब्राउज़र में, आपके अपने डिवाइस पर चलता है, और फाइल उसे कभी नहीं छोड़ती। आप कंप्रेस करते समय अपने ब्राउज़र के Network टैब में इसकी जांच कर सकते हैं, या पेज लोड करके wi-fi बंद कर दें और ऑफ़लाइन कंप्रेस करें — यह फिर भी काम करता है।"
+    ]
+   ]
   },
   {
    "slug": "compress-pdf-to-300kb",
@@ -573,7 +853,25 @@
     "h:If the portal wants a different size",
     "p:The same tool takes any target — 100 KB, 200 KB and 500 KB are one tap presets, and you can type any number the form asks for. For photographs and signatures the companion tool compresses images to exact sizes like 20 KB or 50 KB. One habit worth keeping: after compressing, open the result once and zoom in. Ten seconds of checking beats a rejected application."
    ],
-   "tryUrl": "/compress-pdf-to-300kb/"
+   "tryUrl": "/compress-pdf-to-300kb/",
+   "faq": [
+    [
+     "How do I compress a PDF to 300 KB or less?",
+     "Open the compressor here, drop the PDF in, set the target to 300 KB and download. The tool aims at the exact size you set rather than a quality slider's guess, so the result lands at or under 300 KB. A four-page certificate set usually reaches 300 KB with nothing visibly changed, because the slack was in the embedded scan resolution."
+    ],
+    [
+     "What is 300 KB used for?",
+     "It is the middle-weight limit on Indian portals. Under it sit the small stuff — a signature, an ID proof — and over it the heavy scans. At 300 KB sit multi-page certificates: degree plus mark sheets plus category certificate scanned as one file, and the size turns up as a photo limit on certain railway and state-board forms."
+    ],
+    [
+     "My scan is 3 MB. Can it really reach 300 KB and stay readable?",
+     "Yes, if it is a normal document. The waste in a phone scan is empty resolution: a 300 DPI scan of an A4 page is about 8.6 megapixels of which the portal displays a thumbnail. Recompressing the images inside the PDF brings a 3 MB set of certificates to 300 KB without the text going soft."
+    ],
+    [
+     "Is anything uploaded when I compress here?",
+     "No. Everything runs in your browser, on your device, and the PDF never leaves it. That matters most for exactly the documents that carry a 300 KB limit — certificates and ID proofs — and you can check it yourself in the Network tab while a compression runs."
+    ]
+   ]
   },
   {
    "slug": "compress-pdf-300kb-hindi",
@@ -597,7 +895,25 @@
     "h:अगर पोर्टल को कोई और साइज़ चाहिए",
     "p:यही टूल कोई भी target लेता है — 100 KB, 200 KB और 500 KB के बटन तैयार हैं, और फॉर्म जो भी नंबर मांगे वो आप खुद लिख सकते हैं। फोटो और हस्ताक्षर के लिए साथ वाला टूल तस्वीरों को 20 KB या 50 KB जैसे exact साइज़ में compress करता है। एक आदत बना लें: compress करने के बाद फाइल एक बार खोलकर zoom करके देख लें। दस सेकंड की जांच, रिजेक्ट हुए फॉर्म से कहीं सस्ती है।"
    ],
-   "tryUrl": "/compress-pdf-to-300kb/"
+   "tryUrl": "/compress-pdf-to-300kb/",
+   "faq": [
+    [
+     "PDF को 300 KB या उससे कम में कैसे कंप्रेस करूं?",
+     "यहां कंप्रेसर खोलें, PDF डालें, लक्ष्य 300 KB सेट करें और डाउनलोड करें। टूल क्वालिटी स्लाइडर के अंदाज़े के बजाय ठीक आपके तय साइज़ का लक्ष्य रखता है, इसलिए नतीजा 300 KB पर या उससे नीचे आता है। चार पन्नों का प्रमाण पत्र सेट आम तौर पर 300 KB तक बिना किसी दिखने वाले बदलाव के पहुंचता है, क्योंकि अतिरिक्त वज़न अंदर की स्कैन रिज़ॉल्यूशन में था।"
+    ],
+    [
+     "300 KB किस काम आता है?",
+     "यह भारतीय पोर्टलों पर बीच के वज़न की सीमा है। इसके नीचे छोटी चीज़ें आती हैं — सिग्नेचर, पहचान प्रमाण — और ऊपर भारी स्कैन। 300 KB पर कई पन्नों वाले प्रमाण पत्र बैठते हैं: डिग्री, मार्कशीट और जाति प्रमाण पत्र एक फाइल में स्कैन किए हुए, और यह साइज़ कुछ रेलवे और राज्य बोर्ड फॉर्म में फोटो की सीमा के रूप में भी आता है।"
+    ],
+    [
+     "मेरी स्कैन फाइल 3 MB है। क्या वह सच में 300 KB तक आकर भी पढ़ने लायक रहेगी?",
+     "हां, अगर वह आम दस्तावेज़ है। फोन स्कैन में बर्बादी खाली रिज़ॉल्यूशन की होती है: A4 पन्ने की 300 DPI स्कैन करीब 8.6 मेगापिक्सल होती है, जिसमें से पोर्टल एक थंबनेल दिखाता है। PDF के अंदर की तस्वीरों को फिर से कंप्रेस करने से 3 MB का प्रमाण पत्र सेट बिना टेक्स्ट नरम हुए 300 KB तक आ जाता है।"
+    ],
+    [
+     "क्या यहां कंप्रेस करने पर कुछ अपलोड होता है?",
+     "नहीं। सब कुछ आपके ब्राउज़र में, आपके डिवाइस पर चलता है, और PDF उसे कभी नहीं छोड़ती। यह उन्हीं दस्तावेज़ों के लिए सबसे ज़्यादा मायने रखता है जिन पर 300 KB की सीमा होती है — प्रमाण पत्र और पहचान प्रमाण — और आप कंप्रेसन चलते समय Network टैब में खुद इसकी जांच कर सकते हैं।"
+    ]
+   ]
   },
   {
    "slug": "compress-pdf-to-2mb",
@@ -620,7 +936,25 @@
     "h:If the portal wants a different size",
     "p:The same tool takes any target — 100 KB, 300 KB and 500 KB are one tap presets, and you can type any number the form asks for, in KB. For photographs and signatures the companion tool compresses images to exact sizes like 20 KB or 50 KB. One habit worth keeping: after compressing, open the result once and zoom in. Ten seconds of checking beats a rejected application."
    ],
-   "tryUrl": "/compress-pdf-to-2mb/"
+   "tryUrl": "/compress-pdf-to-2mb/",
+   "faq": [
+    [
+     "My PDF is 2.4 MB and the portal allows 2 MB. How do I bring it under?",
+     "Open the compressor here, drop the file in, set the target to 2 MB and download. The tool aims at the size you set, so the result lands just under 2 MB without you having to guess a quality level. Keep the scans in the file at 200 to 300 DPI so the portal's zoom check still passes."
+    ],
+    [
+     "Why do portals reject files that look only slightly over the limit?",
+     "Because their limit is a hard byte count, not a judgement call. Their 2 MB is 2,000,000 bytes — or 2,097,152, if they mean MiB — and your 2.4 MB report is over both. Any file even a few kilobytes over is rejected the same way, which is why aiming just under the limit matters more than aiming roughly at it."
+    ],
+    [
+     "Is it better to compress to 2 MB or re-scan at lower DPI?",
+     "Compress the file you have; re-scanning is the slow path and risks worse alignment and lighting. But check what is actually heavy before you compress: a native digital PDF, like one downloaded from a university, is usually well under 1 MB already, and if yours is over 2 MB it is almost certainly scans, photos, or both."
+    ],
+    [
+     "Is my PDF uploaded anywhere?",
+     "No. The compression runs in your browser, on your device, and the file never leaves it — which is the point when the document is a dissertation, a tender or a thesis with unpublished data. You can verify it in the Network tab, or disconnect from the internet after the page loads and compress offline."
+    ]
+   ]
   },
   {
    "slug": "compress-pdf-2mb-hindi",
@@ -644,7 +978,25 @@
     "h:अगर पोर्टल को कोई और साइज़ चाहिए",
     "p:यही टूल कोई भी target लेता है — 100 KB, 300 KB और 500 KB के बटन तैयार हैं, और फॉर्म जो भी नंबर मांगे वो आप KB में खुद लिख सकते हैं। फोटो और हस्ताक्षर के लिए साथ वाला टूल तस्वीरों को 20 KB या 50 KB जैसे exact साइज़ में compress करता है। एक आदत बना लें: compress करने के बाद फाइल एक बार खोलकर zoom करके देख लें। दस सेकंड की जांच, रिजेक्ट हुए फॉर्म से कहीं सस्ती है।"
    ],
-   "tryUrl": "/compress-pdf-to-2mb/"
+   "tryUrl": "/compress-pdf-to-2mb/",
+   "faq": [
+    [
+     "मेरी PDF 2.4 MB है और पोर्टल 2 MB तक अनुमति देता है। इसे नीचे कैसे लाऊं?",
+     "यहां कंप्रेसर खोलें, फाइल डालें, लक्ष्य 2 MB सेट करें और डाउनलोड करें। टूल आपके तय साइज़ का लक्ष्य रखता है, इसलिए नतीजा 2 MB से ठीक नीचे आता है और आपको क्वालिटी स्तर का अंदाज़ा नहीं लगाना पड़ता। फाइल की स्कैन 200 से 300 DPI पर रखें ताकि पोर्टल की ज़ूम जांच भी पास हो जाए।"
+    ],
+    [
+     "पोर्टल सीमा से थोड़ी-सी ऊपर दिखने वाली फाइलें क्यों रिजेक्ट करते हैं?",
+     "क्योंकि उनकी सीमा एक कठोर बाइट गिनती है, कोई निर्णय नहीं। उनका 2 MB मतलब 2,000,000 बाइट है — या 2,097,152, अगर उनका मतलब MiB है — और आपकी 2.4 MB रिपोर्ट दोनों से ऊपर है। कुछ किलोबाइट ऊपर की फाइल भी उसी तरह रिजेक्ट होती है, इसीलिए सीमा के ठीक नीचे का लक्ष्य, मोटे अंदाज़े से ज़्यादा मायने रखता है।"
+    ],
+    [
+     "2 MB तक कंप्रेस करना बेहतर है या कम DPI पर फिर से स्कैन करना?",
+     "जो फाइल है उसे कंप्रेस करें; फिर से स्कैन करना धीमा रास्ता है और उसमें अलाइनमेंट और रोशनी बिगड़ने का खतरा है। लेकिन कंप्रेस करने से पहले देखें कि भारी क्या है: यूनिवर्सिटी से डाउनलोड हुई जैसी असली डिजिटल PDF आम तौर पर पहले से 1 MB से काफी नीचे होती है, और अगर आपकी 2 MB से ऊपर है तो वह लगभग निश्चित रूप से स्कैन, फोटो या दोनों हैं।"
+    ],
+    [
+     "क्या मेरी PDF कहीं अपलोड होती है?",
+     "नहीं। कंप्रेसन आपके ब्राउज़र में, आपके डिवाइस पर चलता है, और फाइल उसे कभी नहीं छोड़ती — यही बात तब मायने रखती है जब दस्तावेज़ कोई शोध-प्रबंध, टेंडर या अप्रकाशित डेटा वाली थीसिस हो। आप Network टैब में इसकी जांच कर सकते हैं, या पेज लोड होने के बाद इंटरनेट बंद करके ऑफ़लाइन कंप्रेस कर सकते हैं।"
+    ]
+   ]
   },
   {
    "slug": "photo-size-15-kb-jpg",
@@ -667,7 +1019,25 @@
     "h:If the form wants a different size",
     "p:The same tool takes any target — 20 KB, 50 KB and 100 KB are one tap presets, and you can type any number the form asks for. If the form also fixes the dimensions, the passport photo tool crops to the exact shape first and the size target is applied on top. One habit worth keeping: after compressing, open the result once and zoom in. Ten seconds of checking beats a rejected application."
    ],
-   "tryUrl": "/compress-image-to-15kb/"
+   "tryUrl": "/compress-image-to-15kb/",
+   "faq": [
+    [
+     "How do I make a photo exactly 15 KB in JPG?",
+     "Open the image compressor here, drop your photo in, set the target to 15 KB and download. The compressor re-encodes the JPG until it lands on the size you set, and shows you the final size before you download, so you are not guessing whether the portal will accept it."
+    ],
+    [
+     "Why do portals ask for such a small photo, like 15 KB?",
+     "Because their database stores lakhs of them. A 15 KB passport photo is roughly 350 × 440 pixels at ordinary JPG quality — small on screen, but plenty for an admit-card thumbnail and an invigilator's check, which is all the portal ever does with it."
+    ],
+    [
+     "Should I resize the photo first or compress it first?",
+     "Resize first, compress second. Resizing is quick and exact — set the pixel dimensions the form asks for, or a passport ratio if none are given — and then compress what is left into the KB band. Doing it the other way round means compressing detail you are about to throw away."
+    ],
+    [
+     "My photo is a PNG screenshot. Can it become a 15 KB JPG?",
+     "Yes. Convert the PNG to JPG first — a screenshot carries lossless detail a photograph does not need — and then set the 15 KB target. The face and background survive fine; what disappears is file weight, not recognisability. Everything runs in your browser, so the photo is never uploaded."
+    ]
+   ]
   },
   {
    "slug": "photo-size-15-kb-jpg-hindi",
@@ -691,7 +1061,25 @@
     "h:अगर फॉर्म को कोई और साइज़ चाहिए",
     "p:यही टूल कोई भी target लेता है — 20 KB, 50 KB और 100 KB के बटन तैयार हैं, और फॉर्म जो भी नंबर मांगे वो आप खुद लिख सकते हैं। अगर फॉर्म आकार (dimensions) भी तय करता है, तो passport photo टूल पहले exact आकार में काटता है और ऊपर से साइज़ target लग जाता है। एक आदत बना लें: compress करने के बाद फाइल एक बार खोलकर zoom करके देख लें। दस सेकंड की जांच, रिजेक्ट हुए फॉर्म से कहीं सस्ती है।"
    ],
-   "tryUrl": "/compress-image-to-15kb/"
+   "tryUrl": "/compress-image-to-15kb/",
+   "faq": [
+    [
+     "फोटो को JPG में ठीक 15 KB कैसे बनाऊं?",
+     "यहां इमेज कंप्रेसर खोलें, अपनी फोटो डालें, लक्ष्य 15 KB सेट करें और डाउनलोड करें। कंप्रेसर JPG को तब तक फिर से एनकोड करता है जब तक वह आपके तय साइज़ पर न आ जाए, और डाउनलोड से पहले आपको अंतिम साइज़ दिखाता है, ताकि आपको अंदाज़ा न लगाना पड़े कि पोर्टल स्वीकार करेगा या नहीं।"
+    ],
+    [
+     "पोर्टल इतनी छोटी फोटो, जैसे 15 KB, क्यों मांगते हैं?",
+     "क्योंकि उनके डेटाबेस में ऐसी लाखों फोटो रखी जाती हैं। 15 KB की पासपोर्ट फोटो आम JPG क्वालिटी पर मोटे तौर पर 350 × 440 पिक्सल होती है — स्क्रीन पर छोटी, लेकिन एडमिट कार्ड के थंबनेल और निरीक्षक की जांच के लिए काफी, और पोर्टल उसका करता भी बस यही है।"
+    ],
+    [
+     "पहले फोटो का आकार बदलूं या पहले कंप्रेस करूं?",
+     "पहले आकार बदलें, फिर कंप्रेस करें। आकार बदलना तेज़ और ठीक-ठीक होता है — फॉर्म जो पिक्सल माप मांगे वह सेट करें, या कोई माप न दिया हो तो पासपोर्ट अनुपात — और फिर जो बचे उसे KB सीमा में कंप्रेस करें। उल्टा करने का मतलब है उस डिटेल को कंप्रेस करना जिसे आप फेंकने वाले हैं।"
+    ],
+    [
+     "मेरी फोटो PNG स्क्रीनशॉट है। क्या वह 15 KB JPG बन सकती है?",
+     "हां। पहले PNG को JPG में बदलें — स्क्रीनशॉट में वह lossless डिटेल होती है जिसकी फोटो को ज़रूरत नहीं — और फिर 15 KB का लक्ष्य सेट करें। चेहरा और बैकग्राउंड ठीक रहते हैं; जो गायब होता है वह फाइल का वज़न है, पहचान नहीं। सब कुछ आपके ब्राउज़र में चलता है, इसलिए फोटो कभी अपलोड नहीं होती।"
+    ]
+   ]
   },
   {
    "slug": "photo-ka-size-kam-kaise-kare",
@@ -723,6 +1111,24 @@
     "p:फोटो और सिग्नेचर दोनों एक साथ चुन सकते हैं, या पूरे परिवार के फॉर्म की फोटो एक बार में। हर फोटो अलग-अलग डाउनलोड होती है, या सब एक zip में।",
     "h:अगर फोटो अभी भी अपलोड न हो",
     "p:तीन चीज़ें जाँचें: फॉर्मैट सही है (JPG बनाम PNG), साइज़ लिमिट के <em>अंदर</em> है (कुछ फॉर्म “20 KB से ज़्यादा” भी मांगते हैं — तब टारगेट 40 KB रखें), और लंबाई-चौड़ाई पिक्सेल में वही है जो फॉर्म चाहता है। आखिरी वाले के लिए <a href=\"/passport-photo/\">पासपोर्ट फोटो टूल</a> सही शेप में काटता भी है।"
+   ],
+   "faq": [
+    [
+     "फोटो का साइज़ KB में कैसे कम करें?",
+     "यहां इमेज कंप्रेसर खोलें, फोटो डालें और वह KB लक्ष्य सेट करें जो फॉर्म मांगता है — 50 KB आम है — फिर डाउनलोड करें। कंप्रेसर फाइल को ठीक उसी साइज़ तक लाता है और डाउनलोड से पहले अंतिम साइज़ दिखाता है। सब कुछ आपके ब्राउज़र में होता है, इसलिए फोटो कहीं अपलोड नहीं होती।"
+    ],
+    [
+     "कंप्रेस करने से फोटो की क्वालिटी खराब हो जाएगी क्या?",
+     "आम लक्ष्यों पर नहीं। असली समझौता आयामों में होता है: 4000 पिक्सल चौड़ी फोटो को 200 पिक्सल चौड़ी बनाना ही असली हानि है, जबकि क्वालिटी स्लाइडर को 85 से 75 तक ले जाना शायद ही दिखता है। पहले वह आयाम ठीक करें जो पोर्टल सच में जांचता है, फिर KB लक्ष्य के लिए कंप्रेस करें।"
+    ],
+    [
+     "मैंने साइज़ कम किया, फिर भी पोर्टल फोटो रिजेक्ट कर रहा है। क्यों?",
+     "आम तौर पर तीन वजहों में से एक: फाइल तय KB सीमा से बाहर है, फॉर्मेट गलत है — PNG जहां JPG मांगा था — या आयाम गलत हैं, जैसे चौकोर फोटो जहां 3:4 का अनुपात चाहिए था। पोर्टल का एरर संदेश ध्यान से पढ़ें; वह आम तौर पर बताता है कि कौन-सी जांच असफल हुई।"
+    ],
+    [
+     "फॉर्म के लिए फोटो तैयार करने का सही क्रम क्या है?",
+     "पहले क्रॉप करें, फिर साइज़ बदलें, फिर कंप्रेस करें। पासपोर्ट अनुपात में क्रॉप करें, फॉर्म जो पिक्सल माप मांगे उस पर साइज़ सेट करें, और अंत में फाइल को तय KB सीमा में कंप्रेस करें। फोटो वही रहती है; हर कदम पर सिर्फ़ फाइल का वज़न बदलता है।"
+    ]
    ]
   },
   {
@@ -751,6 +1157,24 @@
     "p:अमेरिका 2×2 इंच (51×51 mm) मांगता है, कनाडा 50×70 mm, चीन 33×48 mm, UK और यूरोप भारत की तरह 35×45 mm। ये सब टूल में प्रीसेट हैं; अपने फॉर्म की ज़रूरत के हिसाब से चुन लें, या “Custom” में मिलीमीटर लिख दें।",
     "h:बैकग्राउंड सफ़ेद नहीं है तो?",
     "p:यह टूल फोटो को काटता और नापता है, बैकग्राउंड नहीं बदलता। इसलिए सादी हल्की दीवार के सामने फोटो खींचना ही सबसे भरोसेमंद रास्ता है — “सफ़ेद बैकग्राउंड” का मतलब ज़्यादातर फॉर्म में “सादी और हल्की” होता है, बिल्कुल सफ़ेद नहीं।"
+   ],
+   "faq": [
+    [
+     "फोन से पासपोर्ट साइज़ फोटो कैसे बनाएं?",
+     "किसी को कहें कि आपकी फोटो ले — सेल्फी में चेहरा विकृत हो जाता है — सादी हल्की दीवार के सामने, दिन की रोशनी में। फिर फोटो को 35 × 45 मिमी के अनुपात में क्रॉप करें, यानी 3.5 × 4.5 सेमी, और कंधे व सिर के ऊपर जगह रखें। क्रॉप किया हिस्सा ही आपकी पासपोर्ट फोटो है।"
+    ],
+    [
+     "पासपोर्ट फोटो कितने पिक्सल की होनी चाहिए?",
+     "35 × 45 मिमी 300 DPI पर 413 × 531 पिक्सल होता है। यही वह साइज़ है जो ज़्यादातर भारतीय फॉर्म मांगते हैं, और 200 DPI पर यह करीब 276 × 354 पिक्सल होता है। अगर फॉर्म पिक्सल में माप दे, तो वही इस्तेमाल करें; अगर मिमी में दे, तो 413 × 531 बनाएं।"
+    ],
+    [
+     "क्या पासपोर्ट फोटो का बैकग्राउंड सफेद होना ज़रूरी है?",
+     "भारतीय फॉर्म के लिए लगभग हमेशा सादा सफेद या हल्का बैकग्राउंड चाहिए, बिना किसी पैटर्न, फर्नीचर या किसी और व्यक्ति के। चेहरे पर परछाई भी असफलता का आम कारण है, इसलिए खिड़की की ओर मुंह करके खड़े हों ताकि रोशनी चेहरे पर समान रूप से पड़े।"
+    ],
+    [
+     "फोटो तैयार है, लेकिन फाइल फॉर्म की KB सीमा से बड़ी है। क्या करूं?",
+     "आयाम वैसे ही रखें और फाइल को फॉर्म की सीमा में कंप्रेस करें — इस साइट पर आप फोटो को ठीक 50 KB जैसे तय साइज़ तक, अपने ब्राउज़र में, बिना अपलोड किए कंप्रेस कर सकते हैं। कंप्रेस की हुई फाइल को 100% पर खोलकर देख लें कि चेहरा अब भी साफ़ है, फिर अपलोड करें।"
+    ]
    ]
   },
   {
@@ -779,6 +1203,24 @@
     "p:स्कैन करते समय ही रंगीन की जगह “ग्रेस्केल” या “डॉक्युमेंट” मोड चुनें और रेज़ोल्यूशन 150–200 dpi रखें। इससे PDF शुरू से ही चार-पाँच गुना हल्की बनती है। और अगर आपके पास पन्नों की अलग-अलग फोटो हैं, तो <a href=\"/images-to-pdf/\">Images to PDF</a> टूल से सीधे एक हल्की PDF बना लीजिए।",
     "h:मोबाइल पर",
     "p:फोन के ब्राउज़र में यही टूल खुलता है। Files ऐप से PDF चुनिए, साइज़ लिखिए, Compress दबाइए। Downloads में नई फाइल आ जाती है, पुरानी वैसी की वैसी रहती है।"
+   ],
+   "faq": [
+    [
+     "PDF का साइज़ KB में कैसे कम करें?",
+     "यहां PDF कंप्रेसर खोलें, फाइल डालें, पोर्टल जो KB लक्ष्य मांगे वह सेट करें और डाउनलोड करें। टूल धुंधले क्वालिटी स्लाइडर के बजाय ठीक उसी साइज़ का लक्ष्य रखता है, और सब कुछ आपके ब्राउज़र में चलता है, इसलिए दस्तावेज़ कहीं अपलोड नहीं होता।"
+    ],
+    [
+     "मेरी PDF इतनी बड़ी क्यों है?",
+     "लगभग हमेशा अंदर की तस्वीरों की वजह से। स्कैन किया पन्ना एक तस्वीर होता है, और कैमरे से बनी PDF हर पन्ने पर पूरी रिज़ॉल्यूशन की फोटो रखती है। बीस पन्नों की स्कैन किताब आसानी से 25 MB पार कर जाती है। PDF के अंदर की तस्वीरों को फिर से कंप्रेस करना ही साइज़ घटाता है।"
+    ],
+    [
+     "कंप्रेस करने से मेरे दस्तावेज़ का टेक्स्ट खराब होगा क्या?",
+     "असली डिजिटल PDF में नहीं — Word या किसी वेबसाइट से बनी फाइलों में टेक्स्ट असली टेक्स्ट रहता है। स्कैन में टेक्स्ट तस्वीर का हिस्सा होता है, इसलिए बहुत ज़ोरदार कंप्रेसन उसे नरम कर सकता है। प्रमाण पत्र के लिए 150 से 200 DPI काफी है, और एक-दो पन्नों का दस्तावेज़ 100 KB पर भी ठीक पढ़ा जाता है।"
+    ],
+    [
+     "कंप्रेस करने के बाद भी फाइल सीमा से ऊपर है। अब क्या?",
+     "दो रास्ते हैं। फाइल को दो हिस्सों में बांटें अगर पोर्टल एक से ज़्यादा अपलोड की इजाज़त देता है, या अंदर की फोटो को पहले अलग से कंप्रेस करके PDF फिर से बनाएं। ध्यान रहे कि पोर्टल की सीमा कठोर बाइट गिनती होती है — कुछ KB ऊपर की फाइल भी रिजेक्ट हो जाती है — इसलिए सीमा के ठीक नीचे का लक्ष्य रखें।"
+    ]
    ]
   },
   {
@@ -813,7 +1255,25 @@
    ],
    "tryFrom": "pdf",
    "tryTo": "docx",
-   "seo_title": "PDF to Word: what survives the trip"
+   "seo_title": "PDF to Word: what survives the trip",
+   "faq": [
+    [
+     "How do I convert a PDF to an editable Word file?",
+     "Open the PDF to Word converter here, drop the PDF in and download the DOCX. If the PDF was made from Word, the text comes back as real paragraphs you can edit. If it is a scan, read the warning first: a photographed page has no text at all, and getting editable text out of it is OCR's job, not conversion's."
+    ],
+    [
+     "Why is my converted Word file full of text boxes?",
+     "Because some converters rebuild each page as text boxes pinned where the words were — it looks right in Word and is miserable to edit. This converter reads the text in reading order and lays it out as ordinary paragraphs, so the document behaves when you select, search and reflow it."
+    ],
+    [
+     "Why are there gaps or jumbled words in the converted file?",
+     "Some PDFs store words in the order they were painted rather than the order they are read, and multi-column PDFs are the worst offenders. The converter sorts each line's pieces into reading order; a jumbled result usually means the source PDF itself stored the text oddly, and no converter can fully guess the intended order."
+    ],
+    [
+     "Is my PDF uploaded for the conversion?",
+     "No. The conversion runs in your browser, on your device, and the file never leaves it. That matters for exactly the documents people convert to Word — contracts, resumes and letters — and you can check it yourself in the Network tab."
+    ]
+   ]
   },
   {
    "slug": "pdf-to-word-hindi",
@@ -849,6 +1309,24 @@
     "p:अगर आपको सिर्फ़ शब्द चाहिए — ईमेल में चिपकाने, खोजने या किसी और काम के लिए — तो TXT में कन्वर्ट करना तेज़ है और इसमें वे गड़बड़ हो ही नहीं सकतीं जो DOCX में हो सकती हैं। अगर ढांचा चाहिए पर Word नहीं, तो Markdown हेडिंग, लिस्ट और एम्फ़ेसिस को सादे टेक्स्ट के रूप में रखता है, जो किसी भी एडिटर में हमेशा पढ़ा जा सकता है। अगर इसे वेबसाइट पर डालना है, तो HTML तीनों में सबसे ज़्यादा ढांचा बचाता है।",
     "h:और साफ़ नतीजा कैसे पाएं",
     "p:Word, Google Docs या किसी वेब पेज से एक्सपोर्ट हुई PDF, InDesign, LaTeX या किसी डिज़ाइन टूल से बनी PDF के मुकाबले कहीं बेहतर कन्वर्ट होती है, क्योंकि पहला समूह उसी ढांचे के साथ शुरू हुआ था जिसे कन्वर्टर वापस बनाने की कोशिश कर रहा है। अगर PDF कहां से आए, इसमें आपके पास कोई चुनाव है, तो वही चुनाव सबसे ज़्यादा मायने रखता है। वह न हो तो हेडिंग और टेबल की किनारियां ठीक करने में कुछ मिनट लगाने की तैयारी रखें — फिर भी यह दोबारा टाइप करने से काफ़ी कम समय है।"
+   ],
+   "faq": [
+    [
+     "PDF को एडिट होने वाली Word फाइल में कैसे बदलें?",
+     "यहां PDF to Word कन्वर्टर खोलें, PDF डालें और DOCX डाउनलोड करें। अगर PDF Word से बनी थी, तो टेक्स्ट असली पैराग्राफ के रूप में लौटता है जिन्हें आप एडिट कर सकते हैं। अगर वह स्कैन है, तो पहले चेतावनी पढ़ें: फोटो खींचे पन्ने में टेक्स्ट होता ही नहीं, और उससे एडिट होने वाला टेक्स्ट निकालना OCR का काम है, कन्वर्ज़न का नहीं।"
+    ],
+    [
+     "मेरी कन्वर्ट हुई Word फाइल टेक्स्ट बॉक्स से क्यों भरी है?",
+     "क्योंकि कुछ कन्वर्टर हर पन्ने को शब्दों की जगह पर टिके टेक्स्ट बॉक्स के रूप में फिर से बनाते हैं — Word में वह ठीक दिखता है और एडिट करने में बेहद खराब होता है। यह कन्वर्टर टेक्स्ट को पढ़ने के क्रम में पढ़ता है और उसे आम पैराग्राफ के रूप में रखता है, इसलिए दस्तावेज़ चुनने, खोजने और फिर से बहने पर ठीक व्यवहार करता है।"
+    ],
+    [
+     "कन्वर्ट हुई फाइल में खाली जगह या उलटे-पुलटे शब्द क्यों हैं?",
+     "कुछ PDF शब्दों को पढ़ने के क्रम के बजाय बनाए जाने के क्रम में रखती हैं, और कई कॉलम वाली PDF सबसे खराब होती हैं। कन्वर्टर हर लाइन के टुकड़ों को पढ़ने के क्रम में लगाता है; उल्टा-पुलटा नतीजा आम तौर पर मतलब है कि स्रोत PDF ने ही टेक्स्ट अजीब तरह से रखा था, और कोई कन्वर्टर इरादा किया क्रम पूरी तरह नहीं भांप सकता।"
+    ],
+    [
+     "क्या कन्वर्ज़न के लिए मेरी PDF अपलोड होती है?",
+     "नहीं। कन्वर्ज़न आपके ब्राउज़र में, आपके डिवाइस पर चलता है, और फाइल उसे कभी नहीं छोड़ती। यह उन्हीं दस्तावेज़ों के लिए मायने रखता है जिन्हें लोग Word में बदलते हैं — करार, रिज़्यूमे और पत्र — और आप Network टैब में खुद इसकी जांच कर सकते हैं।"
+    ]
    ]
   },
   {
@@ -871,6 +1349,24 @@
     "p:The most frequent reason people hit this problem in 2026 is an AI assistant. Chatbots answer in Markdown by default, so a report, essay or set of notes copied out of a chat carries the marks with it. Saving the answer as an .md file and converting it gives you a clean Word document in one step, instead of ten minutes of deleting asterisks by hand. The same applies to Notion and Obsidian exports, which are Markdown underneath.",
     "h:What survives the conversion, honestly",
     "p:Headings, paragraphs, bold, italic, lists, blockquotes, code, tables and links all come through. Raw HTML embedded inside a Markdown file may be simplified rather than rendered exactly, and very exotic extensions — footnotes from one specific app, for instance — can land as plain text. For ordinary documents, which is nearly all of them, what you download is what you meant to write."
+   ],
+   "faq": [
+    [
+     "How do I convert Markdown to a Word document?",
+     "Open the Markdown to Word converter here, drop your .md file in and download the DOCX. Headings arrive as Word heading styles linked to the navigation pane, paragraphs and lists come across as real text, and tables become real Word tables. The part readers touch — headings — is the part converters most often fake with big bold text; this one does not."
+    ],
+    [
+     "Will my headings become real Word styles?",
+     "Yes. A Markdown H1 becomes a Word Heading 1, an H2 a Heading 2, and so on, so the navigation pane, table of contents and accessibility checkers all work on the result. If you peek with a document.xml viewer you will see pStyle entries rather than direct bold formatting — that is the test that separates a real converter from a formatter."
+    ],
+    [
+     "What happens to code blocks and images in the Markdown?",
+     "Fenced code blocks come across in Consolas, indented, with line breaks preserved, so a reader can copy the code back out. Images written as links to URLs cannot be embedded, because a converter running in your browser cannot fetch the file for you; author images as local files if embedding matters."
+    ],
+    [
+     "Is my file uploaded?",
+     "No. The conversion runs entirely in your browser and the Markdown file never leaves your device. Nothing about you or your files is sent anywhere, and you can verify it in the Network tab while you convert."
+    ]
    ]
   },
   {
@@ -894,6 +1390,24 @@
     "p:2026 में लोगों के इस समस्या से टकराने की सबसे आम वजह कोई AI असिस्टेंट है। चैटबॉट डिफ़ॉल्ट रूप से Markdown में जवाब देते हैं, इसलिए चैट से कॉपी की हुई रिपोर्ट, निबंध या नोट्स का समूह अपने साथ वे निशान लिए आता है। जवाब को .md फाइल के रूप में सेव करके कन्वर्ट करने से आपको एक कदम में साफ़ Word दस्तावेज़ मिल जाता है, बजाय इसके कि दस मिनट हाथ से तारे (asterisk) मिटाएं। यही Notion और Obsidian एक्सपोर्ट पर भी लागू होता है, जो अंदर से Markdown ही होते हैं।",
     "h:कन्वर्ज़न में क्या बचता है, ईमानदारी से",
     "p:हेडिंग, पैराग्राफ, बोल्ड, इटैलिक, लिस्ट, ब्लॉककोट, कोड, टेबल और लिंक — सब आते हैं। Markdown फाइल के अंदर घुसा कच्चा HTML हूबहू रेंडर होने के बजाय सरल हो सकता है, और बहुत ख़ास एक्सटेंशन — मिसाल के तौर पर किसी एक ऐप के फुटनोट — सादे टेक्स्ट के रूप में आ सकते हैं। आम दस्तावेज़ों के लिए, जो लगभग सभी होते हैं, आप जो डाउनलोड करते हैं वही है जो आप लिखना चाहते थे।"
+   ],
+   "faq": [
+    [
+     "Markdown को Word दस्तावेज़ में कैसे बदलें?",
+     "यहां Markdown to Word कन्वर्टर खोलें, अपनी .md फाइल डालें और DOCX डाउनलोड करें। हेडिंग Word के हेडिंग स्टाइल के रूप में आती हैं जो नेविगेशन पेन से जुड़ी होती हैं, पैराग्राफ और सूचियां असली टेक्स्ट के रूप में आती हैं, और टेबल असली Word टेबल बन जाती हैं। हेडिंग वही हिस्सा है जिसे पाठक छूते हैं और जिसे कन्वर्टर सबसे अक्सर बड़े बोल्ड टेक्स्ट से नकली बनाते हैं; यह वाला ऐसा नहीं करता।"
+    ],
+    [
+     "क्या मेरी हेडिंग असली Word स्टाइल बनेंगी?",
+     "हां। Markdown की H1, Word की Heading 1 बनती है, H2, Heading 2, और आगे भी ऐसे ही, इसलिए नेविगेशन पेन, विषय-सूची और एक्सेसिबिलिटी चेकर सब नतीजे पर काम करते हैं। अगर आप document.xml देखने वाले टूल से झांकें, तो सीधे बोल्ड फॉर्मेटिंग के बजाय pStyle एंट्री दिखेंगी — यही वह जांच है जो असली कन्वर्टर को फॉर्मेटर से अलग करती है।"
+    ],
+    [
+     "Markdown के कोड ब्लॉक और तस्वीरों का क्या होता है?",
+     "Fenced कोड ब्लॉक Consolas में, इंडेंट के साथ, लाइन ब्रेक बनाए रखते हुए आते हैं, ताकि पाठक कोड को वापस कॉपी कर सके। URL के लिंक के रूप में लिखी तस्वीरें एम्बेड नहीं हो सकतीं, क्योंकि आपके ब्राउज़र में चल रहा कन्वर्टर आपके लिए फाइल ला नहीं सकता; अगर एम्बेड करना ज़रूरी हो तो तस्वीरों को लोकल फाइल के रूप में लिखें।"
+    ],
+    [
+     "क्या मेरी फाइल अपलोड होती है?",
+     "नहीं। कन्वर्ज़न पूरी तरह आपके ब्राउज़र में चलता है और Markdown फाइल आपके डिवाइस को कभी नहीं छोड़ती। आपके या आपकी फाइलों के बारे में कुछ भी कहीं नहीं भेजा जाता, और आप कन्वर्ट करते समय Network टैब में इसकी जांच कर सकते हैं।"
+    ]
    ]
   },
   {
@@ -927,7 +1441,25 @@
    ],
    "tryFrom": "heic",
    "tryTo": "jpg",
-   "seo_title": "HEIC to JPG: why iPhone photos will not open"
+   "seo_title": "HEIC to JPG: why iPhone photos will not open",
+   "faq": [
+    [
+     "Why won't my iPhone photos open on Windows or Android?",
+     "Because since iOS 11, iPhones save photos as HEIC by default, and most Windows software, Android phones, government portals and older photo printers cannot open HEIC. Converting the photo to JPG fixes it, because JPG opens everywhere. Converting also removes the unsupported-format problem permanently for that copy of the photo."
+    ],
+    [
+     "Can I convert HEIC to JPG without uploading my photos?",
+     "Yes. On this site the conversion runs in your browser, on your device, and the photo never leaves it — you can check in the Network tab, or load the page and convert with wi-fi off. That matters because the photos people most want to convert are the personal ones: family, documents, ID."
+    ],
+    [
+     "Will converting to JPG lose quality or my Live Photo?",
+     "Some quality, unavoidably — JPG is lossy, so convert from the original HEIC rather than from an already-converted copy. A Live Photo is a still image plus a short video; the converter takes the still, and the motion part does not come across. Keep the original HEIC whenever the photo matters."
+    ],
+    [
+     "How do I stop my iPhone making HEIC files?",
+     "Open Settings, then Camera, then Formats, and choose Most Compatible. The iPhone then saves JPG and H.264 instead of HEIC and HEVC. Photos get bigger, but they open everywhere without converting — worth it if you share photos with Windows or Android users often."
+    ]
+   ]
   },
   {
    "slug": "heic-ko-jpg-me-kaise-badle",
@@ -954,6 +1486,24 @@
     "p:HEIC से JPG में जाना दो “लॉसी” फॉर्मैट के बीच जाना है, इसलिए क्वालिटी 90% या ऊपर रखें — फर्क आँख से नहीं दिखेगा। जो फोटो आगे एडिट करनी हो, उसके लिए JPG की जगह PNG चुनें; वह लॉसलेस है।",
     "h:WhatsApp पर भेजते समय",
     "p:WhatsApp iPhone से भेजी HEIC को अपने आप JPG बना देता है, इसलिए वहाँ दिक्कत नहीं आती। दिक्कत तब आती है जब फोटो ईमेल, Google Drive, USB या AirDrop से Windows पर जाती है — तब वह HEIC ही रहती है। ऐसे में भेजने से पहले ही JPG बना लीजिए।"
+   ],
+   "faq": [
+    [
+     "मेरी iPhone फोटो Windows या Android पर क्यों नहीं खुलतीं?",
+     "क्योंकि iOS 11 के बाद से iPhone फोटो डिफ़ॉल्ट रूप से HEIC में सेव करता है, और ज़्यादातर Windows सॉफ़्टवेयर, Android फोन, सरकारी पोर्टल और पुराने फोटो प्रिंटर HEIC नहीं खोल पाते। फोटो को JPG में बदलने से यह ठीक हो जाता है, क्योंकि JPG हर जगह खुलता है।"
+    ],
+    [
+     "क्या मैं अपनी फोटो अपलोड किए बिना HEIC को JPG में बदल सकता हूं?",
+     "हां। इस साइट पर कन्वर्ज़न आपके ब्राउज़र में, आपके डिवाइस पर चलता है, और फोटो उसे कभी नहीं छोड़ती — आप Network टैब में जांच सकते हैं, या पेज लोड करके wi-fi बंद करके कन्वर्ट कर सकते हैं। यह इसलिए मायने रखता है क्योंकि लोग जिन फोटो को सबसे ज़्यादा बदलना चाहते हैं वे निजी होती हैं: परिवार, दस्तावेज़, पहचान पत्र।"
+    ],
+    [
+     "क्या JPG में बदलने से क्वालिटी या मेरी Live Photo खत्म हो जाएगी?",
+     "कुछ क्वालिटी, अनिवार्य रूप से — JPG lossy है, इसलिए पहले से बदली हुई कॉपी के बजाय असली HEIC से कन्वर्ट करें। Live Photo एक स्थिर तस्वीर और एक छोटा वीडियो होती है; कन्वर्टर स्थिर तस्वीर लेता है, और गति वाला हिस्सा साथ नहीं आता। जब फोटो मायने रखती हो तो असली HEIC हमेशा रखें।"
+    ],
+    [
+     "iPhone को HEIC फाइलें बनाने से कैसे रोकूं?",
+     "Settings खोलें, फिर Camera, फिर Formats, और Most Compatible चुनें। तब iPhone HEIC और HEVC के बजाय JPG और H.264 सेव करता है। फोटो बड़ी होती हैं, लेकिन बिना बदले हर जगह खुलती हैं — अगर आप अक्सर Windows या Android उपयोगकर्ताओं के साथ फोटो साझा करते हैं तो यह ठीक है।"
+    ]
    ]
   },
   {
@@ -981,6 +1531,24 @@
     "p:Also keep in mind that a PDF is a layout, not a document, so any converter moves things around when it turns one into Word. The details are in <a href=\"/guides/pdf-to-word/\">PDF to Word: what survives the trip</a>. A scanned PDF has no text to extract at all and needs OCR first; <a href=\"/pdf-ocr/\">PDF OCR</a> reads up to 50 pages at a time, but it gives you the text rather than writing a searchable layer back into the PDF.",
     "h:A quick way to decide",
     "p:If the file is private, or you are blocked by a limit, use the tools above and nothing is uploaded. If you need password protection, watermarks or a PowerPoint conversion, use a full service, and think about whether that particular document should be uploaded at all. Limits and policies change, so check the service&rsquo;s own pages for the current ones before you rely on them."
+   ],
+   "faq": [
+    [
+     "How can a PDF tool be free with no upload and no catch?",
+     "Because the work happens on your device. A server-side converter pays for servers, bandwidth and storage for every file, then has to get that money back somehow. When the conversion runs in your browser, there is no per-file bill at all, so there is nothing to recover from you — no account, no queue and no daily limit."
+    ],
+    [
+     "What can I do with a PDF here without uploading it?",
+     "Merge several PDFs into one in page order, split one PDF into separate files by page range, rotate pages, and compress a PDF to an exact size such as 100 KB or 300 KB for a form. Every one of these runs in your browser; the file never leaves your device, and there is no sign-up."
+    ],
+    [
+     "Is compressing a PDF to an exact KB size possible without a server?",
+     "Yes. The compressor here aims at the size you set rather than a vague quality level, and it works in the browser like everything else on the site. Portals reject files that are even a few kilobytes over a hard limit, so aiming at the exact target matters more than aiming roughly at it."
+    ],
+    [
+     "How can I check that nothing is really uploaded?",
+     "Open your browser's developer tools, go to the Network tab, and convert a file: you will see the page's scripts load and nothing carrying your file out. Or load the page, switch off your wi-fi, and convert offline. A tool that converts locally has no upload traffic at all, and you can verify it in about ten seconds."
+    ]
    ]
   },
   {
@@ -1009,6 +1577,24 @@
     "p:यह भी ध्यान रखें कि PDF एक लेआउट है, दस्तावेज़ नहीं — इसलिए कोई भी कन्वर्टर उसे Word में बदलते समय चीज़ें इधर-उधर करता है। ब्योरा यहां है — <a href=\"/hi/guides/pdf-to-word-hindi/\">PDF से Word: क्या बचता है, क्या नहीं</a>। स्कैन की हुई PDF में निकालने को टेक्स्ट होता ही नहीं, उसके लिए पहले OCR चाहिए; <a href=\"/pdf-ocr/\">PDF OCR</a> एक बार में 50 पन्ने तक पढ़ता है, लेकिन वह आपको टेक्स्ट देता है, PDF में खोजने योग्य लेयर वापस नहीं लिखता।",
     "h:फ़ैसले का आसान तरीका",
     "p:अगर फाइल निजी है, या किसी सीमा ने आपको रोका है, तो ऊपर वाले टूल इस्तेमाल करें — कुछ भी अपलोड नहीं होगा। अगर पासवर्ड सुरक्षा, वॉटरमार्क या PowerPoint कन्वर्ज़न चाहिए, तो पूरी सर्विस इस्तेमाल करें, और सोच लें कि वह ख़ास दस्तावेज़ अपलोड करना चाहिए भी या नहीं। सीमा और पॉलिसी बदलती रहती हैं, इसलिए उन पर भरोसा करने से पहले सर्विस के अपने पेजों पर ताज़ा जानकारी देख लें।"
+   ],
+   "faq": [
+    [
+     "कोई PDF टूल बिना अपलोड और बिना किसी शर्त के मुफ़्त कैसे हो सकता है?",
+     "क्योंकि काम आपके डिवाइस पर होता है। सर्वर वाला कन्वर्टर हर फाइल के लिए सर्वर, बैंडविड्थ और स्टोरेज का खर्च उठाता है, फिर वह पैसा किसी तरह वापस निकालता है। जब कन्वर्ज़न आपके ब्राउज़र में चलता है, तो प्रति फाइल कोई बिल ही नहीं होता, इसलिए आपसे वसूलने को कुछ नहीं — कोई अकाउंट नहीं, कोई कतार नहीं और रोज़ की कोई सीमा नहीं।"
+    ],
+    [
+     "यहां बिना अपलोड किए PDF के साथ क्या-क्या कर सकता हूं?",
+     "कई PDF को पन्नों के क्रम में एक में मर्ज करना, एक PDF को पेज रेंज के हिसाब से अलग फाइलों में बांटना, पन्ने घुमाना, और किसी फॉर्म के लिए PDF को ठीक 100 KB या 300 KB जैसे तय साइज़ में कंप्रेस करना। इनमें से हर काम आपके ब्राउज़र में चलता है; फाइल आपके डिवाइस को कभी नहीं छोड़ती, और कोई साइन-अप नहीं है।"
+    ],
+    [
+     "क्या बिना सर्वर के PDF को ठीक KB साइज़ में कंप्रेस करना संभव है?",
+     "हां। यहां का कंप्रेसर किसी धुंधले क्वालिटी स्तर के बजाय आपके तय किए साइज़ का लक्ष्य रखता है, और साइट की बाकी चीज़ों की तरह ब्राउज़र में ही काम करता है। पोर्टल कठोर सीमा से कुछ किलोबाइट ऊपर की फाइल भी रिजेक्ट कर देते हैं, इसलिए ठीक लक्ष्य का निशाना, मोटे अंदाज़े से ज़्यादा मायने रखता है।"
+    ],
+    [
+     "मैं कैसे जांचूं कि सच में कुछ अपलोड नहीं होता?",
+     "अपने ब्राउज़र के developer tools खोलें, Network टैब पर जाएं, और एक फाइल कन्वर्ट करें: पेज की स्क्रिप्ट लोड होती दिखेंगी और आपकी फाइल को बाहर ले जाता कुछ नहीं दिखेगा। या पेज लोड करें, wi-fi बंद करें, और ऑफ़लाइन कन्वर्ट करें। जो टूल लोकल में कन्वर्ट करता है, उसमें अपलोड वाला ट्रैफ़िक होता ही नहीं, और आप इसे करीब दस सेकंड में जांच सकते हैं।"
+    ]
    ]
   },
   {
@@ -1033,6 +1619,24 @@
     "p:You do not have to take anyone's word, including ours. Open your browser's developer tools, switch to the Network tab, and convert a file: if you see your file's bytes travel up to a server, it was uploaded — whatever the homepage says. Then read the privacy policy's retention line: \"deleted after 24 hours\" means stored for 24 hours. A tool that converts locally shows no upload traffic at all, which you can verify in ten seconds.",
     "h:The honest limits",
     "p:In-browser conversion is not magic. Very large videos take a while because your phone does the encoding work, and the page itself must load once (after that it keeps working offline). What you gain — total privacy, no accounts, no queues, no per-day limits — comes from the same design choice: with no server doing work per file, there is no cost per file to pass on to you."
+   ],
+   "faq": [
+    [
+     "How does converting without uploading actually work?",
+     "Instead of sending the file to the converter, the converter comes to the file. The page you are reading is the program: your browser already contains image codecs, a PDF engine and zip handling, so the conversion runs on your own device, in the same tab, using the same engines a desktop app would use. Nothing is sent anywhere because nothing needs to go anywhere."
+    ],
+    [
+     "Which files should never be uploaded to a converter?",
+     "Three kinds: identity documents such as a passport, Aadhaar or PAN; work covered by an NDA or legal privilege; and anything carrying other people's personal data. With in-browser conversion the trust question disappears — there is no server to breach, no retention period to worry about and no terms of service governing your document, because your document never arrives."
+    ],
+    [
+     "How do I verify a converter's privacy claim myself?",
+     "Open your browser's developer tools, go to the Network tab and convert a file: if bytes of your file appear heading for a server, it was uploaded, whatever the homepage says. Then read the privacy policy's retention line — 'deleted after 24 hours' means kept for 24 hours. A local converter has no upload traffic at all, and you can check in ten seconds."
+    ],
+    [
+     "Are there limits to converting in the browser?",
+     "Yes, honest ones. Very large videos take time because your phone does the encoding work, and the page has to load once — after that it keeps working offline. What you get in exchange is complete privacy, no account, no queue and no daily limit, because with no server work per file there is no per-file cost to pass on to you."
+    ]
    ]
   },
   {
@@ -1058,6 +1662,24 @@
     "p:किसी की बात मानने की ज़रूरत नहीं, हमारी भी नहीं। अपने ब्राउज़र के developer tools खोलें, Network टैब पर जाएं, और एक फाइल कन्वर्ट करें: अगर आपकी फाइल के बाइट किसी सर्वर की ओर जाते दिखें, तो वह अपलोड हुई — होमपेज चाहे जो कहे। फिर प्राइवेसी पॉलिसी की retention वाली लाइन पढ़ें: “24 घंटे बाद हटाई जाती है” का मतलब है 24 घंटे रखी जाती है। जो टूल लोकल में कन्वर्ट करता है, उसमें अपलोड वाला ट्रैफ़िक होता ही नहीं, और आप इसे दस सेकंड में जांच सकते हैं।",
     "h:ईमानदार सीमाएं",
     "p:ब्राउज़र में कन्वर्ज़न कोई जादू नहीं है। बहुत बड़े वीडियो में समय लगता है क्योंकि एनकोडिंग का काम आपका फोन करता है, और पेज को एक बार लोड होना पड़ता है (उसके बाद यह ऑफ़लाइन काम करता रहता है)। जो आप पाते हैं — पूरी प्राइवेसी, कोई अकाउंट नहीं, कोई कतार नहीं, रोज़ की कोई सीमा नहीं — वह भी उसी डिज़ाइन चुनाव से आता है: जब प्रति फाइल कोई सर्वर काम नहीं करता, तो प्रति फाइल कोई लागत भी नहीं जो आप पर डाली जाए।"
+   ],
+   "faq": [
+    [
+     "बिना अपलोड किए कन्वर्ज़न असल में कैसे काम करता है?",
+     "फाइल को कन्वर्टर के पास भेजने के बजाय कन्वर्टर को फाइल के पास ले आओ। आप जो पेज पढ़ रहे हैं, वही प्रोग्राम है: आपके ब्राउज़र में पहले से इमेज कोडेक, PDF इंजन और zip संभालना मौजूद है, इसलिए कन्वर्ज़न आपके अपने डिवाइस पर, उसी टैब में, उन्हीं इंजनों से चलता है जो कोई डेस्कटॉप ऐप इस्तेमाल करता। कुछ भी कहीं भेजा ही नहीं जाता, क्योंकि उसे कहीं जाने की ज़रूरत ही नहीं।"
+    ],
+    [
+     "कौन-सी फाइलें किसी कन्वर्टर पर कभी अपलोड नहीं होनी चाहिए?",
+     "तीन तरह की: पहचान के दस्तावेज़ जैसे पासपोर्ट, आधार या PAN; NDA या कानूनी विशेषाधिकार के तहत काम; और वह सब जिसमें दूसरों का निजी डेटा हो। ब्राउज़र में कन्वर्ज़न से भरोसे का सवाल ही खत्म हो जाता है — न कोई सर्वर है जिसे तोड़ा जा सके, न रखने की अवधि की चिंता, न आपके दस्तावेज़ को संचालित करने वाली कोई सेवा-शर्त, क्योंकि आपका दस्तावेज़ पहुंचता ही नहीं।"
+    ],
+    [
+     "किसी कन्वर्टर के प्राइवेसी दावे की जांच मैं खुद कैसे करूं?",
+     "अपने ब्राउज़र के developer tools खोलें, Network टैब पर जाएं और एक फाइल कन्वर्ट करें: अगर आपकी फाइल के बाइट किसी सर्वर की ओर जाते दिखें, तो वह अपलोड हुई — होमपेज चाहे जो कहे। फिर प्राइवेसी पॉलिसी की retention वाली लाइन पढ़ें: '24 घंटे बाद हटाई जाती है' का मतलब है 24 घंटे रखी जाती है। जो टूल लोकल में कन्वर्ट करता है, उसमें अपलोड वाला ट्रैफ़िक होता ही नहीं, और आप इसे दस सेकंड में जांच सकते हैं।"
+    ],
+    [
+     "क्या ब्राउज़र में कन्वर्ज़न की कोई सीमाएं हैं?",
+     "हां, ईमानदार सीमाएं। बहुत बड़े वीडियो में समय लगता है क्योंकि एनकोडिंग का काम आपका फोन करता है, और पेज को एक बार लोड होना पड़ता है — उसके बाद यह ऑफ़लाइन काम करता रहता है। जो आप पाते हैं वह है पूरी प्राइवेसी, कोई अकाउंट नहीं, कोई कतार नहीं और रोज़ की कोई सीमा नहीं, क्योंकि प्रति फाइल कोई सर्वर काम न होने से प्रति फाइल कोई लागत भी नहीं जो आप पर डाली जाए।"
+    ]
    ]
   },
   {
@@ -1091,7 +1713,25 @@
    ],
    "tryFrom": "pdf",
    "tryTo": "png",
-   "seo_title": "Is it safe to convert files online?"
+   "seo_title": "Is it safe to convert files online?",
+   "faq": [
+    [
+     "Is it safe to convert files online here?",
+     "Yes, because there is no server-side conversion at all. The page downloads a converter into your browser and runs it on your computer: the file is read from your disk into the browser's memory and the result is written back to your disk. That is the entire path, and nothing about you or your files is sent anywhere."
+    ],
+    [
+     "How can I verify that nothing is uploaded?",
+     "Open your browser's developer tools (F12), go to the Network tab, and convert something. You will see the converter libraries being fetched the first time, and nothing else: no upload, no request carrying your file. Or disconnect from the internet after the first conversion of each type; it keeps working."
+    ],
+    [
+     "What data is collected when I convert?",
+     "Two things, both counts: that a page was viewed, and that a conversion from one format to another finished or failed. No file names, no file contents, no file sizes, and no identifiers that follow you between visits. If your browser sends Do Not Track or Global Privacy Control, even the counts are skipped."
+    ],
+    [
+     "What is stored after I convert a file?",
+     "Only what you can see in the Your files tab, which lives in your own browser's storage on your own device. Clear all removes it. Nothing is kept on a server, because no file ever reaches one."
+    ]
+   ]
   },
   {
    "slug": "is-it-safe-hindi",
@@ -1126,6 +1766,24 @@
     "p:Network टैब वाला टेस्ट किसी भी साइट पर काम करता है, सिर्फ़ इस पर नहीं। अगर जानना है कि कोई कन्वर्टर अपलोड करता है या नहीं, तो वे तीस सेकंड खर्च करें।",
     "h:जहां सर्वर सच में ज़रूरी है",
     "p:ईमानदारी सीमाएं मांगती है। कुछ कन्वर्ज़न आज ब्राउज़र में अव्यावहारिक हैं: उपलब्ध मेमोरी से बड़ी बहुत बड़ी वीडियो फाइलें, वे फॉर्मेट जिनका एकमात्र implementation कोई बड़ा native ऐप है, और वह सब जिसके लिए OCR या लाइसेंस वाला कोडेक चाहिए। यहां जहां ऐसा है, वहां वह कन्वर्ज़न बस दिया ही नहीं जाता, बजाय इसके कि चुपके से कहीं और भेज दिया जाए। जो जोड़ी गायब है, वह जोड़ी काम नहीं करती — ऐसी जोड़ी नहीं जो अलग तरीके से काम करती हो।"
+   ],
+   "faq": [
+    [
+     "क्या यहां ऑनलाइन फाइल बदलना सुरक्षित है?",
+     "हां, क्योंकि यहां सर्वर पर कोई कन्वर्ज़न होता ही नहीं। पेज आपके ब्राउज़र में एक कन्वर्टर डाउनलोड करता है और उसे आपके कंप्यूटर पर चलाता है: फाइल आपकी डिस्क से ब्राउज़र की मेमोरी में पढ़ी जाती है और नतीजा आपकी डिस्क पर वापस लिखा जाता है। पूरा रास्ता बस इतना ही है, और आपके या आपकी फाइलों के बारे में कुछ भी कहीं नहीं भेजा जाता।"
+    ],
+    [
+     "मैं कैसे जांचूं कि कुछ अपलोड नहीं होता?",
+     "अपने ब्राउज़र के developer tools (F12) खोलें, Network टैब पर जाएं, और कुछ कन्वर्ट करें। पहली बार कन्वर्टर की लाइब्रेरी आती दिखेंगी, और उसके अलावा कुछ नहीं: कोई अपलोड नहीं, आपकी फाइल ले जाती कोई request नहीं। या हर तरह के पहले कन्वर्ज़न के बाद इंटरनेट से कट जाएं; यह काम करता रहता है।"
+    ],
+    [
+     "जब मैं कन्वर्ट करता हूं तो क्या डेटा इकट्ठा होता है?",
+     "दो चीज़ें, दोनों गिनती: एक, कि कोई पेज देखा गया, और दो, कि एक फॉर्मेट से दूसरे फॉर्मेट का कन्वर्ज़न पूरा हुआ या विफल रहा। कोई फाइल नाम नहीं, कोई फाइल सामग्री नहीं, कोई फाइल साइज़ नहीं, और कोई पहचान-चिह्न नहीं जो एक विज़िट से दूसरी विज़िट तक आपका पीछा करे। अगर आपका ब्राउज़र Do Not Track या Global Privacy Control भेजता है, तो गिनती भी छोड़ दी जाती है।"
+    ],
+    [
+     "फाइल कन्वर्ट करने के बाद क्या स्टोर होता है?",
+     "सिर्फ़ वह, जो आप Your files टैब में देख सकते हैं, और वह आपके अपने डिवाइस पर, आपके अपने ब्राउज़र के स्टोरेज में रहता है। Clear all से वह हट जाता है। सर्वर पर कुछ नहीं रखा जाता, क्योंकि कोई फाइल किसी सर्वर तक पहुंचती ही नहीं।"
+    ]
    ]
   },
   {
@@ -1164,7 +1822,25 @@
    ],
    "tryFrom": "webp",
    "tryTo": "png",
-   "seo_title": "JPG, PNG, WebP or AVIF: which to use"
+   "seo_title": "JPG, PNG, WebP or AVIF: which to use",
+   "faq": [
+    [
+     "Which image format should I use for a photograph?",
+     "JPG. It is small, universal and lossy in a way photographs tolerate, because its maths assumes smooth gradients and gentle detail. Keep quality at 85 to 92%. It is the wrong choice for screenshots, logos and anything with sharp text, where the compression leaves smudges around the letters."
+    ],
+    [
+     "When should I use PNG instead of JPG?",
+     "For screenshots, logos, icons, diagrams and anything with text or a transparent background. PNG is lossless — every pixel comes back exactly as it went in — and it has a real alpha channel. The cost is size: a photograph as PNG is routinely five to ten times larger than the same photograph as JPG."
+    ],
+    [
+     "Is WebP better than JPG?",
+     "On a website you control, yes: WebP is typically 25 to 35% smaller than the equivalent JPG or PNG at the same quality, supports transparency, and every current browser opens it. It is a poor format to send someone, because plenty of desktop software, older phones, print workflows and upload forms still reject it."
+    ],
+    [
+     "What is AVIF, and should I use it?",
+     "AVIF uses the still-image side of the AV1 video codec and is often around half the size of JPG, with 10- and 12-bit colour and HDR. Browser support is broad now, but support in ordinary applications is patchier than WebP's and encoding is slower. Use it for images on a site you control; convert it to JPG or PNG for anything else."
+    ]
+   ]
   },
   {
    "slug": "which-image-format-hindi",
@@ -1204,6 +1880,24 @@
     "p:GIF एनिमेट होता है और हर जगह स्वीकार है, लेकिन प्रति फ्रेम 256 रंगों तक सीमित है और फाइलें बहुत बड़ी होती हैं। WebP और AVIF दोनों पूरे रंग के साथ उसके एक हिस्से के साइज़ में एनिमेट होते हैं। कुछ सेकंड से लंबी चीज़ के लिए असली वीडियो — MP4 या WebM — उससे भी एक दर्जा छोटा होता है, और ज़्यादातर साइटें GIF जैसी दिखने वाली चीज़ के पीछे चुपचाप वही इस्तेमाल करती हैं।",
     "h:फ़ैसले की छोटी सूची",
     "p:किसी और के लिए फोटो, या वह कुछ जो आपके नियंत्रण में नहीं: JPG। लोगो, आइकन, स्क्रीनशॉट, या टेक्स्ट या पारदर्शिता वाली कोई भी चीज़: PNG। आपकी चलाई वेबसाइट की तस्वीरें: WebP, या AVIF अगर हो सके तो। वह असली फाइल जिसे आप एडिट करते रहेंगे: PNG, या कैमरे की अपनी raw फाइल। छोटा लूप: WebP अगर गंतव्य इजाज़त दे, GIF अगर हर जगह चलना ही चाहिए, MP4 अगर वह एक पल से लंबा है।"
+   ],
+   "faq": [
+    [
+     "फोटो के लिए कौन-सा इमेज फॉर्मेट इस्तेमाल करूं?",
+     "JPG। यह छोटा, हर जगह चलने वाला और उस तरह lossy है जिसे फोटो सह लेती हैं, क्योंकि इसका गणित चिकने ग्रेडिएंट और हल्की डिटेल मानकर चलता है। क्वालिटी 85 से 92% पर रखें। स्क्रीनशॉट, लोगो और तेज़ अक्षरों वाली चीज़ों के लिए यह गलत चुनाव है, क्योंकि कंप्रेशन वहां अक्षरों के आसपास धब्बे छोड़ता है।"
+    ],
+    [
+     "JPG के बजाय PNG कब इस्तेमाल करूं?",
+     "स्क्रीनशॉट, लोगो, आइकन, डायग्राम, और टेक्स्ट या पारदर्शी बैकग्राउंड वाली हर चीज़ के लिए। PNG lossless है — हर पिक्सल ठीक वैसा लौटता है जैसा गया था — और इसमें असली alpha चैनल होता है। कीमत साइज़ है: PNG में एक फोटो उसी फोटो के JPG से आम तौर पर पांच से दस गुना बड़ी होती है।"
+    ],
+    [
+     "क्या WebP, JPG से बेहतर है?",
+     "अपने नियंत्रण वाली वेबसाइट पर, हां: WebP उसी क्वालिटी पर बराबर के JPG या PNG से आम तौर पर 25 से 35% छोटा होता है, पारदर्शिता संभालता है, और हर मौजूदा ब्राउज़र इसे खोलता है। किसी को भेजने के लिए यह खराब फॉर्मेट है, क्योंकि बहुत-सा डेस्कटॉप सॉफ़्टवेयर, पुराने फोन, प्रिंट वर्कफ़्लो और अपलोड फॉर्म इसे आज भी ठुकराते हैं।"
+    ],
+    [
+     "AVIF क्या है, और क्या मुझे इसे इस्तेमाल करना चाहिए?",
+     "AVIF, AV1 वीडियो कोडेक के स्थिर-तस्वीर वाले हिस्से का इस्तेमाल करता है और अक्सर JPG के लगभग आधे साइज़ का होता है, 10- और 12-बिट रंग और HDR के साथ। ब्राउज़र सपोर्ट अब व्यापक है, लेकिन आम ऐप्लिकेशन में सपोर्ट WebP के मुक़ाबले ठीकरा-ठीकरा है और एनकोडिंग धीमी है। इसे अपने नियंत्रण वाली साइट की तस्वीरों के लिए इस्तेमाल करें; बाकी हर चीज़ के लिए इसे JPG या PNG में बदल लें।"
+    ]
    ]
   },
   {
@@ -1239,7 +1933,25 @@
    ],
    "tryFrom": "mov",
    "tryTo": "mp4",
-   "seo_title": "MOV to MP4: play iPhone video anywhere"
+   "seo_title": "MOV to MP4: play iPhone video anywhere",
+   "faq": [
+    [
+     "Why won't my MOV video play on Windows or Android?",
+     "Usually because the video inside is HEVC (H.265) rather than H.264, and the player has no HEVC decoder — or because the program checks the extension and declines before it even opens the file. MOV and MP4 are nearly the same container; the difference is what is inside."
+    ],
+    [
+     "What does converting MOV to MP4 actually do?",
+     "It re-encodes the video to H.264 and the audio to AAC, then writes an MP4 — the pair that plays on essentially every device, TV, browser and messaging app. It is a real re-encode: every frame is decoded and encoded again inside your browser, so a two-minute clip takes a minute or two and the tab has to stay open."
+    ],
+    [
+     "Which settings should I use when converting?",
+     "Leave the width at 0 to keep the original size, or set 1280 for a much smaller file that still looks good on a phone. Use 30 frames per second for almost everything; 60 doubles the work. Quality at 85% is the sweet spot, and lower only if the file must be tiny."
+    ],
+    [
+     "How can I make the MP4 smaller?",
+     "Resolution is the biggest lever by a wide margin: setting the width to 1280 takes a 4K clip to roughly a sixteenth of the pixel count, and on a phone screen the result is indistinguishable. Frame rate is second — 60fps footage of someone talking looks exactly the same at 30. Adjust those two before touching bitrate."
+    ]
+   ]
   },
   {
    "slug": "mov-to-mp4-hindi",
@@ -1276,6 +1988,24 @@
     "p:रिज़ॉल्यूशन सबसे बड़ा हथियार है, बड़े फ़र्क से। चौड़ाई 1280 रखने से 4K क्लिप की पिक्सल गिनती मोटे तौर पर सोलहवें हिस्से पर आ जाती है, और फोन की स्क्रीन पर नतीजे में कोई फ़र्क नहीं दिखता। फ्रेम रेट दूसरा है: किसी के बोलने का 60fps फुटेज 30 पर बिल्कुल वैसा ही दिखता है। Bitrate झंझटी वाला है — उसके पास जाने से पहले पहले दो को आज़माएं।",
     "h:ऑडियो पर एक नोट",
     "p:MP4, AAC की उम्मीद करता है। अगर आपकी MOV में बिना दबा PCM ऑडियो है — स्क्रीन रिकॉर्डिंग और कुछ कैमरों में आम — तो कन्वर्ज़न के हिस्से के रूप में आवाज़ AAC में फिर एनकोड होती है, जो सामान्य है और फाइल साइज़ की बचत का हैरान करने वाला बड़ा हिस्सा वहीं से आता है।"
+   ],
+   "faq": [
+    [
+     "मेरा MOV वीडियो Windows या Android पर क्यों नहीं चलता?",
+     "आम तौर पर इसलिए कि अंदर का वीडियो H.264 के बजाय HEVC (H.265) होता है, और प्लेयर के पास HEVC डिकोडर नहीं होता — या इसलिए कि प्रोग्राम एक्सटेंशन जांचकर फाइल खोलने से पहले ही मना कर देता है। MOV और MP4 लगभग एक जैसे कंटेनर हैं; अंतर अंदर की चीज़ में है।"
+    ],
+    [
+     "MOV को MP4 में बदलने से असल में होता क्या है?",
+     "यह वीडियो को H.264 में और ऑडियो को AAC में फिर से एनकोड करता है, फिर एक MP4 लिखता है — वह जोड़ी जो लगभग हर डिवाइस, TV, ब्राउज़र और मैसेजिंग ऐप पर चलती है। यह असली re-encode है: हर फ्रेम आपके ब्राउज़र के अंदर डिकोड और फिर एनकोड होता है, इसलिए दो मिनट की क्लिप में एक-दो मिनट लगते हैं और टैब खुला रखना पड़ता है।"
+    ],
+    [
+     "कन्वर्ट करते समय कौन-सी सेटिंग इस्तेमाल करूं?",
+     "चौड़ाई 0 छोड़ें तो साइज़ वैसा ही रहेगा, या 1280 रखें तो फाइल काफ़ी छोटी होगी और फोन पर फिर भी अच्छी दिखेगी। फ्रेम प्रति सेकंड लगभग हर चीज़ के लिए 30 सही है; 60 काम दोगुना कर देता है। क्वालिटी 85% सबसे सही जगह है, और फाइल बहुत छोटी चाहिए तभी और कम करें।"
+    ],
+    [
+     "MP4 को और छोटा कैसे करूं?",
+     "रिज़ॉल्यूशन सबसे बड़ा हथियार है, बड़े फ़र्क से: चौड़ाई 1280 रखने से 4K क्लिप की पिक्सल गिनती मोटे तौर पर सोलहवें हिस्से पर आ जाती है, और फोन की स्क्रीन पर नतीजे में कोई फ़र्क नहीं दिखता। फ्रेम रेट दूसरा है — किसी के बोलने का 60fps फुटेज 30 पर बिल्कुल वैसा ही दिखता है। Bitrate के पास जाने से पहले पहले दो को आज़माएं।"
+    ]
    ]
   },
   {
@@ -1311,7 +2041,25 @@
    ],
    "tryFrom": "csv",
    "tryTo": "xlsx",
-   "seo_title": "CSV vs Excel: when to convert"
+   "seo_title": "CSV vs Excel: when to convert",
+   "faq": [
+    [
+     "Why do leading zeros disappear when I open a CSV in Excel?",
+     "Because Excel decides the column is numeric and makes it a number: a postcode like 02139 becomes 2139. The data in the file was never wrong; the interpretation on opening was. Import rather than open — Data, From Text/CSV — and set the column type to Text before the data lands, or convert the CSV to XLSX first so the cell types are recorded in the file."
+    ],
+    [
+     "Why do dates change when I move data between CSV and Excel?",
+     "CSV has no idea what a date is; it is just characters, and 03/04/2026 is 3 April in most of the world and 4 March in the US. Excel also converts anything date-shaped into a date serial, which is destructive: a part number like 3-10 becomes 3 October and the original text is gone once you save. Import identifier columns as Text, every time."
+    ],
+    [
+     "I converted a workbook to CSV and lost four of my five sheets. Why?",
+     "Because CSV can hold one table. Converting a workbook with five sheets to CSV gives you the first one. If you need all of them, convert to PDF or DOCX instead, which puts every sheet in as its own table — or keep the spreadsheet as the master copy and export CSV only when something needs it."
+    ],
+    [
+     "When should I use CSV, and when XLSX?",
+     "Use CSV to move data between systems: imports, exports, databases, scripts, anything where another program is the reader. Use XLSX when a person is the reader, or when formulas, multiple sheets or formatting carry meaning. Use TSV when the data itself is full of commas and quoting keeps going wrong."
+    ]
+   ]
   },
   {
    "slug": "3d-model-to-glb",
@@ -1344,7 +2092,25 @@
    ],
    "tryFrom": "obj",
    "tryTo": "glb",
-   "seo_title": "OBJ and STL to GLB for AR"
+   "seo_title": "OBJ and STL to GLB for AR",
+   "faq": [
+    [
+     "Why do AR viewers ask for GLB?",
+     "Because glTF is the format the AR ecosystem has standardised on, and GLB is its single-file binary form: a JSON description of the scene plus the vertex data packed into one file, so nothing can go missing. Android's Scene Viewer takes glTF and GLB, and the web, via model-viewer and essentially every WebGL engine, takes GLB."
+    ],
+    [
+     "What is lost when I convert an OBJ or STL to GLB here?",
+     "Materials, textures and animations. The converter carries the geometry — every vertex and triangle, with node transforms applied — and does not read an OBJ's .mtl file or its texture images. The result is a clean grey mesh, which is exactly what you want as a starting point for assigning your own material in a viewer or engine."
+    ],
+    [
+     "My converted model appears huge in the AR viewer. Why?",
+     "Scale. glTF defines its units as metres, while STL files are unitless and the 3D printing world treats the numbers as millimetres, so a model authored for printing usually arrives a thousand times too large. If your model appears vast, or vanishes entirely, scale is almost always why — not the conversion. Check the scale in your viewer; most let you set it in one field."
+    ],
+    [
+     "Can I convert a GLB back to STL for printing?",
+     "Yes. GLB to STL is useful for printing a model that only exists as a glTF; node transforms are baked in, so the printed part comes out at the pose you see in the viewer. Check the result in your slicer first: slicers want a closed, manifold surface, and a model built for display often is not one."
+    ]
+   ]
   }
  ],
  "SUPPORT": {

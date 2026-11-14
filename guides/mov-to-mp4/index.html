@@ -21,6 +21,7 @@
 <meta name="cf-guide" content="mov-to-mp4"><link rel="alternate" hreflang="en" href="https://convertfiles.in/guides/mov-to-mp4/"><link rel="alternate" hreflang="hi" href="https://convertfiles.in/hi/guides/mov-to-mp4-hindi/"><link rel="alternate" hreflang="x-default" href="https://convertfiles.in/guides/mov-to-mp4/">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://convertfiles.in/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://convertfiles.in/guides/"}, {"@type": "ListItem", "position": 3, "name": "MOV to MP4: making iPhone and Mac videos play everywhere"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "MOV to MP4: making iPhone and Mac videos play everywhere", "description": "QuickTime MOV and MP4 are near-identical containers, so why does one play everywhere and the other not?", "author": {"@type": "Organization", "name": "Convert Files"}, "publisher": {"@type": "Organization", "name": "Convert Files"}, "mainEntityOfPage": "https://convertfiles.in/guides/mov-to-mp4/", "image": "https://convertfiles.in/assets/og.png"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why won't my MOV video play on Windows or Android?", "acceptedAnswer": {"@type": "Answer", "text": "Usually because the video inside is HEVC (H.265) rather than H.264, and the player has no HEVC decoder — or because the program checks the extension and declines before it even opens the file. MOV and MP4 are nearly the same container; the difference is what is inside."}}, {"@type": "Question", "name": "What does converting MOV to MP4 actually do?", "acceptedAnswer": {"@type": "Answer", "text": "It re-encodes the video to H.264 and the audio to AAC, then writes an MP4 — the pair that plays on essentially every device, TV, browser and messaging app. It is a real re-encode: every frame is decoded and encoded again inside your browser, so a two-minute clip takes a minute or two and the tab has to stay open."}}, {"@type": "Question", "name": "Which settings should I use when converting?", "acceptedAnswer": {"@type": "Answer", "text": "Leave the width at 0 to keep the original size, or set 1280 for a much smaller file that still looks good on a phone. Use 30 frames per second for almost everything; 60 doubles the work. Quality at 85% is the sweet spot, and lower only if the file must be tiny."}}, {"@type": "Question", "name": "How can I make the MP4 smaller?", "acceptedAnswer": {"@type": "Answer", "text": "Resolution is the biggest lever by a wide margin: setting the width to 1280 takes a 4K clip to roughly a sixteenth of the pixel count, and on a phone screen the result is indistinguishable. Frame rate is second — 60fps footage of someone talking looks exactly the same at 30. Adjust those two before touching bitrate."}}]}</script>
 <!-- /page:meta -->
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -28,7 +29,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=9ec93b09">
+<link rel="stylesheet" href="/css/app.css?v=de028318">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": {"client": "ca-pub-3081346168059285", "slots": {"result": "8055560270", "home": "4307886954", "article": "3651168992"}}};</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3081346168059285" crossorigin="anonymous"></script>
@@ -247,6 +248,7 @@
 <p>Resolution is the biggest lever by a wide margin. Setting the width to 1280 takes a 4K clip to roughly a sixteenth of the pixel count, and on a phone screen the result is indistinguishable. Frame rate is the second: 60fps footage of someone talking looks exactly the same at 30. Bitrate is the fiddly one &mdash; adjust the first two before reaching for it.</p>
 <h2>A note on audio</h2>
 <p>MP4 expects AAC. If your MOV carries uncompressed PCM audio &mdash; common from screen recordings and some cameras &mdash; the sound is re-encoded to AAC as part of the conversion, which is normal and is where a surprising amount of the file size saving comes from.</p></div>
+<h2>Questions</h2><dl class="faq-list"><dt>Why won&#x27;t my MOV video play on Windows or Android?</dt><dd>Usually because the video inside is HEVC (H.265) rather than H.264, and the player has no HEVC decoder — or because the program checks the extension and declines before it even opens the file. MOV and MP4 are nearly the same container; the difference is what is inside.</dd><dt>What does converting MOV to MP4 actually do?</dt><dd>It re-encodes the video to H.264 and the audio to AAC, then writes an MP4 — the pair that plays on essentially every device, TV, browser and messaging app. It is a real re-encode: every frame is decoded and encoded again inside your browser, so a two-minute clip takes a minute or two and the tab has to stay open.</dd><dt>Which settings should I use when converting?</dt><dd>Leave the width at 0 to keep the original size, or set 1280 for a much smaller file that still looks good on a phone. Use 30 frames per second for almost everything; 60 doubles the work. Quality at 85% is the sweet spot, and lower only if the file must be tiny.</dd><dt>How can I make the MP4 smaller?</dt><dd>Resolution is the biggest lever by a wide margin: setting the width to 1280 takes a 4K clip to roughly a sixteenth of the pixel count, and on a phone screen the result is indistinguishable. Frame rate is second — 60fps footage of someone talking looks exactly the same at 30. Adjust those two before touching bitrate.</dd></dl>
 <div class="try"><span class="t">Try it: convert a .mov to .mp4 — free, in your browser.</span><a class="btn primary" href="/mov-to-mp4/">Convert .mov to .mp4</a></div></article>
   </section>
 
@@ -279,13 +281,13 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script defer src="/js/formats.js?v=9ec93b09"></script>
-<script defer src="/js/encoders.js?v=9ec93b09"></script>
-<script defer src="/js/docmodel.js?v=9ec93b09"></script>
-<script defer src="/js/convert.js?v=9ec93b09"></script>
-<script defer src="/js/db.js?v=9ec93b09"></script>
-<script defer src="/js/lang.js?v=9ec93b09"></script>
-<script defer src="/js/content.js?v=9ec93b09"></script>
-<script defer src="/js/app.js?v=9ec93b09"></script>
+<script defer src="/js/formats.js?v=de028318"></script>
+<script defer src="/js/encoders.js?v=de028318"></script>
+<script defer src="/js/docmodel.js?v=de028318"></script>
+<script defer src="/js/convert.js?v=de028318"></script>
+<script defer src="/js/db.js?v=de028318"></script>
+<script defer src="/js/lang.js?v=de028318"></script>
+<script defer src="/js/content.js?v=de028318"></script>
+<script defer src="/js/app.js?v=de028318"></script>
 </body>
 </html>

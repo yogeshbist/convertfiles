@@ -21,6 +21,7 @@
 <meta name="cf-guide" content="3d-model-to-glb">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://convertfiles.in/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://convertfiles.in/guides/"}, {"@type": "ListItem", "position": 3, "name": "Getting a 3D model into AR: OBJ and STL to GLB"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Getting a 3D model into AR: OBJ and STL to GLB", "description": "Android Scene Viewer, web AR and most engines want glTF. Here is how the older formats map onto it.", "author": {"@type": "Organization", "name": "Convert Files"}, "publisher": {"@type": "Organization", "name": "Convert Files"}, "mainEntityOfPage": "https://convertfiles.in/guides/3d-model-to-glb/", "image": "https://convertfiles.in/assets/og.png"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do AR viewers ask for GLB?", "acceptedAnswer": {"@type": "Answer", "text": "Because glTF is the format the AR ecosystem has standardised on, and GLB is its single-file binary form: a JSON description of the scene plus the vertex data packed into one file, so nothing can go missing. Android's Scene Viewer takes glTF and GLB, and the web, via model-viewer and essentially every WebGL engine, takes GLB."}}, {"@type": "Question", "name": "What is lost when I convert an OBJ or STL to GLB here?", "acceptedAnswer": {"@type": "Answer", "text": "Materials, textures and animations. The converter carries the geometry — every vertex and triangle, with node transforms applied — and does not read an OBJ's .mtl file or its texture images. The result is a clean grey mesh, which is exactly what you want as a starting point for assigning your own material in a viewer or engine."}}, {"@type": "Question", "name": "My converted model appears huge in the AR viewer. Why?", "acceptedAnswer": {"@type": "Answer", "text": "Scale. glTF defines its units as metres, while STL files are unitless and the 3D printing world treats the numbers as millimetres, so a model authored for printing usually arrives a thousand times too large. If your model appears vast, or vanishes entirely, scale is almost always why — not the conversion. Check the scale in your viewer; most let you set it in one field."}}, {"@type": "Question", "name": "Can I convert a GLB back to STL for printing?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. GLB to STL is useful for printing a model that only exists as a glTF; node transforms are baked in, so the printed part comes out at the pose you see in the viewer. Check the result in your slicer first: slicers want a closed, manifold surface, and a model built for display often is not one."}}]}</script>
 <!-- /page:meta -->
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -28,7 +29,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=9ec93b09">
+<link rel="stylesheet" href="/css/app.css?v=de028318">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": {"client": "ca-pub-3081346168059285", "slots": {"result": "8055560270", "home": "4307886954", "article": "3651168992"}}};</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3081346168059285" crossorigin="anonymous"></script>
@@ -246,6 +247,7 @@
 <p>Going the other way &mdash; GLB or glTF down to STL &mdash; deliberately throws away everything except the shape, which is exactly what a slicer wants.</p>
 <h2>Before you send it to a printer</h2>
 <p>Geometry that looks right in a viewer is not automatically printable. Slicers want a closed, manifold surface: no holes, no faces pointing the wrong way, no edges shared by three triangles. A model built for display often fails all three, because none of it matters when you are only ever looking at the outside. Convert first, then check in the slicer, and repair there rather than blaming the conversion.</p></div>
+<h2>Questions</h2><dl class="faq-list"><dt>Why do AR viewers ask for GLB?</dt><dd>Because glTF is the format the AR ecosystem has standardised on, and GLB is its single-file binary form: a JSON description of the scene plus the vertex data packed into one file, so nothing can go missing. Android&#x27;s Scene Viewer takes glTF and GLB, and the web, via model-viewer and essentially every WebGL engine, takes GLB.</dd><dt>What is lost when I convert an OBJ or STL to GLB here?</dt><dd>Materials, textures and animations. The converter carries the geometry — every vertex and triangle, with node transforms applied — and does not read an OBJ&#x27;s .mtl file or its texture images. The result is a clean grey mesh, which is exactly what you want as a starting point for assigning your own material in a viewer or engine.</dd><dt>My converted model appears huge in the AR viewer. Why?</dt><dd>Scale. glTF defines its units as metres, while STL files are unitless and the 3D printing world treats the numbers as millimetres, so a model authored for printing usually arrives a thousand times too large. If your model appears vast, or vanishes entirely, scale is almost always why — not the conversion. Check the scale in your viewer; most let you set it in one field.</dd><dt>Can I convert a GLB back to STL for printing?</dt><dd>Yes. GLB to STL is useful for printing a model that only exists as a glTF; node transforms are baked in, so the printed part comes out at the pose you see in the viewer. Check the result in your slicer first: slicers want a closed, manifold surface, and a model built for display often is not one.</dd></dl>
 <div class="try"><span class="t">Try it: convert a .obj to .glb — free, in your browser.</span><a class="btn primary" href="/obj-to-glb/">Convert .obj to .glb</a></div></article>
   </section>
 
@@ -278,13 +280,13 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script defer src="/js/formats.js?v=9ec93b09"></script>
-<script defer src="/js/encoders.js?v=9ec93b09"></script>
-<script defer src="/js/docmodel.js?v=9ec93b09"></script>
-<script defer src="/js/convert.js?v=9ec93b09"></script>
-<script defer src="/js/db.js?v=9ec93b09"></script>
-<script defer src="/js/lang.js?v=9ec93b09"></script>
-<script defer src="/js/content.js?v=9ec93b09"></script>
-<script defer src="/js/app.js?v=9ec93b09"></script>
+<script defer src="/js/formats.js?v=de028318"></script>
+<script defer src="/js/encoders.js?v=de028318"></script>
+<script defer src="/js/docmodel.js?v=de028318"></script>
+<script defer src="/js/convert.js?v=de028318"></script>
+<script defer src="/js/db.js?v=de028318"></script>
+<script defer src="/js/lang.js?v=de028318"></script>
+<script defer src="/js/content.js?v=de028318"></script>
+<script defer src="/js/app.js?v=de028318"></script>
 </body>
 </html>

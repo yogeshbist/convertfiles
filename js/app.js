@@ -1068,6 +1068,7 @@
     gd.body.forEach(function (line) {
       var kind = line.slice(0, 1), text = line.slice(2);
       if (kind === 'h') body.appendChild(el('h2', null, text));
+      else if (kind === 't') { var tb = el('table', 'dates wide'); text.split('||').forEach(function (row, ri) { var tr = el('tr'); row.split('|').forEach(function (c) { tr.appendChild(el(ri ? 'td' : 'th', null, c)); }); tb.appendChild(tr); }); body.appendChild(tb); }
       else if (kind === 'ul') { var ul = el('ul'); text.split('|').forEach(function (t) { var li = el('li'); li.innerHTML = t; ul.appendChild(li); }); body.appendChild(ul); }
       else { var pp = el('p'); pp.innerHTML = text; body.appendChild(pp); }
     });
@@ -1079,6 +1080,12 @@
         paras[1].insertAdjacentElement('afterend', slot);
         adUnit('ad-article', 'article');
       }
+    }
+    if (gd.faq && gd.faq.length) {
+      a.appendChild(el('h2', null, hindi ? 'आम सवाल' : 'Questions'));
+      var dl = el('dl', 'faq-list');
+      gd.faq.forEach(function (qa) { dl.appendChild(el('dt', null, qa[0])); dl.appendChild(el('dd', null, qa[1])); });
+      a.appendChild(dl);
     }
     if (gd.tryTool) {
       var tt = el('div', 'try');

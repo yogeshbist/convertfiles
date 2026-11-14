@@ -21,6 +21,7 @@
 <meta name="cf-guide" content="is-it-safe"><link rel="alternate" hreflang="en" href="https://convertfiles.in/guides/is-it-safe/"><link rel="alternate" hreflang="hi" href="https://convertfiles.in/hi/guides/is-it-safe-hindi/"><link rel="alternate" hreflang="x-default" href="https://convertfiles.in/guides/is-it-safe/">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://convertfiles.in/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://convertfiles.in/guides/"}, {"@type": "ListItem", "position": 3, "name": "Is it safe to convert files online? What “nothing is uploaded” means here"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Is it safe to convert files online? What “nothing is uploaded” means here", "description": "Most converters upload your file to a server. This one never does. Here is how you can check that yourself.", "author": {"@type": "Organization", "name": "Convert Files"}, "publisher": {"@type": "Organization", "name": "Convert Files"}, "mainEntityOfPage": "https://convertfiles.in/guides/is-it-safe/", "image": "https://convertfiles.in/assets/og.png"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is it safe to convert files online here?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, because there is no server-side conversion at all. The page downloads a converter into your browser and runs it on your computer: the file is read from your disk into the browser's memory and the result is written back to your disk. That is the entire path, and nothing about you or your files is sent anywhere."}}, {"@type": "Question", "name": "How can I verify that nothing is uploaded?", "acceptedAnswer": {"@type": "Answer", "text": "Open your browser's developer tools (F12), go to the Network tab, and convert something. You will see the converter libraries being fetched the first time, and nothing else: no upload, no request carrying your file. Or disconnect from the internet after the first conversion of each type; it keeps working."}}, {"@type": "Question", "name": "What data is collected when I convert?", "acceptedAnswer": {"@type": "Answer", "text": "Two things, both counts: that a page was viewed, and that a conversion from one format to another finished or failed. No file names, no file contents, no file sizes, and no identifiers that follow you between visits. If your browser sends Do Not Track or Global Privacy Control, even the counts are skipped."}}, {"@type": "Question", "name": "What is stored after I convert a file?", "acceptedAnswer": {"@type": "Answer", "text": "Only what you can see in the Your files tab, which lives in your own browser's storage on your own device. Clear all removes it. Nothing is kept on a server, because no file ever reaches one."}}]}</script>
 <!-- /page:meta -->
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -28,7 +29,7 @@
 <link rel="manifest" href="/manifest.webmanifest">
 <link rel="preload" href="/assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/css/app.css?v=9ec93b09">
+<link rel="stylesheet" href="/css/app.css?v=de028318">
 <!-- site:head -->
 <script>window.SITE = {"domain": "https://convertfiles.in", "contact": "support@convertfiles.in", "api": "https://convertfiles-api.convertfiles.workers.dev", "ads": {"client": "ca-pub-3081346168059285", "slots": {"result": "8055560270", "home": "4307886954", "article": "3651168992"}}};</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3081346168059285" crossorigin="anonymous"></script>
@@ -245,6 +246,7 @@
 <p>The Network tab test works on any site, not just this one. If you are curious whether a converter uploads, spend the thirty seconds.</p>
 <h2>Where a server genuinely is required</h2>
 <p>Honesty demands the limits. Some conversions are impractical in a browser today: very large video files that exceed available memory, formats whose only implementation is a large native application, and anything needing OCR or a licensed codec. Where that is the case here, the conversion is simply not offered, rather than quietly shipped somewhere else. A pair that is missing is a pair that does not work &mdash; not a pair that works differently.</p></div>
+<h2>Questions</h2><dl class="faq-list"><dt>Is it safe to convert files online here?</dt><dd>Yes, because there is no server-side conversion at all. The page downloads a converter into your browser and runs it on your computer: the file is read from your disk into the browser&#x27;s memory and the result is written back to your disk. That is the entire path, and nothing about you or your files is sent anywhere.</dd><dt>How can I verify that nothing is uploaded?</dt><dd>Open your browser&#x27;s developer tools (F12), go to the Network tab, and convert something. You will see the converter libraries being fetched the first time, and nothing else: no upload, no request carrying your file. Or disconnect from the internet after the first conversion of each type; it keeps working.</dd><dt>What data is collected when I convert?</dt><dd>Two things, both counts: that a page was viewed, and that a conversion from one format to another finished or failed. No file names, no file contents, no file sizes, and no identifiers that follow you between visits. If your browser sends Do Not Track or Global Privacy Control, even the counts are skipped.</dd><dt>What is stored after I convert a file?</dt><dd>Only what you can see in the Your files tab, which lives in your own browser&#x27;s storage on your own device. Clear all removes it. Nothing is kept on a server, because no file ever reaches one.</dd></dl>
 <div class="try"><span class="t">Try it: convert a .pdf to .png — free, in your browser.</span><a class="btn primary" href="/pdf-to-png/">Convert .pdf to .png</a></div></article>
   </section>
 
@@ -277,13 +279,13 @@
 
 <div id="toast" role="status" aria-live="polite"></div>
 
-<script defer src="/js/formats.js?v=9ec93b09"></script>
-<script defer src="/js/encoders.js?v=9ec93b09"></script>
-<script defer src="/js/docmodel.js?v=9ec93b09"></script>
-<script defer src="/js/convert.js?v=9ec93b09"></script>
-<script defer src="/js/db.js?v=9ec93b09"></script>
-<script defer src="/js/lang.js?v=9ec93b09"></script>
-<script defer src="/js/content.js?v=9ec93b09"></script>
-<script defer src="/js/app.js?v=9ec93b09"></script>
+<script defer src="/js/formats.js?v=de028318"></script>
+<script defer src="/js/encoders.js?v=de028318"></script>
+<script defer src="/js/docmodel.js?v=de028318"></script>
+<script defer src="/js/convert.js?v=de028318"></script>
+<script defer src="/js/db.js?v=de028318"></script>
+<script defer src="/js/lang.js?v=de028318"></script>
+<script defer src="/js/content.js?v=de028318"></script>
+<script defer src="/js/app.js?v=de028318"></script>
 </body>
 </html>

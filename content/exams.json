@@ -19637,5 +19637,1514 @@
     "गलत ITI trade से गलत post चुनना"
    ]
   }
+ },
+ {
+  "slug": "jkssb-class-iv-mts",
+  "advt": "Advertisement Notification No. 09 of 2026",
+  "board_en": "Jammu and Kashmir Services Selection Board (JKSSB)",
+  "board_hi": "जम्मू और कश्मीर सेवा चयन बोर्ड (JKSSB)",
+  "portal": "jkssb.nic.in",
+  "posts": 2863,
+  "dates": {
+   "apply_end": "2026-11-27",
+   "apply_start": "2026-10-14",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-27"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://jkssb.nic.in",
+   "notice": null,
+   "site": "https://jkssb.nic.in"
+  },
+  "en": {
+   "name": "JKSSB Class-IV (MTS) & Sanitation Worker Recruitment 2026",
+   "tagline": "2,863 Class-IV (MTS) and Sanitation Worker posts across J&K — Matric/8th pass can apply, maximum qualification 10+2 — last date extended to 27 November 2026.",
+   "qual": "Matric (MTS) / 8th pass (Sanitation Worker); maximum 10+2; J&K domicile",
+   "fees": [
+    "₹600 for General/OM, OBC, RBA and ALC/IB candidates.",
+    "₹500 for SC, ST-1, ST-2, EWS and PwBD candidates. The fee is non-refundable and payable online only (net banking, credit card or debit card). The 11 November extension notice confirms 27 November 2026 for submitting the form — pay the fee along with the form and do not leave it for the last day."
+   ],
+   "fees_short": "₹600 (SC/ST/EWS/PwBD: ₹500)",
+   "specs": [
+    "Live photograph and signature upload: 10–20 KB each, as per the notification.",
+    "Apply for only ONE item number per application — multiple applications for the same item number will be cancelled.",
+    "No correction is allowed after final submission — check every entry, and enter your name, date of birth and parents' names exactly as on the Matriculation Certificate."
+   ],
+   "eligibility": [
+    "2,863 Class-IV (MTS) and Sanitation Worker posts under Advertisement Notification No. 09 of 2026, dated 1 September 2026 — Class-IV (MTS) 2,697 and Sanitation Worker 166 — across UT Cadre (105), Divisional Cadre Jammu (1,093) and Kashmir (897), and District Cadre (768 across 20 districts). The vacancy count may increase or decrease before the selection process ends.",
+    "Only domiciles of the Union Territory of Jammu & Kashmir can apply — a valid Domicile Certificate issued on or before the cut-off date is compulsory; there is no route in without it.",
+    "Qualification has BOTH a minimum and a maximum: Class-IV (MTS) — Matriculation (10th) minimum, 10+2 maximum; Sanitation Worker — 8th pass minimum, 10+2 maximum. Anyone holding a qualification above 10+2 is NOT eligible at all.",
+    "Age as on 1 January 2026: maximum 40 years for Open Merit, 43 years for SC/ST-1/ST-2/RBA/ALC-IB/EWS/OBC, and 42 years for PwBD candidates. Ex-servicemen can deduct their Armed Forces service period; casual workers engaged for 5+ years get an additional 5-year relaxation.",
+    "Selection: Objective Type Written Test (MCQs in English only, negative marking of one-fourth mark per wrong answer) followed by Document Verification. Merit = written-test marks + weightage points (home division/district, no family member in government service, widow/divorced/orphan, casual worker) — the split differs by cadre (UT 85+15, Divisional 80+20, District 75+25).",
+    "Pay: Pay Level SL1, ₹14,800–₹47,100."
+   ],
+   "dos": [
+    "Apply on jkssb.nic.in before 27 November 2026 — the window was extended on 11 November 2026.",
+    "Check the maximum-qualification rule first — a qualification above 10+2 makes you ineligible, even with a Matric pass.",
+    "Keep your J&K Domicile Certificate ready — it must be issued on or before the cut-off date.",
+    "Choose the right item number (Annexure-A) for your cadre and department before applying.",
+    "Pay ₹600 (General/OM/OBC/RBA/ALC-IB) or ₹500 (SC/ST/EWS/PwBD) online along with the form."
+   ],
+   "donts": [
+    "Do not apply if you hold a qualification above 10+2 — your candidature will be rejected at any stage.",
+    "Do not submit two applications for the same item number — both will be cancelled.",
+    "Do not apply without a J&K domicile — non-domiciles cannot apply at all.",
+    "Do not expect a correction window — no change is allowed after final submission.",
+    "Do not wait for the last day — the portal slows down badly in the final hours."
+   ],
+   "checklist": [
+    "J&K Domicile Certificate (issued on or before the cut-off date)",
+    "Matriculation (10th) certificate / 8th pass certificate",
+    "Category certificate (SC/ST/OBC/EWS/RBA/ALC-IB), if applicable",
+    "Live photograph and signature (10–20 KB each)",
+    "Weightage-proof certificates, if claiming any (no-government-family-member, widow/divorced/orphan, casual worker)",
+    "Debit card / net banking ready for the online fee"
+   ],
+   "documents": [
+    "Matriculation (10th) / 8th pass certificate and marksheet",
+    "J&K Domicile Certificate",
+    "Category certificate (SC/ST/OBC/EWS/RBA/ALC-IB), if applicable",
+    "PwBD certificate, if applicable",
+    "Weightage-proof certificates, if claiming any",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "10+2 se upar ki qualification hokar bhi apply karna",
+    "Ek hi item number ke liye do applications bharna",
+    "Bina J&K domicile ke apply karna",
+    "Form submit karke correction ki ummeed rakhna"
+   ],
+   "steps": [
+    "jkssb.nic.in par Advertisement Notification No. 09 of 2026 padho — Annexure-A me apne cadre aur department ka item number note karo.",
+    "Online portal par register/login karo aur apna item number chuno.",
+    "Form bharo — naam, date of birth aur parents' names Matriculation Certificate jaisi hi likho.",
+    "Live photograph aur signature (10–20 KB each) upload karo.",
+    "₹600 (General/OM/OBC/RBA/ALC-IB) ya ₹500 (SC/ST/EWS/PwBD) शुल्क ऑनलाइन भरो।",
+    "Form submit karo, printout nikalo — 27 November 2026 se pehle poora karo; likhit pariksha ki date alag se ghoshit hogi."
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in JKSSB Class-IV Recruitment 2026?",
+     "a": "2,863 posts — Class-IV (MTS) 2,697 and Sanitation Worker 166 — under Advertisement Notification No. 09 of 2026, across UT Cadre (105), Divisional Cadre Jammu (1,093) and Kashmir (897), and District Cadre (768 across 20 districts)."
+    },
+    {
+     "q": "What is the maximum qualification for JKSSB Class-IV MTS?",
+     "a": "10+2 is the MAXIMUM qualification for both posts — MTS needs Matriculation minimum and Sanitation Worker needs 8th pass minimum. Anyone holding a qualification above 10+2 is not eligible at all."
+    },
+    {
+     "q": "What is the last date to apply for JKSSB Class-IV 2026?",
+     "a": "27 November 2026 — the last date was extended from 12 November 2026 by a notice dated 11 November 2026. The fee should be paid along with the form, before the same date."
+    },
+    {
+     "q": "Can non-domiciles of J&K apply for JKSSB Class-IV?",
+     "a": "No. Only domiciles of the Union Territory of Jammu & Kashmir can apply, with a valid Domicile Certificate issued on or before the cut-off date."
+    }
+   ]
+  },
+  "hi": {
+   "name": "JKSSB क्लास-IV (MTS) और सैनिटेशन वर्कर भर्ती 2026",
+   "tagline": "जम्मू-कश्मीर में 2,863 क्लास-IV (MTS) और सैनिटेशन वर्कर पद — मैट्रिक/8वीं पास apply कर सकते हैं, अधिकतम योग्यता 10+2 — अंतिम तिथि बढ़कर 27 नवंबर 2026।",
+   "qual": "मैट्रिक (MTS) / 8वीं पास (सैनिटेशन वर्कर); अधिकतम 10+2; J&K domicile",
+   "fees": [
+    "सामान्य/OM, OBC, RBA और ALC/IB उम्मीदवारों के लिए ₹600।",
+    "SC, ST-1, ST-2, EWS और PwBD उम्मीदवारों के लिए ₹500। शुल्क वापस नहीं होगा और सिर्फ़ ऑनलाइन भुगतान होगा (नेट बैंकिंग, क्रेडिट कार्ड या डेबिट कार्ड)। 11 नवंबर के extension notice में form जमा करने की तिथि 27 नवंबर 2026 confirm की गई है — शुल्क form के साथ ही भरो, aakhri din पर मत छोड़ो।"
+   ],
+   "fees_short": "₹600 (SC/ST/EWS/PwBD: ₹500)",
+   "specs": [
+    "Live photograph और signature upload: 10–20 KB प्रत्येक, अधिसूचना के अनुसार।",
+    "एक application में सिर्फ़ ONE item number के लिए apply करो — एक ही item number के लिए multiple applications रद्द हो जाएँगी।",
+    "Final submission के बाद कोई correction नहीं होगी — हर entry check करके submit करो, और नाम, जन्म तिथि और माता-पिता के नाम Matriculation Certificate जैसे ही लिखो।"
+   ],
+   "eligibility": [
+    "Advertisement Notification No. 09 of 2026, दिनांक 1 सितंबर 2026 के तहत 2,863 क्लास-IV (MTS) और सैनिटेशन वर्कर पद — क्लास-IV (MTS) 2,697 और सैनिटेशन वर्कर 166 — UT कैडर (105), डिवीजनल कैडर जम्मू (1,093) और कश्मीर (897), और जिला कैडर (20 जिलों में 768) में। चयन प्रक्रिया खत्म होने से पहले रिक्तियों की संख्या बढ़ या घट सकती है।",
+    "सिर्फ़ जम्मू और कश्मीर केंद्र शासित प्रदेश के domicile ही apply कर सकते हैं — cut-off date तक जारी वैध Domicile Certificate अनिवार्य है; इसके बिना कोई रास्ता नहीं है।",
+    "योग्यता में न्यूनतम और अधिकतम दोनों हैं: क्लास-IV (MTS) — न्यूनतम मैट्रिक (10वीं), अधिकतम 10+2; सैनिटेशन वर्कर — न्यूनतम 8वीं पास, अधिकतम 10+2। 10+2 से ऊपर की योग्यता रखने वाला कोई भी उम्मीदवार eligible नहीं है।",
+    "उम्र 1 जनवरी 2026 को: अधिकतम 40 वर्ष Open Merit के लिए, 43 वर्ष SC/ST-1/ST-2/RBA/ALC-IB/EWS/OBC के लिए, और 42 वर्ष PwBD उम्मीदवारों के लिए। Ex-servicemen अपनी Armed Forces service की अवधि घटा सकते हैं; 5+ साल से engaged casual workers को अतिरिक्त 5 साल की छूट मिलती है।",
+    "चयन: Objective Type लिखित परीक्षा (सिर्फ़ English में MCQ, हर गलत उत्तर पर एक-चौथाई अंक की negative marking) फिर Document Verification। Merit = लिखित परीक्षा के अंक + weightage points (home division/district, परिवार में कोई सरकारी कर्मचारी नहीं, विधवा/तलाकशुदा/अनाथ, casual worker) — विभाजन कैडर के हिसाब से अलग है (UT 85+15, डिवीजनल 80+20, जिला 75+25)।",
+    "वेतन: Pay Level SL1, ₹14,800–₹47,100।"
+   ],
+   "dos": [
+    "27 नवंबर 2026 से पहले jkssb.nic.in पर apply करो — window 11 नवंबर 2026 को बढ़ाई गई थी।",
+    "पहले maximum-qualification का नियम check करो — 10+2 से ऊपर की योग्यता होने पर तुम ineligible हो, मैट्रिक पास होने के बावजूद।",
+    "अपना J&K Domicile Certificate ready रखो — यह cut-off date तक जारी होना चाहिए।",
+    "Apply करने से पहले Annexure-A से अपने कैडर और विभाग का सही item number चुनो।",
+    "₹600 (सामान्य/OM/OBC/RBA/ALC-IB) या ₹500 (SC/ST/EWS/PwBD) शुल्क form के साथ ऑनलाइन भरो।"
+   ],
+   "donts": [
+    "10+2 से ऊपर की योग्यता होने पर apply मत करो — तुम्हारी candidature किसी भी stage पर reject हो जाएगी।",
+    "एक ही item number के लिए दो applications मत भरो — दोनों रद्द हो जाएँगी।",
+    "बिना J&K domicile के apply मत करो — non-domicile बिल्कुल apply नहीं कर सकते।",
+    "Correction window की उम्मीद मत रखो — final submission के बाद कोई बदलाव नहीं होगा।",
+    "Aakhri din tak intezaar mat karo — portal aakhri ghanton me bahut slow हो जाता है।"
+   ],
+   "checklist": [
+    "J&K Domicile Certificate (cut-off date तक जारी)",
+    "मैट्रिक (10वीं) certificate / 8वीं पास certificate",
+    "श्रेणी certificate (SC/ST/OBC/EWS/RBA/ALC-IB), यदि लागू हो",
+    "Live photograph और signature (10–20 KB प्रत्येक)",
+    "Weightage-proof certificates, यदि कोई claim कर रहे हो (परिवार में कोई सरकारी कर्मचारी नहीं, विधवा/तलाकशुदा/अनाथ, casual worker)",
+    "ऑनलाइन शुल्क के लिए डेबिट कार्ड / नेट बैंकिंग ready"
+   ],
+   "documents": [
+    "मैट्रिक (10वीं) / 8वीं पास certificate और marksheet",
+    "J&K Domicile Certificate",
+    "श्रेणी certificate (SC/ST/OBC/EWS/RBA/ALC-IB), यदि लागू हो",
+    "PwBD certificate, यदि लागू हो",
+    "Weightage-proof certificates, यदि कोई claim कर रहे हो",
+    "आधार कार्ड"
+   ],
+   "steps": [
+    "jkssb.nic.in पर Advertisement Notification No. 09 of 2026 पढ़ो — Annexure-A में अपने कैडर और विभाग का item number note करो।",
+    "Online portal पर register/login करो और अपना item number चुनो।",
+    "Form भरो — नाम, जन्म तिथि और माता-पिता के नाम Matriculation Certificate जैसे ही लिखो।",
+    "Live photograph और signature (10–20 KB प्रत्येक) upload करो।",
+    "₹600 (सामान्य/OM/OBC/RBA/ALC-IB) या ₹500 (SC/ST/EWS/PwBD) शुल्क ऑनलाइन भरो।",
+    "Form submit करो, printout निकालो — 27 नवंबर 2026 से पहले पूरा करो; लिखित परीक्षा की तारीख अलग से घोषित होगी।"
+   ],
+   "extra_faq": [
+    {
+     "q": "JKSSB क्लास-IV भर्ती 2026 में कितनी रिक्तियाँ हैं?",
+     "a": "2,863 पद — क्लास-IV (MTS) 2,697 और सैनिटेशन वर्कर 166 — Advertisement Notification No. 09 of 2026 के तहत, UT कैडर (105), डिवीजनल कैडर जम्मू (1,093) और कश्मीर (897), और जिला कैडर (20 जिलों में 768) में।"
+    },
+    {
+     "q": "JKSSB क्लास-IV MTS के लिए अधिकतम योग्यता क्या है?",
+     "a": "दोनों पदों के लिए अधिकतम योग्यता 10+2 है — MTS के लिए न्यूनतम मैट्रिक और सैनिटेशन वर्कर के लिए न्यूनतम 8वीं पास। 10+2 से ऊपर की योग्यता रखने वाला कोई भी eligible नहीं है।"
+    },
+    {
+     "q": "JKSSB क्लास-IV 2026 के लिए apply की अंतिम तिथि क्या है?",
+     "a": "27 नवंबर 2026 — अंतिम तिथि 11 नवंबर 2026 के notice से 12 नवंबर से बढ़ाकर 27 नवंबर कर दी गई थी। शुल्क form के साथ ही, उसी तारीख से पहले भरो।"
+    },
+    {
+     "q": "क्या J&K के non-domicile JKSSB क्लास-IV के लिए apply कर सकते हैं?",
+     "a": "नहीं। सिर्फ़ जम्मू और कश्मीर केंद्र शासित प्रदेश के domicile ही apply कर सकते हैं, cut-off date तक जारी वैध Domicile Certificate के साथ।"
+    }
+   ],
+   "kit": [
+    {
+     "title": "पासपोर्ट फोटो ready रखो",
+     "text": "नयी सफेद-background वाली रंगीन फोटो scan करके रखो; बड़ी file को यहीं छोटी कर सकते हो।",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates एक PDF में जोड़ो",
+     "text": "सारे documents को एक साफ़ PDF में जोड़कर upload के लिए ready रखो।",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "10+2 से ऊपर की योग्यता होकर भी apply करना",
+    "एक ही item number के लिए दो applications भरना",
+    "बिना J&K domicile के apply करना",
+    "Form submit करके correction की उम्मीद रखना"
+   ]
+  }
+ },
+ {
+  "slug": "vmmc-safdarjung-senior-resident",
+  "advt": "Advt. No. ACDM-13015/1/2026-ACAD-VMMC",
+  "board_en": "Vardhman Mahavir Medical College & Safdarjung Hospital, New Delhi",
+  "board_hi": "वर्धमान महावीर मेडिकल कॉलेज और सफदरजंग अस्पताल, नई दिल्ली",
+  "portal": "vmmc-sjh.mohfw.gov.in",
+  "posts": 470,
+  "dates": {
+   "apply_end": "2026-11-25",
+   "apply_start": "2026-11-10",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-25"
+  },
+  "photo_kind": "upload",
+  "note_en": "Senior Resident is a regular post under the Government of India's Residency Scheme, but the tenure is 3 years (initially 1 year, extendable yearly) — it is not a permanent appointment.",
+  "note_hi": "सीनियर रेजिडेंट भारत सरकार की Residency Scheme के तहत regular post है, लेकिन tenure 3 साल का है (शुरुआत में 1 साल, हर साल बढ़ाया जा सकता है) — यह permanent नियुक्ति नहीं है।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://vmmc-sjh.mohfw.gov.in",
+   "notice": null,
+   "site": "https://vmmc-sjh.mohfw.gov.in"
+  },
+  "en": {
+   "name": "VMMC & Safdarjung Hospital Senior Resident Recruitment 2026",
+   "tagline": "470 regular Senior Resident posts in 42 departments — MBBS with PG Degree/Diploma/DNB — offline applications 10–25 November 2026.",
+   "qual": "MBBS + PG Degree/Diploma/DNB (NMC-recognised) + Delhi Medical Council registration",
+   "fees": [
+    "₹1,200 for General, EWS and OBC candidates — non-refundable, pay by NEFT/RTGS/IMPS/UPI and attach the payment receipt with the application form.",
+    "No fee for SC, ST and PwD candidates."
+   ],
+   "fees_short": "₹1,200 (SC/ST/PwD: nil)",
+   "specs": [
+    "The application is OFFLINE — fill the Annexure-I form and submit it by hand or by post at the hospital dispatch section; there is no online form.",
+    "Apply for only ONE department/specialty — only one application per candidate is allowed.",
+    "The crucial date for age and qualification is the last date of submission, 25 November 2026 — your PG examination must be passed on or before that date."
+   ],
+   "eligibility": [
+    "470 regular Senior Resident posts under Advt. No. ACDM-13015/1/2026-ACAD-VMMC, dated 6 November 2026 — 439 at VMMC & Safdarjung Hospital and 31 at its satellite centre, the Rural Health Training Centre (RHTC), Najafgarh — across 42 departments/specialties, for a tenure of 3 years under the Residency Scheme of the Government of India.",
+    "Qualification: MBBS with a PG Degree, Diploma or DNB in the concerned specialty, recognised by the National Medical Commission (NMC); permanent registration with the Delhi Medical Council (DMC) is mandatory before joining. The two Dental Surgery posts need MDS in Oral Surgery or Periodontics recognised by DCI, with Delhi Dental Council registration.",
+    "Age (maximum, as on 25 November 2026): 45 years for General/EWS, 48 years for OBC, 50 years for SC/ST; relaxable for PwBD candidates as per Government of India rules. Total Senior Resident tenure cannot exceed 3 years, including any prior service.",
+    "Selection: Screening Test followed by departmental assessment/interview — the screening test date has not been announced in the notice.",
+    "Pay: ₹67,700 per month in Pay Level-11 (7th CPC) plus admissible allowances."
+   ],
+   "dos": [
+    "Download the Annexure-I form from vmmc-sjh.mohfw.gov.in and fill it carefully — the application is offline only.",
+    "Apply for only ONE department/specialty — your single best-matching one.",
+    "Attach the fee payment receipt (₹1,200, General/EWS/OBC) with the form — a form without the receipt is summarily rejected.",
+    "Submit the form by hand or by post so it reaches the hospital dispatch section by 25 November 2026, 3:00 PM.",
+    "Check that your PG examination is passed on or before 25 November 2026."
+   ],
+   "donts": [
+    "Do not treat this as a permanent appointment — the tenure is 3 years under the Residency Scheme.",
+    "Do not apply for two departments — only one application per candidate is allowed.",
+    "Do not send the form without the fee receipt (General/EWS/OBC) — it will be rejected.",
+    "Do not post the form late — the last date is 25 November 2026, 3:00 PM, and late forms are not accepted."
+   ],
+   "checklist": [
+    "Annexure-I application form downloaded from vmmc-sjh.mohfw.gov.in",
+    "MBBS degree + PG Degree/Diploma/DNB certificate",
+    "Delhi Medical Council / Delhi Dental Council registration proof",
+    "Fee payment receipt (₹1,200, General/EWS/OBC) attached",
+    "Recent colour photograph and signature",
+    "Caste / PwD certificate, if applicable"
+   ],
+   "documents": [
+    "MBBS degree certificate and marksheets",
+    "PG Degree / Diploma / DNB certificate (specialty-wise)",
+    "Delhi Medical Council (DMC) registration certificate",
+    "Caste certificate (SC/ST/OBC/EWS), if applicable",
+    "PwD certificate, if applicable",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Online form dhoondhna — application sirf offline hai",
+    "Do departments ke liye apply karna",
+    "Fee receipt attach kiye bina form bhejna",
+    "25 November 3:00 PM ke baad form bhejna"
+   ],
+   "steps": [
+    "vmmc-sjh.mohfw.gov.in par Advt. No. ACDM-13015/1/2026-ACAD-VMMC padho aur apne department ki yogyata note karo.",
+    "Annexure-I form download karo aur bharo — sirf ONE department/specialty chuno.",
+    "MBBS, PG/DNB aur DMC registration ke documents attach karo.",
+    "₹1,200 शुल्क (General/EWS/OBC) NEFT/RTGS/IMPS/UPI se pay karo aur receipt form ke saath attach karo — SC/ST/PwD ko शुल्क नहीं है।",
+    "Form hospital dispatch section me haath se jama karo ya post se bhejo — 25 November 2026, दोपहर 3:00 बजे से पहले पहुँचना चाहिए।",
+    "Acknowledgement sambhal kar rakho; screening test ki date alag se ghoshit hogi."
+   ],
+   "extra_faq": [
+    {
+     "q": "How many Senior Resident vacancies are there at VMMC & Safdarjung Hospital 2026?",
+     "a": "470 regular Senior Resident posts in 42 departments/specialties — 439 at VMMC & Safdarjung Hospital and 31 at the Rural Health Training Centre (RHTC), Najafgarh — under Advt. No. ACDM-13015/1/2026-ACAD-VMMC."
+    },
+    {
+     "q": "Is the VMMC Senior Resident post permanent?",
+     "a": "No. It is a regular post under the Government of India's Residency Scheme, but the tenure is 3 years (initially 1 year, extendable yearly on a satisfactory report) — it is not a permanent appointment."
+    },
+    {
+     "q": "How do I apply for VMMC Senior Resident 2026?",
+     "a": "Offline only. Download the Annexure-I form from vmmc-sjh.mohfw.gov.in, fill it, attach your documents and the fee receipt, and submit it by hand or by post at the hospital dispatch section by 25 November 2026, 3:00 PM. There is no online form."
+    },
+    {
+     "q": "What is the application fee for VMMC Senior Resident 2026?",
+     "a": "₹1,200 for General, EWS and OBC candidates (non-refundable, pay by NEFT/RTGS/IMPS/UPI and attach the receipt); no fee for SC, ST and PwD candidates."
+    }
+   ]
+  },
+  "hi": {
+   "name": "VMMC और सफदरजंग अस्पताल सीनियर रेजिडेंट भर्ती 2026",
+   "tagline": "42 विभागों में 470 regular सीनियर रेजिडेंट पद — MBBS के साथ PG डिग्री/डिप्लोमा/DNB — offline आवेदन 10–25 नवंबर 2026।",
+   "qual": "MBBS + PG डिग्री/डिप्लोमा/DNB (NMC-मान्यता प्राप्त) + दिल्ली मेडिकल काउंसिल registration",
+   "fees": [
+    "सामान्य, EWS और OBC उम्मीदवारों के लिए ₹1,200 — वापस नहीं होगा, NEFT/RTGS/IMPS/UPI से pay करो और payment receipt आवेदन form के साथ attach करो।",
+    "SC, ST और PwD उम्मीदवारों को कोई शुल्क नहीं है।"
+   ],
+   "fees_short": "₹1,200 (SC/ST/PwD: nil)",
+   "specs": [
+    "आवेदन OFFLINE है — Annexure-I form भरो और अस्पताल के dispatch section में हाथ से जमा करो या डाक से भेजो; कोई online form नहीं है।",
+    "सिर्फ़ ONE department/specialty के लिए apply करो — एक उम्मीदवार का सिर्फ़ एक application allowed है।",
+    "उम्र और योग्यता गिनने की तारीख submission की अंतिम तिथि, 25 नवंबर 2026 है — तुम्हारी PG परीक्षा उस तारीख तक पास होनी चाहिए।"
+   ],
+   "eligibility": [
+    "Advt. No. ACDM-13015/1/2026-ACAD-VMMC, दिनांक 6 नवंबर 2026 के तहत 470 regular सीनियर रेजिडेंट पद — VMMC और सफदरजंग अस्पताल में 439 और उसके satellite centre, Rural Health Training Centre (RHTC), नजफगढ़ में 31 — 42 विभागों/specialties में, भारत सरकार की Residency Scheme के तहत 3 साल की tenure के लिए।",
+    "योग्यता: संबंधित specialty में MBBS के साथ PG डिग्री, डिप्लोमा या DNB, जो National Medical Commission (NMC) से मान्यता प्राप्त हो; joining से पहले Delhi Medical Council (DMC) में permanent registration अनिवार्य है। दो Dental Surgery पदों के लिए DCI से मान्यता प्राप्त Oral Surgery या Periodontics में MDS और Delhi Dental Council में registration चाहिए।",
+    "उम्र (अधिकतम, 25 नवंबर 2026 को): सामान्य/EWS 45 वर्ष, OBC 48 वर्ष, SC/ST 50 वर्ष; PwBD उम्मीदवारों को भारत सरकार के नियमों के अनुसार छूट। कुल सीनियर रेजिडेंट tenure पहले की service मिलाकर 3 साल से ज़्यादा नहीं हो सकती।",
+    "चयन: Screening Test फिर विभागीय assessment/interview — screening test की तारीख अधिसूचना में घोषित नहीं की गई है।",
+    "वेतन: ₹67,700 प्रति माह, Pay Level-11 (7th CPC) में, साथ में admissible allowances।"
+   ],
+   "dos": [
+    "vmmc-sjh.mohfw.gov.in से Annexure-I form download करके ध्यान से भरो — आवेदन सिर्फ़ offline है।",
+    "सिर्फ़ ONE department/specialty के लिए apply करो — अपनी सबसे अच्छी मेल खाती एक।",
+    "शुल्क की payment receipt (₹1,200, सामान्य/EWS/OBC) form के साथ attach करो — बिना receipt के form summarily reject हो जाएगा।",
+    "Form अस्पताल के dispatch section में हाथ से जमा करो या डाक से भेजो, ताकि 25 नवंबर 2026, दोपहर 3:00 बजे तक पहुँच जाए।",
+    "Check करो कि तुम्हारी PG परीक्षा 25 नवंबर 2026 तक पास हो चुकी हो।"
+   ],
+   "donts": [
+    "इसे permanent नियुक्ति मत समझो — tenure Residency Scheme के तहत 3 साल की है।",
+    "दो departments के लिए apply मत करो — एक उम्मीदवार का सिर्फ़ एक application allowed है।",
+    "शुल्क की receipt (सामान्य/EWS/OBC) के बिना form मत भेजो — वह reject हो जाएगा।",
+    "Form देर से मत भेजो — अंतिम तिथि 25 नवंबर 2026, दोपहर 3:00 बजे है, देर से आए form स्वीकार नहीं होंगे।"
+   ],
+   "checklist": [
+    "Annexure-I application form, vmmc-sjh.mohfw.gov.in से download किया हुआ",
+    "MBBS डिग्री + PG डिग्री/डिप्लोमा/DNB certificate",
+    "Delhi Medical Council / Delhi Dental Council registration proof",
+    "शुल्क की payment receipt (₹1,200, सामान्य/EWS/OBC) attach की हुई",
+    "नयी रंगीन फोटो और हस्ताक्षर",
+    "जाति / PwD certificate, यदि लागू हो"
+   ],
+   "documents": [
+    "MBBS डिग्री certificate और marksheets",
+    "PG डिग्री / डिप्लोमा / DNB certificate (specialty के हिसाब से)",
+    "Delhi Medical Council (DMC) registration certificate",
+    "जाति प्रमाणपत्र (SC/ST/OBC/EWS), यदि लागू हो",
+    "PwD प्रमाणपत्र, यदि लागू हो",
+    "आधार कार्ड"
+   ],
+   "steps": [
+    "vmmc-sjh.mohfw.gov.in पर Advt. No. ACDM-13015/1/2026-ACAD-VMMC पढ़ो और अपने department की योग्यता note करो।",
+    "Annexure-I form download करो और भरो — सिर्फ़ ONE department/specialty चुनो।",
+    "MBBS, PG/DNB और DMC registration के documents attach करो।",
+    "₹1,200 शुल्क (सामान्य/EWS/OBC) NEFT/RTGS/IMPS/UPI से pay करो और receipt form के साथ attach करो — SC/ST/PwD को शुल्क नहीं है।",
+    "Form अस्पताल के dispatch section में हाथ से जमा करो या डाक से भेजो — 25 नवंबर 2026, दोपहर 3:00 बजे से पहले पहुँचना चाहिए।",
+    "Acknowledgement संभाल कर रखो; screening test की तारीख अलग से घोषित होगी।"
+   ],
+   "extra_faq": [
+    {
+     "q": "VMMC और सफदरजंग अस्पताल 2026 में सीनियर रेजिडेंट की कितनी रिक्तियाँ हैं?",
+     "a": "42 विभागों/specialties में 470 regular सीनियर रेजिडेंट पद — VMMC और सफदरजंग अस्पताल में 439 और Rural Health Training Centre (RHTC), नजफगढ़ में 31 — Advt. No. ACDM-13015/1/2026-ACAD-VMMC के तहत।"
+    },
+    {
+     "q": "क्या VMMC सीनियर रेजिडेंट post permanent है?",
+     "a": "नहीं। यह भारत सरकार की Residency Scheme के तहत regular post है, लेकिन tenure 3 साल की है (शुरुआत में 1 साल, संतोषजनक रिपोर्ट पर हर साल बढ़ाई जा सकती है) — यह permanent नियुक्ति नहीं है।"
+    },
+    {
+     "q": "VMMC सीनियर रेजिडेंट 2026 के लिए कैसे apply करें?",
+     "a": "सिर्फ़ offline। vmmc-sjh.mohfw.gov.in से Annexure-I form download करो, भरो, documents और शुल्क की receipt attach करो, और 25 नवंबर 2026, दोपहर 3:00 बजे तक अस्पताल के dispatch section में हाथ से जमा करो या डाक से भेजो। कोई online form नहीं है।"
+    },
+    {
+     "q": "VMMC सीनियर रेजिडेंट 2026 का आवेदन शुल्क क्या है?",
+     "a": "सामान्य, EWS और OBC उम्मीदवारों के लिए ₹1,200 (वापस नहीं होगा, NEFT/RTGS/IMPS/UPI से pay करके receipt attach करो); SC, ST और PwD उम्मीदवारों को कोई शुल्क नहीं है।"
+    }
+   ],
+   "kit": [
+    {
+     "title": "पासपोर्ट फोटो ready रखो",
+     "text": "नयी सफेद-background वाली रंगीन फोटो scan करके रखो; बड़ी file को यहीं छोटी कर सकते हो।",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates एक PDF में जोड़ो",
+     "text": "सारे documents को एक साफ़ PDF में जोड़कर upload के लिए ready रखो।",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Online form ढूँढना — आवेदन सिर्फ़ offline है",
+    "दो departments के लिए apply करना",
+    "शुल्क की receipt attach किए बिना form भेजना",
+    "25 नवंबर दोपहर 3:00 बजे के बाद form भेजना"
+   ]
+  }
+ },
+ {
+  "slug": "igims-junior-resident",
+  "advt": "Advt. No. 03/Jr. Resident (N/A)/IGIMS/Estt./2026",
+  "board_en": "Indira Gandhi Institute of Medical Sciences (IGIMS), Patna",
+  "board_hi": "इंदिरा गांधी आयुर्विज्ञान संस्थान (IGIMS), पटना",
+  "portal": "igims.org",
+  "posts": 109,
+  "dates": {
+   "apply_end": "2026-11-30",
+   "apply_start": "2026-11-04",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-30"
+  },
+  "photo_kind": "upload",
+  "note_en": "Junior Resident (Non-Academic) is a one-year tenure appointment, selected on the NEET-PG 2026 score — it is not a permanent post.",
+  "note_hi": "जूनियर रेजिडेंट (Non-Academic) एक साल की tenure वाली नियुक्ति है, चयन NEET-PG 2026 स्कोर से होगा — यह permanent post नहीं है।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://www.igims.org",
+   "notice": null,
+   "site": "https://www.igims.org"
+  },
+  "en": {
+   "name": "IGIMS Patna Junior Resident (Non-Academic) Recruitment 2026",
+   "tagline": "109 Junior Resident (Non-Academic) posts for MBBS doctors — selection on NEET-PG 2026 score — offline applications till 30 November 2026.",
+   "qual": "MBBS + internship, NEET-PG 2026 appeared",
+   "fees": [
+    "₹1,000 for UR, EWS, BC and WBC candidates.",
+    "₹250 for EBC, SC and ST candidates. Pay by Demand Draft in favour of 'Director, IGIMS, Patna', payable at Patna — non-refundable."
+   ],
+   "fees_short": "₹1,000 (EBC/SC/ST: ₹250)",
+   "specs": [
+    "The application is OFFLINE — send the filled form with documents and the Demand Draft by Registered Post / Speed Post / Courier so it reaches IGIMS by 30 November 2026, 4:00 PM.",
+    "The Dentistry department is excluded from this recruitment.",
+    "Selection is on the NEET-PG 2026 score — no separate written test is mentioned in the notification.",
+    "The age limit is not repeated in the summaries of this notification — check it in the official notification (Advt. No. 03/Jr. Resident (N/A)/IGIMS/Estt./2026) before applying; do not assume a figure."
+   ],
+   "eligibility": [
+    "109 Junior Resident (Non-Academic) posts under Advertisement No. 03/Jr. Resident (N/A)/IGIMS/Estt./2026, dated 4 November 2026, across different departments of IGIMS and its Medical College, Patna (excluding Dentistry), for the 2026 session.",
+    "Qualification: MBBS with completed compulsory rotating internship; candidates must have appeared in NEET-PG 2026 — selection is based on the NEET-PG 2026 score.",
+    "Appointment is for a one-year tenure. Pay: Level-10 entry pay ₹56,100 per month plus NPA and other admissible allowances.",
+    "The completed application must reach The Director, IGIMS, Sheikhpura, Patna-14, Bihar, on or before 30 November 2026, up to 4:00 PM — late applications will not be accepted."
+   ],
+   "dos": [
+    "Send the offline application by Registered Post / Speed Post / Courier well before 30 November 2026 — it must REACH IGIMS by 4:00 PM that day.",
+    "Attach the Demand Draft (₹1,000 UR/EWS/BC/WBC or ₹250 EBC/SC/ST) in favour of 'Director, IGIMS, Patna', payable at Patna.",
+    "Attach your NEET-PG 2026 scorecard and MBBS + internship documents.",
+    "Check the age limit in the official notification before applying.",
+    "Keep a photocopy of the full application packet before posting it."
+   ],
+   "donts": [
+    "Do not treat this as a permanent post — it is a one-year tenure appointment.",
+    "Do not send the form by ordinary post at the last moment — use Registered Post / Speed Post / Courier and track it.",
+    "Do not apply if you did not appear in NEET-PG 2026 — selection is on that score.",
+    "Do not apply for the Dentistry department — it is excluded from this recruitment."
+   ],
+   "checklist": [
+    "Application form from the official IGIMS notification",
+    "MBBS degree + internship completion certificate",
+    "NEET-PG 2026 scorecard",
+    "Demand Draft (₹1,000 / ₹250) in favour of 'Director, IGIMS, Patna'",
+    "Recent colour photograph and signature",
+    "Caste certificate (EBC/SC/ST/BC), if applicable"
+   ],
+   "documents": [
+    "MBBS degree certificate and marksheets",
+    "Compulsory rotating internship completion certificate",
+    "NEET-PG 2026 scorecard",
+    "Caste certificate (EBC/SC/ST/BC), if applicable",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Aakhri din ordinary post se form bhejna",
+    "Demand Draft attach karna bhoolna",
+    "Bina NEET-PG 2026 ke apply karna",
+    "Ise permanent post samajhna"
+   ],
+   "steps": [
+    "igims.org par Advertisement No. 03/Jr. Resident (N/A)/IGIMS/Estt./2026 padho aur application form download karo.",
+    "Form bharo aur MBBS, internship aur NEET-PG 2026 scorecard ke documents attach karo.",
+    "₹1,000 (UR/EWS/BC/WBC) ya ₹250 (EBC/SC/ST) ka Demand Draft banao — 'Director, IGIMS, Patna' ke naam, Patna me payable।",
+    "Form ko Registered Post / Speed Post / Courier se bhejo — The Director, IGIMS, Sheikhpura, Patna-14, Bihar tak 30 November 2026, shaam 4:00 baje se pehle pahunchna chahiye।",
+    "Posting receipt aur form ki photocopy sambhal kar rakho."
+   ],
+   "extra_faq": [
+    {
+     "q": "How many Junior Resident vacancies are there at IGIMS Patna 2026?",
+     "a": "109 Junior Resident (Non-Academic) posts across different departments of IGIMS and its Medical College, Patna, excluding Dentistry, under Advt. No. 03/Jr. Resident (N/A)/IGIMS/Estt./2026."
+    },
+    {
+     "q": "How is the IGIMS Junior Resident selected?",
+     "a": "Selection is based on the NEET-PG 2026 score. Candidates must have completed MBBS with the compulsory rotating internship and appeared in NEET-PG 2026. No separate written test is mentioned in the notification."
+    },
+    {
+     "q": "How do I apply for IGIMS Junior Resident 2026?",
+     "a": "Offline only. Send the filled application form with documents and the Demand Draft (₹1,000 UR/EWS/BC/WBC or ₹250 EBC/SC/ST) by Registered Post / Speed Post / Courier so it reaches The Director, IGIMS, Sheikhpura, Patna-14, Bihar, by 30 November 2026, 4:00 PM."
+    },
+    {
+     "q": "Is the IGIMS Junior Resident post permanent?",
+     "a": "No. It is a one-year tenure appointment with Level-10 entry pay of ₹56,100 per month plus NPA and other admissible allowances — not a permanent post."
+    }
+   ]
+  },
+  "hi": {
+   "name": "IGIMS पटना जूनियर रेजिडेंट (Non-Academic) भर्ती 2026",
+   "tagline": "MBBS डॉक्टरों के लिए 109 जूनियर रेजिडेंट (Non-Academic) पद — चयन NEET-PG 2026 स्कोर से — offline आवेदन 30 नवंबर 2026 तक।",
+   "qual": "MBBS + internship, NEET-PG 2026 में शामिल",
+   "fees": [
+    "UR, EWS, BC और WBC उम्मीदवारों के लिए ₹1,000।",
+    "EBC, SC और ST उम्मीदवारों के लिए ₹250। Demand Draft से भुगतान करो — 'Director, IGIMS, Patna' के नाम, Patna में payable — वापस नहीं होगा।"
+   ],
+   "fees_short": "₹1,000 (EBC/SC/ST: ₹250)",
+   "specs": [
+    "आवेदन OFFLINE है — भरा हुआ form documents और Demand Draft के साथ Registered Post / Speed Post / Courier से भेजो, ताकि 30 नवंबर 2026, शाम 4:00 बजे तक IGIMS पहुँच जाए।",
+    "Dentistry विभाग इस भर्ती से बाहर है।",
+    "चयन NEET-PG 2026 स्कोर से होगा — अधिसूचना में कोई अलग लिखित परीक्षा नहीं बताई गई है।",
+    "उम्र-सीमा इस अधिसूचना के summaries में दोहराई नहीं गई है — apply करने से पहले official notification (Advt. No. 03/Jr. Resident (N/A)/IGIMS/Estt./2026) में check करो; कोई figure assume मत करो।"
+   ],
+   "eligibility": [
+    "Advertisement No. 03/Jr. Resident (N/A)/IGIMS/Estt./2026, दिनांक 4 नवंबर 2026 के तहत 109 जूनियर रेजिडेंट (Non-Academic) पद, IGIMS और उसके मेडिकल कॉलेज, पटना के अलग-अलग विभागों में (Dentistry को छोड़कर), 2026 session के लिए।",
+    "योग्यता: MBBS के साथ पूरी हुई compulsory rotating internship; उम्मीदवार NEET-PG 2026 में शामिल हुआ हो — चयन NEET-PG 2026 स्कोर के आधार पर होगा।",
+    "नियुक्ति एक साल की tenure के लिए है। वेतन: Level-10 entry pay ₹56,100 प्रति माह, साथ में NPA और अन्य admissible allowances।",
+    "पूरा आवेदन The Director, IGIMS, Sheikhpura, Patna-14, Bihar तक 30 नवंबर 2026, शाम 4:00 बजे तक पहुँच जाना चाहिए — देर से आए आवेदन स्वीकार नहीं होंगे।"
+   ],
+   "dos": [
+    "Offline आवेदन Registered Post / Speed Post / Courier से 30 नवंबर 2026 से काफी पहले भेजो — उस दिन शाम 4:00 बजे तक IGIMS पहुँचना चाहिए।",
+    "Demand Draft (₹1,000 UR/EWS/BC/WBC या ₹250 EBC/SC/ST) attach करो — 'Director, IGIMS, Patna' के नाम, Patna में payable।",
+    "NEET-PG 2026 scorecard और MBBS + internship documents attach करो।",
+    "Apply करने से पहले official notification में उम्र-सीमा check करो।",
+    "Post करने से पहले पूरे application packet की photocopy रखो।"
+   ],
+   "donts": [
+    "इसे permanent post मत समझो — यह एक साल की tenure वाली नियुक्ति है।",
+    "Aakhri moment पर ordinary post से form मत भेजो — Registered Post / Speed Post / Courier use करो और track करो।",
+    "NEET-PG 2026 में शामिल हुए बिना apply मत करो — चयन उसी score से होगा।",
+    "Dentistry विभाग के लिए apply मत करो — वह इस भर्ती से बाहर है।"
+   ],
+   "checklist": [
+    "Official IGIMS notification से application form",
+    "MBBS डिग्री + internship completion certificate",
+    "NEET-PG 2026 scorecard",
+    "Demand Draft (₹1,000 / ₹250), 'Director, IGIMS, Patna' के नाम",
+    "नयी रंगीन फोटो और हस्ताक्षर",
+    "जाति certificate (EBC/SC/ST/BC), यदि लागू हो"
+   ],
+   "documents": [
+    "MBBS डिग्री certificate और marksheets",
+    "Compulsory rotating internship completion certificate",
+    "NEET-PG 2026 scorecard",
+    "जाति प्रमाणपत्र (EBC/SC/ST/BC), यदि लागू हो",
+    "आधार कार्ड"
+   ],
+   "steps": [
+    "igims.org पर Advertisement No. 03/Jr. Resident (N/A)/IGIMS/Estt./2026 पढ़ो और application form download करो।",
+    "Form भरो और MBBS, internship और NEET-PG 2026 scorecard के documents attach करो।",
+    "₹1,000 (UR/EWS/BC/WBC) या ₹250 (EBC/SC/ST) का Demand Draft बनाओ — 'Director, IGIMS, Patna' के नाम, Patna में payable।",
+    "Form को Registered Post / Speed Post / Courier से भेजो — The Director, IGIMS, Sheikhpura, Patna-14, Bihar तक 30 नवंबर 2026, शाम 4:00 बजे से पहले पहुँचना चाहिए।",
+    "Posting receipt और form की photocopy संभाल कर रखो।"
+   ],
+   "extra_faq": [
+    {
+     "q": "IGIMS पटना 2026 में जूनियर रेजिडेंट की कितनी रिक्तियाँ हैं?",
+     "a": "IGIMS और उसके मेडिकल कॉलेज, पटना के अलग-अलग विभागों में 109 जूनियर रेजिडेंट (Non-Academic) पद, Dentistry को छोड़कर, Advt. No. 03/Jr. Resident (N/A)/IGIMS/Estt./2026 के तहत।"
+    },
+    {
+     "q": "IGIMS जूनियर रेजिडेंट का चयन कैसे होगा?",
+     "a": "चयन NEET-PG 2026 स्कोर के आधार पर होगा। उम्मीदवार ने MBBS के साथ compulsory rotating internship पूरी की हो और NEET-PG 2026 में शामिल हुआ हो। अधिसूचना में कोई अलग लिखित परीक्षा नहीं बताई गई है।"
+    },
+    {
+     "q": "IGIMS जूनियर रेजिडेंट 2026 के लिए कैसे apply करें?",
+     "a": "सिर्फ़ offline। भरा हुआ application form documents और Demand Draft (₹1,000 UR/EWS/BC/WBC या ₹250 EBC/SC/ST) के साथ Registered Post / Speed Post / Courier से भेजो, ताकि The Director, IGIMS, Sheikhpura, Patna-14, Bihar तक 30 नवंबर 2026, शाम 4:00 बजे तक पहुँच जाए।"
+    },
+    {
+     "q": "क्या IGIMS जूनियर रेजिडेंट post permanent है?",
+     "a": "नहीं। यह एक साल की tenure वाली नियुक्ति है, Level-10 entry pay ₹56,100 प्रति माह, साथ में NPA और अन्य admissible allowances — permanent post नहीं है।"
+    }
+   ],
+   "kit": [
+    {
+     "title": "पासपोर्ट फोटो ready रखो",
+     "text": "नयी सफेद-background वाली रंगीन फोटो scan करके रखो; बड़ी file को यहीं छोटी कर सकते हो।",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates एक PDF में जोड़ो",
+     "text": "सारे documents को एक साफ़ PDF में जोड़कर upload के लिए ready रखो।",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Aakhri din ordinary post से form भेजना",
+    "Demand Draft attach करना भूलना",
+    "बिना NEET-PG 2026 के apply करना",
+    "इसे permanent post समझना"
+   ]
+  }
+ },
+ {
+  "slug": "odisha-police-spo-central-range",
+  "advt": "SPO Engagement Notice, Central Range, Cuttack (November 2026)",
+  "board_en": "Odisha Police — Office of the Inspector General of Police, Central Range, Cuttack",
+  "board_hi": "ओडिशा पुलिस — पुलिस महानिरीक्षक कार्यालय, सेंट्रल रेंज, कटक",
+  "portal": "police.odisha.gov.in",
+  "posts": 126,
+  "dates": {
+   "apply_end": "2026-11-16",
+   "apply_start": "2026-11-10",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": "30 November 2026 (selection test)",
+   "exam_hi": "30 नवंबर 2026 (चयन परीक्षा)",
+   "fee_end": "2026-11-16"
+  },
+  "photo_kind": "upload",
+  "note_en": "This engagement is ONLY for retired Assistant Sub-Inspectors, Sub-Inspectors and Inspectors of Odisha Police, on a contractual basis for one year — it is not a fresh recruitment and not a permanent post.",
+  "note_hi": "यह नियुक्ति सिर्फ़ ओडिशा पुलिस के सेवानिवृत्त सहायक उप-निरीक्षक, उप-निरीक्षक और निरीक्षकों के लिए है, एक साल के contractual आधार पर — यह नई भर्ती नहीं है और permanent post भी नहीं है।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://police.odisha.gov.in",
+   "notice": null,
+   "site": "https://police.odisha.gov.in"
+  },
+  "en": {
+   "name": "Odisha Police Special Police Officer (SPO) Recruitment 2026 — Central Range",
+   "tagline": "126 Special Police Officer posts for retired Odisha Police ASI/SI/Inspector — 1-year contractual engagement — offline forms till 16 November 2026.",
+   "qual": "Retired ASI / SI / Inspector of Odisha Police; max age 65",
+   "fees": [
+    "No application fee is mentioned in the notification — the prescribed proforma is free to download from police.odisha.gov.in."
+   ],
+   "fees_short": "Nil (no fee mentioned)",
+   "specs": [
+    "The application is OFFLINE — download the prescribed proforma from police.odisha.gov.in and send it so it reaches the Office of the I.G. of Police, Central Range, Cuttack, by 16 November 2026, 6:30 PM.",
+    "Only retired ASI, SI and Inspector of Odisha Police from Khordha, Puri, Cuttack, Kendrapara, Nayagarh, Jajpur and Jagatsinghpur can apply.",
+    "The selection test is on 30 November 2026 at 6:30 AM at the I.G. of Police, Central Range, Cuttack office."
+   ],
+   "eligibility": [
+    "126 Special Police Officer (SPO) posts for the Central Range, Cuttack — across Khordha, Puri, Cuttack, Kendrapara, Nayagarh, Jajpur and Jagatsinghpur — under Finance Department Memo No. 25745/F dated 1 October 2026.",
+    "Only retired Assistant Sub-Inspectors, Sub-Inspectors and Inspectors of Odisha Police who served in the State Police can apply. Maximum age 65 years as on the date of publication of the advertisement.",
+    "Engagement is contractual for a period of one year, subject to execution of an agreement. This is a re-employment drive for retired personnel — fresh candidates cannot apply.",
+    "Selection test on 30 November 2026 at 6:30 AM at the Office of the I.G. of Police, Central Range, Cuttack."
+   ],
+   "dos": [
+    "Download the prescribed proforma from police.odisha.gov.in and fill it carefully.",
+    "Send the form so it reaches the Office of the I.G. of Police, Central Range, Cuttack, by 16 November 2026, 6:30 PM — by post or by hand.",
+    "Attach self-attested copies of retirement proof, age proof, residence proof and service record.",
+    "Report for the selection test on 30 November 2026 at 6:30 AM at the I.G. of Police, Central Range, Cuttack office."
+   ],
+   "donts": [
+    "Do not apply if you are not a retired ASI, SI or Inspector of Odisha Police — fresh candidates cannot apply.",
+    "Do not apply if you are above 65 years of age as on the advertisement date.",
+    "Do not send the form late — it must reach by 16 November 2026, 6:30 PM.",
+    "Do not treat this as a permanent post — it is a 1-year contractual engagement."
+   ],
+   "checklist": [
+    "Prescribed application proforma from police.odisha.gov.in",
+    "Retirement proof (ASI / SI / Inspector of Odisha Police)",
+    "Age proof (not above 65 years)",
+    "Residence proof and service record",
+    "Recent colour photograph",
+    "Self-attested copies of all documents"
+   ],
+   "documents": [
+    "Retirement order / proof of service as ASI / SI / Inspector, Odisha Police",
+    "Age proof certificate",
+    "Residence proof",
+    "Service record",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Retired police personnel na hokar bhi apply karna",
+    "65 saal se upar ki umar me apply karna",
+    "16 November shaam 6:30 ke baad form bhejna",
+    "Ise permanent naukri samajhna"
+   ],
+   "steps": [
+    "police.odisha.gov.in par SPO engagement notice aur prescribed proforma download karo.",
+    "Proforma bharo aur retirement proof, age proof, residence proof aur service record ki self-attested copies attach karo.",
+    "Form ko Office of the I.G. of Police, Central Range, Cuttack tak bhejo — 16 November 2026, shaam 6:30 baje tak pahunchna chahiye।",
+    "Acknowledgement / postal receipt sambhal kar rakho.",
+    "Selection test ke liye 30 November 2026, subah 6:30 baje I.G. of Police, Central Range, Cuttack office pahuncho."
+   ],
+   "extra_faq": [
+    {
+     "q": "Who can apply for Odisha Police SPO 2026 (Central Range)?",
+     "a": "Only retired Assistant Sub-Inspectors, Sub-Inspectors and Inspectors of Odisha Police who served in the State Police, from Khordha, Puri, Cuttack, Kendrapara, Nayagarh, Jajpur and Jagatsinghpur. Maximum age is 65 years as on the advertisement date."
+    },
+    {
+     "q": "What is the last date to apply for Odisha Police SPO 2026?",
+     "a": "16 November 2026, 6:30 PM. The offline application must reach the Office of the I.G. of Police, Central Range, Cuttack, by that time."
+    },
+    {
+     "q": "Is the Odisha Police SPO a permanent job?",
+     "a": "No. It is a contractual engagement for one year for retired police personnel, subject to execution of an agreement — not a fresh recruitment and not a permanent post."
+    },
+    {
+     "q": "When is the Odisha Police SPO selection test?",
+     "a": "30 November 2026 at 6:30 AM at the Office of the I.G. of Police, Central Range, Cuttack."
+    }
+   ]
+  },
+  "hi": {
+   "name": "ओडिशा पुलिस स्पेशल पुलिस ऑफिसर (SPO) भर्ती 2026 — सेंट्रल रेंज",
+   "tagline": "सेवानिवृत्त ओडिशा पुलिस ASI/SI/Inspector के लिए 126 स्पेशल पुलिस ऑफिसर पद — 1 साल की contractual नियुक्ति — offline form 16 नवंबर 2026 तक।",
+   "qual": "ओडिशा पुलिस के सेवानिवृत्त ASI / SI / Inspector; अधिकतम उम्र 65",
+   "fees": [
+    "अधिसूचना में कोई आवेदन शुल्क नहीं बताया गया है — निर्धारित proforma police.odisha.gov.in से मुफ़्त download कर सकते हो।"
+   ],
+   "fees_short": "Nil (कोई शुल्क नहीं बताया गया)",
+   "specs": [
+    "आवेदन OFFLINE है — police.odisha.gov.in से निर्धारित proforma download करो और भेजो, ताकि 16 नवंबर 2026, शाम 6:30 बजे तक Office of the I.G. of Police, Central Range, Cuttack पहुँच जाए।",
+    "सिर्फ़ खुर्दा, पुरी, कटक, केंद्रपाड़ा, नयागढ़, जाजपुर और जगतसिंहपुर के ओडिशा पुलिस के सेवानिवृत्त ASI, SI और Inspector ही apply कर सकते हैं।",
+    "चयन परीक्षा 30 नवंबर 2026, सुबह 6:30 बजे, I.G. of Police, Central Range, Cuttack office में होगी।"
+   ],
+   "eligibility": [
+    "सेंट्रल रेंज, कटक के लिए 126 स्पेशल पुलिस ऑफिसर (SPO) पद — खुर्दा, पुरी, कटक, केंद्रपाड़ा, नयागढ़, जाजपुर और जगतसिंहपुर में — Finance Department Memo No. 25745/F, दिनांक 1 अक्टूबर 2026 के तहत।",
+    "सिर्फ़ ओडिशा पुलिस में सेवा कर चुके सेवानिवृत्त सहायक उप-निरीक्षक, उप-निरीक्षक और निरीक्षक ही apply कर सकते हैं। विज्ञापन प्रकाशन की तारीख को अधिकतम उम्र 65 वर्ष है।",
+    "नियुक्ति एक साल के लिए contractual है, agreement पर हस्ताक्षर के बाद। यह सेवानिवृत्त कर्मियों के लिए re-employment drive है — नए उम्मीदवार apply नहीं कर सकते।",
+    "चयन परीक्षा 30 नवंबर 2026, सुबह 6:30 बजे, Office of the I.G. of Police, Central Range, Cuttack में होगी।"
+   ],
+   "dos": [
+    "police.odisha.gov.in से निर्धारित proforma download करके ध्यान से भरो।",
+    "Form भेजो ताकि 16 नवंबर 2026, शाम 6:30 बजे तक Office of the I.G. of Police, Central Range, Cuttack पहुँच जाए — डाक से या हाथ से।",
+    "Retirement proof, age proof, residence proof और service record की self-attested copies attach करो।",
+    "चयन परीक्षा के लिए 30 नवंबर 2026, सुबह 6:30 बजे I.G. of Police, Central Range, Cuttack office पहुँचो।"
+   ],
+   "donts": [
+    "ओडिशा पुलिस के सेवानिवृत्त ASI, SI या Inspector न होने पर apply मत करो — नए उम्मीदवार apply नहीं कर सकते।",
+    "विज्ञापन की तारीख को 65 वर्ष से ऊपर की उम्र में apply मत करो।",
+    "Form देर से मत भेजो — 16 नवंबर 2026, शाम 6:30 बजे तक पहुँचना चाहिए।",
+    "इसे permanent post मत समझो — यह 1 साल की contractual नियुक्ति है।"
+   ],
+   "checklist": [
+    "police.odisha.gov.in से निर्धारित application proforma",
+    "Retirement proof (ओडिशा पुलिस के ASI / SI / Inspector)",
+    "Age proof (65 वर्ष से ज़्यादा नहीं)",
+    "Residence proof और service record",
+    "नयी रंगीन फोटो",
+    "सभी documents की self-attested copies"
+   ],
+   "documents": [
+    "Retirement order / ओडिशा पुलिस में ASI / SI / Inspector के रूप में सेवा का proof",
+    "Age proof certificate",
+    "Residence proof",
+    "Service record",
+    "आधार कार्ड"
+   ],
+   "steps": [
+    "police.odisha.gov.in पर SPO engagement notice और निर्धारित proforma download करो।",
+    "Proforma भरो और retirement proof, age proof, residence proof और service record की self-attested copies attach करो।",
+    "Form को Office of the I.G. of Police, Central Range, Cuttack तक भेजो — 16 नवंबर 2026, शाम 6:30 बजे तक पहुँचना चाहिए।",
+    "Acknowledgement / postal receipt संभाल कर रखो।",
+    "चयन परीक्षा के लिए 30 नवंबर 2026, सुबह 6:30 बजे I.G. of Police, Central Range, Cuttack office पहुँचो।"
+   ],
+   "extra_faq": [
+    {
+     "q": "ओडिशा पुलिस SPO 2026 (सेंट्रल रेंज) के लिए कौन apply कर सकता है?",
+     "a": "सिर्फ़ ओडिशा पुलिस में सेवा कर चुके सेवानिवृत्त सहायक उप-निरीक्षक, उप-निरीक्षक और निरीक्षक, खुर्दा, पुरी, कटक, केंद्रपाड़ा, नयागढ़, जाजपुर और जगतसिंहपुर से। विज्ञापन की तारीख को अधिकतम उम्र 65 वर्ष है।"
+    },
+    {
+     "q": "ओडिशा पुलिस SPO 2026 के लिए apply की अंतिम तिथि क्या है?",
+     "a": "16 नवंबर 2026, शाम 6:30 बजे। Offline आवेदन उस समय तक Office of the I.G. of Police, Central Range, Cuttack पहुँच जाना चाहिए।"
+    },
+    {
+     "q": "क्या ओडिशा पुलिस SPO permanent नौकरी है?",
+     "a": "नहीं। यह सेवानिवृत्त पुलिस कर्मियों के लिए एक साल की contractual नियुक्ति है, agreement पर हस्ताक्षर के बाद — नई भर्ती नहीं है और permanent post भी नहीं है।"
+    },
+    {
+     "q": "ओडिशा पुलिस SPO चयन परीक्षा कब है?",
+     "a": "30 नवंबर 2026, सुबह 6:30 बजे, Office of the I.G. of Police, Central Range, Cuttack में।"
+    }
+   ],
+   "kit": [
+    {
+     "title": "पासपोर्ट फोटो ready रखो",
+     "text": "नयी सफेद-background वाली रंगीन फोटो scan करके रखो; बड़ी file को यहीं छोटी कर सकते हो।",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates एक PDF में जोड़ो",
+     "text": "सारे documents को एक साफ़ PDF में जोड़कर upload के लिए ready रखो।",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "सेवानिवृत्त पुलिस कर्मी न होकर भी apply करना",
+    "65 साल से ऊपर की उम्र में apply करना",
+    "16 नवंबर शाम 6:30 के बाद form भेजना",
+    "इसे permanent नौकरी समझना"
+   ]
+  }
+ },
+ {
+  "slug": "jshps-various-posts-2026",
+  "advt": "Advertisement No. 01/2026",
+  "board_en": "Jharkhand State Horticulture Promotion Society (JSHPS)",
+  "board_hi": "झारखंड राज्य बागवानी संवर्धन सोसाइटी (JSHPS)",
+  "portal": "recruitment.jharkhand.gov.in",
+  "posts": 637,
+  "dates": {
+   "apply_end": "2026-12-04",
+   "apply_start": "2026-11-04",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-04"
+  },
+  "photo_kind": "upload",
+  "note_en": "All 637 posts are contractual, with consolidated fixed pay (no pay level or grade pay) and a 5% performance-linked increment every year — these are not permanent government posts.",
+  "note_hi": "सभी 637 पद contractual हैं, consolidated fixed वेतन के साथ (कोई pay level या grade pay नहीं) और हर साल 5% performance-linked increment — ये permanent सरकारी पद नहीं हैं।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://recruitment.jharkhand.gov.in",
+   "notice": null,
+   "site": "https://recruitment.jharkhand.gov.in"
+  },
+  "en": {
+   "name": "JSHPS Various Posts Recruitment 2026 — Block Program Manager, DEO & Others",
+   "tagline": "637 contractual posts — Block Program Manager 264, Assistant-cum-DEO 290, District Program Manager 24 — online applications 4 November to 4 December 2026.",
+   "qual": "B.Sc Agriculture/Horticulture (BPM); Graduate + ADCA/BCA/B.Sc IT (DEO)",
+   "fees": [
+    "₹500 for Unreserved, EBC (BC-I), BC-II and EWS candidates.",
+    "₹300 for Jharkhand SC and ST candidates; eligible PwD candidates (40% or more disability) are exempted. Pay online through the recruitment portal."
+   ],
+   "fees_short": "₹500 (Jharkhand SC/ST: ₹300; PwD: nil)",
+   "specs": [
+    "Apply online AND dispatch the physical hard copy of the application packet — the hard copy must reach by 14 December 2026, 5:00 PM.",
+    "Apply for only one post — check the post-wise qualification and experience before choosing.",
+    "Age limits are post-wise and the reckoning date differs between summaries — confirm the exact age limit and relaxation in Advt. No. 01/2026 before applying."
+   ],
+   "eligibility": [
+    "637 contractual vacancies under Advertisement No. 01/2026, dated 31 October 2026, across state headquarters, 24 district units and 264 block offices of the Jharkhand State Horticulture Promotion Society, under the Directorate of Horticulture, Government of Jharkhand.",
+    "Biggest posts: Block Program Manager 264, Assistant-cum-Data Entry Operator 290 (264 block + 26 HQ/district), District Program Manager 24, plus Deputy Director, State Program Manager, Thematic Expert, Accountant and other posts (59).",
+    "Qualification is post-wise: Block Program Manager — regular Bachelor's degree in Agriculture (B.Sc. Ag) or Horticulture (B.Sc. Horti) from an ICAR-recognised university; Assistant-cum-DEO — full-time Graduate with ADCA, or BCA / B.Sc (IT), with 1–2 years' experience; senior posts need a PG in Horticulture/Agriculture or MBA in Agri Marketing/Agribusiness with 5–10 years' experience.",
+    "Age limit is post-wise: Block Program Manager 21–30 years, Assistant-cum-DEO 25–35 years, District Program Manager and other officers 30–45 years, Deputy Director 35–50 years. Relaxation: BC-I/BC-II +3 years, SC/ST +5 years, women +3 years, as per Jharkhand Government rules.",
+    "Pay is consolidated and fixed: Block Program Manager ₹35,000/month, Assistant-cum-DEO (Block) ₹20,000/month, Deputy Director ₹1,00,000/month — with a 5% performance-linked increment every year."
+   ],
+   "dos": [
+    "Apply online on recruitment.jharkhand.gov.in before 4 December 2026, 3:00 PM.",
+    "Dispatch the physical hard copy of the application packet so it reaches by 14 December 2026, 5:00 PM.",
+    "Choose only ONE post — check its qualification and experience first.",
+    "Pay ₹500 (General/BC/EWS) or ₹300 (Jharkhand SC/ST) online; PwD candidates are exempted.",
+    "Check the exact age limit and relaxation in Advt. No. 01/2026 before paying the fee."
+   ],
+   "donts": [
+    "Do not treat these as permanent government posts — all 637 are contractual with consolidated pay.",
+    "Do not skip the hard-copy step — online application alone is not complete.",
+    "Do not apply for two posts — choose your single best-matching one.",
+    "Do not assume the age reckoning date — summaries differ, so confirm it in the advertisement.",
+    "Do not wait for the last day — the online window closes on 4 December 2026 at 3:00 PM."
+   ],
+   "checklist": [
+    "Degree certificate (B.Sc Ag/Horti or Graduate + ADCA/BCA/B.Sc IT, post-wise)",
+    "Experience certificate, if your post needs it (DEO and senior posts)",
+    "Caste certificate (Jharkhand SC/ST/BC/EWS), if applicable",
+    "PwD certificate (40% or more), if claiming exemption",
+    "Recent colour photograph and signature scan",
+    "Debit card / UPI ready for the online fee"
+   ],
+   "documents": [
+    "Degree / PG degree certificate (post-wise)",
+    "Experience certificate, if applicable",
+    "Caste certificate (Jharkhand SC/ST/BC/EWS), if applicable",
+    "PwD certificate, if applicable",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Sirf online apply karke hard copy na bhejna",
+    "Do posts ke liye apply karna",
+    "Age reckoning date assume kar lena",
+    "Contractual post ko permanent samajhna"
+   ],
+   "steps": [
+    "recruitment.jharkhand.gov.in par Advertisement No. 01/2026 padho — apne post ki yogyata, experience aur age note karo.",
+    "Online application form bharo aur sirf ONE post chuno.",
+    "Photo, signature aur documents upload karo.",
+    "₹500 (General/BC/EWS) ya ₹300 (Jharkhand SC/ST) शुल्क ऑनलाइन भरो — PwD उम्मीदवारों को शुल्क नहीं है।",
+    "Form submit karo aur application packet ki hard copy dispatch karo — 14 December 2026, shaam 5:00 baje tak pahunchni chahiye।",
+    "Printout aur dispatch receipt sambhal kar rakho — online window 4 December 2026, दोपहर 3:00 बजे बंद होती है।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in JSHPS Recruitment 2026?",
+     "a": "637 contractual vacancies — Block Program Manager 264, Assistant-cum-Data Entry Operator 290, District Program Manager 24, plus Deputy Director, State Program Manager, Thematic Expert, Accountant and other posts (59) — under Advertisement No. 01/2026."
+    },
+    {
+     "q": "Is JSHPS a permanent government job?",
+     "a": "No. All 637 posts are contractual, with consolidated fixed pay (no pay level or grade pay) and a 5% performance-linked increment every year — not permanent government posts."
+    },
+    {
+     "q": "What is the last date to apply for JSHPS 2026?",
+     "a": "Online applications close on 4 December 2026 at 3:00 PM, and the physical hard copy of the application packet must reach by 14 December 2026 at 5:00 PM. The fee (₹500 General/BC/EWS, ₹300 Jharkhand SC/ST, PwD exempt) is also due by 4 December 2026."
+    },
+    {
+     "q": "What is the qualification for JSHPS Block Program Manager?",
+     "a": "A regular Bachelor's degree in Agriculture (B.Sc. Ag) or Horticulture (B.Sc. Horti) from an ICAR-recognised university, age 21–30 years. Assistant-cum-DEO needs a full-time Graduate degree with ADCA, or BCA / B.Sc (IT), with 1–2 years' experience, age 25–35 years."
+    }
+   ]
+  },
+  "hi": {
+   "name": "JSHPS विभिन्न पद भर्ती 2026 — ब्लॉक प्रोग्राम मैनेजर, DEO और अन्य",
+   "tagline": "637 contractual पद — ब्लॉक प्रोग्राम मैनेजर 264, असिस्टेंट-कम-DEO 290, जिला प्रोग्राम मैनेजर 24 — online आवेदन 4 नवंबर से 4 दिसंबर 2026 तक।",
+   "qual": "B.Sc कृषि/बागवानी (BPM); स्नातक + ADCA/BCA/B.Sc IT (DEO)",
+   "fees": [
+    "अनारक्षित, EBC (BC-I), BC-II और EWS उम्मीदवारों के लिए ₹500।",
+    "झारखंड SC और ST उम्मीदवारों के लिए ₹300; पात्र PwD उम्मीदवार (40% या ज़्यादा disability) छूट प्राप्त हैं। Recruitment portal से ऑनलाइन भुगतान करो।"
+   ],
+   "fees_short": "₹500 (झारखंड SC/ST: ₹300; PwD: nil)",
+   "specs": [
+    "Online apply करो और application packet की physical hard copy भी dispatch करो — hard copy 14 दिसंबर 2026, शाम 5:00 बजे तक पहुँचनी चाहिए।",
+    "सिर्फ़ एक post के लिए apply करो — चुनने से पहले post-wise योग्यता और अनुभव check करो।",
+    "उम्र-सीमा post-wise है और reckoning date summaries में अलग-अलग है — apply करने से पहले Advt. No. 01/2026 में exact उम्र-सीमा और छूट confirm करो।"
+   ],
+   "eligibility": [
+    "Advertisement No. 01/2026, दिनांक 31 अक्टूबर 2026 के तहत 637 contractual रिक्तियाँ, झारखंड राज्य बागवानी संवर्धन सोसाइटी के राज्य मुख्यालय, 24 जिला इकाइयों और 264 ब्लॉक कार्यालयों में, बागवानी निदेशालय, झारखंड सरकार के तहत।",
+    "सबसे बड़े पद: ब्लॉक प्रोग्राम मैनेजर 264, असिस्टेंट-कम-डेटा एंट्री ऑपरेटर 290 (264 ब्लॉक + 26 मुख्यालय/जिला), जिला प्रोग्राम मैनेजर 24, साथ में Deputy Director, State Program Manager, Thematic Expert, Accountant और अन्य पद (59)।",
+    "योग्यता post-wise है: ब्लॉक प्रोग्राम मैनेजर — ICAR-मान्यता प्राप्त विश्वविद्यालय से कृषि (B.Sc. Ag) या बागवानी (B.Sc. Horti) में regular स्नातक डिग्री; असिस्टेंट-कम-DEO — ADCA के साथ full-time स्नातक, या BCA / B.Sc (IT), 1–2 साल के अनुभव के साथ; senior पदों के लिए बागवानी/कृषि में PG या Agri Marketing/Agribusiness में MBA, 5–10 साल के अनुभव के साथ।",
+    "उम्र-सीमा post-wise है: ब्लॉक प्रोग्राम मैनेजर 21–30 वर्ष, असिस्टेंट-कम-DEO 25–35 वर्ष, जिला प्रोग्राम मैनेजर और अन्य अधिकारी 30–45 वर्ष, Deputy Director 35–50 वर्ष। छूट: BC-I/BC-II +3 वर्ष, SC/ST +5 वर्ष, महिलाएँ +3 वर्ष, झारखंड सरकार के नियमों के अनुसार।",
+    "वेतन consolidated और fixed है: ब्लॉक प्रोग्राम मैनेजर ₹35,000/माह, असिस्टेंट-कम-DEO (ब्लॉक) ₹20,000/माह, Deputy Director ₹1,00,000/माह — हर साल 5% performance-linked increment के साथ।"
+   ],
+   "dos": [
+    "4 दिसंबर 2026, दोपहर 3:00 बजे से पहले recruitment.jharkhand.gov.in पर online apply करो।",
+    "Application packet की physical hard copy dispatch करो, ताकि 14 दिसंबर 2026, शाम 5:00 बजे तक पहुँच जाए।",
+    "सिर्फ़ ONE post चुनो — पहले उसकी योग्यता और अनुभव check करो।",
+    "₹500 (सामान्य/BC/EWS) या ₹300 (झारखंड SC/ST) शुल्क ऑनलाइन भरो; PwD उम्मीदवार छूट प्राप्त हैं।",
+    "शुल्क भरने से पहले Advt. No. 01/2026 में exact उम्र-सीमा और छूट check करो।"
+   ],
+   "donts": [
+    "इन्हें permanent सरकारी पद मत समझो — सभी 637 contractual हैं, consolidated वेतन के साथ।",
+    "Hard-copy step मत छोड़ो — सिर्फ़ online application पूरा नहीं है।",
+    "दो posts के लिए apply मत करो — अपनी सबसे अच्छी मेल खाती एक चुनो।",
+    "Age reckoning date assume मत करो — summaries अलग हैं, इसलिए advertisement में confirm करो।",
+    "Aakhri din tak intezaar mat karo — online window 4 दिसंबर 2026, दोपहर 3:00 बजे बंद होती है।"
+   ],
+   "checklist": [
+    "Degree certificate (B.Sc Ag/Horti या स्नातक + ADCA/BCA/B.Sc IT, post के हिसाब से)",
+    "Experience certificate, यदि तुम्हारे post को चाहिए (DEO और senior पद)",
+    "जाति certificate (झारखंड SC/ST/BC/EWS), यदि लागू हो",
+    "PwD certificate (40% या ज़्यादा), यदि छूट claim कर रहे हो",
+    "नयी रंगीन फोटो और हस्ताक्षर का scan",
+    "ऑनलाइन शुल्क के लिए डेबिट कार्ड / UPI ready"
+   ],
+   "documents": [
+    "Degree / PG degree certificate (post के हिसाब से)",
+    "Experience certificate, यदि लागू हो",
+    "जाति प्रमाणपत्र (झारखंड SC/ST/BC/EWS), यदि लागू हो",
+    "PwD प्रमाणपत्र, यदि लागू हो",
+    "आधार कार्ड"
+   ],
+   "steps": [
+    "recruitment.jharkhand.gov.in पर Advertisement No. 01/2026 पढ़ो — अपने post की योग्यता, अनुभव और उम्र note करो।",
+    "Online application form भरो और सिर्फ़ ONE post चुनो।",
+    "Photo, signature और documents upload करो।",
+    "₹500 (सामान्य/BC/EWS) या ₹300 (झारखंड SC/ST) शुल्क ऑनलाइन भरो — PwD उम्मीदवारों को शुल्क नहीं है।",
+    "Form submit करो और application packet की hard copy dispatch करो — 14 दिसंबर 2026, शाम 5:00 बजे तक पहुँचनी चाहिए।",
+    "Printout और dispatch receipt संभाल कर रखो — online window 4 दिसंबर 2026, दोपहर 3:00 बजे बंद होती है।"
+   ],
+   "extra_faq": [
+    {
+     "q": "JSHPS भर्ती 2026 में कितनी रिक्तियाँ हैं?",
+     "a": "637 contractual रिक्तियाँ — ब्लॉक प्रोग्राम मैनेजर 264, असिस्टेंट-कम-डेटा एंट्री ऑपरेटर 290, जिला प्रोग्राम मैनेजर 24, साथ में Deputy Director, State Program Manager, Thematic Expert, Accountant और अन्य पद (59) — Advertisement No. 01/2026 के तहत।"
+    },
+    {
+     "q": "क्या JSHPS permanent सरकारी नौकरी है?",
+     "a": "नहीं। सभी 637 पद contractual हैं, consolidated fixed वेतन के साथ (कोई pay level या grade pay नहीं) और हर साल 5% performance-linked increment — permanent सरकारी पद नहीं हैं।"
+    },
+    {
+     "q": "JSHPS 2026 के लिए apply की अंतिम तिथि क्या है?",
+     "a": "Online आवेदन 4 दिसंबर 2026, दोपहर 3:00 बजे बंद होंगे, और application packet की physical hard copy 14 दिसंबर 2026, शाम 5:00 बजे तक पहुँचनी चाहिए। शुल्क (₹500 सामान्य/BC/EWS, ₹300 झारखंड SC/ST, PwD छूट) भी 4 दिसंबर 2026 तक देना है।"
+    },
+    {
+     "q": "JSHPS ब्लॉक प्रोग्राम मैनेजर की योग्यता क्या है?",
+     "a": "ICAR-मान्यता प्राप्त विश्वविद्यालय से कृषि (B.Sc. Ag) या बागवानी (B.Sc. Horti) में regular स्नातक डिग्री, उम्र 21–30 वर्ष। असिस्टेंट-कम-DEO के लिए ADCA के साथ full-time स्नातक डिग्री, या BCA / B.Sc (IT), 1–2 साल के अनुभव के साथ, उम्र 25–35 वर्ष।"
+    }
+   ],
+   "kit": [
+    {
+     "title": "पासपोर्ट फोटो ready रखो",
+     "text": "नयी सफेद-background वाली रंगीन फोटो scan करके रखो; बड़ी file को यहीं छोटी कर सकते हो।",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates एक PDF में जोड़ो",
+     "text": "सारे documents को एक साफ़ PDF में जोड़कर upload के लिए ready रखो।",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "सिर्फ़ online apply करके hard copy न भेजना",
+    "दो posts के लिए apply करना",
+    "Age reckoning date assume कर लेना",
+    "Contractual post को permanent समझना"
+   ]
+  }
+ },
+ {
+  "slug": "kerala-high-court-system-assistant",
+  "advt": "Recruitment No. 24/2026",
+  "board_en": "High Court of Kerala, Ernakulam",
+  "board_hi": "केरल उच्च न्यायालय, एर्नाकुलम",
+  "portal": "hckrecruitment.keralacourts.in",
+  "posts": 90,
+  "dates": {
+   "apply_end": "2026-12-14",
+   "apply_start": "2026-11-20",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-14"
+  },
+  "photo_kind": "upload",
+  "note_en": "System Assistant is a contract appointment for an initial period of 2 years in the District Judiciary — it carries no claim for regularisation.",
+  "note_hi": "सिस्टम असिस्टेंट जिला न्यायपालिका में शुरुआत में 2 साल के contract पर नियुक्ति है — इसका regularisation का कोई दावा नहीं बनता।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://hckrecruitment.keralacourts.in",
+   "notice": null,
+   "site": "https://hckrecruitment.keralacourts.in"
+  },
+  "en": {
+   "name": "Kerala High Court System Assistant Recruitment 2026",
+   "tagline": "90 System Assistant posts in the District Judiciary — Diploma/BCA/B.Sc (CS) + 2 years' hardware experience — no fee, apply 20 November to 14 December 2026.",
+   "qual": "3-yr Diploma (Computer/Electronics) / B.Sc (CS) / BCA + 2 yrs hardware troubleshooting experience",
+   "fees": [
+    "No application fee is charged for this recruitment — candidates of all categories apply free."
+   ],
+   "fees_short": "Nil (no fee)",
+   "specs": [
+    "Apply online ONLY through hckrecruitment.keralacourts.in — the window opens on 20 November 2026, not before.",
+    "Qualification and experience must have been acquired on or before 10 November 2026 (the notification date).",
+    "Selection is by screening/shortlisting of applications followed by an interview — no written test is mentioned in the notification."
+   ],
+   "eligibility": [
+    "90 System Assistant posts under Recruitment No. 24/2026 (File No. HCKL/7863/2026-REC3-HC KERALA), dated 10 November 2026, across 14 judicial districts of Kerala — Ernakulam 12, Thiruvananthapuram 10, Kollam 8, Kozhikode 8, Alappuzha 7, Kottayam 7, Thrissur 7, Palakkad 7, Thalassery 6, Manjeri 5, Pathanamthitta 4, Thodupuzha 4, Kalpetta 3, Kasargod 2.",
+    "Qualification (any one): Government-approved 3-year Diploma in Computer or Electronics, or a higher qualification; OR B.Sc. in Computer Science or BCA, or a higher qualification in Computer Science/IT.",
+    "Mandatory experience: at least 2 years of experience in hardware troubleshooting with basic knowledge of computer networking.",
+    "Age: candidates must be born on or after 2 January 1985 (roughly 41 years maximum as of 2026).",
+    "Pay: consolidated ₹24,590 per month, for an initial contract period of 2 years, extendable on performance and subject to Government sanction."
+   ],
+   "dos": [
+    "Apply online on hckrecruitment.keralacourts.in between 20 November and 14 December 2026.",
+    "Check that your qualification and 2-year experience were completed on or before 10 November 2026.",
+    "Choose your preferred judicial district carefully — vacancies differ by district.",
+    "Keep proof of your hardware troubleshooting experience ready — it is a mandatory condition.",
+    "Apply free — there is no fee, so do not pay anyone for this form."
+   ],
+   "donts": [
+    "Do not apply before 20 November 2026 — the window opens that day.",
+    "Do not apply without the 2 years of hardware troubleshooting experience — it is mandatory, not desirable.",
+    "Do not treat this as a permanent post — it is a 2-year contract with no claim for regularisation.",
+    "Do not pay any fee — the recruitment charges nothing; anyone asking for money is a fraud."
+   ],
+   "checklist": [
+    "Diploma (Computer/Electronics) / B.Sc (CS) / BCA certificate",
+    "2-year hardware troubleshooting experience proof",
+    "Date of birth proof (born on or after 2 January 1985)",
+    "Recent colour photograph and signature scan",
+    "Caste certificate, if applicable"
+   ],
+   "documents": [
+    "Diploma / Degree certificate (Computer/Electronics/CS/BCA)",
+    "Experience certificate (2 years, hardware troubleshooting)",
+    "Date of birth proof (SSLC / birth certificate)",
+    "Caste certificate, if applicable",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "20 November se pehle apply karne ki koshish karna",
+    "2 saal ke experience ke bina apply karna",
+    "Ise permanent post samajhna",
+    "Kisi ko shulk ke naam par paise dena"
+   ],
+   "steps": [
+    "hckrecruitment.keralacourts.in par Recruitment No. 24/2026 padho — apne district ki vacancy aur yogyata note karo.",
+    "20 November 2026 se online application form kholo aur apna judicial district chuno.",
+    "Form bharo, photo aur signature upload karo, qualification aur experience ke documents jodo.",
+    "Form submit karo — koi shulk nahi hai, payment step nahi hai।",
+    "Printout nikalo — 14 December 2026 se pehle poora karo; shortlisting ke baad interview hoga."
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in Kerala High Court System Assistant 2026?",
+     "a": "90 System Assistant posts across 14 judicial districts of Kerala — Ernakulam 12, Thiruvananthapuram 10, Kollam 8, Kozhikode 8, and others — under Recruitment No. 24/2026."
+    },
+    {
+     "q": "What is the qualification for Kerala High Court System Assistant?",
+     "a": "A Government-approved 3-year Diploma in Computer or Electronics (or higher), OR B.Sc. in Computer Science or BCA (or higher in CS/IT), PLUS at least 2 years of experience in hardware troubleshooting with basic knowledge of computer networking."
+    },
+    {
+     "q": "Is there any application fee for Kerala High Court System Assistant 2026?",
+     "a": "No. No application fee is charged for this recruitment — candidates of all categories apply free."
+    },
+    {
+     "q": "Is the Kerala High Court System Assistant post permanent?",
+     "a": "No. It is a contract appointment for an initial period of 2 years in the District Judiciary, extendable on performance and subject to Government sanction — it carries no claim for regularisation."
+    }
+   ]
+  },
+  "hi": {
+   "name": "केरल उच्च न्यायालय सिस्टम असिस्टेंट भर्ती 2026",
+   "tagline": "जिला न्यायपालिका में 90 सिस्टम असिस्टेंट पद — डिप्लोमा/BCA/B.Sc (CS) + 2 साल का hardware अनुभव — कोई शुल्क नहीं, 20 नवंबर से 14 दिसंबर 2026 तक apply करें।",
+   "qual": "3-साला डिप्लोमा (कंप्यूटर/इलेक्ट्रॉनिक्स) / B.Sc (CS) / BCA + 2 साल का hardware troubleshooting अनुभव",
+   "fees": [
+    "इस भर्ती के लिए कोई आवेदन शुल्क नहीं लिया जाता — सभी श्रेणियों के उम्मीदवार मुफ़्त में apply करते हैं।"
+   ],
+   "fees_short": "Nil (कोई शुल्क नहीं)",
+   "specs": [
+    "सिर्फ़ hckrecruitment.keralacourts.in पर online apply करो — window 20 नवंबर 2026 को खुलती है, उससे पहले नहीं।",
+    "योग्यता और अनुभव 10 नवंबर 2026 (अधिसूचना की तारीख) तक प्राप्त होने चाहिए।",
+    "चयन applications की screening/shortlisting फिर interview से होगा — अधिसूचना में कोई लिखित परीक्षा नहीं बताई गई है।"
+   ],
+   "eligibility": [
+    "Recruitment No. 24/2026 (File No. HCKL/7863/2026-REC3-HC KERALA), दिनांक 10 नवंबर 2026 के तहत केरल के 14 न्यायिक जिलों में 90 सिस्टम असिस्टेंट पद — एर्नाकुलम 12, तिरुवनंतपुरम 10, कोल्लम 8, कोझिकोड 8, अलप्पुझा 7, कोट्टायम 7, त्रिशूर 7, पलक्कड़ 7, थलस्सेरी 6, मंजेरी 5, पथनमथिट्टा 4, थोडुपुझा 4, कल्पेट्टा 3, कासरगोड 2।",
+    "योग्यता (कोई एक): सरकार से मान्यता प्राप्त कंप्यूटर या इलेक्ट्रॉनिक्स में 3-साला डिप्लोमा, या उच्च योग्यता; या B.Sc. कंप्यूटर साइंस या BCA, या कंप्यूटर साइंस/IT में उच्च योग्यता।",
+    "अनिवार्य अनुभव: कंप्यूटर नेटवर्किंग की बुनियादी जानकारी के साथ hardware troubleshooting में कम से कम 2 साल का अनुभव।",
+    "उम्र: उम्मीदवार का जन्म 2 जनवरी 1985 को या उसके बाद हुआ हो (2026 तक लगभग अधिकतम 41 वर्ष)।",
+    "वेतन: consolidated ₹24,590 प्रति माह, शुरुआत में 2 साल के contract के लिए, performance पर बढ़ाया जा सकता है और सरकार की मंज़ूरी पर निर्भर है।"
+   ],
+   "dos": [
+    "20 नवंबर से 14 दिसंबर 2026 के बीच hckrecruitment.keralacourts.in पर online apply करो।",
+    "Check करो कि तुम्हारी योग्यता और 2 साल का अनुभव 10 नवंबर 2026 तक पूरा हो चुका हो।",
+    "अपना पसंदीदा न्यायिक जिला ध्यान से चुनो — हर जिले की vacancy अलग है।",
+    "Hardware troubleshooting अनुभव का proof ready रखो — यह अनिवार्य शर्त है।",
+    "मुफ़्त में apply करो — कोई शुल्क नहीं है, इसलिए इस form के लिए किसी को पैसे मत दो।"
+   ],
+   "donts": [
+    "20 नवंबर 2026 से पहले apply करने की कोशिश मत करो — window उसी दिन खुलती है।",
+    "2 साल के hardware troubleshooting अनुभव के बिना apply मत करो — यह अनिवार्य है, desirable नहीं।",
+    "इसे permanent post मत समझो — यह 2 साल का contract है, regularisation का कोई दावा नहीं बनता।",
+    "कोई शुल्क मत दो — भर्ती में कुछ नहीं लिया जाता; पैसे माँगने वाला fraud है।"
+   ],
+   "checklist": [
+    "डिप्लोमा (कंप्यूटर/इलेक्ट्रॉनिक्स) / B.Sc (CS) / BCA certificate",
+    "2 साल के hardware troubleshooting अनुभव का proof",
+    "जन्म तिथि का proof (2 जनवरी 1985 को या उसके बाद जन्म)",
+    "नयी रंगीन फोटो और हस्ताक्षर का scan",
+    "जाति certificate, यदि लागू हो"
+   ],
+   "documents": [
+    "डिप्लोमा / डिग्री certificate (कंप्यूटर/इलेक्ट्रॉनिक्स/CS/BCA)",
+    "Experience certificate (2 साल, hardware troubleshooting)",
+    "जन्म तिथि का proof (SSLC / birth certificate)",
+    "जाति प्रमाणपत्र, यदि लागू हो",
+    "आधार कार्ड"
+   ],
+   "steps": [
+    "hckrecruitment.keralacourts.in पर Recruitment No. 24/2026 पढ़ो — अपने जिले की vacancy और योग्यता note करो।",
+    "20 नवंबर 2026 से online application form खोलो और अपना judicial district चुनो।",
+    "Form भरो, फोटो और हस्ताक्षर upload करो, योग्यता और अनुभव के documents जोड़ो।",
+    "Form submit करो — कोई शुल्क नहीं है, payment step नहीं है।",
+    "Printout निकालो — 14 दिसंबर 2026 से पहले पूरा करो; shortlisting के बाद interview होगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "केरल उच्च न्यायालय सिस्टम असिस्टेंट 2026 में कितनी रिक्तियाँ हैं?",
+     "a": "केरल के 14 न्यायिक जिलों में 90 सिस्टम असिस्टेंट पद — एर्नाकुलम 12, तिरुवनंतपुरम 10, कोल्लम 8, कोझिकोड 8, और अन्य — Recruitment No. 24/2026 के तहत।"
+    },
+    {
+     "q": "केरल उच्च न्यायालय सिस्टम असिस्टेंट की योग्यता क्या है?",
+     "a": "सरकार से मान्यता प्राप्त कंप्यूटर या इलेक्ट्रॉनिक्स में 3-साला डिप्लोमा (या उच्च), या B.Sc. कंप्यूटर साइंस या BCA (या CS/IT में उच्च), साथ में कंप्यूटर नेटवर्किंग की बुनियादी जानकारी के साथ hardware troubleshooting में कम से कम 2 साल का अनुभव।"
+    },
+    {
+     "q": "क्या केरल उच्च न्यायालय सिस्टम असिस्टेंट 2026 के लिए कोई आवेदन शुल्क है?",
+     "a": "नहीं। इस भर्ती के लिए कोई आवेदन शुल्क नहीं लिया जाता — सभी श्रेणियों के उम्मीदवार मुफ़्त में apply करते हैं।"
+    },
+    {
+     "q": "क्या केरल उच्च न्यायालय सिस्टम असिस्टेंट post permanent है?",
+     "a": "नहीं। यह जिला न्यायपालिका में शुरुआत में 2 साल के contract पर नियुक्ति है, performance पर बढ़ाई जा सकती है और सरकार की मंज़ूरी पर निर्भर है — इसका regularisation का कोई दावा नहीं बनता।"
+    }
+   ],
+   "kit": [
+    {
+     "title": "पासपोर्ट फोटो ready रखो",
+     "text": "नयी सफेद-background वाली रंगीन फोटो scan करके रखो; बड़ी file को यहीं छोटी कर सकते हो।",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates एक PDF में जोड़ो",
+     "text": "सारे documents को एक साफ़ PDF में जोड़कर upload के लिए ready रखो।",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "20 नवंबर से पहले apply करने की कोशिश करना",
+    "2 साल के अनुभव के बिना apply करना",
+    "इसे permanent post समझना",
+    "शुल्क के नाम पर किसी को पैसे देना"
+   ]
+  }
+ },
+ {
+  "slug": "manipur-police-constable-si-2026",
+  "advt": "Notification No. E/31/21/2021-PHQ (Adm)(Pt-I)",
+  "board_en": "Manipur Police Headquarters, Government of Manipur",
+  "board_hi": "मणिपुर पुलिस मुख्यालय, मणिपुर सरकार",
+  "portal": "manipurpolice.gov.in",
+  "posts": 2698,
+  "dates": {
+   "apply_end": "2026-12-10",
+   "apply_start": "2026-11-02",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-10"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://manipurpolice.gov.in",
+   "notice": null,
+   "site": "https://manipurpolice.gov.in"
+  },
+  "en": {
+   "name": "Manipur Police Constable, SI & Other Posts Recruitment 2026",
+   "tagline": "2,698 posts — Sub-Inspector 136, Constable (Male/Civil) 1,200 and 17 more categories — offline forms through District Employment Exchanges till 10 December 2026.",
+   "qual": "Graduate (SI) / Class XII (Constable) — post-wise, confirm at District SP office",
+   "fees": [
+    "₹400 per application form, paid when the form is issued at the District SP office.",
+    "Eligible PwD candidates pay no fee."
+   ],
+   "fees_short": "₹400 per form (PwD: nil)",
+   "specs": [
+    "There is NO online form — buy the prescribed form from your District Superintendent of Police office and submit it through your District Employment Exchange by 10 December 2026.",
+    "The notification does NOT print a complete post-wise qualification, age-limit or physical-standards table — confirm the exact eligibility for your post at the District SP office or from the official recruitment rules before buying the form.",
+    "The vacancy numbers are provisional — the DGP can increase or decrease them without a new notification."
+   ],
+   "eligibility": [
+    "2,698 provisional vacancies across 19 post categories under Notification No. E/31/21/2021-PHQ (Adm)(Pt-I), dated 2 November 2026 — Sub-Inspector (Male/Civil) 136, Constable (Male/Civil) 1,200, plus ASI, Havildar, Riflemen, Jemadar, Constable (Female/Civil), Constable Driver, LDC, Nurse, Follower and others. A corrigendum dated 10 November 2026 extended the last date to 10 December 2026.",
+    "Qualification (as reported): SI (Male/Civil) and Jemadar — Graduate from a recognised university; Constable (Male/Female, Civil) — Class XII / HSSLC. The notification itself does not print a complete post-wise qualification table, so confirm your post's exact qualification from the District SP office.",
+    "Age: minimum 18 years for every post. The corrigendum gives a one-time relaxation of 2 years in the upper age limit for all posts. The notification does not print post-wise upper age limits or physical measurement standards — confirm them at the District SP office.",
+    "Selection: through the Employment Exchange sponsorship route — the District Employment Exchange sends its sponsored candidate list to Police Headquarters by 31 December 2026. Written test, physical test and other stages follow the Manipur Police recruitment rules.",
+    "Pay: up to Pay Level-8 (SI) under ROP 2019; Constable (Male/Civil) at Level-3."
+   ],
+   "dos": [
+    "Buy the prescribed form from your District SP office during office hours — there is no online form.",
+    "Submit the filled form through your District Employment Exchange by 10 December 2026.",
+    "Confirm your post's exact qualification, age limit and physical standards at the District SP office BEFORE buying the form.",
+    "Pay ₹400 for the form at the District SP office (eligible PwD candidates pay nothing) and keep the receipt.",
+    "Check whether you applied under the earlier 2021/2022/2024 notifications — the one-time 2-year age relaxation may apply to you."
+   ],
+   "donts": [
+    "Do not look for an online form — this recruitment is offline only, through the Employment Exchange.",
+    "Do not assume the full eligibility from summaries — the notification does not print a complete post-wise table.",
+    "Do not submit the form after 10 December 2026 — applications received after that date will not be entertained.",
+    "Do not pay anyone other than the District SP office for the form — the fee is ₹400 at the counter."
+   ],
+   "checklist": [
+    "Prescribed application form from the District SP office (₹400)",
+    "Educational certificates (Graduate for SI / Class XII for Constable)",
+    "Age proof (minimum 18 years)",
+    "Employment Exchange registration proof",
+    "Recent colour photograph and signature",
+    "Caste certificate, if applicable"
+   ],
+   "documents": [
+    "Graduation degree / Class XII (HSSLC) certificate (post-wise)",
+    "Age proof certificate",
+    "Employment Exchange registration card",
+    "Caste certificate (SC/ST/OBC), if applicable",
+    "PwD certificate, if applicable",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Online form dhoondhna — bharti sirf offline hai",
+    "District SP office se yogyata confirm kiye bina form khareedna",
+    "10 December ke baad form jama karna",
+    "Form ke liye SP office ke alawa kisi ko paise dena"
+   ],
+   "steps": [
+    "manipurpolice.gov.in par Notification No. E/31/21/2021-PHQ (Adm)(Pt-I) padho — apne post ki vacancy aur yogyata note karo.",
+    "Apne District SP office jaakar apne post ki exact yogyata, age limit aur physical standards confirm karo।",
+    "District SP office se prescribed form khareedo — ₹400 (eligible PwD ko koi shulk nahi)।",
+    "Form bharo aur apne District Employment Exchange ke through jama karo — 10 December 2026 se pehle।",
+    "Receipt aur form ki copy sambhal kar rakho; Employment Exchange sponsored list 31 December 2026 tak Police Headquarters bhejega।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in Manipur Police Recruitment 2026?",
+     "a": "2,698 provisional vacancies across 19 post categories — Sub-Inspector (Male/Civil) 136, Constable (Male/Civil) 1,200, plus ASI, Havildar, Riflemen, Jemadar, Constable (Female/Civil), Constable Driver, LDC, Nurse, Follower and others — under Notification No. E/31/21/2021-PHQ (Adm)(Pt-I)."
+    },
+    {
+     "q": "What is the last date to apply for Manipur Police 2026?",
+     "a": "10 December 2026 — the last date for submitting the application form to the District Employment Exchange, extended from 30 November 2026 by a corrigendum dated 10 November 2026. The Employment Exchange sends its sponsored list to Police Headquarters by 31 December 2026."
+    },
+    {
+     "q": "Is there an online form for Manipur Police Recruitment 2026?",
+     "a": "No. There is no online form. Buy the prescribed form from your District Superintendent of Police office (₹400; eligible PwD candidates pay nothing) and submit it through your District Employment Exchange by 10 December 2026."
+    },
+    {
+     "q": "Why doesn't this page list the full post-wise eligibility for Manipur Police 2026?",
+     "a": "Because the official notification does not print a complete post-wise qualification, age-limit or physical-standards table. The reported qualifications are SI (Male/Civil) — Graduate, and Constable (Male/Female, Civil) — Class XII / HSSLC, with minimum age 18 years and a one-time 2-year upper-age relaxation. Confirm your post's exact eligibility at the District SP office before buying the form."
+    }
+   ]
+  },
+  "hi": {
+   "name": "मणिपुर पुलिस कांस्टेबल, SI और अन्य पद भर्ती 2026",
+   "tagline": "2,698 पद — सब-इंस्पेक्टर 136, कांस्टेबल (पुरुष/सिविल) 1,200 और 17 अन्य श्रेणियाँ — जिला रोज़गार कार्यालयों के ज़रिए offline form 10 दिसंबर 2026 तक।",
+   "qual": "स्नातक (SI) / 12वीं (कांस्टेबल) — post-wise, जिला SP कार्यालय में confirm करें",
+   "fees": [
+    "प्रति application form ₹400, जो form जारी करते समय जिला SP कार्यालय में देना है।",
+    "पात्र PwD उम्मीदवारों को कोई शुल्क नहीं है।"
+   ],
+   "fees_short": "₹400 प्रति form (PwD: nil)",
+   "specs": [
+    "कोई online form नहीं है — निर्धारित form अपने जिला पुलिस अधीक्षक (SP) कार्यालय से खरीदो और 10 दिसंबर 2026 तक अपने जिला रोज़गार कार्यालय (Employment Exchange) के ज़रिए जमा करो।",
+    "अधिसूचना में post-wise योग्यता, उम्र-सीमा या physical standards की पूरी तालिका नहीं छपी है — form खरीदने से पहले अपने post की exact eligibility जिला SP कार्यालय या official recruitment rules से confirm करो।",
+    "रिक्तियों की संख्या provisional है — DGP बिना नयी अधिसूचना के इन्हें बढ़ा या घटा सकते हैं।"
+   ],
+   "eligibility": [
+    "Notification No. E/31/21/2021-PHQ (Adm)(Pt-I), दिनांक 2 नवंबर 2026 के तहत 19 post श्रेणियों में 2,698 provisional रिक्तियाँ — सब-इंस्पेक्टर (पुरुष/सिविल) 136, कांस्टेबल (पुरुष/सिविल) 1,200, साथ में ASI, हवलदार, राइफलमैन, जमादार, कांस्टेबल (महिला/सिविल), कांस्टेबल ड्राइवर, LDC, नर्स, फॉलोअर और अन्य। 10 नवंबर 2026 के corrigendum से अंतिम तिथि बढ़कर 10 दिसंबर 2026 हो गई।",
+    "योग्यता (जैसी बताई गई है): SI (पुरुष/सिविल) और जमादार — मान्यता प्राप्त विश्वविद्यालय से स्नातक; कांस्टेबल (पुरुष/महिला, सिविल) — 12वीं / HSSLC। अधिसूचना में post-wise योग्यता की पूरी तालिका नहीं छपी है, इसलिए अपने post की exact योग्यता जिला SP कार्यालय से confirm करो।",
+    "उम्र: हर post के लिए न्यूनतम 18 वर्ष। Corrigendum से सभी पदों पर ऊपरी उम्र-सीमा में एक बार 2 साल की छूट मिली है। अधिसूचना में post-wise ऊपरी उम्र-सीमा या physical measurement standards नहीं छपे हैं — जिला SP कार्यालय में confirm करो।",
+    "चयन: Employment Exchange sponsorship route से — जिला रोज़गार कार्यालय अपनी sponsored उम्मीदवार सूची 31 दिसंबर 2026 तक पुलिस मुख्यालय भेजेगा। लिखित परीक्षा, physical test और अन्य चरण मणिपुर पुलिस recruitment rules के अनुसार होंगे।",
+    "वेतन: ROP 2019 के तहत Level-8 तक (SI); कांस्टेबल (पुरुष/सिविल) Level-3 पर।"
+   ],
+   "dos": [
+    "निर्धारित form अपने जिला SP कार्यालय से office hours में खरीदो — कोई online form नहीं है।",
+    "भरा हुआ form अपने जिला रोज़गार कार्यालय (Employment Exchange) के ज़रिए 10 दिसंबर 2026 तक जमा करो।",
+    "Form खरीदने से पहले अपने post की exact योग्यता, उम्र-सीमा और physical standards जिला SP कार्यालय में confirm करो।",
+    "Form के लिए जिला SP कार्यालय में ₹400 दो (पात्र PwD उम्मीदवारों को कुछ नहीं) और receipt रखो।",
+    "Check करो कि क्या तुमने पहले की 2021/2022/2024 अधिसूचनाओं के तहत apply किया था — एक बार की 2 साल की उम्र छूट तुम पर लागू हो सकती है।"
+   ],
+   "donts": [
+    "Online form मत ढूँढो — यह भर्ती सिर्फ़ offline है, Employment Exchange के ज़रिए।",
+    "पूरी eligibility summaries से assume मत करो — अधिसूचना में post-wise पूरी तालिका नहीं छपी है।",
+    "10 दिसंबर 2026 के बाद form जमा मत करो — उसके बाद आए आवेदन स्वीकार नहीं होंगे।",
+    "Form के लिए जिला SP कार्यालय के अलावा किसी को पैसे मत दो — शुल्क counter पर ₹400 है।"
+   ],
+   "checklist": [
+    "जिला SP कार्यालय से निर्धारित application form (₹400)",
+    "शैक्षणिक certificates (SI के लिए स्नातक / कांस्टेबल के लिए 12वीं)",
+    "Age proof (न्यूनतम 18 वर्ष)",
+    "Employment Exchange registration proof",
+    "नयी रंगीन फोटो और हस्ताक्षर",
+    "जाति certificate, यदि लागू हो"
+   ],
+   "documents": [
+    "स्नातक डिग्री / 12वीं (HSSLC) certificate (post के हिसाब से)",
+    "Age proof certificate",
+    "Employment Exchange registration card",
+    "जाति प्रमाणपत्र (SC/ST/OBC), यदि लागू हो",
+    "PwD प्रमाणपत्र, यदि लागू हो",
+    "आधार कार्ड"
+   ],
+   "steps": [
+    "manipurpolice.gov.in पर Notification No. E/31/21/2021-PHQ (Adm)(Pt-I) पढ़ो — अपने post की vacancy और योग्यता note करो।",
+    "अपने जिला SP कार्यालय जाकर अपने post की exact योग्यता, उम्र-सीमा और physical standards confirm करो।",
+    "जिला SP कार्यालय से निर्धारित form खरीदो — ₹400 (पात्र PwD को कोई शुल्क नहीं)।",
+    "Form भरो और अपने जिला रोज़गार कार्यालय (Employment Exchange) के ज़रिए जमा करो — 10 दिसंबर 2026 से पहले।",
+    "Receipt और form की copy संभाल कर रखो; Employment Exchange sponsored list 31 दिसंबर 2026 तक पुलिस मुख्यालय भेजेगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "मणिपुर पुलिस भर्ती 2026 में कितनी रिक्तियाँ हैं?",
+     "a": "19 post श्रेणियों में 2,698 provisional रिक्तियाँ — सब-इंस्पेक्टर (पुरुष/सिविल) 136, कांस्टेबल (पुरुष/सिविल) 1,200, साथ में ASI, हवलदार, राइफलमैन, जमादार, कांस्टेबल (महिला/सिविल), कांस्टेबल ड्राइवर, LDC, नर्स, फॉलोअर और अन्य — Notification No. E/31/21/2021-PHQ (Adm)(Pt-I) के तहत।"
+    },
+    {
+     "q": "मणिपुर पुलिस 2026 के लिए apply की अंतिम तिथि क्या है?",
+     "a": "10 दिसंबर 2026 — जिला रोज़गार कार्यालय में आवेदन जमा करने की अंतिम तिथि, 10 नवंबर 2026 के corrigendum से 30 नवंबर से बढ़ाकर 10 दिसंबर कर दी गई। Employment Exchange अपनी sponsored list 31 दिसंबर 2026 तक पुलिस मुख्यालय भेजेगा।"
+    },
+    {
+     "q": "क्या मणिपुर पुलिस भर्ती 2026 के लिए online form है?",
+     "a": "नहीं। कोई online form नहीं है। अपने जिला पुलिस अधीक्षक (SP) कार्यालय से निर्धारित form खरीदो (₹400; पात्र PwD उम्मीदवारों को कुछ नहीं) और 10 दिसंबर 2026 तक अपने जिला रोज़गार कार्यालय (Employment Exchange) के ज़रिए जमा करो।"
+    },
+    {
+     "q": "इस page पर मणिपुर पुलिस 2026 की पूरी post-wise eligibility क्यों नहीं दी गई है?",
+     "a": "क्योंकि official अधिसूचना में post-wise योग्यता, उम्र-सीमा या physical standards की पूरी तालिका नहीं छपी है। बताई गई योग्यताएँ हैं — SI (पुरुष/सिविल): स्नातक, और कांस्टेबल (पुरुष/महिला, सिविल): 12वीं / HSSLC, न्यूनतम उम्र 18 वर्ष और ऊपरी उम्र-सीमा में एक बार 2 साल की छूट। Form खरीदने से पहले अपने post की exact eligibility जिला SP कार्यालय में confirm करो।"
+    }
+   ],
+   "kit": [
+    {
+     "title": "पासपोर्ट फोटो ready रखो",
+     "text": "नयी सफेद-background वाली रंगीन फोटो scan करके रखो; बड़ी file को यहीं छोटी कर सकते हो।",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates एक PDF में जोड़ो",
+     "text": "सारे documents को एक साफ़ PDF में जोड़कर upload के लिए ready रखो।",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Online form ढूँढना — भर्ती सिर्फ़ offline है",
+    "जिला SP कार्यालय से योग्यता confirm किए बिना form खरीदना",
+    "10 दिसंबर के बाद form जमा करना",
+    "Form के लिए SP कार्यालय के अलावा किसी को पैसे देना"
+   ]
+  }
  }
 ]

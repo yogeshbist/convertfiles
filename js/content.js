@@ -367,8 +367,8 @@
    "cat": "फोटो",
    "fam": "image",
    "title": "RRB NTPC फॉर्म: फोटो और हस्ताक्षर का साइज़ — live photo नियम, हस्ताक्षर 30-49 KB",
-   "seo_title": "RRB NTPC फोटो और सिग्नेचर साइज़ 2026 — Live Photo नियम, 30-49 KB हस्ताक्षर",
-   "teaser": "RRB NTPC फॉर्म भर रहे हैं (आखिरी तारीख 6 और 13 नवंबर 2026)? इस साल फोटो live लिया जाएगा, और हस्ताक्षर 30-49 KB का चाहिए — बैंक परीक्षाओं से अलग। जानिए दोनों कैसे सही तैयार करें।",
+   "seo_title": "RRB NTPC Photo Signature Size 2026 — Live Photo नियम, Signature 30-49 KB",
+   "teaser": "सीधा जवाब: RRB NTPC में फोटो फॉर्म भरते समय live लिया जाता है (upload नहीं होता); हस्ताक्षर JPG में 30-49 KB, कम से कम 140 × 60 px चाहिए। दोनों को सही तैयार करने का पूरा तरीका, अधिसूचना के अनुसार — correction window में भी यही size चलेगा।",
    "alt": "rrb-ntpc-photo-signature-size",
    "tryTool": "compress-image",
    "tryLabel": "अपने हस्ताक्षर को ठीक 40 KB पर सेट करें — फ्री, ब्राउज़र में।",
@@ -454,8 +454,8 @@
    "cat": "फोटो",
    "fam": "image",
    "title": "RRB Station Master फॉर्म: फोटो और हस्ताक्षर का साइज़ — live photo नियम, हस्ताक्षर 30-49 KB",
-   "seo_title": "RRB Station Master फोटो और सिग्नेचर साइज़ 2026 — CEN 08/2026 Live Photo नियम, 30-49 KB हस्ताक्षर",
-   "teaser": "RRB Station Master फॉर्म भर रहे हैं (CEN 08/2026, 27 अक्टूबर – 25 नवंबर 2026)? इस साल फोटो live लिया जाएगा, और हस्ताक्षर 30-49 KB का चाहिए। विस्तृत अधिसूचना के अनुसार दोनों कैसे सही तैयार करें।",
+   "seo_title": "RRB Station Master Photo Signature Size 2026 — Live Photo नियम, Signature 30-49 KB (CEN 08/2026)",
+   "teaser": "सीधा जवाब: RRB Station Master (CEN 08/2026) में फोटो upload नहीं होता — फॉर्म भरते समय live photo लिया जाता है; हस्ताक्षर JPG में 30-49 KB चाहिए। फॉर्म 27 अक्टूबर – 25 नवंबर 2026 तक खुला है — दोनों चीज़ें सही तैयार करने का पूरा तरीका, विस्तृत अधिसूचना के अनुसार।",
    "alt": "rrb-station-master-photo-signature-size",
    "tryTool": "compress-image",
    "tryLabel": "अपने हस्ताक्षर को ठीक 40 KB पर सेट करें — फ्री, ब्राउज़र में।",
@@ -682,7 +682,8 @@
     "p:Sign on plain white paper with a black or blue pen — a normal running signature, not block capitals. Photograph it in good light or scan it, crop close to the ink, and compress it to the 10–20 KB band the same way. Check the preview before you upload: blurred, tiny, or tilted signatures are among the top reasons forms get rejected, alongside files outside the KB band and the wrong format (PNG or HEIC instead of JPG).",
     "h:Do it without uploading anything",
     "p:Exam documents are identity documents, and uploading them to a random converter is exactly the kind of thing you should not do. Everything here runs inside your browser: the photo never leaves your device, there is no account, and nothing is stored. Compress, download, upload to the portal, done.",
-    "p:Applying this season? The <a href=\"/exam-forms/\">Exam Form Centre — sarkari exam forms, last dates and photo-signature sizes</a> lists every open government exam form in one place, sorted by last date — check your exam’s exact photo-signature size, fees and deadline there before you start."
+    "p:Applying this season? The <a href=\"/exam-forms/\">Exam Form Centre — sarkari exam forms, last dates and photo-signature sizes</a> lists every open government exam form in one place, sorted by last date — check your exam’s exact photo-signature size, fees and deadline there before you start.",
+    "p:Live forms right now: the <a href=\"/guides/rrb-station-master-photo-signature-size/\">RRB Station Master guide</a> and the <a href=\"/guides/rrb-ntpc-photo-signature-size/\">RRB NTPC guide</a> cover the live-photo rules, and the <a href=\"/exam-forms/opsc-aso-recruitment/\">OPSC ASO page</a> settles the computer-certificate question — every open form is listed in the <a href=\"/exam-forms/\">Exam Form Centre</a>."
    ],
    "tryUrl": "/compress-image-to-50kb/",
    "faq": [
@@ -731,7 +732,8 @@
     "p:सादे सफेद कागज़ पर काले या नीले पेन से सामान्य हस्ताक्षर करें — कैपिटल अक्षरों में नहीं। अच्छी रोशनी में फोटो लें या स्कैन करें, स्याही के पास से क्रॉप करें, और उसी तरह 10–20 KB में कंप्रेस करें। अपलोड से पहले प्रीव्यू ज़रूर देखें: धुंधले, बहुत छोटे या टेढ़े हस्ताक्षर, गलत KB, और गलत फॉर्मेट (JPG की जगह PNG या HEIC) रिजेक्शन के सबसे आम कारण हैं।",
     "h:बिना अपलोड किए करें",
     "p:परीक्षा के दस्तावेज़ पहचान के दस्तावेज़ होते हैं — इन्हें किसी अनजान कन्वर्टर पर अपलोड करना ठीक नहीं। यहां सब कुछ आपके ब्राउज़र में होता है: फोटो आपके डिवाइस से बाहर नहीं जाती, कोई अकाउंट नहीं, कुछ स्टोर नहीं होता। कंप्रेस करें, डाउनलोड करें, पोर्टल पर अपलोड करें — हो गया।",
-    "p:इस season form भर रहे हो? <a href=\"/hi/exam-forms/\">परीक्षा फॉर्म केंद्र — सरकारी परीक्षा फॉर्म, अंतिम तिथि और फोटो-हस्ताक्षर size</a> पर हर खुला सरकारी परीक्षा फॉर्म एक जगह, अंतिम तिथि के क्रम में मिलता है — शुरू करने से पहले अपनी परीक्षा का सही size, शुल्क और अंतिम तिथि वहाँ देख लो।"
+    "p:इस season form भर रहे हो? <a href=\"/hi/exam-forms/\">परीक्षा फॉर्म केंद्र — सरकारी परीक्षा फॉर्म, अंतिम तिथि और फोटो-हस्ताक्षर size</a> पर हर खुला सरकारी परीक्षा फॉर्म एक जगह, अंतिम तिथि के क्रम में मिलता है — शुरू करने से पहले अपनी परीक्षा का सही size, शुल्क और अंतिम तिथि वहाँ देख लो।",
+    "p:अभी खुले फॉर्म: <a href=\"/hi/guides/rrb-station-master-photo-signature-hindi/\">RRB Station Master गाइड</a> और <a href=\"/hi/guides/rrb-ntpc-photo-signature-hindi/\">RRB NTPC गाइड</a> में live photo के नियम हैं, और <a href=\"/hi/exam-forms/opsc-aso-recruitment/\">OPSC ASO पेज</a> पर कंप्यूटर प्रमाणपत्र वाला सवाल साफ़ किया गया है — सभी खुले फॉर्म <a href=\"/hi/exam-forms/\">परीक्षा फॉर्म केंद्र</a> में हैं।"
    ],
    "tryUrl": "/compress-image-to-50kb/",
    "faq": [

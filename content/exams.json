@@ -5941,7 +5941,8 @@
      "a": "Nahi. Advt R.II-21/2026-Sports ke anusar khel uplabdhi 30 September 2024 se 30 September 2026 ke beech ki honi chahiye, aur praman patra 11 November 2026 tak prapt hone chahiye."
     }
    ]
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "slug": "appsc-aee-recruitment",
@@ -11201,12 +11202,12 @@
   "portal": "isro.gov.in",
   "posts": 61,
   "dates": {
-   "apply_end": "2026-11-13",
+   "apply_end": "2026-11-20",
    "apply_start": "2026-10-24",
    "correction_end": null,
    "correction_start": null,
    "exam": null,
-   "fee_end": "2026-11-13"
+   "fee_end": "2026-11-20"
   },
   "photo_kind": "upload",
   "note_en": "These posts are described in the notification as temporary but likely to continue — the usual wording for ISRO centre recruitments.",
@@ -11222,7 +11223,7 @@
   },
   "en": {
    "name": "ISRO URSC Technician-B & Driver 2026",
-   "tagline": "61 Technician-B and driver posts at ISRO's U R Rao Satellite Centre, Bengaluru — 10th + ITI can apply, fee ₹500 (₹400 refunded on appearing), last date 13 November 2026.",
+   "tagline": "61 Technician-B and driver posts at ISRO's U R Rao Satellite Centre, Bengaluru — 10th + ITI can apply, fee ₹500 (₹400 refunded on appearing), last date 20 November 2026 (extended).",
    "qual": "10th pass + ITI/NTC/NAC (Technician-B); 10th + valid driving licence (Drivers)",
    "fees": [
     "Application fee: ₹500 for all candidates, paid online.",
@@ -11244,13 +11245,13 @@
     "Choose the correct trade and post code — Technician-B has 8 different trades.",
     "Pay the ₹500 fee online and keep the receipt — ₹400 comes back if you appear in the written test.",
     "Check the written-test and skill-test dates on isro.gov.in / ursc.gov.in after applying — the notice gives no test date.",
-    "Submit before 13 November 2026, 11:55 PM.",
+    "Submit before 20 November 2026, 5:00 PM.",
     "Keep your ITI certificate and driving licence ready for document verification."
    ],
    "donts": [
     "Do not apply for a trade you do not hold an ITI/NTC/NAC in.",
     "Do not assume the ₹500 fee is fully non-refundable — ₹400 is refunded on appearing in the written test.",
-    "Do not wait for the last night — the portal closes at 11:55 PM on 13 November 2026.",
+    "Do not wait for the last night — the portal closes at 5:00 PM on 20 November 2026.",
     "Do not apply offline — only the online link on isro.gov.in / ursc.gov.in counts."
    ],
    "checklist": [
@@ -11275,7 +11276,7 @@
     "Register and fill the online form",
     "Upload the photo, signature and certificates",
     "Pay the ₹500 fee online",
-    "Submit before 13 November 2026, 11:55 PM and save the acknowledgement"
+    "Submit before 20 November 2026, 5:00 PM and save the acknowledgement"
    ],
    "extra_faq": [
     {
@@ -11305,14 +11306,14 @@
    ],
    "mistakes": [
     "Applying for a trade without the matching ITI certificate",
-    "Missing the 11:55 PM deadline on 13 November 2026",
+    "Missing the 5:00 PM deadline on 20 November 2026",
     "Treating the ₹500 fee as fully non-refundable",
     "Applying offline instead of through isro.gov.in / ursc.gov.in"
    ]
   },
   "hi": {
    "name": "ISRO URSC तकनीशियन-B और ड्राइवर 2026",
-   "tagline": "ISRO के यू आर राव उपग्रह केंद्र, बेंगलुरु में 61 तकनीशियन-B और ड्राइवर पद — 10वीं + ITI आवेदन कर सकते हैं, शुल्क ₹500 (परीक्षा में बैठने पर ₹400 वापस), अंतिम तिथि 13 नवंबर 2026।",
+   "tagline": "ISRO के यू आर राव उपग्रह केंद्र, बेंगलुरु में 61 तकनीशियन-B और ड्राइवर पद — 10वीं + ITI आवेदन कर सकते हैं, शुल्क ₹500 (परीक्षा में बैठने पर ₹400 वापस), अंतिम तिथि 20 नवंबर 2026 (बढ़ाई गई)।",
    "qual": "10वीं पास + ITI/NTC/NAC (तकनीशियन-B); 10वीं + वैध ड्राइविंग लाइसेंस (ड्राइवर)",
    "fees": [
     "आवेदन शुल्क: सभी उम्मीदवारों के लिए ₹500, ऑनलाइन भुगतान।",
@@ -11334,13 +11335,13 @@
     "सही ट्रेड और पद कोड चुनो — तकनीशियन-B में 8 अलग ट्रेड हैं।",
     "₹500 शुल्क ऑनलाइन भरो और रसीद रखो — लिखित परीक्षा में बैठने पर ₹400 वापस मिलते हैं।",
     "आवेदन के बाद लिखित और कौशल परीक्षा की तारीखें isro.gov.in / ursc.gov.in पर देखते रहो — notice में तारीख नहीं है।",
-    "13 नवंबर 2026, रात 11:55 से पहले submit करो।",
+    "20 नवंबर 2026, शाम 5:00 से पहले submit करो।",
     "दस्तावेज़ सत्यापन के लिए ITI प्रमाणपत्र और ड्राइविंग लाइसेंस तैयार रखो।"
    ],
    "donts": [
     "जिस ट्रेड का ITI/NTC/NAC तुम्हारे पास नहीं है, उसके लिए आवेदन मत करो।",
     "₹500 शुल्क को पूरी तरह non-refundable मत समझो — लिखित परीक्षा में बैठने पर ₹400 वापस मिलते हैं।",
-    "आखिरी रात का इंतज़ार मत करो — portal 13 नवंबर 2026, रात 11:55 को बंद होगा।",
+    "आखिरी रात का इंतज़ार मत करो — portal 20 नवंबर 2026, शाम 5:00 को बंद होगा।",
     "ऑफलाइन आवेदन मत करो — सिर्फ़ isro.gov.in / ursc.gov.in का ऑनलाइन लिंक मान्य है।"
    ],
    "checklist": [
@@ -11365,7 +11366,7 @@
     "पंजीकरण करो और ऑनलाइन फॉर्म भरो",
     "फोटो, हस्ताक्षर और प्रमाणपत्र upload करो",
     "₹500 शुल्क ऑनलाइन भरो",
-    "13 नवंबर 2026, रात 11:55 से पहले submit करो और पावती संभालो"
+    "20 नवंबर 2026, शाम 5:00 से पहले submit करो और पावती संभालो"
    ],
    "extra_faq": [
     {
@@ -11395,12 +11396,11 @@
    ],
    "mistakes": [
     "मिलते-जुलते ITI प्रमाणपत्र के बिना किसी ट्रेड के लिए आवेदन करना",
-    "13 नवंबर 2026, रात 11:55 की deadline चूकना",
+    "20 नवंबर 2026, शाम 5:00 की deadline चूकना",
     "₹500 शुल्क को पूरी तरह non-refundable समझना",
     "isro.gov.in / ursc.gov.in के बजाय ऑफलाइन आवेदन करना"
    ]
-  },
-  "stage": "result-awaited"
+  }
  },
  {
   "slug": "sameer-contract-positions",
@@ -11823,7 +11823,8 @@
     "फेलो लिंक के बजाय CMAAA लाभार्थी वाला आवेदन भरना",
     "14 नवंबर 2026, रात 11:59 की deadline चूकना"
    ]
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "slug": "cg-police-sukma-fighter-constable",
@@ -14108,13 +14109,13 @@
   "portal": "oil-india.com",
   "posts": 32,
   "dates": {
-   "apply_end": "2026-11-14",
+   "apply_end": "2026-12-14",
    "apply_start": "2026-10-15",
    "correction_end": null,
    "correction_start": null,
    "exam": "CBT tentatively 28 December 2026",
    "exam_hi": "CBT अस्थायी रूप से 28 दिसंबर 2026",
-   "fee_end": "2026-11-14"
+   "fee_end": "2026-12-14"
   },
   "photo_kind": "upload",
   "guide": {
@@ -14128,11 +14129,11 @@
   },
   "en": {
    "name": "Oil India Executive Recruitment 2026",
-   "tagline": "32 Executive posts at Oil India — Senior Officer (Mechanical/Petroleum), Senior Accounts Officer, Research Scientist, Hindi Officer and more — CBT + interview, last date 14 November 2026 (11 AM).",
+   "tagline": "32 Executive posts at Oil India — Senior Officer (Mechanical/Petroleum), Senior Accounts Officer, Research Scientist, Hindi Officer and more — CBT + interview, last date 14 December 2026 (11 AM).",
    "qual": "B.E./B.Tech / Master's / PhD / ICAI-ICMAI membership (post-wise)",
    "fees": [
     "Application fee: ₹500 plus taxes for General/OBC-NCL candidates. SC/ST/PwBD/EWS/ex-servicemen pay nothing. The fee is non-refundable.",
-    "Pay the fee by 14 November 2026, 11:00 AM."
+    "Pay the fee by 14 December 2026, 11:00 AM."
    ],
    "fees_short": "₹500 + taxes (SC/ST/PwBD/EWS/ESM: nil)",
    "specs": [
@@ -14145,19 +14146,19 @@
     "Senior Officer (Petroleum): a 2-year Master's in Petroleum Engineering/Technology with 60% plus an engineering degree. Accounts: Associate Membership of ICAI or ICMAI. Hindi Officer: PG in Hindi plus 3 years of experience. Confidential Secretary: graduation plus a 1- or 2-year secretarial diploma plus 2 years of experience (PwBD backlog post).",
     "Grade B posts (except Accounts) carry a 3-year service bond; probation is 1 year. All eligibility is counted as on 14 November 2026.",
     "Selection: a CBT of 100 marks in 90 minutes (qualifying 50 for UR/OBC/EWS, 40 for SC/ST/PwBD), then a Personal Interview of 15 marks — final merit is CBT × 0.85 + interview — for Grade B/C posts. For Grade A posts: CBT plus a proficiency/skill test (qualifying; merit on the CBT). The CBT is tentatively on 28 December 2026.",
-    "Apply online through oil-india.com (apply via the DigiALM portal) from 15 October 2026 (4:00 PM) to 14 November 2026, 11:00 AM. No correction window is mentioned."
+    "Apply online through oil-india.com (apply via the DigiALM portal) from 15 October 2026 (4:00 PM) to 14 December 2026, 11:00 AM. No correction window is mentioned."
    ],
    "dos": [
     "Check the post-wise qualification, percentage and age before applying — the six posts have very different rules.",
     "Keep your degree, PhD or ICAI/ICMAI membership proof ready.",
     "Note the 3-year service bond on Grade B posts (except Accounts) before applying.",
-    "Pay the ₹500 fee online (exempt categories pay nothing) by 14 November 2026, 11:00 AM.",
+    "Pay the ₹500 fee online (exempt categories pay nothing) by 14 December 2026, 11:00 AM.",
     "Submit before the 11:00 AM deadline — it is not midnight."
    ],
    "donts": [
     "Do not apply for a post whose percentage or experience you do not meet — Mechanical needs 65%, Research Scientist needs a PhD.",
     "Do not ignore the 3-year service bond on Grade B posts.",
-    "Do not miss the 11:00 AM deadline on 14 November 2026.",
+    "Do not miss the 11:00 AM deadline on 14 December 2026.",
     "Do not expect a correction window — none is mentioned."
    ],
    "checklist": [
@@ -14182,12 +14183,12 @@
     "Register on the DigiALM portal and fill the online form",
     "Upload the photo (100–200 KB) and signature",
     "Pay the fee online (₹500 + taxes, unless exempt)",
-    "Submit before 14 November 2026, 11:00 AM and save the acknowledgement"
+    "Submit before 14 December 2026, 11:00 AM and save the acknowledgement"
    ],
    "extra_faq": [
     {
      "q": "What is the last date to apply for Oil India Executive 2026?",
-     "a": "14 November 2026, up to 11:00 AM — not midnight — online through oil-india.com (DigiALM portal). The window opened on 15 October 2026 at 4:00 PM."
+     "a": "14 December 2026, up to 11:00 AM — not midnight — online through oil-india.com (DigiALM portal). The window opened on 15 October 2026 at 4:00 PM."
     },
     {
      "q": "How many posts are there in Oil India Executive 2026?",
@@ -14213,17 +14214,17 @@
    "mistakes": [
     "Applying without the required percentage (Mechanical needs 65%)",
     "Ignoring the 3-year service bond on Grade B posts",
-    "Missing the 11:00 AM deadline on 14 November 2026",
+    "Missing the 11:00 AM deadline on 14 December 2026",
     "Expecting a correction window — none is mentioned"
    ]
   },
   "hi": {
    "name": "ऑयल इंडिया एग्जीक्यूटिव भर्ती 2026",
-   "tagline": "ऑयल इंडिया में 32 एग्जीक्यूटिव पद — सीनियर ऑफिसर (मैकेनिकल/पेट्रोलियम), सीनियर अकाउंट्स ऑफिसर, रिसर्च साइंटिस्ट, हिंदी ऑफिसर आदि — CBT + साक्षात्कार, अंतिम तिथि 14 नवंबर 2026 (सुबह 11 बजे)।",
+   "tagline": "ऑयल इंडिया में 32 एग्जीक्यूटिव पद — सीनियर ऑफिसर (मैकेनिकल/पेट्रोलियम), सीनियर अकाउंट्स ऑफिसर, रिसर्च साइंटिस्ट, हिंदी ऑफिसर आदि — CBT + साक्षात्कार, अंतिम तिथि 14 दिसंबर 2026 (सुबह 11 बजे)।",
    "qual": "B.E./B.Tech / मास्टर / PhD / ICAI-ICMAI सदस्यता (पद के अनुसार)",
    "fees": [
     "आवेदन शुल्क: General/OBC-NCL उम्मीदवारों के लिए ₹500 साथ में taxes। SC/ST/PwBD/EWS/भूतपूर्व सैनिक कुछ नहीं भरते। शुल्क वापस नहीं होता।",
-    "शुल्क 14 नवंबर 2026, सुबह 11:00 तक भरें।"
+    "शुल्क 14 दिसंबर 2026, सुबह 11:00 तक भरें।"
    ],
    "fees_short": "₹500 + taxes (SC/ST/PwBD/EWS/ESM: कुछ नहीं)",
    "specs": [
@@ -14236,19 +14237,19 @@
     "सीनियर ऑफिसर (पेट्रोलियम): पेट्रोलियम इंजीनियरिंग/टेक्नोलॉजी में 2 साल का मास्टर 60% साथ में इंजीनियरिंग डिग्री। अकाउंट्स: ICAI या ICMAI की Associate सदस्यता। हिंदी ऑफिसर: हिंदी में PG साथ में 3 साल का अनुभव। कॉन्फिडेंशियल सेक्रेटरी: स्नातक साथ में 1 या 2 साल का सेक्रेटेरियल डिप्लोमा साथ में 2 साल का अनुभव (PwBD backlog पद)।",
     "ग्रेड B पदों (अकाउंट्स को छोड़कर) पर 3 साल का service bond है; परिवीक्षा 1 साल। सभी पात्रता 14 नवंबर 2026 को गिनी जाएगी।",
     "चयन: 100 अंकों की CBT, 90 मिनट (qualifying UR/OBC/EWS 50, SC/ST/PwBD 40), फिर 15 अंकों का व्यक्तिगत साक्षात्कार — अंतिम मेधा CBT × 0.85 + साक्षात्कार — ग्रेड B/C पदों के लिए। ग्रेड A पदों के लिए: CBT साथ में proficiency/skill test (qualifying; मेधा CBT पर)। CBT अस्थायी रूप से 28 दिसंबर 2026 को होगी।",
-    "आवेदन oil-india.com से ऑनलाइन (DigiALM portal से), 15 अक्टूबर 2026 (शाम 4:00) से 14 नवंबर 2026, सुबह 11:00 तक। कोई correction window नहीं दी गई है।"
+    "आवेदन oil-india.com से ऑनलाइन (DigiALM portal से), 15 अक्टूबर 2026 (शाम 4:00) से 14 दिसंबर 2026, सुबह 11:00 तक। कोई correction window नहीं दी गई है।"
    ],
    "dos": [
     "आवेदन से पहले पद के अनुसार योग्यता, प्रतिशत और उम्र जाँचो — छह पदों के नियम बहुत अलग हैं।",
     "डिग्री, PhD या ICAI/ICMAI सदस्यता का प्रमाण तैयार रखो।",
     "आवेदन से पहले ग्रेड B पदों पर 3 साल का service bond नोट करो (अकाउंट्स को छोड़कर)।",
-    "₹500 शुल्क ऑनलाइन भरो (छूट वाली श्रेणियाँ कुछ नहीं भरतीं) 14 नवंबर 2026, सुबह 11:00 तक।",
+    "₹500 शुल्क ऑनलाइन भरो (छूट वाली श्रेणियाँ कुछ नहीं भरतीं) 14 दिसंबर 2026, सुबह 11:00 तक।",
     "सुबह 11:00 की deadline से पहले submit करो — यह आधी रात नहीं है।"
    ],
    "donts": [
     "जिस पद का प्रतिशत या अनुभव पूरा नहीं होता, उसके लिए आवेदन मत करो — मैकेनिकल के लिए 65%, रिसर्च साइंटिस्ट के लिए PhD चाहिए।",
     "ग्रेड B पदों पर 3 साल का service bond मत भूलो।",
-    "14 नवंबर 2026, सुबह 11:00 की deadline मत चूको।",
+    "14 दिसंबर 2026, सुबह 11:00 की deadline मत चूको।",
     "Correction window की उम्मीद मत करो — कोई नहीं दी गई है।"
    ],
    "checklist": [
@@ -14273,12 +14274,12 @@
     "DigiALM portal पर पंजीकरण करो और ऑनलाइन फॉर्म भरो",
     "फोटो (100–200 KB) और हस्ताक्षर upload करो",
     "शुल्क ऑनलाइन भरो (₹500 + taxes, छूट हो तो नहीं)",
-    "14 नवंबर 2026, सुबह 11:00 से पहले submit करो और पावती संभालो"
+    "14 दिसंबर 2026, सुबह 11:00 से पहले submit करो और पावती संभालो"
    ],
    "extra_faq": [
     {
      "q": "ऑयल इंडिया एग्जीक्यूटिव 2026 के लिए आवेदन की आखिरी तारीख क्या है?",
-     "a": "14 नवंबर 2026, सुबह 11:00 तक — आधी रात नहीं — oil-india.com (DigiALM portal) से ऑनलाइन। Window 15 अक्टूबर 2026, शाम 4:00 से खुली है।"
+     "a": "14 दिसंबर 2026, सुबह 11:00 तक — आधी रात नहीं — oil-india.com (DigiALM portal) से ऑनलाइन। Window 15 अक्टूबर 2026, शाम 4:00 से खुली है।"
     },
     {
      "q": "ऑयल इंडिया एग्जीक्यूटिव 2026 में कितने पद हैं?",
@@ -14304,7 +14305,7 @@
    "mistakes": [
     "ज़रूरी प्रतिशत के बिना आवेदन करना (मैकेनिकल के लिए 65% चाहिए)",
     "ग्रेड B पदों पर 3 साल का service bond भूल जाना",
-    "14 नवंबर 2026, सुबह 11:00 की deadline चूकना",
+    "14 दिसंबर 2026, सुबह 11:00 की deadline चूकना",
     "Correction window की उम्मीद करना — कोई नहीं दी गई है"
    ]
   }

@@ -614,7 +614,7 @@ for f, t in SEO_PAIRS:
     group_title, group_fam = PAGES.group_of(f)
 
     SF, ST = KW.search_name(f), KW.search_name(t)               # "Word", not "DOCX"
-    title = 'Free %s to %s Converter \u2014 Online, Nothing Uploaded' % (SF, ST)
+    title = '%s to %s Converter \u2014 Free Online, No Sign-up, Nothing Uploaded' % (SF, ST)
     # the H1 carries the exact extension too, so "Free PDF to Word (DOCX) converter"
     h1 = 'Free %s to %s converter' % (SF + (' (%s)' % F if SF != F else ''), ST + (' (%s)' % T if ST != T else ''))
     desc = meta_desc(F, T, why, what)
@@ -1376,10 +1376,18 @@ def exam_detail(e, lang):
     body.append('</section>')
     faq_ld = {'@context': 'https://schema.org', '@type': 'FAQPage',
               'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faqs]}
-    title = ('%s (%s) ऑनलाइन फॉर्म 2026 — अंतिम तिथि, शुल्क, फोटो और हस्ताक्षर का size' % (c['name'], e['advt'])) if hi else \
-            ('%s (%s) Online Form 2026 — Last Date, Fees, Photo & Signature Size' % (c['name'], e['advt']))
+    _posts_bit = ('%s पद, ' % '{:,}'.format(e['posts'])) if e.get('posts') else ''
+    _posts_bit_en = ('%s Posts, ' % '{:,}'.format(e['posts'])) if e.get('posts') else ''
+    title = ('%s (%s) ऑनलाइन फॉर्म 2026 — %sअंतिम तिथि, शुल्क, फोटो और हस्ताक्षर का size' % (c['name'], e['advt'], _posts_bit)) if hi else \
+            ('%s (%s) Online Form 2026 — %sLast Date, Fees, Photo & Signature Size' % (c['name'], e['advt'], _posts_bit_en))
     desc = c['tagline'] + (' अंतिम तिथि %s। Correction, परीक्षा तिथि और result के update, form kit और आधिकारिक apply link — सब फ्री, कुछ upload नहीं होता।' % dstr(d['apply_end'], 'hi') if hi else
                            ' Last date %s. Correction, exam-date and result updates, the form kit and the official apply link — everything free, nothing uploaded.' % dstr(d['apply_end']))
+    if _stage == 'open':
+        # Per-exam CTR overrides (answer-first title/desc) live in the data.
+        if c.get('seo_title'):
+            title = c['seo_title']
+        if c.get('seo_desc'):
+            desc = c['seo_desc']
     if _stage != 'open':
         title = ('%s (%s) Result 2026 — Result की तिथि, Merit List और आधिकारिक Result Link' % (c['name'], e['advt'])) if hi else \
                 ('%s (%s) Result 2026 — Result Date, Merit List & Official Result Link' % (c['name'], e['advt']))

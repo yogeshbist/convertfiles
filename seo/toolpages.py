@@ -427,7 +427,7 @@ def kb_page(base, kb):
     if kind == 'image':
         d['title'] = 'Compress Image to %s — Free Online Tool, No Upload' % lab
         d['h1'] = 'Free image compressor to %s' % lab
-        d['desc'] = 'Reduce a JPG or PNG to under %s for a form or upload, at the best quality that fits. Free, in your browser, nothing uploaded.' % lab
+        d['desc'] = 'Reduce a JPG or PNG to exactly %s for a form or upload — the target is preset, at the best quality that fits. Free, no sign-up, nothing uploaded.' % lab
         d['intro'] = ('Drop the picture and it comes back under %s — the target is already set. The tool keeps the highest quality that fits and only '
                       'shrinks the pixels if it has to. ' % lab) + NOTHING
         d['faq'] = [('How do I reduce a photo to %s?' % lab, 'Add your photo to the image compressor on this page — the target is already set to %s, so you only press Compress and download the result. The compressor keeps the highest quality that fits under %s and only shrinks the pixels if it has to. Several photos can be done at once, and nothing is uploaded: the compression runs in your browser.' % (lab, lab)),
@@ -449,7 +449,7 @@ def kb_page(base, kb):
     else:
         d['title'] = 'Compress PDF to %s — Free Online Tool, No Upload' % lab
         d['h1'] = 'Free PDF compressor to %s' % lab
-        d['desc'] = 'Shrink a PDF to under %s for an upload limit, in your browser. Free, nothing uploaded.' % lab
+        d['desc'] = 'Shrink a PDF to exactly %s — the target is preset, no slider guessing. Free, no sign-up, and the file is never uploaded: it compresses in your browser.' % lab
         d['intro'] = ('Drop the PDF and get it back under %s — the target is preset. Strong compression redraws pages to fit; light compression keeps the text selectable. ' % lab) + NOTHING
         d['faq'] = [('How do I compress a PDF to %s?' % lab, 'The target %s is already set on the PDF compressor on this page, so add the PDF, keep Strong compression for scans and picture-heavy PDFs, press the button and download. Strong compression redraws each page as a picture at the resolution needed to bring the whole file under %s.' % (lab, lab)),
                     ('My PDF is in MB — how do I reduce it to %s?' % lab, 'The target is already set to %s. A scanned or photo-heavy PDF sits in MB because every page is a picture, and Strong compression redraws those pages at the size needed to come down to %s. If a file cannot reach it without turning unreadable, you get the smallest readable version and a note saying so.' % (lab, lab)),

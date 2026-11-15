@@ -661,6 +661,90 @@
    ]
   },
   {
+   "slug": "bengaluru-tech-summit-2026",
+   "cat": "Events",
+   "fam": "any",
+   "hot": true,
+   "title": "Bengaluru Tech Summit 2026 — dates, passes and getting your files ready",
+   "seo_title": "Bengaluru Tech Summit 2026 — 17–19 Nov at BIEC: Free Visitor Pass, Pass Prices & File Prep",
+   "teaser": "Bengaluru Tech Summit 2026 runs 17–19 November at BIEC, Bengaluru, and the Business Visitor pass is free for the exhibition on 18–19 Nov. Dates, pass prices, how registration works — and the photo, business-card and PDF files to get ready before you go.",
+   "tryTool": "compress-image",
+   "tryLabel": "Shrink your registration photo to a size the form will accept — free, in your browser, nothing uploaded.",
+   "body": [
+    "p:Bengaluru Tech Summit 2026 — the 29th edition, themed ‘AI & Beyond’ — runs from Tuesday 17 to Thursday 19 November 2026 at the Bangalore International Exhibition Centre (BIEC), 10th Mile, Tumkur Road, Bengaluru. It is organised by the Department of Electronics, IT, BT and S&T, Government of Karnataka, and the organisers expect 1,800+ exhibitors, 1,000+ startups and 700+ speakers. Entry is by online registration only, and the exhibition is free to visit on 18 and 19 November with a Business Visitor pass.",
+    "h:Quick facts",
+    "t:Detail|What to know||Dates|17–19 November 2026 (Tuesday to Thursday)||Venue|Bangalore International Exhibition Centre (BIEC), 10th Mile, Tumkur Road, Bengaluru 562123||Theme|AI & Beyond — the 29th edition||Timings|About 9 AM to 6 PM||Organised by|Department of Electronics, IT, BT and S&T, Government of Karnataka||Registration|Online only, on the official summit website",
+    "p:Register on the <a href=\"https://www.bengalurutechsummit.com/\">official Bengaluru Tech Summit website</a> — registration happens only there. Convert Files is not connected with the summit and collects no registrations, payments or personal details for it; this page simply helps you prepare the files the registration form asks for.",
+    "h:Passes and prices",
+    "t:Pass|Price|What it covers||Business Visitor|Free|Exhibition only, on 18 and 19 November||Premium Business Visitor|₹1,000 + GST|Exhibition on all three days, plus free metro tickets on 17 and 18 November||Delegate — Silver|₹8,000 + 18% GST|Conference sessions, lunches and the exhibition, all three days||Delegate — Gold|₹14,000 + 18% GST|Silver, plus the inaugural session and the networking dinner||Delegate — Platinum|₹20,000 + 18% GST|Gold, plus VIP lounge access and priority seating",
+    "p:The early-bird delegate prices (₹5,000, ₹10,000 and ₹16,000) ended on 14 November, so the standard prices in the table are the ones now in force. Prices and inclusions can still change in the final week — confirm the exact amount on the official registration page before you pay.",
+    "h:Get your files ready before you go",
+    "p:The summit runs on files: a profile photo and a business card go up with the visitor registration, your badge QR code lives on your phone, and speakers and exhibitors send decks and brochures ahead of the event. Every fix below is free and runs inside your browser — your files are never uploaded to a server.",
+    "p:Your registration photo. The visitor form asks you to upload a profile photo, and a photo straight from a phone is usually 3–8 MB — exactly the size upload forms reject. Run it through <a href=\"/compress-image/\">Compress Image</a> to bring it down to a form-friendly size, or <a href=\"/resize-image/\">Resize Image</a> if the frame needs trimming first. Do it before you open the form, not while the form is timing out on you.",
+    "p:Your business card. Registration also asks for a business card, and a lone photo of one is easy to lose and hard to read. Turn it into a clean document with <a href=\"/jpg-to-pdf/\">JPG to PDF</a>; if you photographed the front and back separately, <a href=\"/images-to-pdf/\">Images to one PDF</a> puts both sides in a single file. The same PDF doubles as the card you can share with people you meet at the summit.",
+    "p:Your badge QR and photo ID in one file. After you register, the QR code arrives on your registered email and mobile number, and the badge counter at BIEC asks for it along with a government photo ID. Merge the pass PDF and a scan of your ID into one file with <a href=\"/merge-pdf/\">Merge PDF</a>, so both are one swipe away on your phone instead of buried in two different apps at a crowded counter.",
+    "p:Speaker decks and exhibitor brochures. Portals and email threads around the summit have size limits, and a deck full of product photos sails straight past them. <a href=\"/compress-pdf/\">Compress PDF</a> shrinks the file while keeping slides readable; when a limit is exact, use the preset pages — <a href=\"/compress-pdf-to-2mb/\">Compress PDF to 2 MB</a> for a brochure, or <a href=\"/compress-pdf-to-300kb/\">Compress PDF to 300 KB</a> for a one-pager or company profile sheet.",
+    "h:At the venue",
+    "p:Collect your physical badge at the registration counters at BIEC — it is not posted to you. Carry the QR code on your phone and the government photo ID you registered with. BIEC sits on Tumkur Road in north-west Bengaluru; the nearest Namma Metro station is Madavara on the Green Line, and Premium Business Visitor and Delegate passes include complimentary metro tickets — check the official site or the summit app for how to claim yours. Counters are busiest on the first morning, so arriving a little early on day one saves a long queue."
+   ],
+   "faq": [
+    [
+     "Is Bengaluru Tech Summit 2026 free?",
+     "Partly. The exhibition is free on 18 and 19 November 2026 with a Business Visitor pass, which still needs online registration on the official summit website. Exhibition entry on the opening day, 17 November, needs a Premium Business Visitor pass at ₹1,000 plus GST, and the conference sessions need a Delegate pass — Silver ₹8,000, Gold ₹14,000 or Platinum ₹20,000, plus 18% GST."
+    ],
+    [
+     "What are the dates of Bengaluru Tech Summit 2026?",
+     "Bengaluru Tech Summit 2026 runs for three days, from Tuesday 17 November to Thursday 19 November 2026, at the Bangalore International Exhibition Centre (BIEC) in Bengaluru. The theme of this 29th edition is ‘AI & Beyond’, and exhibition hours are roughly 9 AM to 6 PM."
+    ],
+    [
+     "Where is Bengaluru Tech Summit 2026 held, and how do I reach BIEC?",
+     "It is held at the Bangalore International Exhibition Centre (BIEC), 10th Mile, Tumkur Road, Bengaluru 562123. The nearest Namma Metro station is Madavara on the Green Line, and Premium Business Visitor and Delegate passes include complimentary metro tickets. By road, BIEC is roughly an hour from the city centre in normal traffic, and longer at peak hours."
+    ],
+    [
+     "How do I register for Bengaluru Tech Summit 2026?",
+     "Registration is online only, on the official website bengalurutechsummit.com. Choose a visitor or delegate pass, fill in your details, and upload a profile photo and a business card when the form asks for them. A QR code is sent to your registered email address and mobile number before the event, and you exchange it for a physical badge at the registration counters at BIEC, showing a government photo ID."
+    ],
+    [
+     "Can students attend Bengaluru Tech Summit 2026?",
+     "Yes. Entry is open to attendees aged 14 and above, and students can register for the free Business Visitor pass to walk the exhibition halls, the startup expo and the country pavilions on 18 and 19 November 2026. Carry your college ID card along with a government photo ID for the badge counter. The conference sessions still need a paid Delegate pass."
+    ],
+    [
+     "What should I carry to Bengaluru Tech Summit 2026?",
+     "Carry your registration QR code on your phone, the government photo ID you registered with, and business cards if you use them — the physical badge is collected at the BIEC registration counters, not sent in advance. Keeping the QR code and your ID merged in one PDF on your phone speeds things up at the counter."
+    ]
+   ],
+   "extra_jsonld": [
+    {
+     "@context": "https://schema.org",
+     "@type": "Event",
+     "name": "Bengaluru Tech Summit 2026",
+     "description": "The 29th edition of Bengaluru Tech Summit, themed ‘AI & Beyond’ — 17–19 November 2026 at BIEC, Bengaluru. The exhibition is free for Business Visitors on 18–19 November.",
+     "startDate": "2026-11-17T09:00:00+05:30",
+     "endDate": "2026-11-19T18:00:00+05:30",
+     "eventStatus": "https://schema.org/EventScheduled",
+     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+     "location": {
+      "@type": "Place",
+      "name": "Bangalore International Exhibition Centre (BIEC)",
+      "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "10th Mile, Tumkur Road",
+       "addressLocality": "Bengaluru",
+       "addressRegion": "Karnataka",
+       "postalCode": "562123",
+       "addressCountry": "IN"
+      }
+     },
+     "organizer": {
+      "@type": "Organization",
+      "name": "Department of Electronics, IT, BT and S&T, Government of Karnataka",
+      "url": "https://www.bengalurutechsummit.com/"
+     },
+     "url": "https://www.bengalurutechsummit.com/"
+    }
+   ]
+  },
+  {
    "slug": "exam-form-photo-signature-size",
    "cat": "Photos",
    "fam": "image",

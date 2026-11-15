@@ -788,6 +788,8 @@ for gd in CONTENT['GUIDES']:
     if gd.get('faq'):
         jsonld.append({'@context': 'https://schema.org', '@type': 'FAQPage',
                        'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in gd['faq']]})
+    for _extra_ld in gd.get('extra_jsonld', []):
+        jsonld.append(_extra_ld)
     page = replace_block(BASE, 'page:meta', page_meta(gd.get('seo_title', gd['title']) + ' \u00b7 Convert Files', gd['teaser'], path, kind='article',
                                                        extra_meta='<meta name="cf-guide" content="%s">' % gd['slug'] + hreflang_links(gd), jsonld=jsonld))
     if hindi:

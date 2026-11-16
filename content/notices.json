@@ -45,7 +45,7 @@
   "official_url": "https://ssc.gov.in/login",
   "date": "12 November 2026",
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "UPSC CDS I 2026 Final Result",
@@ -77,7 +77,7 @@
   "official_url": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/Results-882025-Assistant-Environmental-Scientist-Written-Exam_BPSC-20261030-rvdpno.pdf",
   "date": "30 October 2026",
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "Railway RRB NTPC 10+2 UG Level CBT II Result 2026 | CEN 07/2025",
@@ -133,7 +133,7 @@
   "official_url": "https://cdn.digialm.com/EForms/configuredHtml/32842/101262/login.html",
   "date": "10 November 2026",
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "RPSC Protection Officer Exam City Details 2026 for 12 Post",
@@ -189,7 +189,7 @@
   "official_url": "https://ssc.gov.in/login",
   "date": "30 October 2026",
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "United India Insurance UIIC AO Tier I Result 2026",
@@ -229,7 +229,7 @@
   "official_url": "https://rpsc.rajasthan.gov.in/ExamDashboard",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "ISRO ICRB Assistant and Other Post Result 2026",
@@ -237,7 +237,7 @@
   "official_url": "https://www.isro.gov.in/ICRB_Recruitment11.html",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "UPSC CDS II Result 2026",
@@ -253,7 +253,7 @@
   "official_url": "https://recruitment.ssb.gov.in/notificationUrl",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "DSSSB Assistant Teacher Primary Result 2026",
@@ -261,7 +261,7 @@
   "official_url": "https://dsssb.delhi.gov.in/doit/dsssb/latest-result?page=5",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "UPSC NDA II Written Exam Result 2026",
@@ -285,7 +285,7 @@
   "official_url": "https://ssc.gov.in/api/attachment/uploads/masterData/Results/writeup_07102026.pdf",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "RPSC Sub Inspector SI 2025 Result 2026",
@@ -293,7 +293,7 @@
   "official_url": "https://rpsc.rajasthan.gov.in/ExamDashboard",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "UPSC CPF Assistant Commandant 2026 Result (Name Wise List)",
@@ -309,7 +309,7 @@
   "official_url": "https://rpsc.rajasthan.gov.in/Static/Result/7E0F02F02F654AD4A456A1347341BFBA.pdf",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "Bihar BTSC Staff Nurse 2025 Final Result",
@@ -317,7 +317,7 @@
   "official_url": "https://btsc.bihar.gov.in/index.php/important-notices",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "State Bank of India SBI Apprentices Result 2026",
@@ -333,15 +333,15 @@
   "official_url": "https://mcc.nic.in/archive-ug/",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "RPSC Sub Inspector SI Telecom 2024 Final Result",
   "type": "result",
-  "official_url": "https://rpsc.rajasthan.gov.in/search?search=Sub%20Inspector",
+  "official_url": "https://rpsc.rajasthan.gov.in/ExamDashboard",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "CSBC Prohibition Constable, Jail Warden Result 2026",
@@ -349,7 +349,7 @@
   "official_url": "https://csbc.bihar.gov.in/NewsGroup.htm",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "CSBC Bihar Police Constable Operator Result 2026",
@@ -357,7 +357,7 @@
   "official_url": "https://csbc.bihar.gov.in/NewsGroup.htm",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "BPSSC Havildar Instructor Result 2026 (Advt. No. 05/2026)",
@@ -365,7 +365,7 @@
   "official_url": "https://bpssc.bihar.gov.in/A-HG.htm",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "Bihar Police BPSSC Sub Inspector SI Prohibition Result 2026 Advt. No. -03/2026",
@@ -373,7 +373,7 @@
   "official_url": "https://bpssc.bihar.gov.in/A-PER.htm",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "UPSC CDS II 2025 OTA Final Result",
@@ -421,7 +421,7 @@
   "official_url": "https://cdn.digialm.com/EForms/configuredHtml/970/103300/0y8mziEd1Eo3Ftg5pK/login.html",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "Jawahar Navodaya Vidyalaya JNV NVS Class 6th Admit Card 2027",
@@ -445,7 +445,7 @@
   "official_url": "https://apply.upessc.org/login",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "SBI Clerk Backlog Phase II Mains Admit Card 2026",
@@ -509,7 +509,7 @@
   "official_url": "https://upsconline.nic.in/",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "UPSC NDA II Admit Card 2026",
@@ -517,7 +517,7 @@
   "official_url": "https://upsconline.nic.in/",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "RPSC APO Exam City / Admit Card 2026",
@@ -525,7 +525,7 @@
   "official_url": "https://sso.rajasthan.gov.in/signin",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "Rajasthan RSSB Computer Instructor Admit Card 2026",
@@ -533,7 +533,7 @@
   "official_url": "https://sso.rajasthan.gov.in/signin",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "NTA AIAPGET Admissions Admit Card 2026",
@@ -549,7 +549,7 @@
   "official_url": "https://upsconline.nic.in/",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "RPSC Sub Inspector SI PET Admit Card 2026",
@@ -557,7 +557,7 @@
   "official_url": "https://sso.rajasthan.gov.in/signin",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "AFCAT 02/2026 Admit Card",
@@ -573,7 +573,7 @@
   "official_url": "https://upsconline.nic.in/",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "Rajasthan RPSC JLO 2025 Admit Card 2026",
@@ -581,7 +581,7 @@
   "official_url": "https://sso.rajasthan.gov.in/signin",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  },
  {
   "name": "RSSB Women Supervisor Exam City / Admit Card 2026",
@@ -589,6 +589,6 @@
   "official_url": "https://sso.rajasthan.gov.in/signin",
   "date": null,
   "exam_slug": null,
-  "link_status": "extracted"
+  "link_status": "verified-open"
  }
 ]

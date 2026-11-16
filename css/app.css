@@ -38,13 +38,13 @@ a{color:var(--accent)}
 
 /* ---------- nav ---------- */
 .nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav-in{max-width:none;margin-inline:auto;padding:0 max(32px,6vw);height:68px;display:flex;align-items:center;gap:20px}
+.nav-in{max-width:none;margin-inline:auto;padding:0 max(32px,6vw);height:82px;display:flex;align-items:center;gap:20px}
 .brand{display:flex;align-items:center;gap:10px;margin-right:auto;text-decoration:none;color:var(--ink)}
 .mark{width:32px;height:32px;border-radius:8px;background:var(--accent);display:grid;place-items:center;color:#fff;flex:none}
 .mark svg{width:18px;height:18px}
 .brand b{font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:-.02em;white-space:nowrap}
-.brand-logo{height:54px;width:auto;border-radius:11px;display:block}
-@media (max-width:520px){.brand-logo{height:44px}}
+.brand-logo{height:68px;width:auto;border-radius:14px;display:block}
+@media (max-width:520px){.brand-logo{height:54px}}
 
 /* Brand masthead — the full CF + "Convert Files" lockup, centred at the very
    top of every page above the header (Yogesh, 16 Nov 2026). Markup lives in
@@ -711,7 +711,7 @@ table.dates.wide th:first-child{width:32%}
 .exam-hub .hub-cols .exam-grid{grid-template-columns:repeat(2,1fr)}
 @media (max-width:900px){.exam-hub .hub-cols{grid-template-columns:1fr}}
 @media (max-width:620px){.exam-hub .hub-cols .exam-grid{grid-template-columns:1fr}}
-.side-panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;scroll-margin-top:84px}
+.side-panel{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden;scroll-margin-top:98px}
 .side-panel + .side-panel{margin-top:16px}
 .side-panel .panel-head{display:flex;align-items:center;gap:9px;padding:13px 16px 11px;border-bottom:1px solid var(--line)}
 .side-panel .picon{width:30px;height:30px;flex:none;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px;background:var(--pop-soft)}

@@ -45,6 +45,16 @@ a{color:var(--accent)}
 .brand b{font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:-.02em;white-space:nowrap}
 .brand-logo{height:40px;width:auto;border-radius:9px;display:block}
 @media (max-width:520px){.brand-logo{height:33px}}
+
+/* Brand masthead — the full CF + "Convert Files" lockup, centred at the very
+   top of every page above the header (Yogesh, 16 Nov 2026). Markup lives in
+   the <!-- masthead:band --> blocks in index.html and pages/_shell.html;
+   build.py strips it from /embed/ (bare converter for third-party iframes).
+   To remove: delete this block, both markup blocks and that one strip line
+   in build.py. Theme tokens only, so the band follows all ten themes. */
+.brand-masthead{display:flex;align-items:center;justify-content:center;gap:11px;padding:9px 16px;background:color-mix(in srgb,var(--surface) 92%,transparent);border-bottom:1px solid var(--line)}
+.brand-masthead-logo{height:38px;width:38px;border-radius:9px;display:block}
+.brand-masthead-name{font-family:var(--display);font-weight:700;font-size:21px;letter-spacing:-.02em;line-height:1;color:var(--ink);white-space:nowrap}
 .tabs{display:flex;gap:6px;align-items:center}
 .tab{border:0;background:transparent;padding:7px 12px;border-radius:9px;font-weight:500;font-size:13.5px;color:var(--ink-2);display:flex;align-items:center;gap:7px;text-decoration:none;transition:background .15s,color .15s}
 .tab:hover{color:var(--ink)}

@@ -1696,6 +1696,7 @@ write('tools/index.html', hide_converter(strip_home(th_page)))
 # ---- /embed/: the converter alone, for other sites to put in an iframe
 emb = BASE
 emb = re.sub(r'(?s)<header class="nav">.*?</header>', '', emb, count=1)
+emb = re.sub(r'(?s)<!-- masthead:band -->.*?<!-- /masthead:band -->\s*', '', emb, count=1)   # bare converter: no brand masthead in the iframe either
 emb = re.sub(r'(?s)<footer class="footer">.*?</footer>', '', emb, count=1)
 emb = emb.replace('<body>', '<body class="embed">', 1)
 emb = replace_block(emb, 'page:meta', page_meta('Convert Files widget', 'Embedded file converter.', 'embed/',

@@ -222,7 +222,8 @@
    "chip_hi": "पहले city slip",
    "note_en": "City slip ~10 days before CBT · CBT-1 in the 4th week of Dec 2026",
    "note_hi": "City slip CBT से ~10 दिन पहले · CBT-1 Dec 2026 के चौथे हफ़्ते में"
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "advt": "CEN 07/2026",
@@ -430,7 +431,8 @@
   "photo_kind": "live",
   "portal": "rrbapply.gov.in",
   "posts": 1688,
-  "slug": "rrb-ntpc-undergraduate"
+  "slug": "rrb-ntpc-undergraduate",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt 07/2026",
@@ -491,7 +493,10 @@
      "q": "I compressed my photo to 8 KB. Is smaller safer?"
     }
    ],
-   "fees": [],
+   "fees": [
+    "Application fee: ₹1,000 for General/Unreserved, OBC and EWS candidates; ₹500 for SC/ST; ₹300 for Divyang (PwD) candidates.",
+    "The official notification (Advt 07/2026) states no extra processing or bank charge over this fee; pay by credit card, debit card or net banking."
+   ],
    "kit": [
     {
      "text": "Phone photos are several MB. Compress yours with the target set to 50 KB — the safe middle of the 10-100 KB band.",
@@ -530,7 +535,8 @@
     "Pay the fee online — last date 23 November 2026",
     "Submit and print the application copy"
    ],
-   "tagline": "17,735 Trained Graduate Teacher posts in aided secondary schools (Advt 07/2026): dates, eligibility, upload sizes and free tools — all on one page."
+   "tagline": "17,735 Trained Graduate Teacher posts in aided secondary schools (Advt 07/2026): dates, eligibility, upload sizes and free tools — all on one page.",
+   "fees_short": "₹1,000 / ₹500 / ₹300"
   },
   "guide": {
    "en": "up-tgt-photo-signature-size",
@@ -582,7 +588,10 @@
      "q": "मैंने फोटो दबाकर 8 KB कर दी। क्या छोटा ज़्यादा safe है?"
     }
    ],
-   "fees": [],
+   "fees": [
+    "आवेदन शुल्क: सामान्य/अनारक्षित, OBC और EWS उम्मीदवारों के लिए ₹1,000; SC/ST के लिए ₹500; दिव्यांग उम्मीदवारों के लिए ₹300।",
+    "आधिकारिक सूचना (Advt 07/2026) में इस शुल्क के ऊपर कोई अतिरिक्त processing या bank charge नहीं दिया गया है; भुगतान credit card, debit card या net banking से होगा।"
+   ],
    "kit": [
     {
      "text": "Phone की फोटो कई MB की होती है। अपनी फोटो को compress करके target 50 KB रखो — 10-100 KB band के बीच में सबसे safe।",
@@ -621,7 +630,8 @@
     "शुल्क online भरो — अंतिम तिथि 23 नवंबर 2026",
     "Submit करो और application की copy print कर लो"
    ],
-   "tagline": "सहायता प्राप्त माध्यमिक विद्यालयों में 17,735 प्रशिक्षित स्नातक शिक्षक (TGT) पद (विज्ञापन 07/2026): तारीखें, पात्रता, upload के size और फ्री टूल — सब एक ही पेज पर।"
+   "tagline": "सहायता प्राप्त माध्यमिक विद्यालयों में 17,735 प्रशिक्षित स्नातक शिक्षक (TGT) पद (विज्ञापन 07/2026): तारीखें, पात्रता, upload के size और फ्री टूल — सब एक ही पेज पर।",
+   "fees_short": "₹1,000 / ₹500 / ₹300"
   },
   "links": {
    "apply": "https://apply.upessc.org/",
@@ -701,7 +711,10 @@
      "q": "My experience certificate PDF is bigger than 200 KB. What should I do?"
     }
    ],
-   "fees": [],
+   "fees": [
+    "Examination fee: ₹2,000 for ALL categories — General/Unreserved, OBC, EWS, SC, ST and Divyang candidates all pay the same (Advt 08/2026).",
+    "The official notification states no extra processing or bank charge over this fee; pay by credit card, debit card or net banking."
+   ],
    "kit": [
     {
      "text": "Compress your photo with the target set to 50 KB — the safe middle of the 10-100 KB band.",
@@ -740,7 +753,8 @@
     "Pay the fee online — last date 22 November 2026",
     "Submit and print the application copy"
    ],
-   "tagline": "1,475 Principal posts in aided inter colleges (Advt 08/2026): dates, eligibility, upload sizes and free tools — all on one page."
+   "tagline": "1,475 Principal posts in aided inter colleges (Advt 08/2026): dates, eligibility, upload sizes and free tools — all on one page.",
+   "fees_short": "₹2,000 (all categories)"
   },
   "guide": {
    "en": "up-principal-photo-signature-size",
@@ -793,7 +807,10 @@
      "q": "मेरा अनुभव प्रमाणपत्र PDF 200 KB से बड़ा है। क्या करूँ?"
     }
    ],
-   "fees": [],
+   "fees": [
+    "परीक्षा शुल्क: सभी श्रेणियों के लिए ₹2,000 — सामान्य/अनारक्षित, OBC, EWS, SC, ST और दिव्यांग, सबके लिए एक समान (Advt 08/2026)।",
+    "आधिकारिक सूचना में इस शुल्क के ऊपर कोई अतिरिक्त processing या bank charge नहीं दिया गया है; भुगतान credit card, debit card या net banking से होगा।"
+   ],
    "kit": [
     {
      "text": "अपनी फोटो को compress करके target 50 KB रखो — 10-100 KB band के बीच में सबसे safe।",
@@ -832,7 +849,8 @@
     "शुल्क online भरो — अंतिम तिथि 22 नवंबर 2026",
     "Submit करो और application की copy print कर लो"
    ],
-   "tagline": "सहायता प्राप्त इंटर कॉलेजों में 1,475 प्रिंसिपल पद (विज्ञापन 08/2026): तारीखें, पात्रता, upload के size और फ्री टूल — सब एक ही पेज पर।"
+   "tagline": "सहायता प्राप्त इंटर कॉलेजों में 1,475 प्रिंसिपल पद (विज्ञापन 08/2026): तारीखें, पात्रता, upload के size और फ्री टूल — सब एक ही पेज पर।",
+   "fees_short": "₹2,000 (सभी श्रेणियों के लिए)"
   },
   "links": {
    "apply": "https://apply.upessc.org/",
@@ -903,7 +921,10 @@
      "q": "My certificate PDF is over 200 KB. Should I split it?"
     }
    ],
-   "fees": [],
+   "fees": [
+    "Examination fee: ₹1,500 for ALL categories — General/Unreserved, OBC, EWS, SC, ST and Divyang candidates all pay the same (Advt 09/2026).",
+    "The official notification states no extra processing or bank charge over this fee; pay by credit card, debit card or net banking."
+   ],
    "kit": [
     {
      "text": "Compress your photo with the target set to 50 KB — the safe middle of the 10-100 KB band.",
@@ -942,7 +963,8 @@
     "Pay the fee online — last date 22 November 2026",
     "Submit and print the application copy"
    ],
-   "tagline": "1,172 Headmaster posts in aided high schools (Advt 09/2026): dates, eligibility, upload sizes and free tools — all on one page."
+   "tagline": "1,172 Headmaster posts in aided high schools (Advt 09/2026): dates, eligibility, upload sizes and free tools — all on one page.",
+   "fees_short": "₹1,500 (all categories)"
   },
   "guide": {
    "en": "up-headmaster-photo-signature-size",
@@ -994,7 +1016,10 @@
      "q": "मेरा प्रमाणपत्र PDF 200 KB से ऊपर है। क्या उसे बाँट दूँ?"
     }
    ],
-   "fees": [],
+   "fees": [
+    "परीक्षा शुल्क: सभी श्रेणियों के लिए ₹1,500 — सामान्य/अनारक्षित, OBC, EWS, SC, ST और दिव्यांग, सबके लिए एक समान (Advt 09/2026)।",
+    "आधिकारिक सूचना में इस शुल्क के ऊपर कोई अतिरिक्त processing या bank charge नहीं दिया गया है; भुगतान credit card, debit card या net banking से होगा।"
+   ],
    "kit": [
     {
      "text": "अपनी फोटो को compress करके target 50 KB रखो — 10-100 KB band के बीच में सबसे safe।",
@@ -1033,7 +1058,8 @@
     "शुल्क online भरो — अंतिम तिथि 22 नवंबर 2026",
     "Submit करो और application की copy print कर लो"
    ],
-   "tagline": "सहायता प्राप्त हाई स्कूलों में 1,172 हेडमास्टर पद (विज्ञापन 09/2026): तारीखें, पात्रता, upload के size और फ्री टूल — सब एक ही पेज पर।"
+   "tagline": "सहायता प्राप्त हाई स्कूलों में 1,172 हेडमास्टर पद (विज्ञापन 09/2026): तारीखें, पात्रता, upload के size और फ्री टूल — सब एक ही पेज पर।",
+   "fees_short": "₹1,500 (सभी श्रेणियों के लिए)"
   },
   "links": {
    "apply": "https://apply.upessc.org/",
@@ -3341,7 +3367,8 @@
   "photo_kind": "upload",
   "portal": "psc.wb.gov.in",
   "posts": 1145,
-  "slug": "wbpsc-sub-surveyor"
+  "slug": "wbpsc-sub-surveyor",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt A-4/E-1/2026",

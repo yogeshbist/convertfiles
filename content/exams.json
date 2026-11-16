@@ -4220,7 +4220,7 @@
   "board_en": "Railway Recruitment Cell, Central Railway",
   "board_hi": "रेलवे भर्ती सेल, मध्य रेलवे",
   "portal": "rrccr.com",
-  "posts": 2861,
+  "posts": 3809,
   "dates": {
    "apply_start": "2026-11-03",
    "apply_end": "2026-12-02",
@@ -4245,7 +4245,7 @@
   "en": {
    "name": "RRC Central Railway Apprentice",
    "qual": "10th (50%) + ITI",
-   "tagline": "2,861 Act Apprentice slots in the Mumbai, Bhusawal, Pune, Nagpur and Solapur clusters — last date 2 December 2026.",
+   "tagline": "3,809 Act Apprentice slots in the Mumbai, Bhusawal, Pune, Nagpur and Solapur clusters — last date 2 December 2026.",
    "fees_short": "₹100 · SC/ST/PwBD/Women: Free",
    "fees": [
     "₹100 for General, OBC and EWS candidates.",
@@ -4260,6 +4260,7 @@
     "Training period is 1 year with a stipend of ₹9,600 per month. No hostel facility is provided."
    ],
    "specs": [
+    "Addendum dated 9 November 2026 added 948 Engineering (P-Way) slots — combined total 3,809 (the addendum does not print a revised grand total; 3,809 is the sum of the two published figures). Candidates who applied on or before 9 November 2026 can edit and resubmit to choose the P-Way unit.",
     "Photograph: recent colour photo, 3.5 cm × 3.5 cm, JPG/JPEG at 100 DPI, 20–70 KB, taken within the last 3 months, clear front view — no cap or sunglasses.",
     "Signature: 3.5 cm × 3.5 cm, JPG/JPEG at 100 DPI, 20–30 KB.",
     "Upload only the candidate's own recent photo; an old or unclear photo can get the form rejected at document verification."
@@ -4339,7 +4340,7 @@
   "hi": {
    "name": "RRC Central Railway Apprentice",
    "qual": "10th (50%) + ITI",
-   "tagline": "Mumbai, Bhusawal, Pune, Nagpur aur Solapur clusters me 2,861 Act Apprentice slots — antim tithi 2 December 2026.",
+   "tagline": "Mumbai, Bhusawal, Pune, Nagpur aur Solapur clusters me 3,809 Act Apprentice slots — antim tithi 2 December 2026.",
    "fees_short": "₹100 · SC/ST/PwBD/Mahila: Free",
    "fees": [
     "General, OBC aur EWS ummeedwaron ke liye ₹100.",
@@ -4354,6 +4355,7 @@
     "Training 1 saal ki hai aur stipend ₹9,600 prati mahina hai. Hostel ki suvidha nahi di jayegi."
    ],
    "specs": [
+    "9 नवंबर 2026 के addendum ने 948 Engineering (P-Way) slots जोड़े — कुल 3,809 (addendum में संशोधित grand total नहीं छपा है; 3,809 दोनों प्रकाशित आँकड़ों का योग है)। 9 नवंबर 2026 तक apply कर चुके उम्मीदवार P-Way unit चुनने के लिए form edit करके फिर से submit कर सकते हैं।",
     "Photograph: nayi colour photo, 3.5 cm × 3.5 cm, JPG/JPEG 100 DPI par, 20–70 KB, pichhle 3 mahine ke andar ki, saaf front view — topi ya kala chashma nahi.",
     "Signature: 3.5 cm × 3.5 cm, JPG/JPEG 100 DPI par, 20–30 KB.",
     "Sirf ummeedwar ki apni nayi photo upload karo; purani ya dhundli photo document verification par form reject karwa sakti hai."
@@ -21149,6 +21151,3105 @@
     "जिला SP कार्यालय से योग्यता confirm किए बिना form खरीदना",
     "10 दिसंबर के बाद form जमा करना",
     "Form के लिए SP कार्यालय के अलावा किसी को पैसे देना"
+   ]
+  }
+ },
+ {
+  "slug": "mpsc-state-services-2026",
+  "advt": "Advertisement No. 014/2026",
+  "board_en": "Maharashtra Public Service Commission (MPSC)",
+  "board_hi": "महाराष्ट्र लोक सेवा आयोग (MPSC)",
+  "portal": "mpsconline.gov.in",
+  "posts": 524,
+  "dates": {
+   "apply_end": "2026-12-08",
+   "apply_start": "2026-10-21",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": "21 February 2027 (Prelims)",
+   "exam_hi": "21 फरवरी 2027 (प्रारंभिक परीक्षा)",
+   "fee_end": "2026-12-08"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://mpsconline.gov.in",
+   "notice": null,
+   "site": "https://mpsc.gov.in"
+  },
+  "en": {
+   "name": "MPSC State Services (Rajyaseva) Examination 2026",
+   "tagline": "524 Group A & B gazetted posts — Deputy Collector, DySP, BDO, Tehsildar and State Tax Assistant Commissioner — last date 8 December 2026.",
+   "qual": "Bachelor's degree in any stream + Marathi (read, write, speak)",
+   "fees": [
+    "₹394 for Open category; ₹294 for reserved categories, EWS and orphan candidates — pay online by 8 December 2026.",
+    "The fee is for the Preliminary Examination only; the Mains fee is separate and announced later."
+   ],
+   "fees_short": "₹394 (Open) / ₹294 (reserved)",
+   "specs": [
+    "This is the NEW Advt 014/2026 cycle — not the old 79-post cycle (Advt 132/2025) whose Prelims was already held on 31 May 2026.",
+    "Start date differs across summaries: the notification was published 21 October 2026 and applications opened that day per the official notice; a few summaries list 3 November as the start. The last date (8 December) is the same everywhere.",
+    "Selection: Preliminary Examination (400 marks, objective) on 21 February 2027, then Mains, then Interview.",
+    "Marathi (read, write and speak) is mandatory for all posts."
+   ],
+   "eligibility": [
+    "524 Group A & B gazetted posts: Deputy Collector 34, Deputy Superintendent of Police 48, Block Development Officer 62, and State Tax Assistant Commissioner & Tehsildar 380.",
+    "Qualification: Bachelor's degree in any stream from a recognised university.",
+    "Age: 19–38 years (reserved categories up to 43 years) — confirm the exact cut-off date in Advt 014/2026.",
+    "Marathi language proficiency (read, write and speak) is mandatory.",
+    "Pay: Group A ₹56,100–1,77,500; Group B ₹38,600–1,22,800."
+   ],
+   "dos": [
+    "Apply only on mpsconline.gov.in before 8 December 2026 — do not wait for the last day.",
+    "Read Advt 014/2026 fully — it is a different cycle from the 79-post Rajyaseva 2026 whose Prelims is over.",
+    "Check your Marathi proficiency — it is a mandatory condition, not optional.",
+    "Keep your degree certificate and caste/EWS certificate ready before you start."
+   ],
+   "donts": [
+    "Do not confuse this with the old 79-post Rajyaseva cycle — that Prelims was held on 31 May 2026.",
+    "Do not apply without Marathi read/write/speak ability — the notice makes it mandatory.",
+    "Do not leave the fee for the last day — the portal slows down near the deadline."
+   ],
+   "checklist": [
+    "Bachelor's degree certificate",
+    "Marathi proficiency proof (if asked in the form)",
+    "Caste / EWS / orphan certificate, if applicable",
+    "Recent colour photograph and signature scan",
+    "Aadhaar card and active mobile number"
+   ],
+   "documents": [
+    "Degree certificate (Bachelor's, any stream)",
+    "Caste / EWS / orphan certificate, if applicable",
+    "Date of birth proof (SSLC / birth certificate)",
+    "Recent photograph and signature",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Purane 79-post wale Rajyaseva cycle se confuse hona",
+    "Marathi ki shart ko ignore karna",
+    "Last date tak fee bharna bhool jana",
+    "Advt 014/2026 padhe bina form bharna"
+   ],
+   "steps": [
+    "mpsc.gov.in par Advt 014/2026 padho — post-wise vacancy aur yogyata note karo.",
+    "mpsconline.gov.in par login / registration karo aur State Services (Rajyaseva) 2026 chuno.",
+    "Form bharo, photo aur signature upload karo, documents jodo.",
+    "₹394 (Open) ya ₹294 (reserved/EWS/orphan) fee online bharo — 8 December 2026 tak.",
+    "Printout nikalo — Prelims 21 February 2027 ko hai, admit card baad me aayega."
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in MPSC State Services (Rajyaseva) 2026?",
+     "a": "524 Group A & B gazetted posts — Deputy Collector 34, Deputy Superintendent of Police 48, Block Development Officer 62, and State Tax Assistant Commissioner & Tehsildar 380 — under Advertisement No. 014/2026."
+    },
+    {
+     "q": "What is the last date to apply for MPSC Rajyaseva 2026?",
+     "a": "8 December 2026. The notification was published on 21 October 2026; a few summaries list 3 November as the start date, but the last date is 8 December everywhere."
+    },
+    {
+     "q": "What is the qualification for MPSC State Services 2026?",
+     "a": "A Bachelor's degree in any stream from a recognised university, plus Marathi language proficiency (read, write and speak), which is mandatory for all posts."
+    },
+    {
+     "q": "When is the MPSC State Services Prelims 2026?",
+     "a": "The Preliminary Examination is scheduled for 21 February 2027. Mains and Interview follow for shortlisted candidates."
+    }
+   ]
+  },
+  "hi": {
+   "name": "MPSC राज्य सेवा (राज्यसेवा) परीक्षा 2026",
+   "tagline": "524 ग्रुप A और B राजपत्रित पद — डिप्टी कलेक्टर, DySP, BDO, तहसीलदार और राज्य कर सहायक आयुक्त — अंतिम तिथि 8 दिसंबर 2026।",
+   "qual": "किसी भी stream में Bachelor's degree + मराठी (पढ़ना, लिखना, बोलना)",
+   "fees": [
+    "खुली श्रेणी के लिए ₹394; आरक्षित श्रेणियों, EWS और अनाथ उम्मीदवारों के लिए ₹294 — 8 दिसंबर 2026 तक online भरो।",
+    "यह शुल्क सिर्फ़ प्रारंभिक परीक्षा का है; मुख्य परीक्षा का शुल्क अलग से बाद में घोषित होगा।"
+   ],
+   "fees_short": "₹394 (खुली) / ₹294 (आरक्षित)",
+   "specs": [
+    "यह नया Advt 014/2026 cycle है — पुराना 79-पद वाला cycle (Advt 132/2025) नहीं, जिसकी Prelims 31 मई 2026 को हो चुकी है।",
+    "शुरुआत की तारीख summaries में अलग-अलग है: अधिसूचना 21 अक्टूबर 2026 को प्रकाशित हुई और उसी दिन आवेदन खुले; कुछ summaries 3 नवंबर बताती हैं। अंतिम तिथि (8 दिसंबर) हर जगह एक ही है।",
+    "चयन: 21 फरवरी 2027 को प्रारंभिक परीक्षा (400 अंक, objective), फिर मुख्य परीक्षा, फिर Interview।",
+    "सभी पदों के लिए मराठी (पढ़ना, लिखना और बोलना) अनिवार्य है।"
+   ],
+   "eligibility": [
+    "524 ग्रुप A और B राजपत्रित पद: डिप्टी कलेक्टर 34, डिप्टी पुलिस अधीक्षक 48, खंड विकास अधिकारी 62, और राज्य कर सहायक आयुक्त व तहसीलदार 380।",
+    "योग्यता: किसी मान्यता प्राप्त विश्वविद्यालय से किसी भी stream में Bachelor's degree।",
+    "उम्र: 19–38 वर्ष (आरक्षित श्रेणियों के लिए 43 वर्ष तक) — सटीक cut-off तारीख Advt 014/2026 में confirm करो।",
+    "मराठी भाषा की दक्षता (पढ़ना, लिखना और बोलना) अनिवार्य है।",
+    "वेतन: ग्रुप A ₹56,100–1,77,500; ग्रुप B ₹38,600–1,22,800।"
+   ],
+   "dos": [
+    "8 दिसंबर 2026 से पहले सिर्फ़ mpsconline.gov.in पर apply करो — आख़िरी दिन का इंतज़ार मत करो।",
+    "Advt 014/2026 पूरी पढ़ो — यह पुराने 79-पद वाले राज्यसेवा 2026 cycle से अलग है, जिसकी Prelims हो चुकी है।",
+    "अपनी मराठी दक्षता check करो — यह अनिवार्य शर्त है, optional नहीं।",
+    "शुरू करने से पहले degree certificate और caste/EWS certificate ready रखो।"
+   ],
+   "donts": [
+    "इसे पुराने 79-पद वाले राज्यसेवा cycle से confuse मत करो — उसकी Prelims 31 मई 2026 को हो चुकी है।",
+    "मराठी पढ़ने/लिखने/बोलने की क्षमता के बिना apply मत करो — अधिसूचना इसे अनिवार्य बनाती है।",
+    "Fee आख़िरी दिन के लिए मत छोड़ो — deadline के पास portal slow हो जाता है।"
+   ],
+   "checklist": [
+    "Bachelor's degree certificate",
+    "मराठी दक्षता का proof (अगर form में माँगा जाए)",
+    "Caste / EWS / अनाथ certificate, अगर लागू हो",
+    "हाल की colour photo और signature scan",
+    "आधार कार्ड और active mobile number"
+   ],
+   "documents": [
+    "Degree certificate (Bachelor's, कोई भी stream)",
+    "Caste / EWS / अनाथ certificate, अगर लागू हो",
+    "जन्म तिथि का proof (SSLC / birth certificate)",
+    "हाल की photo और signature",
+    "आधार कार्ड"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "पुराने 79-पद वाले राज्यसेवा cycle से confuse होना",
+    "मराठी की शर्त को ignore करना",
+    "आख़िरी दिन तक fee भरना भूल जाना",
+    "Advt 014/2026 पढ़े बिना form भरना"
+   ],
+   "steps": [
+    "mpsc.gov.in पर Advt 014/2026 पढ़ो — पद-वार vacancy और योग्यता note करो।",
+    "mpsconline.gov.in पर login / registration करो और State Services (Rajyaseva) 2026 चुनो।",
+    "Form भरो, photo और signature upload करो, documents जोड़ो।",
+    "₹394 (खुली) या ₹294 (आरक्षित/EWS/अनाथ) fee online भरो — 8 दिसंबर 2026 तक।",
+    "Printout निकालो — Prelims 21 फरवरी 2027 को है, admit card बाद में आएगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "MPSC राज्य सेवा (राज्यसेवा) 2026 में कितनी vacancies हैं?",
+     "a": "524 ग्रुप A और B राजपत्रित पद — डिप्टी कलेक्टर 34, डिप्टी पुलिस अधीक्षक 48, खंड विकास अधिकारी 62, और राज्य कर सहायक आयुक्त व तहसीलदार 380 — Advertisement No. 014/2026 के तहत।"
+    },
+    {
+     "q": "MPSC राज्यसेवा 2026 के लिए apply करने की अंतिम तिथि क्या है?",
+     "a": "8 दिसंबर 2026। अधिसूचना 21 अक्टूबर 2026 को प्रकाशित हुई थी; कुछ summaries शुरुआत की तारीख 3 नवंबर बताती हैं, लेकिन अंतिम तिथि हर जगह 8 दिसंबर ही है।"
+    },
+    {
+     "q": "MPSC राज्य सेवा 2026 की योग्यता क्या है?",
+     "a": "किसी मान्यता प्राप्त विश्वविद्यालय से किसी भी stream में Bachelor's degree, साथ ही मराठी भाषा की दक्षता (पढ़ना, लिखना और बोलना), जो सभी पदों के लिए अनिवार्य है।"
+    },
+    {
+     "q": "MPSC राज्य सेवा Prelims 2026 कब है?",
+     "a": "प्रारंभिक परीक्षा 21 फरवरी 2027 को निर्धारित है। Shortlist हुए उम्मीदवारों की मुख्य परीक्षा और Interview उसके बाद होंगे।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "psssb-je-2026",
+  "advt": "Advertisement No. 07/2026",
+  "board_en": "Punjab Subordinate Services Selection Board (PSSSB)",
+  "board_hi": "पंजाब अधीनस्थ सेवा चयन बोर्ड (PSSSB)",
+  "portal": "sssb.punjab.gov.in",
+  "posts": 262,
+  "dates": {
+   "apply_end": "2026-11-17",
+   "apply_start": "2026-11-11",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": "6 & 12 December 2026",
+   "exam_hi": "6 और 12 दिसंबर 2026",
+   "fee_end": "2026-11-17"
+  },
+  "photo_kind": "upload",
+  "note_en": "This is a court-ordered reopening of Advertisement No. 07/2026 — candidates who already applied under this advertisement need not apply again. The window closes 17 November 2026.",
+  "note_hi": "यह Advertisement No. 07/2026 की court के आदेश पर फिर से खोली गई window है — इस advertisement के तहत पहले से apply कर चुके उम्मीदवारों को दोबारा apply करने की ज़रूरत नहीं है। Window 17 नवंबर 2026 को बंद होती है।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://sssb.punjab.gov.in",
+   "notice": null,
+   "site": "https://sssb.punjab.gov.in"
+  },
+  "en": {
+   "name": "PSSSB Junior Engineer (Civil, Mechanical, Electrical) Recruitment 2026",
+   "tagline": "262 Junior Engineer Group-B posts — window reopened 11–17 November 2026 after a High Court order — written exam 6 & 12 December 2026.",
+   "qual": "3-year Diploma in Civil/Mechanical/Electrical + Punjabi at Matric level",
+   "fees": [
+    "₹1,500 for General and other categories; ₹750 for SC/BC (Punjab); ₹500 for ESM, EWS, PwD and LDESM (Punjab) — pay by 17 November 2026."
+   ],
+   "fees_short": "₹1,500 / ₹750 / ₹500 (category-wise)",
+   "specs": [
+    "This window (11–17 November 2026) is the THIRD reopening — the original window was March–April 2026, reopened in September and again in October 2026 after the Punjab & Haryana High Court's interim order of 8 October 2026 (CWP No. 32342 of 2026).",
+    "Corrigendum dated 11 November 2026 revised the category-wise posts; the written exam is fixed for 6 and 12 December 2026.",
+    "Punjabi passed at Matric level is mandatory for all posts.",
+    "Post split: Junior Engineer (Civil) 228, Mechanical 2, Electrical 32 — for Water Resources, PWD (B&R) and Rural Development & Panchayats departments."
+   ],
+   "eligibility": [
+    "262 Junior Engineer (Civil, Mechanical, Electrical) Group-B posts under Advertisement No. 07/2026.",
+    "Qualification: 3-year Diploma (or higher) in the relevant discipline — Civil, Mechanical or Electrical Engineering.",
+    "Punjabi passed at Matric level is mandatory.",
+    "Age: 18–37 years as on 1 January 2026 (General); relaxations for reserved categories as per the notice."
+   ],
+   "dos": [
+    "Apply only on sssb.punjab.gov.in before 17 November 2026 — this reopened window is short.",
+    "If you already applied under Advt 07/2026, do NOT apply again — your old application stands.",
+    "Check your Punjabi-at-Matric proof before you start — it is mandatory.",
+    "Pay the fee by 17 November 2026 — form and fee share the same last date."
+   ],
+   "donts": [
+    "Do not submit a second application if you already applied under this advertisement.",
+    "Do not apply without Punjabi at Matric level — it is a mandatory condition.",
+    "Do not wait for another extension — the board has reopened this window three times already."
+   ],
+   "checklist": [
+    "3-year Diploma certificate (Civil/Mechanical/Electrical)",
+    "Punjabi passed at Matric level proof",
+    "Date of birth proof",
+    "Recent colour photograph and signature scan",
+    "Caste certificate (Punjab), if applicable"
+   ],
+   "documents": [
+    "Diploma certificate in the relevant discipline",
+    "Matric certificate showing Punjabi as a subject",
+    "Date of birth proof",
+    "Caste certificate (Punjab), if applicable",
+    "Recent photograph and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Pehle se apply kar chuke hone par dobara form bharna",
+    "Punjabi at Matric ka proof ready na rakhna",
+    "17 November ki deadline miss karna",
+    "Fee bharna bhool jana"
+   ],
+   "steps": [
+    "sssb.punjab.gov.in par Advt 07/2026 aur 11 November 2026 ka corrigendum padho.",
+    "Agar pehle se apply kar chuke ho to kuch mat karo — tumhara purana application valid hai.",
+    "Naye candidate: online form kholo, discipline (Civil/Mechanical/Electrical) chuno.",
+    "Documents upload karo, category-wise fee bharo — 17 November 2026 tak.",
+    "Printout nikalo — written exam 6 aur 12 December 2026 ko hai."
+   ],
+   "extra_faq": [
+    {
+     "q": "What is the last date to apply for PSSSB Junior Engineer 2026?",
+     "a": "17 November 2026. The window reopened on 11 November 2026 after a corrigendum — it is the third reopening of Advertisement No. 07/2026, following the Punjab & Haryana High Court's interim order of 8 October 2026."
+    },
+    {
+     "q": "How many vacancies are there in PSSSB JE 2026?",
+     "a": "262 Junior Engineer Group-B posts — Civil 228, Mechanical 2 and Electrical 32 — for the Water Resources, PWD (B&R) and Rural Development & Panchayats departments of Punjab."
+    },
+    {
+     "q": "I already applied under Advt 07/2026. Should I apply again?",
+     "a": "No. Candidates who already applied under Advertisement No. 07/2026 need not apply again — the reopened window is only for those who have not applied yet."
+    },
+    {
+     "q": "When is the PSSSB JE written exam 2026?",
+     "a": "The written examination is fixed for 6 and 12 December 2026, as per the corrigendum dated 11 November 2026."
+    }
+   ]
+  },
+  "hi": {
+   "name": "PSSSB जूनियर इंजीनियर (सिविल, मैकेनिकल, इलेक्ट्रिकल) भर्ती 2026",
+   "tagline": "262 जूनियर इंजीनियर ग्रुप-B पद — High Court के आदेश पर window 11–17 नवंबर 2026 को फिर खुली — लिखित परीक्षा 6 और 12 दिसंबर 2026।",
+   "qual": "सिविल/मैकेनिकल/इलेक्ट्रिकल में 3-साला डिप्लोमा + मैट्रिक स्तर पर पंजाबी",
+   "fees": [
+    "सामान्य और अन्य श्रेणियों के लिए ₹1,500; SC/BC (पंजाब) के लिए ₹750; ESM, EWS, PwD और LDESM (पंजाब) के लिए ₹500 — 17 नवंबर 2026 तक भरो।"
+   ],
+   "fees_short": "₹1,500 / ₹750 / ₹500 (श्रेणी के हिसाब से)",
+   "specs": [
+    "यह window (11–17 नवंबर 2026) तीसरी बार खुली है — मूल window मार्च–अप्रैल 2026 थी, फिर सितंबर में और अक्टूबर 2026 में पंजाब व हरियाणा High Court के 8 अक्टूबर 2026 के अंतरिम आदेश (CWP No. 32342 of 2026) के बाद फिर खुली।",
+    "11 नवंबर 2026 के corrigendum ने श्रेणी-वार पद संशोधित किए; लिखित परीक्षा 6 और 12 दिसंबर 2026 को तय है।",
+    "सभी पदों के लिए मैट्रिक स्तर पर पंजाबी पास होना अनिवार्य है।",
+    "पदों का बँटवारा: जूनियर इंजीनियर (सिविल) 228, मैकेनिकल 2, इलेक्ट्रिकल 32 — जल संसाधन, PWD (B&R) और ग्रामीण विकास व पंचायत विभागों के लिए।"
+   ],
+   "eligibility": [
+    "Advertisement No. 07/2026 के तहत 262 जूनियर इंजीनियर (सिविल, मैकेनिकल, इलेक्ट्रिकल) ग्रुप-B पद।",
+    "योग्यता: संबंधित discipline — सिविल, मैकेनिकल या इलेक्ट्रिकल इंजीनियरिंग — में 3-साला डिप्लोमा (या उच्चतर)।",
+    "मैट्रिक स्तर पर पंजाबी पास होना अनिवार्य है।",
+    "उम्र: 1 जनवरी 2026 को 18–37 वर्ष (सामान्य); आरक्षित श्रेणियों के लिए अधिसूचना के अनुसार छूट।"
+   ],
+   "dos": [
+    "17 नवंबर 2026 से पहले सिर्फ़ sssb.punjab.gov.in पर apply करो — यह फिर से खुली window छोटी है।",
+    "अगर Advt 07/2026 के तहत पहले से apply कर चुके हो तो दोबारा apply मत करो — तुम्हारा पुराना application valid है।",
+    "शुरू करने से पहले मैट्रिक स्तर पर पंजाबी का proof check करो — यह अनिवार्य है।",
+    "Fee 17 नवंबर 2026 तक भरो — form और fee की अंतिम तिथि एक ही है।"
+   ],
+   "donts": [
+    "अगर इस advertisement के तहत पहले से apply कर चुके हो तो दूसरा application मत भरो।",
+    "मैट्रिक स्तर पर पंजाबी के बिना apply मत करो — यह अनिवार्य शर्त है।",
+    "और extension का इंतज़ार मत करो — बोर्ड यह window तीन बार खोल चुका है।"
+   ],
+   "checklist": [
+    "3-साला डिप्लोमा certificate (सिविल/मैकेनिकल/इलेक्ट्रिकल)",
+    "मैट्रिक स्तर पर पंजाबी पास होने का proof",
+    "जन्म तिथि का proof",
+    "हाल की colour photo और signature scan",
+    "Caste certificate (पंजाब), अगर लागू हो"
+   ],
+   "documents": [
+    "संबंधित discipline में डिप्लोमा certificate",
+    "मैट्रिक certificate जिसमें पंजाबी subject दिखे",
+    "जन्म तिथि का proof",
+    "Caste certificate (पंजाब), अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "पहले से apply कर चुके होने पर दोबारा form भरना",
+    "मैट्रिक स्तर पर पंजाबी का proof ready न रखना",
+    "17 नवंबर की deadline miss करना",
+    "Fee भरना भूल जाना"
+   ],
+   "steps": [
+    "sssb.punjab.gov.in पर Advt 07/2026 और 11 नवंबर 2026 का corrigendum पढ़ो।",
+    "अगर पहले से apply कर चुके हो तो कुछ मत करो — तुम्हारा पुराना application valid है।",
+    "नए candidate: online form खोलो, discipline (सिविल/मैकेनिकल/इलेक्ट्रिकल) चुनो।",
+    "Documents upload करो, श्रेणी के हिसाब से fee भरो — 17 नवंबर 2026 तक।",
+    "Printout निकालो — लिखित परीक्षा 6 और 12 दिसंबर 2026 को है।"
+   ],
+   "extra_faq": [
+    {
+     "q": "PSSSB जूनियर इंजीनियर 2026 के लिए apply करने की अंतिम तिथि क्या है?",
+     "a": "17 नवंबर 2026। Window 11 नवंबर 2026 को corrigendum के बाद फिर खुली — यह Advertisement No. 07/2026 की तीसरी reopening है, जो पंजाब व हरियाणा High Court के 8 अक्टूबर 2026 के अंतरिम आदेश के बाद हुई।"
+    },
+    {
+     "q": "PSSSB JE 2026 में कितनी vacancies हैं?",
+     "a": "262 जूनियर इंजीनियर ग्रुप-B पद — सिविल 228, मैकेनिकल 2 और इलेक्ट्रिकल 32 — पंजाब के जल संसाधन, PWD (B&R) और ग्रामीण विकास व पंचायत विभागों के लिए।"
+    },
+    {
+     "q": "मैं Advt 07/2026 के तहत पहले से apply कर चुका हूँ। क्या दोबारा apply करूँ?",
+     "a": "नहीं। Advertisement No. 07/2026 के तहत पहले से apply कर चुके उम्मीदवारों को दोबारा apply करने की ज़रूरत नहीं है — फिर से खुली window सिर्फ़ उन लोगों के लिए है जिन्होंने अभी तक apply नहीं किया है।"
+    },
+    {
+     "q": "PSSSB JE लिखित परीक्षा 2026 कब है?",
+     "a": "लिखित परीक्षा 6 और 12 दिसंबर 2026 को तय है, 11 नवंबर 2026 के corrigendum के अनुसार।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "wbpsc-ido-2026",
+  "advt": "Advertisement No. 15/2024",
+  "board_en": "Public Service Commission, West Bengal (WBPSC)",
+  "board_hi": "लोक सेवा आयोग, पश्चिम बंगाल (WBPSC)",
+  "portal": "psc.wb.gov.in",
+  "posts": 247,
+  "dates": {
+   "apply_end": "2026-11-26",
+   "apply_start": "2026-11-06",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-26"
+  },
+  "photo_kind": "upload",
+  "note_en": "These 247 posts are temporary but likely to be permanent.",
+  "note_hi": "ये 247 पद अस्थायी हैं लेकिन स्थायी होने की संभावना है।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://psc.wb.gov.in",
+   "notice": null,
+   "site": "https://psc.wb.gov.in"
+  },
+  "en": {
+   "name": "WBPSC Industrial Development Officer Recruitment 2026",
+   "tagline": "247 Industrial Development Officer posts in the Directorate of MSME — Degree or Engineering Diploma — last date 26 November 2026 (3 PM).",
+   "qual": "Degree OR Diploma in Engineering/Technology + Bengali",
+   "fees": [
+    "₹160 plus service charges; SC/ST (West Bengal) and PwBD candidates pay nothing.",
+    "The form closes at 3:00 PM on 26 November 2026 — not at midnight."
+   ],
+   "fees_short": "₹160 (SC/ST WB & PwBD: nil)",
+   "specs": [
+    "Edit window: 27 November to 2 December 2026 — only one chance to correct the form.",
+    "Age is reckoned as on 1 January 2024 — a backdated cut-off, confirmed by the detailed notification.",
+    "Bengali (read, write and speak) is mandatory.",
+    "Selection: 100-mark written examination followed by a 15-mark interview.",
+    "Pay: Level-10, ₹32,100–82,900."
+   ],
+   "eligibility": [
+    "247 Industrial Development Officer posts in the Directorate of Micro, Small & Medium Enterprises (MSME), Government of West Bengal.",
+    "Qualification: a Degree from a recognised university OR a Diploma in Engineering/Technology.",
+    "Age: 18–44 years as on 1 January 2024 (backdated cut-off).",
+    "Bengali (read, write and speak) is mandatory."
+   ],
+   "dos": [
+    "Apply only on psc.wb.gov.in before 3:00 PM on 26 November 2026.",
+    "Check the backdated age cut-off (1 January 2024) — your age is counted from that date, not 2026.",
+    "Use the edit window (27 November–2 December) if you made a mistake — it is your only chance.",
+    "Keep your degree/diploma certificate and Bengali proof ready."
+   ],
+   "donts": [
+    "Do not wait till midnight on 26 November — the form closes at 3:00 PM.",
+    "Do not apply without Bengali read/write/speak ability — it is mandatory.",
+    "Do not treat the 1 January 2024 age cut-off as a typo — it is the notified date."
+   ],
+   "checklist": [
+    "Degree / Engineering Diploma certificate",
+    "Bengali read/write/speak proof",
+    "Date of birth proof (age as on 1 Jan 2024)",
+    "Recent colour photograph and signature scan",
+    "Caste certificate (West Bengal), if applicable"
+   ],
+   "documents": [
+    "Degree / Diploma certificate",
+    "Bengali proficiency proof",
+    "Date of birth proof",
+    "Caste certificate (West Bengal), if applicable",
+    "Recent photograph and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "26 नवंबर को रात 12 बजे तक form भरने का इंतज़ार करना (3 PM बंद होता है)",
+    "Bengali की शर्त को ignore करना",
+    "उम्र 2026 से गिनना (cut-off 1 जनवरी 2024 है)",
+    "Edit window miss करना"
+   ],
+   "steps": [
+    "psc.wb.gov.in पर Advertisement No. 15/2024 की detailed notification पढ़ो।",
+    "Online form खोलो, अपनी योग्यता (Degree या Engineering Diploma) चुनो।",
+    "Form भरो, photo और signature upload करो, documents जोड़ो।",
+    "₹160 (+ service charges) fee भरो — SC/ST (WB) और PwBD को कुछ नहीं देना।",
+    "26 नवंबर 2026, दोपहर 3 बजे से पहले submit करो और printout निकालो।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in WBPSC Industrial Development Officer 2026?",
+     "a": "247 Industrial Development Officer posts in the Directorate of MSME, Government of West Bengal, under Advertisement No. 15/2024."
+    },
+    {
+     "q": "What is the last date to apply for WBPSC IDO 2026?",
+     "a": "26 November 2026 at 3:00 PM — the form closes in the afternoon, not at midnight. The fee is also due by the same time."
+    },
+    {
+     "q": "What is the qualification for WBPSC Industrial Development Officer?",
+     "a": "A Degree from a recognised university OR a Diploma in Engineering/Technology, plus Bengali (read, write and speak), which is mandatory."
+    },
+    {
+     "q": "What is the age limit for WBPSC IDO 2026?",
+     "a": "18–44 years as on 1 January 2024. The cut-off is backdated — your age is counted from 1 January 2024, not from 2026."
+    }
+   ]
+  },
+  "hi": {
+   "name": "WBPSC औद्योगिक विकास अधिकारी भर्ती 2026",
+   "tagline": "MSME निदेशालय में 247 औद्योगिक विकास अधिकारी पद — Degree या Engineering Diploma — अंतिम तिथि 26 नवंबर 2026 (दोपहर 3 बजे)।",
+   "qual": "Degree या Engineering/Technology में Diploma + बंगाली",
+   "fees": [
+    "₹160 + service charges; SC/ST (पश्चिम बंगाल) और PwBD उम्मीदवारों को कुछ नहीं देना।",
+    "Form 26 नवंबर 2026 को दोपहर 3:00 बजे बंद होता है — आधी रात को नहीं।"
+   ],
+   "fees_short": "₹160 (SC/ST WB और PwBD: nil)",
+   "specs": [
+    "Edit window: 27 नवंबर से 2 दिसंबर 2026 — form सुधारने का सिर्फ़ एक मौका।",
+    "उम्र 1 जनवरी 2024 से गिनी जाती है — यह backdated cut-off है, detailed notification से confirm है।",
+    "बंगाली (पढ़ना, लिखना और बोलना) अनिवार्य है।",
+    "चयन: 100 अंक की लिखित परीक्षा, फिर 15 अंक का interview।",
+    "वेतन: Level-10, ₹32,100–82,900।"
+   ],
+   "eligibility": [
+    "पश्चिम बंगाल सरकार के MSME निदेशालय में 247 औद्योगिक विकास अधिकारी पद।",
+    "योग्यता: किसी मान्यता प्राप्त विश्वविद्यालय से Degree या Engineering/Technology में Diploma।",
+    "उम्र: 1 जनवरी 2024 को 18–44 वर्ष (backdated cut-off)।",
+    "बंगाली (पढ़ना, लिखना और बोलना) अनिवार्य है।"
+   ],
+   "dos": [
+    "26 नवंबर 2026, दोपहर 3:00 बजे से पहले सिर्फ़ psc.wb.gov.in पर apply करो।",
+    "Backdated age cut-off (1 जनवरी 2024) check करो — तुम्हारी उम्र उसी तारीख से गिनी जाएगी, 2026 से नहीं।",
+    "अगर गलती हो गई हो तो edit window (27 नवंबर–2 दिसंबर) का इस्तेमाल करो — यही एक मौका है।",
+    "Degree/Diploma certificate और बंगाली का proof ready रखो।"
+   ],
+   "donts": [
+    "26 नवंबर को आधी रात तक form भरने का इंतज़ार मत करो — form दोपहर 3:00 बजे बंद होता है।",
+    "बंगाली पढ़ने/लिखने/बोलने की क्षमता के बिना apply मत करो — यह अनिवार्य है।",
+    "1 जनवरी 2024 की age cut-off को typo मत समझो — यही notified तारीख है।"
+   ],
+   "checklist": [
+    "Degree / Engineering Diploma certificate",
+    "बंगाली पढ़ने/लिखने/बोलने का proof",
+    "जन्म तिथि का proof (उम्र 1 जनवरी 2024 के हिसाब से)",
+    "हाल की colour photo और signature scan",
+    "Caste certificate (पश्चिम बंगाल), अगर लागू हो"
+   ],
+   "documents": [
+    "Degree / Diploma certificate",
+    "बंगाली दक्षता का proof",
+    "जन्म तिथि का proof",
+    "Caste certificate (पश्चिम बंगाल), अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "26 नवंबर को रात 12 बजे तक form भरने का इंतज़ार करना (3 PM बंद होता है)",
+    "बंगाली की शर्त को ignore करना",
+    "उम्र 2026 से गिनना (cut-off 1 जनवरी 2024 है)",
+    "Edit window miss करना"
+   ],
+   "steps": [
+    "psc.wb.gov.in पर Advertisement No. 15/2024 की detailed notification पढ़ो।",
+    "Online form खोलो, अपनी योग्यता (Degree या Engineering Diploma) चुनो।",
+    "Form भरो, photo और signature upload करो, documents जोड़ो।",
+    "₹160 (+ service charges) fee भरो — SC/ST (WB) और PwBD को कुछ नहीं देना।",
+    "26 नवंबर 2026, दोपहर 3 बजे से पहले submit करो और printout निकालो।"
+   ],
+   "extra_faq": [
+    {
+     "q": "WBPSC औद्योगिक विकास अधिकारी 2026 में कितनी vacancies हैं?",
+     "a": "पश्चिम बंगाल सरकार के MSME निदेशालय में 247 औद्योगिक विकास अधिकारी पद, Advertisement No. 15/2024 के तहत।"
+    },
+    {
+     "q": "WBPSC IDO 2026 के लिए apply करने की अंतिम तिथि क्या है?",
+     "a": "26 नवंबर 2026, दोपहर 3:00 बजे — form दोपहर में बंद होता है, आधी रात को नहीं। Fee भी उसी समय तक देनी है।"
+    },
+    {
+     "q": "WBPSC औद्योगिक विकास अधिकारी की योग्यता क्या है?",
+     "a": "किसी मान्यता प्राप्त विश्वविद्यालय से Degree या Engineering/Technology में Diploma, साथ ही बंगाली (पढ़ना, लिखना और बोलना), जो अनिवार्य है।"
+    },
+    {
+     "q": "WBPSC IDO 2026 की age limit क्या है?",
+     "a": "1 जनवरी 2024 को 18–44 वर्ष। Cut-off backdated है — तुम्हारी उम्र 1 जनवरी 2024 से गिनी जाएगी, 2026 से नहीं।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "kea-je-town-planner-2026",
+  "advt": "Notices ED/KEA/40–41/NeVi/2026",
+  "board_en": "Karnataka Examinations Authority (KEA)",
+  "board_hi": "कर्नाटक परीक्षा प्राधिकरण (KEA)",
+  "portal": "cetonline.karnataka.gov.in/kea",
+  "posts": 218,
+  "dates": {
+   "apply_end": "2026-11-26",
+   "apply_start": "2026-10-31",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": "8 January 2027 (tentative)",
+   "exam_hi": "8 जनवरी 2027 (अस्थायी)",
+   "fee_end": "2026-11-27"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://cetonline.karnataka.gov.in/kea",
+   "notice": null,
+   "site": "https://cetonline.karnataka.gov.in/kea"
+  },
+  "en": {
+   "name": "KEA Junior Engineer (Civil), Assistant Town Planner & Draughtsman Recruitment 2026",
+   "tagline": "218 Group-C posts — Assistant Town Planner 119, Junior Engineer (Civil) 97, Draughtsman 2 — last date 26 November 2026.",
+   "qual": "3-year Diploma in Civil Engineering (post-wise variants)",
+   "fees": [
+    "₹750 for GM/2A/2B/3A/3B; ₹500 for SC/ST/Cat-1/ESM/Transgender; ₹250 for PwD — fee last date 27 November 2026."
+   ],
+   "fees_short": "₹750 / ₹500 / ₹250",
+   "specs": [
+    "Two notices: ED/KEA/41/NeVi/2026 for the RPC cadre (187 posts) and ED/KEA/40/NeVi/2026 for the Kalyana Karnataka cadre (31 posts).",
+    "Kannada is required — either passed at SSLC level or through the compulsory Kannada Language Test.",
+    "The written examination is tentatively scheduled around 8 January 2027 (post-wise dates to be notified).",
+    "Pay: ₹54,175–99,400."
+   ],
+   "eligibility": [
+    "218 Group-C posts: Assistant Town Planner 119, Junior Engineer (Civil) 97, Draughtsman 2.",
+    "Qualification: 3-year Diploma in Civil Engineering (post-wise variants — confirm your post's exact requirement in the notice).",
+    "Age: 18–40 years (43 for 2A/2B/3A/3B, 45 for SC/ST/Cat-1) — confirm the reckoning date in the notice.",
+    "Kannada at SSLC level, or pass the compulsory Kannada Language Test."
+   ],
+   "dos": [
+    "Apply only on cetonline.karnataka.gov.in/kea before 26 November 2026.",
+    "Choose the right cadre — RPC (187 posts) or Kalyana Karnataka (31 posts).",
+    "Pay the fee by 27 November 2026 — the fee deadline is one day after the form deadline.",
+    "Check the Kannada requirement for your post before you apply."
+   ],
+   "donts": [
+    "Do not apply for the wrong cadre — RPC and Kalyana Karnataka are separate.",
+    "Do not miss the fee deadline (27 November) even if you submitted the form on time.",
+    "Do not apply without checking the Kannada condition."
+   ],
+   "checklist": [
+    "3-year Diploma certificate (Civil Engineering)",
+    "Kannada at SSLC proof or Kannada test readiness",
+    "Date of birth proof",
+    "Recent colour photograph and signature scan",
+    "Caste / category certificate, if applicable"
+   ],
+   "documents": [
+    "Diploma certificate (Civil Engineering)",
+    "SSLC certificate showing Kannada",
+    "Date of birth proof",
+    "Caste / category certificate, if applicable",
+    "Recent photograph and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "गलत cadre (RPC या Kalyana Karnataka) चुनना",
+    "Fee की deadline (27 नवंबर) miss करना",
+    "कन्नड़ की शर्त check किए बिना apply करना",
+    "Post-wise योग्यता confirm किए बिना form भरना"
+   ],
+   "steps": [
+    "cetonline.karnataka.gov.in/kea पर ED/KEA/40–41/NeVi/2026 की notifications पढ़ो।",
+    "Apna cadre (RPC या Kalyana Karnataka) और post चुनो।",
+    "Form भरो, photo और signature upload करो, documents जोड़ो।",
+    "श्रेणी के हिसाब से fee भरो — 27 नवंबर 2026 तक।",
+    "Printout निकालो — परीक्षा लगभग 8 जनवरी 2027 को है।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in KEA JE / Assistant Town Planner 2026?",
+     "a": "218 Group-C posts — Assistant Town Planner 119, Junior Engineer (Civil) 97 and Draughtsman 2 — under Notices ED/KEA/41/NeVi/2026 (RPC, 187 posts) and ED/KEA/40/NeVi/2026 (Kalyana Karnataka, 31 posts)."
+    },
+    {
+     "q": "What is the last date to apply for KEA JE and Town Planner 2026?",
+     "a": "26 November 2026 for the form; the fee can be paid till 27 November 2026."
+    },
+    {
+     "q": "What is the qualification for KEA Junior Engineer (Civil)?",
+     "a": "A 3-year Diploma in Civil Engineering (with post-wise variants for Assistant Town Planner and Draughtsman). Kannada at SSLC level, or the compulsory Kannada Language Test, is also required."
+    },
+    {
+     "q": "When is the KEA JE / Town Planner exam 2026?",
+     "a": "The written examination is tentatively scheduled around 8 January 2027 (post-wise dates to be notified by KEA)."
+    }
+   ]
+  },
+  "hi": {
+   "name": "KEA जूनियर इंजीनियर (सिविल), असिस्टेंट टाउन प्लानर और ड्राफ्ट्समैन भर्ती 2026",
+   "tagline": "218 ग्रुप-C पद — असिस्टेंट टाउन प्लानर 119, जूनियर इंजीनियर (सिविल) 97, ड्राफ्ट्समैन 2 — अंतिम तिथि 26 नवंबर 2026।",
+   "qual": "सिविल इंजीनियरिंग में 3-साला डिप्लोमा (पद के हिसाब से variants)",
+   "fees": [
+    "GM/2A/2B/3A/3B के लिए ₹750; SC/ST/Cat-1/ESM/Transgender के लिए ₹500; PwD के लिए ₹250 — fee की अंतिम तिथि 27 नवंबर 2026।"
+   ],
+   "fees_short": "₹750 / ₹500 / ₹250",
+   "specs": [
+    "दो notifications: RPC cadre (187 पद) के लिए ED/KEA/41/NeVi/2026 और Kalyana Karnataka cadre (31 पद) के लिए ED/KEA/40/NeVi/2026।",
+    "कन्नड़ ज़रूरी है — या तो SSLC स्तर पर पास हो, या compulsory कन्नड़ भाषा परीक्षा पास करनी होगी।",
+    "लिखित परीक्षा लगभग 8 जनवरी 2027 को अस्थायी रूप से निर्धारित है (पद-वार dates बाद में घोषित होंगी)।",
+    "वेतन: ₹54,175–99,400।"
+   ],
+   "eligibility": [
+    "218 ग्रुप-C पद: असिस्टेंट टाउन प्लानर 119, जूनियर इंजीनियर (सिविल) 97, ड्राफ्ट्समैन 2।",
+    "योग्यता: सिविल इंजीनियरिंग में 3-साला डिप्लोमा (असिस्टेंट टाउन प्लानर और ड्राफ्ट्समैन के लिए पद-वार variants — notice में अपनी post की सटीक योग्यता confirm करो)।",
+    "उम्र: 18–40 वर्ष (2A/2B/3A/3B के लिए 43, SC/ST/Cat-1 के लिए 45) — reckoning date notice में confirm करो।",
+    "SSLC स्तर पर कन्नड़, या compulsory कन्नड़ भाषा परीक्षा पास करना ज़रूरी है।"
+   ],
+   "dos": [
+    "26 नवंबर 2026 से पहले सिर्फ़ cetonline.karnataka.gov.in/kea पर apply करो।",
+    "सही cadre चुनो — RPC (187 पद) या Kalyana Karnataka (31 पद)।",
+    "Fee 27 नवंबर 2026 तक भरो — fee की deadline form की deadline से एक दिन बाद है।",
+    "Apply करने से पहले अपनी post की कन्नड़ शर्त check करो।"
+   ],
+   "donts": [
+    "गलत cadre के लिए apply मत करो — RPC और Kalyana Karnataka अलग हैं।",
+    "Form समय पर भरने के बाद भी fee की deadline (27 नवंबर) miss मत करो।",
+    "कन्नड़ की शर्त check किए बिना apply मत करो।"
+   ],
+   "checklist": [
+    "3-साला डिप्लोमा certificate (सिविल इंजीनियरिंग)",
+    "SSLC स्तर पर कन्नड़ का proof या कन्नड़ परीक्षा की तैयारी",
+    "जन्म तिथि का proof",
+    "हाल की colour photo और signature scan",
+    "Caste / category certificate, अगर लागू हो"
+   ],
+   "documents": [
+    "डिप्लोमा certificate (सिविल इंजीनियरिंग)",
+    "SSLC certificate जिसमें कन्नड़ दिखे",
+    "जन्म तिथि का proof",
+    "Caste / category certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "गलत cadre (RPC या Kalyana Karnataka) चुनना",
+    "Fee की deadline (27 नवंबर) miss करना",
+    "कन्नड़ की शर्त check किए बिना apply करना",
+    "Post-wise योग्यता confirm किए बिना form भरना"
+   ],
+   "steps": [
+    "cetonline.karnataka.gov.in/kea पर ED/KEA/40–41/NeVi/2026 की notifications पढ़ो।",
+    "अपना cadre (RPC या Kalyana Karnataka) और post चुनो।",
+    "Form भरो, photo और signature upload करो, documents जोड़ो।",
+    "श्रेणी के हिसाब से fee भरो — 27 नवंबर 2026 तक।",
+    "Printout निकालो — परीक्षा लगभग 8 जनवरी 2027 को है।"
+   ],
+   "extra_faq": [
+    {
+     "q": "KEA JE / असिस्टेंट टाउन प्लानर 2026 में कितनी vacancies हैं?",
+     "a": "218 ग्रुप-C पद — असिस्टेंट टाउन प्लानर 119, जूनियर इंजीनियर (सिविल) 97 और ड्राफ्ट्समैन 2 — Notices ED/KEA/41/NeVi/2026 (RPC, 187 पद) और ED/KEA/40/NeVi/2026 (Kalyana Karnataka, 31 पद) के तहत।"
+    },
+    {
+     "q": "KEA JE और टाउन प्लानर 2026 के लिए apply करने की अंतिम तिथि क्या है?",
+     "a": "Form के लिए 26 नवंबर 2026; fee 27 नवंबर 2026 तक भरी जा सकती है।"
+    },
+    {
+     "q": "KEA जूनियर इंजीनियर (सिविल) की योग्यता क्या है?",
+     "a": "सिविल इंजीनियरिंग में 3-साला डिप्लोमा (असिस्टेंट टाउन प्लानर और ड्राफ्ट्समैन के लिए पद-वार variants)। SSLC स्तर पर कन्नड़, या compulsory कन्नड़ भाषा परीक्षा भी ज़रूरी है।"
+    },
+    {
+     "q": "KEA JE / टाउन प्लानर परीक्षा 2026 कब है?",
+     "a": "लिखित परीक्षा लगभग 8 जनवरी 2027 को अस्थायी रूप से निर्धारित है (पद-वार dates KEA बाद में घोषित करेगा)।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "opsc-scientific-officer-2026",
+  "advt": "Advertisement No. 14 of 2026-27",
+  "board_en": "Odisha Public Service Commission (OPSC)",
+  "board_hi": "ओडिशा लोक सेवा आयोग (OPSC)",
+  "portal": "opsc.gov.in",
+  "posts": 89,
+  "dates": {
+   "apply_end": "2026-11-26",
+   "apply_start": "2026-11-06",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": "7 February 2027",
+   "exam_hi": "7 फरवरी 2027",
+   "fee_end": "2026-11-26"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://opsc.gov.in",
+   "notice": null,
+   "site": "https://opsc.gov.in"
+  },
+  "en": {
+   "name": "OPSC Scientific Officer (State Forensic Science Service) Recruitment 2026",
+   "tagline": "89 Scientific Officer Group-B posts in the State Forensic Science Service — PG with 55% — written exam 7 February 2027, last date 26 November 2026.",
+   "qual": "Master's/PG in relevant discipline with 55%+",
+   "fees": [
+    "₹700 for General/SEBC; SC/ST/PwD pay nothing. The fee is refunded to candidates who appear in both papers."
+   ],
+   "fees_short": "₹700 (SC/ST/PwD: nil, refundable)",
+   "specs": [
+    "Exam date changed by the 1st corrigendum (6 November 2026): the written exam is now on 7 February 2027, not 17 January 2027 as printed in the original advertisement.",
+    "10 divisions — Physics, Ballistics, Chemistry, Toxicology, DNA, Cyber Forensic and more; 29 of the 89 posts are for women.",
+    "Selection: written examination of 400 marks (2 papers) followed by a 50-mark personality test.",
+    "These are Group-B posts of the State Forensic Science Service, Home Department, Government of Odisha."
+   ],
+   "eligibility": [
+    "89 Scientific Officer (Group-B) posts in the State Forensic Science Service, Home Department.",
+    "Qualification: Master's / Post-Graduation in the relevant discipline with at least 55% marks.",
+    "Age: 21–42 years as on 1 January 2026 (relaxations as per the notice)."
+   ],
+   "dos": [
+    "Apply only on opsc.gov.in before 5:00 PM on 26 November 2026.",
+    "Read the 1st corrigendum (6 November 2026) — the exam date moved to 7 February 2027.",
+    "Check your division's exact PG requirement — Physics, Chemistry, DNA, Cyber Forensic and others differ.",
+    "Keep your PG degree certificate and marksheet ready."
+   ],
+   "donts": [
+    "Do not plan for 17 January 2027 — the corrigendum moved the exam to 7 February 2027.",
+    "Do not apply with less than 55% in your PG — it is the minimum.",
+    "Do not wait till 5 PM on the last day — the portal closes at 5:00 PM sharp."
+   ],
+   "checklist": [
+    "Master's / PG degree certificate (relevant discipline, 55%+)",
+    "PG marksheet",
+    "Date of birth proof",
+    "Recent colour photograph and signature scan",
+    "Caste certificate, if applicable"
+   ],
+   "documents": [
+    "PG degree certificate and marksheet",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent photograph and signature",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "17 जनवरी 2027 की पुरानी exam date पर plan करना",
+    "55% से कम PG marks के साथ apply करना",
+    "अपनी division की सटीक PG requirement check न करना",
+    "26 नवंबर शाम 5 बजे के बाद form भरने की कोशिश करना"
+   ],
+   "steps": [
+    "opsc.gov.in पर Advertisement No. 14 of 2026-27 और 6 नवंबर 2026 का corrigendum पढ़ो।",
+    "अपनी division (Physics, Chemistry, DNA, Cyber Forensic आदि) चुनो।",
+    "Form भरो, photo और signature upload करो, documents जोड़ो।",
+    "₹700 fee भरो (SC/ST/PwD को कुछ नहीं देना) — 26 नवंबर 2026, शाम 5 बजे तक।",
+    "Printout निकालो — लिखित परीक्षा 7 फरवरी 2027 को है।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in OPSC Scientific Officer 2026?",
+     "a": "89 Scientific Officer (Group-B) posts in the State Forensic Science Service, Home Department, Odisha — across 10 divisions including Physics, Ballistics, Chemistry, Toxicology, DNA and Cyber Forensic; 29 posts are for women."
+    },
+    {
+     "q": "What is the exam date for OPSC Scientific Officer 2026?",
+     "a": "7 February 2027. The 1st corrigendum (6 November 2026) moved the exam from 17 January 2027 to 7 February 2027."
+    },
+    {
+     "q": "What is the qualification for OPSC Scientific Officer?",
+     "a": "A Master's / Post-Graduation in the relevant discipline with at least 55% marks. The exact discipline depends on the division you apply for."
+    },
+    {
+     "q": "Is the OPSC Scientific Officer fee refunded?",
+     "a": "Yes — the ₹700 fee (General/SEBC; SC/ST/PwD pay nothing) is refunded to candidates who appear in both papers of the written examination."
+    }
+   ]
+  },
+  "hi": {
+   "name": "OPSC साइंटिफिक ऑफिसर (राज्य फॉरेंसिक विज्ञान सेवा) भर्ती 2026",
+   "tagline": "राज्य फॉरेंसिक विज्ञान सेवा में 89 साइंटिफिक ऑफिसर ग्रुप-B पद — 55% के साथ PG — लिखित परीक्षा 7 फरवरी 2027, अंतिम तिथि 26 नवंबर 2026।",
+   "qual": "संबंधित discipline में Master's/PG, 55%+ के साथ",
+   "fees": [
+    "सामान्य/SEBC के लिए ₹700; SC/ST/PwD को कुछ नहीं देना। दोनों papers में बैठने वाले उम्मीदवारों को fee वापस मिलती है।"
+   ],
+   "fees_short": "₹700 (SC/ST/PwD: nil, refundable)",
+   "specs": [
+    "परीक्षा की तारीख 1st corrigendum (6 नवंबर 2026) से बदली: लिखित परीक्षा अब 7 फरवरी 2027 को है, मूल advertisement में छपी 17 जनवरी 2027 को नहीं।",
+    "10 divisions — Physics, Ballistics, Chemistry, Toxicology, DNA, Cyber Forensic और अन्य; 89 में से 29 पद महिलाओं के लिए हैं।",
+    "चयन: 400 अंक की लिखित परीक्षा (2 papers), फिर 50 अंक का personality test।",
+    "ये ओडिशा सरकार के गृह विभाग की राज्य फॉरेंसिक विज्ञान सेवा के ग्रुप-B पद हैं।"
+   ],
+   "eligibility": [
+    "राज्य फॉरेंसिक विज्ञान सेवा, गृह विभाग में 89 साइंटिफिक ऑफिसर (ग्रुप-B) पद।",
+    "योग्यता: संबंधित discipline में Master's / Post-Graduation, कम से कम 55% अंकों के साथ।",
+    "उम्र: 1 जनवरी 2026 को 21–42 वर्ष (अधिसूचना के अनुसार छूट)।"
+   ],
+   "dos": [
+    "26 नवंबर 2026, शाम 5:00 बजे से पहले सिर्फ़ opsc.gov.in पर apply करो।",
+    "1st corrigendum (6 नवंबर 2026) पढ़ो — परीक्षा की तारीख 7 फरवरी 2027 हो गई है।",
+    "अपनी division की सटीक PG requirement check करो — Physics, Chemistry, DNA, Cyber Forensic आदि अलग-अलग हैं।",
+    "PG degree certificate और marksheet ready रखो।"
+   ],
+   "donts": [
+    "17 जनवरी 2027 के लिए plan मत बनाओ — corrigendum ने परीक्षा 7 फरवरी 2027 कर दी है।",
+    "PG में 55% से कम अंकों के साथ apply मत करो — यह minimum है।",
+    "आख़िरी दिन शाम 5 बजे के बाद form भरने की कोशिश मत करो — portal शाम 5:00 बजे बंद होता है।"
+   ],
+   "checklist": [
+    "Master's / PG degree certificate (संबंधित discipline, 55%+)",
+    "PG marksheet",
+    "जन्म तिथि का proof",
+    "हाल की colour photo और signature scan",
+    "Caste certificate, अगर लागू हो"
+   ],
+   "documents": [
+    "PG degree certificate और marksheet",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की photo और signature",
+    "आधार कार्ड"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "17 जनवरी 2027 की पुरानी exam date पर plan करना",
+    "55% से कम PG marks के साथ apply करना",
+    "अपनी division की सटीक PG requirement check न करना",
+    "26 नवंबर शाम 5 बजे के बाद form भरने की कोशिश करना"
+   ],
+   "steps": [
+    "opsc.gov.in पर Advertisement No. 14 of 2026-27 और 6 नवंबर 2026 का corrigendum पढ़ो।",
+    "अपनी division (Physics, Chemistry, DNA, Cyber Forensic आदि) चुनो।",
+    "Form भरो, photo और signature upload करो, documents जोड़ो।",
+    "₹700 fee भरो (SC/ST/PwD को कुछ नहीं देना) — 26 नवंबर 2026, शाम 5 बजे तक।",
+    "Printout निकालो — लिखित परीक्षा 7 फरवरी 2027 को है।"
+   ],
+   "extra_faq": [
+    {
+     "q": "OPSC साइंटिफिक ऑफिसर 2026 में कितनी vacancies हैं?",
+     "a": "राज्य फॉरेंसिक विज्ञान सेवा, गृह विभाग, ओडिशा में 89 साइंटिफिक ऑफिसर (ग्रुप-B) पद — Physics, Ballistics, Chemistry, Toxicology, DNA और Cyber Forensic सहित 10 divisions में; 29 पद महिलाओं के लिए हैं।"
+    },
+    {
+     "q": "OPSC साइंटिफिक ऑफिसर परीक्षा 2026 कब है?",
+     "a": "7 फरवरी 2027। 1st corrigendum (6 नवंबर 2026) ने परीक्षा 17 जनवरी 2027 से 7 फरवरी 2027 कर दी है।"
+    },
+    {
+     "q": "OPSC साइंटिफिक ऑफिसर की योग्यता क्या है?",
+     "a": "संबंधित discipline में Master's / Post-Graduation, कम से कम 55% अंकों के साथ। सटीक discipline उस division पर निर्भर करता है जिसके लिए आप apply करते हैं।"
+    },
+    {
+     "q": "क्या OPSC साइंटिफिक ऑफिसर की fee वापस मिलती है?",
+     "a": "हाँ — ₹700 fee (सामान्य/SEBC; SC/ST/PwD को कुछ नहीं देना) उन उम्मीदवारों को वापस मिलती है जो लिखित परीक्षा के दोनों papers में बैठते हैं।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "uppsc-various-posts-2026",
+  "advt": "Advertisement No. A-5/E-1/2026",
+  "board_en": "Uttar Pradesh Public Service Commission (UPPSC)",
+  "board_hi": "उत्तर प्रदेश लोक सेवा आयोग (UPPSC)",
+  "portal": "uppsc.up.nic.in",
+  "posts": 25,
+  "dates": {
+   "apply_end": "2026-12-04",
+   "apply_start": "2026-11-04",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-04"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://uppsc.up.nic.in",
+   "notice": null,
+   "site": "https://uppsc.up.nic.in"
+  },
+  "en": {
+   "name": "UPPSC Assistant Architect Planner, Sports Officer & Programmer Grade-II Examination 2026",
+   "tagline": "25 posts — Sports Officer 16, Assistant Architect Planner 8, Programmer Grade-II 1 — OTR mandatory, last date 4 December 2026.",
+   "qual": "B.Arch / PGDCA / Graduate + coaching diploma (post-wise)",
+   "fees": [
+    "₹225 for UR/OBC/EWS; ₹105 for SC/ST/ESM; ₹25 for PwBD — pay by 4 December 2026 (SBI MOPS).",
+    "Fee note: a few summaries wrongly print ₹125/₹65/₹25 — that is the RO/ARO slab. Advt A-5/E-1/2026 charges ₹225/₹105/₹25."
+   ],
+   "fees_short": "₹225 / ₹105 / ₹25",
+   "specs": [
+    "OTR (otr.pariksha.nic.in) is mandatory and must be at least 72 hours old before you apply.",
+    "Correction and fee reconciliation are allowed till 11 December 2026.",
+    "Separate examination for each post; reservation and age relaxation only for Uttar Pradesh permanent residents.",
+    "Photo and signature come from the OTR profile — the notice prints no separate KB specification."
+   ],
+   "eligibility": [
+    "25 posts: Sports Officer 16, Assistant Architect Planner 8, Programmer Grade-II 1.",
+    "Sports Officer: Bachelor's degree + NIS coaching diploma + 2 years of sports-coaching experience.",
+    "Assistant Architect Planner: B.Arch degree.",
+    "Programmer Grade-II: Bachelor's degree + PGDCA / DOEACC 'A' level.",
+    "Age: 21–40 years as on 1 July 2026 (relaxations as per the notice)."
+   ],
+   "dos": [
+    "Complete your OTR on otr.pariksha.nic.in at least 72 hours before applying.",
+    "Apply only on uppsc.up.nic.in before 4 December 2026.",
+    "Check the post-wise qualification carefully — the three posts need very different qualifications.",
+    "Use the correction window till 11 December 2026 if you made a mistake."
+   ],
+   "donts": [
+    "Do not apply with a fresh OTR — it must be at least 72 hours old.",
+    "Do not use the RO/ARO fee slab (₹125) — this advertisement charges ₹225/₹105/₹25.",
+    "Do not claim reservation/relaxation unless you are a permanent resident of Uttar Pradesh."
+   ],
+   "checklist": [
+    "OTR registration (at least 72 hours old)",
+    "B.Arch / PGDCA / coaching diploma certificate (post-wise)",
+    "2 years' coaching experience proof (Sports Officer)",
+    "Date of birth proof",
+    "UP domicile certificate, if claiming reservation"
+   ],
+   "documents": [
+    "Degree / diploma certificate (post-wise)",
+    "Coaching experience certificate (Sports Officer)",
+    "Date of birth proof",
+    "UP domicile certificate, if applicable",
+    "Caste certificate (UP), if applicable"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "72 घंटे से कम पुरानी OTR से apply करना",
+    "RO/ARO वाली ₹125 fee भरना (इस advt की fee ₹225 है)",
+    "तीनों posts की अलग-अलग योग्यता check किए बिना form भरना",
+    "UP domicile के बिना reservation claim करना"
+   ],
+   "steps": [
+    "uppsc.up.nic.in पर Advertisement No. A-5/E-1/2026 पढ़ो — post-wise योग्यता note करो।",
+    "otr.pariksha.nic.in पर OTR पूरा करो — कम से कम 72 घंटे पुराना होना चाहिए।",
+    "uppsc.up.nic.in पर form खोलो, post चुनो, details भरो।",
+    "₹225 / ₹105 / ₹25 fee SBI MOPS से भरो — 4 दिसंबर 2026 तक।",
+    "Printout निकालो — 11 दिसंबर 2026 तक correction/fee reconciliation कर सकते हो।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in UPPSC A-5/E-1/2026?",
+     "a": "25 posts — Sports Officer 16, Assistant Architect Planner 8 and Programmer Grade-II 1 — under Advertisement No. A-5/E-1/2026."
+    },
+    {
+     "q": "What is the fee for UPPSC Assistant Architect Planner / Sports Officer 2026?",
+     "a": "₹225 for UR/OBC/EWS, ₹105 for SC/ST/ESM and ₹25 for PwBD. A few summaries wrongly print ₹125/₹65/₹25 — that is the RO/ARO slab, not this advertisement's."
+    },
+    {
+     "q": "Is OTR mandatory for UPPSC A-5/E-1/2026?",
+     "a": "Yes. One-Time Registration on otr.pariksha.nic.in is mandatory and must be at least 72 hours old before you apply. The photo and signature come from the OTR profile."
+    },
+    {
+     "q": "What is the last date to apply for UPPSC A-5/E-1/2026?",
+     "a": "4 December 2026 for the form and the fee. Correction and fee reconciliation are allowed till 11 December 2026."
+    }
+   ]
+  },
+  "hi": {
+   "name": "UPPSC असिस्टेंट आर्किटेक्ट प्लानर, स्पोर्ट्स ऑफिसर और प्रोग्रामर ग्रेड-II परीक्षा 2026",
+   "tagline": "25 पद — स्पोर्ट्स ऑफिसर 16, असिस्टेंट आर्किटेक्ट प्लानर 8, प्रोग्रामर ग्रेड-II 1 — OTR अनिवार्य, अंतिम तिथि 4 दिसंबर 2026।",
+   "qual": "B.Arch / PGDCA / Graduate + coaching diploma (पद के हिसाब से)",
+   "fees": [
+    "UR/OBC/EWS के लिए ₹225; SC/ST/ESM के लिए ₹105; PwBD के लिए ₹25 — 4 दिसंबर 2026 तक भरो (SBI MOPS)।",
+    "Fee नोट: कुछ summaries गलत ₹125/₹65/₹25 छापती हैं — वह RO/ARO का slab है। Advt A-5/E-1/2026 में ₹225/₹105/₹25 है।"
+   ],
+   "fees_short": "₹225 / ₹105 / ₹25",
+   "specs": [
+    "OTR (otr.pariksha.nic.in) अनिवार्य है और apply करने से कम से कम 72 घंटे पुराना होना चाहिए।",
+    "Correction और fee reconciliation 11 दिसंबर 2026 तक allowed है।",
+    "हर post की अलग परीक्षा; reservation और age relaxation सिर्फ़ उत्तर प्रदेश के स्थायी निवासियों के लिए।",
+    "Photo और signature OTR profile से आते हैं — notice में अलग KB specification नहीं छपी है।"
+   ],
+   "eligibility": [
+    "25 पद: स्पोर्ट्स ऑफिसर 16, असिस्टेंट आर्किटेक्ट प्लानर 8, प्रोग्रामर ग्रेड-II 1।",
+    "स्पोर्ट्स ऑफिसर: Bachelor's degree + NIS coaching diploma + 2 साल का sports-coaching अनुभव।",
+    "असिस्टेंट आर्किटेक्ट प्लानर: B.Arch degree।",
+    "प्रोग्रामर ग्रेड-II: Bachelor's degree + PGDCA / DOEACC 'A' level।",
+    "उम्र: 1 जुलाई 2026 को 21–40 वर्ष (अधिसूचना के अनुसार छूट)।"
+   ],
+   "dos": [
+    "Apply करने से कम से कम 72 घंटे पहले otr.pariksha.nic.in पर OTR पूरा करो।",
+    "4 दिसंबर 2026 से पहले सिर्फ़ uppsc.up.nic.in पर apply करो।",
+    "Post-wise योग्यता ध्यान से check करो — तीनों posts की योग्यता बहुत अलग है।",
+    "अगर गलती हो गई हो तो 11 दिसंबर 2026 तक correction window का इस्तेमाल करो।"
+   ],
+   "donts": [
+    "72 घंटे से कम पुरानी OTR से apply मत करो।",
+    "RO/ARO वाली ₹125 fee मत भरो — इस advertisement की fee ₹225/₹105/₹25 है।",
+    "उत्तर प्रदेश के स्थायी निवासी हुए बिना reservation/relaxation claim मत करो।"
+   ],
+   "checklist": [
+    "OTR registration (कम से कम 72 घंटे पुराना)",
+    "B.Arch / PGDCA / coaching diploma certificate (पद के हिसाब से)",
+    "2 साल के coaching अनुभव का proof (स्पोर्ट्स ऑफिसर)",
+    "जन्म तिथि का proof",
+    "UP domicile certificate, अगर reservation claim कर रहे हो"
+   ],
+   "documents": [
+    "Degree / diploma certificate (पद के हिसाब से)",
+    "Coaching अनुभव certificate (स्पोर्ट्स ऑफिसर)",
+    "जन्म तिथि का proof",
+    "UP domicile certificate, अगर लागू हो",
+    "Caste certificate (UP), अगर लागू हो"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "72 घंटे से कम पुरानी OTR से apply करना",
+    "RO/ARO वाली ₹125 fee भरना (इस advt की fee ₹225 है)",
+    "तीनों posts की अलग-अलग योग्यता check किए बिना form भरना",
+    "UP domicile के बिना reservation claim करना"
+   ],
+   "steps": [
+    "uppsc.up.nic.in पर Advertisement No. A-5/E-1/2026 पढ़ो — post-wise योग्यता note करो।",
+    "otr.pariksha.nic.in पर OTR पूरा करो — कम से कम 72 घंटे पुराना होना चाहिए।",
+    "uppsc.up.nic.in पर form खोलो, post चुनो, details भरो।",
+    "₹225 / ₹105 / ₹25 fee SBI MOPS से भरो — 4 दिसंबर 2026 तक।",
+    "Printout निकालो — 11 दिसंबर 2026 तक correction/fee reconciliation कर सकते हो।"
+   ],
+   "extra_faq": [
+    {
+     "q": "UPPSC A-5/E-1/2026 में कितनी vacancies हैं?",
+     "a": "25 पद — स्पोर्ट्स ऑफिसर 16, असिस्टेंट आर्किटेक्ट प्लानर 8 और प्रोग्रामर ग्रेड-II 1 — Advertisement No. A-5/E-1/2026 के तहत।"
+    },
+    {
+     "q": "UPPSC असिस्टेंट आर्किटेक्ट प्लानर / स्पोर्ट्स ऑफिसर 2026 की fee क्या है?",
+     "a": "UR/OBC/EWS के लिए ₹225, SC/ST/ESM के लिए ₹105 और PwBD के लिए ₹25। कुछ summaries गलत ₹125/₹65/₹25 छापती हैं — वह RO/ARO का slab है, इस advertisement का नहीं।"
+    },
+    {
+     "q": "क्या UPPSC A-5/E-1/2026 के लिए OTR अनिवार्य है?",
+     "a": "हाँ। otr.pariksha.nic.in पर One-Time Registration अनिवार्य है और apply करने से कम से कम 72 घंटे पुराना होना चाहिए। Photo और signature OTR profile से आते हैं।"
+    },
+    {
+     "q": "UPPSC A-5/E-1/2026 के लिए apply करने की अंतिम तिथि क्या है?",
+     "a": "Form और fee के लिए 4 दिसंबर 2026। Correction और fee reconciliation 11 दिसंबर 2026 तक allowed है।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "mpsc-assistant-legal-2026",
+  "advt": "Advertisement No. 022/2026",
+  "board_en": "Maharashtra Public Service Commission (MPSC)",
+  "board_hi": "महाराष्ट्र लोक सेवा आयोग (MPSC)",
+  "portal": "mpsconline.gov.in",
+  "posts": 14,
+  "dates": {
+   "apply_end": "2026-11-16",
+   "apply_start": "2026-10-26",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-19"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://mpsconline.gov.in",
+   "notice": null,
+   "site": "https://mpsc.gov.in"
+  },
+  "en": {
+   "name": "MPSC Assistant (Legal), Group-B Recruitment 2026",
+   "tagline": "14 Assistant (Legal) Group-B posts in the Law & Judiciary Department — Law degree — form closes today, 16 November 2026; fee till 19 November.",
+   "qual": "Law degree (5-year integrated LLB incl.)",
+   "fees": [
+    "₹394 for Open category; ₹294 for BC/EWS/Orphan/PwBD — fee last date 19 November 2026."
+   ],
+   "fees_short": "₹394 / ₹294",
+   "specs": [
+    "The form closes TODAY, 16 November 2026 at 11:59 PM — but the fee can be paid till 19 November 2026.",
+    "Age cut-off date differs across summaries (1 February 2027 vs 1 January 2027) — confirm it in Advt 022/2026 before applying.",
+    "Marathi requirement applies as per the notification — confirm it in Advt 022/2026.",
+    "Pay: S-15, ₹41,800–1,32,300. Two of the 14 posts are for PwD candidates."
+   ],
+   "eligibility": [
+    "14 Assistant (Legal), Group-B (Non-Gazetted) posts in the Law & Judiciary Department, Government of Maharashtra (2 posts for PwD).",
+    "Qualification: Law degree — 5-year integrated courses included (BA LLB, BBA LLB, BSL LLB, BLS LLB); LLM is preferred.",
+    "Age: 18–38 years (cut-off date as per Advt 022/2026 — summaries differ between 1 February 2027 and 1 January 2027)."
+   ],
+   "dos": [
+    "Apply TODAY on mpsconline.gov.in — the form closes tonight at 11:59 PM.",
+    "Pay the fee by 19 November 2026 even if you submit the form today.",
+    "Read Advt 022/2026 for the age cut-off date and the Marathi requirement before you apply.",
+    "Keep your law degree certificate ready — LLM holders should attach it too."
+   ],
+   "donts": [
+    "Do not wait till tonight — the form closes at 11:59 PM today.",
+    "Do not assume the age cut-off date — summaries differ; check Advt 022/2026.",
+    "Do not forget the fee — the form alone is not enough; fee is due by 19 November."
+   ],
+   "checklist": [
+    "Law degree certificate (5-year integrated LLB incl.)",
+    "LLM certificate, if any",
+    "Date of birth proof",
+    "Recent colour photograph and signature scan",
+    "Caste / PwBD certificate, if applicable"
+   ],
+   "documents": [
+    "Law degree certificate",
+    "LLM certificate, if any",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "Recent photograph and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "आज रात 11:59 PM के बाद form भरने की कोशिश करना",
+    "Age cut-off date assume कर लेना (summaries में अलग-अलग है)",
+    "Fee भरना भूल जाना (19 नवंबर तक देनी है)",
+    "मराठी की शर्त check किए बिना apply करना"
+   ],
+   "steps": [
+    "mpsconline.gov.in पर Advertisement No. 022/2026 पढ़ो — age cut-off और मराठी शर्त confirm करो।",
+    "आज ही online form खोलो और अपनी law degree details भरो।",
+    "Photo और signature upload करो, documents जोड़ो।",
+    "आज रात 11:59 PM से पहले form submit करो।",
+    "₹394 (Open) या ₹294 (BC/EWS/Orphan/PwBD) fee 19 नवंबर 2026 तक भरो और printout निकालो।"
+   ],
+   "extra_faq": [
+    {
+     "q": "What is the last date to apply for MPSC Assistant (Legal) 2026?",
+     "a": "16 November 2026 at 11:59 PM for the form. The fee can be paid separately till 19 November 2026."
+    },
+    {
+     "q": "How many vacancies are there in MPSC Assistant (Legal) 2026?",
+     "a": "14 Assistant (Legal), Group-B (Non-Gazetted) posts in the Law & Judiciary Department, Government of Maharashtra — 2 of them for PwD candidates — under Advertisement No. 022/2026."
+    },
+    {
+     "q": "What is the qualification for MPSC Assistant (Legal)?",
+     "a": "A Law degree — 5-year integrated courses are included (BA LLB, BBA LLB, BSL LLB, BLS LLB). An LLM is preferred but not mandatory."
+    },
+    {
+     "q": "What is the age limit for MPSC Assistant (Legal) 2026?",
+     "a": "18–38 years. The cut-off date differs across summaries (1 February 2027 vs 1 January 2027) — confirm it in Advt 022/2026 before applying."
+    }
+   ]
+  },
+  "hi": {
+   "name": "MPSC असिस्टेंट (लीगल), ग्रुप-B भर्ती 2026",
+   "tagline": "विधि व न्याय विभाग में 14 असिस्टेंट (लीगल) ग्रुप-B पद — Law degree — form आज, 16 नवंबर 2026 को बंद; fee 19 नवंबर तक।",
+   "qual": "Law degree (5-साला integrated LLB सहित)",
+   "fees": [
+    "खुली श्रेणी के लिए ₹394; BC/EWS/अनाथ/PwBD के लिए ₹294 — fee की अंतिम तिथि 19 नवंबर 2026।"
+   ],
+   "fees_short": "₹394 / ₹294",
+   "specs": [
+    "Form आज, 16 नवंबर 2026 रात 11:59 बजे बंद होता है — लेकिन fee 19 नवंबर 2026 तक भरी जा सकती है।",
+    "Age cut-off की तारीख summaries में अलग-अलग है (1 फरवरी 2027 vs 1 जनवरी 2027) — apply करने से पहले Advt 022/2026 में confirm करो।",
+    "मराठी की शर्त अधिसूचना के अनुसार लागू होती है — Advt 022/2026 में confirm करो।",
+    "वेतन: S-15, ₹41,800–1,32,300। 14 में से 2 पद PwD उम्मीदवारों के लिए हैं।"
+   ],
+   "eligibility": [
+    "महाराष्ट्र सरकार के विधि व न्याय विभाग में 14 असिस्टेंट (लीगल), ग्रुप-B (Non-Gazetted) पद (2 पद PwD के लिए)।",
+    "योग्यता: Law degree — 5-साला integrated courses शामिल हैं (BA LLB, BBA LLB, BSL LLB, BLS LLB); LLM को preference मिलती है।",
+    "उम्र: 18–38 वर्ष (cut-off तारीख Advt 022/2026 के अनुसार — summaries में 1 फरवरी 2027 और 1 जनवरी 2027 में फर्क है)।"
+   ],
+   "dos": [
+    "आज ही mpsconline.gov.in पर apply करो — form आज रात 11:59 बजे बंद होता है।",
+    "Form आज submit करने के बाद भी fee 19 नवंबर 2026 तक भरो।",
+    "Apply करने से पहले Advt 022/2026 में age cut-off तारीख और मराठी शर्त पढ़ो।",
+    "Law degree certificate ready रखो — LLM हो तो उसे भी attach करो।"
+   ],
+   "donts": [
+    "आज रात का इंतज़ार मत करो — form रात 11:59 बजे बंद होता है।",
+    "Age cut-off की तारीख assume मत करो — summaries अलग-अलग हैं; Advt 022/2026 check करो।",
+    "Fee भरना मत भूलो — सिर्फ़ form भरना काफी नहीं है; fee 19 नवंबर तक देनी है।"
+   ],
+   "checklist": [
+    "Law degree certificate (5-साला integrated LLB सहित)",
+    "LLM certificate, अगर हो",
+    "जन्म तिथि का proof",
+    "हाल की colour photo और signature scan",
+    "Caste / PwBD certificate, अगर लागू हो"
+   ],
+   "documents": [
+    "Law degree certificate",
+    "LLM certificate, अगर हो",
+    "जन्म तिथि का proof",
+    "Caste / PwBD certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "आज रात 11:59 PM के बाद form भरने की कोशिश करना",
+    "Age cut-off date assume कर लेना (summaries में अलग-अलग है)",
+    "Fee भरना भूल जाना (19 नवंबर तक देनी है)",
+    "मराठी की शर्त check किए बिना apply करना"
+   ],
+   "steps": [
+    "mpsconline.gov.in पर Advertisement No. 022/2026 पढ़ो — age cut-off और मराठी शर्त confirm करो।",
+    "आज ही online form खोलो और अपनी law degree details भरो।",
+    "Photo और signature upload करो, documents जोड़ो।",
+    "आज रात 11:59 PM से पहले form submit करो।",
+    "₹394 (खुली) या ₹294 (BC/EWS/अनाथ/PwBD) fee 19 नवंबर 2026 तक भरो और printout निकालो।"
+   ],
+   "extra_faq": [
+    {
+     "q": "MPSC असिस्टेंट (लीगल) 2026 के लिए apply करने की अंतिम तिथि क्या है?",
+     "a": "Form के लिए 16 नवंबर 2026, रात 11:59 बजे। Fee अलग से 19 नवंबर 2026 तक भरी जा सकती है।"
+    },
+    {
+     "q": "MPSC असिस्टेंट (लीगल) 2026 में कितनी vacancies हैं?",
+     "a": "महाराष्ट्र सरकार के विधि व न्याय विभाग में 14 असिस्टेंट (लीगल), ग्रुप-B (Non-Gazetted) पद — 2 पद PwD उम्मीदवारों के लिए — Advertisement No. 022/2026 के तहत।"
+    },
+    {
+     "q": "MPSC असिस्टेंट (लीगल) की योग्यता क्या है?",
+     "a": "Law degree — 5-साला integrated courses शामिल हैं (BA LLB, BBA LLB, BSL LLB, BLS LLB)। LLM को preference मिलती है, लेकिन अनिवार्य नहीं है।"
+    },
+    {
+     "q": "MPSC असिस्टेंट (लीगल) 2026 की age limit क्या है?",
+     "a": "18–38 वर्ष। Cut-off की तारीख summaries में अलग-अलग है (1 फरवरी 2027 vs 1 जनवरी 2027) — apply करने से पहले Advt 022/2026 में confirm करो।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "powergrid-trainee-engineer-electronics",
+  "advt": "Advertisement No. CC/04/2026",
+  "board_en": "Power Grid Corporation of India Ltd. (POWERGRID)",
+  "board_hi": "पावर ग्रिड कॉरपोरेशन ऑफ इंडिया लि. (POWERGRID)",
+  "portal": "powergrid.in",
+  "posts": 33,
+  "dates": {
+   "apply_end": "2026-11-27",
+   "apply_start": "2026-11-13",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-27"
+  },
+  "photo_kind": "upload",
+  "note_en": "This is a separate Electronics-only notice (CC/04/2026) for subsidiary PowerTel — not the Electrical/Civil/CS drive (CC/04/2025). Selection is on the GATE 2026 (EC paper) score only, and there is a ₹5,00,000 service bond for 3 years.",
+  "note_hi": "यह subsidiary PowerTel के लिए अलग Electronics-only notice (CC/04/2026) है — Electrical/Civil/CS वाली drive (CC/04/2025) नहीं। चयन सिर्फ़ GATE 2026 (EC paper) score पर है, और 3 साल के लिए ₹5,00,000 का service bond है।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://www.powergrid.in",
+   "notice": null,
+   "site": "https://www.powergrid.in"
+  },
+  "en": {
+   "name": "POWERGRID Trainee Engineer (Electronics) — PowerTel Recruitment 2026",
+   "tagline": "33 Trainee Engineer (Electronics) posts for PowerTel — BE/BTech Electronics + GATE 2026 (EC) — last date 27 November 2026.",
+   "qual": "BE/BTech/BSc (Engg.) Electronics ≥60% + GATE 2026 (EC)",
+   "fees": [
+    "₹500 (SC/ST/PwBD and departmental candidates exempt), non-refundable."
+   ],
+   "fees_short": "₹500 (SC/ST/PwBD: nil)",
+   "specs": [
+    "Post ID 569 — category split: UR 14, OBC 7, SC 6, ST 3, EWS 3.",
+    "Selection: GATE 2026 (EC paper) score 85% + Group Discussion 3% + Interview 12% — no separate written test.",
+    "1-year training (₹30,000–1,20,000) followed by appointment as Assistant Engineer (E0).",
+    "Service bond: ₹5,00,000 (₹2,50,000 for SC/ST/PwBD) for 3 years.",
+    "Photo and signature: JPG, up to 50 KB each."
+   ],
+   "eligibility": [
+    "33 Trainee Engineer (Electronics) posts for POWERGRID Teleservice Ltd. (PowerTel), under Advertisement No. CC/04/2026.",
+    "Qualification: full-time BE/BTech/BSc (Engg.) in Electronics (EC/ECE/ETC/Telecom etc.) with at least 60% marks.",
+    "A valid GATE 2026 score in the EC paper is mandatory — no other year or paper is accepted.",
+    "Age: 18–28 years as on 27 November 2026 (relaxations as per the notice)."
+   ],
+   "dos": [
+    "Apply only on powergrid.in before 11:59 PM on 27 November 2026.",
+    "Check that your GATE 2026 score is in the EC paper — other papers do not count.",
+    "Read the bond terms (₹5,00,000 for 3 years) before you apply.",
+    "Keep your GATE 2026 scorecard and degree certificate ready."
+   ],
+   "donts": [
+    "Do not apply with a GATE score from 2025 or earlier — only GATE 2026 (EC) counts.",
+    "Do not confuse this with the CC/04/2025 drive — that was Electrical/Civil/CS; this one is Electronics-only for PowerTel.",
+    "Do not ignore the service bond — it is ₹5,00,000 for 3 years."
+   ],
+   "checklist": [
+    "GATE 2026 (EC paper) scorecard",
+    "BE/BTech/BSc (Engg.) Electronics degree certificate (60%+)",
+    "Date of birth proof",
+    "Recent colour photograph (JPG, up to 50 KB) and signature (JPG, up to 50 KB)",
+    "Caste certificate, if applicable"
+   ],
+   "documents": [
+    "GATE 2026 (EC) scorecard",
+    "Degree certificate (Electronics, 60%+)",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent photograph and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "GATE 2025 या पुराने score से apply करना",
+    "CC/04/2025 वाली drive से confuse होना",
+    "Service bond की शर्तें पढ़े बिना apply करना",
+    "Photo/signature 50 KB से बड़ी upload करना"
+   ],
+   "steps": [
+    "powergrid.in के careers section में Advertisement No. CC/04/2026 पढ़ो।",
+    "Online form खोलो और अपनी GATE 2026 (EC) details भरो।",
+    "Form भरो, photo और signature (JPG, 50 KB तक) upload करो।",
+    "₹500 fee भरो (SC/ST/PwBD/departmental को कुछ नहीं देना) — 27 नवंबर 2026 तक।",
+    "Printout निकालो — चयन GATE score, GD और Interview से होगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in POWERGRID Trainee Engineer (Electronics) 2026?",
+     "a": "33 Trainee Engineer (Electronics) posts for POWERGRID Teleservice Ltd. (PowerTel) — Post ID 569 — under Advertisement No. CC/04/2026: UR 14, OBC 7, SC 6, ST 3, EWS 3."
+    },
+    {
+     "q": "Is GATE required for POWERGRID Trainee Engineer (Electronics)?",
+     "a": "Yes. A valid GATE 2026 score in the EC paper is mandatory — no other year or paper is accepted. Selection is on the GATE score (85%) + Group Discussion (3%) + Interview (12%)."
+    },
+    {
+     "q": "What is the service bond in POWERGRID Trainee Engineer (Electronics)?",
+     "a": "₹5,00,000 (₹2,50,000 for SC/ST/PwBD) for 3 years. After 1 year of training (₹30,000–1,20,000), candidates are appointed as Assistant Engineer (E0)."
+    },
+    {
+     "q": "What is the last date to apply for POWERGRID Trainee Engineer (Electronics) 2026?",
+     "a": "27 November 2026 at 11:59 PM. This is a separate Electronics-only notice (CC/04/2026) for PowerTel — not the Electrical/Civil/CS drive (CC/04/2025)."
+    }
+   ]
+  },
+  "hi": {
+   "name": "POWERGRID ट्रेनी इंजीनियर (इलेक्ट्रॉनिक्स) — PowerTel भर्ती 2026",
+   "tagline": "PowerTel के लिए 33 ट्रेनी इंजीनियर (इलेक्ट्रॉनिक्स) पद — BE/BTech इलेक्ट्रॉनिक्स + GATE 2026 (EC) — अंतिम तिथि 27 नवंबर 2026।",
+   "qual": "BE/BTech/BSc (Engg.) इलेक्ट्रॉनिक्स ≥60% + GATE 2026 (EC)",
+   "fees": [
+    "₹500 (SC/ST/PwBD और departmental उम्मीदवारों को छूट), non-refundable।"
+   ],
+   "fees_short": "₹500 (SC/ST/PwBD: nil)",
+   "specs": [
+    "Post ID 569 — श्रेणी-वार बँटवारा: UR 14, OBC 7, SC 6, ST 3, EWS 3।",
+    "चयन: GATE 2026 (EC paper) score 85% + Group Discussion 3% + Interview 12% — कोई अलग लिखित परीक्षा नहीं।",
+    "1 साल की training (₹30,000–1,20,000), फिर Assistant Engineer (E0) के रूप में नियुक्ति।",
+    "Service bond: 3 साल के लिए ₹5,00,000 (SC/ST/PwBD के लिए ₹2,50,000)।",
+    "Photo और signature: JPG, अधिकतम 50 KB प्रत्येक।"
+   ],
+   "eligibility": [
+    "POWERGRID Teleservice Ltd. (PowerTel) के लिए 33 ट्रेनी इंजीनियर (इलेक्ट्रॉनिक्स) पद, Advertisement No. CC/04/2026 के तहत।",
+    "योग्यता: इलेक्ट्रॉनिक्स (EC/ECE/ETC/Telecom आदि) में full-time BE/BTech/BSc (Engg.), कम से कम 60% अंकों के साथ।",
+    "EC paper में valid GATE 2026 score अनिवार्य है — कोई और साल या paper नहीं चलेगा।",
+    "उम्र: 27 नवंबर 2026 को 18–28 वर्ष (अधिसूचना के अनुसार छूट)।"
+   ],
+   "dos": [
+    "27 नवंबर 2026, रात 11:59 बजे से पहले सिर्फ़ powergrid.in पर apply करो।",
+    "Check करो कि तुम्हारा GATE 2026 score EC paper का है — दूसरे papers नहीं चलेंगे।",
+    "Apply करने से पहले bond की शर्तें (3 साल के लिए ₹5,00,000) पढ़ो।",
+    "GATE 2026 scorecard और degree certificate ready रखो।"
+   ],
+   "donts": [
+    "GATE 2025 या पुराने score से apply मत करो — सिर्फ़ GATE 2026 (EC) चलेगा।",
+    "इसे CC/04/2025 वाली drive से confuse मत करो — वह Electrical/Civil/CS थी; यह PowerTel के लिए Electronics-only है।",
+    "Service bond को ignore मत करो — यह 3 साल के लिए ₹5,00,000 है।"
+   ],
+   "checklist": [
+    "GATE 2026 (EC paper) scorecard",
+    "BE/BTech/BSc (Engg.) इलेक्ट्रॉनिक्स degree certificate (60%+)",
+    "जन्म तिथि का proof",
+    "हाल की colour photo (JPG, 50 KB तक) और signature (JPG, 50 KB तक)",
+    "Caste certificate, अगर लागू हो"
+   ],
+   "documents": [
+    "GATE 2026 (EC) scorecard",
+    "Degree certificate (इलेक्ट्रॉनिक्स, 60%+)",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "GATE 2025 या पुराने score से apply करना",
+    "CC/04/2025 वाली drive से confuse होना",
+    "Service bond की शर्तें पढ़े बिना apply करना",
+    "Photo/signature 50 KB से बड़ी upload करना"
+   ],
+   "steps": [
+    "powergrid.in के careers section में Advertisement No. CC/04/2026 पढ़ो।",
+    "Online form खोलो और अपनी GATE 2026 (EC) details भरो।",
+    "Form भरो, photo और signature (JPG, 50 KB तक) upload करो।",
+    "₹500 fee भरो (SC/ST/PwBD/departmental को कुछ नहीं देना) — 27 नवंबर 2026 तक।",
+    "Printout निकालो — चयन GATE score, GD और Interview से होगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "POWERGRID ट्रेनी इंजीनियर (इलेक्ट्रॉनिक्स) 2026 में कितनी vacancies हैं?",
+     "a": "POWERGRID Teleservice Ltd. (PowerTel) के लिए 33 ट्रेनी इंजीनियर (इलेक्ट्रॉनिक्स) पद — Post ID 569 — Advertisement No. CC/04/2026 के तहत: UR 14, OBC 7, SC 6, ST 3, EWS 3।"
+    },
+    {
+     "q": "क्या POWERGRID ट्रेनी इंजीनियर (इलेक्ट्रॉनिक्स) के लिए GATE ज़रूरी है?",
+     "a": "हाँ। EC paper में valid GATE 2026 score अनिवार्य है — कोई और साल या paper नहीं चलेगा। चयन GATE score (85%) + Group Discussion (3%) + Interview (12%) से होगा।"
+    },
+    {
+     "q": "POWERGRID ट्रेनी इंजीनियर (इलेक्ट्रॉनिक्स) में service bond क्या है?",
+     "a": "3 साल के लिए ₹5,00,000 (SC/ST/PwBD के लिए ₹2,50,000)। 1 साल की training (₹30,000–1,20,000) के बाद Assistant Engineer (E0) के रूप में नियुक्ति मिलती है।"
+    },
+    {
+     "q": "POWERGRID ट्रेनी इंजीनियर (इलेक्ट्रॉनिक्स) 2026 के लिए apply करने की अंतिम तिथि क्या है?",
+     "a": "27 नवंबर 2026, रात 11:59 बजे। यह PowerTel के लिए अलग Electronics-only notice (CC/04/2026) है — Electrical/Civil/CS वाली drive (CC/04/2025) नहीं।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "rmlims-non-teaching",
+  "advt": "Advertisements 78–83/Estb.-2/Rectt./Dr.RMLIMS/2026",
+  "board_en": "Dr. Ram Manohar Lohia Institute of Medical Sciences, Lucknow",
+  "board_hi": "डॉ. राम मनोहर लोहिया आयुर्विज्ञान संस्थान, लखनऊ",
+  "portal": "drrmlims.ac.in",
+  "posts": 74,
+  "dates": {
+   "apply_end": "2026-11-20",
+   "apply_start": "2026-10-19",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-20"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://drrmlims.ac.in",
+   "notice": null,
+   "site": "https://drrmlims.ac.in"
+  },
+  "en": {
+   "name": "Dr. RMLIMS Lucknow Non-Teaching (Group B, C & D) Recruitment 2026",
+   "tagline": "74 non-teaching posts — Hospital Attendant 32, Stenographer 30, Receptionist 8 and more — apply via DigiALM, last date 20 November 2026.",
+   "qual": "10th pass to PG (post-wise)",
+   "fees": [
+    "₹1,180 for Gen/OBC/EWS; ₹708 for SC/ST; PH candidates pay nothing (including 18% GST)."
+   ],
+   "fees_short": "₹1,180 / ₹708 (PH: nil)",
+   "specs": [
+    "Apply through the DigiALM portal linked from drrmlims.ac.in — not directly on the institute website.",
+    "Selection: CBT (screening + main); a skill test applies for the Stenographer post.",
+    "Reservation benefit is available only to Uttar Pradesh domicile candidates.",
+    "Post split: Hospital Attendant Gr-II 32, Stenographer 30, Receptionist 8, Programmer 2, Medical Physicist 1, Radiation Safety Officer 1."
+   ],
+   "eligibility": [
+    "74 non-teaching Group B, C & D posts under Advertisements 78–83/Estb.-2/Rectt./Dr.RMLIMS/2026.",
+    "Hospital Attendant Gr-II: 10th pass.",
+    "Stenographer: Bachelor's degree with at least 55% + Hindi & English shorthand 80 wpm, typing English 40 wpm / Hindi 35 wpm.",
+    "Receptionist: Bachelor's degree + PG Diploma in Journalism/PR.",
+    "Programmer: BE/BTech (CS) or MCA/MSc (CS). Medical Physicist: MSc Physics + PG Diploma in Radiological/Medical Physics + 12-month internship.",
+    "Age: 18–40 years as on 20 November 2026 (relaxations as per the notice)."
+   ],
+   "dos": [
+    "Apply only through the DigiALM link on drrmlims.ac.in before midnight on 20 November 2026.",
+    "Check the post-wise qualification carefully — Attendant needs only 10th pass, Stenographer needs shorthand speed.",
+    "Keep your degree/diploma and shorthand certificates ready.",
+    "Pay the fee by 20 November 2026 — form and fee share the same last date."
+   ],
+   "donts": [
+    "Do not look for the form on the institute homepage — it is on the DigiALM portal linked from there.",
+    "Do not claim reservation benefit unless you are a UP domicile candidate.",
+    "Do not apply for Stenographer without the required shorthand and typing speeds."
+   ],
+   "checklist": [
+    "Degree / 10th certificate (post-wise)",
+    "Shorthand + typing certificates (Stenographer)",
+    "Date of birth proof",
+    "Recent colour photograph and signature scan",
+    "UP domicile certificate, if claiming reservation"
+   ],
+   "documents": [
+    "Qualification certificate (post-wise)",
+    "Shorthand/typing certificates (Stenographer)",
+    "Date of birth proof",
+    "UP domicile certificate, if applicable",
+    "Recent photograph and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Institute website पर सीधे form ढूँढना (DigiALM पर है)",
+    "UP domicile के बिना reservation claim करना",
+    "Stenographer के लिए shorthand speed check किए बिना apply करना",
+    "20 नवंबर की deadline miss करना"
+   ],
+   "steps": [
+    "drrmlims.ac.in पर Advertisements 78–83/Estb.-2/Rectt./Dr.RMLIMS/2026 पढ़ो।",
+    "DigiALM portal का link खोलो और अपनी post चुनो।",
+    "Form भरो, photo और signature upload करो, documents जोड़ो।",
+    "₹1,180 / ₹708 fee भरो (PH को कुछ नहीं देना) — 20 नवंबर 2026 तक।",
+    "Printout निकालो — CBT (screening + main) होगा; Stenographer के लिए skill test भी।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in Dr. RMLIMS Non-Teaching 2026?",
+     "a": "74 non-teaching posts — Hospital Attendant Gr-II 32, Stenographer 30, Receptionist 8, Programmer 2, Medical Physicist 1 and Radiation Safety Officer 1 — under Advertisements 78–83/Estb.-2/Rectt./Dr.RMLIMS/2026."
+    },
+    {
+     "q": "What is the last date to apply for Dr. RMLIMS Non-Teaching 2026?",
+     "a": "20 November 2026 (midnight). Applications go through the DigiALM portal linked from drrmlims.ac.in."
+    },
+    {
+     "q": "What is the qualification for Dr. RMLIMS Stenographer?",
+     "a": "A Bachelor's degree with at least 55% marks, plus Hindi & English shorthand at 80 wpm and typing at English 40 wpm / Hindi 35 wpm. A skill test applies for this post."
+    },
+    {
+     "q": "Is there reservation benefit in Dr. RMLIMS Non-Teaching recruitment?",
+     "a": "Reservation benefit is available only to Uttar Pradesh domicile candidates. The fee is ₹1,180 for Gen/OBC/EWS, ₹708 for SC/ST and nil for PH candidates."
+    }
+   ]
+  },
+  "hi": {
+   "name": "डॉ. RMLIMS लखनऊ Non-Teaching (ग्रुप B, C और D) भर्ती 2026",
+   "tagline": "74 non-teaching पद — हॉस्पिटल अटेंडेंट 32, स्टेनोग्राफर 30, रिसेप्शनिस्ट 8 और अन्य — DigiALM से apply करें, अंतिम तिथि 20 नवंबर 2026।",
+   "qual": "10वीं पास से PG तक (पद के हिसाब से)",
+   "fees": [
+    "Gen/OBC/EWS के लिए ₹1,180; SC/ST के लिए ₹708; PH उम्मीदवारों को कुछ नहीं देना (18% GST सहित)।"
+   ],
+   "fees_short": "₹1,180 / ₹708 (PH: nil)",
+   "specs": [
+    "drrmlims.ac.in से link किए गए DigiALM portal से apply करो — सीधे institute की website पर form नहीं है।",
+    "चयन: CBT (screening + main); स्टेनोग्राफर post के लिए skill test भी होगा।",
+    "Reservation का लाभ सिर्फ़ उत्तर प्रदेश के domicile उम्मीदवारों को मिलेगा।",
+    "पदों का बँटवारा: हॉस्पिटल अटेंडेंट ग्रेड-II 32, स्टेनोग्राफर 30, रिसेप्शनिस्ट 8, प्रोग्रामर 2, मेडिकल फिजिसिस्ट 1, रेडिएशन सेफ्टी ऑफिसर 1।"
+   ],
+   "eligibility": [
+    "Advertisements 78–83/Estb.-2/Rectt./Dr.RMLIMS/2026 के तहत 74 non-teaching ग्रुप B, C और D पद।",
+    "हॉस्पिटल अटेंडेंट ग्रेड-II: 10वीं पास।",
+    "स्टेनोग्राफर: कम से कम 55% के साथ Bachelor's degree + हिंदी व अंग्रेज़ी shorthand 80 wpm, typing अंग्रेज़ी 40 wpm / हिंदी 35 wpm।",
+    "रिसेप्शनिस्ट: Bachelor's degree + Journalism/PR में PG Diploma।",
+    "प्रोग्रामर: BE/BTech (CS) या MCA/MSc (CS)। मेडिकल फिजिसिस्ट: MSc Physics + Radiological/Medical Physics में PG Diploma + 12 महीने की internship।",
+    "उम्र: 20 नवंबर 2026 को 18–40 वर्ष (अधिसूचना के अनुसार छूट)।"
+   ],
+   "dos": [
+    "20 नवंबर 2026, आधी रात से पहले सिर्फ़ drrmlims.ac.in से link किए गए DigiALM portal से apply करो।",
+    "Post-wise योग्यता ध्यान से check करो — अटेंडेंट के लिए सिर्फ़ 10वीं पास चाहिए, स्टेनोग्राफर के लिए shorthand speed।",
+    "Degree/diploma और shorthand certificates ready रखो।",
+    "Fee 20 नवंबर 2026 तक भरो — form और fee की अंतिम तिथि एक ही है।"
+   ],
+   "donts": [
+    "Institute की homepage पर सीधे form मत ढूँढो — वह DigiALM portal पर है, जिसका link वहाँ दिया है।",
+    "UP domicile हुए बिना reservation का लाभ claim मत करो।",
+    "Shorthand और typing speed के बिना स्टेनोग्राफर के लिए apply मत करो।"
+   ],
+   "checklist": [
+    "Degree / 10वीं certificate (पद के हिसाब से)",
+    "Shorthand + typing certificates (स्टेनोग्राफर)",
+    "जन्म तिथि का proof",
+    "हाल की colour photo और signature scan",
+    "UP domicile certificate, अगर reservation claim कर रहे हो"
+   ],
+   "documents": [
+    "योग्यता certificate (पद के हिसाब से)",
+    "Shorthand/typing certificates (स्टेनोग्राफर)",
+    "जन्म तिथि का proof",
+    "UP domicile certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Institute website पर सीधे form ढूँढना (DigiALM पर है)",
+    "UP domicile के बिना reservation claim करना",
+    "Stenographer के लिए shorthand speed check किए बिना apply करना",
+    "20 नवंबर की deadline miss करना"
+   ],
+   "steps": [
+    "drrmlims.ac.in पर Advertisements 78–83/Estb.-2/Rectt./Dr.RMLIMS/2026 पढ़ो।",
+    "DigiALM portal का link खोलो और अपनी post चुनो।",
+    "Form भरो, photo और signature upload करो, documents जोड़ो।",
+    "₹1,180 / ₹708 fee भरो (PH को कुछ नहीं देना) — 20 नवंबर 2026 तक।",
+    "Printout निकालो — CBT (screening + main) होगा; स्टेनोग्राफर के लिए skill test भी।"
+   ],
+   "extra_faq": [
+    {
+     "q": "डॉ. RMLIMS Non-Teaching 2026 में कितनी vacancies हैं?",
+     "a": "74 non-teaching पद — हॉस्पिटल अटेंडेंट ग्रेड-II 32, स्टेनोग्राफर 30, रिसेप्शनिस्ट 8, प्रोग्रामर 2, मेडिकल फिजिसिस्ट 1 और रेडिएशन सेफ्टी ऑफिसर 1 — Advertisements 78–83/Estb.-2/Rectt./Dr.RMLIMS/2026 के तहत।"
+    },
+    {
+     "q": "डॉ. RMLIMS Non-Teaching 2026 के लिए apply करने की अंतिम तिथि क्या है?",
+     "a": "20 नवंबर 2026 (आधी रात)। Applications drrmlims.ac.in से link किए गए DigiALM portal से जाती हैं।"
+    },
+    {
+     "q": "डॉ. RMLIMS स्टेनोग्राफर की योग्यता क्या है?",
+     "a": "कम से कम 55% अंकों के साथ Bachelor's degree, साथ ही हिंदी व अंग्रेज़ी shorthand 80 wpm और typing अंग्रेज़ी 40 wpm / हिंदी 35 wpm। इस post के लिए skill test भी होता है।"
+    },
+    {
+     "q": "क्या डॉ. RMLIMS Non-Teaching भर्ती में reservation का लाभ है?",
+     "a": "Reservation का लाभ सिर्फ़ उत्तर प्रदेश के domicile उम्मीदवारों को मिलता है। Fee Gen/OBC/EWS के लिए ₹1,180, SC/ST के लिए ₹708 और PH के लिए nil है।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "isro-sac-apprentice",
+  "advt": "Advertisement No. SAC: 03:2026",
+  "board_en": "Space Applications Centre (SAC), Ahmedabad — ISRO",
+  "board_hi": "अंतरिक्ष अनुप्रयोग केंद्र (SAC), अहमदाबाद — ISRO",
+  "portal": "sac.gov.in",
+  "posts": null,
+  "dates": {
+   "apply_end": "2026-12-02",
+   "apply_start": "2026-11-11",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-02"
+  },
+  "photo_kind": "upload",
+  "note_en": "This is a 1-year apprenticeship under the Apprentices Act — it gives no claim to a job in ISRO after training. The notice lists 26 position codes but prints no seat count per code, so no total is shown here.",
+  "note_hi": "यह Apprentices Act के तहत 1 साल की apprenticeship है — training के बाद ISRO में नौकरी का कोई दावा नहीं बनता। Notice में 26 position codes दिए हैं लेकिन प्रति code सीटों की संख्या नहीं छपी है, इसलिए यहाँ कोई total नहीं दिखाया गया है।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://careers.sac.gov.in",
+   "notice": null,
+   "site": "https://www.sac.gov.in"
+  },
+  "en": {
+   "name": "ISRO Space Applications Centre Apprentice Recruitment 2026",
+   "tagline": "26 apprentice position codes — Graduate, Technician and Trade — no fee, merit-based selection, last date 2 December 2026.",
+   "qual": "BE/BTech / Diploma / ITI (60%, post-wise)",
+   "fees": [
+    "No application fee."
+   ],
+   "fees_short": "Nil (no fee)",
+   "specs": [
+    "26 position codes in all — Graduate Apprentice 9, Technician Apprentice 5, Trade Apprentice 12. The notice prints NO seat count per code, so this page shows no total.",
+    "No written test or interview — selection is on the merit (% of the qualifying examination) followed by document verification.",
+    "Graduate Apprentice: BE/BTech or graduation with 60%, passed in December 2023 or later; degree must be from Maharashtra, Gujarat, Goa, Chhattisgarh, Madhya Pradesh, Rajasthan or DNH & DD only.",
+    "Technician Apprentice: Diploma in first class. Trade Apprentice: ITI from Gujarat institutes only.",
+    "Joining is expected in January/February 2027. Stipend: ₹12,300 (Graduate) / ₹10,900 (Technician) / ₹10,560–11,040 (Trade) per month."
+   ],
+   "eligibility": [
+    "26 apprentice position codes under Advertisement No. SAC: 03:2026 (Graduate 9, Technician 5, Trade 12) — seat count per code is not printed in the notice.",
+    "Graduate Apprentice: BE/BTech or graduation with 60% marks, passed in December 2023 or later; degree from Maharashtra, Gujarat, Goa, Chhattisgarh, Madhya Pradesh, Rajasthan or DNH & DD only.",
+    "Technician Apprentice: Diploma in first class. Trade Apprentice: ITI from Gujarat institutes only.",
+    "Age: 18–28 years (Graduate) / 18–35 years (Technician & Trade) as on 2 December 2026."
+   ],
+   "dos": [
+    "Apply only on careers.sac.gov.in before 5:00 PM on 2 December 2026.",
+    "Check the state restriction — Graduate degrees must be from the listed states only; Trade ITI must be from Gujarat institutes only.",
+    "Check that you passed in December 2023 or later (Graduate Apprentice).",
+    "No fee — do not pay anyone for this form."
+   ],
+   "donts": [
+    "Do not treat this as an ISRO job — it is a 1-year apprenticeship with no claim to employment after training.",
+    "Do not apply with a degree from a state outside the listed ones (Graduate Apprentice).",
+    "Do not invent a seat total — the notice lists 26 position codes, not seat counts."
+   ],
+   "checklist": [
+    "Degree / Diploma / ITI certificate (60% for Graduate)",
+    "Passing-year proof (December 2023 or later, Graduate)",
+    "Date of birth proof",
+    "Recent colour photograph and signature scan",
+    "NATS/NAPS enrolment, if applicable"
+   ],
+   "documents": [
+    "Degree / Diploma / ITI certificate and marksheet",
+    "Passing-year proof",
+    "Date of birth proof",
+    "Recent photograph and signature",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "इसे ISRO की नौकरी समझना (1 साल की apprenticeship है)",
+    "Degree वाले state की शर्त check किए बिना apply करना",
+    "Seat total guess करना (notice में सिर्फ़ 26 codes हैं)",
+    "2 दिसंबर शाम 5 बजे के बाद form भरने की कोशिश करना"
+   ],
+   "steps": [
+    "sac.gov.in / careers.sac.gov.in पर Advertisement No. SAC: 03:2026 पढ़ो।",
+    "अपनी category (Graduate / Technician / Trade) और position code चुनो।",
+    "Form भरो, photo और signature upload करो, documents जोड़ो।",
+    "कोई fee नहीं है — form submit करो।",
+    "Printout निकालो — चयन qualifying exam के % पर merit से होगा, फिर document verification।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in ISRO SAC Apprentice 2026?",
+     "a": "The notice lists 26 position codes — Graduate Apprentice 9, Technician Apprentice 5 and Trade Apprentice 12 — but prints no seat count per code, so no total can be shown honestly."
+    },
+    {
+     "q": "Is there any fee for ISRO SAC Apprentice 2026?",
+     "a": "No. There is no application fee for any category."
+    },
+    {
+     "q": "Is ISRO SAC Apprentice a permanent job?",
+     "a": "No. It is a 1-year apprenticeship under the Apprentices Act. The notice gives no claim to a job in ISRO after training. Stipend is ₹12,300 (Graduate) / ₹10,900 (Technician) / ₹10,560–11,040 (Trade) per month."
+    },
+    {
+     "q": "What is the last date to apply for ISRO SAC Apprentice 2026?",
+     "a": "2 December 2026 at 5:00 PM. The window opened on 11 November 2026 at 9:30 AM. Selection is on merit (% of the qualifying examination) followed by document verification — no written test."
+    }
+   ]
+  },
+  "hi": {
+   "name": "ISRO अंतरिक्ष अनुप्रयोग केंद्र Apprentice भर्ती 2026",
+   "tagline": "26 apprentice position codes — Graduate, Technician और Trade — कोई fee नहीं, merit पर चयन, अंतिम तिथि 2 दिसंबर 2026।",
+   "qual": "BE/BTech / Diploma / ITI (60%, पद के हिसाब से)",
+   "fees": [
+    "कोई आवेदन शुल्क नहीं है।"
+   ],
+   "fees_short": "Nil (कोई शुल्क नहीं)",
+   "specs": [
+    "कुल 26 position codes — Graduate Apprentice 9, Technician Apprentice 5, Trade Apprentice 12। Notice में प्रति code सीटों की संख्या नहीं छपी है, इसलिए इस page पर कोई total नहीं दिखाया गया है।",
+    "कोई लिखित परीक्षा या interview नहीं — चयन qualifying examination के % पर merit से होगा, फिर document verification।",
+    "Graduate Apprentice: 60% के साथ BE/BTech या graduation, दिसंबर 2023 या बाद में पास; degree सिर्फ़ महाराष्ट्र, गुजरात, गोवा, छत्तीसगढ़, मध्य प्रदेश, राजस्थान या DNH & DD से होनी चाहिए।",
+    "Technician Apprentice: प्रथम श्रेणी में Diploma। Trade Apprentice: सिर्फ़ गुजरात के institutes से ITI।",
+    "Joining जनवरी/फरवरी 2027 में अपेक्षित है। Stipend: ₹12,300 (Graduate) / ₹10,900 (Technician) / ₹10,560–11,040 (Trade) प्रति माह।"
+   ],
+   "eligibility": [
+    "Advertisement No. SAC: 03:2026 के तहत 26 apprentice position codes (Graduate 9, Technician 5, Trade 12) — प्रति code सीटों की संख्या notice में नहीं छपी है।",
+    "Graduate Apprentice: 60% अंकों के साथ BE/BTech या graduation, दिसंबर 2023 या बाद में पास; degree सिर्फ़ महाराष्ट्र, गुजरात, गोवा, छत्तीसगढ़, मध्य प्रदेश, राजस्थान या DNH & DD से हो।",
+    "Technician Apprentice: प्रथम श्रेणी में Diploma। Trade Apprentice: सिर्फ़ गुजरात के institutes से ITI।",
+    "उम्र: 2 दिसंबर 2026 को 18–28 वर्ष (Graduate) / 18–35 वर्ष (Technician और Trade)।"
+   ],
+   "dos": [
+    "2 दिसंबर 2026, शाम 5:00 बजे से पहले सिर्फ़ careers.sac.gov.in पर apply करो।",
+    "State की शर्त check करो — Graduate degree सिर्फ़ listed राज्यों से होनी चाहिए; Trade ITI सिर्फ़ गुजरात के institutes से।",
+    "Check करो कि तुम दिसंबर 2023 या बाद में पास हुए हो (Graduate Apprentice)।",
+    "कोई fee नहीं है — इस form के लिए किसी को पैसे मत दो।"
+   ],
+   "donts": [
+    "इसे ISRO की नौकरी मत समझो — यह 1 साल की apprenticeship है, training के बाद नौकरी का कोई दावा नहीं बनता।",
+    "Listed राज्यों के बाहर की degree से apply मत करो (Graduate Apprentice)।",
+    "Seat total guess मत करो — notice में सिर्फ़ 26 position codes हैं, सीटों की संख्या नहीं।"
+   ],
+   "checklist": [
+    "Degree / Diploma / ITI certificate (Graduate के लिए 60%)",
+    "Passing-year proof (दिसंबर 2023 या बाद में, Graduate)",
+    "जन्म तिथि का proof",
+    "हाल की colour photo और signature scan",
+    "NATS/NAPS enrolment, अगर लागू हो"
+   ],
+   "documents": [
+    "Degree / Diploma / ITI certificate और marksheet",
+    "Passing-year proof",
+    "जन्म तिथि का proof",
+    "हाल की photo और signature",
+    "आधार कार्ड"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "इसे ISRO की नौकरी समझना (1 साल की apprenticeship है)",
+    "Degree वाले state की शर्त check किए बिना apply करना",
+    "Seat total guess करना (notice में सिर्फ़ 26 codes हैं)",
+    "2 दिसंबर शाम 5 बजे के बाद form भरने की कोशिश करना"
+   ],
+   "steps": [
+    "sac.gov.in / careers.sac.gov.in पर Advertisement No. SAC: 03:2026 पढ़ो।",
+    "अपनी category (Graduate / Technician / Trade) और position code चुनो।",
+    "Form भरो, photo और signature upload करो, documents जोड़ो।",
+    "कोई fee नहीं है — form submit करो।",
+    "Printout निकालो — चयन qualifying exam के % पर merit से होगा, फिर document verification।"
+   ],
+   "extra_faq": [
+    {
+     "q": "ISRO SAC Apprentice 2026 में कितनी vacancies हैं?",
+     "a": "Notice में 26 position codes दिए हैं — Graduate Apprentice 9, Technician Apprentice 5 और Trade Apprentice 12 — लेकिन प्रति code सीटों की संख्या नहीं छपी है, इसलिए कोई total ईमानदारी से नहीं दिखाया जा सकता।"
+    },
+    {
+     "q": "क्या ISRO SAC Apprentice 2026 के लिए कोई fee है?",
+     "a": "नहीं। किसी भी category के लिए कोई आवेदन शुल्क नहीं है।"
+    },
+    {
+     "q": "क्या ISRO SAC Apprentice permanent नौकरी है?",
+     "a": "नहीं। यह Apprentices Act के तहत 1 साल की apprenticeship है। Notice training के बाद ISRO में नौकरी का कोई दावा नहीं देता। Stipend ₹12,300 (Graduate) / ₹10,900 (Technician) / ₹10,560–11,040 (Trade) प्रति माह है।"
+    },
+    {
+     "q": "ISRO SAC Apprentice 2026 के लिए apply करने की अंतिम तिथि क्या है?",
+     "a": "2 दिसंबर 2026, शाम 5:00 बजे। Window 11 नवंबर 2026, सुबह 9:30 बजे खुली थी। चयन qualifying examination के % पर merit से होगा, फिर document verification — कोई लिखित परीक्षा नहीं।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "csir-npl-mts",
+  "advt": "Advertisement No. Rectt./05/2026",
+  "board_en": "CSIR – National Physical Laboratory (NPL), New Delhi",
+  "board_hi": "CSIR – राष्ट्रीय भौतिक प्रयोगशाला (NPL), नई दिल्ली",
+  "portal": "nplindia.in",
+  "posts": 25,
+  "dates": {
+   "apply_end": "2026-12-23",
+   "apply_start": "2026-11-13",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-23"
+  },
+  "photo_kind": "upload",
+  "note_en": "There is NO online form — the prescribed form must reach CSIR-NPL by post by 23 December 2026. Postal delay is not excused.",
+  "note_hi": "कोई online form नहीं है — निर्धारित form डाक से 23 दिसंबर 2026 तक CSIR-NPL पहुँच जाना चाहिए। डाक में देरी माफ़ नहीं होगी।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://nplindia.in",
+   "notice": null,
+   "site": "https://nplindia.in"
+  },
+  "en": {
+   "name": "CSIR-NPL Multi Tasking Staff (MTS) Recruitment 2026",
+   "tagline": "25 MTS posts — 10th pass — offline form by post, must reach NPL by 23 December 2026.",
+   "qual": "Matriculation / 10th pass",
+   "fees": [
+    "₹500 by crossed Demand Draft / Pay Order in favour of 'Director, National Physical Laboratory', New Delhi (SC/ST/PwBD/Women/Abroad/Transgender exempt). Send the DD with the form — there is no online payment."
+   ],
+   "fees_short": "₹500 by DD (exempt categories: nil)",
+   "specs": [
+    "OFFLINE ONLY — download the prescribed form from nplindia.in, fill it on paper and post it. There is no online form and no online payment.",
+    "The form must REACH NPL by 23 December 2026 — not the date you post it. Applications received after 23 December are not entertained for any reason, including postal delay, and the same date applies to far-flung areas.",
+    "Post to: Senior Controller of Administration, CSIR-National Physical Laboratory, Dr. K.S. Krishnan Marg, New Delhi-110012. Superscribe the envelope 'APPLICATION FOR THE POST OF MTS'.",
+    "Written exam: 150 questions / 2 hours, −1 negative marking, Class-10 standard (General Intelligence 25, Quantitative Aptitude 25, General Awareness 50, English 50; 3 marks each) — followed by a merit list.",
+    "Pay: Level-1, ₹18,000–56,900 (about ₹41,040/month total emoluments); 2-year probation."
+   ],
+   "eligibility": [
+    "25 Multi Tasking Staff posts under Advertisement No. Rectt./05/2026 — UR 12, EWS 3, OBC-NCL 6, ST 4 (including 1 PwBD-b, 1 PwBD-c, 3 ESM).",
+    "Qualification: Matriculation / 10th pass (12th pass desirable).",
+    "Age: 18–25 years as on 23 December 2026 (SC/ST +5, OBC +3 on reserved posts, PwBD +10, ESM +3)."
+   ],
+   "dos": [
+    "Download the prescribed form from nplindia.in and fill it on paper.",
+    "Post it EARLY — it must reach NPL by 23 December 2026; postal delay is not excused.",
+    "Attach the ₹500 DD (unless exempt) and superscribe the envelope 'APPLICATION FOR THE POST OF MTS'.",
+    "Keep a photocopy of the filled form and the DD before posting."
+   ],
+   "donts": [
+    "Do not look for an online form — there is none.",
+    "Do not post on 23 December and assume it will arrive in time — the form must REACH NPL by that date.",
+    "Do not forget the DD — applications without the fee (where applicable) are rejected."
+   ],
+   "checklist": [
+    "Prescribed application form (downloaded from nplindia.in)",
+    "10th pass certificate (12th, if any)",
+    "Date of birth proof (age 18–25 as on 23 Dec 2026)",
+    "₹500 DD in favour of 'Director, National Physical Laboratory' (unless exempt)",
+    "Caste / PwBD certificate, if applicable"
+   ],
+   "documents": [
+    "10th pass certificate and marksheet",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "Demand Draft (₹500, unless exempt)",
+    "Recent photograph (as per the form)"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Online form ढूँढना (कोई online form नहीं है)",
+    "23 दिसंबर को post करके time पर पहुँचने की उम्मीद करना",
+    "DD लगाना भूल जाना",
+    "लिफाफे पर 'APPLICATION FOR THE POST OF MTS' न लिखना"
+   ],
+   "steps": [
+    "nplindia.in से Advertisement No. Rectt./05/2026 और prescribed form download करो।",
+    "Form कागज़ पर भरो, documents attach करो।",
+    "'Director, National Physical Laboratory' के नाम ₹500 का DD बनवाओ (exempt हो तो नहीं)।",
+    "लिफाफे पर 'APPLICATION FOR THE POST OF MTS' लिखकर Senior Controller of Administration, CSIR-NPL, Dr. K.S. Krishnan Marg, New Delhi-110012 को post करो — इतनी जल्दी कि 23 दिसंबर 2026 तक पहुँच जाए।",
+    "Form और DD की photocopy अपने पास रखो — लिखित परीक्षा 150 प्रश्न / 2 घंटे की होगी।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in CSIR-NPL MTS 2026?",
+     "a": "25 Multi Tasking Staff posts under Advertisement No. Rectt./05/2026 — UR 12, EWS 3, OBC-NCL 6, ST 4 (including 1 PwBD-b, 1 PwBD-c, 3 ESM)."
+    },
+    {
+     "q": "How do I apply for CSIR-NPL MTS 2026?",
+     "a": "Offline only. Download the prescribed form from nplindia.in, fill it on paper, attach the documents and the ₹500 DD (unless exempt), and post it so that it reaches CSIR-NPL, New Delhi by 23 December 2026. There is no online form."
+    },
+    {
+     "q": "What is the last date for CSIR-NPL MTS 2026?",
+     "a": "23 December 2026 — and that is the date by which your form must REACH NPL, not the date you post it. Postal delay is not excused, so post it early."
+    },
+    {
+     "q": "What is the exam pattern for CSIR-NPL MTS 2026?",
+     "a": "A written examination of 150 questions in 2 hours, with −1 negative marking, at Class-10 standard — General Intelligence 25, Quantitative Aptitude 25, General Awareness 50, English 50 (3 marks each) — followed by a merit list."
+    }
+   ]
+  },
+  "hi": {
+   "name": "CSIR-NPL मल्टी टास्किंग स्टाफ (MTS) भर्ती 2026",
+   "tagline": "25 MTS पद — 10वीं पास — डाक से offline form, 23 दिसंबर 2026 तक NPL पहुँचना चाहिए।",
+   "qual": "Matriculation / 10वीं पास",
+   "fees": [
+    "'Director, National Physical Laboratory', New Delhi के नाम ₹500 का crossed Demand Draft / Pay Order (SC/ST/PwBD/महिला/विदेश/Transgender को छूट)। DD form के साथ भेजो — कोई online payment नहीं है।"
+   ],
+   "fees_short": "₹500 DD से (छूट वाली श्रेणियाँ: nil)",
+   "specs": [
+    "सिर्फ़ OFFLINE — nplindia.in से निर्धारित form download करो, कागज़ पर भरो और post करो। कोई online form और कोई online payment नहीं है।",
+    "Form 23 दिसंबर 2026 तक NPL पहुँच जाना चाहिए — वह तारीख नहीं जब तुम post करते हो। 23 दिसंबर के बाद मिली applications किसी भी कारण से, डाक में देरी सहित, स्वीकार नहीं की जाएँगी, और दूर-दराज़ के क्षेत्रों के लिए भी यही तारीख लागू है।",
+    "पता: Senior Controller of Administration, CSIR-National Physical Laboratory, Dr. K.S. Krishnan Marg, New Delhi-110012। लिफाफे पर 'APPLICATION FOR THE POST OF MTS' लिखो।",
+    "लिखित परीक्षा: 150 प्रश्न / 2 घंटे, −1 negative marking, 10वीं कक्षा के स्तर पर (General Intelligence 25, Quantitative Aptitude 25, General Awareness 50, English 50; प्रत्येक 3 अंक) — फिर merit list।",
+    "वेतन: Level-1, ₹18,000–56,900 (कुल लगभग ₹41,040/माह); 2 साल की probation।"
+   ],
+   "eligibility": [
+    "Advertisement No. Rectt./05/2026 के तहत 25 मल्टी टास्किंग स्टाफ पद — UR 12, EWS 3, OBC-NCL 6, ST 4 (1 PwBD-b, 1 PwBD-c, 3 ESM सहित)।",
+    "योग्यता: Matriculation / 10वीं पास (12वीं पास desirable)।",
+    "उम्र: 23 दिसंबर 2026 को 18–25 वर्ष (SC/ST +5, आरक्षित posts पर OBC +3, PwBD +10, ESM +3)।"
+   ],
+   "dos": [
+    "nplindia.in से निर्धारित form download करो और कागज़ पर भरो।",
+    "जल्दी post करो — यह 23 दिसंबर 2026 तक NPL पहुँच जाना चाहिए; डाक में देरी माफ़ नहीं होगी।",
+    "₹500 का DD (अगर छूट न हो) लगाओ और लिफाफे पर 'APPLICATION FOR THE POST OF MTS' लिखो।",
+    "Post करने से पहले भरे हुए form और DD की photocopy रखो।"
+   ],
+   "donts": [
+    "Online form मत ढूँढो — कोई online form नहीं है।",
+    "23 दिसंबर को post करके time पर पहुँचने की उम्मीद मत करो — form उस तारीख तक NPL पहुँच जाना चाहिए।",
+    "DD लगाना मत भूलो — जहाँ fee लागू हो, बिना fee के applications reject हो जाती हैं।"
+   ],
+   "checklist": [
+    "निर्धारित application form (nplindia.in से download किया हुआ)",
+    "10वीं पास certificate (12वीं, अगर हो)",
+    "जन्म तिथि का proof (23 दिसंबर 2026 को उम्र 18–25)",
+    "'Director, National Physical Laboratory' के नाम ₹500 का DD (अगर छूट न हो)",
+    "Caste / PwBD certificate, अगर लागू हो"
+   ],
+   "documents": [
+    "10वीं पास certificate और marksheet",
+    "जन्म तिथि का proof",
+    "Caste / PwBD certificate, अगर लागू हो",
+    "Demand Draft (₹500, अगर छूट न हो)",
+    "हाल की photo (form के अनुसार)"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Online form ढूँढना (कोई online form नहीं है)",
+    "23 दिसंबर को post करके time पर पहुँचने की उम्मीद करना",
+    "DD लगाना भूल जाना",
+    "लिफाफे पर 'APPLICATION FOR THE POST OF MTS' न लिखना"
+   ],
+   "steps": [
+    "nplindia.in से Advertisement No. Rectt./05/2026 और निर्धारित form download करो।",
+    "Form कागज़ पर भरो, documents attach करो।",
+    "'Director, National Physical Laboratory' के नाम ₹500 का DD बनवाओ (exempt हो तो नहीं)।",
+    "लिफाफे पर 'APPLICATION FOR THE POST OF MTS' लिखकर Senior Controller of Administration, CSIR-NPL, Dr. K.S. Krishnan Marg, New Delhi-110012 को post करो — इतनी जल्दी कि 23 दिसंबर 2026 तक पहुँच जाए।",
+    "Form और DD की photocopy अपने पास रखो — लिखित परीक्षा 150 प्रश्न / 2 घंटे की होगी।"
+   ],
+   "extra_faq": [
+    {
+     "q": "CSIR-NPL MTS 2026 में कितनी vacancies हैं?",
+     "a": "Advertisement No. Rectt./05/2026 के तहत 25 मल्टी टास्किंग स्टाफ पद — UR 12, EWS 3, OBC-NCL 6, ST 4 (1 PwBD-b, 1 PwBD-c, 3 ESM सहित)।"
+    },
+    {
+     "q": "CSIR-NPL MTS 2026 के लिए कैसे apply करें?",
+     "a": "सिर्फ़ offline। nplindia.in से निर्धारित form download करो, कागज़ पर भरो, documents और ₹500 का DD (अगर छूट न हो) लगाओ, और post करो ताकि 23 दिसंबर 2026 तक CSIR-NPL, नई दिल्ली पहुँच जाए। कोई online form नहीं है।"
+    },
+    {
+     "q": "CSIR-NPL MTS 2026 की अंतिम तिथि क्या है?",
+     "a": "23 दिसंबर 2026 — और वह तारीख है जब तक तुम्हारा form NPL पहुँच जाना चाहिए, वह नहीं जब तुम post करते हो। डाक में देरी माफ़ नहीं होगी, इसलिए जल्दी post करो।"
+    },
+    {
+     "q": "CSIR-NPL MTS 2026 का exam pattern क्या है?",
+     "a": "150 प्रश्नों की 2 घंटे की लिखित परीक्षा, −1 negative marking के साथ, 10वीं कक्षा के स्तर पर — General Intelligence 25, Quantitative Aptitude 25, General Awareness 50, English 50 (प्रत्येक 3 अंक) — फिर merit list।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "rites-assistant-manager",
+  "advt": "Vacancy Nos. CL/09/26 – CL/11/26",
+  "board_en": "RITES Ltd.",
+  "board_hi": "राइट्स लि. (RITES)",
+  "portal": "recruit.rites.com",
+  "posts": 27,
+  "dates": {
+   "apply_end": "2026-11-20",
+   "apply_start": "2026-10-30",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": "29 November 2026",
+   "exam_hi": "29 नवंबर 2026",
+   "fee_end": "2026-11-20"
+  },
+  "photo_kind": "upload",
+  "note_en": "These are contract posts on a lumpsum basis (about ₹38,085/month gross), not regular RITES posts. First posting is in Tamil Nadu.",
+  "note_hi": "ये lumpsum basis पर contract पद हैं (लगभग ₹38,085/माह gross), RITES के regular पद नहीं। पहली posting तमिलनाडु में होगी।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://recruit.rites.com",
+   "notice": "https://rites.com/Upload/Career/Advertisement_for_CL-09-11_26_pdf-2026-Oct-30-14-18-27.pdf",
+   "site": "https://rites.com"
+  },
+  "en": {
+   "name": "RITES Assistant Manager (Mechanical) — Contract Recruitment 2026",
+   "tagline": "27 Assistant Manager (Mechanical) contract posts — Diploma/BTech Mech + experience — written test 29 November, last date 20 November 2026.",
+   "qual": "Diploma (Mech) + 8 yrs exp OR BTech (Mech) + 2 yrs exp",
+   "fees": [
+    "₹600 for General/OBC; ₹300 for EWS/SC/ST/PH."
+   ],
+   "fees_short": "₹600 / ₹300",
+   "specs": [
+    "Post split: Assistant Manager (Mechanical) I — 14, II — 10, III — 3.",
+    "Experience must be in QA/QC/testing — check the post-wise requirement in the notice.",
+    "Written test on 29 November 2026 (morning and evening shifts).",
+    "Contract on a lumpsum basis — about ₹38,085/month gross; first posting in Tamil Nadu."
+   ],
+   "eligibility": [
+    "27 Assistant Manager (Mechanical) posts on contract — AM-Mech I 14, II 10, III 3.",
+    "Qualification: Diploma in Mechanical Engineering + 8 years' experience OR BTech in Mechanical Engineering + 2 years' experience (QA/QC/testing).",
+    "Maximum age: 40 years as on 20 November 2026."
+   ],
+   "dos": [
+    "Apply only on recruit.rites.com before 11:59 PM on 20 November 2026.",
+    "Read the official notice PDF (linked on this page) for the post-wise experience requirement.",
+    "Keep your diploma/degree and experience certificates ready.",
+    "Pay the fee by 20 November 2026 — form and fee share the same last date."
+   ],
+   "donts": [
+    "Do not treat this as a regular RITES post — it is a contract post on a lumpsum basis.",
+    "Do not apply without the required QA/QC/testing experience.",
+    "Do not apply if you are above 40 years as on 20 November 2026."
+   ],
+   "checklist": [
+    "Diploma / BTech (Mechanical) certificate",
+    "Experience certificates (QA/QC/testing, 8 or 2 years)",
+    "Date of birth proof",
+    "Recent colour photograph and signature scan",
+    "Caste certificate, if applicable"
+   ],
+   "documents": [
+    "Diploma / BTech certificate (Mechanical)",
+    "Experience certificates",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent photograph and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "इसे RITES का regular post समझना (contract है)",
+    "QA/QC/testing अनुभव के बिना apply करना",
+    "Post-wise अनुभव की शर्त पढ़े बिना form भरना",
+    "20 नवंबर की deadline miss करना"
+   ],
+   "steps": [
+    "rites.com पर VC Nos. CL/09/26–CL/11/26 की official notice PDF पढ़ो।",
+    "recruit.rites.com पर अपनी grade (AM-Mech I / II / III) चुनो।",
+    "Form भरो, photo और signature upload करो, experience certificates जोड़ो।",
+    "₹600 / ₹300 fee भरो — 20 नवंबर 2026 तक।",
+    "Printout निकालो — लिखित परीक्षा 29 नवंबर 2026 को है।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in RITES Assistant Manager (Mechanical) 2026?",
+     "a": "27 Assistant Manager (Mechanical) contract posts — AM-Mech I 14, II 10 and III 3 — under Vacancy Nos. CL/09/26–CL/11/26."
+    },
+    {
+     "q": "Is RITES Assistant Manager (Mechanical) a permanent post?",
+     "a": "No. These are contract posts on a lumpsum basis (about ₹38,085/month gross), not regular RITES posts. The first posting is in Tamil Nadu."
+    },
+    {
+     "q": "What is the qualification for RITES Assistant Manager (Mechanical)?",
+     "a": "A Diploma in Mechanical Engineering + 8 years' experience OR a BTech in Mechanical Engineering + 2 years' experience, in QA/QC/testing. Maximum age is 40 years as on 20 November 2026."
+    },
+    {
+     "q": "When is the RITES Assistant Manager written test 2026?",
+     "a": "29 November 2026 (morning and evening shifts). The last date to apply is 20 November 2026 at 11:59 PM."
+    }
+   ]
+  },
+  "hi": {
+   "name": "RITES असिस्टेंट मैनेजर (मैकेनिकल) — Contract भर्ती 2026",
+   "tagline": "27 असिस्टेंट मैनेजर (मैकेनिकल) contract पद — Diploma/BTech मैकेनिकल + अनुभव — लिखित परीक्षा 29 नवंबर, अंतिम तिथि 20 नवंबर 2026।",
+   "qual": "Diploma (मैकेनिकल) + 8 साल अनुभव या BTech (मैकेनिकल) + 2 साल अनुभव",
+   "fees": [
+    "सामान्य/OBC के लिए ₹600; EWS/SC/ST/PH के लिए ₹300।"
+   ],
+   "fees_short": "₹600 / ₹300",
+   "specs": [
+    "पदों का बँटवारा: असिस्टेंट मैनेजर (मैकेनिकल) I — 14, II — 10, III — 3।",
+    "अनुभव QA/QC/testing में होना चाहिए — notice में post-wise शर्त check करो।",
+    "लिखित परीक्षा 29 नवंबर 2026 को (सुबह और शाम की shifts)।",
+    "Lumpsum basis पर contract — लगभग ₹38,085/माह gross; पहली posting तमिलनाडु में।"
+   ],
+   "eligibility": [
+    "Contract पर 27 असिस्टेंट मैनेजर (मैकेनिकल) पद — AM-Mech I 14, II 10, III 3।",
+    "योग्यता: मैकेनिकल इंजीनियरिंग में Diploma + 8 साल का अनुभव या BTech (मैकेनिकल) + 2 साल का अनुभव (QA/QC/testing)।",
+    "अधिकतम उम्र: 20 नवंबर 2026 को 40 वर्ष।"
+   ],
+   "dos": [
+    "20 नवंबर 2026, रात 11:59 बजे से पहले सिर्फ़ recruit.rites.com पर apply करो।",
+    "Post-wise अनुभव की शर्त के लिए official notice PDF (इस page पर link है) पढ़ो।",
+    "Diploma/degree और अनुभव certificates ready रखो।",
+    "Fee 20 नवंबर 2026 तक भरो — form और fee की अंतिम तिथि एक ही है।"
+   ],
+   "donts": [
+    "इसे RITES का regular post मत समझो — यह lumpsum basis पर contract post है।",
+    "बिना QA/QC/testing अनुभव के apply मत करो।",
+    "20 नवंबर 2026 को 40 वर्ष से ऊपर हो तो apply मत करो।"
+   ],
+   "checklist": [
+    "Diploma / BTech (मैकेनिकल) certificate",
+    "अनुभव certificates (QA/QC/testing, 8 या 2 साल)",
+    "जन्म तिथि का proof",
+    "हाल की colour photo और signature scan",
+    "Caste certificate, अगर लागू हो"
+   ],
+   "documents": [
+    "Diploma / BTech certificate (मैकेनिकल)",
+    "अनुभव certificates",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "इसे RITES का regular post समझना (contract है)",
+    "QA/QC/testing अनुभव के बिना apply करना",
+    "Post-wise अनुभव की शर्त पढ़े बिना form भरना",
+    "20 नवंबर की deadline miss करना"
+   ],
+   "steps": [
+    "rites.com पर VC Nos. CL/09/26–CL/11/26 की official notice PDF पढ़ो।",
+    "recruit.rites.com पर अपनी grade (AM-Mech I / II / III) चुनो।",
+    "Form भरो, photo और signature upload करो, experience certificates जोड़ो।",
+    "₹600 / ₹300 fee भरो — 20 नवंबर 2026 तक।",
+    "Printout निकालो — लिखित परीक्षा 29 नवंबर 2026 को है।"
+   ],
+   "extra_faq": [
+    {
+     "q": "RITES असिस्टेंट मैनेजर (मैकेनिकल) 2026 में कितनी vacancies हैं?",
+     "a": "27 असिस्टेंट मैनेजर (मैकेनिकल) contract पद — AM-Mech I 14, II 10 और III 3 — Vacancy Nos. CL/09/26–CL/11/26 के तहत।"
+    },
+    {
+     "q": "क्या RITES असिस्टेंट मैनेजर (मैकेनिकल) permanent post है?",
+     "a": "नहीं। ये lumpsum basis पर contract पद हैं (लगभग ₹38,085/माह gross), RITES के regular पद नहीं। पहली posting तमिलनाडु में होगी।"
+    },
+    {
+     "q": "RITES असिस्टेंट मैनेजर (मैकेनिकल) की योग्यता क्या है?",
+     "a": "मैकेनिकल इंजीनियरिंग में Diploma + 8 साल का अनुभव या BTech (मैकेनिकल) + 2 साल का अनुभव, QA/QC/testing में। अधिकतम उम्र 20 नवंबर 2026 को 40 वर्ष है।"
+    },
+    {
+     "q": "RITES असिस्टेंट मैनेजर लिखित परीक्षा 2026 कब है?",
+     "a": "29 नवंबर 2026 (सुबह और शाम की shifts)। Apply करने की अंतिम तिथि 20 नवंबर 2026, रात 11:59 बजे है।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "sci-court-assistant-technical",
+  "advt": "Advertisement No. F.6/2026/Tech.Post/SC(RC)",
+  "board_en": "Supreme Court of India",
+  "board_hi": "भारत का सर्वोच्च न्यायालय",
+  "portal": "sci.gov.in",
+  "posts": 15,
+  "dates": {
+   "apply_end": "2026-11-24",
+   "apply_start": "2026-11-03",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": "22 December 2026 (tentative)",
+   "exam_hi": "22 दिसंबर 2026 (अस्थायी)",
+   "fee_end": "2026-11-24"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://sci.gov.in",
+   "notice": null,
+   "site": "https://sci.gov.in"
+  },
+  "en": {
+   "name": "Supreme Court Court Assistant (Technical Assistant-cum-Programmer) Recruitment 2026",
+   "tagline": "15 Court Assistant (Technical) posts — BSc/BTech/Master's in CS + experience — tests tentatively 22 December, last date 24 November 2026.",
+   "qual": "BSc (CS) 60% + 4 yrs exp OR BE/BTech (CS/IT) + 3 yrs OR Master's (CS) + 3 yrs",
+   "fees": [
+    "₹1,500 for General; ₹750 for OBC/SC/ST/PH."
+   ],
+   "fees_short": "₹1,500 / ₹750",
+   "specs": [
+    "Group B non-gazetted post, Level-7, ₹44,900–1,42,400.",
+    "Selection: Objective + Technical Aptitude tests tentatively on 22 December 2026, followed by Practical Aptitude Test and Interview.",
+    "Apply through the DigiALM link on sci.gov.in/recruitments.",
+    "These are tentative posts — the number may change in the final selection."
+   ],
+   "eligibility": [
+    "15 Court Assistant (Technical Assistant-cum-Programmer) posts (tentative) under Advertisement No. F.6/2026/Tech.Post/SC(RC).",
+    "Qualification (any one): BSc (Computer Science) with 60% + 4 years' experience; OR BE/BTech (CS/IT) + 3 years' experience; OR Master's in Computer Science + 3 years' experience.",
+    "Age: 18–35 years as on 1 October 2026 (relaxations as per the notice)."
+   ],
+   "dos": [
+    "Apply only through the DigiALM link on sci.gov.in/recruitments before 11:55 PM on 24 November 2026.",
+    "Check the post-wise experience requirement — BSc needs 4 years, BE/BTech and Master's need 3 years.",
+    "Keep your degree and experience certificates ready.",
+    "Pay the fee by 24 November 2026 — form and fee share the same last date."
+   ],
+   "donts": [
+    "Do not apply without the required experience — it is mandatory, not desirable.",
+    "Do not apply with less than 60% in BSc (CS) — that route needs 60%.",
+    "Do not miss the 11:55 PM deadline on 24 November."
+   ],
+   "checklist": [
+    "Degree certificate (BSc/BTech/Master's in CS, post-wise)",
+    "Experience certificates (3 or 4 years, post-wise)",
+    "Date of birth proof",
+    "Recent colour photograph and signature scan",
+    "Caste certificate, if applicable"
+   ],
+   "documents": [
+    "Degree certificate and marksheet",
+    "Experience certificates",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent photograph and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "बिना अनुभव के apply करना",
+    "BSc (CS) में 60% से कम के साथ apply करना",
+    "DigiALM link के बजाय कहीं और form ढूँढना",
+    "24 नवंबर रात 11:55 बजे के बाद form भरने की कोशिश करना"
+   ],
+   "steps": [
+    "sci.gov.in/recruitments पर Advertisement No. F.6/2026/Tech.Post/SC(RC) पढ़ो।",
+    "DigiALM link खोलो और अपनी योग्यता route चुनो।",
+    "Form भरो, photo और signature upload करो, experience certificates जोड़ो।",
+    "₹1,500 / ₹750 fee भरो — 24 नवंबर 2026 तक।",
+    "Printout निकालो — Objective + Technical Aptitude tests अस्थायी रूप से 22 दिसंबर 2026 को हैं।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in Supreme Court Court Assistant (Technical) 2026?",
+     "a": "15 Court Assistant (Technical Assistant-cum-Programmer) posts (tentative) under Advertisement No. F.6/2026/Tech.Post/SC(RC), dated 12 October 2026."
+    },
+    {
+     "q": "What is the qualification for Supreme Court Court Assistant (Technical)?",
+     "a": "Any one of: BSc (Computer Science) with 60% + 4 years' experience; BE/BTech (CS/IT) + 3 years' experience; or a Master's in Computer Science + 3 years' experience."
+    },
+    {
+     "q": "What is the selection process for Supreme Court Court Assistant (Technical)?",
+     "a": "Objective + Technical Aptitude tests tentatively on 22 December 2026, followed by a Practical Aptitude Test and an Interview. The post is Group B non-gazetted, Level-7 (₹44,900–1,42,400)."
+    },
+    {
+     "q": "What is the last date to apply for Supreme Court Court Assistant (Technical) 2026?",
+     "a": "24 November 2026 at 11:55 PM. Applications go through the DigiALM link on sci.gov.in/recruitments."
+    }
+   ]
+  },
+  "hi": {
+   "name": "सर्वोच्च न्यायालय कोर्ट असिस्टेंट (टेक्निकल असिस्टेंट-कम-प्रोग्रामर) भर्ती 2026",
+   "tagline": "15 कोर्ट असिस्टेंट (टेक्निकल) पद — CS में BSc/BTech/Master's + अनुभव — परीक्षा अस्थायी रूप से 22 दिसंबर, अंतिम तिथि 24 नवंबर 2026।",
+   "qual": "BSc (CS) 60% + 4 साल अनुभव या BE/BTech (CS/IT) + 3 साल या Master's (CS) + 3 साल",
+   "fees": [
+    "सामान्य के लिए ₹1,500; OBC/SC/ST/PH के लिए ₹750।"
+   ],
+   "fees_short": "₹1,500 / ₹750",
+   "specs": [
+    "ग्रुप B non-gazetted post, Level-7, ₹44,900–1,42,400।",
+    "चयन: अस्थायी रूप से 22 दिसंबर 2026 को Objective + Technical Aptitude tests, फिर Practical Aptitude Test और Interview।",
+    "sci.gov.in/recruitments पर दिए गए DigiALM link से apply करो।",
+    "ये tentative पद हैं — final selection में संख्या बदल सकती है।"
+   ],
+   "eligibility": [
+    "Advertisement No. F.6/2026/Tech.Post/SC(RC) के तहत 15 कोर्ट असिस्टेंट (टेक्निकल असिस्टेंट-कम-प्रोग्रामर) पद (tentative)।",
+    "योग्यता (कोई एक): 60% के साथ BSc (कंप्यूटर साइंस) + 4 साल का अनुभव; या BE/BTech (CS/IT) + 3 साल का अनुभव; या कंप्यूटर साइंस में Master's + 3 साल का अनुभव।",
+    "उम्र: 1 अक्टूबर 2026 को 18–35 वर्ष (अधिसूचना के अनुसार छूट)।"
+   ],
+   "dos": [
+    "24 नवंबर 2026, रात 11:55 बजे से पहले सिर्फ़ sci.gov.in/recruitments पर दिए गए DigiALM link से apply करो।",
+    "Post-wise अनुभव की शर्त check करो — BSc को 4 साल, BE/BTech और Master's को 3 साल चाहिए।",
+    "Degree और अनुभव certificates ready रखो।",
+    "Fee 24 नवंबर 2026 तक भरो — form और fee की अंतिम तिथि एक ही है।"
+   ],
+   "donts": [
+    "बिना अनुभव के apply मत करो — यह अनिवार्य है, desirable नहीं।",
+    "BSc (CS) में 60% से कम के साथ apply मत करो — उस route के लिए 60% चाहिए।",
+    "24 नवंबर रात 11:55 बजे की deadline miss मत करो।"
+   ],
+   "checklist": [
+    "Degree certificate (CS में BSc/BTech/Master's, पद के हिसाब से)",
+    "अनुभव certificates (3 या 4 साल, पद के हिसाब से)",
+    "जन्म तिथि का proof",
+    "हाल की colour photo और signature scan",
+    "Caste certificate, अगर लागू हो"
+   ],
+   "documents": [
+    "Degree certificate और marksheet",
+    "अनुभव certificates",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "बिना अनुभव के apply करना",
+    "BSc (CS) में 60% से कम के साथ apply करना",
+    "DigiALM link के बजाय कहीं और form ढूँढना",
+    "24 नवंबर रात 11:55 बजे के बाद form भरने की कोशिश करना"
+   ],
+   "steps": [
+    "sci.gov.in/recruitments पर Advertisement No. F.6/2026/Tech.Post/SC(RC) पढ़ो।",
+    "DigiALM link खोलो और अपनी योग्यता route चुनो।",
+    "Form भरो, photo और signature upload करो, experience certificates जोड़ो।",
+    "₹1,500 / ₹750 fee भरो — 24 नवंबर 2026 तक।",
+    "Printout निकालो — Objective + Technical Aptitude tests अस्थायी रूप से 22 दिसंबर 2026 को हैं।"
+   ],
+   "extra_faq": [
+    {
+     "q": "सर्वोच्च न्यायालय कोर्ट असिस्टेंट (टेक्निकल) 2026 में कितनी vacancies हैं?",
+     "a": "Advertisement No. F.6/2026/Tech.Post/SC(RC), दिनांक 12 अक्टूबर 2026 के तहत 15 कोर्ट असिस्टेंट (टेक्निकल असिस्टेंट-कम-प्रोग्रामर) पद (tentative)।"
+    },
+    {
+     "q": "सर्वोच्च न्यायालय कोर्ट असिस्टेंट (टेक्निकल) की योग्यता क्या है?",
+     "a": "कोई एक: 60% के साथ BSc (कंप्यूटर साइंस) + 4 साल का अनुभव; BE/BTech (CS/IT) + 3 साल का अनुभव; या कंप्यूटर साइंस में Master's + 3 साल का अनुभव।"
+    },
+    {
+     "q": "सर्वोच्च न्यायालय कोर्ट असिस्टेंट (टेक्निकल) की चयन प्रक्रिया क्या है?",
+     "a": "अस्थायी रूप से 22 दिसंबर 2026 को Objective + Technical Aptitude tests, फिर Practical Aptitude Test और Interview। Post ग्रुप B non-gazetted, Level-7 (₹44,900–1,42,400) है।"
+    },
+    {
+     "q": "सर्वोच्च न्यायालय कोर्ट असिस्टेंट (टेक्निकल) 2026 के लिए apply करने की अंतिम तिथि क्या है?",
+     "a": "24 नवंबर 2026, रात 11:55 बजे। Applications sci.gov.in/recruitments पर दिए गए DigiALM link से जाती हैं।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "sbi-sco-product-research-risk",
+  "advt": "CRPD/SCO/2026-27/26",
+  "board_en": "State Bank of India (SBI)",
+  "board_hi": "भारतीय स्टेट बैंक (SBI)",
+  "portal": "sbi.bank.in",
+  "posts": 10,
+  "dates": {
+   "apply_end": "2026-11-23",
+   "apply_start": "2026-11-02",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-23"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://sbi.bank.in/web/careers/current-openings",
+   "notice": null,
+   "site": "https://sbi.bank.in"
+  },
+  "en": {
+   "name": "SBI Specialist Cadre Officer — Product & Research and Risk Specialist Recruitment 2026",
+   "tagline": "10 Specialist Cadre Officer posts — Chief Manager & Manager (Product & Research), Deputy Manager (Risk Specialist) — regular posts, last date 23 November 2026.",
+   "qual": "MBA / CA / CFA + relevant experience (post-wise)",
+   "fees": [
+    "₹750 for Gen/EWS/OBC; nil for SC/ST/PwBD."
+   ],
+   "fees_short": "₹750 (SC/ST/PwBD: nil)",
+   "specs": [
+    "Two advertisements: CRPD/SCO/2026-27/26 (7 posts — Product & Research) and CRPD/SCO/2026-27/27 (3 posts — Risk Specialist), both dated 2 November 2026.",
+    "Post split: Chief Manager (Product & Research — Forex & Rupee Derivatives) 1, Manager (Product & Research Analyst) 6, Deputy Manager (Risk Specialist — Ind AS) 3.",
+    "These are REGULAR posts (not contractual).",
+    "Exact experience years are post-wise in the official notice — confirm them there before applying."
+   ],
+   "eligibility": [
+    "10 Specialist Cadre Officer (Regular) posts in the State Bank of India.",
+    "Qualification: MBA / CA / CFA or equivalent, with relevant experience (post-wise — see the official notice for the exact years).",
+    "Age as on 30 September 2026: Chief Manager maximum 40 years, Manager maximum 36 years, Deputy Manager (Risk Specialist) 25–35 years."
+   ],
+   "dos": [
+    "Apply only on sbi.bank.in (Careers > Current Openings) before 11:59 PM on 23 November 2026.",
+    "Read the correct advertisement — /26 is Product & Research (7 posts), /27 is Risk Specialist (3 posts).",
+    "Check the post-wise experience requirement in the official notice — it differs by post.",
+    "Keep your MBA/CA/CFA certificate and experience proof ready."
+   ],
+   "donts": [
+    "Do not apply without the relevant experience — these are specialist posts, not fresher posts.",
+    "Do not confuse the two advertisements — /26 and /27 are different posts.",
+    "Do not wait till 11:59 PM on the last day — the portal slows down near the deadline."
+   ],
+   "checklist": [
+    "MBA / CA / CFA certificate",
+    "Relevant experience proof (post-wise)",
+    "Date of birth proof",
+    "Recent colour photograph and signature scan",
+    "Caste certificate, if applicable"
+   ],
+   "documents": [
+    "MBA / CA / CFA certificate",
+    "Experience certificates",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent photograph and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "बिना relevant अनुभव के apply करना",
+    "दोनों advertisements (/26 और /27) को confuse करना",
+    "Post-wise अनुभव की शर्त पढ़े बिना form भरना",
+    "23 नवंबर रात 11:59 बजे तक इंतज़ार करना"
+   ],
+   "steps": [
+    "sbi.bank.in के Careers > Current Openings में CRPD/SCO/2026-27/26 और /27 पढ़ो।",
+    "अपनी post (Product & Research या Risk Specialist) चुनो।",
+    "Form भरो, photo और signature upload करो, experience certificates जोड़ो।",
+    "₹750 fee भरो (SC/ST/PwBD को कुछ नहीं देना) — 23 नवंबर 2026 तक।",
+    "Printout निकालो — shortlisting के बाद interview होगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in SBI SCO Product & Research and Risk Specialist 2026?",
+     "a": "10 Specialist Cadre Officer (Regular) posts — Chief Manager (Product & Research) 1, Manager (Product & Research Analyst) 6 and Deputy Manager (Risk Specialist — Ind AS) 3 — under CRPD/SCO/2026-27/26 (7 posts) and /27 (3 posts)."
+    },
+    {
+     "q": "What is the qualification for SBI SCO Product & Research / Risk Specialist?",
+     "a": "MBA / CA / CFA or equivalent, with relevant experience. The exact experience years are post-wise in the official notice — confirm them there before applying."
+    },
+    {
+     "q": "What is the age limit for SBI SCO 2026 (Product & Research / Risk)?",
+     "a": "As on 30 September 2026: Chief Manager maximum 40 years, Manager maximum 36 years, and Deputy Manager (Risk Specialist) 25–35 years."
+    },
+    {
+     "q": "What is the last date to apply for SBI SCO Product & Research and Risk Specialist 2026?",
+     "a": "23 November 2026 at 11:59 PM. These are regular posts (not contractual)."
+    }
+   ]
+  },
+  "hi": {
+   "name": "SBI स्पेशलिस्ट कैडर ऑफिसर — प्रोडक्ट एंड रिसर्च और रिस्क स्पेशलिस्ट भर्ती 2026",
+   "tagline": "10 स्पेशलिस्ट कैडर ऑफिसर पद — चीफ मैनेजर व मैनेजर (प्रोडक्ट एंड रिसर्च), डिप्टी मैनेजर (रिस्क स्पेशलिस्ट) — regular पद, अंतिम तिथि 23 नवंबर 2026।",
+   "qual": "MBA / CA / CFA + relevant अनुभव (पद के हिसाब से)",
+   "fees": [
+    "Gen/EWS/OBC के लिए ₹750; SC/ST/PwBD को कुछ नहीं देना।"
+   ],
+   "fees_short": "₹750 (SC/ST/PwBD: nil)",
+   "specs": [
+    "दो advertisements: CRPD/SCO/2026-27/26 (7 पद — Product & Research) और CRPD/SCO/2026-27/27 (3 पद — Risk Specialist), दोनों दिनांक 2 नवंबर 2026।",
+    "पदों का बँटवारा: चीफ मैनेजर (प्रोडक्ट एंड रिसर्च — Forex & Rupee Derivatives) 1, मैनेजर (प्रोडक्ट एंड रिसर्च Analyst) 6, डिप्टी मैनेजर (रिस्क स्पेशलिस्ट — Ind AS) 3।",
+    "ये REGULAR पद हैं (contractual नहीं)।",
+    "सटीक अनुभव के साल पद-वार official notice में हैं — apply करने से पहले वहाँ confirm करो।"
+   ],
+   "eligibility": [
+    "भारतीय स्टेट बैंक में 10 स्पेशलिस्ट कैडर ऑफिसर (Regular) पद।",
+    "योग्यता: MBA / CA / CFA या समकक्ष, relevant अनुभव के साथ (पद-वार — सटीक सालों के लिए official notice देखो)।",
+    "उम्र 30 सितंबर 2026 को: चीफ मैनेजर अधिकतम 40 वर्ष, मैनेजर अधिकतम 36 वर्ष, डिप्टी मैनेजर (रिस्क स्पेशलिस्ट) 25–35 वर्ष।"
+   ],
+   "dos": [
+    "23 नवंबर 2026, रात 11:59 बजे से पहले सिर्फ़ sbi.bank.in (Careers > Current Openings) पर apply करो।",
+    "सही advertisement पढ़ो — /26 Product & Research (7 पद), /27 Risk Specialist (3 पद) है।",
+    "Official notice में post-wise अनुभव की शर्त check करो — हर post के लिए अलग है।",
+    "MBA/CA/CFA certificate और अनुभव का proof ready रखो।"
+   ],
+   "donts": [
+    "Relevant अनुभव के बिना apply मत करो — ये specialist पद हैं, fresher पद नहीं।",
+    "दोनों advertisements को confuse मत करो — /26 और /27 अलग-अलग posts हैं।",
+    "आख़िरी दिन रात 11:59 बजे तक इंतज़ार मत करो — deadline के पास portal slow हो जाता है।"
+   ],
+   "checklist": [
+    "MBA / CA / CFA certificate",
+    "Relevant अनुभव का proof (पद के हिसाब से)",
+    "जन्म तिथि का proof",
+    "हाल की colour photo और signature scan",
+    "Caste certificate, अगर लागू हो"
+   ],
+   "documents": [
+    "MBA / CA / CFA certificate",
+    "अनुभव certificates",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "बिना relevant अनुभव के apply करना",
+    "दोनों advertisements (/26 और /27) को confuse करना",
+    "Post-wise अनुभव की शर्त पढ़े बिना form भरना",
+    "23 नवंबर रात 11:59 बजे तक इंतज़ार करना"
+   ],
+   "steps": [
+    "sbi.bank.in के Careers > Current Openings में CRPD/SCO/2026-27/26 और /27 पढ़ो।",
+    "अपनी post (Product & Research या Risk Specialist) चुनो।",
+    "Form भरो, photo और signature upload करो, experience certificates जोड़ो।",
+    "₹750 fee भरो (SC/ST/PwBD को कुछ नहीं देना) — 23 नवंबर 2026 तक।",
+    "Printout निकालो — shortlisting के बाद interview होगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "SBI SCO प्रोडक्ट एंड रिसर्च और रिस्क स्पेशलिस्ट 2026 में कितनी vacancies हैं?",
+     "a": "10 स्पेशलिस्ट कैडर ऑफिसर (Regular) पद — चीफ मैनेजर (प्रोडक्ट एंड रिसर्च) 1, मैनेजर (प्रोडक्ट एंड रिसर्च Analyst) 6 और डिप्टी मैनेजर (रिस्क स्पेशलिस्ट — Ind AS) 3 — CRPD/SCO/2026-27/26 (7 पद) और /27 (3 पद) के तहत।"
+    },
+    {
+     "q": "SBI SCO प्रोडक्ट एंड रिसर्च / रिस्क स्पेशलिस्ट की योग्यता क्या है?",
+     "a": "MBA / CA / CFA या समकक्ष, relevant अनुभव के साथ। सटीक अनुभव के साल पद-वार official notice में हैं — apply करने से पहले वहाँ confirm करो।"
+    },
+    {
+     "q": "SBI SCO 2026 (प्रोडक्ट एंड रिसर्च / रिस्क) की age limit क्या है?",
+     "a": "30 सितंबर 2026 को: चीफ मैनेजर अधिकतम 40 वर्ष, मैनेजर अधिकतम 36 वर्ष, और डिप्टी मैनेजर (रिस्क स्पेशलिस्ट) 25–35 वर्ष।"
+    },
+    {
+     "q": "SBI SCO प्रोडक्ट एंड रिसर्च और रिस्क स्पेशलिस्ट 2026 के लिए apply करने की अंतिम तिथि क्या है?",
+     "a": "23 नवंबर 2026, रात 11:59 बजे। ये regular पद हैं (contractual नहीं)।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "ntpc-gm-executive-17-26",
+  "advt": "Advertisement No. 17/26",
+  "board_en": "NTPC Limited",
+  "board_hi": "एनटीपीसी लिमिटेड (NTPC)",
+  "portal": "careers.ntpc.co.in",
+  "posts": 12,
+  "dates": {
+   "apply_end": "2026-11-27",
+   "apply_start": "2026-11-13",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-27"
+  },
+  "photo_kind": "upload",
+  "note_en": "Only the 1 General Manager post is regular. The 11 Executive posts are on a 3-year fixed term at ₹1,50,000/month consolidated — not regular NTPC posts.",
+  "note_hi": "सिर्फ़ 1 General Manager पद regular है। 11 Executive पद 3 साल के fixed term पर हैं, ₹1,50,000/माह consolidated — NTPC के regular पद नहीं।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://careers.ntpc.co.in",
+   "notice": null,
+   "site": "https://careers.ntpc.co.in"
+  },
+  "en": {
+   "name": "NTPC General Manager & Executives (Advt 17/26) Recruitment 2026",
+   "tagline": "12 posts — General Manager (Chemical Process Plant) 1 + Executives 11 in CCUS, Coal Gasification, Solar Thermal and more — last date 27 November 2026.",
+   "qual": "BE/BTech/ME/MTech/PhD + 4–23 yrs experience (post-wise)",
+   "fees": [
+    "₹500 for Gen/EWS/OBC; nil for SC/ST/PwBD/ex-servicemen/women."
+   ],
+   "fees_short": "₹500 (SC/ST/PwBD/ESM/women: nil)",
+   "specs": [
+    "General Manager (Chemical Process Plant) — 1 post, REGULAR, E8 grade ₹1,20,000–2,80,000; needs B.Tech/BE (Chemical) + 23 years' experience.",
+    "Executives — 11 posts, 3-YEAR FIXED TERM at ₹1,50,000/month consolidated: CCUS 4, Coal Gasification 3, Solar Thermal 1, Chemical Process 2, Metallurgy 1.",
+    "Executive qualification: BE/BTech/ME/MTech/PhD with 12/10/4 years' experience (post-wise) — senior experienced professionals only, not for freshers.",
+    "Age limits are post-wise in Advt 17/26 — the summaries consulted do not state them, so confirm them in the official notice."
+   ],
+   "eligibility": [
+    "12 posts under Advertisement No. 17/26, posted 13 November 2026.",
+    "General Manager (Chemical Process Plant): B.Tech/BE (Chemical) + 23 years' experience — 1 regular post.",
+    "Executives (11, fixed term): BE/BTech/ME/MTech/PhD + 12/10/4 years' experience (post-wise) in CCUS, Coal Gasification, Solar Thermal, Chemical Process or Metallurgy.",
+    "Age limits post-wise in Advt 17/26 — confirm in the official notice."
+   ],
+   "dos": [
+    "Apply only on careers.ntpc.co.in before 6:00 PM on 27 November 2026.",
+    "Read Advt 17/26 fully — the GM post is regular, the 11 Executive posts are 3-year fixed term.",
+    "Check the post-wise experience requirement (12/10/4 years) for the Executive post you want.",
+    "Keep your degree and experience certificates ready."
+   ],
+   "donts": [
+    "Do not treat the Executive posts as regular NTPC jobs — they are 3-year fixed-term posts.",
+    "Do not apply as a fresher — these posts need 4–23 years of experience.",
+    "Do not miss the 6:00 PM deadline on 27 November — the form closes in the evening, not at midnight."
+   ],
+   "checklist": [
+    "Degree certificate (BE/BTech/ME/MTech/PhD, post-wise)",
+    "Experience certificates (4–23 years, post-wise)",
+    "Date of birth proof",
+    "Recent colour photograph and signature scan",
+    "Caste certificate, if applicable"
+   ],
+   "documents": [
+    "Degree certificate",
+    "Experience certificates",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent photograph and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Executive posts को regular NTPC नौकरी समझना (3 साल fixed term हैं)",
+    "Fresher होकर apply करना (4–23 साल अनुभव चाहिए)",
+    "Post-wise अनुभव की शर्त पढ़े बिना form भरना",
+    "27 नवंबर शाम 6 बजे की deadline miss करना"
+   ],
+   "steps": [
+    "careers.ntpc.co.in पर Advertisement No. 17/26 पढ़ो।",
+    "अपनी post चुनो — General Manager (regular) या Executive (fixed term)।",
+    "Form भरो, photo और signature upload करो, experience certificates जोड़ो।",
+    "₹500 fee भरो (SC/ST/PwBD/ESM/महिलाओं को कुछ नहीं देना) — 27 नवंबर 2026 तक।",
+    "Printout निकालो — shortlisting के बाद interview होगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "How many vacancies are there in NTPC Advt 17/26?",
+     "a": "12 posts — General Manager (Chemical Process Plant) 1 (regular, E8 ₹1,20,000–2,80,000) and Executives 11 (CCUS 4, Coal Gasification 3, Solar Thermal 1, Chemical Process 2, Metallurgy 1)."
+    },
+    {
+     "q": "Are NTPC Executive posts in Advt 17/26 permanent?",
+     "a": "No. The 11 Executive posts are on a 3-year fixed term at ₹1,50,000/month consolidated. Only the 1 General Manager post is regular."
+    },
+    {
+     "q": "What is the qualification for NTPC General Manager & Executives 2026?",
+     "a": "General Manager: B.Tech/BE (Chemical) + 23 years' experience. Executives: BE/BTech/ME/MTech/PhD + 12/10/4 years' experience (post-wise). These are senior-professional posts, not for freshers."
+    },
+    {
+     "q": "What is the last date to apply for NTPC Advt 17/26?",
+     "a": "27 November 2026 till 6:00 PM. The fee is ₹500 for Gen/EWS/OBC; nil for SC/ST/PwBD/ex-servicemen/women."
+    }
+   ]
+  },
+  "hi": {
+   "name": "NTPC जनरल मैनेजर और एग्जीक्यूटिव (Advt 17/26) भर्ती 2026",
+   "tagline": "12 पद — जनरल मैनेजर (केमिकल प्रोसेस प्लांट) 1 + एग्जीक्यूटिव 11, CCUS, Coal Gasification, Solar Thermal आदि में — अंतिम तिथि 27 नवंबर 2026।",
+   "qual": "BE/BTech/ME/MTech/PhD + 4–23 साल अनुभव (पद के हिसाब से)",
+   "fees": [
+    "Gen/EWS/OBC के लिए ₹500; SC/ST/PwBD/ex-servicemen/महिलाओं को कुछ नहीं देना।"
+   ],
+   "fees_short": "₹500 (SC/ST/PwBD/ESM/महिला: nil)",
+   "specs": [
+    "जनरल मैनेजर (केमिकल प्रोसेस प्लांट) — 1 पद, REGULAR, E8 grade ₹1,20,000–2,80,000; B.Tech/BE (केमिकल) + 23 साल का अनुभव चाहिए।",
+    "एग्जीक्यूटिव — 11 पद, 3 साल के FIXED TERM पर ₹1,50,000/माह consolidated: CCUS 4, Coal Gasification 3, Solar Thermal 1, Chemical Process 2, Metallurgy 1।",
+    "एग्जीक्यूटिव योग्यता: BE/BTech/ME/MTech/PhD, 12/10/4 साल का अनुभव (पद के हिसाब से) — सिर्फ़ senior अनुभवी professionals के लिए, freshers के लिए नहीं।",
+    "Age limits पद-वार Advt 17/26 में हैं — पढ़े गए summaries में नहीं दी गई हैं, इसलिए official notice में confirm करो।"
+   ],
+   "eligibility": [
+    "Advertisement No. 17/26 (13 नवंबर 2026 को जारी) के तहत 12 पद।",
+    "जनरल मैनेजर (केमिकल प्रोसेस प्लांट): B.Tech/BE (केमिकल) + 23 साल का अनुभव — 1 regular पद।",
+    "एग्जीक्यूटिव (11, fixed term): BE/BTech/ME/MTech/PhD + 12/10/4 साल का अनुभव (पद के हिसाब से), CCUS, Coal Gasification, Solar Thermal, Chemical Process या Metallurgy में।",
+    "Age limits पद-वार Advt 17/26 में हैं — official notice में confirm करो।"
+   ],
+   "dos": [
+    "27 नवंबर 2026, शाम 6:00 बजे से पहले सिर्फ़ careers.ntpc.co.in पर apply करो।",
+    "Advt 17/26 पूरी पढ़ो — GM पद regular है, 11 Executive पद 3 साल के fixed term पर हैं।",
+    "अपने Executive post के लिए post-wise अनुभव की शर्त (12/10/4 साल) check करो।",
+    "Degree और अनुभव certificates ready रखो।"
+   ],
+   "donts": [
+    "Executive posts को regular NTPC नौकरी मत समझो — वे 3 साल के fixed-term पद हैं।",
+    "Fresher होकर apply मत करो — इन posts के लिए 4–23 साल का अनुभव चाहिए।",
+    "27 नवंबर शाम 6 बजे की deadline miss मत करो — form शाम को बंद होता है, आधी रात को नहीं।"
+   ],
+   "checklist": [
+    "Degree certificate (BE/BTech/ME/MTech/PhD, पद के हिसाब से)",
+    "अनुभव certificates (4–23 साल, पद के हिसाब से)",
+    "जन्म तिथि का proof",
+    "हाल की colour photo और signature scan",
+    "Caste certificate, अगर लागू हो"
+   ],
+   "documents": [
+    "Degree certificate",
+    "अनुभव certificates",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Executive posts को regular NTPC नौकरी समझना (3 साल fixed term हैं)",
+    "Fresher होकर apply करना (4–23 साल अनुभव चाहिए)",
+    "Post-wise अनुभव की शर्त पढ़े बिना form भरना",
+    "27 नवंबर शाम 6 बजे की deadline miss करना"
+   ],
+   "steps": [
+    "careers.ntpc.co.in पर Advertisement No. 17/26 पढ़ो।",
+    "अपनी post चुनो — जनरल मैनेजर (regular) या एग्जीक्यूटिव (fixed term)।",
+    "Form भरो, photo और signature upload करो, experience certificates जोड़ो।",
+    "₹500 fee भरो (SC/ST/PwBD/ESM/महिलाओं को कुछ नहीं देना) — 27 नवंबर 2026 तक।",
+    "Printout निकालो — shortlisting के बाद interview होगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "NTPC Advt 17/26 में कितनी vacancies हैं?",
+     "a": "12 पद — जनरल मैनेजर (केमिकल प्रोसेस प्लांट) 1 (regular, E8 ₹1,20,000–2,80,000) और एग्जीक्यूटिव 11 (CCUS 4, Coal Gasification 3, Solar Thermal 1, Chemical Process 2, Metallurgy 1)।"
+    },
+    {
+     "q": "क्या NTPC Advt 17/26 के Executive पद permanent हैं?",
+     "a": "नहीं। 11 Executive पद 3 साल के fixed term पर हैं, ₹1,50,000/माह consolidated। सिर्फ़ 1 जनरल मैनेजर पद regular है।"
+    },
+    {
+     "q": "NTPC जनरल मैनेजर और एग्जीक्यूटिव 2026 की योग्यता क्या है?",
+     "a": "जनरल मैनेजर: B.Tech/BE (केमिकल) + 23 साल का अनुभव। एग्जीक्यूटिव: BE/BTech/ME/MTech/PhD + 12/10/4 साल का अनुभव (पद के हिसाब से)। ये senior-professional पद हैं, freshers के लिए नहीं।"
+    },
+    {
+     "q": "NTPC Advt 17/26 के लिए apply करने की अंतिम तिथि क्या है?",
+     "a": "27 नवंबर 2026, शाम 6:00 बजे तक। Fee Gen/EWS/OBC के लिए ₹500 है; SC/ST/PwBD/ex-servicemen/महिलाओं को कुछ नहीं देना।"
+    }
    ]
   }
  }

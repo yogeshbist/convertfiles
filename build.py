@@ -740,6 +740,17 @@ def render_body(lines):
 
 GUIDE_BY_SLUG = {g['slug']: g for g in CONTENT['GUIDES']}
 
+# Language pairs are two-way even when only one side records the "alt" slug:
+# if guide A says alt=B, then B's pair is A as well (audit 16 Nov 2026: the
+# EN heic-to-jpg guide had no alt recorded, so it shipped without hreflang
+# while its Hindi twin pointed at it).
+GUIDE_PAIR = {}
+for _pg in CONTENT['GUIDES']:
+    _po = GUIDE_BY_SLUG.get(_pg.get('alt') or '')
+    if _po:
+        GUIDE_PAIR[_pg['slug']] = _po
+        GUIDE_PAIR[_po['slug']] = _pg
+
 
 def guide_path(g):
     return ('hi/guides/%s/' if g.get('lang') == 'hi' else 'guides/%s/') % g['slug']
@@ -747,7 +758,7 @@ def guide_path(g):
 
 def hreflang_links(g):
     """<link rel=alternate> pairs when a guide exists in both languages."""
-    other = GUIDE_BY_SLUG.get(g.get('alt') or '')
+    other = GUIDE_PAIR.get(g['slug'])
     if not other:
         return ''
     en, hi = (other, g) if g.get('lang') == 'hi' else (g, other)
@@ -826,7 +837,8 @@ gi.append('</section>')
 gi_page = replace_block(BASE, 'page:meta', page_meta(
     'Guides \u2014 file formats explained without the jargon',
     'Short, practical guides to HEIC, PDF and Word, image formats, video for the web, 3D models for AR, spreadsheets and '
-    'privacy when converting files online.', 'guides/', jsonld=[gi_crumb_ld]))
+    'privacy when converting files online.', 'guides/', jsonld=[gi_crumb_ld],
+    extra_meta='<link rel="alternate" hreflang="en" href="%s/guides/"><link rel="alternate" hreflang="hi" href="%s/hi/guides/"><link rel="alternate" hreflang="x-default" href="%s/guides/">' % (DOMAIN, DOMAIN, DOMAIN)))
 gi_page = replace_block(gi_page, 'page:body', '\n'.join(gi))
 gi_page = gi_page.replace('<h1>Free Online File Converter</h1>', '<h1>Guides</h1>')
 gi_page = gi_page.replace('<p>Free, no sign-up &mdash; pick a file, choose what it should become, download the result. Everything runs inside your browser; nothing is uploaded.</p>',
@@ -845,7 +857,7 @@ hg.append('</section>')
 hg_page = replace_block(BASE, 'page:meta', page_meta('हिन्दी गाइड — फोटो, PDF और फाइल कन्वर्ट करने के आसान तरीके',
                                                     'फोटो का साइज़ कम करना, PDF छोटी करना, पासपोर्ट साइज़ फोटो बनाना और HEIC को JPG में बदलना — हिन्दी में, फ्री, बिना अपलोड।',
                                                     'hi/guides/', jsonld=[hg_crumb_ld],
-                                                    extra_meta='<link rel="alternate" hreflang="en" href="%s/guides/"><link rel="alternate" hreflang="hi" href="%s/hi/guides/">' % (DOMAIN, DOMAIN)))
+                                                    extra_meta='<link rel="alternate" hreflang="en" href="%s/guides/"><link rel="alternate" hreflang="hi" href="%s/hi/guides/"><link rel="alternate" hreflang="x-default" href="%s/guides/">' % (DOMAIN, DOMAIN, DOMAIN)))
 hg_page = hg_page.replace('<html lang="en">', '<html lang="hi">', 1)
 hg_page = replace_block(hg_page, 'page:body', '\n'.join(hg))
 hg_page = hg_page.replace('<h1>Free Online File Converter</h1>', '<h1>हिन्दी गाइड</h1>')

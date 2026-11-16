@@ -4000,7 +4000,8 @@
   "photo_kind": "upload",
   "portal": "cewacor.nic.in",
   "posts": 327,
-  "slug": "cwc-recruitment"
+  "slug": "cwc-recruitment",
+  "stage": "result-awaited"
  },
  {
   "slug": "ongc-apprentice",
@@ -9503,7 +9504,8 @@
     "एक से ज़्यादा विषयों के लिए आवेदन करना",
     "देर से भेजना — फॉर्म 15 नवंबर 2026 तक नई दिल्ली पहुँचना चाहिए, सिर्फ़ post करना काफ़ी नहीं"
    ]
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "slug": "supreme-court-junior-court-attendant",
@@ -11621,7 +11623,8 @@
    "chip_hi": "जल्द अपेक्षित",
    "note_en": "Test from 22 Nov 2026 · card by email / SAMEER website",
    "note_hi": "परीक्षा 22 Nov 2026 से · card email / SAMEER website पर आएगा"
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "slug": "assam-cm-fellow",

@@ -24282,5 +24282,2233 @@
     }
    ]
   }
+ },
+ {
+  "slug": "bhu-non-teaching-2026",
+  "advt": "Advertisement No. 03/2026-2027",
+  "board_en": "Banaras Hindu University (BHU), Varanasi",
+  "board_hi": "बनारस हिंदू विश्वविद्यालय (BHU), वाराणसी",
+  "portal": "bhunt.samarth.edu.in",
+  "posts": 11,
+  "dates": {
+   "apply_end": "2026-11-25",
+   "apply_start": "2026-10-26",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-25"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://bhunt.samarth.edu.in",
+   "notice": "https://bhu.ac.in/Images/files/Advt_%20No_03_26-27%20for%20Computer%20Center.pdf",
+   "site": "https://www.bhu.ac.in"
+  },
+  "en": {
+   "name": "BHU Non-Teaching Recruitment 2026 (Computer Centre)",
+   "tagline": "11 Group A & C posts at Banaras Hindu University's Computer Centre — System Engineer to Workshop Attendant — last date 25 November 2026.",
+   "qual": "10th / 12th Science / ITI / B.Sc / BCA / B.E./B.Tech / M.E./M.Tech / MCA (post-wise, with experience)",
+   "fees": [
+    "₹1,000 for Group A posts and ₹500 for Group C posts (UR/EWS/OBC) — pay online by 25 November 2026.",
+    "No fee for SC/ST/PwBD/women candidates."
+   ],
+   "fees_short": "₹1,000 (Group A) / ₹500 (Group C)",
+   "specs": [
+    "6 posts: System Engineer 1, Maintenance Engineer (Junior) 1, Computer Operator Gr-I 3, AC Operator 3, Laboratory Attendant 1, Workshop Attendant 2.",
+    "Apply online 26 October–25 November 2026 (till 5 PM); then send the hard copy with all enclosures to the Registrar (Recruitment & Assessment Cell), Holkar House, BHU, Varanasi – 221005 by 30 November 2026 (5 PM).",
+    "Photo and signature: JPEG, each not more than 50 KB.",
+    "Selection: Written Test, then Skill Test, then Document Verification.",
+    "The same posts advertised in Advt. No. 20/2023-2024 and 06/2018-2019 are cancelled; those applicants can claim a fee refund as given in the notification (ar.rac@bhu.ac.in).",
+    "Pay: System Engineer Level 12 (₹78,800–2,09,200), Maintenance Engineer (Junior) Level 10 (₹56,100–1,77,500), Computer Operator Gr-I Level 5 (₹29,200–92,300), AC Operator Level 3 (₹21,700–69,100), Laboratory and Workshop Attendant Level 1 (₹18,000–56,900)."
+   ],
+   "eligibility": [
+    "System Engineer (Group A, UR 1): M.E./M.Tech/M.S. (CS/IT/ECE) with 55% marks and 5 years' relevant experience, OR B.E./B.Tech (CS/IT/ECE), MCA or M.Sc Computer Science with 55% marks and 7 years' experience, OR M.Sc (CS/IT) with 55% marks and 8 years' experience — with experience in a computer centre (servers, storage, backup, Linux/Unix, databases, networks).",
+    "Maintenance Engineer (Junior) (Group A, OBC 1): B.E./B.Tech in Electronics & Communication or Computer Science & Engineering with 55% marks and 5 years' experience in computer network administration and hardware, including large UPS systems and central AC plants.",
+    "Computer Operator Gr-I (Group C, UR 2 + OBC 1): B.Sc Computer Science or BCA with 55% marks, OR B.Sc with 55% marks and PGDCA.",
+    "AC Operator (Group C, UR 2 + OBC 1): ITI (Refrigeration and Air Conditioning) from NCVT/SCVT and 2 years' experience in running and maintaining AC plants of over 500 TR, including VRV systems.",
+    "Laboratory Attendant (Group C, UR 1): 12th (Intermediate) with Science and a certificate course in computer hardware of at least 6 months.",
+    "Workshop Attendant (Group C, UR 1 + OBC 1): 10th pass and ITI in Electrician/Plumber/Fitter/Welder/Wireman from NCVT/SCVT with 1 year of experience in the trade.",
+    "Age (maximum, as on 25 November 2026): System Engineer 50 years, Maintenance Engineer (Junior) 40 years, all other posts 32 years. Age relaxation as per Government of India rules; no age bar for permanent BHU employees."
+   ],
+   "dos": [
+    "Read Advt. No. 03/2026-2027 fully on bhu.ac.in before applying — check the post code (CC001 to CC006) for your post.",
+    "Register first on the BHU recruitment portal (Samarth), then fill every tab of the form.",
+    "Upload a passport-size photo and signature in JPEG, each under 50 KB.",
+    "After submission, send the hard copy with all enclosures to the Registrar (RAC), Holkar House, BHU, Varanasi – 221005 by 30 November 2026 (5 PM)."
+   ],
+   "donts": [
+    "Do not submit the online form without the hard copy — both are required.",
+    "Do not try to change the form after final submission — no change is allowed.",
+    "Do not apply for a post whose experience condition you do not meet — every post needs experience.",
+    "Employed candidates must apply through proper channel or attach a No Objection Certificate — do not skip this."
+   ],
+   "checklist": [
+    "Degree / ITI / 12th certificate as per your post",
+    "Experience certificates for the required years",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Passport-size photo (JPEG, under 50 KB) and signature (JPEG, under 50 KB)",
+    "No Objection Certificate, if employed"
+   ],
+   "documents": [
+    "Educational qualification certificates (degree/ITI/12th as per post)",
+    "Experience certificates",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent passport-size photo and signature (JPEG, under 50 KB each)",
+    "No Objection Certificate, if employed"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Online form bharna aur hard copy bhejna bhool jana",
+    "Photo ya signature 50 KB se bada upload karna",
+    "Bina experience ke senior post par apply karna",
+    "25 नवंबर की 5 PM deadline miss karna"
+   ],
+   "steps": [
+    "bhu.ac.in par Advt. No. 03/2026-2027 padho aur apni post (CC001–CC006) chuno।",
+    "bhunt.samarth.edu.in par register karo, phir login karke form ke saare tab bharo।",
+    "Photo aur signature JPEG me upload karo (har ek 50 KB se kam)।",
+    "Fee online bharo (Group A ₹1,000 / Group C ₹500; SC/ST/PwBD/mahilaon ko kuch nahi) — 25 नवंबर 2026 शाम 5 बजे तक।",
+    "Submitted form ka printout nikalo aur saare enclosures ke saath hard copy Registrar (RAC), Holkar House, BHU, Varanasi – 221005 ko 30 नवंबर 2026 शाम 5 बजे तक bhejo।"
+   ],
+   "extra_faq": [
+    {
+     "q": "BHU Non-Teaching Recruitment 2026 me kitni vacancies hain?",
+     "a": "11 पद — System Engineer 1, Maintenance Engineer (Junior) 1, Computer Operator Gr-I 3, AC Operator 3, Laboratory Attendant 1 aur Workshop Attendant 2। ये BHU के Computer Centre के पद हैं।"
+    },
+    {
+     "q": "BHU Non-Teaching 2026 ki last date kya hai?",
+     "a": "Online form 25 नवंबर 2026 शाम 5 बजे तक भरना है। इसके बाद hard copy (सभी enclosures के साथ) 30 नवंबर 2026 शाम 5 बजे तक Registrar (RAC), Holkar House, BHU, Varanasi – 221005 तक पहुँच जानी चाहिए।"
+    },
+    {
+     "q": "BHU Non-Teaching 2026 ki fee kitni hai?",
+     "a": "Group A पदों के लिए ₹1,000 और Group C पदों के लिए ₹500 (UR/EWS/OBC)। SC/ST/PwBD और महिला उम्मीदवारों को कोई fee नहीं देनी। Fee online भरनी है।"
+    },
+    {
+     "q": "BHU Non-Teaching 2026 me selection kaise hoga?",
+     "a": "Written Test, फिर Skill Test, फिर Document Verification। हर पद के लिए अनुभव अनिवार्य है — System Engineer के लिए 5–8 साल, Maintenance Engineer के लिए 5 साल और AC Operator के लिए 2 साल।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "BHU नॉन-टीचिंग भर्ती 2026 (कंप्यूटर सेंटर)",
+   "tagline": "बनारस हिंदू विश्वविद्यालय के कंप्यूटर सेंटर में 11 Group A और C पद — सिस्टम इंजीनियर से वर्कशॉप अटेंडेंट तक — अंतिम तिथि 25 नवंबर 2026।",
+   "qual": "10वीं / 12वीं साइंस / ITI / B.Sc / BCA / B.E./B.Tech / M.E./M.Tech / MCA (पद के अनुसार, अनुभव सहित)",
+   "fees": [
+    "Group A पदों के लिए ₹1,000 और Group C पदों के लिए ₹500 (UR/EWS/OBC) — 25 नवंबर 2026 तक online भरें।",
+    "SC/ST/PwBD/महिला उम्मीदवारों को कोई fee नहीं देनी।"
+   ],
+   "fees_short": "₹1,000 (Group A) / ₹500 (Group C)",
+   "specs": [
+    "6 पद: सिस्टम इंजीनियर 1, मेंटेनेंस इंजीनियर (जूनियर) 1, कंप्यूटर ऑपरेटर ग्रेड-I 3, AC ऑपरेटर 3, लैबोरेटरी अटेंडेंट 1, वर्कशॉप अटेंडेंट 2।",
+    "Online आवेदन 26 अक्टूबर–25 नवंबर 2026 (शाम 5 बजे तक); फिर hard copy सभी enclosures के साथ Registrar (Recruitment & Assessment Cell), Holkar House, BHU, Varanasi – 221005 को 30 नवंबर 2026 (शाम 5 बजे) तक भेजें।",
+    "Photo और signature: JPEG, हर एक 50 KB से ज़्यादा नहीं।",
+    "चयन: Written Test, फिर Skill Test, फिर Document Verification।",
+    "Advt. No. 20/2023-2024 और 06/2018-2019 में विज्ञापित यही पद रद्द कर दिए गए हैं; उन आवेदकों को notification में बताए तरीके से fee refund मिल सकता है (ar.rac@bhu.ac.in)।",
+    "वेतन: सिस्टम इंजीनियर Level 12 (₹78,800–2,09,200), मेंटेनेंस इंजीनियर (जूनियर) Level 10 (₹56,100–1,77,500), कंप्यूटर ऑपरेटर ग्रेड-I Level 5 (₹29,200–92,300), AC ऑपरेटर Level 3 (₹21,700–69,100), लैबोरेटरी और वर्कशॉप अटेंडेंट Level 1 (₹18,000–56,900)।"
+   ],
+   "eligibility": [
+    "सिस्टम इंजीनियर (Group A, UR 1): M.E./M.Tech/M.S. (CS/IT/ECE) 55% अंकों के साथ और 5 साल का प्रासंगिक अनुभव, या B.E./B.Tech (CS/IT/ECE), MCA या M.Sc कंप्यूटर साइंस 55% अंकों के साथ और 7 साल का अनुभव, या M.Sc (CS/IT) 55% अंकों के साथ और 8 साल का अनुभव — कंप्यूटर सेंटर का अनुभव (सर्वर, स्टोरेज, बैकअप, Linux/Unix, डेटाबेस, नेटवर्क) ज़रूरी।",
+    "मेंटेनेंस इंजीनियर (जूनियर) (Group A, OBC 1): B.E./B.Tech (Electronics & Communication या Computer Science & Engineering) 55% अंकों के साथ और कंप्यूटर नेटवर्क प्रशासन व हार्डवेयर में 5 साल का अनुभव, बड़े UPS सिस्टम और सेंट्रल AC प्लांट सहित।",
+    "कंप्यूटर ऑपरेटर ग्रेड-I (Group C, UR 2 + OBC 1): B.Sc कंप्यूटर साइंस या BCA 55% अंकों के साथ, या B.Sc 55% अंकों के साथ और PGDCA।",
+    "AC ऑपरेटर (Group C, UR 2 + OBC 1): ITI (Refrigeration and Air Conditioning) NCVT/SCVT से और 500 TR से ज़्यादा के AC प्लांट (VRV सिस्टम सहित) चलाने व रखरखाव का 2 साल का अनुभव।",
+    "लैबोरेटरी अटेंडेंट (Group C, UR 1): 12वीं (इंटरमीडिएट) साइंस के साथ और कंप्यूटर हार्डवेयर में कम से कम 6 महीने का सर्टिफिकेट कोर्स।",
+    "वर्कशॉप अटेंडेंट (Group C, UR 1 + OBC 1): 10वीं पास और ITI (Electrician/Plumber/Fitter/Welder/Wireman) NCVT/SCVT से, संबंधित ट्रेड में 1 साल का अनुभव।",
+    "आयु (अधिकतम, 25 नवंबर 2026 को): सिस्टम इंजीनियर 50 वर्ष, मेंटेनेंस इंजीनियर (जूनियर) 40 वर्ष, अन्य सभी पद 32 वर्ष। भारत सरकार के नियमों के अनुसार आयु में छूट; BHU के स्थायी कर्मचारियों पर कोई आयु सीमा नहीं।"
+   ],
+   "dos": [
+    "Apply करने से पहले bhu.ac.in पर Advt. No. 03/2026-2027 पूरा पढ़ें — अपनी post का कोड (CC001 से CC006) देख लें।",
+    "BHU recruitment portal (Samarth) पर पहले register करें, फिर form के सारे tab भरें।",
+    "पासपोर्ट साइज़ photo और signature JPEG में upload करें, हर एक 50 KB से कम।",
+    "Submit करने के बाद hard copy सभी enclosures के साथ Registrar (RAC), Holkar House, BHU, Varanasi – 221005 को 30 नवंबर 2026 (शाम 5 बजे) तक भेजें।"
+   ],
+   "donts": [
+    "सिर्फ online form भरकर hard copy भेजना न भूलें — दोनों ज़रूरी हैं।",
+    "Final submit के बाद form बदलने की कोशिश न करें — कोई बदलाव allowed नहीं है।",
+    "जिस पद की अनुभव-शर्त पूरी न हो, उस पर apply न करें — हर पद में अनुभव चाहिए।",
+    "नौकरी में लगे उम्मीदवार proper channel से apply करें या No Objection Certificate लगाएँ — इसे skip न करें।"
+   ],
+   "checklist": [
+    "अपनी post के अनुसार degree / ITI / 12वीं certificate",
+    "ज़रूरी सालों के अनुभव के certificates",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "पासपोर्ट साइज़ photo (JPEG, 50 KB से कम) और signature (JPEG, 50 KB से कम)",
+    "No Objection Certificate, अगर नौकरी में हैं"
+   ],
+   "documents": [
+    "शैक्षणिक योग्यता के certificates (पद के अनुसार degree/ITI/12वीं)",
+    "अनुभव के certificates",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की पासपोर्ट साइज़ photo और signature (JPEG, हर एक 50 KB से कम)",
+    "No Objection Certificate, अगर नौकरी में हैं"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Online form भरना और hard copy भेजना भूल जाना",
+    "Photo या signature 50 KB से बड़ा upload करना",
+    "बिना अनुभव के senior post पर apply करना",
+    "25 नवंबर की 5 PM deadline miss करना"
+   ],
+   "steps": [
+    "bhu.ac.in पर Advt. No. 03/2026-2027 पढ़ें और अपनी post (CC001–CC006) चुनें।",
+    "bhunt.samarth.edu.in पर register करें, फिर login करके form के सारे tab भरें।",
+    "Photo और signature JPEG में upload करें (हर एक 50 KB से कम)।",
+    "Fee online भरें (Group A ₹1,000 / Group C ₹500; SC/ST/PwBD/महिलाओं को कुछ नहीं) — 25 नवंबर 2026 शाम 5 बजे तक।",
+    "Submitted form का printout निकालें और सभी enclosures के साथ hard copy Registrar (RAC), Holkar House, BHU, Varanasi – 221005 को 30 नवंबर 2026 शाम 5 बजे तक भेजें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "BHU Non-Teaching Recruitment 2026 में कितनी vacancies हैं?",
+     "a": "11 पद — सिस्टम इंजीनियर 1, मेंटेनेंस इंजीनियर (जूनियर) 1, कंप्यूटर ऑपरेटर ग्रेड-I 3, AC ऑपरेटर 3, लैबोरेटरी अटेंडेंट 1 और वर्कशॉप अटेंडेंट 2। ये BHU के कंप्यूटर सेंटर के पद हैं।"
+    },
+    {
+     "q": "BHU Non-Teaching 2026 की last date क्या है?",
+     "a": "Online form 25 नवंबर 2026 शाम 5 बजे तक भरना है। इसके बाद hard copy (सभी enclosures के साथ) 30 नवंबर 2026 शाम 5 बजे तक Registrar (RAC), Holkar House, BHU, Varanasi – 221005 तक पहुँच जानी चाहिए।"
+    },
+    {
+     "q": "BHU Non-Teaching 2026 की fee कितनी है?",
+     "a": "Group A पदों के लिए ₹1,000 और Group C पदों के लिए ₹500 (UR/EWS/OBC)। SC/ST/PwBD और महिला उम्मीदवारों को कोई fee नहीं देनी। Fee online भरनी है।"
+    },
+    {
+     "q": "BHU Non-Teaching 2026 में selection कैसे होगा?",
+     "a": "Written Test, फिर Skill Test, फिर Document Verification। हर पद के लिए अनुभव अनिवार्य है — सिस्टम इंजीनियर के लिए 5–8 साल, मेंटेनेंस इंजीनियर के लिए 5 साल और AC ऑपरेटर के लिए 2 साल।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "ap-high-court-civil-judge-2026",
+  "advt": "Notification No. 118/2026-RC",
+  "board_en": "High Court of Andhra Pradesh, Amaravati",
+  "board_hi": "आंध्र प्रदेश उच्च न्यायालय, अमरावती",
+  "portal": "aphc.gov.in",
+  "posts": 119,
+  "dates": {
+   "apply_end": "2026-11-30",
+   "apply_start": "2026-10-01",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-30"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://aphc.gov.in/recruitments.php?search=&year=2026&page=1",
+   "notice": "https://aphc.gov.in/docs/notification_1790338711_0.pdf",
+   "site": "https://aphc.gov.in"
+  },
+  "en": {
+   "name": "AP High Court Civil Judge (Junior Division) Recruitment 2026",
+   "tagline": "119 posts (96 Direct + 23 by Transfer) — Law graduates, last date extended to 30 November 2026.",
+   "qual": "Degree in Law (Direct Recruitment: degree obtained within the last one year)",
+   "fees": [
+    "₹1,500 for Open Category, EWS and Backward Classes candidates — pay online only, by 30 November 2026.",
+    "₹750 for SC/ST and Persons with Benchmark Disabilities (only applicants belonging to a community recognised as SC/ST in Andhra Pradesh get this concession).",
+    "The fee is not refundable, even if the application is rejected or the notification is cancelled."
+   ],
+   "fees_short": "₹1,500 (OC/EWS/BC) / ₹750 (SC/ST/PwBD)",
+   "specs": [
+    "119 posts: 96 under Direct Recruitment and 23 under Recruitment by Transfer, under the Andhra Pradesh State Judicial (Service & Cadre) Rules, 2026.",
+    "Last date extended twice — 26 October, then 10 November, now 30 November 2026 (up to 11:59 PM).",
+    "Selection (Direct): Screening Test (computer based, 100 multiple-choice questions, 100 marks, 2 hours; 40% and above shortlists 1:10 for the Written Examination) → Written Examination (Paper I Civil Laws 100, Paper II Criminal Laws 100, Paper III English 100 — translation and essay) → Viva Voce (50 marks, called 1:3).",
+    "Screening Test marks are NOT counted in the final merit; Paper I, Paper II and Viva Voce marks decide selection.",
+    "Selected candidates are first designated Trainee Judicial Officers: 1 year of training at the Judicial Academy, then 1 year of Law Clerkship, both at half the emoluments of a Civil Judge, before regular appointment.",
+    "Pay scale: ₹77,840–1,36,520."
+   ],
+   "eligibility": [
+    "Direct Recruitment (96 posts): Law graduates who obtained their Law Degree within the preceding one year as on the date of notification (25 September 2026) — as per the Supreme Court judgment in Bhumika Trust Vs. Union of India (21 August 2026). Good character and free from any infirmity that renders the candidate unfit.",
+    "Recruitment by Transfer (23 posts): Degree in Law and confirmed member or approved probationer in an eligible category — High Court staff (Section Officers, Court Officers, Stenographers, Typists, etc.), District Judiciary staff, Prosecution Services (Assistant Public Prosecutors and above), Law Department / Legislature Secretariat Section Officers, or Managers of the Advocate General / Government Pleaders' offices. No disciplinary charges or punishment subsisting.",
+    "Age (as on 1 September 2026): Direct Recruitment — must not have completed 35 years (SC/ST, Backward Classes and EWS: 5 years' relaxation; Persons with Benchmark Disabilities: 10 years' relaxation). Recruitment by Transfer — must not have completed 48 years.",
+    "Direct Recruitment category split (96): Open Competition 39, EWS 9, Backward Classes A–E 28, SC Groups I–III 14, ST 6 (with women and PwBD horizontal reservation). Transfer split (23): Open Competition 18, SC Group-I 1, SC Group-III 1, ST 3.",
+    "Selection against the BC-E vacancies is subject to the outcome of Civil Appeal Nos. 2628–2637/2010 pending before the Supreme Court."
+   ],
+   "dos": [
+    "Apply only through aphc.gov.in before 30 November 2026 (11:59 PM) — online only.",
+    "Read Notification No. 118/2026-RC fully — Direct and Transfer eligibility are completely different.",
+    "Direct Recruitment candidates: check the 'degree within the last one year' condition carefully — it comes from a Supreme Court judgment.",
+    "Keep your Law Degree certificate, category certificate (if any) and a valid photo ID ready before you start."
+   ],
+   "donts": [
+    "Do not apply under Direct Recruitment if your Law Degree is older than one year as on 25 September 2026.",
+    "Do not pay the fee expecting a refund — it is non-refundable even if the application is rejected.",
+    "Do not confuse the two quotas — Transfer posts are only for serving court, prosecution and law-department staff.",
+    "Do not wait for the last day — the last date has already been extended twice and will not move again without a fresh notice."
+   ],
+   "checklist": [
+    "Law Degree certificate (with date of award)",
+    "Category certificate (SC/ST/BC/EWS/PwBD), if applicable",
+    "Proof of service (for Recruitment by Transfer only)",
+    "Date of birth proof",
+    "Recent colour photograph and signature scan",
+    "Aadhaar card and active mobile number"
+   ],
+   "documents": [
+    "Law Degree certificate and marksheets",
+    "Category certificate, if applicable",
+    "Service proof / No Objection Certificate (Transfer quota only)",
+    "Date of birth proof (SSLC / birth certificate)",
+    "Recent photograph and signature",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Degree एक साल से पुरानी होने पर भी Direct Recruitment में apply करना",
+    "Fee refund की उम्मीद करना (fee non-refundable है)",
+    "Direct और Transfer quota को आपस में मिला देना",
+    "30 नवंबर की 11:59 PM deadline miss करना"
+   ],
+   "steps": [
+    "aphc.gov.in पर Notification No. 118/2026-RC पढ़ें — अपनी quota (Direct या Transfer) तय करें।",
+    "High Court की website पर online application खोलें और form भरें।",
+    "Photo, signature और documents upload करें।",
+    "₹1,500 (OC/EWS/BC) या ₹750 (SC/ST/PwBD) fee online भरें — 30 नवंबर 2026 रात 11:59 बजे तक।",
+    "Form submit करके printout निकालें — Screening Test की hall ticket exam से एक हफ्ते पहले website पर आएगी।"
+   ],
+   "extra_faq": [
+    {
+     "q": "AP High Court Civil Judge 2026 me kitni vacancies hain?",
+     "a": "119 पद — Direct Recruitment में 96 और Recruitment by Transfer में 23। वेतनमान ₹77,840–1,36,520 है।"
+    },
+    {
+     "q": "AP High Court Civil Judge 2026 ki last date kya hai?",
+     "a": "30 नवंबर 2026, रात 11:59 बजे तक। Last date दो बार बढ़ाई जा चुकी है (26 अक्टूबर → 10 नवंबर → 30 नवंबर)।"
+    },
+    {
+     "q": "AP High Court Civil Judge 2026 ki fee kitni hai?",
+     "a": "Open Category/EWS/Backward Classes के लिए ₹1,500 और SC/ST/PwBD के लिए ₹750। Fee सिर्फ online भरनी है और refund नहीं होगी।"
+    },
+    {
+     "q": "AP High Court Civil Judge 2026 me Direct Recruitment ke liye kaun apply kar sakta hai?",
+     "a": "वही Law graduate जिसने notification की तारीख (25 सितंबर 2026) से पिछले एक साल के अंदर Law Degree ली हो — Supreme Court के Bhumika Trust फैसले (21 अगस्त 2026) के अनुसार। अधिकतम आयु 35 वर्ष (1 सितंबर 2026 को)।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "AP हाई कोर्ट सिविल जज (जूनियर डिवीजन) भर्ती 2026",
+   "tagline": "119 पद (96 Direct + 23 Transfer द्वारा) — Law graduates के लिए, अंतिम तिथि बढ़कर 30 नवंबर 2026।",
+   "qual": "Law में Degree (Direct Recruitment: पिछले एक साल के अंदर ली गई degree)",
+   "fees": [
+    "Open Category, EWS और Backward Classes के लिए ₹1,500 — सिर्फ online, 30 नवंबर 2026 तक।",
+    "SC/ST और Persons with Benchmark Disabilities के लिए ₹750 (सिर्फ आंध्र प्रदेश में SC/ST के रूप में मान्यता प्राप्त समुदाय के आवेदकों को यह छूट)।",
+    "Fee refund नहीं होगी, चाहे application reject हो जाए या notification रद्द हो जाए।"
+   ],
+   "fees_short": "₹1,500 (OC/EWS/BC) / ₹750 (SC/ST/PwBD)",
+   "specs": [
+    "119 पद: Direct Recruitment में 96 और Recruitment by Transfer में 23, आंध्र प्रदेश राज्य न्यायिक (सेवा और कैडर) नियम, 2026 के तहत।",
+    "अंतिम तिथि दो बार बढ़ी — 26 अक्टूबर, फिर 10 नवंबर, अब 30 नवंबर 2026 (रात 11:59 बजे तक)।",
+    "चयन (Direct): Screening Test (कंप्यूटर आधारित, 100 multiple-choice प्रश्न, 100 अंक, 2 घंटे; 40% और ऊपर वालों को Written Examination के लिए 1:10 के अनुपात में बुलाया जाता है) → Written Examination (Paper I Civil Laws 100, Paper II Criminal Laws 100, Paper III English 100 — अनुवाद और निबंध) → Viva Voce (50 अंक, 1:3 अनुपात)।",
+    "Screening Test के अंक final merit में नहीं जुड़ते; Paper I, Paper II और Viva Voce के अंक ही चयन तय करते हैं।",
+    "चयनित उम्मीदवार पहले Trainee Judicial Officer बनते हैं: Judicial Academy में 1 साल की training, फिर 1 साल की Law Clerkship, दोनों में सिविल जज के वेतन का आधा, उसके बाद regular appointment।",
+    "वेतनमान: ₹77,840–1,36,520।"
+   ],
+   "eligibility": [
+    "Direct Recruitment (96 पद): Law graduate जिसने notification की तारीख (25 सितंबर 2026) से पिछले एक साल के अंदर Law Degree ली हो — Supreme Court के Bhumika Trust Vs. Union of India फैसले (21 अगस्त 2026) के अनुसार। अच्छा चरित्र और कोई ऐसी अक्षमता नहीं जो appointment के लिए अयोग्य बनाए।",
+    "Recruitment by Transfer (23 पद): Law में Degree और पात्र श्रेणी में confirmed member या approved probationer — High Court staff (Section Officers, Court Officers, Stenographers, Typists आदि), District Judiciary staff, Prosecution Services (Assistant Public Prosecutors और ऊपर), Law Department / Legislature Secretariat के Section Officers, या Advocate General / Government Pleaders के कार्यालयों के Managers। कोई disciplinary charge या सज़ा लंबित नहीं होनी चाहिए।",
+    "आयु (1 सितंबर 2026 को): Direct Recruitment — 35 वर्ष पूरे नहीं होने चाहिए (SC/ST, Backward Classes और EWS: 5 साल की छूट; Persons with Benchmark Disabilities: 10 साल की छूट)। Recruitment by Transfer — 48 वर्ष पूरे नहीं होने चाहिए।",
+    "Direct Recruitment श्रेणीवार (96): Open Competition 39, EWS 9, Backward Classes A–E 28, SC Groups I–III 14, ST 6 (महिला और PwBD horizontal reservation सहित)। Transfer (23): Open Competition 18, SC Group-I 1, SC Group-III 1, ST 3।",
+    "BC-E vacancies पर चयन Supreme Court में लंबित Civil Appeal Nos. 2628–2637/2010 के फैसले पर निर्भर करेगा।"
+   ],
+   "dos": [
+    "सिर्फ aphc.gov.in के ज़रिए 30 नवंबर 2026 (रात 11:59 बजे) से पहले apply करें — सिर्फ online।",
+    "Notification No. 118/2026-RC पूरा पढ़ें — Direct और Transfer की eligibility बिल्कुल अलग है।",
+    "Direct Recruitment वाले उम्मीदवार 'पिछले एक साल के अंदर degree' वाली शर्त ध्यान से देखें — यह Supreme Court के फैसले से आई है।",
+    "शुरू करने से पहले Law Degree certificate, category certificate (अगर हो) और valid photo ID तैयार रखें।"
+   ],
+   "donts": [
+    "अगर आपकी Law Degree 25 सितंबर 2026 से एक साल से ज़्यादा पुरानी है तो Direct Recruitment में apply न करें।",
+    "Fee refund की उम्मीद करके न भरें — reject होने पर भी refund नहीं मिलेगा।",
+    "दोनों quota को आपस में न मिलाएँ — Transfer पद सिर्फ सेवारत court, prosecution और law-department staff के लिए हैं।",
+    "आखिरी दिन का इंतज़ार न करें — last date दो बार बढ़ चुकी है और नए notice के बिना फिर नहीं बढ़ेगी।"
+   ],
+   "checklist": [
+    "Law Degree certificate (award की तारीख सहित)",
+    "Category certificate (SC/ST/BC/EWS/PwBD), अगर लागू हो",
+    "सेवा का proof (सिर्फ Recruitment by Transfer के लिए)",
+    "जन्म तिथि का proof",
+    "हाल की colour photo और signature scan",
+    "Aadhaar card और active mobile number"
+   ],
+   "documents": [
+    "Law Degree certificate और marksheets",
+    "Category certificate, अगर लागू हो",
+    "सेवा का proof / No Objection Certificate (सिर्फ Transfer quota)",
+    "जन्म तिथि का proof (SSLC / birth certificate)",
+    "हाल की photo और signature",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Degree एक साल से पुरानी होने पर भी Direct Recruitment में apply करना",
+    "Fee refund की उम्मीद करना (fee non-refundable है)",
+    "Direct और Transfer quota को आपस में मिला देना",
+    "30 नवंबर की 11:59 PM deadline miss करना"
+   ],
+   "steps": [
+    "aphc.gov.in पर Notification No. 118/2026-RC पढ़ें — अपनी quota (Direct या Transfer) तय करें।",
+    "High Court की website पर online application खोलें और form भरें।",
+    "Photo, signature और documents upload करें।",
+    "₹1,500 (OC/EWS/BC) या ₹750 (SC/ST/PwBD) fee online भरें — 30 नवंबर 2026 रात 11:59 बजे तक।",
+    "Form submit करके printout निकालें — Screening Test की hall ticket exam से एक हफ्ते पहले website पर आएगी।"
+   ],
+   "extra_faq": [
+    {
+     "q": "AP High Court Civil Judge 2026 में कितनी vacancies हैं?",
+     "a": "119 पद — Direct Recruitment में 96 और Recruitment by Transfer में 23। वेतनमान ₹77,840–1,36,520 है।"
+    },
+    {
+     "q": "AP High Court Civil Judge 2026 की last date क्या है?",
+     "a": "30 नवंबर 2026, रात 11:59 बजे तक। Last date दो बार बढ़ाई जा चुकी है (26 अक्टूबर → 10 नवंबर → 30 नवंबर)।"
+    },
+    {
+     "q": "AP High Court Civil Judge 2026 की fee कितनी है?",
+     "a": "Open Category/EWS/Backward Classes के लिए ₹1,500 और SC/ST/PwBD के लिए ₹750। Fee सिर्फ online भरनी है और refund नहीं होगी।"
+    },
+    {
+     "q": "AP High Court Civil Judge 2026 में Direct Recruitment के लिए कौन apply कर सकता है?",
+     "a": "वही Law graduate जिसने notification की तारीख (25 सितंबर 2026) से पिछले एक साल के अंदर Law Degree ली हो — Supreme Court के Bhumika Trust फैसले (21 अगस्त 2026) के अनुसार। अधिकतम आयु 35 वर्ष (1 सितंबर 2026 को)।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "orissa-high-court-district-judge-2026",
+  "advt": "Advertisement No. 03 of 2026",
+  "board_en": "High Court of Orissa, Cuttack",
+  "board_hi": "ओडिशा उच्च न्यायालय, कटक",
+  "portal": "orissahighcourt.nic.in",
+  "posts": 38,
+  "dates": {
+   "apply_end": "2026-11-25",
+   "apply_start": "2026-11-09",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-25"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://orissahighcourt.nic.in",
+   "notice": "https://orissahighcourt.nic.in/uploads/recruitment/recruitment-1793857547.pdf",
+   "site": "https://orissahighcourt.nic.in"
+  },
+  "en": {
+   "name": "Orissa High Court District Judge Recruitment 2026",
+   "tagline": "38 District Judge posts by direct recruitment — 7+ years' practice at the Bar — last date 25 November 2026.",
+   "qual": "Degree in Law + 7 years' continuous practice as an advocate",
+   "fees": [
+    "₹750 application fee — pay online by 25 November 2026.",
+    "Some summaries say SC/ST candidates pay nothing; confirm the exact fee slab in Advertisement No. 03 of 2026 before paying."
+   ],
+   "fees_short": "₹750",
+   "specs": [
+    "38 posts by direct recruitment: UR 19, SEBC 4, SC 6, ST 9 — with 13 posts reserved for women and 3 for Persons with Benchmark Disabilities.",
+    "Apply online 9–25 November 2026 (up to 11:59 PM) through the High Court website (Recruitment Corner → Examination Portal).",
+    "Pay: ₹1,44,840–1,94,660 plus Dearness Allowance.",
+    "Age relaxation of 1 year is allowed for the 2026 recruitment.",
+    "Selection is as per Advertisement No. 03 of 2026 — confirm the written examination and interview pattern in the official PDF before applying.",
+    "The same notification series also has Advertisement No. 04 of 2026 (District Judge, LDCE, 46 posts) and Advertisement No. 05 of 2026 (Civil Judge Senior Division, LDCE, 30 posts) — those are departmental promotions for serving judicial officers only and are NOT open to the public."
+   ],
+   "eligibility": [
+    "Degree in Law from a recognised university.",
+    "Advocate in continuous practice for not less than 7 years as on the date of application — or the permitted combination of advocate practice and judicial service adding up to the required experience.",
+    "Age: 35–45 years as on the date of application (with 1 year's relaxation for the 2026 recruitment).",
+    "Must be able to speak, read and write Odia fluently, and must have passed an examination in Odia of Middle English School standard.",
+    "Must be a citizen of India and of good character, with no criminal conviction or disciplinary action."
+   ],
+   "dos": [
+    "Read Advertisement No. 03 of 2026 fully on orissahighcourt.nic.in before applying.",
+    "Apply only through the High Court's Examination Portal before 25 November 2026 (11:59 PM).",
+    "Keep your enrolment certificate, practice proof (7 years) and Odia qualification proof ready.",
+    "Confirm the fee slab in the official PDF before paying — summaries differ on the SC/ST fee."
+   ],
+   "donts": [
+    "Do not apply if you have less than 7 years of continuous practice as on the application date.",
+    "Do not apply under Advt 04 or 05 of 2026 — those LDCE posts are only for serving judicial officers.",
+    "Do not skip the Odia requirement — fluency in Odia (speak, read, write) is mandatory.",
+    "Do not wait for the last day — the portal closes at 11:59 PM on 25 November 2026."
+   ],
+   "checklist": [
+    "Law Degree certificate",
+    "Bar Council enrolment certificate",
+    "Proof of 7 years' continuous practice",
+    "Odia examination certificate (Middle English School standard)",
+    "Caste certificate (SEBC/SC/ST), if applicable",
+    "Recent colour photograph and signature scan"
+   ],
+   "documents": [
+    "Law Degree certificate and marksheets",
+    "Bar Council enrolment certificate",
+    "Practice certificates / court appearance proof",
+    "Odia language qualification certificate",
+    "Caste certificate, if applicable",
+    "Recent photograph and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "7 साल से कम practice होने पर भी apply करना",
+    "LDCE वाले Advt 04/05 को public recruitment समझना",
+    "Odia की शर्त को ignore करना",
+    "SC/ST fee को लेकर notice पढ़े बिना भरना"
+   ],
+   "steps": [
+    "orissahighcourt.nic.in पर Advertisement No. 03 of 2026 पढ़ें।",
+    "High Court की website पर Recruitment Corner → Examination Portal खोलें।",
+    "Form भरें, photo, signature और documents upload करें।",
+    "₹750 fee online भरें — 25 नवंबर 2026 रात 11:59 बजे तक (SC/ST छूट के लिए notice देखें)।",
+    "Form submit करके printout निकालें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "Orissa High Court District Judge 2026 me kitni vacancies hain?",
+     "a": "38 पद — UR 19, SEBC 4, SC 6, ST 9। इनमें 13 पद महिलाओं और 3 पद Persons with Benchmark Disabilities के लिए आरक्षित हैं। वेतन ₹1,44,840–1,94,660 है।"
+    },
+    {
+     "q": "Orissa High Court District Judge 2026 ke liye kaun apply kar sakta hai?",
+     "a": "Law graduate जो application की तारीख तक कम से कम 7 साल से लगातार advocate के रूप में practice कर रहा हो। आयु 35–45 वर्ष (2026 की भर्ती के लिए 1 साल की छूट)। Odia बोलना, पढ़ना और लिखना अनिवार्य है।"
+    },
+    {
+     "q": "Orissa High Court District Judge 2026 ki last date kya hai?",
+     "a": "25 नवंबर 2026, रात 11:59 बजे तक। Apply सिर्फ orissahighcourt.nic.in के Examination Portal से होगा।"
+    },
+    {
+     "q": "Orissa High Court District Judge 2026 ki fee kitni hai?",
+     "a": "₹750। कुछ summaries कहते हैं कि SC/ST को कुछ नहीं देना — fee भरने से पहले Advertisement No. 03 of 2026 में exact slab confirm कर लें।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "ओडिशा हाई कोर्ट डिस्ट्रिक्ट जज भर्ती 2026",
+   "tagline": "Direct recruitment से 38 डिस्ट्रिक्ट जज पद — Bar में 7+ साल की practice — अंतिम तिथि 25 नवंबर 2026।",
+   "qual": "Law में Degree + advocate के रूप में 7 साल की लगातार practice",
+   "fees": [
+    "₹750 application fee — 25 नवंबर 2026 तक online भरें।",
+    "कुछ summaries कहते हैं कि SC/ST उम्मीदवारों को कुछ नहीं देना; fee भरने से पहले Advertisement No. 03 of 2026 में exact slab confirm कर लें।"
+   ],
+   "fees_short": "₹750",
+   "specs": [
+    "Direct recruitment से 38 पद: UR 19, SEBC 4, SC 6, ST 9 — इनमें 13 पद महिलाओं और 3 पद Persons with Benchmark Disabilities के लिए आरक्षित हैं।",
+    "Online आवेदन 9–25 नवंबर 2026 (रात 11:59 बजे तक) High Court की website (Recruitment Corner → Examination Portal) से।",
+    "वेतन: ₹1,44,840–1,94,660 + Dearness Allowance।",
+    "2026 की भर्ती के लिए 1 साल की आयु छूट दी गई है।",
+    "चयन Advertisement No. 03 of 2026 के अनुसार होगा — apply करने से पहले official PDF में written examination और interview का pattern confirm कर लें।",
+    "इसी notification series में Advertisement No. 04 of 2026 (District Judge, LDCE, 46 पद) और Advertisement No. 05 of 2026 (Civil Judge Senior Division, LDCE, 30 पद) भी हैं — वे सिर्फ सेवारत न्यायिक अधिकारियों के लिए departmental promotion हैं, आम जनता के लिए नहीं।"
+   ],
+   "eligibility": [
+    "मान्यता प्राप्त विश्वविद्यालय से Law में Degree।",
+    "Application की तारीख तक कम से कम 7 साल से लगातार advocate के रूप में practice — या advocate practice और न्यायिक सेवा का अनुमत संयोजन जो ज़रूरी अनुभव पूरा करे।",
+    "आयु: application की तारीख को 35–45 वर्ष (2026 की भर्ती के लिए 1 साल की छूट)।",
+    "Odia बोलना, पढ़ना और लिखना आना चाहिए, और Middle English School standard की Odia परीक्षा पास होनी चाहिए।",
+    "भारत का नागरिक होना चाहिए, अच्छा चरित्र हो और कोई criminal conviction या disciplinary action न हो।"
+   ],
+   "dos": [
+    "Apply करने से पहले orissahighcourt.nic.in पर Advertisement No. 03 of 2026 पूरा पढ़ें।",
+    "सिर्फ High Court के Examination Portal से 25 नवंबर 2026 (रात 11:59 बजे) से पहले apply करें।",
+    "Enrolment certificate, 7 साल की practice का proof और Odia qualification का proof तैयार रखें।",
+    "Fee भरने से पहले official PDF में fee slab confirm कर लें — summaries में SC/ST fee को लेकर फर्क है।"
+   ],
+   "donts": [
+    "अगर application की तारीख तक 7 साल की लगातार practice पूरी न हो तो apply न करें।",
+    "Advt 04 या 05 of 2026 के तहत apply न करें — वे LDCE पद सिर्फ सेवारत न्यायिक अधिकारियों के लिए हैं।",
+    "Odia की शर्त को ignore न करें — Odia में बोलना, पढ़ना, लिखना अनिवार्य है।",
+    "आखिरी दिन का इंतज़ार न करें — portal 25 नवंबर 2026 रात 11:59 बजे बंद हो जाएगा।"
+   ],
+   "checklist": [
+    "Law Degree certificate",
+    "Bar Council enrolment certificate",
+    "7 साल की लगातार practice का proof",
+    "Odia परीक्षा का certificate (Middle English School standard)",
+    "Caste certificate (SEBC/SC/ST), अगर लागू हो",
+    "हाल की colour photo और signature scan"
+   ],
+   "documents": [
+    "Law Degree certificate और marksheets",
+    "Bar Council enrolment certificate",
+    "Practice certificates / court appearance proof",
+    "Odia भाषा योग्यता certificate",
+    "Caste certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "7 साल से कम practice होने पर भी apply करना",
+    "LDCE वाले Advt 04/05 को public recruitment समझना",
+    "Odia की शर्त को ignore करना",
+    "SC/ST fee को लेकर notice पढ़े बिना भरना"
+   ],
+   "steps": [
+    "orissahighcourt.nic.in पर Advertisement No. 03 of 2026 पढ़ें।",
+    "High Court की website पर Recruitment Corner → Examination Portal खोलें।",
+    "Form भरें, photo, signature और documents upload करें।",
+    "₹750 fee online भरें — 25 नवंबर 2026 रात 11:59 बजे तक (SC/ST छूट के लिए notice देखें)।",
+    "Form submit करके printout निकालें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "Orissa High Court District Judge 2026 में कितनी vacancies हैं?",
+     "a": "38 पद — UR 19, SEBC 4, SC 6, ST 9। इनमें 13 पद महिलाओं और 3 पद Persons with Benchmark Disabilities के लिए आरक्षित हैं। वेतन ₹1,44,840–1,94,660 है।"
+    },
+    {
+     "q": "Orissa High Court District Judge 2026 के लिए कौन apply कर सकता है?",
+     "a": "Law graduate जो application की तारीख तक कम से कम 7 साल से लगातार advocate के रूप में practice कर रहा हो। आयु 35–45 वर्ष (2026 की भर्ती के लिए 1 साल की छूट)। Odia बोलना, पढ़ना और लिखना अनिवार्य है।"
+    },
+    {
+     "q": "Orissa High Court District Judge 2026 की last date क्या है?",
+     "a": "25 नवंबर 2026, रात 11:59 बजे तक। Apply सिर्फ orissahighcourt.nic.in के Examination Portal से होगा।"
+    },
+    {
+     "q": "Orissa High Court District Judge 2026 की fee कितनी है?",
+     "a": "₹750। कुछ summaries कहते हैं कि SC/ST को कुछ नहीं देना — fee भरने से पहले Advertisement No. 03 of 2026 में exact slab confirm कर लें।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "coconut-development-board-2026",
+  "advt": "Advertisement No. 02/2026",
+  "board_en": "Coconut Development Board (Ministry of Agriculture & Farmers Welfare)",
+  "board_hi": "नारियल विकास बोर्ड (कृषि एवं किसान कल्याण मंत्रालय)",
+  "portal": "coconutboard.gov.in",
+  "posts": 35,
+  "dates": {
+   "apply_end": "2026-12-21",
+   "apply_start": "2026-11-21",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-21"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://coconutboard.gov.in/Vacancy.aspx",
+   "notice": null,
+   "site": "https://coconutboard.gov.in"
+  },
+  "en": {
+   "name": "Coconut Development Board Recruitment 2026",
+   "tagline": "35 Group A, B & C posts — Deputy Director to LDC — apply 21 November to 21 December 2026.",
+   "qual": "12th pass / Bachelor's / Master's degree (post-wise)",
+   "fees": [
+    "₹300 application fee — pay through SBI Collect by 21 December 2026.",
+    "No fee for SC, ST, PwBD, Ex-Servicemen and women candidates."
+   ],
+   "fees_short": "₹300",
+   "specs": [
+    "35 vacancies across 13 post categories: Deputy Director (Development) 4, Assistant Director (Development) 1, Administrative Officer 1, Accounts Officer 1, Development Officer 2, Development Officer (Technology) 2, Assistant 1, Auditor 1, Junior Translation Officer 1, Stenographer Grade II 2, Field Officer 5, Data Entry Operator 1, Lower Division Clerk 13.",
+    "LAST DATE — READ CAREFULLY: the notice says applications within 30 days of the advertisement's appearance in Employment News (issue dated 21–27 November 2026). The reference schedule lists 21 December 2026 as the closing date; one source lists 20 December. Confirm the final date and time on the official CDB vacancy portal before the last day.",
+    "Online applications open 21 November 2026 through the CDB Vacancy page.",
+    "Pay: Level 11 (Deputy Director, ₹67,700–2,08,700) down to Level 2 (LDC, ₹19,900–63,200) under the 7th Central Pay Commission.",
+    "Selection: post-specific written examination, skill test or interview, as notified — the short advertisement does not publish a detailed exam pattern, syllabus or test date; check later CDB announcements.",
+    "The advertised vacancies include anticipated vacancies and may increase or decrease."
+   ],
+   "eligibility": [
+    "Deputy Director (Development): Master's Degree in Horticulture, Agriculture or Plant Sciences with prescribed experience in agricultural or horticultural development (maximum age 40).",
+    "Assistant Director (Development): Master's Degree in Horticulture, Agriculture or Plant Sciences with prescribed experience (maximum age 35).",
+    "Administrative Officer: Master's Degree with 5 years' prescribed experience in administration and establishment matters (maximum age 30).",
+    "Accounts Officer: Associate qualification of ICAI/ICMAI or the prescribed Commerce postgraduate and intermediate professional qualification route, with experience (maximum age 30).",
+    "Development Officer: Bachelor's Degree in Agriculture or Horticulture with 2 years' experience (maximum age 30). Development Officer (Technology): B.Tech in Food Processing or Food Technology, or Master's in Food and Nutrition, with 2 years' food-processing experience (maximum age 30).",
+    "Assistant: Bachelor's Degree in Arts, Science or Commerce with 3 years' experience in a Government office, autonomous body or statutory organisation (maximum age 30). Auditor: Master's in Commerce or prescribed intermediate professional accountancy qualification with 5 years' relevant experience (maximum age 30).",
+    "Junior Translation Officer: Master's Degree in Hindi with English studied as prescribed, with a translation diploma or accepted translation experience (maximum age 30). Stenographer Grade II: Graduation with shorthand 120 wpm and typing 45 wpm (maximum age 30).",
+    "Field Officer: Intermediate/Class 12 with Science and a Diploma or Certificate in Agriculture or Horticulture (maximum age 27). Data Entry Operator: Bachelor's Degree with computer data-entry speed of 15,000 key depressions per hour (maximum age 27).",
+    "Lower Division Clerk: Class 12 pass with computer typing speed of 35 wpm in English or 30 wpm in Hindi (maximum age 27).",
+    "Age is calculated as on the last date for receipt of online applications. Relaxation: SC/ST 5 years, OBC 3 years, PwBD 10 years, Ex-Servicemen and eligible Government servants as per Government of India rules."
+   ],
+   "dos": [
+    "Read the official notification on coconutboard.gov.in before choosing a post — qualifications and experience differ sharply by post.",
+    "Apply only through the CDB Vacancy page — online only, from 21 November 2026.",
+    "Pay the ₹300 fee only through SBI Collect — other payment methods are not accepted.",
+    "Confirm the final closing date on the official portal — the notice gives a 30-day window from Employment News publication, and sources differ between 20 and 21 December."
+   ],
+   "donts": [
+    "Do not apply for a senior post without the prescribed experience — Deputy Director and Accounts Officer need years of experience, not just a degree.",
+    "Do not pay the fee by any method other than SBI Collect.",
+    "Do not assume the closing date — verify it on the official vacancy portal.",
+    "Do not apply for more than one post without checking whether the notice allows it."
+   ],
+   "checklist": [
+    "Class 10 certificate (date-of-birth proof)",
+    "Class 12 / Bachelor's / Master's degree certificates and marksheets",
+    "Post-specific experience certificates",
+    "Typing / shorthand / data-entry skill proof, if applicable",
+    "Caste / PwBD / Ex-Servicemen certificate, if applicable",
+    "Recent photograph and signature",
+    "SBI Collect fee payment receipt, if applicable"
+   ],
+   "documents": [
+    "Degree / diploma certificates and marksheets",
+    "Experience certificates (post-specific)",
+    "Date of birth proof (Class 10 certificate)",
+    "Caste / PwBD / Ex-Servicemen certificate, if applicable",
+    "Typing / shorthand skill certificates, if applicable",
+    "Recent photograph and signature",
+    "No Objection Certificate, if employed in Government service"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "बिना prescribed experience के senior post पर apply करना",
+    "SBI Collect के अलावा किसी और तरीके से fee भरना",
+    "Last date को लेकर confirm किए बिना आखिरी दिन तक रुकना",
+    "LDC के लिए typing speed की शर्त को ignore करना"
+   ],
+   "steps": [
+    "coconutboard.gov.in पर Vacancy section खोलें और 6 नवंबर 2026 का notification पढ़ें।",
+    "अपनी योग्यता के हिसाब से post चुनें (13 categories हैं)।",
+    "Online application form खोलें और details भरें।",
+    "Photo, signature और documents upload करें।",
+    "₹300 fee SBI Collect से भरें (SC/ST/PwBD/Ex-Servicemen/महिलाओं को छूट) — 21 दिसंबर 2026 तक।",
+    "Form submit करके acknowledgement और payment receipt संभालकर रखें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "Coconut Development Board Recruitment 2026 me kitni vacancies hain?",
+     "a": "35 पद — 13 categories में। सबसे ज़्यादा LDC के 13 पद, फिर Field Officer के 5 और Deputy Director (Development) के 4 पद हैं।"
+    },
+    {
+     "q": "Coconut Development Board Recruitment 2026 ki last date kya hai?",
+     "a": "Reference schedule के अनुसार 21 दिसंबर 2026। लेकिन notice में Employment News में विज्ञापन छपने के 30 दिन के अंदर apply करना लिखा है (Employment News 21–27 नवंबर 2026) — एक source 20 दिसंबर भी बताता है। Final date official portal पर confirm कर लें।"
+    },
+    {
+     "q": "Coconut Development Board Recruitment 2026 ki fee kitni hai?",
+     "a": "₹300 — सिर्फ SBI Collect से। SC, ST, PwBD, Ex-Servicemen और महिला उम्मीदवारों को कोई fee नहीं देनी।"
+    },
+    {
+     "q": "12th pass candidates Coconut Development Board me apply kar sakte hain?",
+     "a": "हाँ — LDC के 13 पदों के लिए 12वीं पास + कंप्यूटर typing (English 35 wpm या Hindi 30 wpm) चाहिए। Field Officer के लिए 12वीं Science + Agriculture/Horticulture Diploma या Certificate चाहिए।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "नारियल विकास बोर्ड भर्ती 2026",
+   "tagline": "35 Group A, B और C पद — Deputy Director से LDC तक — आवेदन 21 नवंबर से 21 दिसंबर 2026 तक।",
+   "qual": "12वीं पास / Bachelor's / Master's degree (पद के अनुसार)",
+   "fees": [
+    "₹300 application fee — SBI Collect से 21 दिसंबर 2026 तक भरें।",
+    "SC, ST, PwBD, Ex-Servicemen और महिला उम्मीदवारों को कोई fee नहीं देनी।"
+   ],
+   "fees_short": "₹300",
+   "specs": [
+    "13 post categories में 35 vacancies: Deputy Director (Development) 4, Assistant Director (Development) 1, Administrative Officer 1, Accounts Officer 1, Development Officer 2, Development Officer (Technology) 2, Assistant 1, Auditor 1, Junior Translation Officer 1, Stenographer Grade II 2, Field Officer 5, Data Entry Operator 1, Lower Division Clerk 13।",
+    "LAST DATE — ध्यान से पढ़ें: notice में Employment News (21–27 नवंबर 2026 अंक) में विज्ञापन छपने के 30 दिन के अंदर आवेदन करना लिखा है। Reference schedule में 21 दिसंबर 2026 closing date है; एक source 20 दिसंबर बताता है। Final date और समय official CDB vacancy portal पर confirm कर लें।",
+    "Online आवेदन 21 नवंबर 2026 से CDB Vacancy page पर खुलेंगे।",
+    "वेतन: Level 11 (Deputy Director, ₹67,700–2,08,700) से Level 2 (LDC, ₹19,900–63,200) तक, 7th Central Pay Commission के अनुसार।",
+    "चयन: पद के अनुसार written examination, skill test या interview — short advertisement में detailed exam pattern, syllabus या test date नहीं छपा है; बाद के CDB announcements देखें।",
+    "विज्ञापित vacancies में anticipated vacancies शामिल हैं और ये बढ़ या घट सकती हैं।"
+   ],
+   "eligibility": [
+    "Deputy Director (Development): Horticulture, Agriculture या Plant Sciences में Master's Degree और कृषि/बागवानी विकास में prescribed अनुभव (अधिकतम आयु 40)।",
+    "Assistant Director (Development): Horticulture, Agriculture या Plant Sciences में Master's Degree और prescribed अनुभव (अधिकतम आयु 35)।",
+    "Administrative Officer: Master's Degree और प्रशासन व स्थापना मामलों में 5 साल का prescribed अनुभव (अधिकतम आयु 30)।",
+    "Accounts Officer: ICAI/ICMAI की Associate qualification या Commerce postgraduate और intermediate professional qualification route, अनुभव सहित (अधिकतम आयु 30)।",
+    "Development Officer: Agriculture या Horticulture में Bachelor's Degree और 2 साल का अनुभव (अधिकतम आयु 30)। Development Officer (Technology): Food Processing या Food Technology में B.Tech, या Food and Nutrition में Master's, और 2 साल का food-processing अनुभव (अधिकतम आयु 30)।",
+    "Assistant: Arts, Science या Commerce में Bachelor's Degree और Government office, autonomous body या statutory organisation में 3 साल का अनुभव (अधिकतम आयु 30)। Auditor: Commerce में Master's या prescribed intermediate professional accountancy qualification और 5 साल का प्रासंगिक अनुभव (अधिकतम आयु 30)।",
+    "Junior Translation Officer: Hindi में Master's Degree (English prescribed तरीके से पढ़ी हो), translation diploma या स्वीकृत translation अनुभव सहित (अधिकतम आयु 30)। Stenographer Grade II: Graduation और shorthand 120 wpm + typing 45 wpm (अधिकतम आयु 30)।",
+    "Field Officer: Science के साथ Intermediate/Class 12 और Agriculture या Horticulture में Diploma या Certificate (अधिकतम आयु 27)। Data Entry Operator: Bachelor's Degree और कंप्यूटर data-entry speed 15,000 key depressions प्रति घंटा (अधिकतम आयु 27)।",
+    "Lower Division Clerk: Class 12 पास और कंप्यूटर typing speed English में 35 wpm या Hindi में 30 wpm (अधिकतम आयु 27)।",
+    "आयु online आवेदन की अंतिम तिथि को गिनी जाएगी। छूट: SC/ST 5 साल, OBC 3 साल, PwBD 10 साल, Ex-Servicemen और पात्र Government servants भारत सरकार के नियमों के अनुसार।"
+   ],
+   "dos": [
+    "Post चुनने से पहले coconutboard.gov.in पर official notification पढ़ें — योग्यता और अनुभव हर पद पर अलग हैं।",
+    "सिर्फ CDB Vacancy page से apply करें — सिर्फ online, 21 नवंबर 2026 से।",
+    "₹300 fee सिर्फ SBI Collect से भरें — दूसरे तरीके स्वीकार नहीं होंगे।",
+    "Final closing date official portal पर confirm करें — notice में Employment News प्रकाशन से 30 दिन की window है, और sources में 20 और 21 दिसंबर का फर्क है।"
+   ],
+   "donts": [
+    "Prescribed अनुभव के बिना senior post पर apply न करें — Deputy Director और Accounts Officer को सिर्फ degree नहीं, सालों का अनुभव चाहिए।",
+    "SBI Collect के अलावा किसी और तरीके से fee न भरें।",
+    "Closing date assume न करें — official vacancy portal पर verify करें।",
+    "Notice में allowed है या नहीं, यह देखे बिना एक से ज़्यादा post के लिए apply न करें।"
+   ],
+   "checklist": [
+    "Class 10 certificate (जन्म तिथि का proof)",
+    "Class 12 / Bachelor's / Master's degree certificates और marksheets",
+    "पद के अनुसार अनुभव के certificates",
+    "Typing / shorthand / data-entry skill का proof, अगर लागू हो",
+    "Caste / PwBD / Ex-Servicemen certificate, अगर लागू हो",
+    "हाल की photo और signature",
+    "SBI Collect fee payment receipt, अगर लागू हो"
+   ],
+   "documents": [
+    "Degree / diploma certificates और marksheets",
+    "अनुभव के certificates (पद के अनुसार)",
+    "जन्म तिथि का proof (Class 10 certificate)",
+    "Caste / PwBD / Ex-Servicemen certificate, अगर लागू हो",
+    "Typing / shorthand skill certificates, अगर लागू हो",
+    "हाल की photo और signature",
+    "No Objection Certificate, अगर Government service में हैं"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "बिना prescribed experience के senior post पर apply करना",
+    "SBI Collect के अलावा किसी और तरीके से fee भरना",
+    "Last date को लेकर confirm किए बिना आखिरी दिन तक रुकना",
+    "LDC के लिए typing speed की शर्त को ignore करना"
+   ],
+   "steps": [
+    "coconutboard.gov.in पर Vacancy section खोलें और 6 नवंबर 2026 का notification पढ़ें।",
+    "अपनी योग्यता के हिसाब से post चुनें (13 categories हैं)।",
+    "Online application form खोलें और details भरें।",
+    "Photo, signature और documents upload करें।",
+    "₹300 fee SBI Collect से भरें (SC/ST/PwBD/Ex-Servicemen/महिलाओं को छूट) — 21 दिसंबर 2026 तक।",
+    "Form submit करके acknowledgement और payment receipt संभालकर रखें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "Coconut Development Board Recruitment 2026 में कितनी vacancies हैं?",
+     "a": "35 पद — 13 categories में। सबसे ज़्यादा LDC के 13 पद, फिर Field Officer के 5 और Deputy Director (Development) के 4 पद हैं।"
+    },
+    {
+     "q": "Coconut Development Board Recruitment 2026 की last date क्या है?",
+     "a": "Reference schedule के अनुसार 21 दिसंबर 2026। लेकिन notice में Employment News में विज्ञापन छपने के 30 दिन के अंदर apply करना लिखा है (Employment News 21–27 नवंबर 2026) — एक source 20 दिसंबर भी बताता है। Final date official portal पर confirm कर लें।"
+    },
+    {
+     "q": "Coconut Development Board Recruitment 2026 की fee कितनी है?",
+     "a": "₹300 — सिर्फ SBI Collect से। SC, ST, PwBD, Ex-Servicemen और महिला उम्मीदवारों को कोई fee नहीं देनी।"
+    },
+    {
+     "q": "12th pass candidates Coconut Development Board में apply कर सकते हैं?",
+     "a": "हाँ — LDC के 13 पदों के लिए 12वीं पास + कंप्यूटर typing (English 35 wpm या Hindi 30 wpm) चाहिए। Field Officer के लिए 12वीं Science + Agriculture/Horticulture Diploma या Certificate चाहिए।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "mmrcl-recruitment-2026",
+  "advt": "Recruitment Advertisement No. 04/2026",
+  "board_en": "Mumbai Metro Rail Corporation Ltd (MMRCL)",
+  "board_hi": "मुंबई मेट्रो रेल कॉर्पोरेशन लिमिटेड (MMRCL)",
+  "portal": "recruitment.mmrcl.com",
+  "posts": 35,
+  "dates": {
+   "apply_end": "2026-11-30",
+   "apply_start": "2026-10-31",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-30"
+  },
+  "photo_kind": "upload",
+  "note_en": "Some posts are on a 5-year contract or deputation basis, not regular permanent posts — check the post-wise terms in Advertisement No. 04/2026 before applying.",
+  "note_hi": "कुछ पद 5 साल के contract या deputation पर हैं, regular permanent पद नहीं — apply करने से पहले Advertisement No. 04/2026 में पद-वार शर्तें ज़रूर देखें।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://recruitment.mmrcl.com",
+   "notice": null,
+   "site": "https://www.mmrcl.com"
+  },
+  "en": {
+   "name": "MMRCL Recruitment 2026 (Advt 04/2026)",
+   "tagline": "35 posts from General Manager to Junior Engineer-II — interview only, no written test — last date 30 November 2026.",
+   "qual": "Degree/Diploma in Engineering (post-wise) + relevant work experience",
+   "fees": [
+    "No application fee is specified in Advertisement No. 04/2026."
+   ],
+   "fees_short": "No fee",
+   "specs": [
+    "35 posts across 22 roles, from General Manager down to Junior Engineer-II: Deputy Engineer (Civil/Planning) 4, Assistant General Manager (Civil) 3, Assistant Engineer (E&M) 3, Junior Engineer-II (E&M) 3, Assistant Engineer (PST) 1, Systems Analyst/Junior Engineer-I 1, Junior Engineer-II (Drafting/Civil/Arch) 1, Junior Engineer-II (S&T) 2, and other senior and middle-management roles.",
+    "CATEGORY FIGURES DO NOT ADD UP: the advertisement's post-wise category split (UR 28, ST 2, OBC 2, EWS 2, SC 1) adds to 36, while the stated total is 35. The entry uses the stated total of 35.",
+    "Apply online 31 October 2026 (10 AM) to 30 November 2026 (11:59 PM) at recruitment.mmrcl.com.",
+    "Age, qualification and experience are counted as on 1 October 2026; every post needs work experience — there are no fresher posts.",
+    "Selection is by personal interview only — there is NO written test.",
+    "Posts are on Regular, 5-year Contract or Deputation basis (junior posts are on 5-year contract) — check the terms for your post in the advertisement.",
+    "Pay (IDA): General Manager ₹1,20,000–2,80,000; Assistant General Manager ₹90,000–2,40,000; Deputy Engineer ₹70,000–2,00,000; Assistant Engineer ₹50,000–1,60,000; Junior Engineer-II ₹35,280–1,10,000."
+   ],
+   "eligibility": [
+    "Junior Engineer-II (E&M / S&T / Drafting/Civil/Arch): Degree in the relevant Engineering discipline with 3 years' experience, or Diploma with 5 years' experience; maximum age 35 years as on 1 October 2026.",
+    "Assistant Engineer (E&M / PST): Degree in the relevant Engineering discipline with 5 years' experience; maximum age 35 years as on 1 October 2026.",
+    "Deputy Engineer (Civil/Planning): Degree in Civil Engineering with the prescribed years of relevant experience (post-wise in the advertisement).",
+    "Assistant General Manager (Civil) and General Manager: Degree in the relevant discipline with senior-level experience as prescribed in the advertisement.",
+    "Systems Analyst / Junior Engineer-I: Degree in the relevant discipline with the prescribed experience.",
+    "All posts require relevant work experience; age, qualification and experience are all counted as on 1 October 2026."
+   ],
+   "dos": [
+    "Read Advertisement No. 04/2026 fully on mmrcl.com before applying — every post has its own experience condition.",
+    "Apply only at recruitment.mmrcl.com before 30 November 2026 (11:59 PM).",
+    "Check whether your post is Regular, Contract (5 years) or Deputation — the terms differ.",
+    "Keep experience certificates ready — selection is by interview, and experience is the main filter."
+   ],
+   "donts": [
+    "Do not apply as a fresher — every post needs work experience.",
+    "Do not assume all posts are permanent — junior posts are on a 5-year contract.",
+    "Do not apply without checking the post-wise experience years in the advertisement.",
+    "Do not wait for the last day — the portal closes at 11:59 PM on 30 November 2026."
+   ],
+   "checklist": [
+    "Engineering degree / diploma certificate",
+    "Experience certificates for the required years",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent colour photograph and signature scan",
+    "No Objection Certificate, if employed"
+   ],
+   "documents": [
+    "Engineering degree / diploma certificates and marksheets",
+    "Experience certificates",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent photograph and signature",
+    "No Objection Certificate, if employed"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Bina experience ke fresher होकर apply करना",
+    "सभी पदों को permanent समझना (junior पद 5 साल के contract पर हैं)",
+    "Post-wise अनुभव की शर्त पढ़े बिना form भरना",
+    "30 नवंबर की 11:59 PM deadline miss करना"
+   ],
+   "steps": [
+    "mmrcl.com पर Advertisement No. 04/2026 पढ़ें और अपनी post चुनें।",
+    "recruitment.mmrcl.com पर register करें और form भरें।",
+    "Photo, signature और experience certificates upload करें।",
+    "Advertisement में कोई application fee नहीं है — form submit करें।",
+    "Form का printout निकालें — selection सिर्फ personal interview से होगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "MMRCL Recruitment 2026 me kitni vacancies hain?",
+     "a": "35 पद — General Manager से Junior Engineer-II तक, 22 roles में। ध्यान दें: advertisement में post-wise category आँकड़े 36 जोड़ते हैं जबकि कुल 35 लिखा है — entry में stated total 35 ही लिखा गया है।"
+    },
+    {
+     "q": "MMRCL Recruitment 2026 me written exam hoga?",
+     "a": "नहीं। Selection सिर्फ personal interview से होगा — कोई written test नहीं है। हर पद के लिए work experience अनिवार्य है।"
+    },
+    {
+     "q": "MMRCL Recruitment 2026 ki last date kya hai?",
+     "a": "30 नवंबर 2026, रात 11:59 बजे तक। Apply सिर्फ recruitment.mmrcl.com पर होगा।"
+    },
+    {
+     "q": "MMRCL ke saare pad permanent hain?",
+     "a": "नहीं। कुछ पद Regular हैं, कुछ 5 साल के contract पर और कुछ deputation पर — junior पद 5 साल के contract पर हैं। Apply करने से पहले Advertisement No. 04/2026 में अपने पद की शर्तें ज़रूर देखें।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "MMRCL भर्ती 2026 (Advt 04/2026)",
+   "tagline": "General Manager से Junior Engineer-II तक 35 पद — सिर्फ interview, कोई written test नहीं — अंतिम तिथि 30 नवंबर 2026।",
+   "qual": "Engineering में Degree/Diploma (पद के अनुसार) + प्रासंगिक कार्य अनुभव",
+   "fees": [
+    "Advertisement No. 04/2026 में कोई application fee नहीं लिखी है।"
+   ],
+   "fees_short": "कोई fee नहीं",
+   "specs": [
+    "22 roles में 35 पद, General Manager से Junior Engineer-II तक: Deputy Engineer (Civil/Planning) 4, Assistant General Manager (Civil) 3, Assistant Engineer (E&M) 3, Junior Engineer-II (E&M) 3, Assistant Engineer (PST) 1, Systems Analyst/Junior Engineer-I 1, Junior Engineer-II (Drafting/Civil/Arch) 1, Junior Engineer-II (S&T) 2, और अन्य senior व middle-management roles।",
+    "CATEGORY आँकड़े नहीं जुड़ते: advertisement में post-wise category split (UR 28, ST 2, OBC 2, EWS 2, SC 1) कुल 36 जोड़ता है, जबकि stated total 35 है। Entry में stated total 35 ही लिखा गया है।",
+    "Online आवेदन 31 अक्टूबर 2026 (सुबह 10 बजे) से 30 नवंबर 2026 (रात 11:59 बजे) तक recruitment.mmrcl.com पर।",
+    "आयु, योग्यता और अनुभव 1 अक्टूबर 2026 को गिने जाएँगे; हर पद में work experience चाहिए — कोई fresher पद नहीं है।",
+    "चयन सिर्फ personal interview से होगा — कोई written test नहीं है।",
+    "पद Regular, 5 साल के Contract या Deputation पर हैं (junior पद 5 साल के contract पर) — अपने पद की शर्तें advertisement में देखें।",
+    "वेतन (IDA): General Manager ₹1,20,000–2,80,000; Assistant General Manager ₹90,000–2,40,000; Deputy Engineer ₹70,000–2,00,000; Assistant Engineer ₹50,000–1,60,000; Junior Engineer-II ₹35,280–1,10,000।"
+   ],
+   "eligibility": [
+    "Junior Engineer-II (E&M / S&T / Drafting/Civil/Arch): संबंधित Engineering discipline में Degree + 3 साल का अनुभव, या Diploma + 5 साल का अनुभव; अधिकतम आयु 35 वर्ष (1 अक्टूबर 2026 को)।",
+    "Assistant Engineer (E&M / PST): संबंधित Engineering discipline में Degree + 5 साल का अनुभव; अधिकतम आयु 35 वर्ष (1 अक्टूबर 2026 को)।",
+    "Deputy Engineer (Civil/Planning): Civil Engineering में Degree और advertisement में लिखे prescribed सालों का प्रासंगिक अनुभव।",
+    "Assistant General Manager (Civil) और General Manager: संबंधित discipline में Degree और advertisement में लिखा senior-level अनुभव।",
+    "Systems Analyst / Junior Engineer-I: संबंधित discipline में Degree और prescribed अनुभव।",
+    "सभी पदों में प्रासंगिक कार्य अनुभव ज़रूरी है; आयु, योग्यता और अनुभव सब 1 अक्टूबर 2026 को गिने जाएँगे।"
+   ],
+   "dos": [
+    "Apply करने से पहले mmrcl.com पर Advertisement No. 04/2026 पूरा पढ़ें — हर पद की अपनी अनुभव-शर्त है।",
+    "सिर्फ recruitment.mmrcl.com पर 30 नवंबर 2026 (रात 11:59 बजे) से पहले apply करें।",
+    "देखें कि आपका पद Regular, Contract (5 साल) या Deputation पर है — शर्तें अलग हैं।",
+    "अनुभव के certificates तैयार रखें — चयन interview से होगा और अनुभव ही मुख्य filter है।"
+   ],
+   "donts": [
+    "Fresher होकर apply न करें — हर पद में work experience चाहिए।",
+    "सभी पदों को permanent न समझें — junior पद 5 साल के contract पर हैं।",
+    "Advertisement में post-wise अनुभव के साल देखे बिना form न भरें।",
+    "आखिरी दिन का इंतज़ार न करें — portal 30 नवंबर 2026 रात 11:59 बजे बंद हो जाएगा।"
+   ],
+   "checklist": [
+    "Engineering degree / diploma certificate",
+    "ज़रूरी सालों के अनुभव के certificates",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की colour photo और signature scan",
+    "No Objection Certificate, अगर नौकरी में हैं"
+   ],
+   "documents": [
+    "Engineering degree / diploma certificates और marksheets",
+    "अनुभव के certificates",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की photo और signature",
+    "No Objection Certificate, अगर नौकरी में हैं"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "बिना experience के fresher होकर apply करना",
+    "सभी पदों को permanent समझना (junior पद 5 साल के contract पर हैं)",
+    "Post-wise अनुभव की शर्त पढ़े बिना form भरना",
+    "30 नवंबर की 11:59 PM deadline miss करना"
+   ],
+   "steps": [
+    "mmrcl.com पर Advertisement No. 04/2026 पढ़ें और अपनी post चुनें।",
+    "recruitment.mmrcl.com पर register करें और form भरें।",
+    "Photo, signature और experience certificates upload करें।",
+    "Advertisement में कोई application fee नहीं है — form submit करें।",
+    "Form का printout निकालें — चयन सिर्फ personal interview से होगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "MMRCL Recruitment 2026 में कितनी vacancies हैं?",
+     "a": "35 पद — General Manager से Junior Engineer-II तक, 22 roles में। ध्यान दें: advertisement में post-wise category आँकड़े 36 जोड़ते हैं जबकि कुल 35 लिखा है — entry में stated total 35 ही लिखा गया है।"
+    },
+    {
+     "q": "MMRCL Recruitment 2026 में written exam होगा?",
+     "a": "नहीं। चयन सिर्फ personal interview से होगा — कोई written test नहीं है। हर पद के लिए work experience अनिवार्य है।"
+    },
+    {
+     "q": "MMRCL Recruitment 2026 की last date क्या है?",
+     "a": "30 नवंबर 2026, रात 11:59 बजे तक। Apply सिर्फ recruitment.mmrcl.com पर होगा।"
+    },
+    {
+     "q": "MMRCL के सारे पद permanent हैं?",
+     "a": "नहीं। कुछ पद Regular हैं, कुछ 5 साल के contract पर और कुछ deputation पर — junior पद 5 साल के contract पर हैं। Apply करने से पहले Advertisement No. 04/2026 में अपने पद की शर्तें ज़रूर देखें।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "ircon-manager-electrical-2026",
+  "advt": "Advertisement No. C-12/2026",
+  "board_en": "IRCON International Ltd (Ministry of Railways)",
+  "board_hi": "इरकॉन इंटरनेशनल लिमिटेड (रेल मंत्रालय)",
+  "portal": "ircon.org",
+  "posts": 37,
+  "dates": {
+   "apply_end": "2026-11-23",
+   "apply_start": "2026-11-19",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-23"
+  },
+  "photo_kind": "upload",
+  "note_en": "This is a CONTRACT engagement (18 months, extendable by 1 year) for NFR projects — not a permanent IRCON post, and there is no absorption after the project ends.",
+  "note_hi": "यह CONTRACT engagement है (18 महीने, 1 साल तक बढ़ाया जा सकता है) NFR projects के लिए — IRCON का permanent पद नहीं है, और project खत्म होने के बाद absorption नहीं मिलेगा।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://www.ircon.org",
+   "notice": null,
+   "site": "https://www.ircon.org"
+  },
+  "en": {
+   "name": "IRCON Manager (Electrical) Recruitment 2026",
+   "tagline": "37 Manager (Electrical) posts on contract for NFR projects — walk-in interviews 19–23 November 2026.",
+   "qual": "B.E./B.Tech (Electrical) with 60% marks + 5 years' relevant experience",
+   "fees": [
+    "No application fee is mentioned in Advertisement No. C-12/2026."
+   ],
+   "fees_short": "No fee",
+   "specs": [
+    "37 posts of Manager (Electrical) on CONTRACT for North Frontier Railway (NFR) projects — Lumding and Tinsukia Divisions.",
+    "Contract period: 18 months, extendable by 1 more year. Fixed pay: ₹60,000 per month (no allowances mentioned).",
+    "Walk-in interviews: Kolkata on 19–20 November 2026 and Guwahati on 23 November 2026. Registration is from 9:30 AM to 1:00 PM only; interviews start at 10:00 AM.",
+    "There is NO online form — candidates must appear in person at the walk-in venue with the filled application form and original documents.",
+    "No absorption or right to a permanent IRCON post after the project ends.",
+    "Maximum age 50 years as on 1 October 2026."
+   ],
+   "eligibility": [
+    "B.E./B.Tech in Electrical Engineering with at least 60% marks from a recognised university/institute.",
+    "At least 5 years of relevant experience in electrical works (railway electrification / traction / general electrical works as per the advertisement).",
+    "Maximum age: 50 years as on 1 October 2026 (relaxation as per Government of India rules, if applicable).",
+    "Indian citizen; medically fit for the post."
+   ],
+   "dos": [
+    "Read Advertisement No. C-12/2026 fully on ircon.org before going to the walk-in.",
+    "Reach the venue within the registration window (9:30 AM–1:00 PM) — latecomers are not registered.",
+    "Carry the filled application form in the prescribed format with all original documents and one set of photocopies.",
+    "Choose the nearer venue — Kolkata (19–20 November) or Guwahati (23 November)."
+   ],
+   "donts": [
+    "Do not treat this as a permanent IRCON job — it is an 18-month contract for NFR projects with no absorption.",
+    "Do not arrive after 1:00 PM — registration closes and you will not be interviewed.",
+    "Do not go without original certificates — document verification happens at the venue.",
+    "Do not apply online — there is no online form for this recruitment."
+   ],
+   "checklist": [
+    "Filled application form (prescribed format from ircon.org)",
+    "B.E./B.Tech (Electrical) degree certificate and marksheets",
+    "Experience certificates (5 years, relevant)",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent passport-size photographs"
+   ],
+   "documents": [
+    "B.E./B.Tech degree certificate and marksheets",
+    "Experience certificates",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent passport-size photographs",
+    "Photo ID proof (Aadhaar / PAN / Voter ID)"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "इसे IRCON की permanent नौकरी समझना (18 महीने का contract है)",
+    "Registration window (9:30 AM–1 PM) के बाद पहुँचना",
+    "Original documents के बिना walk-in में जाना",
+    "Online form ढूँढना (इस भर्ती में कोई online form नहीं है)"
+   ],
+   "steps": [
+    "ircon.org पर Advertisement No. C-12/2026 पढ़ें।",
+    "Prescribed format में application form भरें।",
+    "Kolkata (19–20 नवंबर) या Guwahati (23 नवंबर) — अपने नज़दीकी venue पर सुबह 9:30 बजे से 1 बजे के बीच registration कराएँ।",
+    "Original documents और photocopies के साथ interview दें।",
+    "चयन होने पर contract (18 महीने, ₹60,000/माह) के लिए offer मिलेगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "IRCON Manager (Electrical) 2026 me kitni vacancies hain?",
+     "a": "37 पद — NFR projects (Lumding और Tinsukia Divisions) के लिए, 18 महीने के contract पर (1 साल तक बढ़ाया जा सकता है)। Fixed pay ₹60,000 प्रति माह है।"
+    },
+    {
+     "q": "IRCON Manager (Electrical) 2026 me apply kaise karein?",
+     "a": "कोई online form नहीं है — walk-in interview में जाना होगा। Kolkata में 19–20 नवंबर 2026 और Guwahati में 23 नवंबर 2026। Registration सुबह 9:30 बजे से दोपहर 1 बजे तक ही होगी।"
+    },
+    {
+     "q": "IRCON Manager (Electrical) 2026 ki eligibility kya hai?",
+     "a": "B.E./B.Tech (Electrical) 60% अंकों के साथ + 5 साल का प्रासंगिक अनुभव। अधिकतम आयु 50 वर्ष (1 अक्टूबर 2026 को)।"
+    },
+    {
+     "q": "Kya IRCON Manager (Electrical) permanent job hai?",
+     "a": "नहीं। यह 18 महीने का contract है (1 साल तक बढ़ सकता है) और project खत्म होने के बाद IRCON में absorption का कोई अधिकार नहीं मिलेगा।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "इरकॉन मैनेजर (इलेक्ट्रिकल) भर्ती 2026",
+   "tagline": "NFR projects के लिए contract पर 37 मैनेजर (इलेक्ट्रिकल) पद — walk-in interview 19–23 नवंबर 2026।",
+   "qual": "B.E./B.Tech (Electrical) 60% अंकों के साथ + 5 साल का प्रासंगिक अनुभव",
+   "fees": [
+    "Advertisement No. C-12/2026 में कोई application fee नहीं लिखी है।"
+   ],
+   "fees_short": "कोई fee नहीं",
+   "specs": [
+    "North Frontier Railway (NFR) projects — Lumding और Tinsukia Divisions — के लिए CONTRACT पर मैनेजर (इलेक्ट्रिकल) के 37 पद।",
+    "Contract अवधि: 18 महीने, 1 साल और बढ़ाई जा सकती है। Fixed pay: ₹60,000 प्रति माह (कोई allowances नहीं लिखे हैं)।",
+    "Walk-in interview: Kolkata में 19–20 नवंबर 2026 और Guwahati में 23 नवंबर 2026। Registration सुबह 9:30 बजे से दोपहर 1:00 बजे तक ही; interview सुबह 10:00 बजे से।",
+    "कोई online form नहीं है — उम्मीदवारों को भरा हुआ application form और original documents लेकर walk-in venue पर खुद आना होगा।",
+    "Project खत्म होने के बाद IRCON में permanent post का कोई अधिकार नहीं मिलेगा।",
+    "अधिकतम आयु 50 वर्ष (1 अक्टूबर 2026 को)।"
+   ],
+   "eligibility": [
+    "मान्यता प्राप्त university/institute से Electrical Engineering में B.E./B.Tech, कम से कम 60% अंकों के साथ।",
+    "Electrical works में कम से कम 5 साल का प्रासंगिक अनुभव (advertisement के अनुसार railway electrification / traction / general electrical works)।",
+    "अधिकतम आयु: 50 वर्ष (1 अक्टूबर 2026 को) — भारत सरकार के नियमों के अनुसार छूट, अगर लागू हो।",
+    "भारतीय नागरिक; पद के लिए medically fit।"
+   ],
+   "dos": [
+    "Walk-in में जाने से पहले ircon.org पर Advertisement No. C-12/2026 पूरा पढ़ें।",
+    "Registration window (सुबह 9:30 बजे–दोपहर 1 बजे) के अंदर venue पर पहुँचें — देर से आने वालों का registration नहीं होगा।",
+    "Prescribed format में भरा application form, सभी original documents और photocopies का एक set लेकर जाएँ।",
+    "नज़दीकी venue चुनें — Kolkata (19–20 नवंबर) या Guwahati (23 नवंबर)।"
+   ],
+   "donts": [
+    "इसे IRCON की permanent नौकरी न समझें — यह NFR projects के लिए 18 महीने का contract है, absorption नहीं मिलेगा।",
+    "दोपहर 1 बजे के बाद न पहुँचें — registration बंद हो जाएगी और interview नहीं होगा।",
+    "Original certificates के बिना न जाएँ — venue पर ही document verification होगी।",
+    "Online apply करने की कोशिश न करें — इस भर्ती में कोई online form नहीं है।"
+   ],
+   "checklist": [
+    "भरा हुआ application form (ircon.org से prescribed format)",
+    "B.E./B.Tech (Electrical) degree certificate और marksheets",
+    "अनुभव के certificates (5 साल, प्रासंगिक)",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की passport-size photographs"
+   ],
+   "documents": [
+    "B.E./B.Tech degree certificate और marksheets",
+    "अनुभव के certificates",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की passport-size photographs",
+    "Photo ID proof (Aadhaar / PAN / Voter ID)"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "इसे IRCON की permanent नौकरी समझना (18 महीने का contract है)",
+    "Registration window (9:30 AM–1 PM) के बाद पहुँचना",
+    "Original documents के बिना walk-in में जाना",
+    "Online form ढूँढना (इस भर्ती में कोई online form नहीं है)"
+   ],
+   "steps": [
+    "ircon.org पर Advertisement No. C-12/2026 पढ़ें।",
+    "Prescribed format में application form भरें।",
+    "Kolkata (19–20 नवंबर) या Guwahati (23 नवंबर) — अपने नज़दीकी venue पर सुबह 9:30 बजे से 1 बजे के बीच registration कराएँ।",
+    "Original documents और photocopies के साथ interview दें।",
+    "चयन होने पर contract (18 महीने, ₹60,000/माह) के लिए offer मिलेगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "IRCON Manager (Electrical) 2026 में कितनी vacancies हैं?",
+     "a": "37 पद — NFR projects (Lumding और Tinsukia Divisions) के लिए, 18 महीने के contract पर (1 साल तक बढ़ाया जा सकता है)। Fixed pay ₹60,000 प्रति माह है।"
+    },
+    {
+     "q": "IRCON Manager (Electrical) 2026 में apply कैसे करें?",
+     "a": "कोई online form नहीं है — walk-in interview में जाना होगा। Kolkata में 19–20 नवंबर 2026 और Guwahati में 23 नवंबर 2026। Registration सुबह 9:30 बजे से दोपहर 1 बजे तक ही होगी।"
+    },
+    {
+     "q": "IRCON Manager (Electrical) 2026 की eligibility क्या है?",
+     "a": "B.E./B.Tech (Electrical) 60% अंकों के साथ + 5 साल का प्रासंगिक अनुभव। अधिकतम आयु 50 वर्ष (1 अक्टूबर 2026 को)।"
+    },
+    {
+     "q": "क्या IRCON Manager (Electrical) permanent job है?",
+     "a": "नहीं। यह 18 महीने का contract है (1 साल तक बढ़ सकता है) और project खत्म होने के बाद IRCON में absorption का कोई अधिकार नहीं मिलेगा।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "aau-atma-recruitment-2026",
+  "advt": "Advertisement No. 05/2026",
+  "board_en": "Assam Agricultural University, Jorhat (for Directorate of Agriculture, Assam)",
+  "board_hi": "असम कृषि विश्वविद्यालय, जोरहाट (कृषि निदेशालय, असम के लिए)",
+  "portal": "online.aau.ac.in",
+  "posts": 310,
+  "dates": {
+   "apply_end": "2026-12-11",
+   "apply_start": "2026-11-12",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-11"
+  },
+  "photo_kind": "upload",
+  "note_en": "These are CONTRACTUAL posts under the Centrally Sponsored Scheme ATMA — purely temporary and co-terminus with the project. This is not a permanent government job.",
+  "note_hi": "ये Centrally Sponsored Scheme ATMA के तहत CONTRACTUAL पद हैं — पूरी तरह अस्थायी और project के साथ खत्म होने वाले। यह permanent government नौकरी नहीं है।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://online.aau.ac.in/atma-2026",
+   "notice": null,
+   "site": "https://www.aau.ac.in"
+  },
+  "en": {
+   "name": "AAU ATMA Recruitment 2026 (Assam)",
+   "tagline": "310 contractual posts — Block Technology Manager, Assistant Technology Manager and more — last date 11 December 2026.",
+   "qual": "Graduate / Postgraduate in Agriculture & allied subjects (post-wise)",
+   "fees": [
+    "₹250 for General category candidates; ₹125 for reserved category candidates — pay online by 11 December 2026 (4 PM).",
+    "BPL and PwD candidates are exempt from the fee."
+   ],
+   "fees_short": "₹250 (Gen) / ₹125 (reserved)",
+   "specs": [
+    "310 posts under the Centrally Sponsored Scheme — Agricultural Technology Management Agency (ATMA), for the Directorate of Agriculture, Assam: Deputy Project Director 7, Accountant-cum-Clerk 4, Computer Programmer 9, Block Technology Manager 33, Assistant Technology Manager 257.",
+    "PURELY TEMPORARY AND CONTRACTUAL — the engagement is co-terminus with the project; there is no claim to a permanent post.",
+    "Apply online 12 November 2026 (4 PM) to 11 December 2026 (4 PM) at online.aau.ac.in/atma-2026.",
+    "One post only per candidate — applying for more than one post invalidates all applications.",
+    "Selection: OMR-based written test (date to be announced). Syllabus covers Quantitative Aptitude, Reasoning, General Awareness, English, Computer and General Agriculture.",
+    "Pay (fixed monthly): Deputy Project Director ₹52,000; Block Technology Manager ₹30,000; Assistant Technology Manager ₹25,000 (Accountant-cum-Clerk and Computer Programmer pay as per the advertisement).",
+    "Age: Block Technology Manager and Assistant Technology Manager up to 45 years; check the advertisement for the Deputy Project Director, Computer Programmer and Accountant-cum-Clerk age limits."
+   ],
+   "eligibility": [
+    "Deputy Project Director (7): Postgraduate degree in Agriculture or allied subjects with the prescribed experience (see the advertisement).",
+    "Block Technology Manager (33): Postgraduate degree in Agriculture or allied subjects with computer skills, OR Agriculture graduate with 5 years' experience as Assistant Technology Manager and 2 years' field experience. Age up to 45 years.",
+    "Assistant Technology Manager (257): Graduate or Postgraduate degree in Agriculture or allied subjects with 1 year of field experience. Age up to 45 years.",
+    "Computer Programmer (9): B.Tech or MCA (see the advertisement for the exact qualification).",
+    "Accountant-cum-Clerk (4): B.Com (see the advertisement for the exact qualification).",
+    "Candidates must apply for ONE post only — multiple applications from the same candidate are invalid."
+   ],
+   "dos": [
+    "Read Advertisement No. 05/2026 fully on the AAU website before applying.",
+    "Apply for ONE post only — multiple applications invalidate all of them.",
+    "Apply only at online.aau.ac.in/atma-2026 before 11 December 2026 (4 PM).",
+    "Prepare for the OMR written test — Quantitative Aptitude, Reasoning, General Awareness, English, Computer and General Agriculture."
+   ],
+   "donts": [
+    "Do not treat this as a permanent government job — it is a contractual, project-based engagement.",
+    "Do not apply for more than one post — all your applications will be cancelled.",
+    "Do not wait for the last day — the portal closes at 4 PM on 11 December 2026.",
+    "Do not apply without the required field experience — BTM and ATM posts need it."
+   ],
+   "checklist": [
+    "Agriculture / allied degree certificate and marksheets",
+    "Field experience certificate, if applicable",
+    "Date of birth proof",
+    "Caste / BPL / PwD certificate, if applicable",
+    "Recent colour photograph and signature scan",
+    "Active email ID and mobile number"
+   ],
+   "documents": [
+    "Degree certificates and marksheets (Agriculture / allied subjects)",
+    "Field experience certificates",
+    "Date of birth proof",
+    "Caste / BPL / PwD certificate, if applicable",
+    "Recent photograph and signature",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "इसे permanent government नौकरी समझना (contractual, project-based है)",
+    "एक से ज़्यादा post के लिए apply करना (सारे applications रद्द हो जाएँगे)",
+    "Field experience के बिना BTM/ATM पर apply करना",
+    "11 दिसंबर की 4 PM deadline miss करना"
+   ],
+   "steps": [
+    "aau.ac.in पर Advertisement No. 05/2026 पढ़ें और एक post चुनें।",
+    "online.aau.ac.in/atma-2026 पर register करें।",
+    "Form भरें, photo, signature और documents upload करें।",
+    "₹250 (General) या ₹125 (reserved) fee online भरें (BPL/PwD को छूट) — 11 दिसंबर 2026 शाम 4 बजे तक।",
+    "Form submit करके printout निकालें — OMR written test की date बाद में announce होगी।"
+   ],
+   "extra_faq": [
+    {
+     "q": "AAU ATMA Recruitment 2026 me kitni vacancies hain?",
+     "a": "310 पद — Deputy Project Director 7, Accountant-cum-Clerk 4, Computer Programmer 9, Block Technology Manager 33 और Assistant Technology Manager 257। ये Directorate of Agriculture, Assam के लिए Centrally Sponsored Scheme ATMA के तहत हैं।"
+    },
+    {
+     "q": "Kya AAU ATMA 2026 permanent job hai?",
+     "a": "नहीं। ये purely temporary, contractual पद हैं — engagement project के साथ खत्म हो जाएगी। Permanent post का कोई दावा नहीं मिलेगा। Pay: Deputy Project Director ₹52,000, Block Technology Manager ₹30,000, Assistant Technology Manager ₹25,000 प्रति माह (fixed)।"
+    },
+    {
+     "q": "AAU ATMA 2026 ki last date kya hai?",
+     "a": "11 दिसंबर 2026, शाम 4 बजे तक। Apply सिर्फ online.aau.ac.in/atma-2026 पर होगा।"
+    },
+    {
+     "q": "AAU ATMA 2026 me ek se zyada post ke liye apply kar sakte hain?",
+     "a": "नहीं। एक उम्मीदवार सिर्फ एक post के लिए apply कर सकता है — एक से ज़्यादा application देने पर सारे applications रद्द हो जाएँगे।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "AAU ATMA भर्ती 2026 (असम)",
+   "tagline": "310 contractual पद — Block Technology Manager, Assistant Technology Manager और अन्य — अंतिम तिथि 11 दिसंबर 2026।",
+   "qual": "Agriculture और allied विषयों में Graduate / Postgraduate (पद के अनुसार)",
+   "fees": [
+    "General category के लिए ₹250; reserved category के लिए ₹125 — 11 दिसंबर 2026 (शाम 4 बजे) तक online भरें।",
+    "BPL और PwD उम्मीदवारों को fee से छूट है।"
+   ],
+   "fees_short": "₹250 (Gen) / ₹125 (reserved)",
+   "specs": [
+    "Centrally Sponsored Scheme — Agricultural Technology Management Agency (ATMA) के तहत 310 पद, Directorate of Agriculture, Assam के लिए: Deputy Project Director 7, Accountant-cum-Clerk 4, Computer Programmer 9, Block Technology Manager 33, Assistant Technology Manager 257।",
+    "पूरी तरह अस्थायी और contractual — engagement project के साथ खत्म हो जाएगी; permanent post का कोई दावा नहीं।",
+    "Online आवेदन 12 नवंबर 2026 (शाम 4 बजे) से 11 दिसंबर 2026 (शाम 4 बजे) तक online.aau.ac.in/atma-2026 पर।",
+    "एक उम्मीदवार सिर्फ एक post के लिए apply कर सकता है — एक से ज़्यादा post के लिए apply करने पर सारे applications रद्द हो जाएँगे।",
+    "चयन: OMR-based written test (date बाद में announce होगी)। Syllabus: Quantitative Aptitude, Reasoning, General Awareness, English, Computer और General Agriculture।",
+    "वेतन (fixed मासिक): Deputy Project Director ₹52,000; Block Technology Manager ₹30,000; Assistant Technology Manager ₹25,000 (Accountant-cum-Clerk और Computer Programmer का वेतन advertisement में देखें)।",
+    "आयु: Block Technology Manager और Assistant Technology Manager के लिए 45 वर्ष तक; Deputy Project Director, Computer Programmer और Accountant-cum-Clerk की आयु सीमा advertisement में देखें।"
+   ],
+   "eligibility": [
+    "Deputy Project Director (7): Agriculture या allied विषयों में Postgraduate degree और prescribed अनुभव (advertisement देखें)।",
+    "Block Technology Manager (33): Agriculture या allied विषयों में Postgraduate degree और computer skills, या Agriculture graduate जिसके पास Assistant Technology Manager के रूप में 5 साल का अनुभव और 2 साल का field अनुभव हो। आयु 45 वर्ष तक।",
+    "Assistant Technology Manager (257): Agriculture या allied विषयों में Graduate या Postgraduate degree और 1 साल का field अनुभव। आयु 45 वर्ष तक।",
+    "Computer Programmer (9): B.Tech या MCA (exact योग्यता advertisement में देखें)।",
+    "Accountant-cum-Clerk (4): B.Com (exact योग्यता advertisement में देखें)।",
+    "उम्मीदवार सिर्फ एक post के लिए apply कर सकते हैं — एक से ज़्यादा application देने पर सभी invalid हो जाएँगे।"
+   ],
+   "dos": [
+    "Apply करने से पहले AAU website पर Advertisement No. 05/2026 पूरा पढ़ें।",
+    "सिर्फ एक post के लिए apply करें — multiple applications सभी को invalid कर देंगे।",
+    "सिर्फ online.aau.ac.in/atma-2026 पर 11 दिसंबर 2026 (शाम 4 बजे) से पहले apply करें।",
+    "OMR written test की तैयारी करें — Quantitative Aptitude, Reasoning, General Awareness, English, Computer और General Agriculture।"
+   ],
+   "donts": [
+    "इसे permanent government नौकरी न समझें — यह contractual, project-based engagement है।",
+    "एक से ज़्यादा post के लिए apply न करें — आपके सारे applications रद्द हो जाएँगे।",
+    "आखिरी दिन का इंतज़ार न करें — portal 11 दिसंबर 2026 शाम 4 बजे बंद हो जाएगा।",
+    "ज़रूरी field experience के बिना BTM/ATM पर apply न करें।"
+   ],
+   "checklist": [
+    "Agriculture / allied degree certificate और marksheets",
+    "Field experience certificate, अगर लागू हो",
+    "जन्म तिथि का proof",
+    "Caste / BPL / PwD certificate, अगर लागू हो",
+    "हाल की colour photo और signature scan",
+    "Active email ID और mobile number"
+   ],
+   "documents": [
+    "Degree certificates और marksheets (Agriculture / allied विषय)",
+    "Field experience certificates",
+    "जन्म तिथि का proof",
+    "Caste / BPL / PwD certificate, अगर लागू हो",
+    "हाल की photo और signature",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "इसे permanent government नौकरी समझना (contractual, project-based है)",
+    "एक से ज़्यादा post के लिए apply करना (सारे applications रद्द हो जाएँगे)",
+    "Field experience के बिना BTM/ATM पर apply करना",
+    "11 दिसंबर की 4 PM deadline miss करना"
+   ],
+   "steps": [
+    "aau.ac.in पर Advertisement No. 05/2026 पढ़ें और एक post चुनें।",
+    "online.aau.ac.in/atma-2026 पर register करें।",
+    "Form भरें, photo, signature और documents upload करें।",
+    "₹250 (General) या ₹125 (reserved) fee online भरें (BPL/PwD को छूट) — 11 दिसंबर 2026 शाम 4 बजे तक।",
+    "Form submit करके printout निकालें — OMR written test की date बाद में announce होगी।"
+   ],
+   "extra_faq": [
+    {
+     "q": "AAU ATMA Recruitment 2026 में कितनी vacancies हैं?",
+     "a": "310 पद — Deputy Project Director 7, Accountant-cum-Clerk 4, Computer Programmer 9, Block Technology Manager 33 और Assistant Technology Manager 257। ये Directorate of Agriculture, Assam के लिए Centrally Sponsored Scheme ATMA के तहत हैं।"
+    },
+    {
+     "q": "क्या AAU ATMA 2026 permanent job है?",
+     "a": "नहीं। ये purely temporary, contractual पद हैं — engagement project के साथ खत्म हो जाएगी। Permanent post का कोई दावा नहीं मिलेगा। वेतन: Deputy Project Director ₹52,000, Block Technology Manager ₹30,000, Assistant Technology Manager ₹25,000 प्रति माह (fixed)।"
+    },
+    {
+     "q": "AAU ATMA 2026 की last date क्या है?",
+     "a": "11 दिसंबर 2026, शाम 4 बजे तक। Apply सिर्फ online.aau.ac.in/atma-2026 पर होगा।"
+    },
+    {
+     "q": "AAU ATMA 2026 में एक से ज़्यादा post के लिए apply कर सकते हैं?",
+     "a": "नहीं। एक उम्मीदवार सिर्फ एक post के लिए apply कर सकता है — एक से ज़्यादा application देने पर सारे applications रद्द हो जाएँगे।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "aiims-mangalagiri-senior-resident-2026",
+  "advt": "F. No. AIIMS/MG/Reg/SR(NA)/2026-27/04A",
+  "board_en": "All India Institute of Medical Sciences (AIIMS), Mangalagiri",
+  "board_hi": "अखिल भारतीय आयुर्विज्ञान संस्थान (AIIMS), मंगलगिरी",
+  "portal": "aiimsmangalagiri.edu.in",
+  "posts": 45,
+  "dates": {
+   "apply_end": "2026-11-21",
+   "apply_start": "2026-10-29",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-21"
+  },
+  "photo_kind": "upload",
+  "note_en": "Senior Resident / Senior Demonstrator posts are TENURE-BASED (12 months at a time, up to 3 years under the Government of India Residency Scheme) — not permanent faculty posts.",
+  "note_hi": "Senior Resident / Senior Demonstrator पद TENURE-BASED हैं (एक बार में 12 महीने, Government of India Residency Scheme के तहत कुल 3 साल तक) — permanent faculty पद नहीं हैं।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://forms.gle/txqV4P64sK4TCrrUA",
+   "notice": null,
+   "site": "https://www.aiimsmangalagiri.edu.in"
+  },
+  "en": {
+   "name": "AIIMS Mangalagiri Senior Resident / Senior Demonstrator Recruitment 2026",
+   "tagline": "45 Senior Resident / Senior Demonstrator posts across 24 departments — apply by Google Form, last date 21 November 2026.",
+   "qual": "MD/MS/DNB/MDS or M.Sc./M.Biotech with Ph.D. (department-wise)",
+   "fees": [
+    "₹1,500 for General/EWS/OBC candidates; ₹1,000 for SC/ST candidates — pay by NEFT to the SBI AIIMS Mangalagiri account given in the advertisement, by 21 November 2026 (5 PM).",
+    "No fee for PwBD candidates."
+   ],
+   "fees_short": "₹1,500 (Gen/EWS/OBC) / ₹1,000 (SC/ST)",
+   "specs": [
+    "45 posts across 24 departments: UR 17, OBC 9, SC 9, ST 5, EWS 5. Anaesthesiology 10, General Medicine 4, Dentistry 2, General Surgery 2, Hospital Administration 2, Microbiology 2, Orthopaedics 2, Paediatrics 2, Pathology 2, Radiodiagnosis 2, Trauma & Emergency 2, and 1 each in Anatomy, Community & Family Medicine, Cardiothoracic Surgery, Dermatology, ENT, Forensic Medicine & Toxicology, Nephrology, Nuclear Medicine, Pharmacology, Physiology, Psychiatry, Radiation Oncology and Rheumatology.",
+    "ADDENDUM: the original advertisement (F. No/AIIMS/MG/Reg/SR(NA)/2026-27/04, dated 29 October 2026) advertised 28 posts in 20 departments. Addendum /04A dated 10 November 2026 raised this to 45 posts in 24 departments — this page uses the addendum figures.",
+    "Apply through the official Google Form by 21 November 2026 (5 PM) — submit the scanned Annexure I & II application forms with all documents. There is NO walk-in interview.",
+    "Appointment is under the Government of India Residency Scheme: 12 months at a time, up to 3 years in total, based on the Head of Department's recommendation.",
+    "Pay: Level 11 (₹67,700–2,08,700) plus Non-Practising Allowance for medical posts; non-medical appointments follow the separate scale in the notice.",
+    "Age and qualifications are counted as on 21 November 2026."
+   ],
+   "eligibility": [
+    "Relevant postgraduate medical qualification (MD/MS/DNB/MDS) for the department applied for — or M.Sc./M.Biotech with Ph.D. where the department specifies it.",
+    "Maximum age: 45 years as on 21 November 2026 (no minimum age is specified in the notification).",
+    "Age relaxation: SC/ST up to 5 years, OBC up to 3 years, PwBD up to 10 years (General), 13 years (OBC) and 15 years (SC/ST).",
+    "Candidates must be registered with the relevant Medical Council, where applicable."
+   ],
+   "dos": [
+    "Read the advertisement and addendum /04A on aiimsmangalagiri.edu.in before applying — the post count changed from 28 to 45.",
+    "Apply only through the official Google Form (forms.gle/txqV4P64sK4TCrrUA) before 21 November 2026 (5 PM).",
+    "Fill Annexure I & II (the prescribed application forms), scan them and upload with all documents in the Google Form.",
+    "Pay the fee by NEFT to the SBI AIIMS Mangalagiri account (A/c 38321557910, IFSC SBIN0061485) and keep the transaction proof."
+   ],
+   "donts": [
+    "Do not treat this as a permanent faculty post — it is a tenure-based Senior Residency (up to 3 years).",
+    "Do not use the old 28-post advertisement — the addendum /04A (45 posts) is the current one.",
+    "Do not go for a walk-in interview — there is none; applications are only through the Google Form.",
+    "Do not submit after 5 PM on 21 November 2026 — late forms are not accepted."
+   ],
+   "checklist": [
+    "MD/MS/DNB/MDS degree certificate (or M.Sc./M.Biotech + Ph.D., where specified)",
+    "Medical Council registration certificate, if applicable",
+    "Annexure I & II (prescribed application forms), filled and signed",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "NEFT fee payment proof",
+    "Recent photograph and signature"
+   ],
+   "documents": [
+    "Postgraduate degree certificates and marksheets",
+    "Medical Council registration certificate",
+    "Annexure I & II application forms (filled, signed, scanned)",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "NEFT transaction receipt",
+    "Recent photograph and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "इसे permanent faculty post समझना (tenure-based है, ज़्यादा से ज़्यादा 3 साल)",
+    "पुराने 28-post वाले advertisement से apply करना (addendum में 45 पद हैं)",
+    "Walk-in interview के लिए जाना (कोई walk-in नहीं है)",
+    "21 नवंबर शाम 5 बजे के बाद form भरना"
+   ],
+   "steps": [
+    "aiimsmangalagiri.edu.in पर advertisement और addendum /04A पढ़ें — अपनी department चुनें।",
+    "Annexure I & II (prescribed application forms) भरें और sign करें, फिर scan करें।",
+    "Official Google Form (forms.gle/txqV4P64sK4TCrrUA) खोलें और scanned forms व documents upload करें।",
+    "₹1,500 (Gen/EWS/OBC) या ₹1,000 (SC/ST) fee NEFT से SBI AIIMS Mangalagiri account में भरें (PwBD को छूट) — 21 नवंबर 2026 शाम 5 बजे तक।",
+    "Form submit करके acknowledgement संभालकर रखें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "AIIMS Mangalagiri Senior Resident 2026 me kitni vacancies hain?",
+     "a": "45 पद — 24 departments में। Original advertisement (29 अक्टूबर 2026) में 28 पद थे; 10 नवंबर 2026 के addendum /04A ने इन्हें बढ़ाकर 45 कर दिया। Anaesthesiology में सबसे ज़्यादा 10 पद हैं।"
+    },
+    {
+     "q": "AIIMS Mangalagiri Senior Resident 2026 ki last date kya hai?",
+     "a": "21 नवंबर 2026, शाम 5 बजे तक। Apply सिर्फ official Google Form से होगा — कोई walk-in interview नहीं है।"
+    },
+    {
+     "q": "AIIMS Mangalagiri Senior Resident 2026 ki fee kitni hai?",
+     "a": "General/EWS/OBC के लिए ₹1,500, SC/ST के लिए ₹1,000, PwBD के लिए कोई fee नहीं। Fee NEFT से SBI AIIMS Mangalagiri account (A/c 38321557910, IFSC SBIN0061485) में भरनी है।"
+    },
+    {
+     "q": "AIIMS Mangalagiri Senior Resident ki age limit kya hai?",
+     "a": "अधिकतम आयु 45 वर्ष (21 नवंबर 2026 को)। छूट: SC/ST 5 साल, OBC 3 साल, PwBD 10 साल (General), 13 साल (OBC) और 15 साल (SC/ST) तक। यह tenure-based post है — एक बार में 12 महीने, कुल 3 साल तक।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "AIIMS मंगलगिरी सीनियर रेजिडेंट / सीनियर डेमोंस्ट्रेटर भर्ती 2026",
+   "tagline": "24 departments में 45 सीनियर रेजिडेंट / सीनियर डेमोंस्ट्रेटर पद — Google Form से apply करें, अंतिम तिथि 21 नवंबर 2026।",
+   "qual": "MD/MS/DNB/MDS या M.Sc./M.Biotech के साथ Ph.D. (department के अनुसार)",
+   "fees": [
+    "General/EWS/OBC के लिए ₹1,500; SC/ST के लिए ₹1,000 — advertisement में दिए SBI AIIMS Mangalagiri account में NEFT से, 21 नवंबर 2026 (शाम 5 बजे) तक।",
+    "PwBD उम्मीदवारों को कोई fee नहीं देनी।"
+   ],
+   "fees_short": "₹1,500 (Gen/EWS/OBC) / ₹1,000 (SC/ST)",
+   "specs": [
+    "24 departments में 45 पद: UR 17, OBC 9, SC 9, ST 5, EWS 5। Anaesthesiology 10, General Medicine 4, Dentistry 2, General Surgery 2, Hospital Administration 2, Microbiology 2, Orthopaedics 2, Paediatrics 2, Pathology 2, Radiodiagnosis 2, Trauma & Emergency 2, और Anatomy, Community & Family Medicine, Cardiothoracic Surgery, Dermatology, ENT, Forensic Medicine & Toxicology, Nephrology, Nuclear Medicine, Pharmacology, Physiology, Psychiatry, Radiation Oncology और Rheumatology में 1-1।",
+    "ADDENDUM: original advertisement (F. No/AIIMS/MG/Reg/SR(NA)/2026-27/04, 29 अक्टूबर 2026) में 20 departments में 28 पद थे। 10 नवंबर 2026 के addendum /04A ने इन्हें बढ़ाकर 24 departments में 45 पद कर दिया — इस page में addendum के आँकड़े लिखे गए हैं।",
+    "Official Google Form से 21 नवंबर 2026 (शाम 5 बजे) तक apply करें — scanned Annexure I & II application forms सभी documents के साथ submit करें। कोई walk-in interview नहीं है।",
+    "Appointment Government of India Residency Scheme के तहत है: एक बार में 12 महीने, कुल 3 साल तक, Head of Department की recommendation पर।",
+    "वेतन: Level 11 (₹67,700–2,08,700) + Non-Practising Allowance (medical posts के लिए); non-medical appointments के लिए notice में अलग scale है।",
+    "आयु और योग्यता 21 नवंबर 2026 को गिनी जाएँगी।"
+   ],
+   "eligibility": [
+    "जिस department के लिए apply कर रहे हैं, उसके लिए प्रासंगिक postgraduate medical योग्यता (MD/MS/DNB/MDS) — या जहाँ department specify करे, वहाँ M.Sc./M.Biotech के साथ Ph.D.।",
+    "अधिकतम आयु: 45 वर्ष (21 नवंबर 2026 को) — notification में minimum age नहीं लिखी है।",
+    "आयु में छूट: SC/ST 5 साल तक, OBC 3 साल तक, PwBD 10 साल (General), 13 साल (OBC) और 15 साल (SC/ST) तक।",
+    "जहाँ लागू हो, संबंधित Medical Council में registration होना चाहिए।"
+   ],
+   "dos": [
+    "Apply करने से पहले aiimsmangalagiri.edu.in पर advertisement और addendum /04A पढ़ें — पदों की संख्या 28 से बढ़कर 45 हो गई है।",
+    "सिर्फ official Google Form (forms.gle/txqV4P64sK4TCrrUA) से 21 नवंबर 2026 (शाम 5 बजे) से पहले apply करें।",
+    "Annexure I & II (prescribed application forms) भरें, scan करें और Google Form में सभी documents के साथ upload करें।",
+    "Fee NEFT से SBI AIIMS Mangalagiri account (A/c 38321557910, IFSC SBIN0061485) में भरें और transaction proof संभालकर रखें।"
+   ],
+   "donts": [
+    "इसे permanent faculty post न समझें — यह tenure-based Senior Residency है (ज़्यादा से ज़्यादा 3 साल)।",
+    "पुराने 28-post वाले advertisement से apply न करें — addendum /04A (45 पद) ही current है।",
+    "Walk-in interview के लिए न जाएँ — कोई walk-in नहीं है; application सिर्फ Google Form से होगी।",
+    "21 नवंबर 2026 शाम 5 बजे के बाद form submit न करें — late forms accept नहीं होंगे।"
+   ],
+   "checklist": [
+    "MD/MS/DNB/MDS degree certificate (या जहाँ specified हो, M.Sc./M.Biotech + Ph.D.)",
+    "Medical Council registration certificate, अगर लागू हो",
+    "Annexure I & II (prescribed application forms), भरे और signed हुए",
+    "जन्म तिथि का proof",
+    "Caste / PwBD certificate, अगर लागू हो",
+    "NEFT fee payment proof",
+    "हाल की photo और signature"
+   ],
+   "documents": [
+    "Postgraduate degree certificates और marksheets",
+    "Medical Council registration certificate",
+    "Annexure I & II application forms (भरे, signed, scanned)",
+    "जन्म तिथि का proof",
+    "Caste / PwBD certificate, अगर लागू हो",
+    "NEFT transaction receipt",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "इसे permanent faculty post समझना (tenure-based है, ज़्यादा से ज़्यादा 3 साल)",
+    "पुराने 28-post वाले advertisement से apply करना (addendum में 45 पद हैं)",
+    "Walk-in interview के लिए जाना (कोई walk-in नहीं है)",
+    "21 नवंबर शाम 5 बजे के बाद form भरना"
+   ],
+   "steps": [
+    "aiimsmangalagiri.edu.in पर advertisement और addendum /04A पढ़ें — अपनी department चुनें।",
+    "Annexure I & II (prescribed application forms) भरें और sign करें, फिर scan करें।",
+    "Official Google Form (forms.gle/txqV4P64sK4TCrrUA) खोलें और scanned forms व documents upload करें।",
+    "₹1,500 (Gen/EWS/OBC) या ₹1,000 (SC/ST) fee NEFT से SBI AIIMS Mangalagiri account में भरें (PwBD को छूट) — 21 नवंबर 2026 शाम 5 बजे तक।",
+    "Form submit करके acknowledgement संभालकर रखें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "AIIMS Mangalagiri Senior Resident 2026 में कितनी vacancies हैं?",
+     "a": "45 पद — 24 departments में। Original advertisement (29 अक्टूबर 2026) में 28 पद थे; 10 नवंबर 2026 के addendum /04A ने इन्हें बढ़ाकर 45 कर दिया। Anaesthesiology में सबसे ज़्यादा 10 पद हैं।"
+    },
+    {
+     "q": "AIIMS Mangalagiri Senior Resident 2026 की last date क्या है?",
+     "a": "21 नवंबर 2026, शाम 5 बजे तक। Apply सिर्फ official Google Form से होगा — कोई walk-in interview नहीं है।"
+    },
+    {
+     "q": "AIIMS Mangalagiri Senior Resident 2026 की fee कितनी है?",
+     "a": "General/EWS/OBC के लिए ₹1,500, SC/ST के लिए ₹1,000, PwBD के लिए कोई fee नहीं। Fee NEFT से SBI AIIMS Mangalagiri account (A/c 38321557910, IFSC SBIN0061485) में भरनी है।"
+    },
+    {
+     "q": "AIIMS Mangalagiri Senior Resident की age limit क्या है?",
+     "a": "अधिकतम आयु 45 वर्ष (21 नवंबर 2026 को)। छूट: SC/ST 5 साल, OBC 3 साल, PwBD 10 साल (General), 13 साल (OBC) और 15 साल (SC/ST) तक। यह tenure-based post है — एक बार में 12 महीने, कुल 3 साल तक।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "bob-senior-manager-special-drive-2026",
+  "advt": "Advertisement No. BOB/HRM/REC/ADVT/2026/19",
+  "board_en": "Bank of Baroda",
+  "board_hi": "बैंक ऑफ बड़ौदा",
+  "portal": "bankofbaroda.bank.in",
+  "posts": 11,
+  "dates": {
+   "apply_end": "2026-11-17",
+   "apply_start": "2026-10-28",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-17"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://www.bankofbaroda.bank.in/careers/current-opportunities",
+   "notice": null,
+   "site": "https://www.bankofbaroda.bank.in"
+  },
+  "en": {
+   "name": "Bank of Baroda Special Recruitment Drive 2026",
+   "tagline": "11 backlog posts for SC/ST/OBC candidates only — Senior Manager, Manager and Chief Manager — closes TODAY, 17 November 2026.",
+   "qual": "CA / MBA / PGDM or degree in CS/IT/Data Science (post-wise) + BFSI experience",
+   "fees": [
+    "₹850 for OBC candidates; ₹175 for SC/ST/PwD/Ex-Servicemen/Women candidates — plus payment gateway charges, by 17 November 2026.",
+    "The fee is non-refundable."
+   ],
+   "fees_short": "₹850 (OBC) / ₹175 (SC/ST/PwD/ESM/Women)",
+   "specs": [
+    "11 BACKLOG posts on a REGULAR basis, reserved for SC/ST/OBC (non-creamy layer, Central List) candidates ONLY — there are NO UR, EWS or PwBD seats in this drive.",
+    "Posts: Senior Manager — Project Finance (Infrastructure & ESG) 1, MSME Credit Risk 1, Enterprise & Operational Risk 1, Fraud Incidence & RCA 1, MSME Relationship 1, Business Finance 2; Manager – Digital Fraud 2; Chief Manager – Internal Controls 2. (SC 4, ST 3, OBC 4.)",
+    "Apply online 28 October–17 November 2026 — CLOSES TODAY.",
+    "One post only per candidate — apply for a single post.",
+    "Age (as on 1 October 2026): Risk Senior Managers 27–40 years; Manager – Digital Fraud 24–34 years; Senior Manager – MSME Relationship 30–40 years; Senior Manager – Business Finance 28–38 years; Chief Manager – Internal Controls age as per the advertisement.",
+    "Pay: Manager ₹64,820–93,960; Senior Manager ₹85,920–1,05,280; Chief Manager ₹1,02,300–1,20,940.",
+    "Selection is as per the advertisement (shortlisting followed by interview/assessment — confirm the stages in Advt 2026/19 before applying)."
+   ],
+   "eligibility": [
+    "Senior Manager posts: CA or full-time MBA/PGDM (Finance or related) with at least 5 years of relevant BFSI experience (post-wise in the advertisement).",
+    "Manager – Digital Fraud: Degree in Computer Science/IT/Data Science or MCA with at least 3 years of experience in IT/digital banking.",
+    "Chief Manager – Internal Controls: CA or full-time MBA/PGDM with the prescribed years of relevant experience (see the advertisement).",
+    "Only SC, ST and OBC (non-creamy layer, Central List) candidates can apply — UR, EWS and PwBD candidates are NOT eligible for this special drive.",
+    "Age as on 1 October 2026: 24–40 years (post-wise, see the specs)."
+   ],
+   "dos": [
+    "Apply TODAY — the window closes on 17 November 2026 and there is no extension announced.",
+    "Read Advertisement No. BOB/HRM/REC/ADVT/2026/19 fully on bankofbaroda.bank.in (Careers → Current Opportunities) before applying.",
+    "Apply for ONE post only — multiple applications are not allowed.",
+    "Check that your caste certificate is on the Central List and in the non-creamy layer (OBC) — the drive is only for SC/ST/OBC candidates."
+   ],
+   "donts": [
+    "Do not apply if you are UR, EWS or PwBD — this special drive has no seats for those categories.",
+    "Do not apply for more than one post.",
+    "Do not wait — the form closes today, 17 November 2026.",
+    "Do not pay the fee without checking your category's slab (₹850 OBC / ₹175 SC/ST/PwD/ESM/Women)."
+   ],
+   "checklist": [
+    "CA / MBA / PGDM / CS-IT degree certificate and marksheets",
+    "BFSI experience certificates (5 years for Senior Manager posts)",
+    "Central List caste certificate (SC/ST/OBC non-creamy layer)",
+    "Date of birth proof",
+    "Recent colour photograph and signature scan",
+    "Active email ID and mobile number"
+   ],
+   "documents": [
+    "Degree / professional qualification certificates and marksheets",
+    "Experience certificates",
+    "Central List caste certificate",
+    "Date of birth proof",
+    "Recent photograph and signature",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "UR/EWS/PwBD होकर इस special drive में apply करना (कोई seat नहीं है)",
+    "एक से ज़्यादा post के लिए apply करना",
+    "Central List की जगह State List caste certificate लगाना",
+    "आज (17 नवंबर) की deadline miss करना"
+   ],
+   "steps": [
+    "bankofbaroda.bank.in पर Careers → Current Opportunities खोलें और Advertisement No. BOB/HRM/REC/ADVT/2026/19 पढ़ें।",
+    "अपनी post चुनें (सिर्फ एक post)।",
+    "Online form भरें, photo, signature और documents upload करें।",
+    "₹850 (OBC) या ₹175 (SC/ST/PwD/ESM/Women) fee online भरें — आज, 17 नवंबर 2026 तक।",
+    "Form submit करके printout निकालें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "Bank of Baroda Special Recruitment Drive 2026 me kitni vacancies hain?",
+     "a": "11 backlog पद — Senior Manager 7, Manager – Digital Fraud 2, Chief Manager – Internal Controls 2। ये सिर्फ SC/ST/OBC (non-creamy layer, Central List) उम्मीदवारों के लिए हैं।"
+    },
+    {
+     "q": "Bank of Baroda Special Drive 2026 me UR/EWS candidates apply kar sakte hain?",
+     "a": "नहीं। यह special drive सिर्फ SC/ST/OBC उम्मीदवारों के लिए है — इसमें UR, EWS या PwBD के लिए कोई seat नहीं है।"
+    },
+    {
+     "q": "Bank of Baroda Special Drive 2026 ki last date kya hai?",
+     "a": "17 नवंबर 2026 — आज ही। Apply bankofbaroda.bank.in (Careers → Current Opportunities) से होगा।"
+    },
+    {
+     "q": "Bank of Baroda Special Drive 2026 ki fee kitni hai?",
+     "a": "OBC के लिए ₹850 और SC/ST/PwD/Ex-Servicemen/Women के लिए ₹175 (plus gateway charges)। Fee non-refundable है।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "बैंक ऑफ बड़ौदा स्पेशल रिक्रूटमेंट ड्राइव 2026",
+   "tagline": "सिर्फ SC/ST/OBC उम्मीदवारों के लिए 11 backlog पद — सीनियर मैनेजर, मैनेजर और चीफ मैनेजर — आज, 17 नवंबर 2026 को बंद हो रहा है।",
+   "qual": "CA / MBA / PGDM या CS/IT/Data Science में degree (पद के अनुसार) + BFSI अनुभव",
+   "fees": [
+    "OBC उम्मीदवारों के लिए ₹850; SC/ST/PwD/Ex-Servicemen/Women के लिए ₹175 — payment gateway charges अलग से, 17 नवंबर 2026 तक।",
+    "Fee non-refundable है।"
+   ],
+   "fees_short": "₹850 (OBC) / ₹175 (SC/ST/PwD/ESM/Women)",
+   "specs": [
+    "REGULAR basis पर 11 BACKLOG पद, सिर्फ SC/ST/OBC (non-creamy layer, Central List) उम्मीदवारों के लिए — इस drive में UR, EWS या PwBD के लिए कोई seat नहीं है।",
+    "पद: Senior Manager — Project Finance (Infrastructure & ESG) 1, MSME Credit Risk 1, Enterprise & Operational Risk 1, Fraud Incidence & RCA 1, MSME Relationship 1, Business Finance 2; Manager – Digital Fraud 2; Chief Manager – Internal Controls 2। (SC 4, ST 3, OBC 4।)",
+    "Online आवेदन 28 अक्टूबर–17 नवंबर 2026 — आज बंद हो रहा है।",
+    "एक उम्मीदवार सिर्फ एक post के लिए apply कर सकता है।",
+    "आयु (1 अक्टूबर 2026 को): Risk Senior Managers 27–40 वर्ष; Manager – Digital Fraud 24–34 वर्ष; Senior Manager – MSME Relationship 30–40 वर्ष; Senior Manager – Business Finance 28–38 वर्ष; Chief Manager – Internal Controls की आयु advertisement में देखें।",
+    "वेतन: Manager ₹64,820–93,960; Senior Manager ₹85,920–1,05,280; Chief Manager ₹1,02,300–1,20,940।",
+    "चयन advertisement के अनुसार होगा (shortlisting फिर interview/assessment — apply करने से पहले Advt 2026/19 में stages confirm कर लें)।"
+   ],
+   "eligibility": [
+    "Senior Manager पद: CA या full-time MBA/PGDM (Finance या संबंधित) और कम से कम 5 साल का प्रासंगिक BFSI अनुभव (advertisement में पद-वार)।",
+    "Manager – Digital Fraud: Computer Science/IT/Data Science में Degree या MCA और IT/digital banking में कम से कम 3 साल का अनुभव।",
+    "Chief Manager – Internal Controls: CA या full-time MBA/PGDM और prescribed सालों का प्रासंगिक अनुभव (advertisement देखें)।",
+    "सिर्फ SC, ST और OBC (non-creamy layer, Central List) उम्मीदवार apply कर सकते हैं — UR, EWS और PwBD उम्मीदवार इस special drive के लिए eligible नहीं हैं।",
+    "आयु (1 अक्टूबर 2026 को): 24–40 वर्ष (पद के अनुसार, specs देखें)।"
+   ],
+   "dos": [
+    "आज ही apply करें — window 17 नवंबर 2026 को बंद हो रही है और कोई extension announce नहीं है।",
+    "Apply करने से पहले bankofbaroda.bank.in (Careers → Current Opportunities) पर Advertisement No. BOB/HRM/REC/ADVT/2026/19 पूरा पढ़ें।",
+    "सिर्फ एक post के लिए apply करें — multiple applications allowed नहीं हैं।",
+    "देखें कि आपका caste certificate Central List पर है और OBC के लिए non-creamy layer में है — यह drive सिर्फ SC/ST/OBC उम्मीदवारों के लिए है।"
+   ],
+   "donts": [
+    "अगर आप UR, EWS या PwBD हैं तो apply न करें — इस special drive में उन categories के लिए कोई seat नहीं है।",
+    "एक से ज़्यादा post के लिए apply न करें।",
+    "इंतज़ार न करें — form आज, 17 नवंबर 2026 को बंद हो रहा है।",
+    "अपनी category की fee slab (₹850 OBC / ₹175 SC/ST/PwD/ESM/Women) देखे बिना fee न भरें।"
+   ],
+   "checklist": [
+    "CA / MBA / PGDM / CS-IT degree certificate और marksheets",
+    "BFSI अनुभव के certificates (Senior Manager पदों के लिए 5 साल)",
+    "Central List caste certificate (SC/ST/OBC non-creamy layer)",
+    "जन्म तिथि का proof",
+    "हाल की colour photo और signature scan",
+    "Active email ID और mobile number"
+   ],
+   "documents": [
+    "Degree / professional qualification certificates और marksheets",
+    "अनुभव के certificates",
+    "Central List caste certificate",
+    "जन्म तिथि का proof",
+    "हाल की photo और signature",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "UR/EWS/PwBD होकर इस special drive में apply करना (कोई seat नहीं है)",
+    "एक से ज़्यादा post के लिए apply करना",
+    "Central List की जगह State List caste certificate लगाना",
+    "आज (17 नवंबर) की deadline miss करना"
+   ],
+   "steps": [
+    "bankofbaroda.bank.in पर Careers → Current Opportunities खोलें और Advertisement No. BOB/HRM/REC/ADVT/2026/19 पढ़ें।",
+    "अपनी post चुनें (सिर्फ एक post)।",
+    "Online form भरें, photo, signature और documents upload करें।",
+    "₹850 (OBC) या ₹175 (SC/ST/PwD/ESM/Women) fee online भरें — आज, 17 नवंबर 2026 तक।",
+    "Form submit करके printout निकालें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "Bank of Baroda Special Recruitment Drive 2026 में कितनी vacancies हैं?",
+     "a": "11 backlog पद — Senior Manager 7, Manager – Digital Fraud 2, Chief Manager – Internal Controls 2। ये सिर्फ SC/ST/OBC (non-creamy layer, Central List) उम्मीदवारों के लिए हैं।"
+    },
+    {
+     "q": "Bank of Baroda Special Drive 2026 में UR/EWS candidates apply कर सकते हैं?",
+     "a": "नहीं। यह special drive सिर्फ SC/ST/OBC उम्मीदवारों के लिए है — इसमें UR, EWS या PwBD के लिए कोई seat नहीं है।"
+    },
+    {
+     "q": "Bank of Baroda Special Drive 2026 की last date क्या है?",
+     "a": "17 नवंबर 2026 — आज ही। Apply bankofbaroda.bank.in (Careers → Current Opportunities) से होगा।"
+    },
+    {
+     "q": "Bank of Baroda Special Drive 2026 की fee कितनी है?",
+     "a": "OBC के लिए ₹850 और SC/ST/PwD/Ex-Servicemen/Women के लिए ₹175 (plus gateway charges)। Fee non-refundable है।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "upsc-advt-13-2026",
+  "advt": "Advertisement No. 13/2026",
+  "board_en": "Union Public Service Commission (UPSC)",
+  "board_hi": "संघ लोक सेवा आयोग (UPSC)",
+  "portal": "upsconline.nic.in",
+  "posts": 13,
+  "dates": {
+   "apply_end": "2026-12-04",
+   "apply_start": "2026-11-14",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-04"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://upsconline.nic.in",
+   "notice": "https://www.upsc.gov.in/sites/default/files/AdvtNo-13-2026-Engl-131126_0.pdf",
+   "site": "https://www.upsc.gov.in"
+  },
+  "en": {
+   "name": "UPSC Recruitment 2026 (Advt 13/2026)",
+   "tagline": "13 Group A posts — Dental Surgeon, Ayurveda & Homeopathic Physician, Scientist B — last date 4 December 2026.",
+   "qual": "BDS / Degree in Ayurveda / Degree in Homoeopathy / Master's in Botany, Horticulture or Chemistry (Organic) (post-wise)",
+   "fees": [
+    "₹25 application fee — pay by cash in any SBI branch, SBI net banking, or Visa/Master credit/debit card, by 4 December 2026 (6 PM).",
+    "No fee for SC/ST/PwBD/Women candidates of any community. OBC/EWS/Unreserved male candidates must pay the full fee — no exemption is available to them."
+   ],
+   "fees_short": "₹25",
+   "specs": [
+    "13 Group A posts: Dental Surgeon 5 (Department of Health & Family Welfare; UR 3, EWS 1, SC 1), Ayurveda Physician 2 (New Delhi Municipal Council; UR 1, EWS 1), Homeopathic Physician 1 (New Delhi Municipal Council; EWS 1), Scientist B 5 (Botanical Survey of India; MSc Botany 3, MSc Horticulture 1, MSc Chemistry (Organic) 1).",
+    "Apply online 14 November–4 December 2026 (till 6 PM) at upsconline.nic.in. The last date for printing a completely submitted online application is 5 December 2026 (till 6 PM).",
+    "NO written examination — selection is by shortlisting followed by interview.",
+    "Pay: Level 10 (₹56,100 entry) for all four posts.",
+    "Age is counted as on the closing date, 4 December 2026 — EXCEPT for Scientist B, where the original closing date of 3 July 2026 applies (see eligibility).",
+    "Scientist B is a re-advertisement of Advertisement No. 06/2026 (closing date 3 July 2026); candidates who applied earlier should check the new advertisement for the fresh terms.",
+    "All facts above are taken from the official UPSC PDF of Advertisement No. 13/2026 (28 pages)."
+   ],
+   "eligibility": [
+    "Dental Surgeon (5): A recognised Bachelor of Dental Surgery degree (under the Dentists Act, 1948) or an equivalent recognised dental qualification; registration with any State Dental Council or Tribunal in India; completion of compulsory rotating internship (candidates who have not yet completed it may still appear, but must complete it before appointment if selected). Maximum age: 35 years (UR), 35 years (EWS), 40 years (SC) as on 4 December 2026.",
+    "Ayurveda Physician (2): Degree in Ayurveda of a recognised University / Statutory State Board / Council / Faculty of Indian Systems of Medicine recognised under the Indian Medicine Central Council Act, 1970; enrolment on the Central or State Register for Indian Medicine. Maximum age: 35 years (UR), 35 years (EWS) as on 4 December 2026.",
+    "Homeopathic Physician (1): Degree in Homoeopathy of a recognised University / Statutory State Board / Council or equivalent recognised under the Homoeopathic Central Council Act, 1973; enrolment on the Central Register of Homoeopathy or a State Register of Homoeopathy. Maximum age: 35 years (EWS) as on 4 December 2026.",
+    "Scientist B (5): Master's Degree in Botany or Horticulture or Chemistry (Organic) from a recognised University or Institute. Maximum age: 35 years (UR), 35 years (EWS), 38 years (OBC), 40 years (SC) — counted as on 3 July 2026, the original closing date of Advertisement No. 06/2026, not 4 December 2026.",
+    "Age is further relaxable up to 10 years for PwBD candidates."
+   ],
+   "dos": [
+    "Read Advertisement No. 13/2026 fully on upsc.gov.in before applying — the age-counting date differs for Scientist B.",
+    "Apply only at upsconline.nic.in before 4 December 2026 (6 PM).",
+    "Scientist B candidates: note that age is counted as on 3 July 2026, not the new closing date.",
+    "Keep your degree certificate, registration certificate (Dental/Ayurveda/Homoeopathy) and internship completion proof ready."
+   ],
+   "donts": [
+    "Do not expect a written examination — selection is by shortlisting and interview.",
+    "Do not apply for Scientist B using the 4 December 2026 date for your age — the advertisement fixes 3 July 2026 for that post.",
+    "Do not pay the fee if you are SC/ST/PwBD or a woman candidate — you are exempt; OBC/EWS/Unreserved male candidates must pay ₹25.",
+    "Do not wait for the last day — the portal closes at 6 PM on 4 December 2026."
+   ],
+   "checklist": [
+    "Degree certificate (BDS / Ayurveda / Homoeopathy / Master's in Botany, Horticulture or Chemistry)",
+    "Registration certificate (State Dental Council / Indian Medicine Register / Homoeopathy Register), as applicable",
+    "Internship completion certificate (Dental Surgeon)",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "Recent colour photograph and signature scan"
+   ],
+   "documents": [
+    "Degree certificates and marksheets",
+    "Registration certificate, as applicable",
+    "Internship completion certificate (Dental Surgeon)",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "Recent photograph and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Scientist B के लिए आयु 4 दिसंबर 2026 से गिनना (असल में 3 जुलाई 2026 है)",
+    "Written exam की उम्मीद करना (चयन shortlisting + interview से है)",
+    "SC/ST/PwBD/महिला होकर भी ₹25 fee भरना (छूट है)",
+    "4 दिसंबर शाम 6 बजे की deadline miss करना"
+   ],
+   "steps": [
+    "upsc.gov.in पर Advertisement No. 13/2026 पढ़ें और अपनी post चुनें।",
+    "upsconline.nic.in पर Online Recruitment Application (ORA) खोलें।",
+    "Form भरें, photo, signature और documents upload करें।",
+    "₹25 fee भरें (SBI cash / net banking / Visa-Master card) — SC/ST/PwBD/महिलाओं को छूट — 4 दिसंबर 2026 शाम 6 बजे तक।",
+    "Form submit करें और submitted application का printout 5 दिसंबर 2026 शाम 6 बजे तक निकाल लें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "UPSC Advertisement 13/2026 me kitni vacancies hain?",
+     "a": "13 Group A पद — Dental Surgeon 5, Ayurveda Physician 2, Homeopathic Physician 1 और Scientist B 5। सभी पद Level 10 (₹56,100) के हैं।"
+    },
+    {
+     "q": "UPSC Advt 13/2026 me written exam hoga?",
+     "a": "नहीं। Selection shortlisting के बाद interview से होगा — कोई written examination नहीं है।"
+    },
+    {
+     "q": "UPSC Advt 13/2026 ki last date aur fee kya hai?",
+     "a": "4 दिसंबर 2026, शाम 6 बजे तक। Fee ₹25 है; SC/ST/PwBD और महिला उम्मीदवारों को कोई fee नहीं देनी। OBC/EWS/Unreserved पुरुष उम्मीदवारों को पूरी fee देनी होगी।"
+    },
+    {
+     "q": "UPSC Advt 13/2026 me Scientist B ki age kis date se gini jayegi?",
+     "a": "3 जुलाई 2026 से — क्योंकि Scientist B, Advertisement No. 06/2026 (closing date 3 जुलाई 2026) का re-advertisement है। बाकी तीनों पदों के लिए आयु 4 दिसंबर 2026 को गिनी जाएगी। Scientist B की अधिकतम आयु: UR 35, EWS 35, OBC 38, SC 40 वर्ष।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "UPSC भर्ती 2026 (विज्ञापन संख्या 13/2026)",
+   "tagline": "13 Group A पद — डेंटल सर्जन, आयुर्वेद और होम्योपैथिक फिजिशियन, साइंटिस्ट B — अंतिम तिथि 4 दिसंबर 2026।",
+   "qual": "BDS / आयुर्वेद में Degree / होम्योपैथी में Degree / Botany, Horticulture या Chemistry (Organic) में Master's (पद के अनुसार)",
+   "fees": [
+    "₹25 application fee — SBI की किसी भी शाखा में नकद, SBI net banking, या Visa/Master credit/debit card से, 4 दिसंबर 2026 (शाम 6 बजे) तक।",
+    "SC/ST/PwBD/महिला उम्मीदवारों को कोई fee नहीं देनी। OBC/EWS/Unreserved पुरुष उम्मीदवारों को पूरी fee देनी होगी — उनके लिए कोई छूट नहीं है।"
+   ],
+   "fees_short": "₹25",
+   "specs": [
+    "13 Group A पद: डेंटल सर्जन 5 (स्वास्थ्य एवं परिवार कल्याण विभाग; UR 3, EWS 1, SC 1), आयुर्वेद फिजिशियन 2 (नई दिल्ली नगरपालिका परिषद; UR 1, EWS 1), होम्योपैथिक फिजिशियन 1 (नई दिल्ली नगरपालिका परिषद; EWS 1), साइंटिस्ट B 5 (भारतीय वनस्पति सर्वेक्षण; MSc Botany 3, MSc Horticulture 1, MSc Chemistry (Organic) 1)।",
+    "Online आवेदन 14 नवंबर–4 दिसंबर 2026 (शाम 6 बजे तक) upsconline.nic.in पर। पूरी तरह submit किए गए online application का printout निकालने की अंतिम तिथि 5 दिसंबर 2026 (शाम 6 बजे तक) है।",
+    "कोई written examination नहीं है — चयन shortlisting के बाद interview से होगा।",
+    "वेतन: सभी चारों पदों पर Level 10 (₹56,100 entry)।",
+    "आयु closing date, 4 दिसंबर 2026 को गिनी जाएगी — साइंटिस्ट B को छोड़कर, जिसके लिए 3 जुलाई 2026 की original closing date लागू होती है (eligibility देखें)।",
+    "साइंटिस्ट B, Advertisement No. 06/2026 (closing date 3 जुलाई 2026) का re-advertisement है; पहले apply कर चुके उम्मीदवार नए विज्ञापन की नई शर्तें देख लें।",
+    "ऊपर के सभी तथ्य Advertisement No. 13/2026 के official UPSC PDF (28 pages) से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "डेंटल सर्जन (5): Dentists Act, 1948 के तहत मान्यता प्राप्त Bachelor of Dental Surgery degree या समकक्ष मान्यता प्राप्त dental योग्यता; भारत के किसी भी State Dental Council या Tribunal में registration; compulsory rotating internship पूरी हो (जिनकी internship पूरी नहीं हुई है, वे भी appear कर सकते हैं, लेकिन चयन होने पर appointment से पहले internship पूरी करनी होगी)। अधिकतम आयु: 35 वर्ष (UR), 35 वर्ष (EWS), 40 वर्ष (SC) — 4 दिसंबर 2026 को।",
+    "आयुर्वेद फिजिशियन (2): Indian Medicine Central Council Act, 1970 के तहत मान्यता प्राप्त University / Statutory State Board / Council / Faculty of Indian Systems of Medicine से आयुर्वेद में Degree; Indian Medicine के Central या State Register में enrolment। अधिकतम आयु: 35 वर्ष (UR), 35 वर्ष (EWS) — 4 दिसंबर 2026 को।",
+    "होम्योपैथिक फिजिशियन (1): Homoeopathic Central Council Act, 1973 के तहत मान्यता प्राप्त University / Statutory State Board / Council से होम्योपैथी में Degree या समकक्ष; Central Register of Homoeopathy या State Register of Homoeopathy में enrolment। अधिकतम आयु: 35 वर्ष (EWS) — 4 दिसंबर 2026 को।",
+    "साइंटिस्ट B (5): मान्यता प्राप्त University या Institute से Botany या Horticulture या Chemistry (Organic) में Master's Degree। अधिकतम आयु: 35 वर्ष (UR), 35 वर्ष (EWS), 38 वर्ष (OBC), 40 वर्ष (SC) — 4 दिसंबर 2026 नहीं, बल्कि Advertisement No. 06/2026 की original closing date, 3 जुलाई 2026 को गिनी जाएगी।",
+    "PwBD उम्मीदवारों के लिए आयु में 10 साल तक की और छूट है।"
+   ],
+   "dos": [
+    "Apply करने से पहले upsc.gov.in पर Advertisement No. 13/2026 पूरा पढ़ें — Scientist B के लिए आयु गिनने की तारीख अलग है।",
+    "सिर्फ upsconline.nic.in पर 4 दिसंबर 2026 (शाम 6 बजे) से पहले apply करें।",
+    "Scientist B के उम्मीदवार ध्यान दें: आयु 3 जुलाई 2026 को गिनी जाएगी, नई closing date पर नहीं।",
+    "Degree certificate, registration certificate (Dental/Ayurveda/Homoeopathy) और internship completion proof तैयार रखें।"
+   ],
+   "donts": [
+    "Written examination की उम्मीद न करें — चयन shortlisting और interview से होगा।",
+    "Scientist B के लिए अपनी आयु 4 दिसंबर 2026 से न गिनें — advertisement में 3 जुलाई 2026 तय है।",
+    "SC/ST/PwBD या महिला उम्मीदवार होकर fee न भरें — आपको छूट है; OBC/EWS/Unreserved पुरुष उम्मीदवारों को ₹25 देने होंगे।",
+    "आखिरी दिन का इंतज़ार न करें — portal 4 दिसंबर 2026 शाम 6 बजे बंद हो जाएगा।"
+   ],
+   "checklist": [
+    "Degree certificate (BDS / Ayurveda / Homoeopathy / Botany, Horticulture या Chemistry में Master's)",
+    "Registration certificate (State Dental Council / Indian Medicine Register / Homoeopathy Register), जैसा लागू हो",
+    "Internship completion certificate (Dental Surgeon)",
+    "जन्म तिथि का proof",
+    "Caste / PwBD certificate, अगर लागू हो",
+    "हाल की colour photo और signature scan"
+   ],
+   "documents": [
+    "Degree certificates और marksheets",
+    "Registration certificate, जैसा लागू हो",
+    "Internship completion certificate (Dental Surgeon)",
+    "जन्म तिथि का proof",
+    "Caste / PwBD certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Scientist B के लिए आयु 4 दिसंबर 2026 से गिनना (असल में 3 जुलाई 2026 है)",
+    "Written exam की उम्मीद करना (चयन shortlisting + interview से है)",
+    "SC/ST/PwBD/महिला होकर भी ₹25 fee भरना (छूट है)",
+    "4 दिसंबर शाम 6 बजे की deadline miss करना"
+   ],
+   "steps": [
+    "upsc.gov.in पर Advertisement No. 13/2026 पढ़ें और अपनी post चुनें।",
+    "upsconline.nic.in पर Online Recruitment Application (ORA) खोलें।",
+    "Form भरें, photo, signature और documents upload करें।",
+    "₹25 fee भरें (SBI cash / net banking / Visa-Master card) — SC/ST/PwBD/महिलाओं को छूट — 4 दिसंबर 2026 शाम 6 बजे तक।",
+    "Form submit करें और submitted application का printout 5 दिसंबर 2026 शाम 6 बजे तक निकाल लें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "UPSC Advertisement 13/2026 में कितनी vacancies हैं?",
+     "a": "13 Group A पद — डेंटल सर्जन 5, आयुर्वेद फिजिशियन 2, होम्योपैथिक फिजिशियन 1 और साइंटिस्ट B 5। सभी पद Level 10 (₹56,100) के हैं।"
+    },
+    {
+     "q": "UPSC Advt 13/2026 में written exam होगा?",
+     "a": "नहीं। चयन shortlisting के बाद interview से होगा — कोई written examination नहीं है।"
+    },
+    {
+     "q": "UPSC Advt 13/2026 की last date और fee क्या है?",
+     "a": "4 दिसंबर 2026, शाम 6 बजे तक। Fee ₹25 है; SC/ST/PwBD और महिला उम्मीदवारों को कोई fee नहीं देनी। OBC/EWS/Unreserved पुरुष उम्मीदवारों को पूरी fee देनी होगी।"
+    },
+    {
+     "q": "UPSC Advt 13/2026 में Scientist B की age किस date से गिनी जाएगी?",
+     "a": "3 जुलाई 2026 से — क्योंकि Scientist B, Advertisement No. 06/2026 (closing date 3 जुलाई 2026) का re-advertisement है। बाकी तीनों पदों के लिए आयु 4 दिसंबर 2026 को गिनी जाएगी। Scientist B की अधिकतम आयु: UR 35, EWS 35, OBC 38, SC 40 वर्ष।"
+    }
+   ]
+  }
  }
 ]

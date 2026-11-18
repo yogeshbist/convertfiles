@@ -416,6 +416,17 @@ def kb_slug(kb):
     return '%dmb' % (kb // 1024) if kb >= 1024 and kb % 1024 == 0 else '%dkb' % kb
 
 
+# Per-page CTR overrides for individual KB pages whose search query is an
+# exact size phrase (18 Nov 2026: "compress pdf to 300kb" — 91 impressions,
+# 0 clicks on the shared template title). Keyed by slug; title + desc only.
+KB_OVERRIDES = {
+    'compress-pdf-to-300kb': (
+        'Compress PDF to 300KB Online Free — No Upload, No Sign-Up',
+        'Compress a PDF to 300KB or under — the exact size portals ask for, already preset on this page. '
+        'Drop the file, press the button, download. Free, no sign-up, and nothing is uploaded: it runs in your browser.'),
+}
+
+
 def kb_page(base, kb):
     """A landing page for one fixed size target."""
     lab = kb_label(kb)
@@ -460,6 +471,8 @@ def kb_page(base, kb):
                       ('Target: %s' % lab, 'The limit is already set to %s. Use Strong compression for scans and picture-heavy files; Light when the text must stay selectable.' % lab),
                       ('Compress and download', 'The result shows the new size, at or under %s. If a target is unreachable without making pages unreadable, you get the smallest readable version and a note saying so.' % lab)]
         d['related'] = [base['slug'] + '-to-' + kb_slug(k) for k in KB_PAGES['compress-pdf'] if k != kb] + ['merge-pdf', 'images-to-pdf']
+    if d['slug'] in KB_OVERRIDES:
+        d['title'], d['desc'] = KB_OVERRIDES[d['slug']]
     return d
 
 

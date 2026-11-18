@@ -23878,7 +23878,7 @@
  },
  {
   "slug": "sbi-sco-product-research-risk",
-  "advt": "CRPD/SCO/2026-27/26",
+  "advt": "CRPD/SCO/2026-27/26 & /27",
   "board_en": "State Bank of India (SBI)",
   "board_hi": "भारतीय स्टेट बैंक (SBI)",
   "portal": "sbi.bank.in",
@@ -26510,6 +26510,2407 @@
     {
      "q": "UPSC Advt 13/2026 में Scientist B की age किस date से गिनी जाएगी?",
      "a": "3 जुलाई 2026 से — क्योंकि Scientist B, Advertisement No. 06/2026 (closing date 3 जुलाई 2026) का re-advertisement है। बाकी तीनों पदों के लिए आयु 4 दिसंबर 2026 को गिनी जाएगी। Scientist B की अधिकतम आयु: UR 35, EWS 35, OBC 38, SC 40 वर्ष।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "uksssc-uniformed-constable-2026",
+  "advt": "Advt No. 84/UKSSSC/2026",
+  "board_en": "Uttarakhand Subordinate Service Selection Commission (UKSSSC)",
+  "board_hi": "उत्तराखंड अधीनस्थ सेवा चयन आयोग (UKSSSC)",
+  "portal": "sssc.uk.gov.in",
+  "posts": 1694,
+  "dates": {
+   "apply_end": "2026-12-25",
+   "apply_start": "2026-11-25",
+   "correction_end": "2026-12-30",
+   "correction_start": "2026-12-28",
+   "exam": "4 April 2027 (tentative)",
+   "exam_hi": "4 अप्रैल 2027 (अस्थायी)",
+   "fee_end": "2026-12-25"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://sssc.uk.gov.in",
+   "notice": null,
+   "site": "https://sssc.uk.gov.in"
+  },
+  "en": {
+   "name": "UKSSSC Uniformed Constable Recruitment 2026 (Group C)",
+   "tagline": "1,694 Group C uniformed posts — District Police, PAC/IRB, Fireman, Forest Guard, Jail Warder and more — last date 25 December 2026.",
+   "qual": "Intermediate (10+2) from Uttarakhand Board / UP Board or equivalent",
+   "fees": [
+    "₹300 for General/OBC candidates — pay online by 25 December 2026.",
+    "₹150 for SC/ST/EWS/Divyang candidates. Orphan candidates pay no fee."
+   ],
+   "fees_short": "₹300",
+   "specs": [
+    "1,694 posts across 11 roles: District Police Constable (Male) 464, PAC/IRB Constable (Male) 284, District Police Constable (Female) 238, Fireman 201, Forest Guard 171, Special Tiger Guards 75, Jail Warder 117, Female Jail Warder 27, Secretariat Guard 54, Excise Constable 45, Transport Constable 18.",
+    "Apply online 25 November–25 December 2026 (11:59 PM) at sssc.uk.gov.in. Correction window: 28–30 December 2026.",
+    "Written examination tentatively on 4 April 2027, followed by physical standards/measurement and physical efficiency tests, medical examination and document verification — see Advt 84/2026 for the post-wise stages.",
+    "Age as on 1 July 2026: minimum 18 years; maximum varies by post (25–35 years) — check the post-wise limits in the notification.",
+    "Physical standards apply as per the notice (male height 165 cm, female height 152 cm).",
+    "Some websites quote 986 posts — that counts only the three police constable posts (464 + 284 + 238). The full Advt 84/2026 covers 1,694 posts across 11 roles.",
+    "All facts above are taken from Advt No. 84/UKSSSC/2026, dated 17 November 2026."
+   ],
+   "eligibility": [
+    "Intermediate (10+2) pass from the Uttarakhand Board, UP Board or an equivalent recognised board.",
+    "Age: minimum 18 years; maximum 25–35 years depending on the post, as on 1 July 2026. Check the post-wise age limit in Advt 84/2026 before applying.",
+    "Must meet the post-wise physical standards (height/chest) given in the notification.",
+    "Read Advt 84/2026 fully on sssc.uk.gov.in before applying — age, physical standards and selection stages differ by post."
+   ],
+   "dos": [
+    "Read Advt No. 84/UKSSSC/2026 fully on sssc.uk.gov.in before applying — check the post-wise age limit and physical standards for your post.",
+    "Apply only on the UKSSSC portal (sssc.uk.gov.in) between 25 November and 25 December 2026.",
+    "Keep your Intermediate marksheet, domicile/category certificate and a recent photo ready before the form opens.",
+    "Use the correction window (28–30 December 2026) to fix any mistake — after that no change is allowed."
+   ],
+   "donts": [
+    "Do not apply for a post whose age limit or physical standard you do not meet — post-wise limits differ.",
+    "Do not quote the 986-post figure — the full advertisement covers 1,694 posts across 11 roles.",
+    "Do not wait for the last day — the portal closes on 25 December 2026 at 11:59 PM.",
+    "Do not pay any fee if you are an orphan candidate — you are exempt."
+   ],
+   "checklist": [
+    "Intermediate (10+2) marksheet and certificate",
+    "Date of birth proof",
+    "Domicile certificate, if applicable",
+    "Caste / category certificate, if applicable",
+    "Recent passport-size photo and signature scan",
+    "Divyang certificate, if applicable"
+   ],
+   "documents": [
+    "Intermediate (10+2) marksheet and certificate",
+    "Date of birth proof",
+    "Domicile certificate, if applicable",
+    "Caste / category certificate, if applicable",
+    "Recent photo and signature",
+    "Divyang certificate, if applicable"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Galat post ke liye apply karna (har post ki age limit aur physical standard alag hai)",
+    "986 posts wala aankda maan lena (poora vigyapan 1,694 posts ka hai)",
+    "Correction window (28–30 Dec) miss karna",
+    "25 दिसंबर रात 11:59 बजे की deadline miss karna"
+   ],
+   "steps": [
+    "sssc.uk.gov.in par Advt No. 84/UKSSSC/2026 padhen aur apni post chunen.",
+    "25 नवंबर 2026 se portal par registration karen aur form bharen.",
+    "Photo, signature aur documents upload karen.",
+    "₹300 (Gen/OBC) ya ₹150 (SC/ST/EWS/Divyang) fee online bharen — Orphan candidates ko koi fee nahi — 25 दिसंबर 2026 tak.",
+    "Form submit karen aur confirmation page save karen. Correction 28–30 दिसंबर 2026 tak kar sakte hain."
+   ],
+   "extra_faq": [
+    {
+     "q": "UKSSSC Uniformed Constable 2026 me kitni vacancies hain?",
+     "a": "1,694 Group C posts — District Police Constable (Male 464, Female 238), PAC/IRB Constable (Male 284), Fireman 201, Forest Guard 171, Special Tiger Guards 75, Jail Warder 117, Female Jail Warder 27, Secretariat Guard 54, Excise Constable 45 aur Transport Constable 18."
+    },
+    {
+     "q": "UKSSSC Uniformed Constable 2026 ki last date aur fee kya hai?",
+     "a": "25 दिसंबर 2026 (रात 11:59 बजे तक)। Fee ₹300 (General/OBC) aur ₹150 (SC/ST/EWS/Divyang) है; Orphan candidates ko koi fee नहीं देनी। Correction window 28–30 दिसंबर 2026 है।"
+    },
+    {
+     "q": "UKSSSC Uniformed Constable 2026 ke liye qualification aur age limit kya hai?",
+     "a": "Intermediate (10+2) pass। Age 1 जुलाई 2026 को कम से कम 18 वर्ष; अधिकतम सीमा post के अनुसार 25–35 वर्ष है — post-wise limits Advt 84/2026 में देखें। Physical standards (height/chest) भी post के अनुसार लागू होते हैं।"
+    },
+    {
+     "q": "UKSSSC Uniformed Constable ki exam kab hogi?",
+     "a": "Written examination 4 अप्रैल 2027 को अस्थायी रूप से तय है। उसके बाद post-wise physical tests, medical examination aur document verification honge — stages Advt 84/2026 में देखें।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "UKSSSC वर्दीधारी कांस्टेबल भर्ती 2026 (Group C)",
+   "tagline": "1,694 Group C वर्दीधारी पद — जिला पुलिस, PAC/IRB, फायरमैन, वन रक्षक, जेल वार्डर और अन्य — अंतिम तिथि 25 दिसंबर 2026।",
+   "qual": "उत्तराखंड बोर्ड / UP बोर्ड या समकक्ष से इंटरमीडिएट (10+2)",
+   "fees": [
+    "₹300 General/OBC उम्मीदवारों के लिए — 25 दिसंबर 2026 तक online भरें।",
+    "₹150 SC/ST/EWS/दिव्यांग उम्मीदवारों के लिए। अनाथ (Orphan) उम्मीदवारों को कोई fee नहीं देनी।"
+   ],
+   "fees_short": "₹300",
+   "specs": [
+    "11 भूमिकाओं में 1,694 पद: जिला पुलिस कांस्टेबल (पुरुष) 464, PAC/IRB कांस्टेबल (पुरुष) 284, जिला पुलिस कांस्टेबल (महिला) 238, फायरमैन 201, वन रक्षक 171, स्पेशल टाइगर गार्ड्स 75, जेल वार्डर 117, महिला जेल वार्डर 27, सचिवालय गार्ड 54, आबकारी कांस्टेबल 45, परिवहन कांस्टेबल 18।",
+    "Online आवेदन 25 नवंबर–25 दिसंबर 2026 (रात 11:59 बजे तक) sssc.uk.gov.in पर। Correction window: 28–30 दिसंबर 2026।",
+    "लिखित परीक्षा अस्थायी रूप से 4 अप्रैल 2027 को, उसके बाद शारीरिक माप/दक्षता परीक्षा, चिकित्सा जांच और दस्तावेज़ सत्यापन — post-wise stages Advt 84/2026 में देखें।",
+    "आयु 1 जुलाई 2026 को: न्यूनतम 18 वर्ष; अधिकतम post के अनुसार 25–35 वर्ष — post-wise limits notification में देखें।",
+    "शारीरिक मानक notification के अनुसार लागू (पुरुष ऊंचाई 165 cm, महिला ऊंचाई 152 cm)।",
+    "कुछ websites 986 पद बताती हैं — वह सिर्फ तीन पुलिस कांस्टेबल पदों (464 + 284 + 238) की गिनती है। पूरा Advt 84/2026, 11 भूमिकाओं में 1,694 पदों का है।",
+    "ऊपर के सभी तथ्य Advt No. 84/UKSSSC/2026, दिनांक 17 नवंबर 2026 से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "उत्तराखंड बोर्ड, UP बोर्ड या समकक्ष मान्यता प्राप्त बोर्ड से इंटरमीडिएट (10+2) पास।",
+    "आयु: न्यूनतम 18 वर्ष; अधिकतम post के अनुसार 25–35 वर्ष, 1 जुलाई 2026 को। Apply करने से पहले Advt 84/2026 में post-wise age limit देखें।",
+    "Notification में दिए गए post-wise शारीरिक मानक (ऊंचाई/सीना) पूरे करने होंगे।",
+    "Apply करने से पहले sssc.uk.gov.in पर Advt 84/2026 पूरा पढ़ें — age, शारीरिक मानक और चयन प्रक्रिया post के अनुसार अलग हैं।"
+   ],
+   "dos": [
+    "Apply करने से पहले sssc.uk.gov.in पर Advt No. 84/UKSSSC/2026 पूरा पढ़ें — अपनी post की age limit और शारीरिक मानक देखें।",
+    "सिर्फ UKSSSC portal (sssc.uk.gov.in) पर 25 नवंबर से 25 दिसंबर 2026 के बीच apply करें।",
+    "Form खुलने से पहले इंटरमीडिएट मार्कशीट, domicile/category certificate और हाल की photo तैयार रखें।",
+    "Correction window (28–30 दिसंबर 2026) में कोई गलती हो तो सुधार लें — उसके बाद कोई बदलाव नहीं होगा।"
+   ],
+   "donts": [
+    "उस post के लिए apply न करें जिसकी age limit या शारीरिक मानक आप पूरे नहीं करते — post-wise limits अलग हैं।",
+    "986 posts वाला आंकड़ा न मानें — पूरा विज्ञापन 11 भूमिकाओं में 1,694 पदों का है।",
+    "आखिरी दिन का इंतज़ार न करें — portal 25 दिसंबर 2026 रात 11:59 बजे बंद हो जाएगा।",
+    "Orphan उम्मीदवार होकर fee न भरें — आपको छूट है।"
+   ],
+   "checklist": [
+    "इंटरमीडिएट (10+2) मार्कशीट और certificate",
+    "जन्म तिथि का proof",
+    "Domicile certificate, अगर लागू हो",
+    "Caste / category certificate, अगर लागू हो",
+    "हाल की passport-size photo और signature scan",
+    "दिव्यांग certificate, अगर लागू हो"
+   ],
+   "documents": [
+    "इंटरमीडिएट (10+2) मार्कशीट और certificate",
+    "जन्म तिथि का proof",
+    "Domicile certificate, अगर लागू हो",
+    "Caste / category certificate, अगर लागू हो",
+    "हाल की photo और signature",
+    "दिव्यांग certificate, अगर लागू हो"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "गलत post के लिए apply करना (हर post की age limit और शारीरिक मानक अलग हैं)",
+    "986 posts वाला आंकड़ा मान लेना (पूरा विज्ञापन 1,694 posts का है)",
+    "Correction window (28–30 Dec) miss करना",
+    "25 दिसंबर रात 11:59 बजे की deadline miss करना"
+   ],
+   "steps": [
+    "sssc.uk.gov.in पर Advt No. 84/UKSSSC/2026 पढ़ें और अपनी post चुनें।",
+    "25 नवंबर 2026 से portal पर registration करें और form भरें।",
+    "Photo, signature और documents upload करें।",
+    "₹300 (Gen/OBC) या ₹150 (SC/ST/EWS/दिव्यांग) fee online भरें — Orphan उम्मीदवारों को कोई fee नहीं — 25 दिसंबर 2026 तक।",
+    "Form submit करें और confirmation page save करें। Correction 28–30 दिसंबर 2026 तक कर सकते हैं।"
+   ],
+   "extra_faq": [
+    {
+     "q": "UKSSSC वर्दीधारी कांस्टेबल 2026 में कितनी vacancies हैं?",
+     "a": "1,694 Group C पद — जिला पुलिस कांस्टेबल (पुरुष 464, महिला 238), PAC/IRB कांस्टेबल (पुरुष 284), फायरमैन 201, वन रक्षक 171, स्पेशल टाइगर गार्ड्स 75, जेल वार्डर 117, महिला जेल वार्डर 27, सचिवालय गार्ड 54, आबकारी कांस्टेबल 45 और परिवहन कांस्टेबल 18।"
+    },
+    {
+     "q": "UKSSSC वर्दीधारी कांस्टेबल 2026 की last date और fee क्या है?",
+     "a": "25 दिसंबर 2026 (रात 11:59 बजे तक)। Fee ₹300 (General/OBC) और ₹150 (SC/ST/EWS/दिव्यांग) है; Orphan उम्मीदवारों को कोई fee नहीं देनी। Correction window 28–30 दिसंबर 2026 है।"
+    },
+    {
+     "q": "UKSSSC वर्दीधारी कांस्टेबल 2026 के लिए qualification और age limit क्या है?",
+     "a": "इंटरमीडिएट (10+2) पास। Age 1 जुलाई 2026 को कम से कम 18 वर्ष; अधिकतम सीमा post के अनुसार 25–35 वर्ष है — post-wise limits Advt 84/2026 में देखें। शारीरिक मानक (ऊंचाई/सीना) भी post के अनुसार लागू होते हैं।"
+    },
+    {
+     "q": "UKSSSC वर्दीधारी कांस्टेबल की exam कब होगी?",
+     "a": "लिखित परीक्षा 4 अप्रैल 2027 को अस्थायी रूप से तय है। उसके बाद post-wise physical tests, medical examination और document verification होंगे — stages Advt 84/2026 में देखें।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "jkssb-je-civil-2026",
+  "advt": "Advertisement Notification No. 11 of 2026",
+  "board_en": "Jammu & Kashmir Services Selection Board (JKSSB)",
+  "board_hi": "जम्मू और कश्मीर सेवा चयन बोर्ड (JKSSB)",
+  "portal": "jkssb.nic.in",
+  "posts": 458,
+  "dates": {
+   "apply_end": "2026-12-29",
+   "apply_start": "2026-11-30",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-29"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://jkssb.nic.in",
+   "notice": "https://jkssb.nic.in/Pdf/Advertisement_11OF2026_27102026.pdf",
+   "site": "https://jkssb.nic.in"
+  },
+  "en": {
+   "name": "JKSSB Junior Engineer (Civil) Recruitment 2026",
+   "tagline": "458 Junior Engineer (Civil) posts in Jal Shakti (282) and PWD (R&B) (176) — apply 30 November–29 December 2026.",
+   "qual": "3-year Diploma in Civil Engineering / Degree in Civil Engineering / AMIE Sections A & B",
+   "fees": [
+    "₹600 application fee — pay online by 29 December 2026.",
+    "₹500 for SC, ST-1, ST-2, EWS and PwBD candidates."
+   ],
+   "fees_short": "₹600",
+   "specs": [
+    "458 UT Cadre posts: Junior Engineer (Civil) in the Jal Shakti Department 282 and the Public Works (R&B) Department 176.",
+    "Apply online 30 November–29 December 2026 at jkssb.nic.in. The cut-off date (29 December 2026) applies to qualification, domicile certificate and category certificate.",
+    "Only domiciles of the Union Territory of Jammu & Kashmir can apply — a valid Domicile Certificate issued on or before 29 December 2026 is required.",
+    "Selection is by written OMR examination only — objective multiple-choice questions in English, with 1/4 negative marking. The syllabus, exam date and centres will be notified separately by the Board.",
+    "Pay: Level-6 (₹35,400–1,12,400).",
+    "The number of posts may increase or decrease before the selection process is completed.",
+    "All facts above are taken from Advertisement Notification No. 11 of 2026, dated 27 October 2026 (official JKSSB PDF)."
+   ],
+   "eligibility": [
+    "Domicile of the Union Territory of Jammu & Kashmir, with a valid Domicile Certificate issued on or before 29 December 2026.",
+    "3-year Diploma in Civil Engineering, OR a Degree in Civil Engineering, OR AMIE Sections A & B — acquired on or before the cut-off date, 29 December 2026.",
+    "Age as on 1 January 2026: 18–40 years (OM), 43 years (reserved categories), 42 years (PwBD)."
+   ],
+   "dos": [
+    "Read Advertisement Notification No. 11 of 2026 fully on jkssb.nic.in before applying.",
+    "Apply only on jkssb.nic.in between 30 November and 29 December 2026.",
+    "Keep your domicile certificate, diploma/degree certificate and category certificate ready — all must be valid on or before 29 December 2026.",
+    "Check the JKSSB website later for the syllabus, exam date and centres — they will be notified separately."
+   ],
+   "donts": [
+    "Do not apply if you are not a domicile of the UT of Jammu & Kashmir — only UT domiciles are eligible.",
+    "Do not apply with a qualification acquired after 29 December 2026 — the cut-off is strict.",
+    "Do not wait for the last day — the portal closes on 29 December 2026.",
+    "Do not expect the syllabus in this advertisement — it will be notified separately."
+   ],
+   "checklist": [
+    "Domicile Certificate (UT of J&K, issued on or before 29 December 2026)",
+    "Diploma / Degree in Civil Engineering or AMIE certificate",
+    "Date of birth proof",
+    "Category certificate (SC/ST/OBC/EWS/RBA/ALC), if applicable",
+    "PwBD certificate, if applicable",
+    "Recent photo and signature scan"
+   ],
+   "documents": [
+    "Domicile Certificate (UT of J&K)",
+    "Diploma / Degree / AMIE certificate and marksheets",
+    "Date of birth proof",
+    "Category certificate, if applicable",
+    "PwBD certificate, if applicable",
+    "Recent photo and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "J&K domicile na hote hue bhi apply karna",
+    "29 दिसंबर 2026 ke baad ki qualification par apply karna",
+    "Syllabus isi notification me dhoondhna (ye alag se notify hoga)",
+    "29 दिसंबर की deadline miss karna"
+   ],
+   "steps": [
+    "jkssb.nic.in par Advertisement Notification No. 11 of 2026 padhen.",
+    "30 नवंबर 2026 se JKSSB portal par registration karen aur form bharen.",
+    "Domicile certificate, diploma/degree aur category documents upload karen.",
+    "₹600 (₹500 SC/ST-1/ST-2/EWS/PwBD) fee online bharen — 29 दिसंबर 2026 tak.",
+    "Form submit karen aur confirmation save karen. Syllabus aur exam date ke liye JKSSB website dekhte rahen."
+   ],
+   "extra_faq": [
+    {
+     "q": "JKSSB JE (Civil) 2026 me kitni vacancies hain?",
+     "a": "458 posts — Jal Shakti Department me 282 aur Public Works (R&B) Department me 176। Ye UT Cadre posts hain, Pay Level-6 (₹35,400–1,12,400) ke।"
+    },
+    {
+     "q": "JKSSB JE (Civil) 2026 ki last date aur fee kya hai?",
+     "a": "Online आवेदन 30 नवंबर से 29 दिसंबर 2026 तक। Fee ₹600 है; SC, ST-1, ST-2, EWS aur PwBD उम्मीदवारों के लिए ₹500 है।"
+    },
+    {
+     "q": "JKSSB JE (Civil) ke liye kaun apply kar sakta hai?",
+     "a": "Sirf Jammu & Kashmir UT ke domicile — valid Domicile Certificate 29 दिसंबर 2026 तक जारी होना चाहिए। Qualification: 3-saal ka Civil Engineering Diploma, Civil Engineering me Degree, ya AMIE Sections A & B। Age 1 जनवरी 2026 को: OM 18–40, reserved categories 43, PwBD 42 वर्ष।"
+    },
+    {
+     "q": "JKSSB JE (Civil) me selection kaise hoga?",
+     "a": "Sirf written OMR examination se — English me objective multiple-choice questions, 1/4 negative marking ke saath। Syllabus, exam date aur centres Board alag se notify karega।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "JKSSB जूनियर इंजीनियर (सिविल) भर्ती 2026",
+   "tagline": "458 जूनियर इंजीनियर (सिविल) पद — जल शक्ति (282) और लोक निर्माण (R&B) (176) में — 30 नवंबर–29 दिसंबर 2026 तक आवेदन करें।",
+   "qual": "सिविल इंजीनियरिंग में 3-वर्षीय डिप्लोमा / सिविल इंजीनियरिंग में डिग्री / AMIE Sections A & B",
+   "fees": [
+    "₹600 application fee — 29 दिसंबर 2026 तक online भरें।",
+    "SC, ST-1, ST-2, EWS और PwBD उम्मीदवारों के लिए ₹500।"
+   ],
+   "fees_short": "₹600",
+   "specs": [
+    "458 UT Cadre पद: जल शक्ति विभाग में जूनियर इंजीनियर (सिविल) 282 और लोक निर्माण (R&B) विभाग में 176।",
+    "Online आवेदन 30 नवंबर–29 दिसंबर 2026 तक jkssb.nic.in पर। Cut-off date (29 दिसंबर 2026) qualification, domicile certificate और category certificate — तीनों पर लागू होती है।",
+    "सिर्फ जम्मू और कश्मीर केंद्र शासित प्रदेश के domicile ही apply कर सकते हैं — 29 दिसंबर 2026 तक जारी valid Domicile Certificate चाहिए।",
+    "चयन सिर्फ written OMR examination से होगा — English में objective multiple-choice questions, 1/4 negative marking के साथ। Syllabus, exam date और centres Board अलग से notify करेगा।",
+    "वेतन: Level-6 (₹35,400–1,12,400)।",
+    "चयन प्रक्रिया पूरी होने से पहले पदों की संख्या बढ़ या घट सकती है।",
+    "ऊपर के सभी तथ्य Advertisement Notification No. 11 of 2026, दिनांक 27 अक्टूबर 2026 (official JKSSB PDF) से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "जम्मू और कश्मीर केंद्र शासित प्रदेश का domicile, 29 दिसंबर 2026 तक जारी valid Domicile Certificate के साथ।",
+    "सिविल इंजीनियरिंग में 3-वर्षीय डिप्लोमा, या सिविल इंजीनियरिंग में डिग्री, या AMIE Sections A & B — 29 दिसंबर 2026 की cut-off date तक हासिल की हुई।",
+    "आयु 1 जनवरी 2026 को: 18–40 वर्ष (OM), 43 वर्ष (reserved categories), 42 वर्ष (PwBD)।"
+   ],
+   "dos": [
+    "Apply करने से पहले jkssb.nic.in पर Advertisement Notification No. 11 of 2026 पूरा पढ़ें।",
+    "सिर्फ jkssb.nic.in पर 30 नवंबर से 29 दिसंबर 2026 के बीच apply करें।",
+    "Domicile certificate, diploma/degree certificate और category certificate तैयार रखें — सभी 29 दिसंबर 2026 तक valid होने चाहिए।",
+    "Syllabus, exam date और centres के लिए JKSSB website देखते रहें — ये अलग से notify होंगे।"
+   ],
+   "donts": [
+    "J&K UT के domicile न होकर apply न करें — सिर्फ UT domicile ही eligible हैं।",
+    "29 दिसंबर 2026 के बाद हासिल की गई qualification पर apply न करें — cut-off strict है।",
+    "आखिरी दिन का इंतज़ार न करें — portal 29 दिसंबर 2026 को बंद हो जाएगा।",
+    "Syllabus इसी notification में न खोजें — यह अलग से notify होगा।"
+   ],
+   "checklist": [
+    "Domicile Certificate (J&K UT, 29 दिसंबर 2026 तक जारी)",
+    "सिविल इंजीनियरिंग में Diploma / Degree या AMIE certificate",
+    "जन्म तिथि का proof",
+    "Category certificate (SC/ST/OBC/EWS/RBA/ALC), अगर लागू हो",
+    "PwBD certificate, अगर लागू हो",
+    "हाल की photo और signature scan"
+   ],
+   "documents": [
+    "Domicile Certificate (J&K UT)",
+    "Diploma / Degree / AMIE certificate और marksheets",
+    "जन्म तिथि का proof",
+    "Category certificate, अगर लागू हो",
+    "PwBD certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "J&K domicile न होते हुए भी apply करना",
+    "29 दिसंबर 2026 के बाद की qualification पर apply करना",
+    "Syllabus इसी notification में ढूंढना (यह अलग से notify होगा)",
+    "29 दिसंबर की deadline miss करना"
+   ],
+   "steps": [
+    "jkssb.nic.in पर Advertisement Notification No. 11 of 2026 पढ़ें।",
+    "30 नवंबर 2026 से JKSSB portal पर registration करें और form भरें।",
+    "Domicile certificate, diploma/degree और category documents upload करें।",
+    "₹600 (₹500 SC/ST-1/ST-2/EWS/PwBD) fee online भरें — 29 दिसंबर 2026 तक।",
+    "Form submit करें और confirmation save करें। Syllabus और exam date के लिए JKSSB website देखते रहें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "JKSSB JE (Civil) 2026 में कितनी vacancies हैं?",
+     "a": "458 पद — जल शक्ति विभाग में 282 और लोक निर्माण (R&B) विभाग में 176। ये UT Cadre पद हैं, Pay Level-6 (₹35,400–1,12,400) के।"
+    },
+    {
+     "q": "JKSSB JE (Civil) 2026 की last date और fee क्या है?",
+     "a": "Online आवेदन 30 नवंबर से 29 दिसंबर 2026 तक। Fee ₹600 है; SC, ST-1, ST-2, EWS और PwBD उम्मीदवारों के लिए ₹500 है।"
+    },
+    {
+     "q": "JKSSB JE (Civil) के लिए कौन apply कर सकता है?",
+     "a": "सिर्फ जम्मू और कश्मीर UT के domicile — valid Domicile Certificate 29 दिसंबर 2026 तक जारी होना चाहिए। Qualification: 3-साल का सिविल इंजीनियरिंग डिप्लोमा, सिविल इंजीनियरिंग में डिग्री, या AMIE Sections A & B। Age 1 जनवरी 2026 को: OM 18–40, reserved categories 43, PwBD 42 वर्ष।"
+    },
+    {
+     "q": "JKSSB JE (Civil) में selection कैसे होगा?",
+     "a": "सिर्फ written OMR examination से — English में objective multiple-choice questions, 1/4 negative marking के साथ। Syllabus, exam date और centres Board अलग से notify करेगा।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "jkssb-je-mechanical-2026",
+  "advt": "Notification No. 10 of 2026",
+  "board_en": "Jammu & Kashmir Services Selection Board (JKSSB)",
+  "board_hi": "जम्मू और कश्मीर सेवा चयन बोर्ड (JKSSB)",
+  "portal": "jkssb.nic.in",
+  "posts": 127,
+  "dates": {
+   "apply_end": "2026-12-15",
+   "apply_start": "2026-11-16",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-15"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://jkssb.nic.in",
+   "notice": "https://www.jkssb.nic.in/Pdf/Advt_notification_10OF2026_21102026.pdf",
+   "site": "https://jkssb.nic.in"
+  },
+  "en": {
+   "name": "JKSSB Junior Engineer (Mechanical) Recruitment 2026",
+   "tagline": "127 Junior Engineer (Mechanical) posts in PWD (R&B) — apply 16 November–15 December 2026.",
+   "qual": "3-year Diploma in Mechanical Engineering / Degree in Mechanical Engineering / AMIE Sections A & B",
+   "fees": [
+    "₹600 application fee — pay online by 15 December 2026.",
+    "₹500 for SC, ST-1, ST-2, EWS and PwBD candidates."
+   ],
+   "fees_short": "₹600",
+   "specs": [
+    "127 UT Cadre posts of Junior Engineer (Mechanical) in the Public Works (R&B) Department (Item No. 265): OM 51, SC 10, ST-1 13, ST-2 13, OBC 10, ALC/IB 5, RBA 13, EWS 12.",
+    "Apply online 16 November–15 December 2026 at jkssb.nic.in. The cut-off date (15 December 2026) applies to qualification, domicile certificate and category certificate.",
+    "Only domiciles of the Union Territory of Jammu & Kashmir can apply — a valid Domicile Certificate issued on or before 15 December 2026 is required.",
+    "Selection is by written OMR examination only — objective multiple-choice questions in English, with 1/4 negative marking. The syllabus, exam date and centres will be notified separately by the Board.",
+    "Pay: Level-6 (₹35,400–1,12,400).",
+    "The number of posts may increase or decrease before the selection process is completed.",
+    "All facts above are taken from Notification No. 10 of 2026, dated 21 October 2026 (official JKSSB PDF)."
+   ],
+   "eligibility": [
+    "Domicile of the Union Territory of Jammu & Kashmir, with a valid Domicile Certificate issued on or before 15 December 2026.",
+    "3-year Diploma in Mechanical Engineering, OR a Degree in Mechanical Engineering, OR AMIE Sections A & B — acquired on or before the cut-off date, 15 December 2026.",
+    "Age as on 1 January 2026: 18–40 years (OM), 43 years (reserved categories), 42 years (PwBD)."
+   ],
+   "dos": [
+    "Read Notification No. 10 of 2026 fully on jkssb.nic.in before applying.",
+    "Apply only on jkssb.nic.in between 16 November and 15 December 2026.",
+    "Keep your domicile certificate, diploma/degree certificate and category certificate ready — all must be valid on or before 15 December 2026.",
+    "Check the JKSSB website later for the syllabus, exam date and centres — they will be notified separately."
+   ],
+   "donts": [
+    "Do not apply if you are not a domicile of the UT of Jammu & Kashmir — only UT domiciles are eligible.",
+    "Do not apply with a qualification acquired after 15 December 2026 — the cut-off is strict.",
+    "Do not wait for the last day — the portal closes on 15 December 2026.",
+    "Do not confuse this with the JKSSB JE (Civil) advertisement (Notification No. 11 of 2026) — the two are separate advertisements with separate forms and fees."
+   ],
+   "checklist": [
+    "Domicile Certificate (UT of J&K, issued on or before 15 December 2026)",
+    "Diploma / Degree in Mechanical Engineering or AMIE certificate",
+    "Date of birth proof",
+    "Category certificate (SC/ST/OBC/EWS/RBA/ALC), if applicable",
+    "PwBD certificate, if applicable",
+    "Recent photo and signature scan"
+   ],
+   "documents": [
+    "Domicile Certificate (UT of J&K)",
+    "Diploma / Degree / AMIE certificate and marksheets",
+    "Date of birth proof",
+    "Category certificate, if applicable",
+    "PwBD certificate, if applicable",
+    "Recent photo and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "J&K domicile na hote hue bhi apply karna",
+    "15 दिसंबर 2026 ke baad ki qualification par apply karna",
+    "JE (Civil) wale form se confuse hona (dono alag vigyapan hain)",
+    "15 दिसंबर की deadline miss karna"
+   ],
+   "steps": [
+    "jkssb.nic.in par Notification No. 10 of 2026 padhen.",
+    "16 नवंबर 2026 se JKSSB portal par registration karen aur form bharen.",
+    "Domicile certificate, diploma/degree aur category documents upload karen.",
+    "₹600 (₹500 SC/ST-1/ST-2/EWS/PwBD) fee online bharen — 15 दिसंबर 2026 tak.",
+    "Form submit karen aur confirmation save karen. Syllabus aur exam date ke liye JKSSB website dekhte rahen."
+   ],
+   "extra_faq": [
+    {
+     "q": "JKSSB JE (Mechanical) 2026 me kitni vacancies hain?",
+     "a": "127 posts — Public Works (R&B) Department me Junior Engineer (Mechanical), UT Cadre, Pay Level-6 (₹35,400–1,12,400)। Category-wise: OM 51, SC 10, ST-1 13, ST-2 13, OBC 10, ALC/IB 5, RBA 13, EWS 12।"
+    },
+    {
+     "q": "JKSSB JE (Mechanical) 2026 ki last date aur fee kya hai?",
+     "a": "Online आवेदन 16 नवंबर से 15 दिसंबर 2026 तक। Fee ₹600 है; SC, ST-1, ST-2, EWS aur PwBD उम्मीदवारों के लिए ₹500 है।"
+    },
+    {
+     "q": "JKSSB JE (Mechanical) ke liye kaun apply kar sakta hai?",
+     "a": "Sirf Jammu & Kashmir UT ke domicile — valid Domicile Certificate 15 दिसंबर 2026 तक जारी होना चाहिए। Qualification: 3-saal ka Mechanical Engineering Diploma, Mechanical Engineering me Degree, ya AMIE Sections A & B। Age 1 जनवरी 2026 को: OM 18–40, reserved categories 43, PwBD 42 वर्ष।"
+    },
+    {
+     "q": "JKSSB JE (Mechanical) me selection kaise hoga?",
+     "a": "Sirf written OMR examination se — English me objective multiple-choice questions, 1/4 negative marking ke saath। Syllabus, exam date aur centres Board alag se notify karega।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "JKSSB जूनियर इंजीनियर (मैकेनिकल) भर्ती 2026",
+   "tagline": "127 जूनियर इंजीनियर (मैकेनिकल) पद — लोक निर्माण (R&B) में — 16 नवंबर–15 दिसंबर 2026 तक आवेदन करें।",
+   "qual": "मैकेनिकल इंजीनियरिंग में 3-वर्षीय डिप्लोमा / मैकेनिकल इंजीनियरिंग में डिग्री / AMIE Sections A & B",
+   "fees": [
+    "₹600 application fee — 15 दिसंबर 2026 तक online भरें।",
+    "SC, ST-1, ST-2, EWS और PwBD उम्मीदवारों के लिए ₹500।"
+   ],
+   "fees_short": "₹600",
+   "specs": [
+    "लोक निर्माण (R&B) विभाग में जूनियर इंजीनियर (मैकेनिकल) के 127 UT Cadre पद (Item No. 265): OM 51, SC 10, ST-1 13, ST-2 13, OBC 10, ALC/IB 5, RBA 13, EWS 12।",
+    "Online आवेदन 16 नवंबर–15 दिसंबर 2026 तक jkssb.nic.in पर। Cut-off date (15 दिसंबर 2026) qualification, domicile certificate और category certificate — तीनों पर लागू होती है।",
+    "सिर्फ जम्मू और कश्मीर केंद्र शासित प्रदेश के domicile ही apply कर सकते हैं — 15 दिसंबर 2026 तक जारी valid Domicile Certificate चाहिए।",
+    "चयन सिर्फ written OMR examination से होगा — English में objective multiple-choice questions, 1/4 negative marking के साथ। Syllabus, exam date और centres Board अलग से notify करेगा।",
+    "वेतन: Level-6 (₹35,400–1,12,400)।",
+    "चयन प्रक्रिया पूरी होने से पहले पदों की संख्या बढ़ या घट सकती है।",
+    "ऊपर के सभी तथ्य Notification No. 10 of 2026, दिनांक 21 अक्टूबर 2026 (official JKSSB PDF) से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "जम्मू और कश्मीर केंद्र शासित प्रदेश का domicile, 15 दिसंबर 2026 तक जारी valid Domicile Certificate के साथ।",
+    "मैकेनिकल इंजीनियरिंग में 3-वर्षीय डिप्लोमा, या मैकेनिकल इंजीनियरिंग में डिग्री, या AMIE Sections A & B — 15 दिसंबर 2026 की cut-off date तक हासिल की हुई।",
+    "आयु 1 जनवरी 2026 को: 18–40 वर्ष (OM), 43 वर्ष (reserved categories), 42 वर्ष (PwBD)।"
+   ],
+   "dos": [
+    "Apply करने से पहले jkssb.nic.in पर Notification No. 10 of 2026 पूरा पढ़ें।",
+    "सिर्फ jkssb.nic.in पर 16 नवंबर से 15 दिसंबर 2026 के बीच apply करें।",
+    "Domicile certificate, diploma/degree certificate और category certificate तैयार रखें — सभी 15 दिसंबर 2026 तक valid होने चाहिए।",
+    "Syllabus, exam date और centres के लिए JKSSB website देखते रहें — ये अलग से notify होंगे।"
+   ],
+   "donts": [
+    "J&K UT के domicile न होकर apply न करें — सिर्फ UT domicile ही eligible हैं।",
+    "15 दिसंबर 2026 के बाद हासिल की गई qualification पर apply न करें — cut-off strict है।",
+    "आखिरी दिन का इंतज़ार न करें — portal 15 दिसंबर 2026 को बंद हो जाएगा।",
+    "इसे JKSSB JE (Civil) विज्ञापन (Notification No. 11 of 2026) से confuse न करें — दोनों अलग विज्ञापन हैं, अलग form और अलग fee।"
+   ],
+   "checklist": [
+    "Domicile Certificate (J&K UT, 15 दिसंबर 2026 तक जारी)",
+    "मैकेनिकल इंजीनियरिंग में Diploma / Degree या AMIE certificate",
+    "जन्म तिथि का proof",
+    "Category certificate (SC/ST/OBC/EWS/RBA/ALC), अगर लागू हो",
+    "PwBD certificate, अगर लागू हो",
+    "हाल की photo और signature scan"
+   ],
+   "documents": [
+    "Domicile Certificate (J&K UT)",
+    "Diploma / Degree / AMIE certificate और marksheets",
+    "जन्म तिथि का proof",
+    "Category certificate, अगर लागू हो",
+    "PwBD certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "J&K domicile न होते हुए भी apply करना",
+    "15 दिसंबर 2026 के बाद की qualification पर apply करना",
+    "JE (Civil) वाले form से confuse होना (दोनों अलग विज्ञापन हैं)",
+    "15 दिसंबर की deadline miss करना"
+   ],
+   "steps": [
+    "jkssb.nic.in पर Notification No. 10 of 2026 पढ़ें।",
+    "16 नवंबर 2026 से JKSSB portal पर registration करें और form भरें।",
+    "Domicile certificate, diploma/degree और category documents upload करें।",
+    "₹600 (₹500 SC/ST-1/ST-2/EWS/PwBD) fee online भरें — 15 दिसंबर 2026 तक।",
+    "Form submit करें और confirmation save करें। Syllabus और exam date के लिए JKSSB website देखते रहें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "JKSSB JE (Mechanical) 2026 में कितनी vacancies हैं?",
+     "a": "127 पद — लोक निर्माण (R&B) विभाग में जूनियर इंजीनियर (मैकेनिकल), UT Cadre, Pay Level-6 (₹35,400–1,12,400)। Category-wise: OM 51, SC 10, ST-1 13, ST-2 13, OBC 10, ALC/IB 5, RBA 13, EWS 12।"
+    },
+    {
+     "q": "JKSSB JE (Mechanical) 2026 की last date और fee क्या है?",
+     "a": "Online आवेदन 16 नवंबर से 15 दिसंबर 2026 तक। Fee ₹600 है; SC, ST-1, ST-2, EWS और PwBD उम्मीदवारों के लिए ₹500 है।"
+    },
+    {
+     "q": "JKSSB JE (Mechanical) के लिए कौन apply कर सकता है?",
+     "a": "सिर्फ जम्मू और कश्मीर UT के domicile — valid Domicile Certificate 15 दिसंबर 2026 तक जारी होना चाहिए। Qualification: 3-साल का मैकेनिकल इंजीनियरिंग डिप्लोमा, मैकेनिकल इंजीनियरिंग में डिग्री, या AMIE Sections A & B। Age 1 जनवरी 2026 को: OM 18–40, reserved categories 43, PwBD 42 वर्ष।"
+    },
+    {
+     "q": "JKSSB JE (Mechanical) में selection कैसे होगा?",
+     "a": "सिर्फ written OMR examination से — English में objective multiple-choice questions, 1/4 negative marking के साथ। Syllabus, exam date और centres Board अलग से notify करेगा।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "jmi-non-teaching-2026",
+  "advt": "Advt No. 01/2026-27 (NT)",
+  "board_en": "Jamia Millia Islamia (JMI), New Delhi",
+  "board_hi": "जामिया मिल्लिया इस्लामिया (JMI), नई दिल्ली",
+  "portal": "jobs.jmi.ac.in",
+  "posts": 85,
+  "dates": {
+   "apply_end": "2026-12-11",
+   "apply_start": "2026-11-12",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-11"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://jobs.jmi.ac.in",
+   "notice": null,
+   "site": "https://www.jmi.ac.in"
+  },
+  "en": {
+   "name": "JMI Non-Teaching Recruitment 2026",
+   "tagline": "85 non-teaching posts across 35 cadres — Assistant Registrar to Beldar — last date 11 December 2026; hard copy by 21 December.",
+   "qual": "10th pass to Master's degree (post-wise, with experience where required)",
+   "fees": [
+    "Group A posts: ₹1,000 (UR/OBC), ₹500 (SC/ST) — pay online by 11 December 2026.",
+    "Group B & C posts: ₹700 (UR/OBC), ₹350 (SC/ST). PwBD candidates pay no fee."
+   ],
+   "fees_short": "₹700–₹1,000",
+   "specs": [
+    "85 posts (tentative) across 35 non-teaching designations in Groups A, B and C — Assistant Registrar, Section Officer, Assistant, Upper Division Clerk (UDC), Hindi/Urdu Typist, Accountant, Electrician, Pharmacist, Plumber, Carpenter, Beldar and others.",
+    "Pay Levels 1–13 (₹18,000–₹2,15,900 plus allowances). Largest groups: UDC 10 posts, Beldar 6 posts.",
+    "Apply online 12 November–11 December 2026 at jobs.jmi.ac.in. After submitting online, send the signed hard copy with self-attested documents to the Registrar's Office by 21 December 2026 — by Speed Post or Courier only (corrigendum dated 13 November 2026: applications submitted in person will not be accepted).",
+    "Submit a separate application for each post. Age and qualification are counted as on 11 December 2026.",
+    "8 posts marked with an asterisk were also advertised in Advt No. 02/2025-26 (NT) — candidates who applied earlier must apply afresh, but pay no fee if they enclose the earlier acknowledgement or postal slip.",
+    "The number of vacancies is tentative and may increase or decrease. The notification gives no category-wise split.",
+    "The notification prints no common exam pattern or syllabus — shortlisted candidates will be informed of the test/interview date by email only.",
+    "All facts above are taken from Advt No. 01/2026-27 (NT), dated 10 November 2026."
+   ],
+   "eligibility": [
+    "Qualification is post-wise: 10th pass / ITI (trades), 12th pass, Bachelor's degree (clerical posts), Master's degree with 55% marks plus experience (Assistant Registrar) — check the post-wise conditions in the advertisement.",
+    "Maximum age 40 years as on 11 December 2026 for direct-recruitment posts. Deputation posts (Internal Audit Officer, Superintendent Engineer, Executive Engineer) are preferably below 56 years.",
+    "Indian nationals, including OCI cardholders, can apply."
+   ],
+   "dos": [
+    "Read Advt No. 01/2026-27 (NT) fully on jmi.ac.in before applying — check the post-wise qualification and experience for your post.",
+    "Apply separately for each post on jobs.jmi.ac.in by 11 December 2026.",
+    "Send the signed hard copy with self-attested documents by Speed Post or Courier to the Recruitment & Promotion Section, Registrar's Office, JMI, New Delhi-110025 by 21 December 2026.",
+    "If you applied earlier under Advt 02/2025-26 (NT) for an asterisk-marked post, apply afresh and enclose the earlier acknowledgement to claim the fee exemption."
+   ],
+   "donts": [
+    "Do not submit the hard copy in person — the 13 November 2026 corrigendum says in-person applications will not be accepted.",
+    "Do not apply online only and skip the hard copy — both are required.",
+    "Do not apply for a post whose experience condition you do not meet — several posts need experience.",
+    "Do not expect an exam date in the advertisement — shortlisted candidates are informed by email."
+   ],
+   "checklist": [
+    "Degree / ITI / 10th / 12th certificate as per your post",
+    "Experience certificates, where required",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Earlier acknowledgement / postal slip (if you applied under Advt 02/2025-26 for an asterisk post)",
+    "Recent photo and signature scan"
+   ],
+   "documents": [
+    "Educational qualification certificates (post-wise)",
+    "Experience certificates, where required",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent photo and signature",
+    "Earlier acknowledgement / postal slip, if applicable"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Online form bharna aur hard copy bhejna bhool jana",
+    "Hard copy haath se jama karne jana (13 Nov corrigendum: in-person accept nahi hoga)",
+    "Bina experience ke senior post par apply karna",
+    "11 दिसंबर की online deadline miss karna"
+   ],
+   "steps": [
+    "jmi.ac.in par Advt No. 01/2026-27 (NT) padhen aur apni post chunen.",
+    "jobs.jmi.ac.in par registration karen aur har post ke liye alag application bharen.",
+    "Fee online bharen (Group A ₹1,000; Group B&C ₹700; SC/ST aadhi; PwBD nil) — 11 दिसंबर 2026 tak.",
+    "Signed hard copy self-attested documents ke saath Speed Post/Courier se Recruitment & Promotion Section, Registrar's Office, JMI, New Delhi-110025 ko 21 दिसंबर 2026 tak bhejen.",
+    "Test/interview date ke liye email dekhte rahen — shortlisted candidates ko email se bataya jayega."
+   ],
+   "extra_faq": [
+    {
+     "q": "JMI Non-Teaching 2026 me kitni vacancies hain?",
+     "a": "85 posts (tentative) — 35 designations me, Groups A, B aur C me। Sabse zyada: UDC 10 posts, Beldar 6 posts। Pay Levels 1–13 (₹18,000–₹2,15,900 plus allowances)।"
+    },
+    {
+     "q": "JMI Non-Teaching 2026 ki last date aur fee kya hai?",
+     "a": "Online आवेदन 12 नवंबर से 11 दिसंबर 2026 तक। Fee: Group A ₹1,000 (UR/OBC) / ₹500 (SC/ST); Group B&C ₹700 (UR/OBC) / ₹350 (SC/ST); PwBD को कोई fee नहीं। Signed hard copy 21 दिसंबर 2026 तक पहुंचनी चाहिए।"
+    },
+    {
+     "q": "JMI Non-Teaching me hard copy kyun chahiye?",
+     "a": "Ye poori tarah online process नहीं है — online form ke baad signed hard copy self-attested documents ke saath Speed Post ya Courier se Registrar's Office, JMI, New Delhi-110025 ko 21 दिसंबर 2026 तक भेजनी है। 13 नवंबर 2026 के corrigendum के अनुसार hand delivery accept नहीं होगी।"
+    },
+    {
+     "q": "JMI Non-Teaching 2026 me exam kab hoga?",
+     "a": "Notification me koi common exam pattern ya date नहीं दी गई है। Shortlisted candidates को test/interview की date email से बताई जाएगी।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "JMI गैर-शिक्षण भर्ती 2026",
+   "tagline": "85 गैर-शिक्षण पद — 35 cadres में, असिस्टेंट रजिस्ट्रार से बेलदार तक — अंतिम तिथि 11 दिसंबर 2026; hard copy 21 दिसंबर तक।",
+   "qual": "10वीं पास से Master's degree तक (पद के अनुसार, जहां जरूरी हो अनुभव सहित)",
+   "fees": [
+    "Group A पद: ₹1,000 (UR/OBC), ₹500 (SC/ST) — 11 दिसंबर 2026 तक online भरें।",
+    "Group B & C पद: ₹700 (UR/OBC), ₹350 (SC/ST)। PwBD उम्मीदवारों को कोई fee नहीं।"
+   ],
+   "fees_short": "₹700–₹1,000",
+   "specs": [
+    "85 पद (अस्थायी) — 35 गैर-शिक्षण designations में, Groups A, B और C में — असिस्टेंट रजिस्ट्रार, सेक्शन ऑफिसर, असिस्टेंट, अपर डिवीजन क्लर्क (UDC), हिंदी/उर्दू टाइपिस्ट, अकाउंटेंट, इलेक्ट्रीशियन, फार्मासिस्ट, प्लंबर, कारपेंटर, बेलदार और अन्य।",
+    "Pay Levels 1–13 (₹18,000–₹2,15,900 plus allowances)। सबसे ज़्यादा: UDC 10 पद, बेलदार 6 पद।",
+    "Online आवेदन 12 नवंबर–11 दिसंबर 2026 तक jobs.jmi.ac.in पर। Online submit करने के बाद signed hard copy self-attested documents के साथ 21 दिसंबर 2026 तक रजिस्ट्रार कार्यालय भेजें — सिर्फ Speed Post या Courier से (13 नवंबर 2026 का corrigendum: hand delivery accept नहीं होगी)।",
+    "हर post के लिए अलग application भरें। Age और qualification 11 दिसंबर 2026 को गिनी जाएगी।",
+    "तारांकन (*) वाले 8 पद Advt No. 02/2025-26 (NT) में भी विज्ञापित थे — पहले apply कर चुके उम्मीदवारों को नए सिरे से apply करना है, लेकिन पहले की acknowledgement या postal slip लगाने पर कोई fee नहीं देनी।",
+    "पदों की संख्या अस्थायी है — बढ़ या घट सकती है। Notification में category-wise split नहीं दिया गया है।",
+    "Notification में कोई common exam pattern या syllabus नहीं दिया गया है — shortlisted candidates को test/interview की date सिर्फ email से बताई जाएगी।",
+    "ऊपर के सभी तथ्य Advt No. 01/2026-27 (NT), दिनांक 10 नवंबर 2026 से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "Qualification पद के अनुसार: 10वीं पास / ITI (trades), 12वीं पास, Bachelor's degree (clerical पद), 55% अंकों के साथ Master's degree + अनुभव (असिस्टेंट रजिस्ट्रार) — advertisement में post-wise conditions देखें।",
+    "Direct-recruitment पदों के लिए अधिकतम आयु 40 वर्ष (11 दिसंबर 2026 को)। Deputation पद (Internal Audit Officer, Superintendent Engineer, Executive Engineer) के लिए preferably 56 वर्ष से कम।",
+    "भारतीय नागरिक, OCI cardholders सहित, apply कर सकते हैं।"
+   ],
+   "dos": [
+    "Apply करने से पहले jmi.ac.in पर Advt No. 01/2026-27 (NT) पूरा पढ़ें — अपनी post की qualification और experience देखें।",
+    "jobs.jmi.ac.in पर हर post के लिए अलग से 11 दिसंबर 2026 तक apply करें।",
+    "Signed hard copy self-attested documents के साथ Speed Post या Courier से Recruitment & Promotion Section, Registrar's Office, JMI, New Delhi-110025 को 21 दिसंबर 2026 तक भेजें।",
+    "अगर आपने Advt 02/2025-26 (NT) में तारांकन वाले पद के लिए पहले apply किया था, तो नए सिरे से apply करें और fee छूट के लिए पहले की acknowledgement लगाएं।"
+   ],
+   "donts": [
+    "Hard copy haath se जमा करने न जाएं — 13 नवंबर 2026 के corrigendum के अनुसार in-person applications accept नहीं होंगी।",
+    "सिर्फ online apply करके hard copy न छोड़ें — दोनों ज़रूरी हैं।",
+    "बिना experience के उस senior post पर apply न करें जिसके लिए experience मांगा गया है।",
+    "Advertisement में exam date की उम्मीद न करें — shortlisted candidates को email से बताया जाएगा।"
+   ],
+   "checklist": [
+    "Degree / ITI / 10वीं / 12वीं certificate (अपनी post के अनुसार)",
+    "Experience certificates, जहां जरूरी हो",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "पहले की acknowledgement / postal slip (अगर Advt 02/2025-26 में तारांकन वाले पद के लिए apply किया था)",
+    "हाल की photo और signature scan"
+   ],
+   "documents": [
+    "शैक्षणिक योग्यता के certificates (पद के अनुसार)",
+    "Experience certificates, जहां जरूरी हो",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की photo और signature",
+    "पहले की acknowledgement / postal slip, अगर लागू हो"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Online form भरना और hard copy भेजना भूल जाना",
+    "Hard copy haath se जमा करने जाना (13 Nov corrigendum: in-person accept नहीं होगा)",
+    "बिना experience के senior post पर apply करना",
+    "11 दिसंबर की online deadline miss करना"
+   ],
+   "steps": [
+    "jmi.ac.in पर Advt No. 01/2026-27 (NT) पढ़ें और अपनी post चुनें।",
+    "jobs.jmi.ac.in पर registration करें और हर post के लिए अलग application भरें।",
+    "Fee online भरें (Group A ₹1,000; Group B&C ₹700; SC/ST आधी; PwBD nil) — 11 दिसंबर 2026 तक।",
+    "Signed hard copy self-attested documents के साथ Speed Post/Courier से Recruitment & Promotion Section, Registrar's Office, JMI, New Delhi-110025 को 21 दिसंबर 2026 तक भेजें।",
+    "Test/interview date के लिए email देखते रहें — shortlisted candidates को email से बताया जाएगा।"
+   ],
+   "extra_faq": [
+    {
+     "q": "JMI गैर-शिक्षण 2026 में कितनी vacancies हैं?",
+     "a": "85 पद (अस्थायी) — 35 designations में, Groups A, B और C में। सबसे ज़्यादा: UDC 10 पद, बेलदार 6 पद। Pay Levels 1–13 (₹18,000–₹2,15,900 plus allowances)।"
+    },
+    {
+     "q": "JMI गैर-शिक्षण 2026 की last date और fee क्या है?",
+     "a": "Online आवेदन 12 नवंबर से 11 दिसंबर 2026 तक। Fee: Group A ₹1,000 (UR/OBC) / ₹500 (SC/ST); Group B&C ₹700 (UR/OBC) / ₹350 (SC/ST); PwBD को कोई fee नहीं। Signed hard copy 21 दिसंबर 2026 तक पहुंचनी चाहिए।"
+    },
+    {
+     "q": "JMI गैर-शिक्षण में hard copy क्यों चाहिए?",
+     "a": "यह पूरी तरह online process नहीं है — online form के बाद signed hard copy self-attested documents के साथ Speed Post या Courier से Registrar's Office, JMI, New Delhi-110025 को 21 दिसंबर 2026 तक भेजनी है। 13 नवंबर 2026 के corrigendum के अनुसार hand delivery accept नहीं होगी।"
+    },
+    {
+     "q": "JMI गैर-शिक्षण 2026 में exam कब होगा?",
+     "a": "Notification में कोई common exam pattern या date नहीं दी गई है। Shortlisted candidates को test/interview की date email से बताई जाएगी।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "aiims-bhubaneswar-faculty-2026",
+  "advt": "Advt No. RECT-11012/4/2026-RECU SEC",
+  "board_en": "All India Institute of Medical Sciences (AIIMS), Bhubaneswar",
+  "board_hi": "अखिल भारतीय आयुर्विज्ञान संस्थान (AIIMS), भुवनेश्वर",
+  "portal": "aiimsbhubaneswar.nic.in",
+  "posts": 82,
+  "dates": {
+   "apply_end": "2026-12-13",
+   "apply_start": "2026-11-13",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-13"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://aiimsbhubaneswar.nic.in",
+   "notice": null,
+   "site": "https://aiimsbhubaneswar.nic.in"
+  },
+  "en": {
+   "name": "AIIMS Bhubaneswar Faculty Recruitment 2026",
+   "tagline": "82 Group A faculty posts — Professor 28, Additional Professor 12, Associate Professor 16, Assistant Professor 26 — last date 13 December 2026.",
+   "qual": "MD/MS (DM/M.Ch for superspeciality) + teaching/research experience; or Master's + Doctorate (non-medical)",
+   "fees": [
+    "₹3,000 for General/EWS/OBC candidates — pay online by 13 December 2026.",
+    "₹2,400 for SC/ST candidates (refundable if the candidate appears for the interview). PwBD and Women candidates are exempt."
+   ],
+   "fees_short": "₹3,000",
+   "specs": [
+    "82 Group A faculty posts on direct recruitment: Professor 28 (UR 10, OBC 9, SC 5, ST 3, EWS 1), Additional Professor 12, Associate Professor 16 (UR 7, OBC 4, SC 3, ST 2), Assistant Professor 26 (UR 8, OBC 8, SC 5, ST 5). 3 posts are earmarked for PwBD candidates. Vacancies are provisional.",
+    "Apply online at aiimsbhubaneswar.nic.in — the online link is activated on publication in Employment News / Rozgar Samachar, and the last date is 30 days from that publication (13 December 2026). Then send the signed hard copy with self-attested documents by Speed Post or Courier within 7 days of the cut-off date.",
+    "Pay: Professor Level 14-A (₹1,68,900 + NPA for medical candidates), Associate Professor Level 13-A1+ (₹1,38,300 + NPA), Assistant Professor Level 12 (₹1,01,500 + NPA, with provision to move to Level 13 after 3 years).",
+    "A separate online application and a separate fee are needed for each post.",
+    "Private practice of any kind is strictly prohibited. These are whole-time posts with a 2-year probation period under the New Pension Scheme.",
+    "All facts above are taken from Advt No. RECT-11012/4/2026-RECU SEC, dated 13 November 2026."
+   ],
+   "eligibility": [
+    "Professor (28): recognised medical qualification + MD/MS with 14 years' teaching/research experience after MD/MS (12 years after 2/5-year DM/M.Ch; 11 years after 3-year DM/M.Ch); non-medical: Master's + Doctorate with 14 years' experience. Maximum age 58 years.",
+    "Additional Professor (12): MD/MS with 10 years' teaching/research experience (superspeciality: 8 years after 2/5-year DM/M.Ch; 7 years after 3-year DM/M.Ch); non-medical: Master's + Doctorate with 10 years' experience. Maximum age 58 years.",
+    "Associate Professor (16): MD/MS with 6 years' experience (superspeciality: 4 years after 2/5-year DM/M.Ch; 3 years after 3-year DM/M.Ch); non-medical: Master's + Doctorate with 6 years' experience. Maximum age 50 years.",
+    "Assistant Professor (26): MD/MS with 3 years' experience (superspeciality: 1 year after 2/5-year DM/M.Ch; no experience for 3-year DM/M.Ch); non-medical: Master's + Doctorate with 3 years' experience. Maximum age 50 years.",
+    "Age is counted as on the last date of online submission (13 December 2026)."
+   ],
+   "dos": [
+    "Read Advt No. RECT-11012/4/2026-RECU SEC fully on aiimsbhubaneswar.nic.in before applying — check the post-wise experience for your grade.",
+    "Apply separately for each post, with a separate fee, on aiimsbhubaneswar.nic.in by 13 December 2026.",
+    "Send the signed hard copy with self-attested documents by Speed Post or Courier within 7 days of the cut-off date to the Recruitment Cell, AIIMS Bhubaneswar, Sijua, Dumuduma, Bhubaneswar-751019.",
+    "Keep your MD/MS/DM/M.Ch/Doctorate certificates and experience proofs ready — experience is counted strictly."
+   ],
+   "donts": [
+    "Do not apply for a grade whose experience condition you do not meet — experience is the main filter.",
+    "Do not submit one form for two posts — a separate application and fee are needed for each post.",
+    "Do not skip the hard copy — online submission alone is not complete.",
+    "Do not assume private practice is allowed — it is strictly prohibited for these whole-time posts."
+   ],
+   "checklist": [
+    "MD/MS / DM/M.Ch / Doctorate degree certificates",
+    "Teaching/research experience certificates (post-wise years)",
+    "Medical registration certificate, if applicable",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "Recent photo and signature scan"
+   ],
+   "documents": [
+    "MD/MS / DM/M.Ch / Doctorate degree certificates and marksheets",
+    "Teaching/research experience certificates",
+    "Medical registration certificate, if applicable",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "Recent photo and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Kam experience par senior grade ke liye apply karna",
+    "Ek hi form se do posts ke liye apply karna (har post ke liye alag form + fee)",
+    "Hard copy bhejna bhool jana (cut-off ke 7 din ke andar)",
+    "13 दिसंबर की deadline miss karna"
+   ],
+   "steps": [
+    "aiimsbhubaneswar.nic.in par Advt No. RECT-11012/4/2026-RECU SEC padhen aur apna grade chunen.",
+    "Online link activate hone par (Employment News publication ke baad) har post ke liye alag application bharen.",
+    "Fee online bharen (₹3,000 Gen/EWS/OBC; ₹2,400 SC/ST; PwBD/महिलाएं nil) — 13 दिसंबर 2026 tak.",
+    "Signed hard copy self-attested documents ke saath Speed Post/Courier se cut-off date ke 7 din ke andar Recruitment Cell, AIIMS Bhubaneswar, Sijua, Dumuduma, Bhubaneswar-751019 ko bhejen.",
+    "Interview call ke liye AIIMS Bhubaneswar website aur email dekhte rahen."
+   ],
+   "extra_faq": [
+    {
+     "q": "AIIMS Bhubaneswar Faculty 2026 me kitni vacancies hain?",
+     "a": "82 Group A faculty posts — Professor 28, Additional Professor 12, Associate Professor 16, Assistant Professor 26। 3 posts PwBD candidates ke liye earmarked hain। Vacancies provisional hain।"
+    },
+    {
+     "q": "AIIMS Bhubaneswar Faculty 2026 ki last date aur fee kya hai?",
+     "a": "Online आवेदन की last date 13 दिसंबर 2026 है (Employment News publication se 30 din)। Fee ₹3,000 (General/EWS/OBC) aur ₹2,400 (SC/ST — interview me appear karne par refundable) है; PwBD aur महिला उम्मीदवारों को कोई fee नहीं।"
+    },
+    {
+     "q": "AIIMS Bhubaneswar Faculty ke liye age limit aur experience kya hai?",
+     "a": "Professor aur Additional Professor: अधिकतम आयु 58 वर्ष; Associate aur Assistant Professor: 50 वर्ष (13 दिसंबर 2026 को)। Experience: Professor 14 वर्ष, Additional Professor 10 वर्ष, Associate Professor 6 वर्ष, Assistant Professor 3 वर्ष (MD/MS ke baad; superspeciality ke liye alag)।"
+    },
+    {
+     "q": "AIIMS Bhubaneswar Faculty me hard copy bhi bhejni hai?",
+     "a": "हां — online form ke baad signed hard copy self-attested documents ke saath Speed Post ya Courier se cut-off date ke 7 din ke andar Recruitment Cell, AIIMS Bhubaneswar, Sijua, Dumuduma, Bhubaneswar-751019 ko भेजनी है।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "AIIMS भुवनेश्वर फैकल्टी भर्ती 2026",
+   "tagline": "82 Group A फैकल्टी पद — प्रोफेसर 28, एडिशनल प्रोफेसर 12, एसोसिएट प्रोफेसर 16, असिस्टेंट प्रोफेसर 26 — अंतिम तिथि 13 दिसंबर 2026।",
+   "qual": "MD/MS (सुपरस्पेशियलिटी के लिए DM/M.Ch) + teaching/research अनुभव; या Master's + Doctorate (non-medical)",
+   "fees": [
+    "₹3,000 General/EWS/OBC उम्मीदवारों के लिए — 13 दिसंबर 2026 तक online भरें।",
+    "₹2,400 SC/ST उम्मीदवारों के लिए (interview में appear करने पर refundable)। PwBD और महिला उम्मीदवारों को छूट है।"
+   ],
+   "fees_short": "₹3,000",
+   "specs": [
+    "82 Group A फैकल्टी पद (direct recruitment): प्रोफेसर 28 (UR 10, OBC 9, SC 5, ST 3, EWS 1), एडिशनल प्रोफेसर 12, एसोसिएट प्रोफेसर 16 (UR 7, OBC 4, SC 3, ST 2), असिस्टेंट प्रोफेसर 26 (UR 8, OBC 8, SC 5, ST 5)। 3 पद PwBD उम्मीदवारों के लिए earmarked हैं। Vacancies provisional हैं।",
+    "aiimsbhubaneswar.nic.in पर online apply करें — online link Employment News / रोज़गार समाचार में publication पर activate होता है, और last date publication से 30 दिन बाद है (13 दिसंबर 2026)। फिर signed hard copy self-attested documents के साथ cut-off date के 7 दिन के अंदर Speed Post या Courier से भेजें।",
+    "वेतन: प्रोफेसर Level 14-A (₹1,68,900 + medical उम्मीदवारों के लिए NPA), एसोसिएट प्रोफेसर Level 13-A1+ (₹1,38,300 + NPA), असिस्टेंट प्रोफेसर Level 12 (₹1,01,500 + NPA, 3 साल बाद Level 13 में जाने का provision)।",
+    "हर post के लिए अलग online application और अलग fee चाहिए।",
+    "किसी भी तरह की private practice सख्त मना है। ये whole-time पद हैं, New Pension Scheme के तहत 2 साल की probation के साथ।",
+    "ऊपर के सभी तथ्य Advt No. RECT-11012/4/2026-RECU SEC, दिनांक 13 नवंबर 2026 से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "प्रोफेसर (28): मान्यता प्राप्त medical qualification + MD/MS के बाद 14 साल का teaching/research अनुभव (2/5-साल के DM/M.Ch के बाद 12 साल; 3-साल के DM/M.Ch के बाद 11 साल); non-medical: Master's + Doctorate के बाद 14 साल का अनुभव। अधिकतम आयु 58 वर्ष।",
+    "एडिशनल प्रोफेसर (12): MD/MS के बाद 10 साल का अनुभव (सुपरस्पेशियलिटी: 2/5-साल के DM/M.Ch के बाद 8 साल; 3-साल के DM/M.Ch के बाद 7 साल); non-medical: Master's + Doctorate के बाद 10 साल का अनुभव। अधिकतम आयु 58 वर्ष।",
+    "एसोसिएट प्रोफेसर (16): MD/MS के बाद 6 साल का अनुभव (सुपरस्पेशियलिटी: 2/5-साल के DM/M.Ch के बाद 4 साल; 3-साल के DM/M.Ch के बाद 3 साल); non-medical: Master's + Doctorate के बाद 6 साल का अनुभव। अधिकतम आयु 50 वर्ष।",
+    "असिस्टेंट प्रोफेसर (26): MD/MS के बाद 3 साल का अनुभव (सुपरस्पेशियलिटी: 2/5-साल के DM/M.Ch के बाद 1 साल; 3-साल के DM/M.Ch के लिए कोई अनुभव नहीं); non-medical: Master's + Doctorate के बाद 3 साल का अनुभव। अधिकतम आयु 50 वर्ष।",
+    "आयु online submission की last date (13 दिसंबर 2026) को गिनी जाएगी।"
+   ],
+   "dos": [
+    "Apply करने से पहले aiimsbhubaneswar.nic.in पर Advt No. RECT-11012/4/2026-RECU SEC पूरा पढ़ें — अपने grade के लिए post-wise experience देखें।",
+    "हर post के लिए अलग से, अलग fee के साथ, aiimsbhubaneswar.nic.in पर 13 दिसंबर 2026 तक apply करें।",
+    "Signed hard copy self-attested documents के साथ cut-off date के 7 दिन के अंदर Speed Post या Courier से Recruitment Cell, AIIMS Bhubaneswar, Sijua, Dumuduma, Bhubaneswar-751019 को भेजें।",
+    "MD/MS/DM/M.Ch/Doctorate certificates और experience proofs तैयार रखें — experience सख्ती से गिना जाता है।"
+   ],
+   "donts": [
+    "उस grade के लिए apply न करें जिसका experience आप पूरा नहीं करते — experience ही मुख्य filter है।",
+    "दो posts के लिए एक form न भरें — हर post के लिए अलग application और fee चाहिए।",
+    "Hard copy भेजना न भूलें — सिर्फ online submission पूरी नहीं है।",
+    "Private practice allowed मानकर न चलें — ये whole-time पद हैं, private practice सख्त मना है।"
+   ],
+   "checklist": [
+    "MD/MS / DM/M.Ch / Doctorate degree certificates",
+    "Teaching/research experience certificates (post-wise years)",
+    "Medical registration certificate, अगर लागू हो",
+    "जन्म तिथि का proof",
+    "Caste / PwBD certificate, अगर लागू हो",
+    "हाल की photo और signature scan"
+   ],
+   "documents": [
+    "MD/MS / DM/M.Ch / Doctorate degree certificates और marksheets",
+    "Teaching/research experience certificates",
+    "Medical registration certificate, अगर लागू हो",
+    "जन्म तिथि का proof",
+    "Caste / PwBD certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "कम experience पर senior grade के लिए apply करना",
+    "एक ही form से दो posts के लिए apply करना (हर post के लिए अलग form + fee)",
+    "Hard copy भेजना भूल जाना (cut-off के 7 दिन के अंदर)",
+    "13 दिसंबर की deadline miss करना"
+   ],
+   "steps": [
+    "aiimsbhubaneswar.nic.in पर Advt No. RECT-11012/4/2026-RECU SEC पढ़ें और अपना grade चुनें।",
+    "Online link activate होने पर (Employment News publication के बाद) हर post के लिए अलग application भरें।",
+    "Fee online भरें (₹3,000 Gen/EWS/OBC; ₹2,400 SC/ST; PwBD/महिलाएं nil) — 13 दिसंबर 2026 तक।",
+    "Signed hard copy self-attested documents के साथ Speed Post/Courier से cut-off date के 7 दिन के अंदर Recruitment Cell, AIIMS Bhubaneswar, Sijua, Dumuduma, Bhubaneswar-751019 को भेजें।",
+    "Interview call के लिए AIIMS Bhubaneswar website और email देखते रहें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "AIIMS भुवनेश्वर फैकल्टी 2026 में कितनी vacancies हैं?",
+     "a": "82 Group A फैकल्टी पद — प्रोफेसर 28, एडिशनल प्रोफेसर 12, एसोसिएट प्रोफेसर 16, असिस्टेंट प्रोफेसर 26। 3 पद PwBD उम्मीदवारों के लिए earmarked हैं। Vacancies provisional हैं।"
+    },
+    {
+     "q": "AIIMS भुवनेश्वर फैकल्टी 2026 की last date और fee क्या है?",
+     "a": "Online आवेदन की last date 13 दिसंबर 2026 है (Employment News publication से 30 दिन)। Fee ₹3,000 (General/EWS/OBC) और ₹2,400 (SC/ST — interview में appear करने पर refundable) है; PwBD और महिला उम्मीदवारों को कोई fee नहीं।"
+    },
+    {
+     "q": "AIIMS भुवनेश्वर फैकल्टी के लिए age limit और experience क्या है?",
+     "a": "प्रोफेसर और एडिशनल प्रोफेसर: अधिकतम आयु 58 वर्ष; एसोसिएट और असिस्टेंट प्रोफेसर: 50 वर्ष (13 दिसंबर 2026 को)। Experience: प्रोफेसर 14 वर्ष, एडिशनल प्रोफेसर 10 वर्ष, एसोसिएट प्रोफेसर 6 वर्ष, असिस्टेंट प्रोफेसर 3 वर्ष (MD/MS के बाद; सुपरस्पेशियलिटी के लिए अलग)।"
+    },
+    {
+     "q": "AIIMS भुवनेश्वर फैकल्टी में hard copy भी भेजनी है?",
+     "a": "हां — online form के बाद signed hard copy self-attested documents के साथ Speed Post या Courier से cut-off date के 7 दिन के अंदर Recruitment Cell, AIIMS Bhubaneswar, Sijua, Dumuduma, Bhubaneswar-751019 को भेजनी है।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "dtu-assistant-professor-2026",
+  "advt": "Advertisement No. 04/2026",
+  "board_en": "Delhi Technological University (DTU), Delhi",
+  "board_hi": "दिल्ली प्रौद्योगिकी विश्वविद्यालय (DTU), दिल्ली",
+  "portal": "recruitment.dtu.ac.in",
+  "posts": 219,
+  "dates": {
+   "apply_end": "2026-12-07",
+   "apply_start": "2026-10-23",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-07"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://recruitment.dtu.ac.in",
+   "notice": null,
+   "site": "https://www.dtu.ac.in"
+  },
+  "en": {
+   "name": "DTU Assistant Professor Recruitment 2026",
+   "tagline": "219 Assistant Professor posts across 24 disciplines — no upper age limit — last date 7 December 2026 (5 PM).",
+   "qual": "Ph.D. / M.Phil. as per UGC norms (discipline-wise)",
+   "fees": [
+    "₹2,000 for UR/OBC candidates — pay online by 7 December 2026 (5 PM).",
+    "₹1,000 for EWS/SC/ST candidates applying against reserved posts. PwBD candidates are exempt. The fee is non-refundable, and a separate fee is needed for each discipline."
+   ],
+   "fees_short": "₹2,000",
+   "specs": [
+    "219 Assistant Professor posts across 24 disciplines — Computer Science & Engineering 36, Civil Engineering 20, Production Engineering 20, Mechanical Engineering 18, and others (Applied Sciences, Management, Economics, English, Design and allied areas).",
+    "The advertisement includes backlog vacancies and a special drive for PwBD candidates (17 PwBD posts identified). Vacancies are provisional and may change as per the University's requirement.",
+    "Apply online 23 October 2026 (11 AM)–7 December 2026 (5 PM) at recruitment.dtu.ac.in. The eligibility cut-off date is 7 December 2026.",
+    "There is NO upper age limit for Assistant Professor appointments in this advertisement.",
+    "Corrigendum dated 2 November 2026 corrected a table reference (5a/5b to 1a/1b) and the title 'Co-Principle Investigator' to 'Co-Principal Investigator' — it does not change the deadline.",
+    "The notification does not specify a conventional written examination or a subject-wise written-test syllabus — selection is by screening followed by interview. The pay scale and discipline-wise qualifications are in the University's Recruitment Rules, not printed in the notification.",
+    "All facts above are taken from Advertisement No. 04/2026 (No. F.DTU/Rectt./Asst.Prof/2026/F-1018/5602), dated 22 October 2026."
+   ],
+   "eligibility": [
+    "Ph.D. / M.Phil. as per UGC norms, discipline-wise — check the Recruitment Rules for your discipline before applying.",
+    "No upper age limit is prescribed in this advertisement.",
+    "Eligibility is counted as on 7 December 2026."
+   ],
+   "dos": [
+    "Read Advertisement No. 04/2026 and the DTU Recruitment Rules fully on dtu.ac.in before applying — the notification does not print the pay scale or discipline-wise qualifications.",
+    "Apply separately for each discipline on recruitment.dtu.ac.in by 7 December 2026 (5 PM), with a separate fee for each.",
+    "Keep your Ph.D./M.Phil. certificates, publications and experience proofs ready for screening.",
+    "Check the corrigendum dated 2 November 2026 on the DTU website before applying."
+   ],
+   "donts": [
+    "Do not apply for a discipline whose qualification you do not meet — qualifications are discipline-wise.",
+    "Do not pay one fee for two disciplines — a separate fee is needed for each discipline.",
+    "Do not expect a written-exam syllabus in the advertisement — selection is by screening and interview.",
+    "Do not wait for the last day — the portal closes on 7 December 2026 at 5 PM."
+   ],
+   "checklist": [
+    "Ph.D. / M.Phil. degree certificate (discipline-wise)",
+    "Publications and research experience proofs",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "Experience certificates, if applicable",
+    "Recent photo and signature scan"
+   ],
+   "documents": [
+    "Ph.D. / M.Phil. degree certificates and marksheets",
+    "Publications and research experience proofs",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "Experience certificates, if applicable",
+    "Recent photo and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Apni discipline ki qualification check kiye bina apply karna",
+    "Do disciplines ke liye ek hi fee bharna (har discipline ke liye alag fee)",
+    "Written-exam syllabus ki ummeed karna (selection screening + interview se hai)",
+    "7 दिसंबर शाम 5 बजे की deadline miss karna"
+   ],
+   "steps": [
+    "dtu.ac.in par Advertisement No. 04/2026 aur Recruitment Rules padhen.",
+    "recruitment.dtu.ac.in par registration karen aur apni discipline chunen.",
+    "Form bharen aur documents upload karen.",
+    "Fee online bharen (₹2,000 UR/OBC; ₹1,000 EWS/SC/ST reserved posts; PwBD nil) — 7 दिसंबर 2026 शाम 5 बजे तक।",
+    "Form submit karen aur confirmation save karen. Screening aur interview call ke liye DTU website dekhte rahen."
+   ],
+   "extra_faq": [
+    {
+     "q": "DTU Assistant Professor 2026 me kitni vacancies hain?",
+     "a": "219 posts — 24 disciplines me। Sabse zyada: Computer Science & Engineering 36, Civil Engineering 20, Production Engineering 20, Mechanical Engineering 18। Isme backlog vacancies aur PwBD special drive (17 PwBD posts) bhi shamil hain।"
+    },
+    {
+     "q": "DTU Assistant Professor 2026 ki last date aur fee kya hai?",
+     "a": "Online आवेदन 23 अक्टूबर 2026 (सुबह 11 बजे) से 7 दिसंबर 2026 (शाम 5 बजे) तक। Fee ₹2,000 (UR/OBC) aur ₹1,000 (EWS/SC/ST, reserved posts ke liye) है; PwBD को छूट है। Fee non-refundable है और हर discipline के लिए अलग fee चाहिए।"
+    },
+    {
+     "q": "DTU Assistant Professor ke liye age limit kya hai?",
+     "a": "Is advertisement me Assistant Professor appointments ke liye koi upper age limit नहीं दी गई है। Eligibility 7 दिसंबर 2026 को गिनी जाएगी।"
+    },
+    {
+     "q": "DTU Assistant Professor me selection kaise hoga?",
+     "a": "Notification me koi conventional written exam ya subject-wise syllabus नहीं दिया गया है — चयन screening ke baad interview se hoga। Pay scale aur discipline-wise qualifications notification me नहीं छपे हैं — Recruitment Rules देखें।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "DTU असिस्टेंट प्रोफेसर भर्ती 2026",
+   "tagline": "219 असिस्टेंट प्रोफेसर पद — 24 disciplines में — कोई upper age limit नहीं — अंतिम तिथि 7 दिसंबर 2026 (शाम 5 बजे)।",
+   "qual": "UGC norms के अनुसार Ph.D. / M.Phil. (discipline-wise)",
+   "fees": [
+    "₹2,000 UR/OBC उम्मीदवारों के लिए — 7 दिसंबर 2026 (शाम 5 बजे) तक online भरें।",
+    "₹1,000 EWS/SC/ST उम्मीदवारों के लिए (reserved posts पर apply करने पर)। PwBD उम्मीदवारों को छूट है। Fee non-refundable है, और हर discipline के लिए अलग fee चाहिए।"
+   ],
+   "fees_short": "₹2,000",
+   "specs": [
+    "219 असिस्टेंट प्रोफेसर पद — 24 disciplines में — कंप्यूटर साइंस एंड इंजीनियरिंग 36, सिविल इंजीनियरिंग 20, प्रोडक्शन इंजीनियरिंग 20, मैकेनिकल इंजीनियरिंग 18, और अन्य (Applied Sciences, Management, Economics, English, Design और allied areas)।",
+    "विज्ञापन में backlog vacancies और PwBD उम्मीदवारों के लिए special drive (17 PwBD posts) शामिल हैं। Vacancies provisional हैं — University की ज़रूरत के अनुसार बदल सकती हैं।",
+    "Online आवेदन 23 अक्टूबर 2026 (सुबह 11 बजे)–7 दिसंबर 2026 (शाम 5 बजे) तक recruitment.dtu.ac.in पर। Eligibility की cut-off date 7 दिसंबर 2026 है।",
+    "इस विज्ञापन में असिस्टेंट प्रोफेसर appointments के लिए कोई upper age limit नहीं है।",
+    "2 नवंबर 2026 का corrigendum — table reference (5a/5b से 1a/1b) और 'Co-Principle Investigator' से 'Co-Principal Investigator' title सुधारा गया — deadline नहीं बदली।",
+    "Notification में कोई conventional written examination या subject-wise written-test syllabus नहीं दिया गया है — चयन screening के बाद interview से होगा। Pay scale और discipline-wise qualifications notification में नहीं छपे हैं — University के Recruitment Rules में हैं।",
+    "ऊपर के सभी तथ्य Advertisement No. 04/2026 (No. F.DTU/Rectt./Asst.Prof/2026/F-1018/5602), दिनांक 22 अक्टूबर 2026 से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "UGC norms के अनुसार Ph.D. / M.Phil., discipline-wise — अपनी discipline के लिए Recruitment Rules apply करने से पहले देखें।",
+    "इस विज्ञापन में कोई upper age limit तय नहीं है।",
+    "Eligibility 7 दिसंबर 2026 को गिनी जाएगी।"
+   ],
+   "dos": [
+    "Apply करने से पहले dtu.ac.in पर Advertisement No. 04/2026 और Recruitment Rules पूरा पढ़ें — notification में pay scale या discipline-wise qualifications नहीं छपे हैं।",
+    "recruitment.dtu.ac.in पर हर discipline के लिए अलग से 7 दिसंबर 2026 (शाम 5 बजे) तक apply करें, हर discipline के लिए अलग fee के साथ।",
+    "Screening के लिए Ph.D./M.Phil. certificates, publications और experience proofs तैयार रखें।",
+    "Apply करने से पहले DTU website पर 2 नवंबर 2026 का corrigendum देखें।"
+   ],
+   "donts": [
+    "उस discipline के लिए apply न करें जिसकी qualification आप पूरी नहीं करते — qualifications discipline-wise हैं।",
+    "दो disciplines के लिए एक fee न भरें — हर discipline के लिए अलग fee चाहिए।",
+    "Advertisement में written-exam syllabus की उम्मीद न करें — चयन screening और interview से है।",
+    "आखिरी दिन का इंतज़ार न करें — portal 7 दिसंबर 2026 शाम 5 बजे बंद हो जाएगा।"
+   ],
+   "checklist": [
+    "Ph.D. / M.Phil. degree certificate (discipline-wise)",
+    "Publications और research experience proofs",
+    "जन्म तिथि का proof",
+    "Caste / PwBD certificate, अगर लागू हो",
+    "Experience certificates, अगर लागू हो",
+    "हाल की photo और signature scan"
+   ],
+   "documents": [
+    "Ph.D. / M.Phil. degree certificates और marksheets",
+    "Publications और research experience proofs",
+    "जन्म तिथि का proof",
+    "Caste / PwBD certificate, अगर लागू हो",
+    "Experience certificates, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "अपनी discipline की qualification check किए बिना apply करना",
+    "दो disciplines के लिए एक ही fee भरना (हर discipline के लिए अलग fee)",
+    "Written-exam syllabus की उम्मीद करना (selection screening + interview से है)",
+    "7 दिसंबर शाम 5 बजे की deadline miss करना"
+   ],
+   "steps": [
+    "dtu.ac.in पर Advertisement No. 04/2026 और Recruitment Rules पढ़ें।",
+    "recruitment.dtu.ac.in पर registration करें और अपनी discipline चुनें।",
+    "Form भरें और documents upload करें।",
+    "Fee online भरें (₹2,000 UR/OBC; ₹1,000 EWS/SC/ST reserved posts; PwBD nil) — 7 दिसंबर 2026 शाम 5 बजे तक।",
+    "Form submit करें और confirmation save करें। Screening और interview call के लिए DTU website देखते रहें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "DTU असिस्टेंट प्रोफेसर 2026 में कितनी vacancies हैं?",
+     "a": "219 पद — 24 disciplines में। सबसे ज़्यादा: कंप्यूटर साइंस एंड इंजीनियरिंग 36, सिविल इंजीनियरिंग 20, प्रोडक्शन इंजीनियरिंग 20, मैकेनिकल इंजीनियरिंग 18। इसमें backlog vacancies और PwBD special drive (17 PwBD posts) भी शामिल हैं।"
+    },
+    {
+     "q": "DTU असिस्टेंट प्रोफेसर 2026 की last date और fee क्या है?",
+     "a": "Online आवेदन 23 अक्टूबर 2026 (सुबह 11 बजे) से 7 दिसंबर 2026 (शाम 5 बजे) तक। Fee ₹2,000 (UR/OBC) और ₹1,000 (EWS/SC/ST, reserved posts के लिए) है; PwBD को छूट है। Fee non-refundable है और हर discipline के लिए अलग fee चाहिए।"
+    },
+    {
+     "q": "DTU असिस्टेंट प्रोफेसर के लिए age limit क्या है?",
+     "a": "इस विज्ञापन में असिस्टेंट प्रोफेसर appointments के लिए कोई upper age limit नहीं दी गई है। Eligibility 7 दिसंबर 2026 को गिनी जाएगी।"
+    },
+    {
+     "q": "DTU असिस्टेंट प्रोफेसर में selection कैसे होगा?",
+     "a": "Notification में कोई conventional written exam या subject-wise syllabus नहीं दिया गया है — चयन screening के बाद interview से होगा। Pay scale और discipline-wise qualifications notification में नहीं छपे हैं — Recruitment Rules देखें।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "tnpdcl-diploma-apprentice-2026",
+  "advt": "Engagement of Apprentices 2026–27",
+  "board_en": "Tamil Nadu Power Distribution Corporation Ltd (TNPDCL)",
+  "board_hi": "तमिलनाडु पावर डिस्ट्रीब्यूशन कॉर्पोरेशन लिमिटेड (TNPDCL)",
+  "portal": "nats.education.gov.in",
+  "posts": 500,
+  "dates": {
+   "apply_end": "2026-11-28",
+   "apply_start": "2026-10-28",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-28"
+  },
+  "photo_kind": "upload",
+  "note_en": "This is a 1-year APPRENTICESHIP, not a permanent government job. Training carries a stipend of ₹10,900/month and gives no right to a job in TNPDCL after training.",
+  "note_hi": "यह 1 साल की APPRENTICESHIP है, स्थायी सरकारी नौकरी नहीं। Training में ₹10,900/माह stipend मिलेगा और training के बाद TNPDCL में नौकरी का कोई अधिकार नहीं मिलेगा।",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://nats.education.gov.in",
+   "notice": null,
+   "site": "https://www.tnpdcl.org"
+  },
+  "en": {
+   "name": "TNPDCL Diploma (Technician) Apprentice Recruitment 2026",
+   "tagline": "500 Diploma apprentice slots (Electrical & Electronics 455 + others) — 1-year training, stipend ₹10,900/month — last date 28 November 2026.",
+   "qual": "Full-time regular Diploma in Engineering (passed 2022–2026); B.E./B.Tech holders NOT eligible",
+   "fees": [
+    "No application fee is mentioned in the notification."
+   ],
+   "fees_short": "No fee",
+   "specs": [
+    "500 apprentice slots for 2026–27: Electrical & Electronics Engineering 455, plus Mechanical, Civil, Electronics & Communication and Computer Science/IT (rest). Training is for 1 year, under BOAT-SR (Board of Apprenticeship Training, Southern Region).",
+    "THIS IS AN APPRENTICESHIP, NOT A PERMANENT JOB: 1 year of training with a stipend of ₹10,900/month. There is no job guarantee in TNPDCL after the training ends.",
+    "Apply 28 October–28 November 2026 through the NATS 2.0 portal (nats.education.gov.in). Candidates must complete NATS enrolment by 20 November 2026.",
+    "Only natives of Tamil Nadu can apply.",
+    "Selection is on diploma marks only — there is no written examination and no interview.",
+    "Age limit: 'as per Apprenticeship Rules' only — no figure is stated in the notification.",
+    "All facts above are taken from the TNPDCL Engagement of Apprentices 2026–27 notification, dated 28 October 2026."
+   ],
+   "eligibility": [
+    "Native of Tamil Nadu.",
+    "Full-time regular Diploma in Engineering, passed in 2022, 2023, 2024, 2025 or May 2026.",
+    "B.E./B.Tech holders are NOT eligible for this Diploma (Technician) apprenticeship.",
+    "Age limit as per the Apprenticeship Rules (no figure in the notification) — check the notice on the NATS portal."
+   ],
+   "dos": [
+    "Read the TNPDCL apprentice notification fully on the NATS portal before applying.",
+    "Complete your NATS 2.0 enrolment by 20 November 2026 — without it you cannot apply.",
+    "Apply on nats.education.gov.in by 28 November 2026.",
+    "Remember this is a 1-year apprenticeship with a stipend — do not treat it as a permanent appointment."
+   ],
+   "donts": [
+    "Do not apply if you hold a B.E./B.Tech degree — only Diploma holders are eligible.",
+    "Do not assume a job in TNPDCL after training — the apprenticeship gives no such right.",
+    "Do not miss the NATS enrolment deadline of 20 November 2026.",
+    "Do not wait for the last day — applications close on 28 November 2026."
+   ],
+   "checklist": [
+    "Diploma certificate and marksheets (2022–2026 pass-out)",
+    "NATS 2.0 enrolment (complete by 20 November 2026)",
+    "Tamil Nadu nativity proof",
+    "Date of birth proof",
+    "Recent photo and signature scan",
+    "Aadhaar card"
+   ],
+   "documents": [
+    "Diploma certificate and marksheets",
+    "NATS enrolment proof",
+    "Tamil Nadu nativity proof",
+    "Date of birth proof",
+    "Recent photo and signature",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "B.E./B.Tech hote hue bhi apply karna (sirf Diploma holders eligible hain)",
+    "Apprenticeship ko permanent naukri samajh lena",
+    "NATS enrolment 20 नवंबर तक पूरा न करना",
+    "28 नवंबर की deadline miss karna"
+   ],
+   "steps": [
+    "NATS 2.0 portal (nats.education.gov.in) par enrolment पूरा करें — 20 नवंबर 2026 तक।",
+    "TNPDCL apprentice notification पढ़ें और अपनी discipline चुनें।",
+    "NATS portal पर application भरें और documents upload करें।",
+    "कोई fee नहीं है — form 28 नवंबर 2026 तक submit करें।",
+    "Merit list (diploma marks के आधार पर) के लिए TNPDCL website देखते रहें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "TNPDCL Diploma Apprentice 2026 me kitni vacancies hain?",
+     "a": "500 slots — Electrical & Electronics Engineering 455, plus Mechanical, Civil, Electronics & Communication aur Computer Science/IT (बाकी)। ये 1 साल की apprenticeship है, BOAT-SR के तहत।"
+    },
+    {
+     "q": "TNPDCL Diploma Apprentice me stipend kitna milega? Kya ye permanent naukri hai?",
+     "a": "Stipend ₹10,900/माह है। यह permanent naukri नहीं है — 1 साल की training है, और training के बाद TNPDCL में नौकरी की कोई guarantee नहीं है।"
+    },
+    {
+     "q": "TNPDCL Diploma Apprentice ke liye kaun apply kar sakta hai?",
+     "a": "सिर्फ Tamil Nadu के natives — full-time regular Diploma in Engineering, 2022, 2023, 2024, 2025 ya May 2026 me pass। B.E./B.Tech holders eligible नहीं हैं। Selection सिर्फ diploma marks पर होगा — कोई exam ya interview नहीं।"
+    },
+    {
+     "q": "TNPDCL Diploma Apprentice ki last date kya hai?",
+     "a": "28 नवंबर 2026। लेकिन NATS 2.0 enrolment 20 नवंबर 2026 तक पूरा करना ज़रूरी है — बिना enrolment के apply नहीं कर सकते। कोई application fee नहीं है।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "TNPDCL डिप्लोमा (टेक्नीशियन) अप्रेंटिस भर्ती 2026",
+   "tagline": "500 डिप्लोमा अप्रेंटिस slots (इलेक्ट्रिकल एंड इलेक्ट्रॉनिक्स 455 + अन्य) — 1 साल की training, stipend ₹10,900/माह — अंतिम तिथि 28 नवंबर 2026।",
+   "qual": "इंजीनियरिंग में full-time regular डिप्लोमा (2022–2026 में पास); B.E./B.Tech holders eligible नहीं",
+   "fees": [
+    "Notification में कोई application fee नहीं दी गई है।"
+   ],
+   "fees_short": "No fee",
+   "specs": [
+    "2026–27 के लिए 500 apprentice slots: इलेक्ट्रिकल एंड इलेक्ट्रॉनिक्स इंजीनियरिंग 455, plus मैकेनिकल, सिविल, इलेक्ट्रॉनिक्स एंड कम्युनिकेशन और कंप्यूटर साइंस/IT (बाकी)। Training 1 साल की है, BOAT-SR (Board of Apprenticeship Training, Southern Region) के तहत।",
+    "यह APPRENTICESHIP है, स्थायी नौकरी नहीं: 1 साल की training, stipend ₹10,900/माह। Training खत्म होने के बाद TNPDCL में नौकरी की कोई guarantee नहीं है।",
+    "आवेदन 28 अक्टूबर–28 नवंबर 2026 तक NATS 2.0 portal (nats.education.gov.in) से। NATS enrolment 20 नवंबर 2026 तक पूरा करना ज़रूरी है।",
+    "सिर्फ Tamil Nadu के natives apply कर सकते हैं।",
+    "Selection सिर्फ diploma marks पर होगा — कोई written examination और कोई interview नहीं।",
+    "Age limit: सिर्फ 'Apprenticeship Rules के अनुसार' — notification में कोई आंकड़ा नहीं दिया गया है।",
+    "ऊपर के सभी तथ्य TNPDCL Engagement of Apprentices 2026–27 notification, दिनांक 28 अक्टूबर 2026 से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "Tamil Nadu का native।",
+    "इंजीनियरिंग में full-time regular डिप्लोमा, 2022, 2023, 2024, 2025 या May 2026 में पास।",
+    "B.E./B.Tech holders इस Diploma (Technician) apprenticeship के लिए eligible नहीं हैं।",
+    "Age limit Apprenticeship Rules के अनुसार (notification में कोई आंकड़ा नहीं) — NATS portal पर notice देखें।"
+   ],
+   "dos": [
+    "Apply करने से पहले NATS portal पर TNPDCL apprentice notification पूरा पढ़ें।",
+    "NATS 2.0 enrolment 20 नवंबर 2026 तक पूरा करें — इसके बिना apply नहीं कर सकते।",
+    "nats.education.gov.in पर 28 नवंबर 2026 तक apply करें।",
+    "याद रखें: यह stipend वाली 1 साल की apprenticeship है — इसे permanent appointment न समझें।"
+   ],
+   "donts": [
+    "B.E./B.Tech degree होने पर apply न करें — सिर्फ Diploma holders eligible हैं।",
+    "Training के बाद TNPDCL में नौकरी की उम्मीद न करें — apprenticeship से ऐसा कोई अधिकार नहीं मिलता।",
+    "NATS enrolment की 20 नवंबर 2026 की deadline miss न करें।",
+    "आखिरी दिन का इंतज़ार न करें — आवेदन 28 नवंबर 2026 को बंद हो जाएंगे।"
+   ],
+   "checklist": [
+    "Diploma certificate और marksheets (2022–2026 pass-out)",
+    "NATS 2.0 enrolment (20 नवंबर 2026 तक पूरा करें)",
+    "Tamil Nadu nativity proof",
+    "जन्म तिथि का proof",
+    "हाल की photo और signature scan",
+    "Aadhaar card"
+   ],
+   "documents": [
+    "Diploma certificate और marksheets",
+    "NATS enrolment proof",
+    "Tamil Nadu nativity proof",
+    "जन्म तिथि का proof",
+    "हाल की photo और signature",
+    "Aadhaar card"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "B.E./B.Tech होते हुए भी apply करना (सिर्फ Diploma holders eligible हैं)",
+    "Apprenticeship को permanent नौकरी समझ लेना",
+    "NATS enrolment 20 नवंबर तक पूरा न करना",
+    "28 नवंबर की deadline miss करना"
+   ],
+   "steps": [
+    "NATS 2.0 portal (nats.education.gov.in) पर enrolment पूरा करें — 20 नवंबर 2026 तक।",
+    "TNPDCL apprentice notification पढ़ें और अपनी discipline चुनें।",
+    "NATS portal पर application भरें और documents upload करें।",
+    "कोई fee नहीं है — form 28 नवंबर 2026 तक submit करें।",
+    "Merit list (diploma marks के आधार पर) के लिए TNPDCL website देखते रहें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "TNPDCL डिप्लोमा अप्रेंटिस 2026 में कितनी vacancies हैं?",
+     "a": "500 slots — इलेक्ट्रिकल एंड इलेक्ट्रॉनिक्स इंजीनियरिंग 455, plus मैकेनिकल, सिविल, इलेक्ट्रॉनिक्स एंड कम्युनिकेशन और कंप्यूटर साइंस/IT (बाकी)। ये 1 साल की apprenticeship है, BOAT-SR के तहत।"
+    },
+    {
+     "q": "TNPDCL डिप्लोमा अप्रेंटिस में stipend कितना मिलेगा? क्या यह permanent नौकरी है?",
+     "a": "Stipend ₹10,900/माह है। यह permanent नौकरी नहीं है — 1 साल की training है, और training के बाद TNPDCL में नौकरी की कोई guarantee नहीं है।"
+    },
+    {
+     "q": "TNPDCL डिप्लोमा अप्रेंटिस के लिए कौन apply कर सकता है?",
+     "a": "सिर्फ Tamil Nadu के natives — full-time regular डिप्लोमा in Engineering, 2022, 2023, 2024, 2025 या May 2026 में पास। B.E./B.Tech holders eligible नहीं हैं। Selection सिर्फ diploma marks पर होगा — कोई exam या interview नहीं।"
+    },
+    {
+     "q": "TNPDCL डिप्लोमा अप्रेंटिस की last date क्या है?",
+     "a": "28 नवंबर 2026। लेकिन NATS 2.0 enrolment 20 नवंबर 2026 तक पूरा करना ज़रूरी है — बिना enrolment के apply नहीं कर सकते। कोई application fee नहीं है।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "bpcl-pwbd-special-drive-2026",
+  "advt": "Special Recruitment Drive for PwBD 2026",
+  "board_en": "Bharat Petroleum Corporation Ltd (BPCL)",
+  "board_hi": "भारत पेट्रोलियम कॉर्पोरेशन लिमिटेड (BPCL)",
+  "portal": "bharatpetroleum.in",
+  "posts": 49,
+  "dates": {
+   "apply_end": "2026-11-29",
+   "apply_start": "2026-11-09",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": "19 December 2026 (tentative)",
+   "exam_hi": "19 दिसंबर 2026 (अस्थायी)",
+   "fee_end": "2026-11-29"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://www.bharatpetroleum.in",
+   "notice": null,
+   "site": "https://www.bharatpetroleum.in"
+  },
+  "en": {
+   "name": "BPCL PwBD Special Recruitment Drive 2026",
+   "tagline": "49 executive posts for Persons with Benchmark Disabilities — Associate Executive 33, Junior Executive 8 — no fee — last date 29 November 2026.",
+   "qual": "B.E./B.Tech / Inter CA-CMA / Master's in Hindi / M.Sc Chemistry + 3–5 yrs relevant experience",
+   "fees": [
+    "No application fee or examination fee is required for this Special Recruitment Drive."
+   ],
+   "fees_short": "No fee",
+   "specs": [
+    "49 indicative posts under the Special Recruitment Drive for Persons with Benchmark Disabilities (PwBDs / Divyangjan), Categories A to E: Associate Executive (Engineering) 33, Junior Executive (Accounts) 8, Associate Executive (Official Language – Hindi) 4, Associate Executive (Quality Assurance) 4.",
+    "ONLY PwBD candidates can apply — a valid Disability Certificate certifying not less than 40% permanent benchmark disability, issued by an authorised Medical Board, is required. Each post is open only to certain disability types.",
+    "Apply online 9–29 November 2026 (till 23:59 hrs) at bharatpetroleum.in (Careers → Current Job Openings).",
+    "Every post needs 3–5 years of relevant post-qualification experience — freshers are NOT eligible.",
+    "Computer Based Test (CBT) tentatively on 19 December 2026, followed by personal interview.",
+    "Pay: Junior Executive (E0) ₹30,000–1,20,000; Associate Executive (E1) ₹40,000–1,40,000 (approx. CTC ₹17.25 lakh per annum for Associate Executive).",
+    "Age as on 1 October 2026: maximum 35 years (Gen/EWS), 38 years (OBC-NCL), 40 years (SC/ST).",
+    "Outstation candidates appearing for the CBT are reimbursed up to 3rd AC train fare, and for the personal interview up to 2nd AC train fare (journeys of 30 km or more, paid by NEFT).",
+    "The total of 49 posts is indicative and may increase or decrease as per BPCL's requirements.",
+    "All facts above are taken from the BPCL Special Recruitment Drive for PwBD 2026 notification."
+   ],
+   "eligibility": [
+    "Persons with Benchmark Disabilities (PwBDs / Divyangjan) ONLY — minimum 40% permanent benchmark disability with a valid disability certificate from an authorised Medical Board.",
+    "Associate Executive (Engineering) (33): full-time B.E./B.Tech / B.Sc (Engg) (4 years, or 3 years lateral entry after Diploma) in the relevant engineering discipline with minimum 55% marks (50% for SC/ST), plus minimum 3 years of continuous post-qualification work experience in operations/maintenance/projects in Petroleum, Oil & Gas, Petrochemicals, Power or core manufacturing industries.",
+    "Junior Executive (Accounts) (8): Inter CA / CMA with relevant experience (3–5 years post-qualification).",
+    "Associate Executive (Official Language – Hindi) (4): Master's Degree in Hindi with relevant experience (3–5 years post-qualification).",
+    "Associate Executive (Quality Assurance) (4): M.Sc in Chemistry with relevant experience (3–5 years post-qualification).",
+    "Age as on 1 October 2026: maximum 35 years (Gen/EWS), 38 years (OBC-NCL), 40 years (SC/ST)."
+   ],
+   "dos": [
+    "Read the BPCL Special Recruitment Drive notification fully on bharatpetroleum.in before applying — check the disability type allowed for your post.",
+    "Apply only on bharatpetroleum.in (Careers → Current Job Openings) by 29 November 2026 (11:59 PM).",
+    "Keep your disability certificate (min 40% permanent benchmark disability), degree certificates and experience proofs ready.",
+    "Keep the travel-reimbursement rule in mind — outstation candidates get 3rd AC fare for the CBT and 2nd AC fare for the interview (journeys of 30 km or more)."
+   ],
+   "donts": [
+    "Do not apply if you do not have a benchmark disability of at least 40% — this drive is PwBD-only.",
+    "Do not apply as a fresher — every post needs 3–5 years of relevant post-qualification experience.",
+    "Do not apply for a post whose disability category you do not match — each post is open only to certain disability types.",
+    "Do not wait for the last day — the portal closes on 29 November 2026 at 11:59 PM."
+   ],
+   "checklist": [
+    "Disability Certificate (min 40% permanent benchmark disability, from an authorised Medical Board)",
+    "Degree certificates (B.E./B.Tech / Inter CA-CMA / Master's in Hindi / M.Sc Chemistry)",
+    "Post-qualification experience certificates (3–5 years)",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent photo and signature scan"
+   ],
+   "documents": [
+    "Disability Certificate (min 40% permanent benchmark disability)",
+    "Degree certificates and marksheets",
+    "Post-qualification experience certificates (3–5 years)",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Recent photo and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "40% se kam disability par apply karna (ye drive sirf PwBD ke liye hai)",
+    "Fresher hokar apply karna (har post ko 3–5 saal ka experience chahiye)",
+    "Apni disability category se match na karne wale post par apply karna",
+    "29 नवंबर रात 11:59 बजे की deadline miss karna"
+   ],
+   "steps": [
+    "bharatpetroleum.in par Special Recruitment Drive for PwBD notification padhen aur apni post chunen.",
+    "Careers → Current Job Openings par online application kholen.",
+    "Form bharen aur disability certificate, degree aur experience documents upload karen.",
+    "कोई fee नहीं है — form 29 नवंबर 2026 रात 11:59 बजे तक submit करें।",
+    "CBT (19 दिसंबर 2026, अस्थायी) aur interview ke liye BPCL website dekhte rahen."
+   ],
+   "extra_faq": [
+    {
+     "q": "BPCL PwBD Special Drive 2026 me kitni vacancies hain?",
+     "a": "49 posts (indicative) — Associate Executive (Engineering) 33, Junior Executive (Accounts) 8, Associate Executive (Official Language–Hindi) 4, Associate Executive (Quality Assurance) 4। Ye drive sirf Persons with Benchmark Disabilities (PwBD) ke liye hai।"
+    },
+    {
+     "q": "BPCL PwBD Special Drive ki last date aur fee kya hai?",
+     "a": "Online आवेदन 9 से 29 नवंबर 2026 (रात 11:59 बजे) तक। Is Special Recruitment Drive ke liye koi application fee ya examination fee नहीं है।"
+    },
+    {
+     "q": "BPCL PwBD Special Drive ke liye kaun apply kar sakta hai?",
+     "a": "सिर्फ PwBD उम्मीदवार — कम से कम 40% permanent benchmark disability, authorised Medical Board के valid certificate के साथ। हर post के लिए 3–5 साल का relevant post-qualification experience ज़रूरी है — freshers eligible नहीं हैं। Age 1 अक्टूबर 2026 को: Gen/EWS अधिकतम 35, OBC-NCL 38, SC/ST 40 वर्ष।"
+    },
+    {
+     "q": "BPCL PwBD Special Drive me selection kaise hoga?",
+     "a": "Computer Based Test (CBT) — 19 दिसंबर 2026 को अस्थायी रूप से तय है — uske baad personal interview। Outstation candidates ko CBT के लिए 3rd AC train fare aur interview के लिए 2nd AC train fare reimburse किया जाएगा (30 km ya zyada ki yatra par, NEFT se)।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "BPCL PwBD स्पेशल रिक्रूटमेंट ड्राइव 2026",
+   "tagline": "बेंचमार्क दिव्यांगता वाले व्यक्तियों के लिए 49 एग्जीक्यूटिव पद — एसोसिएट एग्जीक्यूटिव 33, जूनियर एग्जीक्यूटिव 8 — कोई fee नहीं — अंतिम तिथि 29 नवंबर 2026।",
+   "qual": "B.E./B.Tech / Inter CA-CMA / हिंदी में Master's / M.Sc Chemistry + 3–5 साल का relevant अनुभव",
+   "fees": [
+    "इस Special Recruitment Drive के लिए कोई application fee या examination fee नहीं है।"
+   ],
+   "fees_short": "No fee",
+   "specs": [
+    "बेंचमार्क दिव्यांगता वाले व्यक्तियों (PwBDs / दिव्यांगजन), Categories A to E के लिए Special Recruitment Drive में 49 indicative पद: एसोसिएट एग्जीक्यूटिव (इंजीनियरिंग) 33, जूनियर एग्जीक्यूटिव (अकाउंट्स) 8, एसोसिएट एग्जीक्यूटिव (राजभाषा – हिंदी) 4, एसोसिएट एग्जीक्यूटिव (क्वालिटी एश्योरेंस) 4।",
+    "सिर्फ PwBD उम्मीदवार ही apply कर सकते हैं — authorised Medical Board से जारी, कम से कम 40% permanent benchmark disability का valid Disability Certificate चाहिए। हर post सिर्फ कुछ disability types के लिए खुली है।",
+    "Online आवेदन 9–29 नवंबर 2026 (रात 11:59 बजे तक) bharatpetroleum.in पर (Careers → Current Job Openings)।",
+    "हर post के लिए 3–5 साल का relevant post-qualification experience चाहिए — freshers eligible नहीं हैं।",
+    "Computer Based Test (CBT) अस्थायी रूप से 19 दिसंबर 2026 को, उसके बाद personal interview।",
+    "वेतन: जूनियर एग्जीक्यूटिव (E0) ₹30,000–1,20,000; एसोसिएट एग्जीक्यूटिव (E1) ₹40,000–1,40,000 (एसोसिएट एग्जीक्यूटिव के लिए लगभग CTC ₹17.25 लाख प्रति वर्ष)।",
+    "आयु 1 अक्टूबर 2026 को: अधिकतम 35 वर्ष (Gen/EWS), 38 वर्ष (OBC-NCL), 40 वर्ष (SC/ST)।",
+    "Outstation candidates को CBT के लिए 3rd AC train fare तक और personal interview के लिए 2nd AC train fare तक reimburse किया जाएगा (30 km या ज़्यादा की यात्रा पर, NEFT से)।",
+    "49 पदों की संख्या indicative है — BPCL की ज़रूरत के अनुसार बढ़ या घट सकती है।",
+    "ऊपर के सभी तथ्य BPCL Special Recruitment Drive for PwBD 2026 notification से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "सिर्फ बेंचमार्क दिव्यांगता वाले व्यक्ति (PwBDs / दिव्यांगजन) — authorised Medical Board से कम से कम 40% permanent benchmark disability का valid certificate।",
+    "एसोसिएट एग्जीक्यूटिव (इंजीनियरिंग) (33): relevant engineering discipline में full-time B.E./B.Tech / B.Sc (Engg) (4 साल, या Diploma के बाद 3 साल lateral entry), न्यूनतम 55% अंक (SC/ST के लिए 50%), plus Petroleum, Oil & Gas, Petrochemicals, Power या core manufacturing industries में operations/maintenance/projects में कम से कम 3 साल का continuous post-qualification work experience।",
+    "जूनियर एग्जीक्यूटिव (अकाउंट्स) (8): Inter CA / CMA, relevant experience (3–5 साल post-qualification) के साथ।",
+    "एसोसिएट एग्जीक्यूटिव (राजभाषा – हिंदी) (4): हिंदी में Master's Degree, relevant experience (3–5 साल post-qualification) के साथ।",
+    "एसोसिएट एग्जीक्यूटिव (क्वालिटी एश्योरेंस) (4): Chemistry में M.Sc, relevant experience (3–5 साल post-qualification) के साथ।",
+    "आयु 1 अक्टूबर 2026 को: अधिकतम 35 वर्ष (Gen/EWS), 38 वर्ष (OBC-NCL), 40 वर्ष (SC/ST)।"
+   ],
+   "dos": [
+    "Apply करने से पहले bharatpetroleum.in पर BPCL Special Recruitment Drive notification पूरा पढ़ें — अपनी post के लिए allowed disability type देखें।",
+    "सिर्फ bharatpetroleum.in (Careers → Current Job Openings) पर 29 नवंबर 2026 (रात 11:59 बजे) तक apply करें।",
+    "Disability certificate (कम से कम 40% permanent benchmark disability), degree certificates और experience proofs तैयार रखें।",
+    "Travel-reimbursement नियम याद रखें — outstation candidates को CBT के लिए 3rd AC fare और interview के लिए 2nd AC fare मिलेगा (30 km या ज़्यादा की यात्रा पर)।"
+   ],
+   "donts": [
+    "कम से कम 40% benchmark disability न होने पर apply न करें — यह drive सिर्फ PwBD के लिए है।",
+    "Fresher होकर apply न करें — हर post के लिए 3–5 साल का relevant post-qualification experience चाहिए।",
+    "अपनी disability category से match न करने वाले post पर apply न करें — हर post सिर्फ कुछ disability types के लिए खुली है।",
+    "आखिरी दिन का इंतज़ार न करें — portal 29 नवंबर 2026 रात 11:59 बजे बंद हो जाएगा।"
+   ],
+   "checklist": [
+    "Disability Certificate (कम से कम 40% permanent benchmark disability, authorised Medical Board से)",
+    "Degree certificates (B.E./B.Tech / Inter CA-CMA / हिंदी में Master's / M.Sc Chemistry)",
+    "Post-qualification experience certificates (3–5 साल)",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की photo और signature scan"
+   ],
+   "documents": [
+    "Disability Certificate (कम से कम 40% permanent benchmark disability)",
+    "Degree certificates और marksheets",
+    "Post-qualification experience certificates (3–5 साल)",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "40% से कम disability पर apply करना (यह drive सिर्फ PwBD के लिए है)",
+    "Fresher होकर apply करना (हर post को 3–5 साल का experience चाहिए)",
+    "अपनी disability category से match न करने वाले post पर apply करना",
+    "29 नवंबर रात 11:59 बजे की deadline miss करना"
+   ],
+   "steps": [
+    "bharatpetroleum.in पर Special Recruitment Drive for PwBD notification पढ़ें और अपनी post चुनें।",
+    "Careers → Current Job Openings पर online application खोलें।",
+    "Form भरें और disability certificate, degree और experience documents upload करें।",
+    "कोई fee नहीं है — form 29 नवंबर 2026 रात 11:59 बजे तक submit करें।",
+    "CBT (19 दिसंबर 2026, अस्थायी) और interview के लिए BPCL website देखते रहें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "BPCL PwBD स्पेशल ड्राइव 2026 में कितनी vacancies हैं?",
+     "a": "49 पद (indicative) — एसोसिएट एग्जीक्यूटिव (इंजीनियरिंग) 33, जूनियर एग्जीक्यूटिव (अकाउंट्स) 8, एसोसिएट एग्जीक्यूटिव (राजभाषा–हिंदी) 4, एसोसिएट एग्जीक्यूटिव (क्वालिटी एश्योरेंस) 4। यह drive सिर्फ बेंचमार्क दिव्यांगता वाले व्यक्तियों (PwBD) के लिए है।"
+    },
+    {
+     "q": "BPCL PwBD स्पेशल ड्राइव की last date और fee क्या है?",
+     "a": "Online आवेदन 9 से 29 नवंबर 2026 (रात 11:59 बजे) तक। इस Special Recruitment Drive के लिए कोई application fee या examination fee नहीं है।"
+    },
+    {
+     "q": "BPCL PwBD स्पेशल ड्राइव के लिए कौन apply कर सकता है?",
+     "a": "सिर्फ PwBD उम्मीदवार — कम से कम 40% permanent benchmark disability, authorised Medical Board के valid certificate के साथ। हर post के लिए 3–5 साल का relevant post-qualification experience ज़रूरी है — freshers eligible नहीं हैं। Age 1 अक्टूबर 2026 को: Gen/EWS अधिकतम 35, OBC-NCL 38, SC/ST 40 वर्ष।"
+    },
+    {
+     "q": "BPCL PwBD स्पेशल ड्राइव में selection कैसे होगा?",
+     "a": "Computer Based Test (CBT) — 19 दिसंबर 2026 को अस्थायी रूप से तय है — उसके बाद personal interview। Outstation candidates को CBT के लिए 3rd AC train fare और interview के लिए 2nd AC train fare reimburse किया जाएगा (30 km या ज़्यादा की यात्रा पर, NEFT से)।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "phhc-chowkidar-2026",
+  "advt": "Employment Notice No. 06/CHK/HC/2026",
+  "board_en": "High Court of Punjab and Haryana, Chandigarh",
+  "board_hi": "पंजाब और हरियाणा उच्च न्यायालय, चंडीगढ़",
+  "portal": "highcourtchd.gov.in",
+  "posts": 22,
+  "dates": {
+   "apply_end": "2026-11-21",
+   "apply_start": "2026-10-31",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-21"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://www.highcourtchd.gov.in",
+   "notice": null,
+   "site": "https://www.highcourtchd.gov.in"
+  },
+  "en": {
+   "name": "Punjab & Haryana High Court Chowkidar Recruitment 2026",
+   "tagline": "22 Chowkidar posts on the High Court establishment — Middle pass can apply; interview only, no written test — last date 21 November 2026.",
+   "qual": "Middle Standard pass; candidates with qualification higher than 10+2 NOT eligible",
+   "fees": [
+    "₹700 for General candidates — pay online by 21 November 2026 (11:59 PM).",
+    "₹600 for SC/ST/BC and Ex-Servicemen candidates. Dependents of Ex-Servicemen (disabled/deceased in active operation) pay no fee. The fee is non-refundable; online transaction charges are extra."
+   ],
+   "fees_short": "₹700",
+   "specs": [
+    "22 Chowkidar posts on the establishment of the High Court of Punjab and Haryana at Chandigarh. The number of vacancies may increase or decrease depending on the vacancies on the date the merit list is prepared.",
+    "Apply online 31 October–21 November 2026 (11:59 PM) at highcourtchd.gov.in. No hard copy is required at the application stage.",
+    "Minimum qualification: Middle Standard pass. Candidates with a qualification HIGHER than 10+2 are NOT eligible.",
+    "Age as on 21 November 2026: not less than 18 years and not more than 35 years (Ex-Servicemen: service + 3 years).",
+    "Selection is by a 50-mark interview only — there is NO written test.",
+    "Pay is governed by the latest Government of Punjab rules and instructions adopted by the High Court for its employees — no pay amount is specified in the notice.",
+    "All facts above are taken from Employment Notice No. 06/CHK/HC/2026, dated 31 October 2026."
+   ],
+   "eligibility": [
+    "Minimum Middle Standard pass.",
+    "Candidates with a qualification higher than 10+2 are NOT eligible for this post.",
+    "Age 18–35 years as on 21 November 2026 (Ex-Servicemen: service + 3 years)."
+   ],
+   "dos": [
+    "Read Employment Notice No. 06/CHK/HC/2026 fully on highcourtchd.gov.in before applying.",
+    "Apply only online at highcourtchd.gov.in by 21 November 2026 (11:59 PM).",
+    "Pay the correct fee for your category — ₹700 General, ₹600 SC/ST/BC/Ex-Servicemen.",
+    "Prepare for the 50-mark interview — there is no written test to fall back on."
+   ],
+   "donts": [
+    "Do not apply if your qualification is higher than 10+2 — you are not eligible.",
+    "Do not wait for the last day — the portal closes on 21 November 2026 at 11:59 PM.",
+    "Do not expect a written test — selection is by interview only.",
+    "Do not send any hard copy at the application stage — it is not required."
+   ],
+   "checklist": [
+    "Middle Standard pass certificate",
+    "Date of birth proof",
+    "Caste certificate (SC/ST/BC), if applicable",
+    "Ex-Serviceman certificate / discharge proof, if applicable",
+    "Recent photo and signature scan",
+    "Domicile proof, if required"
+   ],
+   "documents": [
+    "Middle Standard pass certificate",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Ex-Serviceman certificate / discharge proof, if applicable",
+    "Recent photo and signature",
+    "Domicile proof, if required"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "10+2 se zyada qualification par apply karna (eligible nahi hain)",
+    "Written test ki ummeed karna (selection sirf interview se hai)",
+    "Hard copy bhejne ki koshish karna (application stage par zaroori nahi)",
+    "21 नवंबर रात 11:59 बजे की deadline miss karna"
+   ],
+   "steps": [
+    "highcourtchd.gov.in par Employment Notice No. 06/CHK/HC/2026 padhen.",
+    "High Court website par online application kholen.",
+    "Form bharen aur documents upload karen.",
+    "Fee online bharen (₹700 General; ₹600 SC/ST/BC/Ex-SM) — 21 नवंबर 2026 रात 11:59 बजे तक।",
+    "Form submit karen aur confirmation save karen. Interview date ke liye High Court website dekhte rahen."
+   ],
+   "extra_faq": [
+    {
+     "q": "Punjab & Haryana High Court Chowkidar 2026 me kitni vacancies hain?",
+     "a": "22 posts — High Court of Punjab and Haryana, Chandigarh ki establishment par। Vacancies ki sankhya merit list banne ki date par badh ya ghat sakti hai।"
+    },
+    {
+     "q": "Punjab & Haryana High Court Chowkidar ki last date aur fee kya hai?",
+     "a": "Online आवेदन 31 अक्टूबर से 21 नवंबर 2026 (रात 11:59 बजे) तक। Fee ₹700 (General) aur ₹600 (SC/ST/BC/Ex-Servicemen) है; deceased/disabled Ex-Servicemen ke dependents ko koi fee नहीं। Fee non-refundable है।"
+    },
+    {
+     "q": "Punjab & Haryana High Court Chowkidar ke liye kaun apply kar sakta hai?",
+     "a": "कम से कम Middle Standard pass। 10+2 से zyada qualification wale eligible नहीं हैं। Age 21 नवंबर 2026 को 18–35 वर्ष (Ex-Servicemen: service + 3 वर्ष)।"
+    },
+    {
+     "q": "Punjab & Haryana High Court Chowkidar me selection kaise hoga?",
+     "a": "सिर्फ 50 अंकों के interview से — कोई written test नहीं है। Pay Punjab Government के latest rules के अनुसार होगी (notice me koi amount नहीं दी गई है)।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "पंजाब और हरियाणा उच्च न्यायालय चौकीदार भर्ती 2026",
+   "tagline": "22 चौकीदार पद — उच्च न्यायालय की स्थापना पर — मिडिल पास apply कर सकते हैं; सिर्फ interview, कोई written test नहीं — अंतिम तिथि 21 नवंबर 2026।",
+   "qual": "मिडिल स्टैंडर्ड पास; 10+2 से ज़्यादा qualification वाले eligible नहीं",
+   "fees": [
+    "₹700 General उम्मीदवारों के लिए — 21 नवंबर 2026 (रात 11:59 बजे) तक online भरें।",
+    "₹600 SC/ST/BC और Ex-Servicemen उम्मीदवारों के लिए। Deceased/disabled Ex-Servicemen के dependents को कोई fee नहीं। Fee non-refundable है; online transaction charges अलग से लगेंगे।"
+   ],
+   "fees_short": "₹700",
+   "specs": [
+    "पंजाब और हरियाणा उच्च न्यायालय, चंडीगढ़ की स्थापना पर 22 चौकीदार पद। Merit list बनने की date पर vacancies की संख्या बढ़ या घट सकती है।",
+    "Online आवेदन 31 अक्टूबर–21 नवंबर 2026 (रात 11:59 बजे) तक highcourtchd.gov.in पर। Application stage पर कोई hard copy नहीं चाहिए।",
+    "न्यूनतम qualification: मिडिल स्टैंडर्ड पास। 10+2 से ज़्यादा qualification वाले उम्मीदवार eligible नहीं हैं।",
+    "आयु 21 नवंबर 2026 को: कम से कम 18 वर्ष और ज़्यादा से ज़्यादा 35 वर्ष (Ex-Servicemen: service + 3 वर्ष)।",
+    "चयन सिर्फ 50 अंकों के interview से होगा — कोई written test नहीं है।",
+    "वेतन High Court द्वारा अपनाए गए Punjab Government के latest rules के अनुसार होगा — notice में कोई pay amount नहीं दिया गया है।",
+    "ऊपर के सभी तथ्य Employment Notice No. 06/CHK/HC/2026, दिनांक 31 अक्टूबर 2026 से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "न्यूनतम मिडिल स्टैंडर्ड पास।",
+    "10+2 से ज़्यादा qualification वाले उम्मीदवार इस post के लिए eligible नहीं हैं।",
+    "आयु 21 नवंबर 2026 को 18–35 वर्ष (Ex-Servicemen: service + 3 वर्ष)।"
+   ],
+   "dos": [
+    "Apply करने से पहले highcourtchd.gov.in पर Employment Notice No. 06/CHK/HC/2026 पूरा पढ़ें।",
+    "सिर्फ highcourtchd.gov.in पर online 21 नवंबर 2026 (रात 11:59 बजे) तक apply करें।",
+    "अपनी category के अनुसार सही fee भरें — ₹700 General, ₹600 SC/ST/BC/Ex-Servicemen।",
+    "50 अंकों के interview की तैयारी करें — कोई written test नहीं है जिस पर भरोसा किया जा सके।"
+   ],
+   "donts": [
+    "10+2 से ज़्यादा qualification होने पर apply न करें — आप eligible नहीं हैं।",
+    "आखिरी दिन का इंतज़ार न करें — portal 21 नवंबर 2026 रात 11:59 बजे बंद हो जाएगा।",
+    "Written test की उम्मीद न करें — चयन सिर्फ interview से है।",
+    "Application stage पर कोई hard copy न भेजें — यह ज़रूरी नहीं है।"
+   ],
+   "checklist": [
+    "मिडिल स्टैंडर्ड पास certificate",
+    "जन्म तिथि का proof",
+    "Caste certificate (SC/ST/BC), अगर लागू हो",
+    "Ex-Serviceman certificate / discharge proof, अगर लागू हो",
+    "हाल की photo और signature scan",
+    "Domicile proof, अगर ज़रूरी हो"
+   ],
+   "documents": [
+    "मिडिल स्टैंडर्ड पास certificate",
+    "जन्म तिथि का proof",
+    "Caste certificate, अगर लागू हो",
+    "Ex-Serviceman certificate / discharge proof, अगर लागू हो",
+    "हाल की photo और signature",
+    "Domicile proof, अगर ज़रूरी हो"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "10+2 से ज़्यादा qualification पर apply करना (eligible नहीं हैं)",
+    "Written test की उम्मीद करना (selection सिर्फ interview से है)",
+    "Hard copy भेजने की कोशिश करना (application stage पर ज़रूरी नहीं)",
+    "21 नवंबर रात 11:59 बजे की deadline miss करना"
+   ],
+   "steps": [
+    "highcourtchd.gov.in पर Employment Notice No. 06/CHK/HC/2026 पढ़ें।",
+    "High Court website पर online application खोलें।",
+    "Form भरें और documents upload करें।",
+    "Fee online भरें (₹700 General; ₹600 SC/ST/BC/Ex-SM) — 21 नवंबर 2026 रात 11:59 बजे तक।",
+    "Form submit करें और confirmation save करें। Interview date के लिए High Court website देखते रहें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "पंजाब और हरियाणा उच्च न्यायालय चौकीदार 2026 में कितनी vacancies हैं?",
+     "a": "22 पद — पंजाब और हरियाणा उच्च न्यायालय, चंडीगढ़ की स्थापना पर। Merit list बनने की date पर vacancies की संख्या बढ़ या घट सकती है।"
+    },
+    {
+     "q": "पंजाब और हरियाणा उच्च न्यायालय चौकीदार की last date और fee क्या है?",
+     "a": "Online आवेदन 31 अक्टूबर से 21 नवंबर 2026 (रात 11:59 बजे) तक। Fee ₹700 (General) और ₹600 (SC/ST/BC/Ex-Servicemen) है; deceased/disabled Ex-Servicemen के dependents को कोई fee नहीं। Fee non-refundable है।"
+    },
+    {
+     "q": "पंजाब और हरियाणा उच्च न्यायालय चौकीदार के लिए कौन apply कर सकता है?",
+     "a": "कम से कम मिडिल स्टैंडर्ड पास। 10+2 से ज़्यादा qualification वाले eligible नहीं हैं। Age 21 नवंबर 2026 को 18–35 वर्ष (Ex-Servicemen: service + 3 वर्ष)।"
+    },
+    {
+     "q": "पंजाब और हरियाणा उच्च न्यायालय चौकीदार में selection कैसे होगा?",
+     "a": "सिर्फ 50 अंकों के interview से — कोई written test नहीं है। वेतन Punjab Government के latest rules के अनुसार होगा (notice में कोई amount नहीं दी गई है)।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "icf-sports-quota-2026",
+  "advt": "Employment Notice No. PB/RR/39/Sports-Open/01/2026-2027",
+  "board_en": "Integral Coach Factory (ICF), Chennai",
+  "board_hi": "इंटीग्रल कोच फैक्टरी (ICF), चेन्नई",
+  "portal": "pb.icf.gov.in",
+  "posts": 17,
+  "dates": {
+   "apply_end": "2026-12-09",
+   "apply_start": "2026-11-10",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-09"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://pb.icf.gov.in",
+   "notice": null,
+   "site": "https://pb.icf.gov.in"
+  },
+  "en": {
+   "name": "ICF Chennai Sports Quota Recruitment 2026",
+   "tagline": "17 Group C sportsperson posts (Level-1: 9, Level-2: 8) — Football, Kabaddi, Hockey, Tennis, Volleyball — last date 9 December 2026.",
+   "qual": "10th / ITI / 12th pass + recognised sports achievements (1 Apr 2024–9 Dec 2026)",
+   "fees": [
+    "₹500 for General/OBC/EWS candidates — pay online by 9 December 2026.",
+    "₹250 for SC/ST/Ex-Servicemen/PwBD/Women/Minorities/EBC candidates. The ₹250 concessional fee is refunded to candidates who appear in the trials (minus bank charges)."
+   ],
+   "fees_short": "₹500",
+   "specs": [
+    "17 Group C posts for outstanding sportspersons against Sports Quota (Open Advertisement) 2026–27: Pay Level-1 (Grade Pay ₹1,800) 9 posts, Pay Level-2 (Grade Pay ₹1,900) 8 posts. Games: Football, Kabaddi, Hockey, Tennis, Volleyball.",
+    "Apply online 10 November 2026 (9 AM)–9 December 2026 (11:59 PM) at pb.icf.gov.in.",
+    "Age 18–25 years as on 1 January 2027 (born between 02.01.2002 and 01.01.2009, both dates inclusive). NO age relaxation is permissible for recruitment through open advertisement.",
+    "Only sports achievements between 1 April 2024 and 9 December 2026 will be considered.",
+    "Selection is by sports trials, sports achievement and education — there is NO written examination.",
+    "These are regular Group C posts in the Integral Coach Factory, Chennai (Ministry of Railways).",
+    "All facts above are taken from Employment Notice No. PB/RR/39/Sports-Open/01/2026-2027, dated 10 November 2026."
+   ],
+   "eligibility": [
+    "10th pass / ITI / 12th pass, as per the post and game.",
+    "Recognised sports achievements between 1 April 2024 and 9 December 2026 in Football, Kabaddi, Hockey, Tennis or Volleyball.",
+    "Age 18–25 years as on 1 January 2027 (born 02.01.2002–01.01.2009). No age relaxation is allowed."
+   ],
+   "dos": [
+    "Read Employment Notice No. PB/RR/39/Sports-Open/01/2026-2027 fully on pb.icf.gov.in before applying — check the game and position-wise posts.",
+    "Apply only online at pb.icf.gov.in between 10 November and 9 December 2026.",
+    "Keep your sports achievement certificates (1 April 2024–9 December 2026) and education certificates ready.",
+    "Keep the fee payment transaction ID (starting with 'DU') safe — it is needed later."
+   ],
+   "donts": [
+    "Do not apply with sports achievements outside 1 April 2024–9 December 2026 — only achievements in this window count.",
+    "Do not expect any age relaxation — none is permissible in this open advertisement.",
+    "Do not expect a written test — selection is by trials, sports achievement and education.",
+    "Do not wait for the last day — the portal closes on 9 December 2026 at 11:59 PM."
+   ],
+   "checklist": [
+    "10th / ITI / 12th certificate (as per post)",
+    "Sports achievement certificates (1 April 2024–9 December 2026)",
+    "Date of birth proof",
+    "Caste / category certificate, if applicable",
+    "Fee payment transaction ID (starting with 'DU')",
+    "Recent photo and signature scan"
+   ],
+   "documents": [
+    "10th / ITI / 12th certificate and marksheets",
+    "Sports achievement certificates",
+    "Date of birth proof",
+    "Caste / category certificate, if applicable",
+    "Recent photo and signature",
+    "Fee payment receipt"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "1 अप्रैल 2024 se pehle ya 9 दिसंबर 2026 ke baad ki sports achievement par apply karna",
+    "Age relaxation ki ummeed karna (is open advertisement me koi relaxation nahi)",
+    "Written test ki ummeed karna (selection trials + achievement + education se hai)",
+    "9 दिसंबर रात 11:59 बजे की deadline miss karna"
+   ],
+   "steps": [
+    "pb.icf.gov.in par Employment Notice No. PB/RR/39/Sports-Open/01/2026-2027 padhen aur apna game/position chunen.",
+    "ICF portal par registration karen aur form bharen.",
+    "Sports achievement certificates aur education documents upload karen.",
+    "Fee online bharen (₹500 Gen/OBC/EWS; ₹250 SC/ST/Ex-SM/PwBD/Women/Minorities/EBC) — 9 दिसंबर 2026 tak — aur 'DU' se shuru hone wala transaction ID save karen.",
+    "Form submit karen aur confirmation save karen. Trials ki date ke liye ICF website dekhte rahen."
+   ],
+   "extra_faq": [
+    {
+     "q": "ICF Chennai Sports Quota 2026 me kitni vacancies hain?",
+     "a": "17 Group C posts — Pay Level-1 (Grade Pay ₹1,800) me 9 aur Pay Level-2 (Grade Pay ₹1,900) me 8। Games: Football, Kabaddi, Hockey, Tennis, Volleyball।"
+    },
+    {
+     "q": "ICF Chennai Sports Quota ki last date aur fee kya hai?",
+     "a": "Online आवेदन 10 नवंबर 2026 (सुबह 9 बजे) से 9 दिसंबर 2026 (रात 11:59 बजे) तक। Fee ₹500 (General/OBC/EWS) aur ₹250 (SC/ST/Ex-SM/PwBD/Women/Minorities/EBC) है। Trials me appear karne par ₹250 concessional fee refund hoti hai (bank charges minus karke)।"
+    },
+    {
+     "q": "ICF Chennai Sports Quota ke liye age limit kya hai?",
+     "a": "18–25 वर्ष, 1 जनवरी 2027 को (जन्म 02.01.2002–01.01.2009 के बीच)। Is open advertisement me age me koi relaxation नहीं मिलेगी।"
+    },
+    {
+     "q": "ICF Chennai Sports Quota me selection kaise hoga?",
+     "a": "Sports trials, sports achievement aur education se — कोई written examination नहीं है। सिर्फ 1 अप्रैल 2024 से 9 दिसंबर 2026 के बीच की sports achievements मानी जाएंगी।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "ICF चेन्नई स्पोर्ट्स कोटा भर्ती 2026",
+   "tagline": "17 Group C खिलाड़ी पद (Level-1: 9, Level-2: 8) — फुटबॉल, कबड्डी, हॉकी, टेनिस, वॉलीबॉल — अंतिम तिथि 9 दिसंबर 2026।",
+   "qual": "10वीं / ITI / 12वीं पास + मान्यता प्राप्त खेल उपलब्धियां (1 अप्रैल 2024–9 दिसंबर 2026)",
+   "fees": [
+    "₹500 General/OBC/EWS उम्मीदवारों के लिए — 9 दिसंबर 2026 तक online भरें।",
+    "₹250 SC/ST/Ex-Servicemen/PwBD/महिला/Minorities/EBC उम्मीदवारों के लिए। Trials में appear करने पर ₹250 concessional fee refund होती है (bank charges minus करके)।"
+   ],
+   "fees_short": "₹500",
+   "specs": [
+    "स्पोर्ट्स कोटा (Open Advertisement) 2026–27 में उत्कृष्ट खिलाड़ियों के लिए 17 Group C पद: Pay Level-1 (Grade Pay ₹1,800) में 9 पद, Pay Level-2 (Grade Pay ₹1,900) में 8 पद। खेल: फुटबॉल, कबड्डी, हॉकी, टेनिस, वॉलीबॉल।",
+    "Online आवेदन 10 नवंबर 2026 (सुबह 9 बजे)–9 दिसंबर 2026 (रात 11:59 बजे) तक pb.icf.gov.in पर।",
+    "आयु 18–25 वर्ष, 1 जनवरी 2027 को (जन्म 02.01.2002–01.01.2009 के बीच, दोनों dates inclusive)। इस open advertisement में आयु में कोई छूट नहीं मिलेगी।",
+    "सिर्फ 1 अप्रैल 2024 से 9 दिसंबर 2026 के बीच की खेल उपलब्धियां मानी जाएंगी।",
+    "चयन sports trials, sports achievement और education से होगा — कोई written examination नहीं है।",
+    "ये इंटीग्रल कोच फैक्टरी, चेन्नई (रेल मंत्रालय) में regular Group C पद हैं।",
+    "ऊपर के सभी तथ्य Employment Notice No. PB/RR/39/Sports-Open/01/2026-2027, दिनांक 10 नवंबर 2026 से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "10वीं पास / ITI / 12वीं पास, post और game के अनुसार।",
+    "फुटबॉल, कबड्डी, हॉकी, टेनिस या वॉलीबॉल में 1 अप्रैल 2024 से 9 दिसंबर 2026 के बीच मान्यता प्राप्त खेल उपलब्धियां।",
+    "आयु 18–25 वर्ष, 1 जनवरी 2027 को (जन्म 02.01.2002–01.01.2009)। कोई age relaxation नहीं मिलेगी।"
+   ],
+   "dos": [
+    "Apply करने से पहले pb.icf.gov.in पर Employment Notice No. PB/RR/39/Sports-Open/01/2026-2027 पूरा पढ़ें — game और position-wise posts देखें।",
+    "सिर्फ pb.icf.gov.in पर online 10 नवंबर से 9 दिसंबर 2026 के बीच apply करें।",
+    "Sports achievement certificates (1 अप्रैल 2024–9 दिसंबर 2026) और education certificates तैयार रखें।",
+    "Fee payment का transaction ID ('DU' से शुरू होने वाला) संभालकर रखें — यह बाद में चाहिए।"
+   ],
+   "donts": [
+    "1 अप्रैल 2024 से पहले या 9 दिसंबर 2026 के बाद की sports achievement पर apply न करें — सिर्फ इसी window की उपलब्धियां मानी जाएंगी।",
+    "Age relaxation की उम्मीद न करें — इस open advertisement में कोई relaxation नहीं है।",
+    "Written test की उम्मीद न करें — चयन trials, sports achievement और education से है।",
+    "आखिरी दिन का इंतज़ार न करें — portal 9 दिसंबर 2026 रात 11:59 बजे बंद हो जाएगा।"
+   ],
+   "checklist": [
+    "10वीं / ITI / 12वीं certificate (post के अनुसार)",
+    "Sports achievement certificates (1 अप्रैल 2024–9 दिसंबर 2026)",
+    "जन्म तिथि का proof",
+    "Caste / category certificate, अगर लागू हो",
+    "Fee payment transaction ID ('DU' से शुरू)",
+    "हाल की photo और signature scan"
+   ],
+   "documents": [
+    "10वीं / ITI / 12वीं certificate और marksheets",
+    "Sports achievement certificates",
+    "जन्म तिथि का proof",
+    "Caste / category certificate, अगर लागू हो",
+    "हाल की photo और signature",
+    "Fee payment receipt"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "1 अप्रैल 2024 से पहले या 9 दिसंबर 2026 के बाद की sports achievement पर apply करना",
+    "Age relaxation की उम्मीद करना (इस open advertisement में कोई relaxation नहीं)",
+    "Written test की उम्मीद करना (selection trials + achievement + education से है)",
+    "9 दिसंबर रात 11:59 बजे की deadline miss करना"
+   ],
+   "steps": [
+    "pb.icf.gov.in पर Employment Notice No. PB/RR/39/Sports-Open/01/2026-2027 पढ़ें और अपना game/position चुनें।",
+    "ICF portal पर registration करें और form भरें।",
+    "Sports achievement certificates और education documents upload करें।",
+    "Fee online भरें (₹500 Gen/OBC/EWS; ₹250 SC/ST/Ex-SM/PwBD/Women/Minorities/EBC) — 9 दिसंबर 2026 तक — और 'DU' से शुरू होने वाला transaction ID save करें।",
+    "Form submit करें और confirmation save करें। Trials की date के लिए ICF website देखते रहें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "ICF चेन्नई स्पोर्ट्स कोटा 2026 में कितनी vacancies हैं?",
+     "a": "17 Group C पद — Pay Level-1 (Grade Pay ₹1,800) में 9 और Pay Level-2 (Grade Pay ₹1,900) में 8। खेल: फुटबॉल, कबड्डी, हॉकी, टेनिस, वॉलीबॉल।"
+    },
+    {
+     "q": "ICF चेन्नई स्पोर्ट्स कोटा की last date और fee क्या है?",
+     "a": "Online आवेदन 10 नवंबर 2026 (सुबह 9 बजे) से 9 दिसंबर 2026 (रात 11:59 बजे) तक। Fee ₹500 (General/OBC/EWS) और ₹250 (SC/ST/Ex-SM/PwBD/महिला/Minorities/EBC) है। Trials में appear करने पर ₹250 concessional fee refund होती है (bank charges minus करके)।"
+    },
+    {
+     "q": "ICF चेन्नई स्पोर्ट्स कोटा के लिए age limit क्या है?",
+     "a": "18–25 वर्ष, 1 जनवरी 2027 को (जन्म 02.01.2002–01.01.2009 के बीच)। इस open advertisement में आयु में कोई relaxation नहीं मिलेगी।"
+    },
+    {
+     "q": "ICF चेन्नई स्पोर्ट्स कोटा में selection कैसे होगा?",
+     "a": "Sports trials, sports achievement और education से — कोई written examination नहीं है। सिर्फ 1 अप्रैल 2024 से 9 दिसंबर 2026 के बीच की sports achievements मानी जाएंगी।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "dvc-bpscl-management-trainee-2026",
+  "advt": "Advt No. PLR/BPSCL/05/2026/07",
+  "board_en": "Damodar Valley Corporation (for Bokaro Power Supply Co. (P) Ltd)",
+  "board_hi": "दामोदर घाटी निगम (बोकारो पावर सप्लाई कंपनी (प्रा.) लिमिटेड के लिए)",
+  "portal": "dvc.gov.in",
+  "posts": 18,
+  "dates": {
+   "apply_end": "2026-12-06",
+   "apply_start": "2026-11-06",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-06"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://www.dvc.gov.in",
+   "notice": null,
+   "site": "https://www.dvc.gov.in"
+  },
+  "en": {
+   "name": "DVC BPSCL Management Trainee (Technical) Recruitment 2026",
+   "tagline": "18 Management Trainee (Technical) posts through GATE-2025 — Mechanical 10, Electrical 4, Civil 1, C&I 3 — last date 6 December 2026.",
+   "qual": "Full-time B.E./B.Tech (≥65%; 55% SC/ST/PwD) + valid GATE-2025 score in matching paper",
+   "fees": [
+    "₹300 for General/OBC/EWS candidates — pay online by 6 December 2026.",
+    "No fee for SC/ST/PwBD/Ex-Servicemen and departmental candidates."
+   ],
+   "fees_short": "₹300",
+   "specs": [
+    "18 Management Trainee (Technical) posts in Bokaro Power Supply Co. (P) Ltd (BPSCL), a SAIL–DVC joint venture: Mechanical 10, Electrical 4, Civil 1, Instrumentation & Control (C&I) 3.",
+    "Apply online 6 November–6 December 2026 (till 23:59 hrs) at dvc.gov.in (Career → Recruitment Notices).",
+    "Selection is on GATE-2025 marks only, followed by document verification and medical examination — there is NO separate written test.",
+    "1-year training with pay of ₹50,000–1,60,000, then absorption as Assistant Manager (E-1) at ₹60,000–1,80,000.",
+    "Age as on 6 December 2026: maximum 28 years (UR); OBC +3 years, SC/ST +5 years, PwBD +10–15 years, departmental candidates 45 years.",
+    "This is a different drive from the DVC Executive Trainee recruitment (Advt No. PLR/ET/04/2026/05, 108 posts) — do not confuse the two.",
+    "All facts above are taken from Advt No. PLR/BPSCL/05/2026/07, dated 6 November 2026."
+   ],
+   "eligibility": [
+    "Full-time B.E./B.Tech in the relevant discipline with minimum 65% marks (55% for SC/ST/PwD candidates).",
+    "Valid GATE-2025 score in the matching paper: Mechanical (ME), Electrical (EE), Civil (CE) or Instrumentation (IN).",
+    "Age as on 6 December 2026: maximum 28 years (UR); OBC +3, SC/ST +5, PwBD +10–15, departmental 45 years."
+   ],
+   "dos": [
+    "Read Advt No. PLR/BPSCL/05/2026/07 fully on dvc.gov.in before applying.",
+    "Apply only on dvc.gov.in (Career → Recruitment Notices) by 6 December 2026 (11:59 PM).",
+    "Keep your GATE-2025 scorecard, B.E./B.Tech degree and category certificates ready.",
+    "Do not confuse this with the DVC Executive Trainee drive (Advt PLR/ET/04/2026/05) — the two are separate."
+   ],
+   "donts": [
+    "Do not apply without a valid GATE-2025 score in the matching paper — selection is on GATE-2025 marks only.",
+    "Do not apply with a GATE score from any other year — only GATE-2025 counts.",
+    "Do not wait for the last day — the portal closes on 6 December 2026 at 11:59 PM.",
+    "Do not expect a separate written test — there is none."
+   ],
+   "checklist": [
+    "GATE-2025 scorecard (ME/EE/CE/IN)",
+    "B.E./B.Tech degree certificate and marksheets",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "Recent photo and signature scan"
+   ],
+   "documents": [
+    "GATE-2025 scorecard",
+    "B.E./B.Tech degree certificate and marksheets",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "Recent photo and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "GATE-2025 ke alawa kisi aur saal ke score par apply karna",
+    "DVC Executive Trainee drive se confuse hona (dono alag hain)",
+    "65% se kam marks par apply karna (SC/ST/PwD ke liye 55%)",
+    "6 दिसंबर रात 11:59 बजे की deadline miss karna"
+   ],
+   "steps": [
+    "dvc.gov.in par Advt No. PLR/BPSCL/05/2026/07 padhen.",
+    "Career → Recruitment Notices par online application kholen.",
+    "Form bharen aur GATE-2025 scorecard, degree aur documents upload karen.",
+    "₹300 fee online bharen (Gen/OBC/EWS; SC/ST/PwBD/Ex-SM/departmental nil) — 6 दिसंबर 2026 tak.",
+    "Form submit karen aur confirmation save karen. DV aur medical call ke liye DVC website dekhte rahen."
+   ],
+   "extra_faq": [
+    {
+     "q": "DVC BPSCL Management Trainee 2026 me kitni vacancies hain?",
+     "a": "18 posts — Mechanical 10, Electrical 4, Civil 1, Instrumentation & Control (C&I) 3। Ye Bokaro Power Supply Co. (P) Ltd (BPSCL), SAIL–DVC joint venture ke liye hain।"
+    },
+    {
+     "q": "DVC BPSCL Management Trainee ki last date aur fee kya hai?",
+     "a": "Online आवेदन 6 नवंबर से 6 दिसंबर 2026 (रात 11:59 बजे) तक। Fee ₹300 (General/OBC/EWS) है; SC/ST/PwBD/Ex-Servicemen और departmental candidates को कोई fee नहीं।"
+    },
+    {
+     "q": "DVC BPSCL Management Trainee ke liye kaun apply kar sakta hai?",
+     "a": "Full-time B.E./B.Tech (कम से कम 65% अंक; SC/ST/PwD के लिए 55%) + matching paper me valid GATE-2025 score (ME/EE/CE/IN)। Age 6 दिसंबर 2026 को अधिकतम 28 वर्ष (UR); OBC +3, SC/ST +5, PwBD +10–15, departmental 45 वर्ष।"
+    },
+    {
+     "q": "DVC BPSCL Management Trainee me selection kaise hoga?",
+     "a": "सिर्फ GATE-2025 marks पर — कोई अलग written test नहीं है — uske baad document verification aur medical examination। 1 साल की training (₹50,000–1,60,000) ke baad Assistant Manager (E-1) (₹60,000–1,80,000) ke roop me absorption।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "DVC BPSCL मैनेजमेंट ट्रेनी (टेक्निकल) भर्ती 2026",
+   "tagline": "18 मैनेजमेंट ट्रेनी (टेक्निकल) पद — GATE-2025 के माध्यम से — मैकेनिकल 10, इलेक्ट्रिकल 4, सिविल 1, C&I 3 — अंतिम तिथि 6 दिसंबर 2026।",
+   "qual": "Full-time B.E./B.Tech (≥65%; SC/ST/PwD के लिए 55%) + matching paper में valid GATE-2025 score",
+   "fees": [
+    "₹300 General/OBC/EWS उम्मीदवारों के लिए — 6 दिसंबर 2026 तक online भरें।",
+    "SC/ST/PwBD/Ex-Servicemen और departmental candidates को कोई fee नहीं।"
+   ],
+   "fees_short": "₹300",
+   "specs": [
+    "बोकारो पावर सप्लाई कंपनी (प्रा.) लिमिटेड (BPSCL), SAIL–DVC joint venture में 18 मैनेजमेंट ट्रेनी (टेक्निकल) पद: मैकेनिकल 10, इलेक्ट्रिकल 4, सिविल 1, इंस्ट्रूमेंटेशन एंड कंट्रोल (C&I) 3।",
+    "Online आवेदन 6 नवंबर–6 दिसंबर 2026 (रात 11:59 बजे तक) dvc.gov.in पर (Career → Recruitment Notices)।",
+    "चयन सिर्फ GATE-2025 marks पर होगा, उसके बाद document verification और medical examination — कोई अलग written test नहीं है।",
+    "1 साल की training (वेतन ₹50,000–1,60,000), फिर असिस्टेंट मैनेजर (E-1) (₹60,000–1,80,000) के रूप में absorption।",
+    "आयु 6 दिसंबर 2026 को: अधिकतम 28 वर्ष (UR); OBC +3 वर्ष, SC/ST +5 वर्ष, PwBD +10–15 वर्ष, departmental candidates 45 वर्ष।",
+    "यह DVC Executive Trainee recruitment (Advt No. PLR/ET/04/2026/05, 108 पद) से अलग drive है — दोनों को confuse न करें।",
+    "ऊपर के सभी तथ्य Advt No. PLR/BPSCL/05/2026/07, दिनांक 6 नवंबर 2026 से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "Relevant discipline में full-time B.E./B.Tech, न्यूनतम 65% अंक (SC/ST/PwD उम्मीदवारों के लिए 55%)।",
+    "Matching paper में valid GATE-2025 score: मैकेनिकल (ME), इलेक्ट्रिकल (EE), सिविल (CE) या इंस्ट्रूमेंटेशन (IN)।",
+    "आयु 6 दिसंबर 2026 को: अधिकतम 28 वर्ष (UR); OBC +3, SC/ST +5, PwBD +10–15, departmental 45 वर्ष।"
+   ],
+   "dos": [
+    "Apply करने से पहले dvc.gov.in पर Advt No. PLR/BPSCL/05/2026/07 पूरा पढ़ें।",
+    "सिर्फ dvc.gov.in (Career → Recruitment Notices) पर 6 दिसंबर 2026 (रात 11:59 बजे) तक apply करें।",
+    "GATE-2025 scorecard, B.E./B.Tech degree और category certificates तैयार रखें।",
+    "इसे DVC Executive Trainee drive (Advt PLR/ET/04/2026/05) से confuse न करें — दोनों अलग हैं।"
+   ],
+   "donts": [
+    "Matching paper में valid GATE-2025 score के बिना apply न करें — चयन सिर्फ GATE-2025 marks पर है।",
+    "किसी और साल के GATE score पर apply न करें — सिर्फ GATE-2025 मान्य है।",
+    "आखिरी दिन का इंतज़ार न करें — portal 6 दिसंबर 2026 रात 11:59 बजे बंद हो जाएगा।",
+    "अलग written test की उम्मीद न करें — कोई नहीं है।"
+   ],
+   "checklist": [
+    "GATE-2025 scorecard (ME/EE/CE/IN)",
+    "B.E./B.Tech degree certificate और marksheets",
+    "जन्म तिथि का proof",
+    "Caste / PwBD certificate, अगर लागू हो",
+    "हाल की photo और signature scan"
+   ],
+   "documents": [
+    "GATE-2025 scorecard",
+    "B.E./B.Tech degree certificate और marksheets",
+    "जन्म तिथि का proof",
+    "Caste / PwBD certificate, अगर लागू हो",
+    "हाल की photo और signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "GATE-2025 के अलावा किसी और साल के score पर apply करना",
+    "DVC Executive Trainee drive से confuse होना (दोनों अलग हैं)",
+    "65% से कम marks पर apply करना (SC/ST/PwD के लिए 55%)",
+    "6 दिसंबर रात 11:59 बजे की deadline miss करना"
+   ],
+   "steps": [
+    "dvc.gov.in पर Advt No. PLR/BPSCL/05/2026/07 पढ़ें।",
+    "Career → Recruitment Notices पर online application खोलें।",
+    "Form भरें और GATE-2025 scorecard, degree और documents upload करें।",
+    "₹300 fee online भरें (Gen/OBC/EWS; SC/ST/PwBD/Ex-SM/departmental nil) — 6 दिसंबर 2026 तक।",
+    "Form submit करें और confirmation save करें। DV और medical call के लिए DVC website देखते रहें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "DVC BPSCL मैनेजमेंट ट्रेनी 2026 में कितनी vacancies हैं?",
+     "a": "18 पद — मैकेनिकल 10, इलेक्ट्रिकल 4, सिविल 1, इंस्ट्रूमेंटेशन एंड कंट्रोल (C&I) 3। ये बोकारो पावर सप्लाई कंपनी (प्रा.) लिमिटेड (BPSCL), SAIL–DVC joint venture के लिए हैं।"
+    },
+    {
+     "q": "DVC BPSCL मैनेजमेंट ट्रेनी की last date और fee क्या है?",
+     "a": "Online आवेदन 6 नवंबर से 6 दिसंबर 2026 (रात 11:59 बजे) तक। Fee ₹300 (General/OBC/EWS) है; SC/ST/PwBD/Ex-Servicemen और departmental candidates को कोई fee नहीं।"
+    },
+    {
+     "q": "DVC BPSCL मैनेजमेंट ट्रेनी के लिए कौन apply कर सकता है?",
+     "a": "Full-time B.E./B.Tech (कम से कम 65% अंक; SC/ST/PwD के लिए 55%) + matching paper में valid GATE-2025 score (ME/EE/CE/IN)। Age 6 दिसंबर 2026 को अधिकतम 28 वर्ष (UR); OBC +3, SC/ST +5, PwBD +10–15, departmental 45 वर्ष।"
+    },
+    {
+     "q": "DVC BPSCL मैनेजमेंट ट्रेनी में selection कैसे होगा?",
+     "a": "सिर्फ GATE-2025 marks पर — कोई अलग written test नहीं है — उसके बाद document verification और medical examination। 1 साल की training (₹50,000–1,60,000) के बाद असिस्टेंट मैनेजर (E-1) (₹60,000–1,80,000) के रूप में absorption।"
     }
    ]
   }

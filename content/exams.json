@@ -230,7 +230,7 @@
   "board_en": "Railway Recruitment Board (RRB)",
   "board_hi": "रेलवे भर्ती बोर्ड (RRB)",
   "dates": {
-   "apply_end": "2026-11-13",
+   "apply_end": "2026-11-15",
    "apply_start": "2026-10-15",
    "correction_end": "2026-11-25",
    "correction_start": "2026-11-16",
@@ -1345,7 +1345,10 @@
      "q": "When does the form open and close?"
     }
    ],
-   "fees": [],
+   "fees": [
+    "Application fee: ₹0 for every category — only the online processing fee is charged.",
+    "Total payable at application: ₹25 (₹0 application fee + ₹25 online processing fee) for General/OBC/SC/ST — the same for all categories, as per the official notification (Advt 26-Exam/2026). A separate main-examination fee is payable later, only by candidates shortlisted for the main exam."
+   ],
    "kit": [
     {
      "text": "Photo and signature are auto-fetched from your PET record — no fresh upload, nothing to compress. Just log in with your PET registration details and fill the form.",
@@ -1370,7 +1373,8 @@
     "Pay the fee online — last date 1 December 2026",
     "Submit and print the application copy"
    ],
-   "tagline": "1,784 Lower PCS Mains posts (Advt 26-Exam/2026) for PET-2025 shortlisted candidates: dates and the auto-fetch photo rule — all on one page."
+   "tagline": "1,784 Lower PCS Mains posts (Advt 26-Exam/2026) for PET-2025 shortlisted candidates: dates and the auto-fetch photo rule — all on one page.",
+   "fees_short": "₹25 (all categories)"
   },
   "guide": {
    "en": null,
@@ -1411,7 +1415,10 @@
      "q": "फॉर्म कब खुलता है और कब बंद होता है?"
     }
    ],
-   "fees": [],
+   "fees": [
+    "आवेदन शुल्क: हर श्रेणी के लिए ₹0 — केवल ऑनलाइन प्रक्रिया शुल्क लिया जाता है।",
+    "आवेदन के समय कुल देय: ₹25 (₹0 आवेदन शुल्क + ₹25 ऑनलाइन प्रक्रिया शुल्क) — सामान्य/OBC/SC/ST सभी के लिए एक समान, आधिकारिक सूचना (Advt 26-Exam/2026) के अनुसार। मुख्य परीक्षा का अलग शुल्क बाद में केवल उन्हीं उम्मीदवारों से लिया जाएगा जो मुख्य परीक्षा के लिए चुने जाएंगे।"
+   ],
    "kit": [
     {
      "text": "फोटो और हस्ताक्षर आपके PET record से auto-fetch होते हैं — कोई नया upload नहीं, कुछ compress नहीं करना। बस अपने PET registration details से login करके फॉर्म भरो।",
@@ -1436,7 +1443,8 @@
     "शुल्क online भरो — अंतिम तिथि 1 दिसंबर 2026",
     "Submit करो और application की copy print कर लो"
    ],
-   "tagline": "PET-2025 में shortlist उम्मीदवारों के लिए 1,784 लोअर PCS मेंस पद (विज्ञापन 26-Exam/2026): तारीखें और auto-fetch फोटो का नियम — सब एक ही पेज पर।"
+   "tagline": "PET-2025 में shortlist उम्मीदवारों के लिए 1,784 लोअर PCS मेंस पद (विज्ञापन 26-Exam/2026): तारीखें और auto-fetch फोटो का नियम — सब एक ही पेज पर।",
+   "fees_short": "₹25 (सभी श्रेणियों के लिए)"
   },
   "links": {
    "apply": "https://upsssc.gov.in/AllNotifications.aspx",
@@ -2481,7 +2489,7 @@
    "tagline": "हिमाचल के CBSE-संबद्ध सरकारी स्कूलों में 2,423 शिक्षक पद — पाँच साल की योजना-आधारित नियुक्ति, निश्चित ₹30,000 मासिक मानदेय; ये नियमित पद नहीं हैं। तारीखें, size और फ्री टूल एक ही पेज पर।"
   },
   "links": {
-   "apply": "https://hprca.hp.gov.in",
+   "apply": "https://hprca.hp.gov.in/login",
    "notice": null,
    "site": "https://hprca.hp.gov.in"
   },
@@ -4266,7 +4274,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://www.rrccr.com/",
+   "apply": "https://rrccr.com/TradeApp/login/Index",
    "notice": "https://rrccr.com/rrwc/Files/7131ab94-6fc8-45c1-a2ed-f9191914dcbd.pdf",
    "site": "https://www.rrccr.com/"
   },
@@ -5135,7 +5143,7 @@
    "hi": null
   },
   "links": {
-   "apply": "http://jrhms.jharkhand.gov.in/",
+   "apply": "https://recruitment.jharkhand.gov.in/",
    "notice": null,
    "site": "https://jrhms.jharkhand.gov.in/"
   },
@@ -6208,7 +6216,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://www.opsc.gov.in/",
+   "apply": "https://opscechayan.in/#/auth/landing",
    "notice": null,
    "site": "https://www.opsc.gov.in/"
   },
@@ -8922,7 +8930,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://www.hindustancopper.com",
+   "apply": "https://www.hindustancopper.com/ITIApplication/Login/145",
    "notice": null,
    "site": "https://www.hindustancopper.com"
   },
@@ -9144,7 +9152,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://missionshakti.odisha.gov.in",
+   "apply": "https://cdn3.digialm.com/EForms/configuredHtml/33137/98188/Index.html",
    "notice": "https://missionshakti.odisha.gov.in/sites/default/files/2026-11/FINAL_Advertisement%20for%20HR%20recruitment.pdf",
    "site": "https://missionshakti.odisha.gov.in"
   },
@@ -9761,7 +9769,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://www.join.afms.gov.in",
+   "apply": "https://join.afms.gov.in/registrationUrl",
    "notice": null,
    "site": "https://www.join.afms.gov.in"
   },
@@ -13121,7 +13129,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://hprca.hp.gov.in",
+   "apply": "https://hprca.hp.gov.in/login",
    "notice": null,
    "site": "https://hprca.hp.gov.in"
   },
@@ -14783,7 +14791,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://www.asrb.gov.in",
+   "apply": "https://oasis.asrb.gov.in/",
    "notice": null,
    "site": "https://www.asrb.gov.in"
   },
@@ -15197,7 +15205,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://www.nlcindia.in",
+   "apply": "https://web.nlcindia.in/rec102026/index.php",
    "notice": null,
    "site": "https://www.nlcindia.in"
   },
@@ -15626,7 +15634,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://www.npcil.nic.in",
+   "apply": "https://npcilcareers.co.in/NAPSA20262910/candidate/Default.aspx",
    "notice": null,
    "site": "https://www.npcil.nic.in"
   },
@@ -17532,7 +17540,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://www.hartron.org.in/",
+   "apply": "https://deployment.setchartron.in/rep.aspx",
    "notice": null,
    "site": "https://www.hartron.org.in/"
   },
@@ -19049,7 +19057,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://www.cpcl.co.in",
+   "apply": "https://cpcle26.onlineregistrationform.org/TNCPCL/index.action",
    "notice": null,
    "site": "https://www.cpcl.co.in"
   },
@@ -22043,7 +22051,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://opsc.gov.in",
+   "apply": "https://opscechayan.in/#/auth/landing",
    "notice": null,
    "site": "https://opsc.gov.in"
   },

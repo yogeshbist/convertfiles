@@ -13720,7 +13720,8 @@
     "Capital अक्षरों में हस्ताक्षर करना",
     "Correction window की उम्मीद करना — कोई नहीं है"
    ]
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "slug": "goa-shipyard-non-executive",
@@ -18585,7 +18586,8 @@
   "photo_kind": "upload",
   "portal": "ousssc.odisha.gov.in",
   "posts": 7268,
-  "slug": "odisha-police-constable"
+  "slug": "odisha-police-constable",
+  "stage": "result-awaited"
  },
  {
   "slug": "mpsc-group-c-2026",
@@ -21600,7 +21602,8 @@
      "a": "लिखित परीक्षा 6 और 12 दिसंबर 2026 को तय है, 11 नवंबर 2026 के corrigendum के अनुसार।"
     }
    ]
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "slug": "wbpsc-ido-2026",
@@ -26291,7 +26294,8 @@
      "a": "OBC के लिए ₹850 और SC/ST/PwD/Ex-Servicemen/Women के लिए ₹175 (plus gateway charges)। Fee non-refundable है।"
     }
    ]
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "slug": "upsc-advt-13-2026",

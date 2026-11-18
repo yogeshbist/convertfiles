@@ -23,7 +23,7 @@
 .t-stage{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:14px 16px;box-shadow:var(--shadow)}
 .t-stage h4{margin:8px 0 8px;font-family:var(--display);font-size:14px;color:var(--ink-2)}
 .t-stage-box{display:flex;flex-direction:column;align-items:center;gap:10px}
-.t-stage-canvas{max-width:100%;height:auto;border-radius:12px;cursor:grab;background:#0b0f14;box-shadow:var(--shadow)}
+.t-stage-canvas{max-width:100%;height:auto;border-radius:12px;cursor:grab;background:var(--canvas);box-shadow:var(--shadow)}
 .t-stage-canvas:active{cursor:grabbing}
 .t-stage-tools{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:13px;color:var(--ink-2)}
 .t-stage-tools input[type=range]{width:160px}
@@ -87,7 +87,7 @@
 
 /* scanning a photographed page */
 .t-scan{display:flex;flex-direction:column;align-items:center;gap:8px}
-.t-scan-canvas{max-width:100%;height:auto;border-radius:12px;background:#0b0f14;box-shadow:var(--shadow);touch-action:none;cursor:grab}
+.t-scan-canvas{max-width:100%;height:auto;border-radius:12px;background:var(--canvas);box-shadow:var(--shadow);touch-action:none;cursor:grab}
 .t-scan-canvas:active{cursor:grabbing}
 .t-scan-strip{display:flex;flex-wrap:wrap;gap:6px;padding-bottom:10px;justify-content:center}
 .t-scan-strip .btn.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}

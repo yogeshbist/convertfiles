@@ -13,7 +13,12 @@
   --ink:#E9F0F7; --ink-2:#C2D3E2; --muted:#94A9BC;
   --line:#26384C; --line-2:#31465E;
   --accent:#38BDF8; --accent-d:#7DD3FC; --accent-soft:#153040; --accent-ink:#082A3D;
-  --pop:#A78BFA; --pop-soft:#28244A;
+  --pop:#A78BFA; --pop-d:#C4B5FD; --pop-soft:#28244A;
+  /* theme-follow tokens (18 Nov 2026): --fam-mix is what family colours are
+     mixed toward for text/icons (white on dark themes, slate on light);
+     --scrim is the modal backdrop; --canvas the tool stage backdrop. Every
+     theme re-points these, so no component keeps a fixed colour. */
+  --fam-mix:#fff; --scrim:rgba(8,15,22,.6); --canvas:#0B0F14;
   --ok:#3CC98A; --ok-soft:#14352A;
   --err:#F0796A; --err-soft:#3A1F1B;
   --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35);
@@ -40,7 +45,7 @@ a{color:var(--accent)}
 .nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .nav-in{max-width:none;margin-inline:auto;padding:0 max(32px,6vw);height:82px;display:flex;align-items:center;gap:20px}
 .brand{display:flex;align-items:center;gap:10px;margin-right:auto;text-decoration:none;color:var(--ink)}
-.mark{width:32px;height:32px;border-radius:8px;background:var(--accent);display:grid;place-items:center;color:#fff;flex:none}
+.mark{width:32px;height:32px;border-radius:8px;background:var(--accent);display:grid;place-items:center;color:var(--accent-ink);flex:none}
 .mark svg{width:18px;height:18px}
 .brand b{font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:-.02em;white-space:nowrap}
 .brand-logo{height:68px;width:auto;border-radius:14px;display:block}
@@ -147,7 +152,7 @@ body:has(.sticky:not([hidden])) main{padding-bottom:150px}
 .picker-i .pn{font-size:11.5px;color:var(--muted);white-space:nowrap}
 .picker-empty{padding:26px 16px;text-align:center;color:var(--muted);font-size:13.5px}
 @media (max-width:600px){
-  .picker{left:0!important;right:0;bottom:0!important;top:auto!important;width:100%!important;border-radius:20px 20px 0 0;box-shadow:0 -12px 40px rgba(0,0,0,.25)}
+  .picker{left:0!important;right:0;bottom:0!important;top:auto!important;width:100%!important;border-radius:20px 20px 0 0;box-shadow:var(--shadow-pop)}
   .picker-list{max-height:60vh}
   .picker-i{padding:11px 12px}
   /* 16px or larger, or iOS zooms the page in when a field takes focus */
@@ -217,8 +222,8 @@ body:has(.sticky:not([hidden])) main{padding-bottom:150px}
 .btn.danger:hover{border-color:var(--err);color:var(--err)}
 
 /* ---------- chips & badges ---------- */
-.chip{font-family:var(--mono);font-weight:600;font-size:11.5px;padding:2px 7px;border-radius:7px;background:color-mix(in srgb,var(--fam,var(--muted)) 14%,transparent);color:color-mix(in srgb,var(--fam,var(--ink-2)) 70%,#fff)}
-.badge{width:78px;height:78px;border-radius:18px;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:-.02em;background:color-mix(in srgb,var(--fam) 15%,transparent);color:color-mix(in srgb,var(--fam,var(--ink-2)) 70%,#fff)}
+.chip{font-family:var(--mono);font-weight:600;font-size:11.5px;padding:2px 7px;border-radius:7px;background:color-mix(in srgb,var(--fam,var(--muted)) 14%,transparent);color:color-mix(in srgb,var(--fam,var(--ink-2)) 70%,var(--fam-mix))}
+.badge{width:78px;height:78px;border-radius:18px;display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:15px;letter-spacing:-.02em;background:color-mix(in srgb,var(--fam) 15%,transparent);color:color-mix(in srgb,var(--fam,var(--ink-2)) 70%,var(--fam-mix))}
 .badge.sm{width:46px;height:46px;border-radius:12px;font-size:11px}
 
 /* ---------- Your files ---------- */
@@ -258,7 +263,7 @@ body:has(.sticky:not([hidden])) main{padding-bottom:150px}
 .mx-row{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;box-shadow:var(--shadow)}
 .mx-row .top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
 .mx-row .top .ext{font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:-.02em}
-.mx-row .top .fam{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--fam)}
+.mx-row .top .fam{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:color-mix(in srgb,var(--fam,var(--ink-2)) 70%,var(--fam-mix))}
 .mx-row .tos{display:flex;flex-wrap:wrap;gap:5px}
 .mx-row[hidden]{display:none}
 
@@ -321,12 +326,12 @@ body:has(.sticky:not([hidden])) main{padding-bottom:150px}
 .guides{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
 .gcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:20px 22px;box-shadow:var(--shadow);cursor:pointer;display:flex;flex-direction:column;gap:8px;text-align:left;transition:transform .15s,box-shadow .15s}
 .gcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
-.gcard .cat{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:color-mix(in srgb,var(--fam,var(--ink-2)) 70%,#fff)}
+.gcard .cat{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:color-mix(in srgb,var(--fam,var(--ink-2)) 70%,var(--fam-mix))}
 .gcard h3{font-family:var(--display);font-weight:600;font-size:16.5px;margin:0;letter-spacing:-.01em;line-height:1.3;color:var(--ink)}
 .gcard p{margin:0;color:var(--ink-2);font-size:13.5px;flex:1}
 .gcard .rt{font-size:12px;color:var(--muted)}
 .article{max-width:720px;margin:0 auto;padding-top:36px}
-.article .cat{font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--fam)}
+.article .cat{font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:color-mix(in srgb,var(--fam,var(--ink-2)) 70%,var(--fam-mix))}
 .article h1{font-family:var(--display);font-weight:700;font-size:32px;letter-spacing:-.03em;line-height:1.15;margin:8px 0 10px;text-wrap:balance}
 .article .meta{font-size:13px;color:var(--muted);margin-bottom:24px}
 .article .body{font-size:16px;line-height:1.7}
@@ -403,7 +408,7 @@ ol.howto li strong{color:var(--ink)}
 .legal .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:22px 24px;box-shadow:var(--shadow);margin:18px 0}
 
 /* ---------- preview overlay ---------- */
-.modal{position:fixed;inset:0;z-index:60;background:rgba(10,18,26,.55);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:24px}
+.modal{position:fixed;inset:0;z-index:60;background:var(--scrim);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:24px}
 .modal-box{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);box-shadow:var(--shadow-lg);width:min(920px,100%);max-height:100%;display:flex;flex-direction:column;overflow:hidden}
 .modal-head{display:flex;align-items:center;gap:12px;padding:14px 16px;border-bottom:1px solid var(--line);flex:none}
 .modal-title{flex:1;min-width:0}
@@ -521,7 +526,7 @@ main:has(.convert-grid.two){max-width:none;padding-left:max(48px,6vw);padding-ri
 .rail-list{list-style:none;margin:0;padding:10px;display:flex;flex-direction:column;gap:6px;overflow:auto;scrollbar-width:thin;flex:1}
 .rail-list a{display:grid;grid-template-columns:40px minmax(0,1fr) auto;align-items:center;gap:12px;padding:12px;border-radius:10px;border:1px solid transparent;color:var(--ink);text-decoration:none;transition:background .2s,transform .2s}
 .rail-list a:hover{background:var(--surface-2);transform:translateX(4px)}
-.rail-list .ic{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,color-mix(in srgb,var(--fam) 15%,transparent),color-mix(in srgb,var(--fam) 8%,transparent));color:color-mix(in srgb,var(--fam) 80%,#fff)}
+.rail-list .ic{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:linear-gradient(135deg,color-mix(in srgb,var(--fam) 15%,transparent),color-mix(in srgb,var(--fam) 8%,transparent));color:color-mix(in srgb,var(--fam) 80%,var(--fam-mix))}
 .rail-list .ic svg{width:20px;height:20px}
 .rail-list .tx{display:flex;flex-direction:column;min-width:0}
 .rail-list .tx b{font-size:13px;font-weight:700;margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -550,7 +555,7 @@ main:has(.convert-grid.two){max-width:none;padding-left:max(48px,6vw);padding-ri
 .tgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:14px}
 .tcard{position:relative;display:flex;flex-direction:column;gap:14px;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;color:var(--ink);text-decoration:none;transition:border-color .2s,box-shadow .2s,transform .2s}
 .tcard:hover{border-color:var(--accent);box-shadow:0 4px 16px color-mix(in srgb,var(--accent) 12%,transparent);transform:translateY(-4px)}
-.tcard .ic{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,color-mix(in srgb,var(--fam) 15%,transparent),color-mix(in srgb,var(--fam) 8%,transparent));color:color-mix(in srgb,var(--fam) 80%,#fff)}
+.tcard .ic{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,color-mix(in srgb,var(--fam) 15%,transparent),color-mix(in srgb,var(--fam) 8%,transparent));color:color-mix(in srgb,var(--fam) 80%,var(--fam-mix))}
 .tcard .ic svg{width:24px;height:24px}
 .tcard h3{margin:0;font-family:var(--display);font-size:16px;font-weight:700}
 .tcard p{margin:-6px 0 0;font-size:14px;color:var(--muted);line-height:1.4}
@@ -635,20 +640,22 @@ main:has(.exam-hub){max-width:1600px}
 @media (max-width:620px){.exam-hub .exam-grid{grid-template-columns:1fr}}
 /* Hub live search (js/app.js #examSearch): Yogesh 8 Nov — search sits at the
    very top of the hub, just under the Exam Form Centre heading. Design 2
-   "Clean White Pill" (approved by Yogesh from 6 samples, replacing the white
-   card he rejected): no card, one clean white pill bar, blue Search button
-   inside, count line under it on the dark theme, dashed empty-state panel
-   when nothing matches. No gold. */
+   pill shape (approved by Yogesh from 6 samples): no card, one clean pill
+   bar, Search button inside, count line under it, dashed empty-state panel
+   when nothing matches. Since 18 Nov 2026 (Yogesh: "theme change ho to
+   search box bhi change ho") every colour is a theme token — pill surface,
+   icon, text, placeholder and button all follow the active theme instead
+   of the old fixed white/blue. No gold. */
 .exam-hub .exam-search{margin:8px 0 16px}
-.exam-hub .exam-search-pill{display:flex;align-items:center;gap:11px;background:#fff;border-radius:99px;padding:7px 7px 7px 19px;box-shadow:0 12px 32px rgba(0,0,0,.5)}
-.exam-hub .exam-search-pill:focus-within{box-shadow:0 12px 32px rgba(0,0,0,.5),0 0 0 4px color-mix(in srgb,var(--accent) 45%,transparent)}
-.exam-hub .exam-search-ic{color:#0284C7;display:flex;flex:none}
+.exam-hub .exam-search-pill{display:flex;align-items:center;gap:11px;background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:7px 7px 7px 19px;box-shadow:var(--shadow-lg)}
+.exam-hub .exam-search-pill:focus-within{box-shadow:var(--shadow-lg),0 0 0 4px color-mix(in srgb,var(--accent) 45%,transparent)}
+.exam-hub .exam-search-ic{color:var(--accent);display:flex;flex:none}
 .exam-hub .exam-search-ic svg{width:21px;height:21px}
-.exam-hub .exam-search input{flex:1;min-width:0;background:transparent;border:0;padding:10px 0;font-size:16.5px;color:#0F1620}
-.exam-hub .exam-search input::placeholder{color:#5B7186}
+.exam-hub .exam-search input{flex:1;min-width:0;background:transparent;border:0;padding:10px 0;font-size:16.5px;color:var(--ink)}
+.exam-hub .exam-search input::placeholder{color:var(--muted)}
 .exam-hub .exam-search input:focus{outline:none}
-.exam-hub .exam-search-btn{flex:none;background:#0284C7;color:#fff;border:0;border-radius:99px;padding:11px 24px;font-size:15px;font-weight:800;cursor:pointer}
-.exam-hub .exam-search-btn:hover{background:#0369A1}
+.exam-hub .exam-search-btn{flex:none;background:var(--accent);color:var(--accent-ink);border:0;border-radius:99px;padding:11px 24px;font-size:15px;font-weight:800;cursor:pointer}
+.exam-hub .exam-search-btn:hover{background:var(--accent-d);color:var(--accent-ink)}
 .exam-hub .exam-count{margin:9px 4px 0;font-size:13px;font-weight:600;color:var(--muted)}
 @media (max-width:520px){.exam-hub .exam-search-btn{padding:10px 16px;font-size:14px}.exam-hub .exam-search input{font-size:15.5px}}
 .exam-hub .exam-none{margin:4px 0 10px;background:var(--surface);border:1px dashed var(--line-2);border-radius:var(--r-lg);padding:22px;text-align:center;color:var(--ink-2)}
@@ -697,7 +704,7 @@ table.dates.wide th:first-child{width:32%}
 .status-chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px;background:var(--ok-soft);color:var(--ok);width:fit-content}
 .status-chip.soon{background:var(--accent-soft);color:var(--accent-d)}
 .status-chip.closed{background:var(--surface-2);color:var(--muted)}
-.status-chip.result{background:color-mix(in srgb,#A78BFA 18%,transparent);color:#C4B5FD}
+.status-chip.result{background:color-mix(in srgb,var(--pop) 18%,transparent);color:var(--pop-d)}
 .status-chip.out{background:var(--ok-soft);color:var(--ok)}
 /* Exam Centre sections (Sample 2, approved 13 Nov 2026): segmented tabs,
    a left sidebar with the recent-results and admit-card panels, and the
@@ -705,7 +712,7 @@ table.dates.wide th:first-child{width:32%}
    d7652b5d4 are superseded by this layout. */
 .exam-seg{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:13px;padding:4px;margin:14px 0 4px;max-width:560px}
 .exam-seg a,.exam-seg span{flex:1;text-align:center;font-size:14px;font-weight:700;padding:9px 6px;border-radius:9px;color:var(--muted);text-decoration:none}
-.exam-seg .cur{background:var(--accent);color:#08222F}
+.exam-seg .cur{background:var(--accent);color:var(--accent-ink)}
 .exam-seg a:hover{color:var(--ink)}
 .exam-hub .hub-cols{display:grid;grid-template-columns:348px 1fr;gap:20px;margin-top:16px;align-items:start}
 .exam-hub .hub-cols .exam-grid{grid-template-columns:repeat(2,1fr)}
@@ -724,14 +731,14 @@ a.prow:hover{background:var(--surface-2)}
 .prow .nm{display:block;font-size:13.8px;font-weight:600;line-height:1.35;color:var(--ink)}
 .prow .sub{display:block;font-size:12.3px;color:var(--muted);margin-top:1px;line-height:1.4}
 .stag{flex:none;font-size:10.8px;font-weight:700;padding:2px 8px;border-radius:99px;margin-top:2px;white-space:nowrap}
-.stag.await{background:var(--pop-soft);color:#C4B5FD}
+.stag.await{background:var(--pop-soft);color:var(--pop-d)}
 .stag.exp{background:var(--accent-soft);color:var(--accent-d)}
 .stag.out{background:var(--ok-soft);color:var(--ok)}
 .pfoot{display:block;padding:11px 16px;font-weight:700;font-size:14px;color:var(--accent-d);text-decoration:none;background:var(--surface-2);border-top:1px solid var(--line)}
 .pfoot:hover{text-decoration:underline}
 .exam-hub.notice-hub .exam-grid{grid-template-columns:repeat(2,1fr)}
 @media (max-width:620px){.exam-hub.notice-hub .exam-grid{grid-template-columns:1fr}}
-.result-panel{background:var(--surface);border:1px solid var(--line-2);border-left:4px solid #A78BFA;border-radius:var(--r-lg);padding:16px 18px;margin:14px 0}
+.result-panel{background:var(--surface);border:1px solid var(--line-2);border-left:4px solid var(--pop);border-radius:var(--r-lg);padding:16px 18px;margin:14px 0}
 .result-panel.out{border-left-color:var(--ok)}
 .result-panel b{font-size:16.5px;color:var(--ink)}
 .result-panel p{margin:6px 0;color:var(--ink-2)}
@@ -857,7 +864,7 @@ body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-ev
   --ink:#F4F2FF; --ink-2:#D9D5F5; --muted:#A79FD1;
   --line:#37316B; --line-2:#4A4385;
   --accent:#9D8CFF; --accent-d:#C4B5FD; --accent-soft:#2A2160; --accent-ink:#171233;
-  --pop:#38BDF8; --pop-soft:#12314A;
+  --pop:#38BDF8; --pop-d:#7DD3FC; --pop-soft:#12314A; --scrim:rgba(10,8,28,.62); --canvas:#0D0A24;
   --ok:#3CC98A; --ok-soft:#12362A; --err:#F0796A; --err-soft:#3D1E2A}
 [data-theme="aurora"] body::before{inset:-12%;
   background:radial-gradient(60% 50% at 18% 12%,rgba(124,58,237,.40),transparent 70%),radial-gradient(55% 45% at 85% 18%,rgba(14,165,233,.30),transparent 70%),radial-gradient(50% 42% at 62% 92%,rgba(236,72,153,.24),transparent 70%),radial-gradient(42% 36% at 12% 88%,rgba(45,212,191,.22),transparent 70%);
@@ -869,13 +876,13 @@ body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-ev
   --ink:#E6F6FF; --ink-2:#BFE9F7; --muted:#8FB8CC;
   --line:#17384A; --line-2:#1F5468;
   --accent:#22D3EE; --accent-d:#67E8F9; --accent-soft:#062A33; --accent-ink:#03222B;
-  --pop:#F0ABFC; --pop-soft:#33083D;
+  --pop:#F0ABFC; --pop-d:#F5D0FE; --pop-soft:#33083D; --scrim:rgba(2,4,10,.66); --canvas:#02040A;
   --ok:#34D399; --ok-soft:#06382A; --err:#FB7185; --err-soft:#3D0A18}
 [data-theme="neon"] body::before{
   background:radial-gradient(46% 38% at 8% 0%,rgba(34,211,238,.14),transparent 70%),radial-gradient(46% 38% at 94% 100%,rgba(217,70,239,.12),transparent 70%);
   animation:amb-pulse 9s ease-in-out infinite alternate}
-[data-theme="neon"] .nav{border-bottom-color:rgba(34,211,238,.35)}
-[data-theme="neon"] .btn.primary{box-shadow:0 0 14px rgba(34,211,238,.4)}
+[data-theme="neon"] .nav{border-bottom-color:color-mix(in srgb,var(--accent) 35%,transparent)}
+[data-theme="neon"] .btn.primary{box-shadow:0 0 14px color-mix(in srgb,var(--accent) 40%,transparent)}
 
 /* 3 — Liquid Glass (light): frosted white over a soft pastel wash */
 [data-theme="liquid"]{color-scheme:light;
@@ -883,7 +890,7 @@ body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-ev
   --ink:#1F2937; --ink-2:#374151; --muted:#6B7280;
   --line:#E3DEF2; --line-2:#CFC8E6;
   --accent:#7C3AED; --accent-d:#6D28D9; --accent-soft:#EDE9FE; --accent-ink:#FFFFFF;
-  --pop:#0284C7; --pop-soft:#E0F2FE;
+  --pop:#0284C7; --pop-d:#0369A1; --pop-soft:#E0F2FE; --fam-mix:#1F2937; --scrim:rgba(31,41,55,.42); --canvas:#E9E4F5;
   --ok:#15803D; --ok-soft:#DCFCE7; --err:#DC2626; --err-soft:#FEE2E2;
   --shadow:0 1px 2px rgba(31,41,55,.06),0 10px 30px rgba(31,41,55,.10);
   --shadow-lg:0 2px 4px rgba(31,41,55,.08),0 24px 60px rgba(31,41,55,.16);
@@ -902,7 +909,7 @@ body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-ev
   --ink:#E8FAF6; --ink-2:#C9EDE4; --muted:#8FC4B8;
   --line:#0E4A56; --line-2:#14616F;
   --accent:#2DD4BF; --accent-d:#5EEAD4; --accent-soft:#063A35; --accent-ink:#04211C;
-  --pop:#38BDF8; --pop-soft:#0A2E4A;
+  --pop:#38BDF8; --pop-d:#7DD3FC; --pop-soft:#0A2E4A; --scrim:rgba(2,20,28,.62); --canvas:#02161F;
   --ok:#3CC98A; --ok-soft:#0A352A; --err:#F0796A; --err-soft:#3A1F1B}
 [data-theme="ocean"] body::before{inset:-300px 0 0;
   background-image:radial-gradient(circle,rgba(153,246,228,.5) 2.2px,transparent 3px),radial-gradient(circle,rgba(125,211,252,.4) 1.6px,transparent 2.6px),radial-gradient(circle,rgba(153,246,228,.3) 1.2px,transparent 2px);
@@ -918,7 +925,7 @@ body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-ev
   --ink:#1F2937; --ink-2:#374151; --muted:#78716C;
   --line:#F3D9BE; --line-2:#EAB892;
   --accent:#F43F5E; --accent-d:#E11D48; --accent-soft:#FFE4E6; --accent-ink:#FFFFFF;
-  --pop:#7C3AED; --pop-soft:#EDE9FE;
+  --pop:#7C3AED; --pop-d:#6D28D9; --pop-soft:#EDE9FE; --fam-mix:#1F2937; --scrim:rgba(69,26,3,.40); --canvas:#F9E9D2;
   --ok:#16A34A; --ok-soft:#DCFCE7; --err:#DC2626; --err-soft:#FEE2E2;
   --shadow:0 1px 2px rgba(120,53,15,.07),0 10px 30px rgba(120,53,15,.12);
   --shadow-lg:0 2px 4px rgba(120,53,15,.09),0 24px 60px rgba(120,53,15,.18);
@@ -933,7 +940,7 @@ body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-ev
   --ink:#FFFFFF; --ink-2:#D4D4D4; --muted:#A3A3A3;
   --line:#2A2A2A; --line-2:#3D3D3D;
   --accent:#FFFFFF; --accent-d:#FFFFFF; --accent-soft:#1F1F1F; --accent-ink:#000000;
-  --pop:#D4D4D4; --pop-soft:#1F1F1F;
+  --pop:#D4D4D4; --pop-d:#FFFFFF; --pop-soft:#1F1F1F; --scrim:rgba(0,0,0,.72); --canvas:#000000;
   --ok:#A3A3A3; --ok-soft:#1F1F1F; --err:#FFFFFF; --err-soft:#262626}
 [data-theme="mono"] body::before{
   background:radial-gradient(52% 40% at 50% 0%,rgba(255,255,255,.10),transparent 70%)}
@@ -977,7 +984,7 @@ body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-ev
   --ink:#FDF2F8; --ink-2:#F5D9E8; --muted:#C79BB8;
   --line:#4A2A48; --line-2:#5E3860;
   --accent:#FB7185; --accent-d:#FDA4AF; --accent-soft:#471C33; --accent-ink:#2A0A18;
-  --pop:#A78BFA; --pop-soft:#2E1B4E;
+  --pop:#A78BFA; --pop-d:#C4B5FD; --pop-soft:#2E1B4E; --scrim:rgba(24,6,20,.62); --canvas:#180A16;
   --ok:#3CC98A; --ok-soft:#14352A; --err:#F0796A; --err-soft:#3A1F1B}
 [data-theme="sunset"] body::before{inset:-12%;
   background:radial-gradient(55% 45% at 15% 10%,rgba(251,113,133,.30),transparent 70%),radial-gradient(58% 48% at 85% 90%,rgba(167,139,250,.30),transparent 70%),radial-gradient(40% 34% at 80% 12%,rgba(236,72,153,.18),transparent 70%);
@@ -989,7 +996,7 @@ body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-ev
   --ink:#ECFDF5; --ink-2:#CDEEDD; --muted:#93BFA9;
   --line:#1E4634; --line-2:#2A5A44;
   --accent:#34D399; --accent-d:#6EE7B7; --accent-soft:#0B3527; --accent-ink:#052A1E;
-  --pop:#2DD4BF; --pop-soft:#0A3532;
+  --pop:#2DD4BF; --pop-d:#5EEAD4; --pop-soft:#0A3532; --scrim:rgba(4,18,14,.62); --canvas:#061511;
   --ok:#3CC98A; --ok-soft:#0B3527; --err:#F0796A; --err-soft:#3A1F1B}
 [data-theme="forest"] body::before{inset:-10%;
   background:radial-gradient(48% 30% at 22% 30%,rgba(236,253,245,.07),transparent 70%),radial-gradient(42% 28% at 74% 62%,rgba(52,211,153,.10),transparent 70%);
@@ -1004,7 +1011,7 @@ body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-ev
   --ink:#E8F6FF; --ink-2:#C3D9F2; --muted:#8498B8;
   --line:#1B2A52; --line-2:#27397A;
   --accent:#22D3EE; --accent-d:#67E8F9; --accent-soft:#07303D; --accent-ink:#03222B;
-  --pop:#818CF8; --pop-soft:#1B1B45;
+  --pop:#818CF8; --pop-d:#A5B4FC; --pop-soft:#1B1B45; --scrim:rgba(2,3,10,.68); --canvas:#02030A;
   --ok:#34D399; --ok-soft:#06382A; --err:#FB7185; --err-soft:#3D0A18}
 [data-theme="cyber"] body::before{inset:-44px 0 0;
   background-image:linear-gradient(rgba(34,211,238,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(34,211,238,.07) 1px,transparent 1px);
@@ -1020,7 +1027,7 @@ body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-ev
   --ink:#EEF1FF; --ink-2:#D3D9F7; --muted:#9AA5D6;
   --line:#232C58; --line-2:#303C78;
   --accent:#A5B4FC; --accent-d:#C7D2FE; --accent-soft:#1B2150; --accent-ink:#0B0F2E;
-  --pop:#A78BFA; --pop-soft:#251B52;
+  --pop:#A78BFA; --pop-d:#C4B5FD; --pop-soft:#251B52; --scrim:rgba(3,5,16,.66); --canvas:#04060F;
   --ok:#3CC98A; --ok-soft:#12362A; --err:#F0796A; --err-soft:#3A1F2E}
 [data-theme="starfield"] body::before{inset:-30px;
   background-image:radial-gradient(circle,rgba(255,255,255,.85) 1.1px,transparent 1.8px),radial-gradient(circle,rgba(199,210,254,.7) .8px,transparent 1.5px);
@@ -1033,13 +1040,12 @@ body::before,body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-ev
 [data-theme="starfield"] main::before{content:"";position:fixed;inset:-10%;z-index:-1;pointer-events:none;
   background:radial-gradient(44% 36% at 82% 12%,rgba(124,58,237,.16),transparent 70%),radial-gradient(40% 32% at 10% 86%,rgba(14,165,233,.12),transparent 70%)}
 
-/* Light-theme touch-ups: a few exam-centre rules hardcode Deep Slate's
-   violet-on-dark pairings; re-point them at the tokens on light themes. */
-[data-theme="liquid"] .status-chip.result,[data-theme="candy"] .status-chip.result{background:color-mix(in srgb,var(--pop) 16%,transparent);color:var(--pop)}
-[data-theme="liquid"] .stag.await,[data-theme="candy"] .stag.await{background:var(--pop-soft);color:var(--pop)}
-[data-theme="liquid"] .result-panel,[data-theme="candy"] .result-panel{border-left-color:var(--pop)}
-[data-theme="liquid"] .exam-seg .cur{color:#FFFFFF}
-[data-theme="liquid"] .chip,[data-theme="liquid"] .badge,[data-theme="candy"] .chip,[data-theme="candy"] .badge{color:color-mix(in srgb,var(--fam,var(--ink-2)) 72%,#1F2937)}
+/* (The old light-theme touch-ups that lived here are gone: since the
+   18 Nov 2026 theme-follow pass, .status-chip.result, .stag.await,
+   .result-panel, .exam-seg .cur and the family-colour mixes in the base
+   rules above all read the tokens directly — --pop/--pop-d, --accent-ink
+   and --fam-mix — so every theme, light or dark, is handled by the base
+   rule itself.) */
 
 @media (prefers-reduced-motion: reduce){
   body::before,body::after,[data-theme="starfield"] main::before{animation:none !important}

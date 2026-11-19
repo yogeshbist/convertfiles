@@ -5362,7 +5362,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://bankofbaroda.bank.in/career/current-opportunities",
+   "apply": "https://bankappsweb.bankofbaroda.bank.in/BobRecruitment/",
    "notice": "https://bankofbaroda.bank.in/-/media/Project/BOB/CountryWebsites/India/Career/2026/26-10/Advertisement-Contractual-04-11-2026-03-18.pdf",
    "site": "https://bankofbaroda.bank.in/"
   },
@@ -6448,7 +6448,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://www.powergrid.in/en/job-opportunities",
+   "apply": "https://careers.powergrid.in/recruitment-nextgen/h/login.aspx",
    "notice": null,
    "site": "https://www.powergrid.in/"
   },
@@ -8022,7 +8022,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://web.umang.gov.in/landing/",
+   "apply": "https://apps.shar.gov.in/sdscshar/result1.jsp",
    "notice": "https://apps.shar.gov.in/sdscshar/apprentice/Apprenticeship2026.pdf",
    "site": "https://www.isro.gov.in/"
   },
@@ -8232,7 +8232,7 @@
   "posts": 272,
   "dates": {
    "apply_start": "2026-11-06",
-   "apply_end": "2026-12-06",
+   "apply_end": "2026-11-13",
    "fee_end": "2026-12-06",
    "correction_start": null,
    "correction_end": null,
@@ -8240,20 +8240,20 @@
   },
   "photo_kind": "upload",
   "no_correction": true,
-  "note_en": "This is apprenticeship training under the Apprentices Act, 1961 — not a job in IOCL. The notice says the training does not create any obligation of employment after it ends.",
-  "note_hi": "Ye Apprentices Act, 1961 ke tahat apprenticeship training hai — IOCL me naukri nahi. Notice me saaf likha hai ki training ke baad naukri ka koi vaada nahi.",
+  "note_en": "This recruitment has been WITHDRAWN / CANCELLED by IOCL on 13 November 2026 — do not apply; applications already submitted will not be considered. Official withdrawal notice (PDF): https://iocl.com/admin/img/Apprenticeships/Files/31c95bd3d10e44a39b8983e2e630bbd5.pdf",
+  "note_hi": "IOCL ने 13 नवंबर 2026 को यह भर्ती वापस ले ली है / रद्द कर दी है — आवेदन न करें; पहले से जमा आवेदन भी माने नहीं जाएंगे। आधिकारिक withdrawal notice (PDF): https://iocl.com/admin/img/Apprenticeships/Files/31c95bd3d10e44a39b8983e2e630bbd5.pdf",
   "guide": {
    "en": null,
    "hi": null
   },
   "links": {
-   "apply": "https://iocl.com/apprenticeships",
+   "apply": "https://iocl.com/admin/img/Apprenticeships/Files/31c95bd3d10e44a39b8983e2e630bbd5.pdf",
    "notice": "https://iocl.com/admin/img/Apprenticeships/Files/31e0cb05bdde42bb94384c45b80ae37f.pdf",
    "site": "https://iocl.com/"
   },
   "en": {
    "name": "IOCL Barauni Refinery Apprentice (II)",
-   "tagline": "272 apprentice seats at IOCL Barauni Refinery — Chemical Plant, Boiler, Mechanical and Instrumentation — last date 6 December 2026.",
+   "tagline": "WITHDRAWN on 13 Nov 2026 — 272 apprentice seats at IOCL Barauni Refinery — Chemical Plant, Boiler, Mechanical and Instrumentation — last date 6 December 2026.",
    "qual": "B.Sc / Diploma (trade-wise)",
    "fees": [
     "No application fee is specified in the advertisement."
@@ -8351,7 +8351,7 @@
   },
   "hi": {
    "name": "IOCL Barauni Refinery Apprentice (II)",
-   "tagline": "IOCL Barauni Refinery me 272 apprentice seats — Chemical Plant, Boiler, Mechanical aur Instrumentation — antim tithi 6 December 2026.",
+   "tagline": "13 नवंबर 2026 को वापस ली गई — IOCL Barauni Refinery me 272 apprentice seats — Chemical Plant, Boiler, Mechanical aur Instrumentation — antim tithi 6 December 2026.",
    "qual": "B.Sc / Diploma (trade ke anusar)",
    "fees": [
     "Vigyapan me koi application fee nahi di gayi hai."
@@ -8446,7 +8446,8 @@
     "BE/B.Tech, MBA, CA, LLB ya MCA degree ke saath apply karna — ye degree wale patra nahi hain.",
     "Job sites par likhi CBT par bharosa karna — vigyapan me koi likhit pariksha nahi hai."
    ]
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "slug": "aees-teacher-recruitment",
@@ -13767,7 +13768,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://goashipyard.in/notice-board/career/advertisement",
+   "apply": "https://goashipyard.ibtexamination.com/App09Gsl2026VeR4/",
    "notice": null,
    "site": "https://goashipyard.in"
   },
@@ -13973,7 +13974,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://scl.gov.in/career.html",
+   "apply": "https://cdn.digialm.com/EForms/configuredHtml/1258/102008/NfZBa1oTtA8qQSS0xE/Index.html",
    "notice": null,
    "site": "https://scl.gov.in"
   },
@@ -14182,7 +14183,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://www.oil-india.com/advertisement-list",
+   "apply": "https://cdn.digialm.com/EForms/configuredHtml/1258/101869/cLS13NVBAyZXSMfBYd/Index.html",
    "notice": null,
    "site": "https://oil-india.com"
   },
@@ -16457,7 +16458,9 @@
     "मास्टर डिग्री के बिना टेक्निकल ऑफिसर के लिए आवेदन करना",
     "शाम 5:30 की portal बंद होने की घड़ी चूकना"
    ]
-  }
+  },
+  "note_en": "Technical Officer and Technician (1) applications CLOSED on 13 November 2026. Security Officer, Security Assistant and MTS are open till 23 November 2026 — apply at rectsec.ampri.res.in (Security posts) or recttmts.ampri.res.in (MTS).",
+  "note_hi": "Technical Officer और Technician (1) के आवेदन 13 नवंबर 2026 को बंद हो गए। Security Officer, Security Assistant और MTS के लिए 23 नवंबर 2026 तक आवेदन खुले हैं — Security पदों के लिए rectsec.ampri.res.in और MTS के लिए recttmts.ampri.res.in पर आवेदन करें।"
  },
  {
   "slug": "ukpsc-lower-pcs",
@@ -22684,7 +22687,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://www.powergrid.in/en/job-opportunities-old",
+   "apply": "https://careers.powergrid.in/recruitment-nextgen/h/login.aspx",
    "notice": null,
    "site": "https://www.powergrid.in"
   },
@@ -23721,7 +23724,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://www.sci.gov.in/recruitments/",
+   "apply": "https://cdn3.digialm.com/EForms/configuredHtml/32912/103177/qFQ6pc28SKg3N2aijS/Index.html",
    "notice": null,
    "site": "https://sci.gov.in"
   },
@@ -23924,7 +23927,7 @@
    "hi": null
   },
   "links": {
-   "apply": "https://sbi.bank.in/web/careers/current-openings",
+   "apply": "https://recruitment.sbi.bank.in/crpd-sco-2026-27-26/apply",
    "notice": null,
    "site": "https://sbi.bank.in"
   },
@@ -23995,7 +23998,8 @@
     "अपनी post (Product & Research या Risk Specialist) चुनो।",
     "Form भरो, photo और signature upload करो, experience certificates जोड़ो।",
     "₹750 fee भरो (SC/ST/PwBD को कुछ नहीं देना) — 23 नवंबर 2026 तक।",
-    "Printout निकालो — shortlisting के बाद interview होगा।"
+    "Printout निकालो — shortlisting के बाद interview होगा।",
+    "Risk Specialist posts have a separate apply link: https://recruitment.sbi.bank.in/crpd-sco-2026-27-27/apply (the Apply button above opens the Product & Research form, Advt /26)."
    ],
    "extra_faq": [
     {
@@ -24083,7 +24087,8 @@
     "अपनी post (Product & Research या Risk Specialist) चुनो।",
     "Form भरो, photo और signature upload करो, experience certificates जोड़ो।",
     "₹750 fee भरो (SC/ST/PwBD को कुछ नहीं देना) — 23 नवंबर 2026 तक।",
-    "Printout निकालो — shortlisting के बाद interview होगा।"
+    "Printout निकालो — shortlisting के बाद interview होगा।",
+    "Risk Specialist पदों के लिए अलग apply link है: https://recruitment.sbi.bank.in/crpd-sco-2026-27-27/apply (ऊपर वाला Apply button Product & Research का form खोलता है, Advt /26)।"
    ],
    "extra_faq": [
     {

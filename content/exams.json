@@ -3802,7 +3802,8 @@
   "photo_kind": "upload",
   "portal": "bel-india.in",
   "posts": 350,
-  "slug": "bel-probationary-engineer"
+  "slug": "bel-probationary-engineer",
+  "stage": "result-awaited"
  },
  {
   "advt": "CWC/I-Manpower/DR/Rectt/2026/01",
@@ -5773,7 +5774,8 @@
    "chip_hi": "परीक्षा से पहले",
    "note_en": "CBT 11 Dec 2026 (tentative) · card before the exam",
    "note_hi": "CBT 11 Dec 2026 (संभावित) · card परीक्षा से पहले"
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "slug": "crpf-sports-quota-recruitment",
@@ -6434,8 +6436,8 @@
   "posts": 319,
   "dates": {
    "apply_start": "2026-11-03",
-   "apply_end": "2026-11-18",
-   "fee_end": "2026-11-18",
+   "apply_end": "2026-11-23",
+   "fee_end": "2026-11-23",
    "correction_start": null,
    "correction_end": null,
    "exam": null
@@ -6631,7 +6633,8 @@
      "a": "Koi alag test nahi hota. Chayan ka weightage hai: GATE 2026 normalised ank 85%, Group Discussion 3% aur Interview 12%."
     }
    ]
-  }
+  },
+  "stage": "open"
  },
  {
   "slug": "osssc-ophthalmic-officer",
@@ -8913,7 +8916,8 @@
     "Adhure NATS profile ke saath apply karna — profile 100% complete hona chahiye.",
     "Pehle apprenticeship kar chuke hone par dobara apply karna."
    ]
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "slug": "hcl-trade-apprentice",
@@ -9968,7 +9972,8 @@
     "₹200 शुल्क भुगतान भूलना — पंजीकरण भुगतान के बाद ही पूरा होता है",
     "साक्षात्कार में original दस्तावेज़ों के बिना पहुँचना"
    ]
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "slug": "manipur-agriculture-btm-atm",
@@ -15825,7 +15830,8 @@
     "अपरेंटिसशिप को permanent नौकरी समझना",
     "18 नवंबर 2026, शाम 4:00 की deadline चूकना"
    ]
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "slug": "csir-cftri-technician",
@@ -16031,7 +16037,8 @@
     "पेपर I के अंक मेधा में गिनना",
     "18 नवंबर 2026 की ऑनलाइन deadline चूकना"
    ]
-  }
+  },
+  "stage": "result-awaited"
  },
  {
   "slug": "bel-trainee-engineer-kotdwar",

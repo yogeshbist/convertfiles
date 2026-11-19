@@ -28941,5 +28941,1773 @@
     }
    ]
   }
+ },
+ {
+  "slug": "uptet-february-2027",
+  "advt": "Advt No. 10/2026",
+  "board_en": "Uttar Pradesh Education Service Selection Commission (UPESSC)",
+  "board_hi": "उत्तर प्रदेश शिक्षा सेवा चयन आयोग (UPESSC)",
+  "portal": "upessc.up.gov.in",
+  "posts": null,
+  "dates": {
+   "apply_end": "2026-12-23",
+   "apply_start": "2026-11-24",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": "26–27 February 2027",
+   "exam_hi": "26–27 फ़रवरी 2027",
+   "fee_end": "2026-12-23"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://apply.upessc.org/",
+   "notice": null,
+   "site": "https://upessc.up.gov.in"
+  },
+  "en": {
+   "name": "UPTET February 2027 (UP Teacher Eligibility Test)",
+   "tagline": "UP Teacher Eligibility Test for Primary (I–V) and Junior (VI–VIII) levels — exam on 26–27 February 2027; apply 24 November–23 December 2026.",
+   "qual": "Bachelor's degree + 2-year D.El.Ed/BTC (Primary); Bachelor's/Master's + B.Ed or equivalent (Junior)",
+   "fees": [
+    "₹1,000 for General/OBC/EWS candidates — pay online by 23 December 2026.",
+    "₹500 for SC/ST candidates; ₹300 for PH (Divyang) candidates.",
+    "Correction of the application is allowed till 27 December 2026 (correction fee ₹200)."
+   ],
+   "fees_short": "₹1,000",
+   "specs": [
+    "UPTET February 2027 is an eligibility test, not a vacancy recruitment — there is no post count. Passing it makes you eligible to apply for teacher posts in Uttar Pradesh.",
+    "Online applications 24 November–23 December 2026 on the UPESSC One Time Registration (OTR) portal, apply.upessc.org. Complete OTR first — without OTR you cannot fill the form.",
+    "Exam on 26–27 February 2027 (Primary Level and Junior Level, in Hindi, English, Urdu and Sanskrit mediums). The detailed advertisement (Advt No. 10/2026) is published on upessc.up.gov.in on 24 November 2026.",
+    "Primary Level (Classes I–V): Bachelor's degree in any stream with a 2-year D.El.Ed (BTC) / D.Ed / Special D.El.Ed (BTC) / D.El.Ed (Urdu) / B.El.Ed, or Bachelor's degree with a Diploma in Teaching from AMU, Aligarh (final-year appearing candidates also eligible).",
+    "Junior Level (Classes VI–VIII): Bachelor's degree with a 2-year D.El.Ed (BTC); or Bachelor's/Master's degree with 50% marks + B.Ed / B.Ed (Special); or 10+2 with 50% marks + 4-year B.El.Ed / B.Sc Ed; or Bachelor's with 45% marks / Master's degree + B.Ed as per NCTE norms (final-year appearing candidates also eligible).",
+    "Correction window: till 27 December 2026 (fee ₹200).",
+    "All facts above are taken from the UPESSC short notice for UPTET Advt No. 10/2026, dated 18 November 2026 (Letter No. 3585/42(2026)/Adhiyachan (Vigyapan)/2026-27)."
+   ],
+   "eligibility": [
+    "Primary Level (Classes I–V): Bachelor's degree in any stream + 2-year D.El.Ed (BTC) / D.Ed / Special D.El.Ed (BTC) / D.El.Ed (Urdu) / B.El.Ed, or Bachelor's degree + Diploma in Teaching from AMU, Aligarh. Final-year appearing candidates can also apply.",
+    "Junior Level (Classes VI–VIII): Bachelor's degree + 2-year D.El.Ed (BTC); or Bachelor's/Master's with 50% marks + B.Ed / B.Ed (Special); or 10+2 with 50% marks + 4-year B.El.Ed / B.Sc Ed; or Bachelor's with 45% marks / Master's + B.Ed as per NCTE norms. Final-year appearing candidates can also apply.",
+    "One Time Registration (OTR) on apply.upessc.org is mandatory before filling the form.",
+    "Read the detailed advertisement on upessc.up.gov.in on 24 November 2026 before applying — eligibility details may be updated in the full brochure."
+   ],
+   "dos": [
+    "Read the detailed advertisement (Advt No. 10/2026) on upessc.up.gov.in on 24 November 2026 before applying.",
+    "Complete your One Time Registration (OTR) on apply.upessc.org first — the form cannot be filled without it.",
+    "Apply only on the UPESSC OTR portal (apply.upessc.org) between 24 November and 23 December 2026.",
+    "Keep your degree, D.El.Ed/BTC or B.Ed certificates and a recent photo ready before the form opens.",
+    "Use the correction window (till 27 December 2026) to fix any mistake — after that no change is allowed."
+   ],
+   "donts": [
+    "Do not try to apply before 24 November 2026 — the UPTET window opens on that day.",
+    "Do not pay any fee on any site other than the UPESSC OTR portal.",
+    "Do not treat UPTET as a job — it is an eligibility test; teacher vacancies are advertised separately.",
+    "Do not wait for the last day — the portal closes on 23 December 2026."
+   ],
+   "checklist": [
+    "Bachelor's degree certificate and marksheet",
+    "D.El.Ed/BTC or B.Ed certificate (or final-year proof)",
+    "Aadhaar card",
+    "Recent passport-size photo and signature scan",
+    "Caste / PH certificate, if applicable",
+    "Mobile number and email for OTR"
+   ],
+   "documents": [
+    "Bachelor's degree certificate and marksheet",
+    "D.El.Ed/BTC or B.Ed certificate",
+    "Aadhaar card",
+    "Caste / PH certificate, if applicable",
+    "Recent photo and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "OTR kiye bina form bharne ki koshish karna",
+    "UPTET ko naukri samajh lena (ye eligibility test hai)",
+    "24 नवंबर से पहले apply karne ki koshish karna (portal 24 नवंबर ko khulta hai)",
+    "Correction window (27 दिसंबर tak) miss karna"
+   ],
+   "steps": [
+    "upessc.up.gov.in par 24 नवंबर 2026 ko detailed advertisement (Advt No. 10/2026) पढ़ें।",
+    "apply.upessc.org par One Time Registration (OTR) पूरा करें — mobile number aur OTP se।",
+    "OTR login se UPTET February 2027 ka form भरें — Primary ya Junior level चुनें।",
+    "Photo, signature aur documents upload करें।",
+    "₹1,000 (Gen/OBC/EWS), ₹500 (SC/ST) ya ₹300 (PH) fee online भरें — 23 दिसंबर 2026 तक।",
+    "Form submit करें aur confirmation save करें। Correction 27 दिसंबर 2026 tak kar sakte hain।"
+   ],
+   "extra_faq": [
+    {
+     "q": "UPTET February 2027 me kitni vacancies hain?",
+     "a": "UPTET me koi vacancy nahi hoti — ye ek eligibility test hai। Pass karne par aap UP me teacher posts ke liye eligible ho jaate hain; teacher ki bharti alag se nikalti hai।"
+    },
+    {
+     "q": "UPTET February 2027 ki last date aur fee kya hai?",
+     "a": "Online आवेदन 24 नवंबर से 23 दिसंबर 2026 तक। Fee ₹1,000 (General/OBC/EWS), ₹500 (SC/ST) aur ₹300 (PH/दिव्यांग) है। Correction 27 दिसंबर 2026 तक (fee ₹200)।"
+    },
+    {
+     "q": "UPTET February 2027 ke liye qualification kya hai?",
+     "a": "Primary Level (I–V): Bachelor's degree + 2-year D.El.Ed/BTC (ya B.El.Ed / AMU teaching diploma)। Junior Level (VI–VIII): Bachelor's + 2-year D.El.Ed, ya Bachelor's/Master's 50% + B.Ed, ya 10+2 50% + 4-year B.El.Ed/B.Sc Ed। Final-year appearing candidates bhi apply kar sakte hain।"
+    },
+    {
+     "q": "UPTET February 2027 ki exam kab hogi?",
+     "a": "Exam 26–27 फ़रवरी 2027 ko hogi — Primary Level aur Junior Level, Hindi, English, Urdu aur Sanskrit medium me। Detailed advertisement 24 नवंबर 2026 ko upessc.up.gov.in par aayega।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "UPTET फ़रवरी 2027 (UP शिक्षक पात्रता परीक्षा)",
+   "tagline": "प्राथमिक (I–V) और जूनियर (VI–VIII) स्तर के लिए UP शिक्षक पात्रता परीक्षा — परीक्षा 26–27 फ़रवरी 2027; आवेदन 24 नवंबर–23 दिसंबर 2026।",
+   "qual": "स्नातक + 2 वर्षीय D.El.Ed/BTC (प्राथमिक); स्नातक/स्नातकोत्तर + B.Ed या समकक्ष (जूनियर)",
+   "fees": [
+    "₹1,000 General/OBC/EWS उम्मीदवारों के लिए — 23 दिसंबर 2026 तक online भरें।",
+    "₹500 SC/ST उम्मीदवारों के लिए; ₹300 PH (दिव्यांग) उम्मीदवारों के लिए।",
+    "आवेदन में सुधार 27 दिसंबर 2026 तक कर सकते हैं (correction fee ₹200)।"
+   ],
+   "fees_short": "₹1,000",
+   "specs": [
+    "UPTET फ़रवरी 2027 एक पात्रता परीक्षा (eligibility test) है, vacancy वाली भर्ती नहीं — इसमें कोई पद संख्या नहीं होती। इसे पास करने पर आप UP में शिक्षक पदों के लिए पात्र हो जाते हैं।",
+    "Online आवेदन 24 नवंबर–23 दिसंबर 2026, UPESSC One Time Registration (OTR) portal apply.upessc.org पर। पहले OTR पूरा करें — OTR के बिना form नहीं भर सकते।",
+    "परीक्षा 26–27 फ़रवरी 2027 को (प्राथमिक स्तर और जूनियर स्तर, हिंदी, अंग्रेज़ी, उर्दू और संस्कृत माध्यम में)। विस्तृत विज्ञापन (Advt No. 10/2026) 24 नवंबर 2026 को upessc.up.gov.in पर आएगा।",
+    "प्राथमिक स्तर (कक्षा I–V): किसी भी stream में स्नातक + 2 वर्षीय D.El.Ed (BTC) / D.Ed / Special D.El.Ed (BTC) / D.El.Ed (उर्दू) / B.El.Ed, या स्नातक + AMU, अलीगढ़ से Diploma in Teaching (final-year appearing भी पात्र)।",
+    "जूनियर स्तर (कक्षा VI–VIII): स्नातक + 2 वर्षीय D.El.Ed (BTC); या 50% अंकों के साथ स्नातक/स्नातकोत्तर + B.Ed / B.Ed (Special); या 10+2 में 50% अंक + 4 वर्षीय B.El.Ed / B.Sc Ed; या 45% अंकों के साथ स्नातक / स्नातकोत्तर + B.Ed (NCTE norms के अनुसार; final-year appearing भी पात्र)।",
+    "Correction window: 27 दिसंबर 2026 तक (fee ₹200)।",
+    "ऊपर के सभी तथ्य UPESSC के UPTET Advt No. 10/2026 के short notice, दिनांक 18 नवंबर 2026 (Letter No. 3585/42(2026)/Adhiyachan (Vigyapan)/2026-27) से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "प्राथमिक स्तर (कक्षा I–V): किसी भी stream में स्नातक + 2 वर्षीय D.El.Ed (BTC) / D.Ed / Special D.El.Ed (BTC) / D.El.Ed (उर्दू) / B.El.Ed, या स्नातक + AMU, अलीगढ़ से Diploma in Teaching। Final-year appearing उम्मीदवार भी apply कर सकते हैं।",
+    "जूनियर स्तर (कक्षा VI–VIII): स्नातक + 2 वर्षीय D.El.Ed (BTC); या 50% अंकों के साथ स्नातक/स्नातकोत्तर + B.Ed / B.Ed (Special); या 10+2 में 50% अंक + 4 वर्षीय B.El.Ed / B.Sc Ed; या 45% अंकों के साथ स्नातक / स्नातकोत्तर + B.Ed (NCTE norms के अनुसार)। Final-year appearing उम्मीदवार भी apply कर सकते हैं।",
+    "Form भरने से पहले apply.upessc.org पर One Time Registration (OTR) ज़रूरी है।",
+    "Apply करने से पहले 24 नवंबर 2026 को upessc.up.gov.in पर विस्तृत विज्ञापन ज़रूर पढ़ें — पूरे brochure में eligibility details update हो सकते हैं।"
+   ],
+   "dos": [
+    "Apply करने से पहले 24 नवंबर 2026 को upessc.up.gov.in पर विस्तृत विज्ञापन (Advt No. 10/2026) पढ़ें।",
+    "पहले apply.upessc.org पर One Time Registration (OTR) पूरा करें — इसके बिना form नहीं भरेगा।",
+    "सिर्फ UPESSC OTR portal (apply.upessc.org) पर 24 नवंबर से 23 दिसंबर 2026 के बीच apply करें।",
+    "Form खुलने से पहले degree, D.El.Ed/BTC या B.Ed certificates और हाल की photo तैयार रखें।",
+    "Correction window (27 दिसंबर 2026 तक) में कोई गलती ठीक कर लें — उसके बाद बदलाव नहीं होगा।"
+   ],
+   "donts": [
+    "24 नवंबर 2026 से पहले apply करने की कोशिश न करें — UPTET window उसी दिन खुलती है।",
+    "UPESSC OTR portal के अलावा किसी और site पर fee न भरें।",
+    "UPTET को नौकरी न समझें — ये eligibility test है; शिक्षक की vacancy अलग से निकलती है।",
+    "आखिरी दिन का इंतज़ार न करें — portal 23 दिसंबर 2026 को बंद हो जाता है।"
+   ],
+   "checklist": [
+    "स्नातक की degree और marksheet",
+    "D.El.Ed/BTC या B.Ed certificate (या final-year proof)",
+    "Aadhaar card",
+    "हाल की passport-size photo और हस्ताक्षर का scan",
+    "जाति / PH certificate, अगर लागू हो",
+    "OTR के लिए mobile number और email"
+   ],
+   "documents": [
+    "स्नातक की degree और marksheet",
+    "D.El.Ed/BTC या B.Ed certificate",
+    "Aadhaar card",
+    "जाति / PH certificate, अगर लागू हो",
+    "हाल की photo और हस्ताक्षर"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "OTR kiye bina form bharne ki koshish karna",
+    "UPTET ko naukri samajh lena (ye eligibility test hai)",
+    "24 नवंबर से पहले apply karne ki koshish karna (portal 24 नवंबर ko khulta hai)",
+    "Correction window (27 दिसंबर tak) miss karna"
+   ],
+   "steps": [
+    "upessc.up.gov.in par 24 नवंबर 2026 ko detailed advertisement (Advt No. 10/2026) पढ़ें।",
+    "apply.upessc.org par One Time Registration (OTR) पूरा करें — mobile number aur OTP se।",
+    "OTR login se UPTET February 2027 ka form भरें — Primary ya Junior level चुनें।",
+    "Photo, signature aur documents upload करें।",
+    "₹1,000 (Gen/OBC/EWS), ₹500 (SC/ST) ya ₹300 (PH) fee online भरें — 23 दिसंबर 2026 तक।",
+    "Form submit करें aur confirmation save करें। Correction 27 दिसंबर 2026 tak kar sakte hain।"
+   ],
+   "extra_faq": [
+    {
+     "q": "UPTET February 2027 me kitni vacancies hain?",
+     "a": "UPTET me koi vacancy nahi hoti — ye ek eligibility test hai। Pass karne par aap UP me teacher posts ke liye eligible ho jaate hain; teacher ki bharti alag se nikalti hai।"
+    },
+    {
+     "q": "UPTET February 2027 ki last date aur fee kya hai?",
+     "a": "Online आवेदन 24 नवंबर से 23 दिसंबर 2026 तक। Fee ₹1,000 (General/OBC/EWS), ₹500 (SC/ST) aur ₹300 (PH/दिव्यांग) है। Correction 27 दिसंबर 2026 तक (fee ₹200)।"
+    },
+    {
+     "q": "UPTET February 2027 ke liye qualification kya hai?",
+     "a": "Primary Level (I–V): Bachelor's degree + 2-year D.El.Ed/BTC (ya B.El.Ed / AMU teaching diploma)। Junior Level (VI–VIII): Bachelor's + 2-year D.El.Ed, ya Bachelor's/Master's 50% + B.Ed, ya 10+2 50% + 4-year B.El.Ed/B.Sc Ed। Final-year appearing candidates bhi apply kar sakte hain।"
+    },
+    {
+     "q": "UPTET February 2027 ki exam kab hogi?",
+     "a": "Exam 26–27 फ़रवरी 2027 ko hogi — Primary Level aur Junior Level, Hindi, English, Urdu aur Sanskrit medium me। Detailed advertisement 24 नवंबर 2026 ko upessc.up.gov.in par aayega।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "htet-december-2026",
+  "advt": "HTET December 2026",
+  "board_en": "Board of School Education Haryana (BSEH), Bhiwani",
+  "board_hi": "हरियाणा विद्यालय शिक्षा बोर्ड (BSEH), भिवानी",
+  "portal": "htet2026.org",
+  "posts": null,
+  "dates": {
+   "apply_end": "2026-11-27",
+   "apply_start": "2026-11-18",
+   "correction_end": "2026-11-29",
+   "correction_start": "2026-11-28",
+   "exam": "26–27 December 2026",
+   "exam_hi": "26–27 दिसंबर 2026",
+   "fee_end": "2026-11-27"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://htet2026.org/",
+   "notice": null,
+   "site": "https://htet2026.org/"
+  },
+  "en": {
+   "name": "Haryana Teacher Eligibility Test (HTET) December 2026",
+   "tagline": "Haryana TET for Level I (PRT), Level II (TGT) and Level III (PGT) — exam on 26–27 December 2026; apply 18–27 November 2026.",
+   "qual": "10+2 + D.El.Ed (Level I); Bachelor's + B.Ed/D.El.Ed (Level II); Master's + B.Ed (Level III)",
+   "fees": [
+    "Single paper: ₹1,200 for General/OBC/Other-State candidates; ₹700 for SC/PH candidates — pay online by 27 November 2026.",
+    "Double paper: ₹2,000 (General/OBC/Other-State) / ₹1,100 (SC/PH). Triple paper: ₹2,600 (General/OBC/Other-State) / ₹1,400 (SC/PH)."
+   ],
+   "fees_short": "₹1,200",
+   "specs": [
+    "HTET December 2026 is an eligibility test, not a vacancy recruitment — there is no post count. Passing it makes you eligible to apply for teacher posts in Haryana.",
+    "Apply online 18–27 November 2026 on htet2026.org. Correction window: 28–29 November 2026.",
+    "Exam on 26–27 December 2026 (Level I PRT, Level II TGT and Level III PGT).",
+    "Level I (PRT, Classes 1–5): 10+2 with 50% marks + 2-year Diploma in Elementary Education / Special Education / B.E.Ed (or 10+2 with 45% marks + the same diploma; or Bachelor's degree + the diploma).",
+    "Level II (TGT, Classes 6–8): Bachelor's degree with 50% marks + 2-year Diploma in Education / Elementary Education, or Bachelor's with 50% marks + B.Ed / Special B.Ed, or 10+2 with 50% marks + 4-year BA B.Ed / B.Com B.Ed.",
+    "Level III (PGT): Master's degree in the concerned subject with 50% marks + B.Ed degree.",
+    "Fee depends on how many papers you take — single, double or triple (see fees above). Pay only by online debit card, credit card or net banking.",
+    "All facts above are taken from the BSEH detailed notification for HTET December 2026, published 18 November 2026 on htet2026.org."
+   ],
+   "eligibility": [
+    "Level I (PRT, Classes 1–5): 10+2 with 50% marks + 2-year Diploma in Elementary Education / Special Education / B.E.Ed (or 10+2 with 45% marks + the same diploma; or Bachelor's degree + the diploma). Passed or appearing (final year) candidates are eligible.",
+    "Level II (TGT, Classes 6–8): Bachelor's degree with 50% marks + 2-year Diploma in Education / Elementary Education, or Bachelor's with 50% marks + B.Ed / Special B.Ed, or 10+2 with 50% marks + 4-year BA B.Ed / B.Com B.Ed.",
+    "Level III (PGT): Master's degree in the concerned subject with 50% marks + B.Ed degree.",
+    "Read the detailed notification on htet2026.org fully before applying — subject-wise eligibility differs."
+   ],
+   "dos": [
+    "Read the detailed notification on htet2026.org fully before applying — check the level and subject eligibility for your level.",
+    "Apply only on htet2026.org between 18 and 27 November 2026.",
+    "Choose the right paper combination (single/double/triple) — the fee changes with it.",
+    "Keep your 10+2, D.El.Ed/B.Ed or Master's certificates and a recent photo ready before applying.",
+    "Use the correction window (28–29 November 2026) to fix any mistake."
+   ],
+   "donts": [
+    "Do not apply for a level whose eligibility you do not meet — level-wise rules differ.",
+    "Do not treat HTET as a job — it is an eligibility test; teacher vacancies are advertised separately.",
+    "Do not pay the fee on any site other than htet2026.org.",
+    "Do not wait for the last day — the portal closes on 27 November 2026."
+   ],
+   "checklist": [
+    "10+2 marksheet and certificate",
+    "D.El.Ed / B.Ed / Master's degree certificate (as per your level)",
+    "Date of birth proof",
+    "Caste / PH certificate, if applicable",
+    "Recent passport-size photo, signature and thumb-impression scans",
+    "Haryana domicile certificate, if claiming the SC/PH fee slab"
+   ],
+   "documents": [
+    "10+2 marksheet and certificate",
+    "D.El.Ed / B.Ed / Master's degree certificate",
+    "Date of birth proof",
+    "Caste / PH certificate, if applicable",
+    "Recent photo, signature and thumb impression"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Galat level ke liye apply karna (har level ki eligibility alag hai)",
+    "HTET ko naukri samajh lena (ye eligibility test hai)",
+    "Single/double/triple paper galat chunna (fee usi par depend karti hai)",
+    "Correction window (28–29 Nov) miss karna"
+   ],
+   "steps": [
+    "htet2026.org par HTET December 2026 ka detailed notification पढ़ें।",
+    "Apna level (I/II/III) aur paper combination (single/double/triple) चुनें।",
+    "'Click here for New Registration' se registration करें।",
+    "Photo, signature aur thumb impression upload करें।",
+    "Fee online भरें — single paper ₹1,200 (Gen/OBC) ya ₹700 (SC/PH) — 27 नवंबर 2026 तक।",
+    "Form submit करें aur confirmation save करें। Correction 28–29 नवंबर 2026 tak kar sakte hain।"
+   ],
+   "extra_faq": [
+    {
+     "q": "HTET December 2026 me kitni vacancies hain?",
+     "a": "HTET me koi vacancy nahi hoti — ye ek eligibility test hai। Pass karne par aap Haryana me teacher posts ke liye eligible ho jaate hain; teacher ki bharti alag se nikalti hai।"
+    },
+    {
+     "q": "HTET December 2026 ki last date aur fee kya hai?",
+     "a": "Online आवेदन 18 से 27 नवंबर 2026 तक। Single paper fee ₹1,200 (General/OBC/Other-State) aur ₹700 (SC/PH) है; double paper ₹2,000/₹1,100 aur triple paper ₹2,600/₹1,400। Correction 28–29 नवंबर 2026।"
+    },
+    {
+     "q": "HTET December 2026 ke liye qualification kya hai?",
+     "a": "Level I (PRT): 10+2 + 2-year D.El.Ed। Level II (TGT): Bachelor's + B.Ed/D.El.Ed। Level III (PGT): Master's (concerned subject, 50%) + B.Ed। Subject-wise details notification me dekhen।"
+    },
+    {
+     "q": "HTET December 2026 ki exam kab hogi?",
+     "a": "Exam 26–27 दिसंबर 2026 ko hogi — Level I (PRT), Level II (TGT) aur Level III (PGT)। Admit card exam se pehle schedule ke anusaar aayega।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "हरियाणा शिक्षक पात्रता परीक्षा (HTET) दिसंबर 2026",
+   "tagline": "Level I (PRT), Level II (TGT) और Level III (PGT) के लिए हरियाणा TET — परीक्षा 26–27 दिसंबर 2026; आवेदन 18–27 नवंबर 2026।",
+   "qual": "10+2 + D.El.Ed (Level I); स्नातक + B.Ed/D.El.Ed (Level II); स्नातकोत्तर + B.Ed (Level III)",
+   "fees": [
+    "Single paper: ₹1,200 General/OBC/Other-State उम्मीदवारों के लिए; ₹700 SC/PH उम्मीदवारों के लिए — 27 नवंबर 2026 तक online भरें।",
+    "Double paper: ₹2,000 (General/OBC/Other-State) / ₹1,100 (SC/PH)। Triple paper: ₹2,600 (General/OBC/Other-State) / ₹1,400 (SC/PH)।"
+   ],
+   "fees_short": "₹1,200",
+   "specs": [
+    "HTET दिसंबर 2026 एक पात्रता परीक्षा (eligibility test) है, vacancy वाली भर्ती नहीं — इसमें कोई पद संख्या नहीं होती। इसे पास करने पर आप हरियाणा में शिक्षक पदों के लिए पात्र हो जाते हैं।",
+    "Online आवेदन 18–27 नवंबर 2026, htet2026.org पर। Correction window: 28–29 नवंबर 2026।",
+    "परीक्षा 26–27 दिसंबर 2026 को (Level I PRT, Level II TGT और Level III PGT)।",
+    "Level I (PRT, कक्षा 1–5): 50% अंकों के साथ 10+2 + 2 वर्षीय Diploma in Elementary Education / Special Education / B.E.Ed (या 45% अंकों के साथ 10+2 + वही diploma; या स्नातक + diploma)।",
+    "Level II (TGT, कक्षा 6–8): 50% अंकों के साथ स्नातक + 2 वर्षीय Diploma in Education / Elementary Education, या 50% अंकों के साथ स्नातक + B.Ed / Special B.Ed, या 50% अंकों के साथ 10+2 + 4 वर्षीय BA B.Ed / B.Com B.Ed।",
+    "Level III (PGT): संबंधित विषय में 50% अंकों के साथ स्नातकोत्तर + B.Ed।",
+    "Fee इस पर निर्भर करती है कि आप कितने paper देते हैं — single, double या triple (ऊपर fees देखें)। सिर्फ online debit card, credit card या net banking से भरें।",
+    "ऊपर के सभी तथ्य BSEH के HTET दिसंबर 2026 के detailed notification, दिनांक 18 नवंबर 2026 (htet2026.org) से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "Level I (PRT, कक्षा 1–5): 50% अंकों के साथ 10+2 + 2 वर्षीय Diploma in Elementary Education / Special Education / B.E.Ed (या 45% अंकों के साथ 10+2 + वही diploma; या स्नातक + diploma)। Passed या appearing (final year) उम्मीदवार पात्र हैं।",
+    "Level II (TGT, कक्षा 6–8): 50% अंकों के साथ स्नातक + 2 वर्षीय Diploma in Education / Elementary Education, या 50% अंकों के साथ स्नातक + B.Ed / Special B.Ed, या 50% अंकों के साथ 10+2 + 4 वर्षीय BA B.Ed / B.Com B.Ed।",
+    "Level III (PGT): संबंधित विषय में 50% अंकों के साथ स्नातकोत्तर + B.Ed।",
+    "Apply करने से पहले htet2026.org पर detailed notification पूरा पढ़ें — subject-wise eligibility अलग होती है।"
+   ],
+   "dos": [
+    "Apply करने से पहले htet2026.org पर detailed notification पूरा पढ़ें — अपने level की eligibility देखें।",
+    "सिर्फ htet2026.org पर 18 से 27 नवंबर 2026 के बीच apply करें।",
+    "सही paper combination (single/double/triple) चुनें — fee उसी पर निर्भर करती है।",
+    "Apply करने से पहले 10+2, D.El.Ed/B.Ed या Master's certificates और हाल की photo तैयार रखें।",
+    "Correction window (28–29 नवंबर 2026) में कोई गलती ठीक कर लें।"
+   ],
+   "donts": [
+    "जिस level की eligibility पूरी न हो, उसके लिए apply न करें — level-wise नियम अलग हैं।",
+    "HTET को नौकरी न समझें — ये eligibility test है; शिक्षक की vacancy अलग से निकलती है।",
+    "htet2026.org के अलावा किसी और site पर fee न भरें।",
+    "आखिरी दिन का इंतज़ार न करें — portal 27 नवंबर 2026 को बंद हो जाता है।"
+   ],
+   "checklist": [
+    "10+2 marksheet और certificate",
+    "D.El.Ed / B.Ed / Master's degree certificate (अपने level के अनुसार)",
+    "जन्मतिथि का proof",
+    "जाति / PH certificate, अगर लागू हो",
+    "हाल की passport-size photo, हस्ताक्षर और thumb-impression के scan",
+    "Haryana domicile certificate, अगर SC/PH fee slab claim कर रहे हों"
+   ],
+   "documents": [
+    "10+2 marksheet और certificate",
+    "D.El.Ed / B.Ed / Master's degree certificate",
+    "जन्मतिथि का proof",
+    "जाति / PH certificate, अगर लागू हो",
+    "हाल की photo, हस्ताक्षर और thumb impression"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Galat level ke liye apply karna (har level ki eligibility alag hai)",
+    "HTET ko naukri samajh lena (ye eligibility test hai)",
+    "Single/double/triple paper galat chunna (fee usi par depend karti hai)",
+    "Correction window (28–29 Nov) miss karna"
+   ],
+   "steps": [
+    "htet2026.org par HTET December 2026 ka detailed notification पढ़ें।",
+    "Apna level (I/II/III) aur paper combination (single/double/triple) चुनें।",
+    "'Click here for New Registration' se registration करें।",
+    "Photo, signature aur thumb impression upload करें।",
+    "Fee online भरें — single paper ₹1,200 (Gen/OBC) ya ₹700 (SC/PH) — 27 नवंबर 2026 तक।",
+    "Form submit करें aur confirmation save करें। Correction 28–29 नवंबर 2026 tak kar sakte hain।"
+   ],
+   "extra_faq": [
+    {
+     "q": "HTET December 2026 me kitni vacancies hain?",
+     "a": "HTET me koi vacancy nahi hoti — ye ek eligibility test hai। Pass karne par aap Haryana me teacher posts ke liye eligible ho jaate hain; teacher ki bharti alag se nikalti hai।"
+    },
+    {
+     "q": "HTET December 2026 ki last date aur fee kya hai?",
+     "a": "Online आवेदन 18 से 27 नवंबर 2026 तक। Single paper fee ₹1,200 (General/OBC/Other-State) aur ₹700 (SC/PH) है; double paper ₹2,000/₹1,100 aur triple paper ₹2,600/₹1,400। Correction 28–29 नवंबर 2026।"
+    },
+    {
+     "q": "HTET December 2026 ke liye qualification kya hai?",
+     "a": "Level I (PRT): 10+2 + 2-year D.El.Ed। Level II (TGT): Bachelor's + B.Ed/D.El.Ed। Level III (PGT): Master's (concerned subject, 50%) + B.Ed। Subject-wise details notification me dekhen।"
+    },
+    {
+     "q": "HTET December 2026 ki exam kab hogi?",
+     "a": "Exam 26–27 दिसंबर 2026 ko hogi — Level I (PRT), Level II (TGT) aur Level III (PGT)। Admit card exam se pehle schedule ke anusaar aayega।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "rssb-junior-engineer-2026",
+  "advt": "Advt No. 10/2026",
+  "board_en": "Rajasthan Staff Selection Board (RSSB)",
+  "board_hi": "राजस्थान कर्मचारी चयन बोर्ड (RSSB)",
+  "portal": "rssb.rajasthan.gov.in",
+  "posts": 1909,
+  "dates": {
+   "apply_end": "2026-12-17",
+   "apply_start": "2026-11-18",
+   "correction_end": "2026-12-31",
+   "correction_start": "2026-12-22",
+   "exam": "3–5 February 2027",
+   "exam_hi": "3–5 फ़रवरी 2027",
+   "fee_end": "2026-12-17"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://sso.rajasthan.gov.in",
+   "notice": null,
+   "site": "https://rssb.rajasthan.gov.in"
+  },
+  "en": {
+   "name": "RSSB Junior Engineer Recruitment 2026",
+   "tagline": "1,909 Junior Engineer posts (Civil/Electrical, Degree + Diploma) across Rajasthan departments — re-opened window 18 November–17 December 2026; exam 3–5 February 2027.",
+   "qual": "Engineering Diploma or Degree in the relevant trade/branch",
+   "fees": [
+    "₹600 for General/OBC/Other-State candidates — pay online by 17 December 2026.",
+    "₹400 for OBC-NCL/MBC/EWS/SC/ST/PH candidates of Rajasthan.",
+    "Correction charge: ₹300 (correction window 22–31 December 2026)."
+   ],
+   "fees_short": "₹600",
+   "specs": [
+    "1,909 Junior Engineer posts across Rajasthan departments: Public Works Department 403, Water Resources Department 251, Public Health Engineering Department 294, Rajasthan State Disaster Management Board 41, Urban Development & Housing 770, Local Self Government Department 150.",
+    "By qualification: Degree 1,241 posts, Diploma 619 posts, Electrical 49 posts (JE Civil Degree/Diploma and JE Civil Electrical).",
+    "This is a RE-OPENED window for Advt No. 10/2026 — online applications 18 November–17 December 2026. Correction window: 22–31 December 2026 (fee ₹300).",
+    "Apply through the Rajasthan Single Sign-On portal (sso.rajasthan.gov.in) — log in with your SSO ID, then open the Recruitment Portal. The JE application itself sits behind the SSO login.",
+    "Written examination on 3–5 February 2027; admit card before the exam.",
+    "Age as on 1 January 2027: minimum 18 years, maximum 40 years (relaxation as per RSSB rules in Advt No. 10/2026).",
+    "All facts above are taken from Advt No. 10/2026 (Rajasthan Staff Selection Board)."
+   ],
+   "eligibility": [
+    "Engineering Diploma or Degree in the relevant trade/branch from a recognised institute in India (JE Civil — Degree or Diploma; JE Civil Electrical — Degree or Diploma in Electrical).",
+    "Age as on 1 January 2027: minimum 18 years, maximum 40 years. Age relaxation extra as per RSSB Junior Engineer Recruitment Rules (Advt No. 10/2026).",
+    "Read Advt No. 10/2026 fully on rssb.rajasthan.gov.in before applying — post-wise trade and department details differ."
+   ],
+   "dos": [
+    "Read Advt No. 10/2026 fully on rssb.rajasthan.gov.in before applying — check the post-wise trade and department for your qualification.",
+    "Apply only through the Rajasthan SSO portal (sso.rajasthan.gov.in) between 18 November and 17 December 2026.",
+    "Keep your SSO ID ready — without it you cannot open the Recruitment Portal.",
+    "Keep your Diploma/Degree certificate, marksheet and a recent photo ready before applying.",
+    "Use the correction window (22–31 December 2026) to fix any mistake — each correction costs ₹300."
+   ],
+   "donts": [
+    "Do not apply for a trade/branch your Diploma or Degree does not match.",
+    "Do not apply through any site other than the Rajasthan SSO portal.",
+    "Do not wait for the last day — the portal closes on 17 December 2026.",
+    "Do not pay the fee twice — one successful payment completes the form."
+   ],
+   "checklist": [
+    "Rajasthan SSO ID (and password)",
+    "Engineering Diploma/Degree certificate and marksheet",
+    "Date of birth proof",
+    "Caste / category certificate, if applicable",
+    "Recent passport-size photo and signature scan",
+    "Domicile certificate, if claiming the Rajasthan fee slab"
+   ],
+   "documents": [
+    "Engineering Diploma/Degree certificate and marksheet",
+    "Date of birth proof",
+    "Caste / category certificate, if applicable",
+    "Recent photo and signature",
+    "Rajasthan SSO ID details"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Galat trade/branch ke liye apply karna (Diploma/Degree match nahi karta)",
+    "SSO ID ke bina form kholne ki koshish karna",
+    "Correction window (22–31 Dec, ₹300) miss karna",
+    "17 दिसंबर की deadline miss karna"
+   ],
+   "steps": [
+    "rssb.rajasthan.gov.in par Advt No. 10/2026 पढ़ें aur apni post/trade चुनें।",
+    "sso.rajasthan.gov.in par apne SSO ID se login करें, phir Recruitment Portal खोलें।",
+    "RSSB Junior Engineer 2026 ka form भरें।",
+    "Photo, signature aur documents upload करें।",
+    "₹600 (Gen/OBC/Other-State) ya ₹400 (Rajasthan reserved categories) fee online भरें — 17 दिसंबर 2026 तक।",
+    "Form submit करें aur confirmation save करें। Correction 22–31 दिसंबर 2026 tak (₹300) kar sakte hain।"
+   ],
+   "extra_faq": [
+    {
+     "q": "RSSB Junior Engineer 2026 me kitni vacancies hain?",
+     "a": "1,909 posts — JE Civil (Degree) 1,241, JE Civil (Diploma) 619 aur JE Civil Electrical 49। Departments: PWD 403, WRD 251, PHED 294, Disaster Management Board 41, UDH 770, LSG 150।"
+    },
+    {
+     "q": "RSSB Junior Engineer 2026 ki last date aur fee kya hai?",
+     "a": "Re-opened window 18 नवंबर से 17 दिसंबर 2026 तक। Fee ₹600 (General/OBC/Other-State) aur ₹400 (OBC-NCL/MBC/EWS/SC/ST/PH, Rajasthan) है। Correction 22–31 दिसंबर 2026 (₹300)। Exam 3–5 फ़रवरी 2027।"
+    },
+    {
+     "q": "RSSB Junior Engineer 2026 ke liye qualification aur age limit kya hai?",
+     "a": "Relevant trade/branch me Engineering Diploma ya Degree। Age 1 जनवरी 2027 ko 18–40 वर्ष (RSSB rules ke anusaar relaxation)।"
+    },
+    {
+     "q": "RSSB Junior Engineer ke liye kaise apply karein?",
+     "a": "Rajasthan SSO portal (sso.rajasthan.gov.in) par apne SSO ID se login karein, phir Recruitment Portal me RSSB Junior Engineer 2026 ka form भरें। Form sirf SSO ke through bhara jaata hai।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "RSSB जूनियर इंजीनियर भर्ती 2026",
+   "tagline": "राजस्थान के विभागों में 1,909 जूनियर इंजीनियर पद (सिविल/इलेक्ट्रिकल, डिग्री + डिप्लोमा) — दोबारा खुली window 18 नवंबर–17 दिसंबर 2026; परीक्षा 3–5 फ़रवरी 2027।",
+   "qual": "संबंधित trade/branch में इंजीनियरिंग डिप्लोमा या डिग्री",
+   "fees": [
+    "₹600 General/OBC/Other-State उम्मीदवारों के लिए — 17 दिसंबर 2026 तक online भरें।",
+    "₹400 OBC-NCL/MBC/EWS/SC/ST/PH (राजस्थान) उम्मीदवारों के लिए।",
+    "Correction charge: ₹300 (correction window 22–31 दिसंबर 2026)।"
+   ],
+   "fees_short": "₹600",
+   "specs": [
+    "राजस्थान के विभागों में 1,909 जूनियर इंजीनियर पद: लोक निर्माण विभाग 403, जल संसाधन विभाग 251, जन स्वास्थ्य अभियांत्रिकी विभाग 294, राजस्थान राज्य आपदा प्रबंधन बोर्ड 41, शहरी विकास एवं आवास 770, स्थानीय स्वशासन विभाग 150।",
+    "Qualification के अनुसार: Degree 1,241 पद, Diploma 619 पद, Electrical 49 पद (JE Civil Degree/Diploma और JE Civil Electrical)।",
+    "ये Advt No. 10/2026 की RE-OPENED window है — online आवेदन 18 नवंबर–17 दिसंबर 2026। Correction window: 22–31 दिसंबर 2026 (fee ₹300)।",
+    "Apply राजस्थान Single Sign-On portal (sso.rajasthan.gov.in) से करें — अपने SSO ID से login करें, फिर Recruitment Portal खोलें। JE application SSO login के पीछे है।",
+    "लिखित परीक्षा 3–5 फ़रवरी 2027 को; admit card परीक्षा से पहले आएगा।",
+    "आयु 1 जनवरी 2027 को: न्यूनतम 18 वर्ष, अधिकतम 40 वर्ष (Advt No. 10/2026 के RSSB नियमों के अनुसार छूट)।",
+    "ऊपर के सभी तथ्य Advt No. 10/2026 (राजस्थान कर्मचारी चयन बोर्ड) से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "भारत के मान्यता प्राप्त संस्थान से संबंधित trade/branch में इंजीनियरिंग डिप्लोमा या डिग्री (JE Civil — Degree या Diploma; JE Civil Electrical — Electrical में Degree या Diploma)।",
+    "आयु 1 जनवरी 2027 को: न्यूनतम 18 वर्ष, अधिकतम 40 वर्ष। RSSB जूनियर इंजीनियर भर्ती नियमों (Advt No. 10/2026) के अनुसार आयु में छूट।",
+    "Apply करने से पहले rssb.rajasthan.gov.in पर Advt No. 10/2026 पूरा पढ़ें — post-wise trade और department अलग-अलग हैं।"
+   ],
+   "dos": [
+    "Apply करने से पहले rssb.rajasthan.gov.in पर Advt No. 10/2026 पूरा पढ़ें — अपनी qualification के अनुसार post-wise trade और department देखें।",
+    "सिर्फ राजस्थान SSO portal (sso.rajasthan.gov.in) से 18 नवंबर से 17 दिसंबर 2026 के बीच apply करें।",
+    "अपना SSO ID तैयार रखें — इसके बिना Recruitment Portal नहीं खुलेगा।",
+    "Apply करने से पहले Diploma/Degree certificate, marksheet और हाल की photo तैयार रखें।",
+    "Correction window (22–31 दिसंबर 2026) में कोई गलती ठीक कर लें — हर correction पर ₹300 लगेगा।"
+   ],
+   "donts": [
+    "जिस trade/branch से आपका Diploma या Degree match न करे, उसके लिए apply न करें।",
+    "राजस्थान SSO portal के अलावा किसी और site से apply न करें।",
+    "आखिरी दिन का इंतज़ार न करें — portal 17 दिसंबर 2026 को बंद हो जाता है।",
+    "Fee दो बार न भरें — एक successful payment से form पूरा हो जाता है।"
+   ],
+   "checklist": [
+    "राजस्थान SSO ID (और password)",
+    "इंजीनियरिंग Diploma/Degree certificate और marksheet",
+    "जन्मतिथि का proof",
+    "जाति / category certificate, अगर लागू हो",
+    "हाल की passport-size photo और हस्ताक्षर का scan",
+    "Domicile certificate, अगर राजस्थान fee slab claim कर रहे हों"
+   ],
+   "documents": [
+    "इंजीनियरिंग Diploma/Degree certificate और marksheet",
+    "जन्मतिथि का proof",
+    "जाति / category certificate, अगर लागू हो",
+    "हाल की photo और हस्ताक्षर",
+    "राजस्थान SSO ID details"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Galat trade/branch ke liye apply karna (Diploma/Degree match nahi karta)",
+    "SSO ID ke bina form kholne ki koshish karna",
+    "Correction window (22–31 Dec, ₹300) miss karna",
+    "17 दिसंबर की deadline miss karna"
+   ],
+   "steps": [
+    "rssb.rajasthan.gov.in par Advt No. 10/2026 पढ़ें aur apni post/trade चुनें।",
+    "sso.rajasthan.gov.in par apne SSO ID se login करें, phir Recruitment Portal खोलें।",
+    "RSSB Junior Engineer 2026 ka form भरें।",
+    "Photo, signature aur documents upload करें।",
+    "₹600 (Gen/OBC/Other-State) ya ₹400 (Rajasthan reserved categories) fee online भरें — 17 दिसंबर 2026 तक।",
+    "Form submit करें aur confirmation save करें। Correction 22–31 दिसंबर 2026 tak (₹300) kar sakte hain।"
+   ],
+   "extra_faq": [
+    {
+     "q": "RSSB Junior Engineer 2026 me kitni vacancies hain?",
+     "a": "1,909 posts — JE Civil (Degree) 1,241, JE Civil (Diploma) 619 aur JE Civil Electrical 49। Departments: PWD 403, WRD 251, PHED 294, Disaster Management Board 41, UDH 770, LSG 150।"
+    },
+    {
+     "q": "RSSB Junior Engineer 2026 ki last date aur fee kya hai?",
+     "a": "Re-opened window 18 नवंबर से 17 दिसंबर 2026 तक। Fee ₹600 (General/OBC/Other-State) aur ₹400 (OBC-NCL/MBC/EWS/SC/ST/PH, Rajasthan) है। Correction 22–31 दिसंबर 2026 (₹300)। Exam 3–5 फ़रवरी 2027।"
+    },
+    {
+     "q": "RSSB Junior Engineer 2026 ke liye qualification aur age limit kya hai?",
+     "a": "Relevant trade/branch me Engineering Diploma ya Degree। Age 1 जनवरी 2027 ko 18–40 वर्ष (RSSB rules ke anusaar relaxation)।"
+    },
+    {
+     "q": "RSSB Junior Engineer ke liye kaise apply karein?",
+     "a": "Rajasthan SSO portal (sso.rajasthan.gov.in) par apne SSO ID se login karein, phir Recruitment Portal me RSSB Junior Engineer 2026 ka form भरें। Form sirf SSO ke through bhara jaata hai।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "grse-journeyman-driver-2026",
+  "advt": "Employment Notification No. 2026/05 (J&OP)",
+  "board_en": "Garden Reach Shipbuilders & Engineers Ltd (GRSE)",
+  "board_hi": "गार्डन रीच शिपबिल्डर्स एंड इंजीनियर्स लिमिटेड (GRSE)",
+  "portal": "grse.in",
+  "posts": 58,
+  "dates": {
+   "apply_end": "2026-11-28",
+   "apply_start": "2026-10-30",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-28"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://jobapply.in/GRSE2026Journeyman/Default.aspx",
+   "notice": "https://jobapply.in/GRSE2026Journeyman/adv_eng.pdf",
+   "site": "https://www.grse.in"
+  },
+  "en": {
+   "name": "GRSE Journeyman & Driver (Vehicle) Recruitment 2026",
+   "tagline": "58 posts — Journeyman 55 across 14 trades + Driver (Vehicle) 3 — in the Navratna defence shipyard; last date 28 November 2026.",
+   "qual": "Matriculation (10th pass) + NAC/NTC (ITI) in the relevant trade",
+   "fees": [
+    "₹472 — pay online (payment gateway) by 28 November 2026. The fee is non-refundable.",
+    "No fee for SC/ST/PwBD and internal candidates."
+   ],
+   "fees_short": "₹472",
+   "specs": [
+    "58 posts: Journeyman 55 across 14 trades — Carpenter 2, Crane Operator 2, Diesel Mechanic 2, Driver Material Handling 2, Electrician 8, Electronic Mechanic 6, Fitter 6, GRP/FRP Worker 4, Machine Operator 3, Painter 6, Pipe Fitter 4, Rigger 4, Structural Fitter 4, Welder 2 — plus Driver (Vehicle) 3 (UR 2, OBC 1).",
+    "Journeyman: Matriculation (10th pass) + NAC/NTC in the relevant trade. Driver (Vehicle): Matriculation + valid Commercial LMV driving licence + minimum 6 years post-qualification experience of driving Light and Heavy Motor Vehicles (clean driving record, no accidents in the last 6 years).",
+    "Age as on 1 October 2026: Journeyman — maximum 26 years; Driver (Vehicle) — maximum 32 years (relaxation for reserved categories, Ex-Servicemen, Ex-Agniveers and internal candidates as per the notification).",
+    "Selection: Written Test (100 marks, 2 hours, 100 MCQs — Part I trade-related 80 marks + Part II GK, aptitude, reasoning, numerical ability 20 marks; qualifying 50% overall for Journeyman, 40% for Driver; 45%/35% for SC/ST/OBC, 40%/30% for PwBD) followed by a Practical (Trade) Test (qualifying, 50 marks), then document verification and medical examination. Physical Efficiency Test (qualifying) applies to Driver (Material Handling), Rigger and Crane Operator posts.",
+    "Written test at Kolkata & Ranchi, pen-and-paper with OMR sheets, bilingual (English and Hindi).",
+    "Higher professional qualifications such as a Graduate/Post Graduate Degree in Engineering/Technology, MBA, CA, CMA, CS, LL.B, MCA or Ph.D make you NOT eligible for these posts — do not apply with them.",
+    "Apply online only — through the Career section of grse.in or jobapply.in/grse2026 — by 28 November 2026 (11:59 PM).",
+    "All facts above are taken from Employment Notification No. 2026/05 (J&OP), GRSE Ltd."
+   ],
+   "eligibility": [
+    "Journeyman: Matriculation (10th pass) + NAC (National Apprenticeship Certificate) / NTC (National Trade Certificate, ITI pass) in the relevant trade.",
+    "Driver (Vehicle): Matriculation (10th pass) + valid Commercial LMV driving licence + minimum 6 years post-qualification experience of driving Light and Heavy Motor Vehicles. Desirable: valid Heavy Vehicle driving licence.",
+    "Age as on 1 October 2026: Journeyman maximum 26 years; Driver (Vehicle) maximum 32 years (relaxation as per the notification).",
+    "Higher professional qualifications (Engineering degree, MBA, CA, CMA, CS, LL.B, MCA, Ph.D) make you NOT eligible for these posts."
+   ],
+   "dos": [
+    "Read Employment Notification No. 2026/05 (J&OP) fully on grse.in before applying — check the trade-wise qualification for your trade.",
+    "Apply only online (jobapply.in/grse2026) by 28 November 2026 (11:59 PM).",
+    "Keep your 10th certificate, NAC/NTC (ITI) certificate, driving licence (for Driver) and experience proof ready.",
+    "Keep a valid email ID active for at least one year — all communication comes by email.",
+    "If eligible for more than one trade, apply separately for each — but note the written tests may clash in a single session."
+   ],
+   "donts": [
+    "Do not apply with a Graduate/Post Graduate Engineering degree, MBA, CA or similar higher professional qualification — you are NOT eligible.",
+    "Do not submit more than one application for the same post/trade — it cancels your candidature.",
+    "Do not submit an offline/paper application — only online applications are accepted.",
+    "Do not wait for the last day — the portal closes on 28 November 2026 at 11:59 PM."
+   ],
+   "checklist": [
+    "Matriculation (10th) certificate and marksheet",
+    "NAC/NTC (ITI) certificate in the relevant trade",
+    "Valid Commercial LMV driving licence + 6 years driving experience proof (Driver only)",
+    "Date of birth proof",
+    "Caste / PwBD / ESM certificate, if applicable",
+    "Recent passport-size photo and signature scan",
+    "Valid email ID (keep active for at least one year)"
+   ],
+   "documents": [
+    "Matriculation (10th) certificate and marksheet",
+    "NAC/NTC (ITI) certificate",
+    "Driving licence and experience certificate (Driver only)",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "Recent photo and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Engineering degree/MBA ke saath apply karna (aap eligible hi nahi hain)",
+    "Ek hi post/trade ke liye do baar form bharna (candidature cancel)",
+    "Offline/paper application bhejna (sirf online chalta hai)",
+    "28 नवंबर रात 11:59 बजे की deadline miss karna"
+   ],
+   "steps": [
+    "grse.in ya jobapply.in/grse2026 par Employment Notification No. 2026/05 (J&OP) पढ़ें।",
+    "Apni trade (Journeyman) ya Driver (Vehicle) post चुनें।",
+    "Online form भरें aur educational qualification, caste, date of birth, experience ke documents upload करें।",
+    "₹472 fee online भरें (SC/ST/PwBD/internal ko koi fee nahi) — 28 नवंबर 2026 तक।",
+    "Form submit करें aur confirmation save करें। Admit card baad me GRSE website par aayega।"
+   ],
+   "extra_faq": [
+    {
+     "q": "GRSE Journeyman & Driver 2026 me kitni vacancies hain?",
+     "a": "58 posts — Journeyman 55 (14 trades: Electrician 8, Electronic Mechanic 6, Fitter 6, Painter 6, GRP/FRP Worker 4, Pipe Fitter 4, Rigger 4, Structural Fitter 4, Machine Operator 3, Carpenter 2, Crane Operator 2, Diesel Mechanic 2, Driver Material Handling 2, Welder 2) aur Driver (Vehicle) 3।"
+    },
+    {
+     "q": "GRSE Journeyman & Driver ki last date aur fee kya hai?",
+     "a": "Online आवेदन 30 अक्टूबर से 28 नवंबर 2026 (रात 11:59 बजे) तक। Fee ₹472 है; SC/ST/PwBD aur internal candidates ko koi fee nahi। Fee non-refundable hai।"
+    },
+    {
+     "q": "GRSE Journeyman ke liye qualification aur age limit kya hai?",
+     "a": "10th pass + relevant trade me NAC/NTC (ITI)। Driver ke liye 10th + valid Commercial LMV licence + 6 साल का driving experience। Age 1 अक्टूबर 2026 ko: Journeyman अधिकतम 26 वर्ष, Driver अधिकतम 32 वर्ष।"
+    },
+    {
+     "q": "GRSE Journeyman me selection kaise hoga?",
+     "a": "Written Test (100 marks, 2 घंटे, 100 MCQs — trade 80 + GK/aptitude 20; qualifying 50% Journeyman / 40% Driver) phir Practical (Trade) Test (qualifying), document verification aur medical। Driver Material Handling, Rigger aur Crane Operator ke liye Physical Efficiency Test bhi hai। Written test Kolkata aur Ranchi me hoga।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "GRSE जर्नीमैन और ड्राइवर (वाहन) भर्ती 2026",
+   "tagline": "58 पद — 14 trades में जर्नीमैन 55 + ड्राइवर (वाहन) 3 — नवरत्न रक्षा शिपयार्ड में; अंतिम तिथि 28 नवंबर 2026।",
+   "qual": "मैट्रिक (10वीं पास) + संबंधित trade में NAC/NTC (ITI)",
+   "fees": [
+    "₹472 — 28 नवंबर 2026 तक online (payment gateway) भरें। Fee वापस नहीं होती।",
+    "SC/ST/PwBD और internal candidates को कोई fee नहीं।"
+   ],
+   "fees_short": "₹472",
+   "specs": [
+    "58 पद: जर्नीमैन 55 (14 trades — बढ़ई 2, क्रेन ऑपरेटर 2, डीज़ल मैकेनिक 2, ड्राइवर मटेरियल हैंडलिंग 2, इलेक्ट्रीशियन 8, इलेक्ट्रॉनिक मैकेनिक 6, फिटर 6, GRP/FRP वर्कर 4, मशीन ऑपरेटर 3, पेंटर 6, पाइप फिटर 4, रिगर 4, स्ट्रक्चरल फिटर 4, वेल्डर 2) + ड्राइवर (वाहन) 3 (UR 2, OBC 1)।",
+    "जर्नीमैन: मैट्रिक (10वीं पास) + संबंधित trade में NAC/NTC। ड्राइवर (वाहन): मैट्रिक + valid Commercial LMV ड्राइविंग लाइसेंस + Light और Heavy Motor Vehicle चलाने का कम से कम 6 साल का अनुभव (पिछले 6 साल में कोई accident नहीं)।",
+    "आयु 1 अक्टूबर 2026 को: जर्नीमैन — अधिकतम 26 वर्ष; ड्राइवर (वाहन) — अधिकतम 32 वर्ष (आरक्षित श्रेणियों, Ex-Servicemen, Ex-Agniveers और internal candidates को notification के अनुसार छूट)।",
+    "चयन: Written Test (100 अंक, 2 घंटे, 100 MCQs — Part I trade 80 अंक + Part II GK, aptitude, reasoning, numerical ability 20 अंक; qualifying 50% जर्नीमैन / 40% ड्राइवर; SC/ST/OBC 45%/35%, PwBD 40%/30%) फिर Practical (Trade) Test (qualifying, 50 अंक), फिर document verification और medical। Driver Material Handling, Rigger और Crane Operator पदों के लिए Physical Efficiency Test (qualifying) भी है।",
+    "Written test कोलकाता और रांची में, pen-and-paper OMR sheets पर, द्विभाषी (अंग्रेज़ी और हिंदी)।",
+    "Engineering/Technology में Graduate/Post Graduate degree, MBA, CA, CMA, CS, LL.B, MCA या Ph.D जैसी higher professional qualification वाले उम्मीदवार इन पदों के लिए पात्र नहीं हैं — ऐसी qualification के साथ apply न करें।",
+    "सिर्फ online apply करें — grse.in के Career section या jobapply.in/grse2026 से — 28 नवंबर 2026 (रात 11:59 बजे) तक।",
+    "ऊपर के सभी तथ्य Employment Notification No. 2026/05 (J&OP), GRSE Ltd. से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "जर्नीमैन: मैट्रिक (10वीं पास) + संबंधित trade में NAC (National Apprenticeship Certificate) / NTC (National Trade Certificate, ITI pass)।",
+    "ड्राइवर (वाहन): मैट्रिक (10वीं पास) + valid Commercial LMV ड्राइविंग लाइसेंस + Light और Heavy Motor Vehicle चलाने का कम से कम 6 साल का अनुभव। Desirable: valid Heavy Vehicle ड्राइविंग लाइसेंस।",
+    "आयु 1 अक्टूबर 2026 को: जर्नीमैन अधिकतम 26 वर्ष; ड्राइवर (वाहन) अधिकतम 32 वर्ष (notification के अनुसार छूट)।",
+    "Higher professional qualification (Engineering degree, MBA, CA, CMA, CS, LL.B, MCA, Ph.D) वाले उम्मीदवार इन पदों के लिए पात्र नहीं हैं।"
+   ],
+   "dos": [
+    "Apply करने से पहले grse.in पर Employment Notification No. 2026/05 (J&OP) पूरा पढ़ें — अपनी trade की qualification देखें।",
+    "सिर्फ online (jobapply.in/grse2026) से 28 नवंबर 2026 (रात 11:59 बजे) तक apply करें।",
+    "10th certificate, NAC/NTC (ITI) certificate, ड्राइविंग लाइसेंस (Driver के लिए) और experience proof तैयार रखें।",
+    "कम से कम एक साल तक active रहने वाला valid email ID रखें — सारी जानकारी email से आएगी।",
+    "अगर एक से ज़्यादा trade के लिए eligible हैं तो हर एक के लिए अलग apply करें — लेकिन ध्यान रहे, written tests एक ही session में टकरा सकते हैं।"
+   ],
+   "donts": [
+    "Graduate/Post Graduate Engineering degree, MBA, CA या ऐसी higher professional qualification के साथ apply न करें — आप पात्र नहीं हैं।",
+    "एक ही post/trade के लिए एक से ज़्यादा application न भेजें — candidature cancel हो जाएगी।",
+    "Offline/paper application न भेजें — सिर्फ online application मान्य है।",
+    "आखिरी दिन का इंतज़ार न करें — portal 28 नवंबर 2026 रात 11:59 बजे बंद हो जाता है।"
+   ],
+   "checklist": [
+    "मैट्रिक (10वीं) certificate और marksheet",
+    "संबंधित trade में NAC/NTC (ITI) certificate",
+    "Valid Commercial LMV ड्राइविंग लाइसेंस + 6 साल का driving experience proof (सिर्फ Driver)",
+    "जन्मतिथि का proof",
+    "जाति / PwBD / ESM certificate, अगर लागू हो",
+    "हाल की passport-size photo और हस्ताक्षर का scan",
+    "Valid email ID (कम से कम एक साल active रखें)"
+   ],
+   "documents": [
+    "मैट्रिक (10वीं) certificate और marksheet",
+    "NAC/NTC (ITI) certificate",
+    "ड्राइविंग लाइसेंस और experience certificate (सिर्फ Driver)",
+    "जन्मतिथि का proof",
+    "जाति / PwBD certificate, अगर लागू हो",
+    "हाल की photo और हस्ताक्षर"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Engineering degree/MBA ke saath apply karna (aap eligible hi nahi hain)",
+    "Ek hi post/trade ke liye do baar form bharna (candidature cancel)",
+    "Offline/paper application bhejna (sirf online chalta hai)",
+    "28 नवंबर रात 11:59 बजे की deadline miss karna"
+   ],
+   "steps": [
+    "grse.in ya jobapply.in/grse2026 par Employment Notification No. 2026/05 (J&OP) पढ़ें।",
+    "Apni trade (Journeyman) ya Driver (Vehicle) post चुनें।",
+    "Online form भरें aur educational qualification, caste, date of birth, experience ke documents upload करें।",
+    "₹472 fee online भरें (SC/ST/PwBD/internal ko koi fee nahi) — 28 नवंबर 2026 तक।",
+    "Form submit करें aur confirmation save करें। Admit card baad me GRSE website par aayega।"
+   ],
+   "extra_faq": [
+    {
+     "q": "GRSE Journeyman & Driver 2026 me kitni vacancies hain?",
+     "a": "58 posts — Journeyman 55 (14 trades: Electrician 8, Electronic Mechanic 6, Fitter 6, Painter 6, GRP/FRP Worker 4, Pipe Fitter 4, Rigger 4, Structural Fitter 4, Machine Operator 3, Carpenter 2, Crane Operator 2, Diesel Mechanic 2, Driver Material Handling 2, Welder 2) aur Driver (Vehicle) 3।"
+    },
+    {
+     "q": "GRSE Journeyman & Driver ki last date aur fee kya hai?",
+     "a": "Online आवेदन 30 अक्टूबर से 28 नवंबर 2026 (रात 11:59 बजे) तक। Fee ₹472 है; SC/ST/PwBD aur internal candidates ko koi fee nahi। Fee non-refundable hai।"
+    },
+    {
+     "q": "GRSE Journeyman ke liye qualification aur age limit kya hai?",
+     "a": "10th pass + relevant trade me NAC/NTC (ITI)। Driver ke liye 10th + valid Commercial LMV licence + 6 साल का driving experience। Age 1 अक्टूबर 2026 ko: Journeyman अधिकतम 26 वर्ष, Driver अधिकतम 32 वर्ष।"
+    },
+    {
+     "q": "GRSE Journeyman me selection kaise hoga?",
+     "a": "Written Test (100 marks, 2 घंटे, 100 MCQs — trade 80 + GK/aptitude 20; qualifying 50% Journeyman / 40% Driver) phir Practical (Trade) Test (qualifying), document verification aur medical। Driver Material Handling, Rigger aur Crane Operator ke liye Physical Efficiency Test bhi hai। Written test Kolkata aur Ranchi me hoga।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "sbi-sco-engineer-fire-2026",
+  "advt": "CRPD/SCO/2026-27/29",
+  "board_en": "State Bank of India (SBI)",
+  "board_hi": "भारतीय स्टेट बैंक (SBI)",
+  "portal": "sbi.bank.in",
+  "posts": 18,
+  "dates": {
+   "apply_end": "2026-11-25",
+   "apply_start": "2026-11-04",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": "December 2026 / January 2027 (tentative)",
+   "exam_hi": "दिसंबर 2026 / जनवरी 2027 (अस्थायी)",
+   "fee_end": "2026-11-25"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://ibpsreg.ibps.in/sbiameoct26/",
+   "notice": "https://sbi.bank.in/documents/77530/57941334/04112026_FINAL+DRAFT+ADVERTISEMENT+CRPD-SCO_29_ENGINEER.pdf/4d1be5a0-727d-61b5-1ea4-85570f437345?t=1793788834905",
+   "site": "https://sbi.bank.in"
+  },
+  "en": {
+   "name": "SBI Assistant Manager – Engineer (Fire) Recruitment 2026",
+   "tagline": "18 Specialist Cadre Officer posts (17 regular + 1 ST backlog) in Junior Management Grade Scale-I — last date 25 November 2026.",
+   "qual": "B.E./B.Tech in Fire Safety (or equivalent) + 2 years fire-safety experience",
+   "fees": [
+    "₹750 for General/EWS/OBC candidates — pay online by 25 November 2026 (non-refundable, includes intimation charges).",
+    "No fee for SC/ST candidates."
+   ],
+   "fees_short": "₹750",
+   "specs": [
+    "18 posts of Assistant Manager – Engineer (Fire), Junior Management Grade Scale-I (JMGS-I), on a regular basis: 17 regular posts (SC 2, ST 1, OBC 1, EWS 1, UR 11 — the vacancy table prints Regular total 17) + 1 ST backlog post. Vacancies are provisional and may vary.",
+    "Pay scale ₹48,480–85,920 (JMGS-I) + DA, HRA, CCA, Provident Fund, NPS, LFC, medical facility and other perquisites. Probation: 6 months. Posting: anywhere in India.",
+    "Age as on 31 October 2026: minimum 21 years, maximum 40 years (relaxation for reserved categories as per Government of India guidelines).",
+    "Eligibility (as on 31 October 2026): B.E. (Fire) from National Fire Service College (NFSC) Nagpur, or B.E./B.Tech (Safety & Fire Engineering), or B.E./B.Tech (Fire Technology & Safety Engineering), or an equivalent 4-year degree in Fire Safety from a UGC-recognised university / AICTE-approved institution — with minimum 2 years composite experience in fire safety in a reputed organisation; OR Graduate Member of the Institution of Fire Engineers (India/UK), or Divisional Officers Course from NFSC Nagpur — with minimum 3 years experience as Station Officer or equivalent in a City/State Fire Brigade, as In-Charge Fire Officer in a corporate/big industrial complex, or as Fire Officer in a State Government institution/PSU.",
+    "Selection: online written test (125 questions, 125 marks, 2 hours — English Language 50 marks + Professional Knowledge 75 marks; NO penalty for wrong answers) + interview (100 marks). Merit list on normalised marks — written test 70, interview 30.",
+    "Tentative schedule: online examination December 2026 / January 2027; interview January / February 2027; final result February 2027. Call letter by email only.",
+    "Apply online 4–25 November 2026 through the link on sbi.bank.in (Careers → Current Openings → Advt CRPD/SCO/2026-27/29). Upload all required documents (resume, ID proof, age proof, caste certificate, experience certificates) — hard copy is NOT to be sent.",
+    "All facts above are taken from Advertisement No. CRPD/SCO/2026-27/29, State Bank of India (12-page notification)."
+   ],
+   "eligibility": [
+    "B.E. (Fire) from NFSC Nagpur, or B.E./B.Tech (Safety & Fire Engineering), or B.E./B.Tech (Fire Technology & Safety Engineering), or an equivalent 4-year degree in Fire Safety — with minimum 2 years composite experience in fire safety in a reputed organisation.",
+    "OR Graduate Member of the Institution of Fire Engineers (India/UK), or Divisional Officers Course from NFSC Nagpur — with minimum 3 years experience as Station Officer or equivalent in a City/State Fire Brigade, as In-Charge Fire Officer in a corporate/big industrial complex, or as Fire Officer in a State Government institution/PSU.",
+    "Age as on 31 October 2026: minimum 21 years, maximum 40 years. Qualification and experience counted as on 31 October 2026.",
+    "Medically fit candidates only. Read Advt CRPD/SCO/2026-27/29 fully on sbi.bank.in before applying."
+   ],
+   "dos": [
+    "Read Advertisement No. CRPD/SCO/2026-27/29 fully on sbi.bank.in before applying — check the exact qualification/experience route for your profile.",
+    "Apply only through the official SBI careers page (sbi.bank.in → Careers → Current Openings) between 4 and 25 November 2026.",
+    "Upload all required documents with the form — resume, ID proof, age proof, caste certificate, experience certificates.",
+    "Keep your experience certificates ready — they must specifically show fire-safety experience as required.",
+    "Save the application printout (last date to print: 10 December 2026)."
+   ],
+   "donts": [
+    "Do not send any hard copy of the application or documents — only the online form counts.",
+    "Do not apply if your degree/experience does not match either of the two routes in the notification.",
+    "Do not submit multiple applications — only the last valid (completed) application is retained and other fees are forfeited.",
+    "Do not wait for the last day — registration and fee payment both close on 25 November 2026."
+   ],
+   "checklist": [
+    "B.E./B.Tech (Fire Safety) degree certificate, or Graduate Membership / Divisional Officers Course certificate",
+    "Fire-safety experience certificate(s) — 2 or 3 years as per your route",
+    "Date of birth proof",
+    "Caste certificate (OBC Non-Creamy Layer / SC / ST / EWS), if applicable",
+    "Resume / CV",
+    "Recent passport-size photo and signature scan",
+    "Valid email ID (call letter comes by email only)"
+   ],
+   "documents": [
+    "Degree certificate (Fire Safety) or Graduate Membership / Divisional Officers Course certificate",
+    "Fire-safety experience certificates",
+    "Date of birth proof",
+    "Caste certificate, if applicable",
+    "Resume and recent photo + signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Hard copy bhejna (sirf online form chalta hai)",
+    "Experience certificate me fire-safety experience clearly na likha hona",
+    "Ek se zyada application bharna (sirf last valid application rehti hai)",
+    "25 नवंबर की deadline miss karna"
+   ],
+   "steps": [
+    "sbi.bank.in → Careers → Current Openings par Advt No. CRPD/SCO/2026-27/29 पढ़ें।",
+    "'Apply Online' link se new registration करें।",
+    "Form भरें aur resume, ID proof, age proof, caste certificate, experience certificates upload करें।",
+    "₹750 fee online भरें (Gen/EWS/OBC; SC/ST ko koi fee nahi) — 25 नवंबर 2026 तक।",
+    "Form submit करें aur application ka printout save करें (10 दिसंबर 2026 तक print kar sakte hain)।"
+   ],
+   "extra_faq": [
+    {
+     "q": "SBI Assistant Manager Engineer (Fire) 2026 me kitni vacancies hain?",
+     "a": "18 posts — 17 regular (SC 2, ST 1, OBC 1, EWS 1, UR 11) + 1 ST backlog post। Post JMGS-I (Junior Management Grade Scale-I) me hai, regular basis par, pay scale ₹48,480–85,920।"
+    },
+    {
+     "q": "SBI Assistant Manager Engineer (Fire) ki last date aur fee kya hai?",
+     "a": "Online registration aur fee payment 4 से 25 नवंबर 2026 तक। Fee ₹750 (General/EWS/OBC) है; SC/ST candidates ko koi fee nahi।"
+    },
+    {
+     "q": "SBI Fire Engineer ke liye qualification aur age limit kya hai?",
+     "a": "B.E. (Fire) NFSC Nagpur / B.E./B.Tech (Safety & Fire Engineering / Fire Technology & Safety Engineering) / equivalent 4-year Fire Safety degree + 2 साल का fire-safety experience; ya Graduate Member of Institution of Fire Engineers / Divisional Officers Course + 3 साल का experience। Age 31 अक्टूबर 2026 ko 21–40 वर्ष।"
+    },
+    {
+     "q": "SBI Fire Engineer me selection kaise hoga?",
+     "a": "Online written test (125 questions, 125 marks, 2 घंटे — English 50 + Professional Knowledge 75; NO negative marking) + interview (100 marks)। Merit 70:30 (written:interview)। Exam दिसंबर 2026/जनवरी 2027 (tentative), interview जनवरी/फ़रवरी 2027, result फ़रवरी 2027।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "SBI असिस्टेंट मैनेजर – इंजीनियर (फायर) भर्ती 2026",
+   "tagline": "जूनियर मैनेजमेंट ग्रेड स्केल-I में 18 स्पेशलिस्ट कैडर ऑफिसर पद (17 regular + 1 ST backlog) — अंतिम तिथि 25 नवंबर 2026।",
+   "qual": "फायर सेफ्टी में B.E./B.Tech (या समकक्ष) + 2 साल का fire-safety अनुभव",
+   "fees": [
+    "₹750 General/EWS/OBC उम्मीदवारों के लिए — 25 नवंबर 2026 तक online भरें (non-refundable, intimation charges सहित)।",
+    "SC/ST उम्मीदवारों को कोई fee नहीं।"
+   ],
+   "fees_short": "₹750",
+   "specs": [
+    "असिस्टेंट मैनेजर – इंजीनियर (फायर) के 18 पद, जूनियर मैनेजमेंट ग्रेड स्केल-I (JMGS-I), regular basis पर: 17 regular पद (SC 2, ST 1, OBC 1, EWS 1, UR 11 — vacancy table में Regular total 17 लिखा है) + 1 ST backlog पद। Vacancies provisional हैं, बदल सकती हैं।",
+    "Pay scale ₹48,480–85,920 (JMGS-I) + DA, HRA, CCA, Provident Fund, NPS, LFC, medical facility और अन्य perquisites। Probation: 6 महीने। Posting: भारत में कहीं भी।",
+    "आयु 31 अक्टूबर 2026 को: न्यूनतम 21 वर्ष, अधिकतम 40 वर्ष (भारत सरकार के नियमों के अनुसार आरक्षित श्रेणियों को छूट)।",
+    "Eligibility (31 अक्टूबर 2026 को): B.E. (Fire) National Fire Service College (NFSC) नागपुर से, या B.E./B.Tech (Safety & Fire Engineering), या B.E./B.Tech (Fire Technology & Safety Engineering), या UGC-recognised university / AICTE-approved संस्थान से Fire Safety में समकक्ष 4 वर्षीय degree — साथ में किसी reputed organisation में fire safety का कम से कम 2 साल का composite experience; या Institution of Fire Engineers (India/UK) के Graduate Member, या NFSC नागपुर से Divisional Officers Course — साथ में City/State Fire Brigade में Station Officer या समकक्ष पद पर, corporate/big industrial complex में In-Charge Fire Officer के रूप में, या State Government institution/PSU में Fire Officer के रूप में कम से कम 3 साल का अनुभव।",
+    "चयन: online written test (125 प्रश्न, 125 अंक, 2 घंटे — English Language 50 अंक + Professional Knowledge 75 अंक; गलत उत्तर पर कोई negative marking नहीं) + interview (100 अंक)। Merit list normalised marks पर — written test 70, interview 30।",
+    "अस्थायी schedule: online examination दिसंबर 2026 / जनवरी 2027; interview जनवरी / फ़रवरी 2027; final result फ़रवरी 2027। Call letter सिर्फ email से आएगा।",
+    "Online आवेदन 4–25 नवंबर 2026, sbi.bank.in (Careers → Current Openings → Advt CRPD/SCO/2026-27/29) के link से। सभी ज़रूरी documents upload करें (resume, ID proof, age proof, caste certificate, experience certificates) — hard copy भेजनी नहीं है।",
+    "ऊपर के सभी तथ्य Advertisement No. CRPD/SCO/2026-27/29, भारतीय स्टेट बैंक (12-page notification) से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "B.E. (Fire) NFSC नागपुर से, या B.E./B.Tech (Safety & Fire Engineering), या B.E./B.Tech (Fire Technology & Safety Engineering), या Fire Safety में समकक्ष 4 वर्षीय degree — साथ में किसी reputed organisation में fire safety का कम से कम 2 साल का composite experience।",
+    "या Institution of Fire Engineers (India/UK) के Graduate Member, या NFSC नागपुर से Divisional Officers Course — साथ में City/State Fire Brigade में Station Officer या समकक्ष पद पर, corporate/big industrial complex में In-Charge Fire Officer के रूप में, या State Government institution/PSU में Fire Officer के रूप में कम से कम 3 साल का अनुभव।",
+    "आयु 31 अक्टूबर 2026 को: न्यूनतम 21 वर्ष, अधिकतम 40 वर्ष। Qualification और experience 31 अक्टूबर 2026 को गिने जाएंगे।",
+    "सिर्फ medically fit उम्मीदवार। Apply करने से पहले sbi.bank.in पर Advt CRPD/SCO/2026-27/29 पूरा पढ़ें।"
+   ],
+   "dos": [
+    "Apply करने से पहले sbi.bank.in पर Advertisement No. CRPD/SCO/2026-27/29 पूरा पढ़ें — अपने profile के अनुसार qualification/experience route देखें।",
+    "सिर्फ official SBI careers page (sbi.bank.in → Careers → Current Openings) से 4 से 25 नवंबर 2026 के बीच apply करें।",
+    "Form के साथ सभी ज़रूरी documents upload करें — resume, ID proof, age proof, caste certificate, experience certificates।",
+    "Experience certificates तैयार रखें — उनमें fire-safety experience साफ़ लिखा होना चाहिए।",
+    "Application का printout save करें (10 दिसंबर 2026 तक print कर सकते हैं)।"
+   ],
+   "donts": [
+    "Application या documents की कोई hard copy न भेजें — सिर्फ online form मान्य है।",
+    "अगर आपकी degree/experience notification के दो routes में से किसी से match न करे तो apply न करें।",
+    "एक से ज़्यादा application न भेजें — सिर्फ last valid (completed) application रहती है, बाकी की fee forfeit हो जाती है।",
+    "आखिरी दिन का इंतज़ार न करें — registration और fee payment दोनों 25 नवंबर 2026 को बंद होते हैं।"
+   ],
+   "checklist": [
+    "B.E./B.Tech (Fire Safety) degree certificate, या Graduate Membership / Divisional Officers Course certificate",
+    "Fire-safety experience certificate(s) — अपने route के अनुसार 2 या 3 साल",
+    "जन्मतिथि का proof",
+    "जाति certificate (OBC Non-Creamy Layer / SC / ST / EWS), अगर लागू हो",
+    "Resume / CV",
+    "हाल की passport-size photo और हस्ताक्षर का scan",
+    "Valid email ID (call letter सिर्फ email से आएगा)"
+   ],
+   "documents": [
+    "Degree certificate (Fire Safety) या Graduate Membership / Divisional Officers Course certificate",
+    "Fire-safety experience certificates",
+    "जन्मतिथि का proof",
+    "जाति certificate, अगर लागू हो",
+    "Resume और हाल की photo + हस्ताक्षर"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Hard copy bhejna (sirf online form chalta hai)",
+    "Experience certificate me fire-safety experience clearly na likha hona",
+    "Ek se zyada application bharna (sirf last valid application rehti hai)",
+    "25 नवंबर की deadline miss karna"
+   ],
+   "steps": [
+    "sbi.bank.in → Careers → Current Openings par Advt No. CRPD/SCO/2026-27/29 पढ़ें।",
+    "'Apply Online' link se new registration करें।",
+    "Form भरें aur resume, ID proof, age proof, caste certificate, experience certificates upload करें।",
+    "₹750 fee online भरें (Gen/EWS/OBC; SC/ST ko koi fee nahi) — 25 नवंबर 2026 तक।",
+    "Form submit करें aur application ka printout save करें (10 दिसंबर 2026 तक print kar sakte hain)।"
+   ],
+   "extra_faq": [
+    {
+     "q": "SBI Assistant Manager Engineer (Fire) 2026 me kitni vacancies hain?",
+     "a": "18 posts — 17 regular (SC 2, ST 1, OBC 1, EWS 1, UR 11) + 1 ST backlog post। Post JMGS-I (Junior Management Grade Scale-I) me hai, regular basis par, pay scale ₹48,480–85,920।"
+    },
+    {
+     "q": "SBI Assistant Manager Engineer (Fire) ki last date aur fee kya hai?",
+     "a": "Online registration aur fee payment 4 से 25 नवंबर 2026 तक। Fee ₹750 (General/EWS/OBC) है; SC/ST candidates ko koi fee nahi।"
+    },
+    {
+     "q": "SBI Fire Engineer ke liye qualification aur age limit kya hai?",
+     "a": "B.E. (Fire) NFSC Nagpur / B.E./B.Tech (Safety & Fire Engineering / Fire Technology & Safety Engineering) / equivalent 4-year Fire Safety degree + 2 साल का fire-safety experience; ya Graduate Member of Institution of Fire Engineers / Divisional Officers Course + 3 साल का experience। Age 31 अक्टूबर 2026 ko 21–40 वर्ष।"
+    },
+    {
+     "q": "SBI Fire Engineer me selection kaise hoga?",
+     "a": "Online written test (125 questions, 125 marks, 2 घंटे — English 50 + Professional Knowledge 75; NO negative marking) + interview (100 marks)। Merit 70:30 (written:interview)। Exam दिसंबर 2026/जनवरी 2027 (tentative), interview जनवरी/फ़रवरी 2027, result फ़रवरी 2027।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "cmp-assistant-professor-2026",
+  "advt": "Advt No. 01/Asst. Prof./2026 & 02/Asst. Prof./2026",
+  "board_en": "Chaudhary Mahadev Prasad (CMP) Degree College, Prayagraj",
+  "board_hi": "चौधरी महादेव प्रसाद (CMP) डिग्री कॉलेज, प्रयागराज",
+  "portal": "cmpcollege.ac.in",
+  "posts": 44,
+  "dates": {
+   "apply_end": "2026-12-08",
+   "apply_start": "2026-11-17",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-08"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://recruitment.cmpcollege.ac.in/",
+   "notice": null,
+   "site": "https://cmpcollege.ac.in"
+  },
+  "en": {
+   "name": "CMP Degree College Assistant Professor Recruitment 2026",
+   "tagline": "44 Assistant Professor posts across 19 subjects — apply 17 November–8 December 2026; hard copy by 15 December 2026.",
+   "qual": "Master's degree in the subject with 55% marks + NET/SET/SLET/PhD",
+   "fees": [
+    "₹2,500 for UR/EWS/OBC candidates — pay online by 8 December 2026.",
+    "₹1,500 for SC/ST candidates; ₹500 for PwBD candidates."
+   ],
+   "fees_short": "₹2,500",
+   "specs": [
+    "44 Assistant Professor posts in two advertisements: Advt No. 01/Asst. Prof./2026 — 33 posts across 14 subjects (Botany 2, Chemistry 3, Commerce 5, Economics 4, Education 3, English 1, Geography 1, Medieval History 2, Music 2, Philosophy 1, Physics 2, Psychology 1, Zoology 5, Urdu 1); Advt No. 02/Asst. Prof./2026 — 11 posts across 5 subjects (Law 2, Political Science 1, Sociology 1, Computer Science 5, Statistics 2).",
+    "Post totals are verified from the two official PDFs on cmpcollege.ac.in (33 + 11 = 44).",
+    "Online applications 17 November 2026 (10:00 AM) – 8 December 2026 (5:00 PM) on recruitment.cmpcollege.ac.in. The signed hard copy of the submitted application must reach the college by 15 December 2026.",
+    "Eligibility: Master's degree in the concerned subject with minimum 55% marks + NET / SET / SLET / PhD (subject-wise details in the notification).",
+    "No age limit is stated in the notification.",
+    "Read both advertisements fully on cmpcollege.ac.in before applying — subject-wise eligibility and reservation differ.",
+    "All facts above are taken from Advt No. 01/Asst. Prof./2026 & 02/Asst. Prof./2026, CMP Degree College, Prayagraj."
+   ],
+   "eligibility": [
+    "Master's degree in the concerned subject with minimum 55% marks.",
+    "NET / SET / SLET / PhD as per the notification (subject-wise details in the advertisement).",
+    "Read both advertisements fully on cmpcollege.ac.in before applying — subject-wise eligibility and reservation differ."
+   ],
+   "dos": [
+    "Read both advertisements (01/2026 and 02/2026) fully on cmpcollege.ac.in before applying — check the subject-wise eligibility for your subject.",
+    "Apply only on recruitment.cmpcollege.ac.in between 17 November and 8 December 2026.",
+    "Send the signed hard copy of the submitted application so it reaches the college by 15 December 2026.",
+    "Keep your Master's degree certificate, NET/SET/SLET/PhD proof and a recent photo ready.",
+    "Apply separately for each subject if you are eligible for more than one."
+   ],
+   "donts": [
+    "Do not apply without the required NET/SET/SLET/PhD qualification for your subject.",
+    "Do not forget the hard copy — the online form alone is not complete without it by 15 December 2026.",
+    "Do not apply through any site other than recruitment.cmpcollege.ac.in.",
+    "Do not wait for the last day — the portal closes on 8 December 2026 at 5:00 PM."
+   ],
+   "checklist": [
+    "Master's degree certificate and marksheet (55% marks)",
+    "NET / SET / SLET / PhD certificate",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "Recent passport-size photo and signature scan",
+    "Printout of the submitted online application (for hard copy)"
+   ],
+   "documents": [
+    "Master's degree certificate and marksheet",
+    "NET / SET / SLET / PhD certificate",
+    "Date of birth proof",
+    "Caste / PwBD certificate, if applicable",
+    "Recent photo and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "NET/SET/SLET/PhD ke bina apply karna",
+    "Hard copy 15 दिसंबर tak na bhejna (online form akela kaafi nahi)",
+    "Galat subject ke liye apply karna",
+    "8 दिसंबर शाम 5 बजे की deadline miss karna"
+   ],
+   "steps": [
+    "cmpcollege.ac.in par Advt No. 01/2026 aur 02/2026 पढ़ें aur apna subject चुनें।",
+    "recruitment.cmpcollege.ac.in par new user registration करें।",
+    "Form भरें aur documents upload करें।",
+    "₹2,500 (UR/EWS/OBC), ₹1,500 (SC/ST) ya ₹500 (PwBD) fee online भरें — 8 दिसंबर 2026 तक।",
+    "Form submit करें, printout लें aur signed hard copy 15 दिसंबर 2026 tak college bhejें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "CMP Degree College Assistant Professor 2026 me kitni vacancies hain?",
+     "a": "44 posts — Advt 01/2026 me 33 (14 subjects: Botany 2, Chemistry 3, Commerce 5, Economics 4, Education 3, English 1, Geography 1, Medieval History 2, Music 2, Philosophy 1, Physics 2, Psychology 1, Zoology 5, Urdu 1) aur Advt 02/2026 me 11 (5 subjects: Law 2, Political Science 1, Sociology 1, Computer Science 5, Statistics 2)।"
+    },
+    {
+     "q": "CMP Assistant Professor ki last date aur fee kya hai?",
+     "a": "Online आवेदन 17 नवंबर (सुबह 10 बजे) से 8 दिसंबर 2026 (शाम 5 बजे) तक। Fee ₹2,500 (UR/EWS/OBC), ₹1,500 (SC/ST) aur ₹500 (PwBD) है। Signed hard copy 15 दिसंबर 2026 तक college पहुँचनी चाहिए।"
+    },
+    {
+     "q": "CMP Assistant Professor ke liye qualification kya hai?",
+     "a": "Concerned subject me Master's degree (कम से कम 55% अंक) + NET/SET/SLET/PhD। Subject-wise details dono advertisements me dekhen। Notification me koi age limit nahi di gayi है।"
+    },
+    {
+     "q": "CMP Assistant Professor ke liye kaise apply karein?",
+     "a": "recruitment.cmpcollege.ac.in par registration karke online form भरें, fee भरें, phir submitted application ka signed printout 15 दिसंबर 2026 तक college भेजें। Online form akela kaafi nahi — hard copy bhi zaroori hai।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "CMP डिग्री कॉलेज असिस्टेंट प्रोफेसर भर्ती 2026",
+   "tagline": "19 विषयों में 44 असिस्टेंट प्रोफेसर पद — आवेदन 17 नवंबर–8 दिसंबर 2026; hard copy 15 दिसंबर 2026 तक।",
+   "qual": "विषय में स्नातकोत्तर (55% अंक) + NET/SET/SLET/PhD",
+   "fees": [
+    "₹2,500 UR/EWS/OBC उम्मीदवारों के लिए — 8 दिसंबर 2026 तक online भरें।",
+    "₹1,500 SC/ST उम्मीदवारों के लिए; ₹500 PwBD उम्मीदवारों के लिए।"
+   ],
+   "fees_short": "₹2,500",
+   "specs": [
+    "दो विज्ञापनों में 44 असिस्टेंट प्रोफेसर पद: Advt No. 01/Asst. Prof./2026 — 14 विषयों में 33 पद (वनस्पति विज्ञान 2, रसायन विज्ञान 3, वाणिज्य 5, अर्थशास्त्र 4, शिक्षा 3, अंग्रेज़ी 1, भूगोल 1, मध्यकालीन इतिहास 2, संगीत 2, दर्शनशास्त्र 1, भौतिकी 2, मनोविज्ञान 1, प्राणि विज्ञान 5, उर्दू 1); Advt No. 02/Asst. Prof./2026 — 5 विषयों में 11 पद (विधि 2, राजनीति विज्ञान 1, समाजशास्त्र 1, कंप्यूटर विज्ञान 5, सांख्यिकी 2)।",
+    "पदों की संख्या cmpcollege.ac.in पर दोनों official PDFs से verify की गई है (33 + 11 = 44)।",
+    "Online आवेदन 17 नवंबर 2026 (सुबह 10 बजे) – 8 दिसंबर 2026 (शाम 5 बजे), recruitment.cmpcollege.ac.in पर। Submitted application की signed hard copy 15 दिसंबर 2026 तक college पहुँचनी चाहिए।",
+    "Eligibility: संबंधित विषय में कम से कम 55% अंकों के साथ स्नातकोत्तर + NET / SET / SLET / PhD (subject-wise details notification में)।",
+    "Notification में कोई age limit नहीं दी गई है।",
+    "Apply करने से पहले cmpcollege.ac.in पर दोनों विज्ञापन पूरे पढ़ें — subject-wise eligibility और reservation अलग-अलग हैं।",
+    "ऊपर के सभी तथ्य Advt No. 01/Asst. Prof./2026 & 02/Asst. Prof./2026, CMP डिग्री कॉलेज, प्रयागराज से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "संबंधित विषय में कम से कम 55% अंकों के साथ स्नातकोत्तर।",
+    "NET / SET / SLET / PhD (notification के अनुसार; subject-wise details विज्ञापन में)।",
+    "Apply करने से पहले cmpcollege.ac.in पर दोनों विज्ञापन पूरे पढ़ें — subject-wise eligibility और reservation अलग-अलग हैं।"
+   ],
+   "dos": [
+    "Apply करने से पहले cmpcollege.ac.in पर दोनों विज्ञापन (01/2026 और 02/2026) पूरे पढ़ें — अपने विषय की eligibility देखें।",
+    "सिर्फ recruitment.cmpcollege.ac.in पर 17 नवंबर से 8 दिसंबर 2026 के बीच apply करें।",
+    "Submitted application की signed hard copy 15 दिसंबर 2026 तक college भिजवाएं।",
+    "स्नातकोत्तर degree certificate, NET/SET/SLET/PhD proof और हाल की photo तैयार रखें।",
+    "अगर एक से ज़्यादा विषयों के लिए eligible हैं तो हर विषय के लिए अलग apply करें।"
+   ],
+   "donts": [
+    "अपने विषय के लिए ज़रूरी NET/SET/SLET/PhD qualification के बिना apply न करें।",
+    "Hard copy भेजना न भूलें — 15 दिसंबर 2026 तक hard copy के बिना online form अधूरा है।",
+    "recruitment.cmpcollege.ac.in के अलावा किसी और site से apply न करें।",
+    "आखिरी दिन का इंतज़ार न करें — portal 8 दिसंबर 2026 शाम 5 बजे बंद हो जाता है।"
+   ],
+   "checklist": [
+    "स्नातकोत्तर degree certificate और marksheet (55% अंक)",
+    "NET / SET / SLET / PhD certificate",
+    "जन्मतिथि का proof",
+    "जाति / PwBD certificate, अगर लागू हो",
+    "हाल की passport-size photo और हस्ताक्षर का scan",
+    "Submitted online application का printout (hard copy के लिए)"
+   ],
+   "documents": [
+    "स्नातकोत्तर degree certificate और marksheet",
+    "NET / SET / SLET / PhD certificate",
+    "जन्मतिथि का proof",
+    "जाति / PwBD certificate, अगर लागू हो",
+    "हाल की photo और हस्ताक्षर"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "NET/SET/SLET/PhD ke bina apply karna",
+    "Hard copy 15 दिसंबर tak na bhejna (online form akela kaafi nahi)",
+    "Galat subject ke liye apply karna",
+    "8 दिसंबर शाम 5 बजे की deadline miss karna"
+   ],
+   "steps": [
+    "cmpcollege.ac.in par Advt No. 01/2026 aur 02/2026 पढ़ें aur apna subject चुनें।",
+    "recruitment.cmpcollege.ac.in par new user registration करें।",
+    "Form भरें aur documents upload करें।",
+    "₹2,500 (UR/EWS/OBC), ₹1,500 (SC/ST) ya ₹500 (PwBD) fee online भरें — 8 दिसंबर 2026 तक।",
+    "Form submit करें, printout लें aur signed hard copy 15 दिसंबर 2026 tak college bhejें।"
+   ],
+   "extra_faq": [
+    {
+     "q": "CMP Degree College Assistant Professor 2026 me kitni vacancies hain?",
+     "a": "44 posts — Advt 01/2026 me 33 (14 subjects: Botany 2, Chemistry 3, Commerce 5, Economics 4, Education 3, English 1, Geography 1, Medieval History 2, Music 2, Philosophy 1, Physics 2, Psychology 1, Zoology 5, Urdu 1) aur Advt 02/2026 me 11 (5 subjects: Law 2, Political Science 1, Sociology 1, Computer Science 5, Statistics 2)।"
+    },
+    {
+     "q": "CMP Assistant Professor ki last date aur fee kya hai?",
+     "a": "Online आवेदन 17 नवंबर (सुबह 10 बजे) से 8 दिसंबर 2026 (शाम 5 बजे) तक। Fee ₹2,500 (UR/EWS/OBC), ₹1,500 (SC/ST) aur ₹500 (PwBD) है। Signed hard copy 15 दिसंबर 2026 तक college पहुँचनी चाहिए।"
+    },
+    {
+     "q": "CMP Assistant Professor ke liye qualification kya hai?",
+     "a": "Concerned subject me Master's degree (कम से कम 55% अंक) + NET/SET/SLET/PhD। Subject-wise details dono advertisements me dekhen। Notification me koi age limit nahi di gayi है।"
+    },
+    {
+     "q": "CMP Assistant Professor ke liye kaise apply karein?",
+     "a": "recruitment.cmpcollege.ac.in par registration karke online form भरें, fee भरें, phir submitted application ka signed printout 15 दिसंबर 2026 तक college भेजें। Online form akela kaafi nahi — hard copy bhi zaroori hai।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "up-energy-directors-2026",
+  "advt": "Advt No. 03/2026 (Amended)",
+  "board_en": "Department of Energy, Government of Uttar Pradesh (through UPPCL)",
+  "board_hi": "ऊर्जा विभाग, उत्तर प्रदेश सरकार (UPPCL के माध्यम से)",
+  "portal": "uppcl.org",
+  "posts": 11,
+  "dates": {
+   "apply_end": "2026-11-21",
+   "apply_start": "2026-10-31",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-21"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://director-recruitment.uppcl.org/",
+   "notice": "https://uppcl.org/site/writereaddata/siteContent/202610312347281408ADVT%20Directors.pdf",
+   "site": "https://uppcl.org"
+  },
+  "en": {
+   "name": "UP Energy Department Board-Level Directors Recruitment 2026",
+   "tagline": "11 Director posts across UP power companies (UPPCL, UPPTCL, PVVNL, PuVVNL, DVVNL, Kesco) — last date 21 November 2026, 5 PM.",
+   "qual": "B.Tech/B.E. (Electrical etc.) / CA/ICWA/MBA (Finance) / Graduation + MBA (P&A) + 15 years senior-management experience",
+   "fees": [
+    "No application fee is mentioned in Advt No. 03/2026 (Amended) — the 7-page notification states no fee."
+   ],
+   "fees_short": "No fee",
+   "specs": [
+    "11 Director posts across UP power companies — UPPCL Director (Distribution); UPPTCL Director (Finance), Director (Operation), Director (Commercial & Planning); Paschimanchal VVNL Meerut Director (Commercial), Director (Technical), Director (Finance); Purvanchal VVNL Varanasi Director (Technical); Dakshinanchal VVNL Agra Director (Personnel & Administration), Director (Commercial); Kesco Ltd., Kanpur Director (Commercial).",
+    "The notification lists 11 Director rows (one post per row) but does NOT print a total vacancy number — 11 is the count of rows in the amended notification, not a printed total.",
+    "Age as on 31 October 2026: 50–62 years. Tenure: 3 years or till the age of 65 years, whichever is earlier (contract, extendable).",
+    "Pay: Pay Matrix Level-15 — ₹1,82,200–2,24,100 with 3% annual increment (UPPCL/UPPTCL posts) and ₹1,71,400–2,23,600 with 3% annual increment (DISCOMs/Kesco posts).",
+    "Qualification by role: B.Tech/B.E. (Electrical and allied) for Technical/Distribution/Operation posts; CA/ICWA/MBA (Finance) for Finance posts; Graduation + MBA for Personnel & Administration. External candidates need 15 years of senior-management experience.",
+    "Selection by scrutiny of applications followed by interview. Only online applications are accepted — apply on director-recruitment.uppcl.org by 21 November 2026, 5:00 PM. Queries: recruitment@uppcl.org.",
+    "All facts above are taken from Advt No. 03/2026 (Amended), Department of Energy, Government of Uttar Pradesh, dated 31 October 2026."
+   ],
+   "eligibility": [
+    "Age as on 31 October 2026: 50–62 years.",
+    "B.Tech/B.E. (Electrical and allied branches) for Technical/Distribution/Operation Director posts; CA/ICWA/MBA (Finance) for Finance Director posts; Graduation + MBA for the Personnel & Administration Director post.",
+    "External candidates need 15 years of senior-management experience. Read Advt No. 03/2026 (Amended) fully on uppcl.org before applying — role-wise qualification differs."
+   ],
+   "dos": [
+    "Read Advt No. 03/2026 (Amended) fully on uppcl.org before applying — check the qualification and experience for your Director post.",
+    "Apply only online on director-recruitment.uppcl.org by 21 November 2026, 5:00 PM.",
+    "Register first on the portal, then log in with your registration number and password.",
+    "Keep your degree, experience certificates and a recent photo ready.",
+    "For queries, write to recruitment@uppcl.org."
+   ],
+   "donts": [
+    "Do not apply if you are below 50 or above 62 years as on 31 October 2026.",
+    "Do not send a paper application — only online applications are accepted.",
+    "Do not quote a printed total vacancy number — the notification lists 11 rows but prints no total.",
+    "Do not wait for the last day — the portal closes on 21 November 2026 at 5:00 PM."
+   ],
+   "checklist": [
+    "Degree / CA / ICWA / MBA certificate as per your Director post",
+    "15 years senior-management experience proof (external candidates)",
+    "Date of birth proof",
+    "Recent passport-size photo and signature scan",
+    "Registration number and password for the portal"
+   ],
+   "documents": [
+    "Degree / CA / ICWA / MBA certificate",
+    "Senior-management experience certificates",
+    "Date of birth proof",
+    "Recent photo and signature"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Age limit (50–62, 31 Oct 2026) check kiye bina apply karna",
+    "Paper application bhejna (sirf online chalta hai)",
+    "11 posts ko 'printed total' batana (notification me total print nahi hai)",
+    "21 नवंबर शाम 5 बजे की deadline miss karna"
+   ],
+   "steps": [
+    "uppcl.org par Advt No. 03/2026 (Amended) पढ़ें aur apna Director post चुनें।",
+    "director-recruitment.uppcl.org par 'New registration' se register करें।",
+    "Registration number aur password se login karke form भरें।",
+    "Documents upload करें (notification me koi fee nahi di gayi है)।",
+    "Form submit करें aur confirmation save करें — 21 नवंबर 2026 शाम 5 बजे तक।"
+   ],
+   "extra_faq": [
+    {
+     "q": "UP Energy Department Directors 2026 me kitni vacancies hain?",
+     "a": "Notification me 11 Director rows hain (UPPCL, UPPTCL, PVVNL, PuVVNL, DVVNL, Kesco) — ek row, ek post। Notification me total vacancy number print nahi hai; 11 rows ki ginati hai। 7 alag roles hain: Distribution, Finance, Operation, Commercial & Planning, Commercial, Technical, Personnel & Administration।"
+    },
+    {
+     "q": "UP Energy Directors ki last date aur fee kya hai?",
+     "a": "Online आवेदन 21 नवंबर 2026 शाम 5 बजे तक। Notification me koi application fee nahi di gayi hai।"
+    },
+    {
+     "q": "UP Energy Directors ke liye qualification aur age limit kya hai?",
+     "a": "Age 31 अक्टूबर 2026 ko 50–62 वर्ष। Qualification role ke anusaar: Technical posts ke liye B.Tech/B.E. (Electrical etc.), Finance ke liye CA/ICWA/MBA, P&A ke liye Graduation + MBA। External candidates ko 15 साल का senior-management experience chahiye। Tenure 3 साल ya 65 साल की उम्र तक।"
+    },
+    {
+     "q": "UP Energy Directors me selection kaise hoga?",
+     "a": "Applications ki scrutiny ke baad interview। Pay Level-15: ₹1,82,200–2,24,100 (UPPCL/UPPTCL) / ₹1,71,400–2,23,600 (DISCOMs/Kesco), 3% annual increment। Queries: recruitment@uppcl.org।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "UP ऊर्जा विभाग बोर्ड-स्तरीय निदेशक भर्ती 2026",
+   "tagline": "UP की बिजली कंपनियों (UPPCL, UPPTCL, PVVNL, PuVVNL, DVVNL, Kesco) में 11 निदेशक पद — अंतिम तिथि 21 नवंबर 2026, शाम 5 बजे।",
+   "qual": "B.Tech/B.E. (Electrical आदि) / CA/ICWA/MBA (Finance) / स्नातक + MBA (P&A) + 15 साल का senior-management अनुभव",
+   "fees": [
+    "Advt No. 03/2026 (Amended) में कोई application fee नहीं दी गई है — 7-page notification में fee का ज़िक्र नहीं है।"
+   ],
+   "fees_short": "No fee",
+   "specs": [
+    "UP की बिजली कंपनियों में 11 निदेशक पद — UPPCL निदेशक (वितरण); UPPTCL निदेशक (वित्त), निदेशक (संचालन), निदेशक (वाणिज्यिक एवं योजना); पश्चिमांचल VVNL मेरठ निदेशक (वाणिज्यिक), निदेशक (तकनीकी), निदेशक (वित्त); पूर्वांचल VVNL वाराणसी निदेशक (तकनीकी); दक्षिणांचल VVNL आगरा निदेशक (कार्मिक एवं प्रशासन), निदेशक (वाणिज्यिक); Kesco लि., कानपुर निदेशक (वाणिज्यिक)।",
+    "Notification में 11 निदेशक rows हैं (एक row, एक पद) लेकिन total vacancy number print नहीं है — 11 rows की गिनती है, printed total नहीं।",
+    "आयु 31 अक्टूबर 2026 को: 50–62 वर्ष। Tenure: 3 साल या 65 साल की उम्र तक, जो भी पहले हो (contract, extendable)।",
+    "Pay: Pay Matrix Level-15 — ₹1,82,200–2,24,100, 3% annual increment के साथ (UPPCL/UPPTCL पद) और ₹1,71,400–2,23,600, 3% annual increment के साथ (DISCOMs/Kesco पद)।",
+    "Role-wise qualification: Technical/Distribution/Operation पदों के लिए B.Tech/B.E. (Electrical और allied); Finance पदों के लिए CA/ICWA/MBA (Finance); Personnel & Administration के लिए Graduation + MBA। External candidates को 15 साल का senior-management experience चाहिए।",
+    "चयन applications की scrutiny के बाद interview से। सिर्फ online applications मान्य हैं — director-recruitment.uppcl.org पर 21 नवंबर 2026, शाम 5 बजे तक apply करें। Queries: recruitment@uppcl.org।",
+    "ऊपर के सभी तथ्य Advt No. 03/2026 (Amended), ऊर्जा विभाग, उत्तर प्रदेश सरकार, दिनांक 31 अक्टूबर 2026 से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "आयु 31 अक्टूबर 2026 को: 50–62 वर्ष।",
+    "Technical/Distribution/Operation निदेशक पदों के लिए B.Tech/B.E. (Electrical और allied branches); Finance निदेशक पदों के लिए CA/ICWA/MBA (Finance); Personnel & Administration निदेशक पद के लिए Graduation + MBA।",
+    "External candidates को 15 साल का senior-management experience चाहिए। Apply करने से पहले uppcl.org पर Advt No. 03/2026 (Amended) पूरा पढ़ें — role-wise qualification अलग है।"
+   ],
+   "dos": [
+    "Apply करने से पहले uppcl.org पर Advt No. 03/2026 (Amended) पूरा पढ़ें — अपने Director post की qualification और experience देखें।",
+    "सिर्फ online, director-recruitment.uppcl.org पर 21 नवंबर 2026, शाम 5 बजे तक apply करें।",
+    "पहले portal पर register करें, फिर registration number और password से login करें।",
+    "Degree, experience certificates और हाल की photo तैयार रखें।",
+    "किसी query के लिए recruitment@uppcl.org पर लिखें।"
+   ],
+   "donts": [
+    "अगर 31 अक्टूबर 2026 को आपकी उम्र 50 से कम या 62 से ज़्यादा है तो apply न करें।",
+    "Paper application न भेजें — सिर्फ online applications मान्य हैं।",
+    "11 posts को 'printed total' न बताएं — notification में 11 rows हैं लेकिन total print नहीं है।",
+    "आखिरी दिन का इंतज़ार न करें — portal 21 नवंबर 2026 शाम 5 बजे बंद हो जाता है।"
+   ],
+   "checklist": [
+    "अपने Director post के अनुसार Degree / CA / ICWA / MBA certificate",
+    "15 साल के senior-management experience का proof (external candidates)",
+    "जन्मतिथि का proof",
+    "हाल की passport-size photo और हस्ताक्षर का scan",
+    "Portal के लिए registration number और password"
+   ],
+   "documents": [
+    "Degree / CA / ICWA / MBA certificate",
+    "Senior-management experience certificates",
+    "जन्मतिथि का proof",
+    "हाल की photo और हस्ताक्षर"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Age limit (50–62, 31 Oct 2026) check kiye bina apply karna",
+    "Paper application bhejna (sirf online chalta hai)",
+    "11 posts ko 'printed total' batana (notification me total print nahi hai)",
+    "21 नवंबर शाम 5 बजे की deadline miss karna"
+   ],
+   "steps": [
+    "uppcl.org par Advt No. 03/2026 (Amended) पढ़ें aur apna Director post चुनें।",
+    "director-recruitment.uppcl.org par 'New registration' se register करें।",
+    "Registration number aur password se login karke form भरें।",
+    "Documents upload करें (notification me koi fee nahi di gayi है)।",
+    "Form submit करें aur confirmation save करें — 21 नवंबर 2026 शाम 5 बजे तक।"
+   ],
+   "extra_faq": [
+    {
+     "q": "UP Energy Department Directors 2026 me kitni vacancies hain?",
+     "a": "Notification me 11 Director rows hain (UPPCL, UPPTCL, PVVNL, PuVVNL, DVVNL, Kesco) — ek row, ek post। Notification me total vacancy number print nahi hai; 11 rows ki ginati hai। 7 alag roles hain: Distribution, Finance, Operation, Commercial & Planning, Commercial, Technical, Personnel & Administration।"
+    },
+    {
+     "q": "UP Energy Directors ki last date aur fee kya hai?",
+     "a": "Online आवेदन 21 नवंबर 2026 शाम 5 बजे तक। Notification me koi application fee nahi di gayi hai।"
+    },
+    {
+     "q": "UP Energy Directors ke liye qualification aur age limit kya hai?",
+     "a": "Age 31 अक्टूबर 2026 ko 50–62 वर्ष। Qualification role ke anusaar: Technical posts ke liye B.Tech/B.E. (Electrical etc.), Finance ke liye CA/ICWA/MBA, P&A ke liye Graduation + MBA। External candidates ko 15 साल का senior-management experience chahiye। Tenure 3 साल ya 65 साल की उम्र तक।"
+    },
+    {
+     "q": "UP Energy Directors me selection kaise hoga?",
+     "a": "Applications ki scrutiny ke baad interview। Pay Level-15: ₹1,82,200–2,24,100 (UPPCL/UPPTCL) / ₹1,71,400–2,23,600 (DISCOMs/Kesco), 3% annual increment। Queries: recruitment@uppcl.org।"
+    }
+   ]
+  }
+ },
+ {
+  "slug": "goa-home-guard-volunteers-2026",
+  "advt": "Notice No. HG&CD/HG-ENROL-561/2026",
+  "board_en": "Home Guards & Civil Defence Organisation, Government of Goa",
+  "board_hi": "होम गार्ड्स एवं नागरिक सुरक्षा संगठन, गोवा सरकार",
+  "portal": "goa.gov.in",
+  "posts": 176,
+  "dates": {
+   "apply_end": "2026-12-31",
+   "apply_start": "2026-11-25",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-31"
+  },
+  "photo_kind": "upload",
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "links": {
+   "apply": "https://www.goa.gov.in/wp-content/uploads/2026/11/HomeGuardAndCivilDefenceOrganization18112027Adv.pdf",
+   "notice": "https://www.goa.gov.in/wp-content/uploads/2026/11/HomeGuardAndCivilDefenceOrganization18112027Adv.pdf",
+   "site": "https://www.goa.gov.in"
+  },
+  "note_en": "This is enrolment as a Home Guard VOLUNTEER for 3 years, not a permanent government job. Volunteers get a duty allowance of ₹962 per day when called for duty — there is no monthly salary and no job guarantee after the 3-year enrolment.",
+  "note_hi": "यह 3 साल के लिए होम गार्ड VOLUNTEER के रूप में नामांकन है, स्थायी सरकारी नौकरी नहीं। Duty पर बुलाए जाने पर ₹962/दिन duty allowance मिलता है — कोई monthly salary नहीं और 3 साल के नामांकन के बाद नौकरी की कोई guarantee नहीं।",
+  "en": {
+   "name": "Goa Home Guard Volunteers Enrolment 2026",
+   "tagline": "176 Home Guard Volunteers (127 regular + 49 Marine) — forms from 25 November, last date 31 December 2026; offline, in-person submission only.",
+   "qual": "SSCE (10th) pass + 15-year Goa residence certificate",
+   "fees": [
+    "₹20 per application form — pay when collecting the form from the Home Guards HQ, Altinho, Panaji.",
+    "No online fee — there is no online application for this enrolment."
+   ],
+   "fees_short": "₹20",
+   "specs": [
+    "176 Home Guard Volunteers, initially for 3 years: 127 as regular Home Guards and 49 as Marine Home Guards.",
+    "Forms are issued from 25 November 2026 at the Home Guards Headquarters, Altinho, Panaji (₹20 per form). Submit the filled form in person by 31 December 2026 — there is NO online application.",
+    "Minimum education: S.S.C.E. (10th) pass. A 15-year Goa residence certificate is mandatory.",
+    "Age as on 31 December 2026: 20–50 years (Home Guard), 20–30 years (Marine Home Guard). Minimum height: Male 165 cm, Female 155 cm.",
+    "Marine Home Guards also need swimming proficiency and must belong to the fisherman community with coastal residence.",
+    "Duty allowance: ₹962 per day when called for duty. This is a VOLUNTEER enrolment, not a permanent job — see the note above.",
+    "All facts above are taken from Notice No. HG&CD/HG-ENROL-561/2026, Home Guards & Civil Defence Organisation, Government of Goa, dated 18 November 2026 (goa.gov.in)."
+   ],
+   "eligibility": [
+    "S.S.C.E. (10th) pass.",
+    "15-year Goa residence certificate is mandatory.",
+    "Age as on 31 December 2026: 20–50 years for regular Home Guards, 20–30 years for Marine Home Guards.",
+    "Minimum height: Male 165 cm, Female 155 cm.",
+    "Marine Home Guards: swimming proficiency required; must belong to the fisherman community with coastal residence.",
+    "Read Notice No. HG&CD/HG-ENROL-561/2026 fully on goa.gov.in before applying."
+   ],
+   "dos": [
+    "Read Notice No. HG&CD/HG-ENROL-561/2026 fully on goa.gov.in before applying.",
+    "Collect the form from the Home Guards HQ, Altinho, Panaji from 25 November 2026 (₹20 per form).",
+    "Keep your SSCE certificate, 15-year Goa residence certificate and a recent photo ready.",
+    "Submit the filled form in person well before 31 December 2026.",
+    "Marine applicants: be ready to show swimming proficiency and fisherman-community/coastal-residence proof."
+   ],
+   "donts": [
+    "Do not look for an online form — there is none; this enrolment is offline only.",
+    "Do not apply without the 15-year Goa residence certificate — it is mandatory.",
+    "Do not treat this as a permanent government job — it is a 3-year volunteer enrolment with a per-day duty allowance.",
+    "Do not wait for the last day — submit in person by 31 December 2026."
+   ],
+   "checklist": [
+    "S.S.C.E. (10th) certificate and marksheet",
+    "15-year Goa residence certificate (mandatory)",
+    "Date of birth proof",
+    "Recent passport-size photo",
+    "Swimming proficiency proof (Marine only)",
+    "Fisherman community + coastal residence proof (Marine only)"
+   ],
+   "documents": [
+    "S.S.C.E. (10th) certificate and marksheet",
+    "15-year Goa residence certificate",
+    "Date of birth proof",
+    "Recent photo",
+    "Swimming / community proof (Marine only)"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Online form dhoondhna (online form hai hi nahi — sirf offline)",
+    "15-year Goa residence certificate ke bina apply karna (mandatory hai)",
+    "Ise permanent naukri samajh lena (ye 3 saal ka volunteer enrolment hai)",
+    "31 दिसंबर की deadline miss karna"
+   ],
+   "steps": [
+    "goa.gov.in par Notice No. HG&CD/HG-ENROL-561/2026 पढ़ें।",
+    "25 नवंबर 2026 se Home Guards HQ, Altinho, Panaji se form लें (₹20 per form)।",
+    "Form भरें aur SSCE certificate, 15-year residence certificate aur photo lagayen।",
+    "Bhara hua form personally submit करें — 31 दिसंबर 2026 तक।",
+    "Selection/verification ki jaankari ke liye goa.gov.in dekhte rahen।"
+   ],
+   "extra_faq": [
+    {
+     "q": "Goa Home Guard Volunteers 2026 me kitni vacancies hain?",
+     "a": "176 volunteers — 127 regular Home Guards aur 49 Marine Home Guards। Ye 3 साल के लिए enrolment hai, permanent naukri nahi।"
+    },
+    {
+     "q": "Goa Home Guard ki last date aur fee kya hai?",
+     "a": "Forms 25 नवंबर 2026 se Home Guards HQ, Altinho, Panaji se milenge (₹20 per form)। Bhara hua form personally 31 दिसंबर 2026 तक submit karna hai। Online application nahi hai।"
+    },
+    {
+     "q": "Goa Home Guard ke liye qualification aur age limit kya hai?",
+     "a": "SSCE (10th) pass + 15 साल का Goa residence certificate (mandatory)। Age 31 दिसंबर 2026 ko: regular Home Guard 20–50 वर्ष, Marine Home Guard 20–30 वर्ष। Height: पुरुष 165 cm, महिला 155 cm। Marine ke liye swimming proficiency + fisherman community aur coastal residence bhi chahiye।"
+    },
+    {
+     "q": "Goa Home Guard volunteers ko salary milegi?",
+     "a": "Monthly salary nahi — duty par bulaye jaane par ₹962/दिन duty allowance milta hai। Ye 3 साल का volunteer enrolment है; 3 साल के बाद नौकरी की कोई guarantee नहीं है।"
+    }
+   ]
+  },
+  "hi": {
+   "name": "गोवा होम गार्ड स्वयंसेवक नामांकन 2026",
+   "tagline": "176 होम गार्ड स्वयंसेवक (127 regular + 49 Marine) — form 25 नवंबर से, अंतिम तिथि 31 दिसंबर 2026; सिर्फ offline, personally submit करें।",
+   "qual": "SSCE (10वीं) पास + 15 साल का गोवा निवास प्रमाण पत्र",
+   "fees": [
+    "₹20 प्रति application form — Home Guards HQ, Altinho, Panaji से form लेते समय भरें।",
+    "कोई online fee नहीं — इस enrolment के लिए कोई online application नहीं है।"
+   ],
+   "fees_short": "₹20",
+   "specs": [
+    "176 होम गार्ड स्वयंसेवक, शुरुआत में 3 साल के लिए: 127 regular होम गार्ड और 49 Marine होम गार्ड।",
+    "Forms 25 नवंबर 2026 से Home Guards Headquarters, Altinho, Panaji से मिलेंगे (₹20 प्रति form)। भरा हुआ form 31 दिसंबर 2026 तक personally submit करें — कोई online application नहीं है।",
+    "न्यूनतम शिक्षा: S.S.C.E. (10वीं) पास। 15 साल का गोवा निवास प्रमाण पत्र अनिवार्य है।",
+    "आयु 31 दिसंबर 2026 को: 20–50 वर्ष (होम गार्ड), 20–30 वर्ष (Marine होम गार्ड)। न्यूनतम ऊंचाई: पुरुष 165 cm, महिला 155 cm।",
+    "Marine होम गार्ड के लिए swimming proficiency भी चाहिए और fisherman community से होना + coastal residence ज़रूरी है।",
+    "Duty allowance: duty पर बुलाए जाने पर ₹962/दिन। यह VOLUNTEER नामांकन है, स्थायी नौकरी नहीं — ऊपर का note देखें।",
+    "ऊपर के सभी तथ्य Notice No. HG&CD/HG-ENROL-561/2026, होम गार्ड्स एवं नागरिक सुरक्षा संगठन, गोवा सरकार, दिनांक 18 नवंबर 2026 (goa.gov.in) से लिए गए हैं।"
+   ],
+   "eligibility": [
+    "S.S.C.E. (10वीं) पास।",
+    "15 साल का गोवा निवास प्रमाण पत्र अनिवार्य है।",
+    "आयु 31 दिसंबर 2026 को: regular होम गार्ड 20–50 वर्ष, Marine होम गार्ड 20–30 वर्ष।",
+    "न्यूनतम ऊंचाई: पुरुष 165 cm, महिला 155 cm।",
+    "Marine होम गार्ड: swimming proficiency ज़रूरी; fisherman community से होना और coastal residence ज़रूरी।",
+    "Apply करने से पहले goa.gov.in पर Notice No. HG&CD/HG-ENROL-561/2026 पूरा पढ़ें।"
+   ],
+   "dos": [
+    "Apply करने से पहले goa.gov.in पर Notice No. HG&CD/HG-ENROL-561/2026 पूरा पढ़ें।",
+    "25 नवंबर 2026 से Home Guards HQ, Altinho, Panaji से form लें (₹20 प्रति form)।",
+    "SSCE certificate, 15 साल का गोवा निवास प्रमाण पत्र और हाल की photo तैयार रखें।",
+    "भरा हुआ form 31 दिसंबर 2026 से पहले personally submit करें।",
+    "Marine applicants: swimming proficiency और fisherman-community/coastal-residence proof तैयार रखें।"
+   ],
+   "donts": [
+    "Online form न ढूंढें — है ही नहीं; यह enrolment सिर्फ offline है।",
+    "15 साल के गोवा निवास प्रमाण पत्र के बिना apply न करें — यह अनिवार्य है।",
+    "इसे स्थायी सरकारी नौकरी न समझें — यह 3 साल का volunteer enrolment है, per-day duty allowance के साथ।",
+    "आखिरी दिन का इंतज़ार न करें — 31 दिसंबर 2026 तक personally submit करें।"
+   ],
+   "checklist": [
+    "S.S.C.E. (10वीं) certificate और marksheet",
+    "15 साल का गोवा निवास प्रमाण पत्र (अनिवार्य)",
+    "जन्मतिथि का proof",
+    "हाल की passport-size photo",
+    "Swimming proficiency proof (सिर्फ Marine)",
+    "Fisherman community + coastal residence proof (सिर्फ Marine)"
+   ],
+   "documents": [
+    "S.S.C.E. (10वीं) certificate और marksheet",
+    "15 साल का गोवा निवास प्रमाण पत्र",
+    "जन्मतिथि का proof",
+    "हाल की photo",
+    "Swimming / community proof (सिर्फ Marine)"
+   ],
+   "kit": [
+    {
+     "title": "Passport photo ready rakho",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "tool": "compress-image"
+    },
+    {
+     "title": "Certificates ek PDF me jodo",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Online form dhoondhna (online form hai hi nahi — sirf offline)",
+    "15-year Goa residence certificate ke bina apply karna (mandatory hai)",
+    "Ise permanent naukri samajh lena (ye 3 saal ka volunteer enrolment hai)",
+    "31 दिसंबर की deadline miss karna"
+   ],
+   "steps": [
+    "goa.gov.in par Notice No. HG&CD/HG-ENROL-561/2026 पढ़ें।",
+    "25 नवंबर 2026 se Home Guards HQ, Altinho, Panaji se form लें (₹20 per form)।",
+    "Form भरें aur SSCE certificate, 15-year residence certificate aur photo lagayen।",
+    "Bhara hua form personally submit करें — 31 दिसंबर 2026 तक।",
+    "Selection/verification ki jaankari ke liye goa.gov.in dekhte rahen।"
+   ],
+   "extra_faq": [
+    {
+     "q": "Goa Home Guard Volunteers 2026 me kitni vacancies hain?",
+     "a": "176 volunteers — 127 regular Home Guards aur 49 Marine Home Guards। Ye 3 साल के लिए enrolment hai, permanent naukri nahi।"
+    },
+    {
+     "q": "Goa Home Guard ki last date aur fee kya hai?",
+     "a": "Forms 25 नवंबर 2026 se Home Guards HQ, Altinho, Panaji se milenge (₹20 per form)। Bhara hua form personally 31 दिसंबर 2026 तक submit karna hai। Online application nahi hai।"
+    },
+    {
+     "q": "Goa Home Guard ke liye qualification aur age limit kya hai?",
+     "a": "SSCE (10th) pass + 15 साल का Goa residence certificate (mandatory)। Age 31 दिसंबर 2026 ko: regular Home Guard 20–50 वर्ष, Marine Home Guard 20–30 वर्ष। Height: पुरुष 165 cm, महिला 155 cm। Marine ke liye swimming proficiency + fisherman community aur coastal residence bhi chahiye।"
+    },
+    {
+     "q": "Goa Home Guard volunteers ko salary milegi?",
+     "a": "Monthly salary nahi — duty par bulaye jaane par ₹962/दिन duty allowance milta hai। Ye 3 साल का volunteer enrolment है; 3 साल के बाद नौकरी की कोई guarantee नहीं है।"
+    }
+   ]
+  }
  }
 ]

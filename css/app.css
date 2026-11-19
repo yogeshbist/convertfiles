@@ -474,50 +474,6 @@ main:has(.convert-grid.two){max-width:none;padding-left:max(48px,6vw);padding-ri
 .promo-next:hover{background:var(--accent);color:var(--accent-ink)}
 @media (prefers-reduced-motion:reduce){.promo-slide{transition:none}}
 
-/* Bengaluru Tech Summit 2026 promo card — homepage only, runs till 19 Nov 2026.
-   To remove: delete this block, the <!-- bts:only --> block in index.html and
-   the bts:only pair in build.py's strip_home. Self-contained colours (it keeps
-   its own indigo/violet look in every theme); animations are transform/opacity
-   only and stop under the global prefers-reduced-motion rule. */
-.bts-card{position:relative;display:flex;align-items:stretch;width:100%;margin:16px 0 4px;border-radius:22px;overflow:hidden;min-height:210px;background:linear-gradient(118deg,#1E1B4B 0%,#4338CA 52%,#7C3AED 100%);color:#fff;box-shadow:0 18px 40px rgba(30,41,59,.14)}
-.bts-calzone{position:relative;z-index:3;flex:none;width:196px;display:flex;align-items:center;justify-content:center;padding:28px 4px 28px 34px}
-.bts-cal{width:118px;border-radius:16px;overflow:hidden;background:#fff;color:#1E1B4B;box-shadow:0 16px 34px rgba(10,6,40,.45);transform:rotate(-3deg);animation:bts-sway 6s ease-in-out infinite alternate;will-change:transform}
-@keyframes bts-sway{from{transform:rotate(-3deg) translateY(0)}to{transform:rotate(-1.4deg) translateY(-5px)}}
-.bts-cal-mon{background:#DC2626;color:#fff;text-align:center;font-size:13px;font-weight:800;letter-spacing:.3em;padding:7px 0 6px 4px}
-.bts-cal-day{text-align:center;font-size:52px;font-weight:900;line-height:1.04;padding-top:6px}
-.bts-cal-yr{text-align:center;font-size:12.5px;font-weight:700;letter-spacing:.24em;color:#6366F1;padding:1px 0 10px}
-.bts-inner{position:relative;z-index:3;flex:1;min-width:0;padding:28px 36px;display:flex;flex-direction:column;justify-content:center;gap:10px}
-.bts-badge{display:inline-flex;align-items:center;gap:8px;align-self:flex-start;font-size:12px;font-weight:800;letter-spacing:.16em;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.4);padding:6px 12px;border-radius:999px;color:#fff}
-.bts-dot{position:relative;width:9px;height:9px;border-radius:50%;background:#F87171;flex:none}
-.bts-dot::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid rgba(248,113,113,.75);animation:bts-pulse 1.8s ease-out infinite;will-change:transform,opacity}
-@keyframes bts-pulse{0%{transform:scale(.45);opacity:1}100%{transform:scale(1.25);opacity:0}}
-.bts-eyebrow{font-size:12.5px;font-weight:800;letter-spacing:.18em;color:#C7D2FE}
-.bts-title{font-family:var(--display);font-size:34px;line-height:1.12;font-weight:800;letter-spacing:-.01em;margin:0;color:#fff}
-.bts-sub{font-size:15.5px;line-height:1.5;max-width:600px;margin:0;color:#E0E7FF}
-.bts-side{position:relative;z-index:3;width:250px;flex:none;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:14px;padding:28px 30px 28px 6px}
-.bts-chip{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;padding:7px 13px;border-radius:999px;white-space:nowrap;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.4);color:#fff}
-.bts-chip-dot{width:8px;height:8px;border-radius:50%;flex:none;background:#4ADE80}
-.bts-btn{display:inline-block;font-size:15px;font-weight:700;text-decoration:none;padding:13px 22px;border-radius:13px;white-space:nowrap;background:#fff;color:#4338CA;box-shadow:0 10px 24px rgba(10,6,40,.4)}
-.bts-progress{position:absolute;z-index:4;left:0;right:0;bottom:0;height:6px;background:rgba(255,255,255,.16);overflow:hidden}
-.bts-fill{position:absolute;top:0;bottom:0;left:0;width:68%;background:linear-gradient(90deg,#38BDF8,#A78BFA,#F472B6)}
-.bts-shine{position:absolute;top:0;bottom:0;width:130px;background:linear-gradient(100deg,transparent,rgba(255,255,255,.65),transparent);animation:bts-shine-slide 3.4s ease-in-out infinite;will-change:transform}
-@keyframes bts-shine-slide{0%{transform:translateX(-160px)}60%,100%{transform:translateX(1060px)}}
-@media (max-width:1180px){
-  .bts-card{flex-direction:column}
-  .bts-calzone{width:auto;padding:24px 28px 0;justify-content:flex-start}
-  .bts-inner{padding:20px 28px 4px}
-  .bts-side{width:auto;padding:6px 28px 28px}
-}
-@media (max-width:560px){
-  .bts-calzone{padding:20px 22px 0}
-  .bts-cal{width:100px}
-  .bts-cal-day{font-size:44px}
-  .bts-inner{padding:18px 22px 4px}
-  .bts-side{padding:6px 22px 24px}
-  .bts-title{font-size:27px}
-  .bts-sub{font-size:14.5px}
-}
-
 /* the tools card */
 .tools-rail{position:sticky;top:76px;margin-top:6px;max-height:calc(100vh - 92px);display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .rail-h{padding:18px 18px 14px;border-bottom:1px solid var(--line)}

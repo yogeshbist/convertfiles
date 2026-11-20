@@ -580,6 +580,14 @@ index = re.sub(r'(<a class="btn sm" href="/exam-forms/">)(?:All exams|See all \d
 index = index.replace('<a href="/guides/">Guides</a><a href="/hi/guides/"',
                       '<a href="/guides/">Guides</a><a href="/exam-results/">Exam Results</a>'
                       '<a href="/admit-cards/">Admit Card</a><a href="/hi/guides/"', 1)
+# Facebook Page link in the sitewide footer (added 20 Nov 2026 — Page
+# "ConvertFiles", id 61596553749762, created on Yogesh's order). Same
+# idempotency trick as above: the inserted link displaces the anchor
+# sequence, so re-running the build cannot insert it twice.
+index = index.replace('<a href="/contact.html">Contact</a></span>',
+                      '<a href="/contact.html">Contact</a>'
+                      '<a href="https://www.facebook.com/profile.php?id=61596553749762" '
+                      'target="_blank" rel="noopener">Facebook</a></span>', 1)
 open('index.html', 'w').write(index)
 GENERATED.append('index.html')
 BASE = index

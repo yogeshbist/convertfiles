@@ -204,7 +204,7 @@ def strip_home(page):
     """Generated pages keep the converter and their own content, not the home
     page's editorial blocks — 400 copies of the same FAQ helps nobody. The
     tools rail beside the converter is the home page's too."""
-    for start, end in (('<!-- home:only -->', '<!-- /home:only -->'), ('<!-- rail:only -->', '<!-- /rail:only -->'), ('<!-- promo:only -->', '<!-- /promo:only -->')):
+    for start, end in (('<!-- home:only -->', '<!-- /home:only -->'), ('<!-- rail:only -->', '<!-- /rail:only -->'), ('<!-- promo:only -->', '<!-- /promo:only -->'), ('<!-- fb:only -->', '<!-- /fb:only -->')):
         a, b = page.find(start), page.find(end)
         if a >= 0 and b >= 0:
             page = page[:a] + page[b + len(end):]

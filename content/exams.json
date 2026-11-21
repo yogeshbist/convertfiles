@@ -33319,5 +33319,230 @@
   "portal": "iroams.com",
   "posts": 54,
   "slug": "rrc-ser-sports-quota-2026"
+ },
+ {
+  "advt": "CRPD/SCO/2026-27/31",
+  "board_en": "State Bank of India (SBI)",
+  "board_hi": "भारतीय स्टेट बैंक (SBI)",
+  "dates": {
+   "apply_end": "2026-12-10",
+   "apply_start": "2026-11-20",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": "December 2026 / January 2027 (tentative)",
+   "exam_hi": "दिसंबर 2026 / जनवरी 2027 (अस्थायी)",
+   "fee_end": "2026-12-10"
+  },
+  "en": {
+   "checklist": [
+    "Degree certificate(s) — B.E./B.Tech/M.Tech or M.Sc/M.Stat/MCA, with 60% marks in Graduation and Post Graduation",
+    "AI/ML experience certificate(s) — 6 years (Chief Manager), 4+ years (Manager) or 3 years (Deputy Manager)",
+    "Date of birth proof and ID proof",
+    "Caste certificate (OBC Non-Creamy Layer / SC / ST / EWS) or PwBD certificate, if applicable",
+    "Biodata in the prescribed format and resume / CV (PDF)",
+    "Recent passport-size photo (200 × 230 px, 20–50 KB), signature (140 × 60 px, 10–20 KB), thumb impression and hand-written declaration scans",
+    "Valid email ID and mobile number (call letter comes by email only)"
+   ],
+   "documents": [
+    "Degree certificate(s) and mark sheets (Graduation + Post Graduation)",
+    "AI/ML experience certificates",
+    "Date of birth proof and ID proof",
+    "Caste / EWS / PwBD certificate, if applicable",
+    "Biodata, resume, recent photo + signature, thumb impression and hand-written declaration"
+   ],
+   "donts": [
+    "Do not send any hard copy of the application or documents — only the online form counts.",
+    "Do not apply for more than one post — only the last valid (completed) application is retained and other fees are forfeited.",
+    "Do not write the signature or the hand-written declaration in CAPITAL LETTERS — they will not be accepted.",
+    "Do not wait for the last day — registration and fee payment both close on 10 December 2026, and no correction is allowed afterwards."
+   ],
+   "dos": [
+    "Read Advertisement No. CRPD/SCO/2026-27/31 fully on sbi.bank.in before applying — check the exact qualification/experience for the one post you choose.",
+    "Apply only through the official SBI careers page (sbi.bank.in → Careers → Current Openings) between 20 November and 10 December 2026.",
+    "Keep the photo scan ready (200 × 230 px, 20–50 KB) and capture the LIVE photograph in good light against a plain light background — no cap, no dark glasses.",
+    "Upload every required document in PDF (each up to 500 KB) — biodata, resume, ID proof, age proof, educational and experience certificates.",
+    "Save the application printout (last date to print: 25 December 2026)."
+   ],
+   "eligibility": [
+    "B.E./B.Tech/M.Tech in Computer Science / IT / Electronics / Electrical & Electronics / Electronics & Communication / Data Science / AI & ML or equivalent, or M.Sc (Data Science), M.Sc (Statistics/Computer Science), M.A. (Statistics), M.Stat or MCA — with minimum 60% marks in both Graduation and Post Graduation.",
+    "Post-qualification AI/ML experience as on 31 October 2026: Chief Manager 6 years (2+ years in scalable Python-based LLM/GenAI/Agentic AI applications); Manager 4+ years (2+ years in Python-based LLM/GenAI/Agentic AI solutions at scale); Deputy Manager 3 years overall (2+ years full-time in Analytics/AI/ML/GenAI + 1+ year developing AI/ML/Deep Learning/GenAI models).",
+    "Age as on 31 October 2026: Chief Manager 27–37 years, Manager 26–36 years, Deputy Manager 24–32 years. Qualification and experience counted as on 31 October 2026.",
+    "Medically fit candidates only. Read Advt CRPD/SCO/2026-27/31 fully on sbi.bank.in before applying."
+   ],
+   "extra_faq": [
+    {
+     "a": "20 posts — Chief Manager (Data Scientist) 2 (SMGS-IV), Manager (Data Scientist) 14 (MMGS-III), Deputy Manager (Data Scientist) 4 (MMGS-II), sab regular basis par। Pay scale MMGS-II ₹64,820–93,960 se SMGS-IV ₹1,02,300–1,20,940 tak।",
+     "q": "SBI SCO Data Scientist 2026 me kitni vacancies hain?"
+    },
+    {
+     "a": "Online registration aur fee payment 20 नवंबर से 10 दिसंबर 2026 तक। Fee ₹750 (General/EWS/OBC) है; SC/ST/PwBD candidates ko koi fee nahi। Application print ki last date 25 दिसंबर 2026 है।",
+     "q": "SBI SCO Data Scientist ki last date aur fee kya hai?"
+    },
+    {
+     "a": "B.E./B.Tech/M.Tech (CS/IT/Electronics/Data Science/AI-ML aadi) ya M.Sc (Data Science/Statistics/CS), M.A. (Statistics), M.Stat, MCA — Graduation aur Post Graduation dono me kam se kam 60% marks, saath me post ke hisaab se 3–6 saal ka AI/ML experience। Age 31 अक्टूबर 2026 ko: Chief Manager 27–37, Manager 26–36, Deputy Manager 24–32 वर्ष।",
+     "q": "SBI Data Scientist ke liye qualification aur age limit kya hai?"
+    },
+    {
+     "a": "Chief Manager ke liye sirf shortlisting + interview। Manager aur Deputy Manager ke liye online written test (Professional Knowledge 60 questions, 100 marks; Reasoning/Quant/English sirf qualifying; NO negative marking) + interview — merit 70:30। Exam दिसंबर 2026/जनवरी 2027 (tentative) hai; Bank chahe to written test hata kar shortlisting + interview bhi kar sakta hai।",
+     "q": "SBI Data Scientist me selection kaise hoga?"
+    }
+   ],
+   "fees": [
+    "₹750 for General/EWS/OBC candidates — pay online by 10 December 2026 (non-refundable, includes intimation charges).",
+    "No fee for SC/ST/PwBD candidates."
+   ],
+   "fees_short": "₹750",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Hard copy bhejna (sirf online form chalta hai)",
+    "Ek se zyada post ke liye apply karna (sirf last valid application rehti hai)",
+    "Signature ya declaration CAPITAL LETTERS me likhna",
+    "10 दिसंबर की deadline miss karna"
+   ],
+   "name": "SBI Data Scientist (Specialist Cadre Officer) Recruitment 2026",
+   "qual": "B.E./B.Tech/M.Tech or M.Sc/M.Stat/MCA in Data Science / AI-ML / Statistics / CS with 60% marks + 3–6 years AI/ML experience",
+   "specs": [
+    "20 Specialist Cadre Officer posts on a regular basis: Chief Manager (Data Scientist), SMGS-IV — 2 posts (UR 2); Manager (Data Scientist), MMGS-III — 14 posts (SC 2, ST 1, OBC 1, EWS 1, UR 9); Deputy Manager (Data Scientist), MMGS-II — 4 posts (UR 2 + SC 1 backlog + OBC 1 backlog). PwBD horizontal vacancies: VI 1 with Chief Manager, HI 1 (backlog) with Manager, VI 1 (backlog) with Deputy Manager. Vacancies are provisional and may vary.",
+    "Pay scales: SMGS-IV ₹1,02,300–1,20,940; MMGS-III ₹85,920–1,05,280; MMGS-II ₹64,820–93,960 + DA, HRA, CCA, Provident Fund, NPS, LFC, medical facility and other perquisites. Posting: Mumbai or anywhere in India.",
+    "Age as on 31 October 2026: Chief Manager 27–37 years; Manager 26–36 years; Deputy Manager 24–32 years (relaxation in upper age for reserved categories as per Government of India guidelines).",
+    "Eligibility (as on 31 October 2026): B.E./B.Tech/M.Tech in Computer Science / IT / Electronics / Electrical & Electronics / Electronics & Communication / Data Science / AI & ML or an equivalent degree in these disciplines, or M.Sc (Data Science), M.Sc (Statistics/Computer Science), M.A. (Statistics), M.Stat or MCA from a recognised university/institution — with minimum 60% marks or equivalent grade in both Graduation and Post Graduation. Experience: Chief Manager — minimum 6 years post-qualification experience in AI/ML, of which 2+ years in scalable, Python-based LLM/GenAI/Agentic AI applications; Manager — overall 4+ years post-qualification experience in AI/ML, of which 2+ years in Python-based LLM/GenAI/Agentic AI solutions at scale; Deputy Manager — 3 years overall experience after basic qualification, of which minimum 2+ years full-time in Analytics/AI/ML/GenAI and minimum 1+ year full-time developing AI/ML/Deep Learning/GenAI models. Training and teaching experience is not counted.",
+    "Selection: Chief Manager — shortlisting + interview only (interview 100 marks; meeting the eligibility criteria does not by itself entitle a candidate to an interview call). Manager & Deputy Manager — online written test + interview: General Aptitude (Reasoning 15 questions, Quantitative Aptitude 15, English Language 20 — qualifying in nature, marks not counted in merit) + Professional Knowledge (AI/ML) 60 questions / 100 marks; NO penalty (negative marking) for wrong answers. Final merit on the written-test route: written test 70, interview 30. The Bank may also dispense with the written test and adopt shortlisting + interview.",
+    "Tentative schedule: online written test December 2026 / January 2027 (Manager & Deputy Manager posts). Call letter by email only. A candidate may apply for only ONE post — if multiple applications are submitted, only the last valid (completed) application is retained and the fee for the others is forfeited. No change/correction is allowed after the application window closes.",
+    "Uploads: recent passport-style colour photograph (200 × 230 pixels, 20–50 KB, JPG/JPEG, light/white background) PLUS a LIVE photograph captured during the form through webcam or mobile phone (QR-code scan). Signature (140 × 60 pixels, 10–20 KB, black ink on white paper — NOT in capital letters); left-hand thumb impression (240 × 240 pixels at 200 DPI, 20–50 KB); hand-written declaration in English (800 × 400 pixels at 200 DPI, 50–100 KB — NOT in capital letters). All other documents — biodata in the prescribed format, resume, ID proof, date-of-birth proof, educational certificates, experience certificates, caste/EWS certificate (if applicable), PwBD certificate (if applicable), preferred qualification/certification (if any) and Form-16 / offer letter / latest salary slip — in PDF on A4, each file not more than 500 KB.",
+    "Apply online 20 November – 10 December 2026 through the link on sbi.bank.in (Careers → Current Openings → Advt CRPD/SCO/2026-27/31). Upload all required documents — an application without them will not be considered for the written exam/shortlisting/interview. Hard copy is NOT to be sent. Last date to print the application: 25 December 2026.",
+    "All facts above are taken from Advertisement No. CRPD/SCO/2026-27/31, State Bank of India (20-page notification)."
+   ],
+   "steps": [
+    "sbi.bank.in → Careers → Current Openings par Advt No. CRPD/SCO/2026-27/31 पढ़ें।",
+    "'Apply Online' link se new registration करें।",
+    "Form भरें, photo upload करें + LIVE photo capture करें, aur biodata, resume, ID proof, age proof, caste certificate, experience certificates (sab PDF, har ek 500 KB tak) upload करें।",
+    "₹750 fee online भरें (Gen/EWS/OBC; SC/ST/PwBD ko koi fee nahi) — 10 दिसंबर 2026 तक।",
+    "Form submit करें aur application ka printout save करें (25 दिसंबर 2026 तक print kar sakte hain)।"
+   ],
+   "tagline": "20 Specialist Cadre Officer posts — Chief Manager, Manager & Deputy Manager (Data Scientist) on a regular basis — last date 10 December 2026."
+  },
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "hi": {
+   "checklist": [
+    "Degree certificate(s) — B.E./B.Tech/M.Tech या M.Sc/M.Stat/MCA, Graduation और Post Graduation में 60% अंक",
+    "AI/ML experience certificate(s) — 6 साल (चीफ मैनेजर), 4+ साल (मैनेजर) या 3 साल (डिप्टी मैनेजर)",
+    "जन्मतिथि का proof और ID proof",
+    "जाति certificate (OBC Non-Creamy Layer / SC / ST / EWS) या PwBD certificate, अगर लागू हो",
+    "निर्धारित format में biodata और resume / CV (PDF)",
+    "हाल की passport-size photo (200 × 230 px, 20–50 KB), हस्ताक्षर (140 × 60 px, 10–20 KB), अंगूठे का निशान और hand-written declaration के scan",
+    "Valid email ID और mobile number (call letter सिर्फ email से आएगा)"
+   ],
+   "documents": [
+    "Degree certificate(s) और mark sheets (Graduation + Post Graduation)",
+    "AI/ML अनुभव प्रमाण-पत्र",
+    "जन्मतिथि का proof और ID proof",
+    "जाति / EWS / PwBD certificate, अगर लागू हो",
+    "Biodata, resume, हाल की photo + हस्ताक्षर, अंगूठे का निशान और hand-written declaration"
+   ],
+   "donts": [
+    "Application या documents की कोई hard copy न भेजें — सिर्फ online form मान्य है।",
+    "एक से ज़्यादा पद के लिए apply न करें — सिर्फ last valid (completed) application रहती है, बाकी की fee forfeit हो जाती है।",
+    "हस्ताक्षर या hand-written declaration CAPITAL LETTERS में न लिखें — वे स्वीकार नहीं होंगे।",
+    "आखिरी दिन का इंतज़ार न करें — registration और fee payment दोनों 10 दिसंबर 2026 को बंद होते हैं, और उसके बाद कोई correction नहीं होगा।"
+   ],
+   "dos": [
+    "Apply करने से पहले sbi.bank.in पर Advertisement No. CRPD/SCO/2026-27/31 पूरा पढ़ें — जो एक पद आप चुनें, उसकी qualification/experience ठीक से देखें।",
+    "सिर्फ official SBI careers page (sbi.bank.in → Careers → Current Openings) से 20 नवंबर से 10 दिसंबर 2026 के बीच apply करें।",
+    "Photo scan तैयार रखें (200 × 230 px, 20–50 KB) और LIVE photograph अच्छी रोशनी में, सादे हल्के background के सामने capture करें — cap या काला चश्मा न पहनें।",
+    "सभी ज़रूरी documents PDF में upload करें (हर एक 500 KB तक) — biodata, resume, ID proof, age proof, शैक्षणिक और अनुभव प्रमाण-पत्र।",
+    "Application का printout save करें (25 दिसंबर 2026 तक print कर सकते हैं)।"
+   ],
+   "eligibility": [
+    "B.E./B.Tech/M.Tech — Computer Science / IT / Electronics / Electrical & Electronics / Electronics & Communication / Data Science / AI & ML या समकक्ष, या M.Sc (Data Science), M.Sc (Statistics/Computer Science), M.A. (Statistics), M.Stat या MCA — Graduation और Post Graduation दोनों में कम से कम 60% अंक।",
+    "31 अक्टूबर 2026 को post-qualification AI/ML अनुभव: चीफ मैनेजर 6 साल (2+ साल scalable Python-based LLM/GenAI/Agentic AI applications में); मैनेजर 4+ साल (2+ साल Python-based LLM/GenAI/Agentic AI solutions at scale में); डिप्टी मैनेजर कुल 3 साल (2+ साल full-time Analytics/AI/ML/GenAI में + 1+ साल AI/ML/Deep Learning/GenAI models develop करने में)।",
+    "आयु 31 अक्टूबर 2026 को: चीफ मैनेजर 27–37 वर्ष, मैनेजर 26–36 वर्ष, डिप्टी मैनेजर 24–32 वर्ष। Qualification और experience 31 अक्टूबर 2026 को गिने जाएंगे।",
+    "सिर्फ medically fit उम्मीदवार। Apply करने से पहले sbi.bank.in पर Advt CRPD/SCO/2026-27/31 पूरा पढ़ें।"
+   ],
+   "extra_faq": [
+    {
+     "a": "20 posts — Chief Manager (Data Scientist) 2 (SMGS-IV), Manager (Data Scientist) 14 (MMGS-III), Deputy Manager (Data Scientist) 4 (MMGS-II), sab regular basis par। Pay scale MMGS-II ₹64,820–93,960 se SMGS-IV ₹1,02,300–1,20,940 tak।",
+     "q": "SBI SCO Data Scientist 2026 me kitni vacancies hain?"
+    },
+    {
+     "a": "Online registration aur fee payment 20 नवंबर से 10 दिसंबर 2026 तक। Fee ₹750 (General/EWS/OBC) है; SC/ST/PwBD candidates ko koi fee nahi। Application print ki last date 25 दिसंबर 2026 है।",
+     "q": "SBI SCO Data Scientist ki last date aur fee kya hai?"
+    },
+    {
+     "a": "B.E./B.Tech/M.Tech (CS/IT/Electronics/Data Science/AI-ML aadi) ya M.Sc (Data Science/Statistics/CS), M.A. (Statistics), M.Stat, MCA — Graduation aur Post Graduation dono me kam se kam 60% marks, saath me post ke hisaab se 3–6 saal ka AI/ML experience। Age 31 अक्टूबर 2026 ko: Chief Manager 27–37, Manager 26–36, Deputy Manager 24–32 वर्ष।",
+     "q": "SBI Data Scientist ke liye qualification aur age limit kya hai?"
+    },
+    {
+     "a": "Chief Manager ke liye sirf shortlisting + interview। Manager aur Deputy Manager ke liye online written test (Professional Knowledge 60 questions, 100 marks; Reasoning/Quant/English sirf qualifying; NO negative marking) + interview — merit 70:30। Exam दिसंबर 2026/जनवरी 2027 (tentative) hai; Bank chahe to written test hata kar shortlisting + interview bhi kar sakta hai।",
+     "q": "SBI Data Scientist me selection kaise hoga?"
+    }
+   ],
+   "fees": [
+    "₹750 General/EWS/OBC उम्मीदवारों के लिए — 10 दिसंबर 2026 तक online भरें (non-refundable, intimation charges सहित)।",
+    "SC/ST/PwBD उम्मीदवारों को कोई fee नहीं।"
+   ],
+   "fees_short": "₹750",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Hard copy bhejna (sirf online form chalta hai)",
+    "Ek se zyada post ke liye apply karna (sirf last valid application rehti hai)",
+    "Signature ya declaration CAPITAL LETTERS me likhna",
+    "10 दिसंबर की deadline miss karna"
+   ],
+   "name": "SBI SCO डेटा साइंटिस्ट भर्ती 2026",
+   "qual": "Data Science / AI-ML / Statistics / CS में B.E./B.Tech/M.Tech या M.Sc/M.Stat/MCA, 60% अंकों के साथ + 3–6 साल का AI/ML अनुभव",
+   "specs": [
+    "Regular basis पर 20 स्पेशलिस्ट कैडर ऑफिसर पद: चीफ मैनेजर (डेटा साइंटिस्ट), SMGS-IV — 2 पद (UR 2); मैनेजर (डेटा साइंटिस्ट), MMGS-III — 14 पद (SC 2, ST 1, OBC 1, EWS 1, UR 9); डिप्टी मैनेजर (डेटा साइंटिस्ट), MMGS-II — 4 पद (UR 2 + SC 1 backlog + OBC 1 backlog)। PwBD horizontal vacancies: चीफ मैनेजर के साथ VI 1, मैनेजर के साथ HI 1 (backlog), डिप्टी मैनेजर के साथ VI 1 (backlog)। Vacancies provisional हैं, बदल सकती हैं।",
+    "Pay scale: SMGS-IV ₹1,02,300–1,20,940; MMGS-III ₹85,920–1,05,280; MMGS-II ₹64,820–93,960 + DA, HRA, CCA, Provident Fund, NPS, LFC, medical facility और अन्य perquisites। Posting: मुंबई या भारत में कहीं भी।",
+    "आयु 31 अक्टूबर 2026 को: चीफ मैनेजर 27–37 वर्ष; मैनेजर 26–36 वर्ष; डिप्टी मैनेजर 24–32 वर्ष (भारत सरकार के नियमों के अनुसार आरक्षित श्रेणियों को ऊपरी आयु में छूट)।",
+    "Eligibility (31 अक्टूबर 2026 को): B.E./B.Tech/M.Tech — Computer Science / IT / Electronics / Electrical & Electronics / Electronics & Communication / Data Science / AI & ML में या इन विषयों में समकक्ष degree, या M.Sc (Data Science), M.Sc (Statistics/Computer Science), M.A. (Statistics), M.Stat या MCA किसी recognised university/institution से — Graduation और Post Graduation दोनों में कम से कम 60% अंक या समकक्ष grade। अनुभव: चीफ मैनेजर — AI/ML में कम से कम 6 साल का post-qualification अनुभव, जिसमें 2+ साल scalable, Python-based LLM/GenAI/Agentic AI applications में; मैनेजर — AI/ML में कुल 4+ साल का अनुभव, जिसमें 2+ साल Python-based LLM/GenAI/Agentic AI solutions at scale में; डिप्टी मैनेजर — basic qualification के बाद 3 साल का कुल अनुभव, जिसमें कम से कम 2+ साल full-time Analytics/AI/ML/GenAI में और कम से कम 1+ साल full-time AI/ML/Deep Learning/GenAI models develop करने में। Training और teaching experience नहीं गिना जाएगा।",
+    "चयन: चीफ मैनेजर — सिर्फ shortlisting + interview (interview 100 अंक; सिर्फ eligibility पूरी करने से interview call का हक नहीं बनता)। मैनेजर और डिप्टी मैनेजर — online written test + interview: General Aptitude (Reasoning 15 प्रश्न, Quantitative Aptitude 15, English Language 20 — सिर्फ qualifying, अंक merit में नहीं गिने जाएंगे) + Professional Knowledge (AI/ML) 60 प्रश्न / 100 अंक; गलत उत्तर पर कोई negative marking नहीं। Written-test route पर final merit: written test 70, interview 30। Bank चाहे तो written test हटाकर shortlisting + interview भी अपना सकता है।",
+    "अस्थायी schedule: online written test दिसंबर 2026 / जनवरी 2027 (मैनेजर और डिप्टी मैनेजर पदों के लिए)। Call letter सिर्फ email से आएगा। उम्मीदवार सिर्फ एक पद के लिए apply कर सकता है — एक से ज़्यादा application भेजने पर सिर्फ last valid (completed) application रहती है, बाकी की fee forfeit हो जाती है। Application window बंद होने के बाद कोई change/correction नहीं होगा।",
+    "Uploads: हाल की passport-style रंगीन photograph (200 × 230 pixels, 20–50 KB, JPG/JPEG, हल्के/सफेद background पर) के साथ-साथ form के दौरान webcam या mobile phone (QR-code scan) से LIVE photograph भी capture करनी होगी। हस्ताक्षर (140 × 60 pixels, 10–20 KB, सफेद कागज़ पर काली स्याही से — CAPITAL LETTERS में नहीं); बाएं हाथ के अंगूठे का निशान (240 × 240 pixels, 200 DPI पर, 20–50 KB); अंग्रेज़ी में hand-written declaration (800 × 400 pixels, 200 DPI पर, 50–100 KB — CAPITAL LETTERS में नहीं)। बाकी सभी documents — निर्धारित format में biodata, resume, ID proof, जन्मतिथि का proof, शैक्षणिक प्रमाण-पत्र, अनुभव प्रमाण-पत्र, जाति/EWS प्रमाण-पत्र (अगर लागू हो), PwBD प्रमाण-पत्र (अगर लागू हो), preferred qualification/certification (अगर कोई हो) और Form-16 / offer letter / latest salary slip — PDF में, A4 size, हर file 500 KB से अधिक नहीं।",
+    "Online आवेदन 20 नवंबर – 10 दिसंबर 2026, sbi.bank.in (Careers → Current Openings → Advt CRPD/SCO/2026-27/31) के link से। सभी ज़रूरी documents upload करें — उनके बिना application written exam/shortlisting/interview के लिए नहीं मानी जाएगी। Hard copy भेजनी नहीं है। Application print करने की अंतिम तिथि: 25 दिसंबर 2026।",
+    "ऊपर के सभी तथ्य Advertisement No. CRPD/SCO/2026-27/31, भारतीय स्टेट बैंक (20-page notification) से लिए गए हैं।"
+   ],
+   "steps": [
+    "sbi.bank.in → Careers → Current Openings par Advt No. CRPD/SCO/2026-27/31 पढ़ें।",
+    "'Apply Online' link se new registration करें।",
+    "Form भरें, photo upload करें + LIVE photo capture करें, aur biodata, resume, ID proof, age proof, caste certificate, experience certificates (sab PDF, har ek 500 KB tak) upload करें।",
+    "₹750 fee online भरें (Gen/EWS/OBC; SC/ST/PwBD ko koi fee nahi) — 10 दिसंबर 2026 तक।",
+    "Form submit करें aur application ka printout save करें (25 दिसंबर 2026 तक print kar sakte hain)।"
+   ],
+   "tagline": "20 स्पेशलिस्ट कैडर ऑफिसर पद — चीफ मैनेजर, मैनेजर और डिप्टी मैनेजर (डेटा साइंटिस्ट), regular basis पर — अंतिम तिथि 10 दिसंबर 2026।"
+  },
+  "links": {
+   "apply": "https://ibpsreg.ibps.in/sbifteoct26/",
+   "notice": "https://sbi.bank.in/documents/77530/57941334/20112026_Final_ADV_CRPD_SCO_2026-27_31.pdf/30ed8874-9669-c1eb-17bd-e8e4dfe534bb?t=1795161793708",
+   "site": "https://sbi.bank.in"
+  },
+  "photo_kind": "live",
+  "portal": "sbi.bank.in",
+  "posts": 20,
+  "slug": "sbi-sco-data-scientist-2026"
  }
 ]

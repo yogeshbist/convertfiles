@@ -33096,5 +33096,228 @@
   "portal": "aiimsmgexams.netlify.app",
   "posts": 26,
   "slug": "aiims-mangalagiri-faculty-2026"
+ },
+ {
+  "advt": "Employment Notice No. SER/Pers/Sports Quota/OA/2026-27",
+  "board_en": "Railway Recruitment Cell (RRC), South Eastern Railway, Kolkata",
+  "board_hi": "रेलवे भर्ती सेल (RRC), दक्षिण पूर्व रेलवे, कोलकाता",
+  "dates": {
+   "apply_end": "2026-11-30",
+   "apply_start": "2026-10-31",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-11-30"
+  },
+  "en": {
+   "checklist": [
+    "Recent colour photograph 3.5 cm × 3.5 cm (JPG, up to 70 KB)",
+    "Signature on white paper (JPG, 10–40 KB)",
+    "Left thumb impression on white paper (JPG, 10–40 KB)",
+    "Matric certificate — name, father's name and date of birth in the form must match it",
+    "Educational certificate for the level applied (degree / 12th / ITI / NAC)",
+    "Sports achievement certificates (earned on or after 01.04.2024)",
+    "Community / EBC / minority certificate and annexures, if claiming the fee concession"
+   ],
+   "documents": [
+    "Matriculation (10th) certificate — date of birth proof",
+    "Educational qualification certificate for your level (degree / 12th / ITI / NAC)",
+    "Sports achievement certificates (earned on or after 01.04.2024)",
+    "Community certificate (SC/ST/OBC), if applicable — OBC in Central Government format with Non-Creamy Layer",
+    "Photo, signature and left thumb impression scans"
+   ],
+   "donts": [
+    "Do not submit more than one application — multiple applications are invalid.",
+    "Do not pay by cash, cheque, money order or demand draft — only online payment is accepted.",
+    "Do not sign in capital or disjointed letters, and do not leave any column blank — such forms are rejected.",
+    "Do not wait for 30 November — no change of any kind is allowed after final submission."
+   ],
+   "dos": [
+    "Check the sports norms for your level and discipline in the notice before paying the fee — the achievement bar decides eligibility.",
+    "Apply only through the RRC SER website link (rrcser.co.in > Online/E-Application for Sports Quota (OA)/2026-27).",
+    "Keep your Matric certificate details exact — name, father's name, community and date of birth must match it.",
+    "Carry originals of date of birth, educational and sports certificates and a photo ID on the trial day."
+   ],
+   "eligibility": [
+    "Sports qualification: the minimum sports achievement prescribed for your level, earned on or after 1 April 2024 in a championship conducted by a federation recognised by the Ministry of Youth Affairs and Sports (Level 4/5: represented India at the Olympics (Senior), or at least 3rd position in World Cup / World Championships / Asian Games / Commonwealth Games or other listed events; Level 2/3 and Level 1 norms are given game-wise in the notice).",
+    "Education (must be held on the date of application; candidates appearing or awaiting results are not eligible): Level 4/5 — a university degree or equivalent; Level 2/3 — 12th pass, or Matriculation + Course Completed Act Apprenticeship, or 10th pass + ITI / equivalent / NAC from NCVT; Level 1 — 10th pass or ITI or equivalent, or NAC from NCVT.",
+    "Age: 18 to 25 years as on 1 January 2027 (date of birth between 02.01.2002 and 01.01.2009). No age relaxation for any category.",
+    "Only one application is allowed. No post is reserved for SC/ST/OBC/EWS — selection is on merit within each sports discipline.",
+    "Read Employment Notice No. SER/Pers/Sports Quota/OA/2026-27 fully on rrcser.co.in before applying."
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 54 posts — Group C Level 4/5 me 5, Group C Level 2/3 me 16 aur Group D Level 1 me 33। Koi post SC/ST/OBC/EWS ke liye reserved nahi hai; selection har sports discipline ke andar merit par hota hai।",
+     "q": "How many vacancies are there in RRC SER Sports Quota Recruitment 2026-27?"
+    },
+    {
+     "a": "Online form 31 October se 30 November 2026 (raat 11:59) tak rrcser.co.in ke link se bhara jayega। Fee: UR/OBC ₹500 (trial me hazir hone par ₹400 wapas), SC/ST/Ex-Servicemen/PwBD/Women/Minorities/EBC ₹250 (trial me hazir hone par poora wapas)। Sirf online payment chalega।",
+     "q": "What is the last date and fee for RRC SER Sports Quota 2026-27?"
+    },
+    {
+     "a": "Umra 1 January 2027 ko 18–25 saal (koi relaxation nahi)। Level 4/5 ke liye degree, Level 2/3 ke liye 12th pass ya 10th + ITI/Act Apprenticeship/NAC, Level 1 ke liye 10th pass ya ITI/NAC — aur apne level ki prescribed sports achievement, jo 1 April 2024 ya uske baad ki ho।",
+     "q": "Who can apply for the SER Sports Quota posts?"
+    },
+    {
+     "a": "Har discipline ke liye 100 number ki merit: sports achievement 50, sports trial (skill, fitness, coach observation) 40 aur education 10। Qualifying marks: Level 4/5 — 70, Level 2/3 — 65, Level 1 — 60। Uske baad certificate verification aur medical test hota hai। Trial ki dates rrcser.co.in par aayengi।",
+     "q": "How are candidates selected in RRC SER Sports Quota?"
+    }
+   ],
+   "fees": [
+    "UR/OBC ₹500 — ₹400 is refunded (after bank charges) if you actually appear in the sports trial.",
+    "SC/ST/Ex-Servicemen/PwBD/Women/Minorities/EBC ₹250 — the full ₹250 is refunded if you appear in the trial.",
+    "Pay online only (Internet Banking / Debit Card / Credit Card). Cash, cheque, money order or demand draft is not accepted."
+   ],
+   "fees_short": "₹500",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "1 April 2024 se pehle ki sports achievement par apply karna (wo count nahi hoti)",
+    "Ek se zyada application bharna (saari invalid ho jayengi)",
+    "Matric certificate se alag naam/date of birth bharna",
+    "Final submit ke baad correction ki ummeed rakhna (koi change nahi hota)"
+   ],
+   "name": "RRC South Eastern Railway Sports Quota Recruitment 2026-27",
+   "qual": "Level 4/5: a university degree or its equivalent. Level 2/3: 12th pass, or Matriculation + Course Completed Act Apprenticeship, or 10th pass + ITI / equivalent / NAC from NCVT. Level 1: 10th pass or ITI or equivalent, or NAC granted by NCVT. Plus the prescribed sports achievement for the level, earned on or after 01.04.2024 in a championship run by a recognised federation.",
+   "specs": [
+    "54 posts against Sports Quota (Open Advertisement) 2026-27 in units of South Eastern Railway: Group C Level 4/5 — 5 posts, Group C Level 2/3 — 16 posts, Group D Level 1 — 33 posts. Employment Notice No. SER/Pers/Sports Quota/OA/2026-27 dated 26.10.2026.",
+    "Disciplines — Level 4/5: Athletics (Men), Chess (Men), Hockey (Women), Table Tennis (Women). Level 2/3: Athletics (Men), Archery (Men and Women), Body Building (Men), Bridge (Men), Cycling (Men), Gymnastics (Women), Hockey (Men and Women), Rifle Shooting (Women). Level 1: Ball Badminton (Men), Cricket (Men), Football (Men), Golf (Men), Kabaddi (Men and Women), Kho Kho (Men), Volleyball (Men and Women), Water Polo (Men), Weight Lifting (Men). Vacancies are fixed discipline-wise and position-wise in the notice — check your game before applying.",
+    "Pay: PB-1 ₹5,200–20,200 with Grade Pay ₹2,800/₹2,400 (Level 5/4), ₹2,000/₹1,900 (Level 3/2) and ₹1,800 (Level 1) — 7th CPC Pay Levels 1 to 5.",
+    "Selection: merit list out of 100 marks for each discipline — recognised sports achievement 50 marks, sports trial (game skill, physical fitness and coach's observation) 40 marks, educational qualification 10 marks. Minimum qualifying marks: Level 4/5 — 70, Level 2/3 — 65, Level 1 — 60; a trial score below 25 out of 40 does not qualify. Followed by certificate verification and medical examination.",
+    "Sports achievements count only if earned on or after 01.04.2024. Volleyball certificates from events of the Volleyball Federation of India or its affiliated units held up to 28.10.2025 and after 21.04.2026 are not considered (National Championship certificates from 29.10.2025 to 21.04.2026 are valid); Body Building results from Indian Body Builders Federation events are not considered.",
+    "Trial dates and venues will be announced only on rrcser.co.in. SC/ST candidates get free second-class rail travel to attend the trials. Selected candidates must serve the Railways for 5 years (service bond).",
+    "All facts above are taken from Employment Notice No. SER/Pers/Sports Quota/OA/2026-27 of South Eastern Railway (rrcser.co.in)."
+   ],
+   "steps": [
+    "rrcser.co.in par Employment Notice No. SER/Pers/Sports Quota/OA/2026-27 पूरा पढ़ें — apne game ke sports norms aur discipline-wise vacancy pehle check करें।",
+    "rrcser.co.in par 'Online/E-Application for Sports Quota (OA) / 2026-27' link खोलें — iroams.com par RRC SER Sports Quota 2026 ka registration page khulega।",
+    "'New Registration' par naam, pita ka naam, janm tithi, community, email aur mobile bharen aur registration number/password note kar len।",
+    "Login karke form bharen, apna discipline/position chunein, photo (3.5 cm × 3.5 cm, JPG, 70 KB tak), signature aur left thumb impression (JPG, 10–40 KB) aur certificates upload करें।",
+    "Fee online bharen (UR/OBC ₹500; SC/ST/Ex-Servicemen/PwBD/Women/Minorities/EBC ₹250) aur form 30 November 2026 (raat 11:59) se pehle final submit karke printout le len — submit ke baad koi change nahi hoga।"
+   ],
+   "tagline": "54 sportsperson posts — Group C Level 4/5 (5), Level 2/3 (16) and Group D Level 1 (33) — apply online 31 October–30 November 2026; selection by sports trials and certificate verification."
+  },
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "hi": {
+   "checklist": [
+    "हाल की रंगीन photograph 3.5 cm × 3.5 cm (JPG, 70 KB तक)",
+    "सफेद कागज़ पर signature (JPG, 10–40 KB)",
+    "सफेद कागज़ पर बाएं अंगूठे का निशान (JPG, 10–40 KB)",
+    "Matric certificate — form में नाम, पिता का नाम और जन्म-तिथि इसी से मेल खाने चाहिए",
+    "लागू level का शैक्षणिक प्रमाण-पत्र (degree / 12th / ITI / NAC)",
+    "खेल उपलब्धि प्रमाण-पत्र (01.04.2024 या उसके बाद के)",
+    "Fee रियायत लेनी हो तो community / EBC / minority certificate और annexures"
+   ],
+   "documents": [
+    "Matriculation (10th) certificate — जन्म-तिथि का प्रमाण",
+    "अपने level का शैक्षणिक योग्यता प्रमाण-पत्र (degree / 12th / ITI / NAC)",
+    "खेल उपलब्धि प्रमाण-पत्र (01.04.2024 या उसके बाद के)",
+    "Community certificate (SC/ST/OBC), अगर लागू हो — OBC Central Government format में Non-Creamy Layer सहित",
+    "Photo, signature और बाएं अंगूठे के निशान की scans"
+   ],
+   "donts": [
+    "एक से अधिक application न भरें — multiple applications invalid होती हैं।",
+    "Cash, cheque, money order या demand draft से fee न भरें — सिर्फ online payment मान्य है।",
+    "Capital या disjointed letters में sign न करें, और कोई column खाली न छोड़ें — ऐसे form reject होते हैं।",
+    "30 नवंबर का इंतज़ार न करें — final submission के बाद किसी तरह का change नहीं होता।"
+   ],
+   "dos": [
+    "Fee भरने से पहले notice में अपने level और discipline के sports norms ज़रूर देखें — achievement bar ही eligibility तय करता है।",
+    "सिर्फ RRC SER website के link से apply करें (rrcser.co.in > Online/E-Application for Sports Quota (OA)/2026-27)।",
+    "Matric certificate की details हूबहू रखें — नाम, पिता का नाम, community और जन्म-तिथि उसी से मेल खाने चाहिए।",
+    "Trial वाले दिन जन्म-तिथि, शैक्षणिक और खेल प्रमाण-पत्रों के originals और photo ID साथ ले जाएं।"
+   ],
+   "eligibility": [
+    "खेल योग्यता: अपने level के लिए निर्धारित न्यूनतम खेल उपलब्धि, जो 1 अप्रैल 2024 या उसके बाद Ministry of Youth Affairs and Sports से मान्यता-प्राप्त federation की championship में मिली हो (Level 4/5: Olympics (Senior) में भारत का प्रतिनिधित्व, या World Cup / World Championships / Asian Games / Commonwealth Games या अन्य सूचीबद्ध events में कम से कम तीसरा स्थान; Level 2/3 और Level 1 के norms notice में game-wise दिए हैं)।",
+    "शिक्षा (application की तिथि को धारण की हुई हो; appearing या result-awaited उम्मीदवार eligible नहीं): Level 4/5 — university degree या समकक्ष; Level 2/3 — 12th pass, या Matriculation + Course Completed Act Apprenticeship, या 10th pass + ITI / समकक्ष / NCVT का NAC; Level 1 — 10th pass या ITI या समकक्ष, या NCVT का NAC।",
+    "आयु: 1 जनवरी 2027 को 18 से 25 वर्ष (जन्म-तिथि 02.01.2002 से 01.01.2009 के बीच)। किसी category को कोई आयु-छूट नहीं।",
+    "सिर्फ एक application allowed है। SC/ST/OBC/EWS के लिए कोई post आरक्षित नहीं — चयन हर sports discipline के भीतर merit पर होगा।",
+    "Apply करने से पहले rrcser.co.in पर Employment Notice No. SER/Pers/Sports Quota/OA/2026-27 पूरा पढ़ें।"
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 54 posts — Group C Level 4/5 me 5, Group C Level 2/3 me 16 aur Group D Level 1 me 33। Koi post SC/ST/OBC/EWS ke liye reserved nahi hai; selection har sports discipline ke andar merit par hota hai।",
+     "q": "RRC SER Sports Quota Recruitment 2026-27 me kitni vacancies hain?"
+    },
+    {
+     "a": "Online form 31 October se 30 November 2026 (raat 11:59) tak rrcser.co.in ke link se bhara jayega। Fee: UR/OBC ₹500 (trial me hazir hone par ₹400 wapas), SC/ST/Ex-Servicemen/PwBD/Women/Minorities/EBC ₹250 (trial me hazir hone par poora wapas)। Sirf online payment chalega।",
+     "q": "RRC SER Sports Quota ki last date aur fee kya hai?"
+    },
+    {
+     "a": "Umra 1 January 2027 ko 18–25 saal (koi relaxation nahi)। Level 4/5 ke liye degree, Level 2/3 ke liye 12th pass ya 10th + ITI/Act Apprenticeship/NAC, Level 1 ke liye 10th pass ya ITI/NAC — aur apne level ki prescribed sports achievement, jo 1 April 2024 ya uske baad ki ho।",
+     "q": "SER Sports Quota posts ke liye kaun apply kar sakta hai?"
+    },
+    {
+     "a": "Har discipline ke liye 100 number ki merit: sports achievement 50, sports trial (skill, fitness, coach observation) 40 aur education 10। Qualifying marks: Level 4/5 — 70, Level 2/3 — 65, Level 1 — 60। Uske baad certificate verification aur medical test hota hai। Trial ki dates rrcser.co.in par aayengi।",
+     "q": "RRC SER Sports Quota me selection kaise hota hai?"
+    }
+   ],
+   "fees": [
+    "UR/OBC ₹500 — trial में वास्तव में hazir होने पर ₹400 वापस (bank charges कटकर)।",
+    "SC/ST/Ex-Servicemen/PwBD/Women/Minorities/EBC ₹250 — trial में hazir होने पर पूरे ₹250 वापस।",
+    "Fee सिर्फ online भरें (Internet Banking / Debit Card / Credit Card)। Cash, cheque, money order या demand draft मान्य नहीं है।"
+   ],
+   "fees_short": "₹500",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "1 April 2024 se pehle ki sports achievement par apply karna (wo count nahi hoti)",
+    "Ek se zyada application bharna (saari invalid ho jayengi)",
+    "Matric certificate se alag naam/date of birth bharna",
+    "Final submit ke baad correction ki ummeed rakhna (koi change nahi hota)"
+   ],
+   "name": "RRC दक्षिण पूर्व रेलवे स्पोर्ट्स कोटा भर्ती 2026-27",
+   "qual": "Level 4/5: university degree या समकक्ष। Level 2/3: 12th pass, या Matriculation + Course Completed Act Apprenticeship, या 10th pass + ITI / समकक्ष / NCVT का NAC। Level 1: 10th pass या ITI या समकक्ष, या NCVT का NAC। साथ में अपने level की निर्धारित खेल उपलब्धि, जो मान्यता-प्राप्त federation की championship में 01.04.2024 या उसके बाद मिली हो।",
+   "specs": [
+    "दक्षिण पूर्व रेलवे की units में Sports Quota (Open Advertisement) 2026-27 के तहत 54 पद: Group C Level 4/5 — 5 पद, Group C Level 2/3 — 16 पद, Group D Level 1 — 33 पद। Employment Notice No. SER/Pers/Sports Quota/OA/2026-27 दिनांक 26.10.2026।",
+    "Disciplines — Level 4/5: Athletics (Men), Chess (Men), Hockey (Women), Table Tennis (Women)। Level 2/3: Athletics (Men), Archery (Men और Women), Body Building (Men), Bridge (Men), Cycling (Men), Gymnastics (Women), Hockey (Men और Women), Rifle Shooting (Women)। Level 1: Ball Badminton (Men), Cricket (Men), Football (Men), Golf (Men), Kabaddi (Men और Women), Kho Kho (Men), Volleyball (Men और Women), Water Polo (Men), Weight Lifting (Men)। Vacancies notice में discipline-wise और position-wise तय हैं — apply करने से पहले अपना game देखें।",
+    "Pay: PB-1 ₹5,200–20,200 + Grade Pay ₹2,800/₹2,400 (Level 5/4), ₹2,000/₹1,900 (Level 3/2) और ₹1,800 (Level 1) — 7th CPC Pay Levels 1 से 5।",
+    "चयन: हर discipline के लिए 100 अंकों की merit list — मान्यता-प्राप्त खेल उपलब्धि 50 अंक, sports trial (game skill, physical fitness और coach का observation) 40 अंक, शैक्षणिक योग्यता 10 अंक। न्यूनतम qualifying marks: Level 4/5 — 70, Level 2/3 — 65, Level 1 — 60; trial में 40 में से 25 से कम अंक qualifying नहीं। इसके बाद certificate verification और medical examination।",
+    "खेल उपलब्धियाँ सिर्फ तभी गिनी जाएंगी जब वे 01.04.2024 या उसके बाद की हों। Volleyball Federation of India या उसकी affiliated units के 28.10.2025 तक और 21.04.2026 के बाद के events के certificates नहीं गिने जाएंगे (29.10.2025 से 21.04.2026 के National Championship certificates मान्य हैं); Indian Body Builders Federation के events के Body Building results नहीं गिने जाएंगे।",
+    "Trial की dates और venues सिर्फ rrcser.co.in पर घोषित होंगे। SC/ST उम्मीदवारों को trial में आने के लिए free second-class rail travel मिलता है। चयनित उम्मीदवारों को Railways में 5 साल सेवा देनी होगी (service bond)।",
+    "ऊपर के सभी तथ्य दक्षिण पूर्व रेलवे के Employment Notice No. SER/Pers/Sports Quota/OA/2026-27 (rrcser.co.in) से लिए गए हैं।"
+   ],
+   "steps": [
+    "rrcser.co.in par Employment Notice No. SER/Pers/Sports Quota/OA/2026-27 पूरा पढ़ें — apne game ke sports norms aur discipline-wise vacancy pehle check करें।",
+    "rrcser.co.in par 'Online/E-Application for Sports Quota (OA) / 2026-27' link खोलें — iroams.com par RRC SER Sports Quota 2026 ka registration page khulega।",
+    "'New Registration' par naam, pita ka naam, janm tithi, community, email aur mobile bharen aur registration number/password note kar len।",
+    "Login karke form bharen, apna discipline/position chunein, photo (3.5 cm × 3.5 cm, JPG, 70 KB tak), signature aur left thumb impression (JPG, 10–40 KB) aur certificates upload करें।",
+    "Fee online bharen (UR/OBC ₹500; SC/ST/Ex-Servicemen/PwBD/Women/Minorities/EBC ₹250) aur form 30 November 2026 (raat 11:59) se pehle final submit karke printout le len — submit ke baad koi change nahi hoga।"
+   ],
+   "tagline": "54 खिलाड़ी पद — ग्रुप C लेवल 4/5 (5), लेवल 2/3 (16) और ग्रुप D लेवल 1 (33) — ऑनलाइन आवेदन 31 अक्टूबर–30 नवंबर 2026; चयन स्पोर्ट्स ट्रायल और प्रमाण-पत्र सत्यापन से।"
+  },
+  "links": {
+   "apply": "https://iroams.com/rrc_ser_sports2026/register1.php",
+   "notice": "https://www.rrcser.co.in/notification.html",
+   "site": "https://www.rrcser.co.in"
+  },
+  "photo_kind": "upload",
+  "portal": "iroams.com",
+  "posts": 54,
+  "slug": "rrc-ser-sports-quota-2026"
  }
 ]

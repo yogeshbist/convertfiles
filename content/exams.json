@@ -2066,7 +2066,8 @@
   "photo_kind": "upload",
   "portal": "rrcjaipur.in",
   "posts": 2008,
-  "slug": "nwr-railway-apprentice"
+  "slug": "nwr-railway-apprentice",
+  "stage": "result-awaited"
  },
  {
   "advt": "Notifications ED/KEA/14–17/2026",
@@ -5133,12 +5134,12 @@
   "board_en": "Jharkhand Rural Health Mission Society (JRHMS)",
   "board_hi": "झारखंड ग्रामीण स्वास्थ्य मिशन सोसाइटी (JRHMS)",
   "dates": {
-   "apply_end": "2026-11-22",
+   "apply_end": "2026-12-15",
    "apply_start": "2026-10-31",
    "correction_end": null,
    "correction_start": null,
    "exam": null,
-   "fee_end": "2026-11-22"
+   "fee_end": "2026-12-15"
   },
   "en": {
    "checklist": [
@@ -5167,7 +5168,7 @@
    "dos": [
     "Check the integrated CPCH condition first — only the 2016–2020 batches with the integrated curriculum in their B.Sc Nursing are covered.",
     "Keep your nursing council registration ready and valid.",
-    "Apply well before 22 November 2026 (11:59 PM) — no correction request is entertained afterwards.",
+    "Apply well before 15 December 2026 (11:59 PM) — no correction request is entertained afterwards.",
     "Fill category details exactly as per your certificates; the posts are backlog vacancies by category.",
     "Save the submitted application print for document verification."
    ],
@@ -5212,7 +5213,7 @@
    "mistakes": [
     "Applying without the integrated CPCH curriculum in the nursing degree — the core eligibility of this advt.",
     "Treating a contractual CHO engagement as a regular government post.",
-    "Missing the deadline because the window opened on 31 October and closes on 22 November 2026.",
+    "Missing the deadline because the window opened on 31 October and closes on 15 December 2026.",
     "Entering a category different from the caste certificate — these are category-wise backlog posts."
    ],
    "name": "JRHMS Community Health Officer (CHO)",
@@ -5227,9 +5228,9 @@
     "Register on recruitment.jharkhand.gov.in and open the CHO application.",
     "Fill your nursing qualification, CPCH and registration details carefully.",
     "Upload photo, signature and certificates.",
-    "Submit before 22 November 2026, 11:59 PM and save the application print for document verification."
+    "Submit before 15 December 2026, 11:59 PM and save the application print for document verification."
    ],
-   "tagline": "1,038 Community Health Officer backlog posts for B.Sc Nursing candidates — apply by 22 November 2026. These are contractual posts."
+   "tagline": "1,038 Community Health Officer backlog posts for B.Sc Nursing candidates — apply by 15 December 2026. These are contractual posts."
   },
   "guide": {
    "en": null,
@@ -5262,7 +5263,7 @@
    "dos": [
     "Sabse pehle integrated CPCH shart dekho — sirf 2016–2020 ke ve batch jinke B.Sc Nursing me integrated curriculum tha, isme aate hain.",
     "Apna nursing council registration ready aur valid rakho.",
-    "22 November 2026 (raat 11:59) se achhi pehle apply karo — baad me koi correction request sweekar nahi hoti.",
+    "15 December 2026 (raat 11:59) se achhi pehle apply karo — baad me koi correction request sweekar nahi hoti.",
     "Varg ke vivaran apne certificates ke hisaab se hi bharo; ye varg ke hisaab se backlog pad hain.",
     "Document verification ke liye submitted application ka print sambhalo."
    ],
@@ -5307,7 +5308,7 @@
    "mistakes": [
     "Nursing degree me integrated CPCH curriculum ke bina apply karna — is vigyapan ki mukhya yogyata hi yahi hai.",
     "Sanvida CHO niyukti ko regular sarkari pad samajhna.",
-    "Samay-seema chook jana, kyunki window 31 October ko khuli thi aur 22 November 2026 ko band hoti hai.",
+    "Samay-seema chook jana, kyunki window 31 October ko khuli thi aur 15 December 2026 ko band hoti hai.",
     "Jaati praman patra se alag varg bharna — ye varg ke hisaab se backlog pad hain."
    ],
    "name": "JRHMS Community Health Officer (CHO)",
@@ -5322,9 +5323,9 @@
     "recruitment.jharkhand.gov.in par register karo aur CHO application kholo.",
     "Apni nursing yogyata, CPCH aur registration ke vivaran dhyaan se bharo.",
     "Photo, signature aur certificates upload karo.",
-    "22 November 2026, raat 11:59 se pehle submit karo aur document verification ke liye application print sambhalo."
+    "15 December 2026, raat 11:59 se pehle submit karo aur document verification ke liye application print sambhalo."
    ],
-   "tagline": "B.Sc Nursing ummeedwaron ke liye 1,038 Community Health Officer backlog pad — 22 November 2026 tak apply karo. Ye sanvida pad hain."
+   "tagline": "B.Sc Nursing ummeedwaron ke liye 1,038 Community Health Officer backlog pad — 15 December 2026 tak apply karo. Ye sanvida pad hain."
   },
   "links": {
    "apply": "https://recruitment.jharkhand.gov.in/",
@@ -5997,12 +5998,12 @@
   "board_en": "Andhra Pradesh Public Service Commission (APPSC)",
   "board_hi": "आंध्र प्रदेश लोक सेवा आयोग (APPSC)",
   "dates": {
-   "apply_end": "2026-11-22",
+   "apply_end": "2026-12-07",
    "apply_start": "2026-11-02",
    "correction_end": null,
    "correction_start": null,
    "exam": null,
-   "fee_end": "2026-11-22"
+   "fee_end": "2026-12-07"
   },
   "en": {
    "checklist": [
@@ -6024,7 +6025,7 @@
    "donts": [
     "Do not apply with a result-awaited degree — the qualification must be held on 2 November 2026.",
     "Do not choose a branch different from your engineering degree.",
-    "Do not wait for the last day; OTPR plus application plus fee all have to finish by 22 November.",
+    "Do not wait for the last day; OTPR plus application plus fee all have to finish by 7 December.",
     "Do not ignore the −1/3 negative marking while preparing — it is printed in the notification.",
     "Do not create a second OTPR profile; one profile is used for all APPSC applications."
    ],
@@ -6032,7 +6033,7 @@
     "Complete OTPR on psc.ap.gov.in before the application — the application uses the OTPR profile.",
     "Apply for the department and branch your degree actually matches (Civil / Mechanical / Electrical).",
     "Note some counters wrongly print the age limit as 42 — the detailed notification's limit is 44 years as on 1 July 2026.",
-    "Pay the fee (₹370 or ₹250) online by 22 November 2026.",
+    "Pay the fee (₹370 or ₹250) online by 7 December 2026.",
     "Keep the degree certificate dated on or before 2 November 2026 ready."
    ],
    "eligibility": [
@@ -6093,9 +6094,9 @@
     "Read Notification 27/2026 and open the AEE application for your department and branch.",
     "Fill the application from your OTPR profile and upload photo, signature and documents.",
     "Pay the fee online (₹370, or ₹250 for the exempt categories).",
-    "Submit before 22 November 2026, 11:59 PM and save the application copy."
+    "Submit before 7 December 2026, 11:59 PM and save the application copy."
    ],
-   "tagline": "503 Assistant Executive Engineer posts (Civil/Mechanical/Electrical) across 8 departments — last date 22 November 2026."
+   "tagline": "503 Assistant Executive Engineer posts (Civil/Mechanical/Electrical) across 8 departments — last date 7 December 2026."
   },
   "guide": {
    "en": null,
@@ -6121,7 +6122,7 @@
    "donts": [
     "Result-awaited degree ke saath apply mat karo — yogyata 2 November 2026 ko prapt honi chahiye.",
     "Apni engineering degree se alag shakha mat chuno.",
-    "Aakhiri din ka intezaar mat karo; OTPR, application aur fee teeno 22 November tak poore hone chahiye.",
+    "Aakhiri din ka intezaar mat karo; OTPR, application aur fee teeno 7 December tak poore hone chahiye.",
     "Taiyaari me −1/3 negative marking ko nazarandaaz mat karo — ye notification me chhapa hai.",
     "Dusra OTPR profile mat banao; saari APPSC applications ke liye ek hi profile chalta hai."
    ],
@@ -6129,7 +6130,7 @@
     "Application se pehle psc.ap.gov.in par OTPR poora karo — application OTPR profile se hi banti hai.",
     "Usi vibhag aur shakha ke liye apply karo jisse tumhari degree match karti hai (Civil / Mechanical / Electrical).",
     "Dhyan do, kuch counters aayu seema galat 42 batate hain — detailed notification ki seema 1 July 2026 ko 44 saal hai.",
-    "Fee (₹370 ya ₹250) 22 November 2026 tak online do.",
+    "Fee (₹370 ya ₹250) 7 December 2026 tak online do.",
     "Degree certificate 2 November 2026 ko ya usse pehle ka ready rakho."
    ],
    "eligibility": [
@@ -6190,9 +6191,9 @@
     "Notification 27/2026 padho aur apne vibhag aur shakha ke liye AEE application kholo.",
     "Apne OTPR profile se application bharo aur photo, signature aur documents upload karo.",
     "Fee online do (₹370, ya chhoot wale vargon ke liye ₹250).",
-    "22 November 2026, raat 11:59 se pehle submit karo aur application copy sambhalo."
+    "7 December 2026, raat 11:59 se pehle submit karo aur application copy sambhalo."
    ],
-   "tagline": "8 vibhagon me 503 Assistant Executive Engineer pad (Civil/Mechanical/Electrical) — antim tithi 22 November 2026."
+   "tagline": "8 vibhagon me 503 Assistant Executive Engineer pad (Civil/Mechanical/Electrical) — antim tithi 7 December 2026."
   },
   "links": {
    "apply": "https://portal-psc.ap.gov.in/LoginApplication",
@@ -8454,12 +8455,12 @@
   "board_en": "Atomic Energy Education Society (AEES), Department of Atomic Energy",
   "board_hi": "Atomic Energy Education Society (AEES), Department of Atomic Energy",
   "dates": {
-   "apply_end": "2026-11-22",
+   "apply_end": "2026-11-29",
    "apply_start": "2026-11-02",
    "correction_end": null,
    "correction_start": null,
    "exam": null,
-   "fee_end": "2026-11-22"
+   "fee_end": "2026-11-29"
   },
   "en": {
    "checklist": [
@@ -8488,14 +8489,14 @@
     "Do not apply for PRT/TGT without a valid CTET certificate (except CS, Art and P&HE TGT).",
     "Do not scan documents with a mobile phone camera — the notice says to use a proper scanner.",
     "Do not send the printout of the confirmation page to AEES — keep it for document verification.",
-    "Do not wait for the last day — the fee and the form both close on 22 November 2026, 11:50 PM."
+    "Do not wait for the last day — the fee and the form both close on 29 November 2026, 11:50 PM."
    ],
    "dos": [
     "Apply for only one subject within PGTs and only one subject within TGTs — but you may apply for different posts separately, paying the fee for each.",
     "Check that your CTET certificate is valid and was issued on or before 22 November 2026 (for PRT and TGT).",
     "Keep your Police Verification Certificate ready — it must not be older than 6 months at the skill test/interview.",
     "Read the post-wise qualification in the official notice before applying — Principal and Vice-Principal need years of service, not just degrees.",
-    "Submit before 22 November 2026, 11:50 PM and save/print the confirmation page — the printout is needed at document verification."
+    "Submit before 29 November 2026, 11:50 PM and save/print the confirmation page — the printout is needed at document verification."
    ],
    "eligibility": [
     "Posts: 254 (tentative) — Principal 4, Vice-Principal 1, PGT 27, TGT 102, Librarian 13, Primary Teacher 89, Primary Teacher (Music) 10, Balvatika Teacher 8. Vacancies are tentative and may increase or decrease.",
@@ -8564,10 +8565,10 @@
     "Choose your post (and one subject, for PGT/TGT) and register with a valid email ID and mobile number.",
     "Fill the form and upload your recent colour photograph, signature and documents in the format and size the portal asks for.",
     "Pay the fee online — ₹1,000 (₹250 for Women/SC/ST/PwBD/ESM, the processing fee only) — separately for each post.",
-    "Submit before 22 November 2026, 11:50 PM and save/print the confirmation page.",
+    "Submit before 29 November 2026, 11:50 PM and save/print the confirmation page.",
     "Prepare for the CBT (no negative marking) and keep your Police Verification Certificate ready for the skill test/interview."
    ],
-   "tagline": "254 teaching posts — Principal, Vice-Principal, PGT, TGT, Librarian, PRT and Balvatika — in Atomic Energy Education Society schools — last date 22 November 2026."
+   "tagline": "254 teaching posts — Principal, Vice-Principal, PGT, TGT, Librarian, PRT and Balvatika — in Atomic Energy Education Society schools — last date 29 November 2026."
   },
   "guide": {
    "en": null,
@@ -8600,14 +8601,14 @@
     "Valid CTET certificate ke bina PRT/TGT ke liye apply mat karo (TGT CS, Art aur P&HE ko chhodkar).",
     "Documents mobile phone camera se scan mat karo — vigyapan me sahi scanner use karne ko kaha gaya hai.",
     "Confirmation page ka printout AEES ko mat bhejo — document verification ke liye sambhal kar rakho.",
-    "Aakhri din ka intezaar mat karo — fee aur form dono 22 November 2026 raat 11:50 par band hote hain."
+    "Aakhri din ka intezaar mat karo — fee aur form dono 29 November 2026 raat 11:50 par band hote hain."
    ],
    "dos": [
     "PGTs me sirf ek subject aur TGTs me sirf ek subject ke liye apply karo — lekin alag-alag poston ke liye alag se apply kar sakte ho, har ek ki fee dekar.",
     "Check karo ki tumhara CTET certificate valid hai aur 22 November 2026 ko ya usse pehle jari hua hai (PRT aur TGT ke liye).",
     "Police Verification Certificate ready rakho — skill test/interview par ye 6 mahine se purana nahi hona chahiye.",
     "Apply karne se pehle official notice me post-wise yogyata padho — Principal aur Vice-Principal ke liye sirf degree nahi, saalon ki seva bhi chahiye.",
-    "22 November 2026 raat 11:50 se pehle submit karo aur confirmation page save/print karo — printout document verification me chahiye."
+    "29 November 2026 raat 11:50 se pehle submit karo aur confirmation page save/print karo — printout document verification me chahiye."
    ],
    "eligibility": [
     "Pad: 254 (tentative) — Principal 4, Vice-Principal 1, PGT 27, TGT 102, Librarian 13, Primary Teacher 89, Primary Teacher (Music) 10, Balvatika Teacher 8. Vacancies tentative hain, badh ya ghat sakti hain.",
@@ -8676,10 +8677,10 @@
     "Apna post chuno (PGT/TGT ke liye ek subject) aur valid email ID aur mobile number se register karo.",
     "Form bharo aur haal ki colour photo, signature aur documents portal mange format aur size me upload karo.",
     "Fee online bharo — ₹1,000 (Mahila/SC/ST/PwBD/ESM ke liye sirf ₹250 processing fee) — har post ke liye alag.",
-    "22 November 2026 raat 11:50 se pehle submit karo aur confirmation page save/print karo.",
+    "29 November 2026 raat 11:50 se pehle submit karo aur confirmation page save/print karo.",
     "CBT ki taiyari karo (koi negative marking nahi) aur skill test/interview ke liye Police Verification Certificate ready rakho."
    ],
-   "tagline": "Atomic Energy Education Society ke schools me 254 teaching pad — Principal, Vice-Principal, PGT, TGT, Librarian, PRT aur Balvatika — antim tithi 22 November 2026."
+   "tagline": "Atomic Energy Education Society ke schools me 254 teaching pad — Principal, Vice-Principal, PGT, TGT, Librarian, PRT aur Balvatika — antim tithi 29 November 2026."
   },
   "links": {
    "apply": "https://aees.onlineregistrationforms.com",
@@ -17332,7 +17333,8 @@
   "photo_kind": "upload",
   "portal": "hartron.org.in",
   "posts": 110,
-  "slug": "hartron-deo-panel"
+  "slug": "hartron-deo-panel",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt 05/2026",

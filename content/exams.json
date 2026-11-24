@@ -6635,7 +6635,7 @@
   "portal": "powergrid.in (Careers)",
   "posts": 319,
   "slug": "powergrid-engineer-trainee",
-  "stage": "open"
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt IIE-103/2026",
@@ -10837,7 +10837,8 @@
   "photo_kind": "upload",
   "portal": "apssb.nic.in",
   "posts": 93,
-  "slug": "apssb-csle-mts"
+  "slug": "apssb-csle-mts",
+  "stage": "result-awaited"
  },
  {
   "advt": "Notification No. 37/2026 (detailed, 10 Nov 2026)",
@@ -16040,7 +16041,8 @@
   "photo_kind": "upload",
   "portal": "ampri.res.in",
   "posts": 14,
-  "slug": "csir-ampri-recruitment"
+  "slug": "csir-ampri-recruitment",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt No. A-1/E-2/DR/LSS/2026-27",
@@ -23691,7 +23693,8 @@
   "photo_kind": "upload",
   "portal": "sbi.bank.in",
   "posts": 10,
-  "slug": "sbi-sco-product-research-risk"
+  "slug": "sbi-sco-product-research-risk",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advertisement No. 17/26",
@@ -25236,7 +25239,8 @@
   "photo_kind": "upload",
   "portal": "ircon.org",
   "posts": 37,
-  "slug": "ircon-manager-electrical-2026"
+  "slug": "ircon-manager-electrical-2026",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advertisement No. 05/2026",
@@ -27891,8 +27895,8 @@
   "dates": {
    "apply_end": "2026-11-21",
    "apply_start": "2026-10-31",
-   "correction_end": null,
-   "correction_start": null,
+   "correction_end": "2026-11-24",
+   "correction_start": "2026-11-23",
    "exam": null,
    "exam_hi": null,
    "fee_end": "2026-11-21"

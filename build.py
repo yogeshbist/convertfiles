@@ -116,11 +116,27 @@ def site_head():
     bsv = SITE.get('bing_site_verification', '').strip()
     if bsv:
         lines.insert(0, '<meta name="msvalidate.01" content="%s">' % esc(bsv))
-    if ads:
-        lines.append('<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=%s" crossorigin="anonymous"></script>' % ads)
+    # Third-party scripts (AdSense + GA4) load LATE — on the first user
+    # interaction, or 3s after window load, or an 8s fallback, whichever
+    # comes first (PageSpeed fix, Yogesh 25 Nov 2026: Google's own scripts
+    # were swinging the mobile lab score 68-100 run to run while the page
+    # itself is light; field/CrUX data already passes). The gtag stub stays
+    # inline so the config call queues and fires the moment gtag.js arrives;
+    # ad slots queue on window.adsbygoogle the same way (js/app.js pushes
+    # into the array) and fill when the library lands.
     if ga:
-        lines.append('<script async src="https://www.googletagmanager.com/gtag/js?id=%s"></script>' % ga)
         lines.append("<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','%s',{anonymize_ip:true});</script>" % ga)
+    if ads or ga:
+        inject = []
+        if ads:
+            inject.append("s('https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=%s',1);" % ads)
+        if ga:
+            inject.append("s('https://www.googletagmanager.com/gtag/js?id=%s');" % ga)
+        lines.append('<script>(function(){var d=false;'
+                     'function s(u,x){var e=document.createElement("script");e.async=true;e.src=u;if(x)e.crossOrigin="anonymous";document.head.appendChild(e)}'
+                     'function go(){if(d)return;d=true;' + ''.join(inject) + '}'
+                     '["scroll","click","keydown","touchstart","pointerdown","mousemove"].forEach(function(v){window.addEventListener(v,go,{once:true,passive:true})});'
+                     'window.addEventListener("load",function(){setTimeout(go,3000)});setTimeout(go,8000);})();</script>')
     return '\n'.join(lines)
 
 

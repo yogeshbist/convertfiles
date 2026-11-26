@@ -432,7 +432,7 @@
   "portal": "rrbapply.gov.in",
   "posts": 1688,
   "slug": "rrb-ntpc-undergraduate",
-  "stage": "open"
+  "stage": "result-awaited"
  },
  {
   "admit": {
@@ -864,7 +864,8 @@
   "photo_kind": "upload",
   "portal": "apply.upessc.org",
   "posts": 1475,
-  "slug": "up-principal"
+  "slug": "up-principal",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt 09/2026",
@@ -1073,7 +1074,8 @@
   "photo_kind": "upload",
   "portal": "apply.upessc.org",
   "posts": 1172,
-  "slug": "up-headmaster"
+  "slug": "up-headmaster",
+  "stage": "result-awaited"
  },
  {
   "advt": "CEN 08/2026",
@@ -2289,7 +2291,8 @@
   "photo_kind": "upload",
   "portal": "cetonline.karnataka.gov.in",
   "posts": 5431,
-  "slug": "kea-fda-sda"
+  "slug": "kea-fda-sda",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt 14/2026",
@@ -2735,7 +2738,8 @@
   "photo_kind": "upload",
   "portal": "indianbank.bank.in",
   "posts": 1500,
-  "slug": "indian-bank-apprentice"
+  "slug": "indian-bank-apprentice",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt 06/2026",
@@ -7060,7 +7064,8 @@
   "photo_kind": "upload",
   "portal": "NATS / NAPS + apprentice.rites.com",
   "posts": 281,
-  "slug": "rites-apprentice"
+  "slug": "rites-apprentice",
+  "stage": "result-awaited"
  },
  {
   "advt": "RRC/NR/03/2026/Act Apprentice",
@@ -9761,7 +9766,8 @@
   "photo_kind": "upload",
   "portal": "sci.gov.in",
   "posts": 130,
-  "slug": "supreme-court-junior-court-attendant"
+  "slug": "supreme-court-junior-court-attendant",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt dated 31 October 2026",
@@ -10635,7 +10641,8 @@
   "photo_kind": "upload",
   "portal": "sbi.bank.in",
   "posts": 60,
-  "slug": "sbi-sco-security-officer"
+  "slug": "sbi-sco-security-officer",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt 07/2026",
@@ -19288,7 +19295,8 @@
   "photo_kind": "upload",
   "portal": "sssc.uk.gov.in",
   "posts": 78,
-  "slug": "uksssc-technician-grade-2"
+  "slug": "uksssc-technician-grade-2",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advertisement Notification No. 09 of 2026",
@@ -24128,7 +24136,8 @@
   "photo_kind": "upload",
   "portal": "bhunt.samarth.edu.in",
   "posts": 11,
-  "slug": "bhu-non-teaching-2026"
+  "slug": "bhu-non-teaching-2026",
+  "stage": "result-awaited"
  },
  {
   "advt": "Notification No. 118/2026-RC",
@@ -24568,7 +24577,8 @@
   "photo_kind": "upload",
   "portal": "ohcrecruitment.in",
   "posts": 38,
-  "slug": "orissa-high-court-district-judge-2026"
+  "slug": "orissa-high-court-district-judge-2026",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advertisement No. 02/2026",
@@ -29653,7 +29663,8 @@
   "photo_kind": "upload",
   "portal": "sbi.bank.in",
   "posts": 18,
-  "slug": "sbi-sco-engineer-fire-2026"
+  "slug": "sbi-sco-engineer-fire-2026",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt No. 01/Asst. Prof./2026 & 02/Asst. Prof./2026",
@@ -36911,7 +36922,8 @@
   "photo_kind": "upload",
   "portal": "wapcos.co.in",
   "posts": 29,
-  "slug": "wapcos-experts-power-td-2026"
+  "slug": "wapcos-experts-power-td-2026",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt. No. GMRCL/HR/RECT/RS/Nov-2026/31 dated 21/11/2026",
@@ -38014,7 +38026,8 @@
   "photo_kind": "upload",
   "portal": "aai.aero",
   "posts": 18,
-  "slug": "aai-consultants-rhq-sr-2026"
+  "slug": "aai-consultants-rhq-sr-2026",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt. No. ICMR/Rectt/Sc-D/02/2026-RPCell",

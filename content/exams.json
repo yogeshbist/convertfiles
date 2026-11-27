@@ -447,13 +447,13 @@
   "board_en": "UP Education Service Selection Commission (UPESSC)",
   "board_hi": "उत्तर प्रदेश शिक्षा सेवा चयन आयोग (UPESSC)",
   "dates": {
-   "apply_end": "2026-11-23",
+   "apply_end": "2026-11-28",
    "apply_start": "2026-10-24",
-   "correction_end": "2026-11-26",
+   "correction_end": "2026-11-30",
    "correction_start": null,
    "exam": "23-24 December 2026",
    "exam_hi": "23-24 दिसंबर 2026",
-   "fee_end": "2026-11-23"
+   "fee_end": "2026-11-28"
   },
   "en": {
    "checklist": [
@@ -653,7 +653,8 @@
   "photo_kind": "upload",
   "portal": "apply.upessc.org",
   "posts": 17735,
-  "slug": "up-tgt"
+  "slug": "up-tgt",
+  "stage": "open"
  },
  {
   "advt": "Advt 08/2026",
@@ -5131,7 +5132,8 @@
   "photo_kind": "live",
   "portal": "jkb.bank.in (Careers)",
   "posts": 1397,
-  "slug": "jk-bank-po-banking-associate"
+  "slug": "jk-bank-po-banking-associate",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt 05/2026/JRHMS-CHO-Integrated",
@@ -7540,7 +7542,8 @@
   "photo_kind": "upload",
   "portal": "cspc.co.in",
   "posts": 1501,
-  "slug": "cg-state-power-companies"
+  "slug": "cg-state-power-companies",
+  "stage": "result-awaited"
  },
  {
   "advt": "BCECEB/Health(SR)/2026(III)/01",
@@ -8229,7 +8232,8 @@
   "photo_kind": "upload",
   "portal": "UMANG + NATS/NAPS",
   "posts": 400,
-  "slug": "isro-sdsc-shar-apprentice"
+  "slug": "isro-sdsc-shar-apprentice",
+  "stage": "result-awaited"
  },
  {
   "advt": "BR/HR/APPR/2026-27/II",
@@ -10188,7 +10192,8 @@
   "photo_kind": "upload",
   "portal": "agrimanipur.mn.gov.in",
   "posts": 138,
-  "slug": "manipur-agriculture-btm-atm"
+  "slug": "manipur-agriculture-btm-atm",
+  "stage": "result-awaited"
  },
  {
   "advt": "PRO/320/2026-27",
@@ -15841,7 +15846,8 @@
   "photo_kind": "upload",
   "portal": "jobapply.in",
   "posts": 23,
-  "slug": "bel-trainee-engineer-kotdwar"
+  "slug": "bel-trainee-engineer-kotdwar",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt No. RECT-02/2026",
@@ -16468,7 +16474,8 @@
   "photo_kind": "upload",
   "portal": "portal-psc.ap.gov.in",
   "posts": 106,
-  "slug": "appsc-amvi-and-others"
+  "slug": "appsc-amvi-and-others",
+  "stage": "result-awaited"
  },
  {
   "advt": "Memo No. I.12016/A Branch (Rect Cell)/2026/1892",
@@ -21434,7 +21441,8 @@
   "photo_kind": "upload",
   "portal": "psc.wb.gov.in",
   "posts": 247,
-  "slug": "wbpsc-ido-2026"
+  "slug": "wbpsc-ido-2026",
+  "stage": "result-awaited"
  },
  {
   "advt": "Notices ED/KEA/40–41/NeVi/2026",
@@ -21639,7 +21647,8 @@
   "photo_kind": "upload",
   "portal": "cetonline.karnataka.gov.in/kea",
   "posts": 218,
-  "slug": "kea-je-town-planner-2026"
+  "slug": "kea-je-town-planner-2026",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advertisement No. 14 of 2026-27",
@@ -21842,7 +21851,8 @@
   "photo_kind": "upload",
   "portal": "opsc.gov.in",
   "posts": 89,
-  "slug": "opsc-scientific-officer-2026"
+  "slug": "opsc-scientific-officer-2026",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advertisement No. A-5/E-1/2026",
@@ -42978,7 +42988,7 @@
   "dates": {
    "apply_end": "2026-11-28",
    "apply_start": "2026-10-24",
-   "correction_end": null,
+   "correction_end": "2026-11-30",
    "correction_start": null,
    "exam": "23-24 December 2026",
    "exam_hi": "23-24 दिसंबर 2026",
@@ -44068,7 +44078,8 @@
   "photo_kind": "upload",
   "portal": "jkb.bank.in",
   "posts": 1033,
-  "slug": "jk-bank-banking-associate-2026"
+  "slug": "jk-bank-banking-associate-2026",
+  "stage": "result-awaited"
  },
  {
   "advt": "Probationary Officer (no advt. number)",
@@ -44293,7 +44304,8 @@
   "photo_kind": "upload",
   "portal": "jkb.bank.in",
   "posts": 323,
-  "slug": "jk-bank-probationary-officer-2026"
+  "slug": "jk-bank-probationary-officer-2026",
+  "stage": "result-awaited"
  },
  {
   "advt": "District notifications 2026-27 (GO dated 17 Sep 2025)",

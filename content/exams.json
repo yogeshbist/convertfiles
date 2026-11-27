@@ -7305,122 +7305,117 @@
   "slug": "rrc-northern-railway-apprentice"
  },
  {
-  "advt": "Advt 1/2026 & 2/2026",
-  "board_en": "Chhattisgarh State Power Transmission Company Ltd (CSPTCL), for CSPDCL, CSPTCL & CSPGCL",
-  "board_hi": "Chhattisgarh State Power Transmission Company Ltd (CSPTCL) — CSPDCL, CSPTCL aur CSPGCL ke liye",
+  "advt": "No. 01-01/HR/Recruitment/739106 (Advt. 1/2026 & 2/2026)",
+  "board_en": "Chhattisgarh State Power Companies (CSPDCL / CSPTCL / CSPGCL)",
+  "board_hi": "छत्तीसगढ़ राज्य विद्युत कंपनियाँ (CSPDCL / CSPTCL / CSPGCL)",
   "dates": {
-   "apply_end": "2026-11-26",
+   "apply_end": "2026-12-03",
    "apply_start": "2026-11-06",
    "correction_end": null,
    "correction_start": null,
    "exam": null,
-   "fee_end": "2026-11-26"
+   "exam_hi": null,
+   "fee_end": "2026-12-03"
   },
   "en": {
    "checklist": [
-    "10th, 12th, diploma/degree certificates and marksheets (as per your post)",
-    "Chhattisgarh domicile certificate (for Class-III and IV posts)",
-    "Caste certificate (permanent, for SC/ST) and non-creamy layer + income certificate (OBC)",
-    "Recent colour photograph and signature scan",
-    "Fee payment mode ready (debit/credit card, net banking or UPI)",
-    "Company preferences decided (for posts common to all three companies)"
+    "Degree / Diploma / qualification certificate and mark sheets for your post",
+    "Caste / category certificate, if applicable (Chhattisgarh domicile proof for Class III & IV posts)",
+    "Aadhaar card, mobile number and email ID",
+    "Recent passport-size colour photo (JPG, 100-200 KB) and signature (JPG, 80-150 KB)",
+    "Experience certificates, if your post needs experience",
+    "Disability certificate, if applicable"
    ],
    "documents": [
-    "10th marksheet/certificate (date of birth proof)",
-    "12th marksheet/certificate",
-    "Diploma/Degree marksheets and certificates",
-    "Chhattisgarh domicile certificate (Class-III & IV)",
-    "Caste / non-creamy layer / income certificate (where applicable)",
-    "NOC from employer if you are a government/PSU employee",
-    "Registration certificates where the post requires them (Medical Officer, Pharmacist, Nursing, Paramedical)"
+    "Qualification certificate and mark sheets",
+    "Caste / category certificate, if applicable",
+    "Chhattisgarh domicile certificate (Class III & IV posts)",
+    "Aadhaar card",
+    "Recent photo (JPG, 100-200 KB) and signature (JPG, 80-150 KB)",
+    "Experience certificates, if applicable"
    ],
    "donts": [
-    "Do not apply for a Class-III or IV post if you are not a Chhattisgarh domicile candidate — the application will be rejected.",
-    "Do not apply for more than one branch in Assistant Engineer or Junior Engineer — only one branch is allowed.",
-    "Do not register twice for the same post — a duplicate registration can lead to cancellation without notice.",
-    "Do not carry a mobile phone, calculator or watch into the CBT hall — they are prohibited and can get you debarred.",
-    "Do not forget the 4-year service bond and security deposit — read the service conditions before you apply."
+    "Do not miss the extended last date — 3 December 2026 (11:55 PM). The original last date (26 November 2026) has been extended only by the notice dated 25 November 2026.",
+    "Do not apply for Class III & IV posts without Chhattisgarh domicile — those posts are for Chhattisgarh domicile candidates only.",
+    "Do not upload an old photo — it must be a recent passport-size colour photo, not older than 3 weeks, on a light background.",
+    "Do not pay the fee through any other mode — fee is paid online through the SBI payment gateway (Net Banking / Debit / Credit / UPI) only."
    ],
    "dos": [
-    "Check which Class your post is in before paying the fee — the fee is different for the two groups (₹800/₹700/₹600 vs ₹400/₹300/₹200).",
-    "If you are from outside Chhattisgarh, apply only for a Class-II post — Class-III and IV posts are CG-domicile only.",
-    "Give your company preferences (1st, 2nd, 3rd) for posts common to all three companies — no change of company is entertained later.",
-    "Apply before 26 November 2026, 11:55 PM — the form opens at 8 PM on 6 November and there is no correction window in the notice.",
-    "For Data Entry Operator and Stenographer, check the typing/shorthand requirement (5,000/10,000 key depressions per hour, shorthand 100 wpm) before applying."
+    "Read the detailed advertisement (No. 01-01/HR/Recruitment/739106, dated 05 November 2026) fully on the official recruitment page before applying.",
+    "Check the post-wise qualification, age and pay in the advertisement — requirements differ sharply between Class-II and Class-III & IV posts.",
+    "Apply on the verified DigiALM form — it shows the key dates (start 06 November 2026, last date 03 December 2026).",
+    "Keep your photo (100-200 KB) and signature (80-150 KB) ready in JPG/JPEG before starting the form.",
+    "Save the application number and fee receipt after submission."
    ],
    "eligibility": [
-    "Posts: 1,501 in all — 195 Class-II posts (Advt 1/2026) and 1,306 Class-III & IV posts (Advt 2/2026). The notice itself does not print a grand total; 1,501 is the sum of the post-wise figures. The biggest post is Data Entry Operator — 609 seats across the three companies (CSPDCL 450, CSPGCL 95, CSPTCL 64).",
-    "Age as on 1 January 2026: minimum 21 years for Class-II and most Class-III posts, 18 years for Junior Engineer, Lab Technician, Radiographer, Dresser, ECG Technician, Attendant (Plant) and Fire Attendant. Maximum: 40 years for UR male (Chhattisgarh domicile), 45 for UR female and SC/ST/OBC; Fire Officer and Sub Fire Officer 30/35; Fire Attendant 25/30. Candidates from outside Chhattisgarh can apply only for Class-II posts, with a maximum age of 30.",
-    "Domicile: all Class-III and IV posts are only for Chhattisgarh domicile candidates. Class-II posts are open to candidates from outside the state too.",
-    "Education (post-wise): Assistant Engineer — 4-year B.E./B.Tech in the relevant branch; Junior Engineer — 3-year Diploma or engineering degree in the branch; Data Entry Operator — B.E./B.Tech or Master's in CS/IT, or B.Sc (CS/IT)/BCA, or any bachelor's degree plus a listed computer course; Medical Officer — MBBS with Medical Council of India registration; Accounts Officer — CA or CMA; Attendant (Plant) — 10th pass (Second Division) + 2-year ITI in the trade; Fire Attendant — 12th with Chemistry + NCC B/C certificate. Qualifications must be held on the last date of application.",
-    "Selection: online CBT — 2 hours, 100 MCQs (80 professional subject + 20 General Knowledge/English/Hindi/Reasoning or Quantitative Ability), −0.25 per wrong answer, qualifying 40% (UR/OBC) or 30% (SC/ST). Then, by post: interview (10 marks) for Assistant Engineer/Accounts/Medical/Programmer/Shift Chemist, physical fitness test for fire and security posts, typing/shorthand tests for Data Entry Operator and Stenographer, and document verification. CBT centres: Raipur, Bilaspur, Durg-Bhilai, Ambikapur and Jagdalpur.",
-    "Service conditions: after selection you sign a bond to serve the power companies for at least four years, with a security deposit — ₹3 lakh for Assistant Engineer-level posts, ₹2 lakh for Junior Engineer, ₹1 lakh for other Class-III posts, ₹50,000 for Class-IV. The National Pension System (NPS) applies after regularisation.",
-    "The whole recruitment is subject to the final outcome of SLP(C) 19668/2022 in the Supreme Court — category-wise numbers may change on that account."
+    "Indian citizen.",
+    "Qualification is post-wise: B.E./B.Tech for Assistant Engineer, Diploma for Junior Engineer, MBBS for Medical Officer, Graduation with computer/typing for Data Entry Operator and Stenographer, and other post-wise qualifications in the advertisement.",
+    "Age: minimum 18 or 21 years depending on the post; maximum 40 years for UR (Male), 45 years for UR (Female) and SC/ST/OBC (Male/Female); 25 years for Fire Attendant Gr. II (UR Male) and 30 years for Fire Attendant (others). Including all relaxations, the maximum age limit is 45 years. Ex-servicemen as per Chhattisgarh government rules.",
+    "Class III & IV posts are for Chhattisgarh domicile candidates only."
    ],
    "extra_faq": [
     {
-     "a": "1,501 posts in all — 195 Class-II posts (Advt 1/2026) and 1,306 Class-III & IV posts (Advt 2/2026). The notice itself does not print a grand total; 1,501 is the sum of the post-wise figures. The biggest post is Data Entry Operator, with 609 seats across CSPDCL, CSPGCL and CSPTCL.",
-     "q": "How many posts are there in the CG State Power Companies recruitment?"
+     "a": "Kul 1,501 posts — Class-II (Advt. 1/2026) 195 aur Class-III & IV (Advt. 2/2026) 1,306. Bade groups: Data Entry Operator 545 (95 + 450), Junior Engineer (T&D) Electrical 124, Assistant Engineer (T&D) Electrical CSPDCL 62, plus AE, JE, Medical Officer, Accounts Officer, Stenographer, Attendant (Plant) aur anya posts.",
+     "q": "CSPDCL Recruitment 2026 me kitni vacancy hai?"
     },
     {
-     "a": "Only for Class-II posts (Assistant Engineer, Shift Chemist, Programmer, Accounts Officer, Medical Officer, Fire Officer and Security Officer), with a maximum age of 30 years. All Class-III and IV posts are only for Chhattisgarh domicile candidates.",
-     "q": "I am from outside Chhattisgarh — can I apply?"
+     "a": "Online application 06 November 2026 (8 PM) se 03 December 2026 (11:55 PM) tak — last date 25 November 2026 ke extension notice se 26 November se badhakar 03 December ki gayi hai. Fee online SBI gateway se bharni hai.",
+     "q": "CSPDCL Recruitment ki last date kya hai?"
     },
     {
-     "a": "Yes — the CBT has 100 MCQs of 1 mark each in 2 hours, with 0.25 marks deducted for each wrong answer. Qualifying marks are 40% for UR/OBC and 30% for SC/ST.",
-     "q": "Is there negative marking in the CBT?"
+     "a": "Senior posts (AE, Fire Officer, Security Officer, Shift Chemist, Programmer, Accounts Officer aur similar): UR ₹800, OBC ₹700, SC/ST ₹600. Anya posts (Stenographer Gr. III, Data Entry Operator, Assistant Pharmacist, Assistant Staff Nurse aur similar): ₹400 / ₹300 / ₹200. Departmental candidates fee se exempt hain.",
+     "q": "CSPDCL Recruitment ki fee kya hai?"
     },
     {
-     "a": "For AE-level and JE-level posts: ₹800 (UR), ₹700 (OBC), ₹600 (SC/ST). For Stenographer, DEO, Lab Technician, Pharmacist, Nurse, Attendant and similar posts: ₹400 (UR), ₹300 (OBC), ₹200 (SC/ST). Regular employees of the power companies are exempt. The fee is non-refundable.",
-     "q": "What is the application fee?"
+     "a": "Zyadatar posts ke liye Computer Based Test; AE/JE ke liye interview bhi; Fire Officer/Staff ke liye Physical/Skill tests. Photo JPG 100-200 KB (recent, light background), signature JPG 80-150 KB (black ink, white paper).",
+     "q": "CSPDCL Recruitment ka selection process kya hai?"
     }
    ],
    "fees": [
-    "₹800 for UR, ₹700 for OBC, ₹600 for SC/ST — for Assistant Engineer, Fire Officer, Security Officer, Shift Chemist, Programmer, Accounts Officer, Medical Officer, Law Officer, Industrial Relation Officer, Junior Engineer, Sub Fire Officer, Security Inspector and Security Sub Inspector.",
-    "₹400 for UR, ₹300 for OBC, ₹200 for SC/ST — for Stenographer, Lab Technician, Pharmacist, Staff Nurse, Radiographer, Data Entry Operator, Dresser, ECG Technician, Attendant (Plant) and Fire Attendant.",
-    "Regular employees of the three power companies pay no fee.",
-    "The fee is non-refundable and is paid online only (debit/credit card, net banking or UPI) by 26 November 2026, 11:55 PM."
+    "Senior posts (AE, Fire Officer, Security Officer, Shift Chemist, Programmer, Accounts Officer and similar): UR Rs.800, OBC Rs.700, SC/ST Rs.600.",
+    "Other posts (Stenographer Gr. III, Data Entry Operator, Assistant Pharmacist, Assistant Staff Nurse and similar): Rs.400 / Rs.300 / Rs.200 in the same three categories.",
+    "Departmental candidates are exempted from payment of fee (as per the advertisement)."
    ],
-   "fees_short": "₹200–₹800 (post + category)",
+   "fees_short": "₹200–₹800",
    "kit": [
     {
-     "text": "Scan a recent colour photo on a light background; shrink an oversized file here first.",
-     "title": "Keep a passport photo ready",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
      "tool": "compress-image"
     },
     {
-     "text": "Sign on white paper and scan it clearly — a blurred signature can be rejected.",
-     "title": "Clean signature scan",
-     "tool": "compress-image"
-    },
-    {
-     "text": "Merge all documents into one clean PDF, ready for upload.",
-     "title": "Join certificates into one PDF",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
      "tool": "compress-pdf"
     }
    ],
    "mistakes": [
-    "Paying the wrong fee — the fee differs between the two post groups, so check your post's group first.",
-    "Applying for a Class-III/IV post without a Chhattisgarh domicile certificate.",
-    "Applying for two branches in Assistant Engineer or Junior Engineer — only one branch is allowed.",
-    "Registering twice for the same post — it can cancel the application without notice."
+    "Original last date (26 Nov) ko final samajhna — extension se 03 Dec ho gayi hai",
+    "Bina Chhattisgarh domicile ke Class III & IV posts ke liye apply karna",
+    "Purani photo upload karna (3 hafte se purani nahi chalegi)",
+    "Post-wise qualification check kiye bina apply karna"
    ],
-   "name": "CG State Power Companies Recruitment (CSPDCL, CSPTCL, CSPGCL)",
-   "qual": "B.E./B.Tech, Diploma, Degree, ITI, 10+2 (post-wise)",
+   "name": "CSPDCL, CSPTCL & CSPGCL Recruitment 2026",
+   "qual": "Post-wise: B.E./B.Tech, Diploma, MBBS, Graduation — see official advertisement",
    "specs": [
-    "The notice does not print a fixed KB size for the photo and signature — upload them in the format and size the portal asks for on the upload screen.",
-    "Keep a recent colour photograph and a clear signature scan (signed on white paper) ready before you start.",
-    "Upload only clear, readable scans; a blurred photo or signature can get the form rejected."
+    "1,501 posts — Class-II (Advt. 1/2026) 195 and Class-III & IV (Advt. 2/2026) 1,306 — across CSPDCL, CSPTCL and CSPGCL. Detailed advertisement No. 01-01/HR/Recruitment/739106, Raipur, dated 05 November 2026.",
+    "Big groups: Data Entry Operator 545 (95 + 450), Junior Engineer (T&D) Electrical 124, Assistant Engineer (T&D) Electrical (CSPDCL) 62, Assistant Engineer (General) 60 across Mechanical/Electrical/Electronics/CS/IT, Medical Officer 15, Accounts Officer / Assistant Manager (F&A) 15, plus Shift Chemist, Programmer, Fire Officer, Security Officer, Sub Fire Officer, Security Inspector/Sub Inspector, Stenographer, Attendant (Plant), Assistant Dresser, Assistant Pharmacist, Assistant Staff Nurse, Fire Attendant and others.",
+    "Dates: online applications from 06 November 2026 (8:00 PM) to 03 December 2026 (11:55 PM). The last date was extended from 26 November 2026 to 03 December 2026 by the extension notice dated 25 November 2026 (CSPTCL letter No. 01-01/HR-VIII/765183/2026).",
+    "Age: minimum 18 or 21 years depending on the post; maximum UR (Male) 40 years (25 years for Fire Attendant Gr. II), UR (Female) and SC/ST/OBC (Male/Female) 45 years (30 years for Fire Attendant); including all relaxations the maximum age limit is 45 years. Ex-servicemen as per Chhattisgarh government rules.",
+    "Qualification: post-wise — B.E./B.Tech for Assistant Engineer, Diploma for Junior Engineer, MBBS for Medical Officer, Graduation with computer and typing/shorthand for Data Entry Operator and Stenographer (full post-wise tables in the advertisement, pp.6-12). Pay: level-wise matrix (e.g. AE Level-11, JE Level-8).",
+    "Selection: Computer Based Test for most posts; Assistant Engineer / Junior Engineer also have an Interview; Fire Officer / Staff also have Physical / Skill tests; other posts as per the selection table.",
+    "Fee: senior posts UR Rs.800, OBC Rs.700, SC/ST Rs.600; other listed posts Rs.400 / Rs.300 / Rs.200; departmental candidates exempt. Fee is paid online through the SBI payment gateway (Net Banking / Debit / Credit / UPI).",
+    "Photo: recent passport-size colour, light background, not older than 3 weeks, JPG/JPEG, 100 KB to 200 KB. Signature: black ink on white paper, scan signature area only, JPG/JPEG, 80 KB to 150 KB.",
+    "Class III & IV posts are for Chhattisgarh domicile candidates only. All facts above are from the official 25-page advertisement (cspc.co.in); the 1,501 total was verified by summing all 46 vacancy rows in the advertisement."
    ],
    "steps": [
-    "Open cspc.co.in and go to the Recruitment section for Advertisements 1/2026 and 2/2026.",
-    "Read the official notification and confirm your post, branch and category.",
-    "Register (or sign in) on the application portal and choose your post and branch.",
-    "Fill the form, give company preferences where asked, and upload the documents the portal asks for.",
-    "Pay the fee online (₹200–₹800 by post and category; departmental candidates exempt) and submit before 26 November 2026, 11:55 PM.",
-    "Download and keep the confirmation page — the admit card will be sent to your registered email."
+    "cspc.co.in par detailed advertisement (No. 01-01/HR/Recruitment/739106) padhen — last date 03 December 2026 (11:55 PM).",
+    "Apni post ki qualification, age aur pay check karen (Class-II vs Class-III & IV alag hain).",
+    "Photo (JPG, 100-200 KB) aur signature (JPG, 80-150 KB) ready rakhen.",
+    "Verified DigiALM form par register karen aur form bharen.",
+    "Fee SBI gateway se online bhugtan karen aur application number sambhal kar rakhen."
    ],
-   "tagline": "1,501 posts — Assistant Engineer, Junior Engineer, Data Entry Operator and more across Chhattisgarh's three power companies — last date 26 November 2026."
+   "tagline": "1,501 posts across Chhattisgarh State Power Companies — Assistant Engineer, Junior Engineer, Data Entry Operator and more; apply 6 November–3 December 2026 (extended)."
   },
   "guide": {
    "en": null,
@@ -7428,122 +7423,115 @@
   },
   "hi": {
    "checklist": [
-    "10th, 12th, diploma/degree ke certificate aur marksheet (apne post ke anusar)",
-    "Chhattisgarh domicile certificate (Class-III aur IV padon ke liye)",
-    "Caste certificate (SC/ST ke liye permanent) aur non-creamy layer + income certificate (OBC)",
-    "Haal ki colour photo aur signature scan",
-    "Fee payment ka mode ready (debit/credit card, net banking ya UPI)",
-    "Company preference tay (teeno companies me common padon ke liye)"
+    "Apni post ke liye degree / Diploma / qualification certificate aur mark sheets",
+    "Caste / category certificate, agar lagu ho (Class III & IV posts ke liye Chhattisgarh domicile proof)",
+    "Aadhaar card, mobile number aur email ID",
+    "Recent passport-size colour photo (JPG, 100-200 KB) aur signature (JPG, 80-150 KB)",
+    "Experience certificates, agar post me experience chahiye",
+    "Disability certificate, agar lagu ho"
    ],
    "documents": [
-    "10th marksheet/certificate (janm tithi ka praman)",
-    "12th marksheet/certificate",
-    "Diploma/Degree ki marksheet aur certificate",
-    "Chhattisgarh domicile certificate (Class-III aur IV)",
-    "Caste / non-creamy layer / income certificate (jahan lagu ho)",
-    "Sarkari/PSU karmachari hon to NOC",
-    "Registration certificate jahan post ke liye zaroori ho (Medical Officer, Pharmacist, Nursing, Paramedical)"
+    "Qualification certificate aur mark sheets",
+    "Caste / category certificate, agar lagu ho",
+    "Chhattisgarh domicile certificate (Class III & IV posts)",
+    "Aadhaar card",
+    "Recent photo (JPG, 100-200 KB) aur signature (JPG, 80-150 KB)",
+    "Experience certificates, agar lagu ho"
    ],
    "donts": [
-    "Chhattisgarh domicile certificate ke bina Class-III ya IV post ke liye apply mat karo — application reject ho jayegi.",
-    "Assistant Engineer ya Junior Engineer me ek se zyada branch ke liye apply mat karo — sirf ek branch allowed hai.",
-    "Ek hi post ke liye do baar register mat karo — duplicate registration se application bina notice cancel ho sakti hai.",
-    "CBT hall me mobile phone, calculator ya ghadi le mat jao — ye mana hai aur debar bhi ho sakte ho.",
-    "4 saal ka service bond aur security deposit mat bhoolo — apply karne se pehle seva shartein padh lo."
+    "Extended last date miss na karen — 03 December 2026 (11:55 PM). Original last date (26 November 2026) 25 November 2026 ke notice se hi badhi hai.",
+    "Bina Chhattisgarh domicile ke Class III & IV posts ke liye apply na karen — wo posts sirf Chhattisgarh domicile candidates ke liye hain.",
+    "Purani photo upload na karen — recent passport-size colour photo chahiye, 3 hafte se purani nahi, light background par.",
+    "Fee kisi aur mode se na bharen — fee sirf SBI payment gateway (Net Banking / Debit / Credit / UPI) se online bharni hai."
    ],
    "dos": [
-    "Fee bharne se pehle dekho tumhara post kis Class me hai — do groups ki fee alag hai (₹800/₹700/₹600 vs ₹400/₹300/₹200).",
-    "Agar tum Chhattisgarh se bahar ke ho to sirf Class-II post ke liye apply karo — Class-III aur IV pad sirf CG domicile ke liye hain.",
-    "Teeno companies me common padon ke liye company preference (1st, 2nd, 3rd) do — baad me company badli nahi jayegi.",
-    "26 November 2026 raat 11:55 se pehle apply karo — form 6 November shaam 8 baje khulta hai aur vigyapan me koi correction window nahi hai.",
-    "Data Entry Operator aur Stenographer ke liye typing/shorthand ki shart (5,000/10,000 key depressions prati ghanta, shorthand 100 wpm) pehle check karo."
+    "Apply karne se pehle detailed advertisement (No. 01-01/HR/Recruitment/739106, dated 05 November 2026) official recruitment page par poora padhen.",
+    "Post-wise qualification, age aur pay check karen — Class-II aur Class-III & IV posts ki requirements kaafi alag hain.",
+    "Verified DigiALM form par hi apply karen — us par key dates dikhti hain (start 06 November 2026, last date 03 December 2026).",
+    "Form shuru karne se pehle photo (100-200 KB) aur signature (80-150 KB) JPG/JPEG me ready rakhen.",
+    "Submit karne ke baad application number aur fee receipt sambhal kar rakhen."
    ],
    "eligibility": [
-    "Pad: kul 1,501 — 195 Class-II pad (Advt 1/2026) aur 1,306 Class-III aur IV pad (Advt 2/2026). Vigyapan me kul sankhya chhapi nahi hai; 1,501 post-wise figures ka jod hai. Sabse bada pad Data Entry Operator hai — teeno companies me 609 seats (CSPDCL 450, CSPGCL 95, CSPTCL 64).",
-    "Aayu 1 January 2026 ko: Class-II aur zyadatar Class-III padon ke liye kam se kam 21 saal, Junior Engineer, Lab Technician, Radiographer, Dresser, ECG Technician, Attendant (Plant) aur Fire Attendant ke liye 18 saal. Adhiktaam: UR purush (Chhattisgarh domicile) 40 saal, UR mahila aur SC/ST/OBC 45 saal; Fire Officer aur Sub Fire Officer 30/35, Fire Attendant 25/30. Chhattisgarh ke bahar ke ummeedwar sirf Class-II padon ke liye apply kar sakte hain, adhiktaam umr 30 saal.",
-    "Domicile: saare Class-III aur IV pad sirf Chhattisgarh domicile ummeedwaron ke liye hain. Class-II pad rajya ke bahar ke ummeedwaron ke liye bhi khule hain.",
-    "Shiksha (post ke anusar): Assistant Engineer — sambandhit branch me 4-saal ki B.E./B.Tech; Junior Engineer — 3-saal ka Diploma ya engineering degree; Data Entry Operator — CS/IT me B.E./B.Tech ya Master's, ya B.Sc (CS/IT)/BCA, ya kisi bhi vishay me bachelor's degree + soochibaddh computer course; Medical Officer — MBBS, Medical Council of India registration ke saath; Accounts Officer — CA ya CMA; Attendant (Plant) — 10th pass (Second Division) + sambandhit trade me 2-saal ka ITI; Fire Attendant — Chemistry ke saath 12th + NCC B/C certificate. Yogyata aavedan ki antim tithi tak prapt honi chahiye.",
-    "Chayan: online CBT — 2 ghante, 100 MCQ (80 professional subject + 20 General Knowledge/English/Hindi/Reasoning ya Quantitative Ability), har galat jawab par −0.25, qualifying 40% (UR/OBC) ya 30% (SC/ST). Uske baad post ke anusar: Assistant Engineer/Accounts/Medical/Programmer/Shift Chemist ke liye interview (10 ank), fire aur security padon ke liye physical fitness test, Data Entry Operator aur Stenographer ke liye typing/shorthand test, aur document verification. CBT kendra: Raipur, Bilaspur, Durg-Bhilai, Ambikapur aur Jagdalpur.",
-    "Seva shartein: chayan ke baad power companies me kam se kam chaar saal seva ka bond bharna hota hai, security deposit ke saath — Assistant Engineer star ke padon ke liye ₹3 lakh, Junior Engineer ke liye ₹2 lakh, anya Class-III padon ke liye ₹1 lakh, Class-IV ke liye ₹50,000. Regularisation ke baad National Pension System (NPS) lagu hota hai.",
-    "Poori bharti Supreme Court me SLP(C) 19668/2022 ke antim faisle par nirbhar hai — us hisab se shreni-war sankhya badal sakti hai."
+    "Indian citizen.",
+    "Qualification post-wise hai: Assistant Engineer ke liye B.E./B.Tech, Junior Engineer ke liye Diploma, Medical Officer ke liye MBBS, Data Entry Operator aur Stenographer ke liye Graduation + computer/typing, aur anya post-wise qualifications advertisement me hain.",
+    "Age: minimum 18 ya 21 saal, post par nirbhar; maximum UR (Male) 40 saal, UR (Female) aur SC/ST/OBC (Male/Female) 45 saal; Fire Attendant Gr. II ke liye UR (Male) 25 saal aur anya 30 saal. Sabhi relaxations sahit maximum age limit 45 saal hai. Ex-servicemen Chhattisgarh government rules ke anusaar.",
+    "Class III & IV posts sirf Chhattisgarh domicile candidates ke liye hain."
    ],
    "extra_faq": [
     {
-     "a": "Kul 1,501 pad — 195 Class-II pad (Advt 1/2026) aur 1,306 Class-III aur IV pad (Advt 2/2026). Vigyapan me kul sankhya chhapi nahi hai; 1,501 post-wise figures ka jod hai. Sabse bada pad Data Entry Operator hai, CSPDCL, CSPGCL aur CSPTCL me 609 seats.",
-     "q": "CG State Power Companies bharti me kul kitne pad hain?"
+     "a": "Kul 1,501 posts — Class-II (Advt. 1/2026) 195 aur Class-III & IV (Advt. 2/2026) 1,306. Bade groups: Data Entry Operator 545 (95 + 450), Junior Engineer (T&D) Electrical 124, Assistant Engineer (T&D) Electrical CSPDCL 62, plus AE, JE, Medical Officer, Accounts Officer, Stenographer, Attendant (Plant) aur anya posts.",
+     "q": "CSPDCL Recruitment 2026 me kitni vacancy hai?"
     },
     {
-     "a": "Sirf Class-II padon ke liye (Assistant Engineer, Shift Chemist, Programmer, Accounts Officer, Medical Officer, Fire Officer aur Security Officer), adhiktaam umr 30 saal. Saare Class-III aur IV pad sirf Chhattisgarh domicile ummeedwaron ke liye hain.",
-     "q": "Main Chhattisgarh se bahar ka hoon — kya main apply kar sakta hoon?"
+     "a": "Online application 06 November 2026 (8 PM) se 03 December 2026 (11:55 PM) tak — last date 25 November 2026 ke extension notice se 26 November se badhakar 03 December ki gayi hai. Fee online SBI gateway se bharni hai.",
+     "q": "CSPDCL Recruitment ki last date kya hai?"
     },
     {
-     "a": "Haan — CBT me 2 ghante me 100 MCQ, har sawal 1 ank, har galat jawab par 0.25 ank katenge. Qualifying ank UR/OBC ke liye 40% aur SC/ST ke liye 30% hain.",
-     "q": "Kya CBT me negative marking hai?"
+     "a": "Senior posts (AE, Fire Officer, Security Officer, Shift Chemist, Programmer, Accounts Officer aur similar): UR ₹800, OBC ₹700, SC/ST ₹600. Anya posts (Stenographer Gr. III, Data Entry Operator, Assistant Pharmacist, Assistant Staff Nurse aur similar): ₹400 / ₹300 / ₹200. Departmental candidates fee se exempt hain.",
+     "q": "CSPDCL Recruitment ki fee kya hai?"
     },
     {
-     "a": "AE-level aur JE-level padon ke liye: ₹800 (UR), ₹700 (OBC), ₹600 (SC/ST). Stenographer, DEO, Lab Technician, Pharmacist, Nurse, Attendant aur aise padon ke liye: ₹400 (UR), ₹300 (OBC), ₹200 (SC/ST). Power companies ke regular karmachari exempt hain. Fee wapas nahi hoti.",
-     "q": "Application fee kitni hai?"
+     "a": "Zyadatar posts ke liye Computer Based Test; AE/JE ke liye interview bhi; Fire Officer/Staff ke liye Physical/Skill tests. Photo JPG 100-200 KB (recent, light background), signature JPG 80-150 KB (black ink, white paper).",
+     "q": "CSPDCL Recruitment ka selection process kya hai?"
     }
    ],
    "fees": [
-    "₹800 UR, ₹700 OBC, ₹600 SC/ST — Assistant Engineer, Fire Officer, Security Officer, Shift Chemist, Programmer, Accounts Officer, Medical Officer, Law Officer, Industrial Relation Officer, Junior Engineer, Sub Fire Officer, Security Inspector aur Security Sub Inspector ke liye.",
-    "₹400 UR, ₹300 OBC, ₹200 SC/ST — Stenographer, Lab Technician, Pharmacist, Staff Nurse, Radiographer, Data Entry Operator, Dresser, ECG Technician, Attendant (Plant) aur Fire Attendant ke liye.",
-    "Teeno power companies ke regular karmachariyon ko koi fee nahi deni hai.",
-    "Fee wapas nahi hoti aur sirf online bhari jati hai (debit/credit card, net banking ya UPI), 26 November 2026 raat 11:55 tak."
+    "Senior posts (AE, Fire Officer, Security Officer, Shift Chemist, Programmer, Accounts Officer aur similar): UR ₹800, OBC ₹700, SC/ST ₹600.",
+    "Anya posts (Stenographer Gr. III, Data Entry Operator, Assistant Pharmacist, Assistant Staff Nurse aur similar): ₹400 / ₹300 / ₹200, unhi teen categories me.",
+    "Departmental candidates fee se exempt hain (advertisement ke anusaar)."
    ],
-   "fees_short": "₹200–₹800 (post + shreni)",
+   "fees_short": "₹200–₹800",
    "kit": [
     {
-     "text": "Halke background par haal ki colour photo scan karo; badi file ko pehle yahan chhota karo.",
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
      "title": "Passport photo ready rakho",
      "tool": "compress-image"
     },
     {
-     "text": "Safed kagaz par sign karke saaf scan rakho — dhundhla signature reject ho sakta hai.",
-     "title": "Saaf signature scan",
-     "tool": "compress-image"
-    },
-    {
-     "text": "Saare documents ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
      "title": "Certificates ek PDF me jodo",
      "tool": "compress-pdf"
     }
    ],
    "mistakes": [
-    "Galat fee bharna — do post groups ki fee alag hai, isliye pehle apne post ka group check karo.",
-    "Chhattisgarh domicile certificate ke bina Class-III/IV post ke liye apply karna.",
-    "Assistant Engineer ya Junior Engineer me do branches ke liye apply karna — sirf ek allowed hai.",
-    "Ek hi post ke liye do baar register karna — isse application bina notice cancel ho sakti hai."
+    "Original last date (26 Nov) ko final samajhna — extension se 03 Dec ho gayi hai",
+    "Bina Chhattisgarh domicile ke Class III & IV posts ke liye apply karna",
+    "Purani photo upload karna (3 hafte se purani nahi chalegi)",
+    "Post-wise qualification check kiye bina apply karna"
    ],
-   "name": "CG State Power Companies Recruitment (CSPDCL, CSPTCL, CSPGCL)",
-   "qual": "B.E./B.Tech, Diploma, Degree, ITI, 10+2 (post ke anusar)",
+   "name": "CSPDCL, CSPTCL & CSPGCL Recruitment 2026",
+   "qual": "Post-wise: B.E./B.Tech, Diploma, MBBS, Graduation — official advertisement dekhen",
    "specs": [
-    "Vigyapan me photo aur signature ka koi fixed KB size nahi diya gaya hai — portal par upload screen par jo format aur size mange, wahi upload karo.",
-    "Ek haal ki colour photo aur saaf signature scan (safed kagaz par sign karke) pehle se ready rakho.",
-    "Sirf saaf, padhne layak scan upload karo; dhundhli photo ya signature se form reject ho sakta hai."
+    "1,501 posts — Class-II (Advt. 1/2026) 195 aur Class-III & IV (Advt. 2/2026) 1,306 — CSPDCL, CSPTCL aur CSPGCL me. Detailed advertisement No. 01-01/HR/Recruitment/739106, Raipur, dated 05 November 2026.",
+    "Bade groups: Data Entry Operator 545 (95 + 450), Junior Engineer (T&D) Electrical 124, Assistant Engineer (T&D) Electrical (CSPDCL) 62, Assistant Engineer (General) 60 (Mechanical/Electrical/Electronics/CS/IT), Medical Officer 15, Accounts Officer / Assistant Manager (F&A) 15, plus Shift Chemist, Programmer, Fire Officer, Security Officer, Sub Fire Officer, Security Inspector/Sub Inspector, Stenographer, Attendant (Plant), Assistant Dresser, Assistant Pharmacist, Assistant Staff Nurse, Fire Attendant aur anya posts.",
+    "Dates: online applications 06 November 2026 (8:00 PM) se 03 December 2026 (11:55 PM) tak. Last date 25 November 2026 ke extension notice (CSPTCL letter No. 01-01/HR-VIII/765183/2026) se 26 November 2026 se badhakar 03 December 2026 ki gayi hai.",
+    "Age: minimum 18 ya 21 saal, post par nirbhar; maximum UR (Male) 40 saal (Fire Attendant Gr. II ke liye 25 saal), UR (Female) aur SC/ST/OBC (Male/Female) 45 saal (Fire Attendant ke liye 30 saal); sabhi relaxations sahit maximum age limit 45 saal hai. Ex-servicemen Chhattisgarh government rules ke anusaar.",
+    "Qualification: post-wise — Assistant Engineer ke liye B.E./B.Tech, Junior Engineer ke liye Diploma, Medical Officer ke liye MBBS, Data Entry Operator aur Stenographer ke liye Graduation + computer aur typing/shorthand (poori post-wise tables advertisement ke pp.6-12 me). Pay: level-wise matrix (jaise AE Level-11, JE Level-8).",
+    "Selection: zyadatar posts ke liye Computer Based Test; Assistant Engineer / Junior Engineer ke liye Interview bhi; Fire Officer / Staff ke liye Physical / Skill tests; anya posts selection table ke anusaar.",
+    "Fee: senior posts UR ₹800, OBC ₹700, SC/ST ₹600; anya listed posts ₹400 / ₹300 / ₹200; departmental candidates exempt. Fee online SBI payment gateway (Net Banking / Debit / Credit / UPI) se bharni hai.",
+    "Photo: recent passport-size colour, light background, 3 hafte se purani nahi, JPG/JPEG, 100 KB se 200 KB. Signature: black ink, white paper par, sirf signature area scan karen, JPG/JPEG, 80 KB se 150 KB.",
+    "Class III & IV posts sirf Chhattisgarh domicile candidates ke liye hain. Upar ke saare facts official 25-page advertisement (cspc.co.in) se hain; 1,501 ka kul advertisement ki saari 46 vacancy rows ko jodkar verify kiya gaya hai."
    ],
    "steps": [
-    "cspc.co.in kholo aur Recruitment section me Advertisement 1/2026 aur 2/2026 dekho.",
-    "Official notification padho aur apna post, branch aur shreni confirm karo.",
-    "Application portal par register karo (ya sign in karo) aur apna post aur branch chuno.",
-    "Form bharo, jahan mange wahan company preference do, aur portal mange wahan documents upload karo.",
-    "Fee online bharo (post aur shreni ke hisab se ₹200–₹800; departmental ummeedwar exempt) aur 26 November 2026 raat 11:55 se pehle submit karo.",
-    "Confirmation page download karke sambhal kar rakho — admit card tumhare registered email par bheja jayega."
+    "cspc.co.in par detailed advertisement (No. 01-01/HR/Recruitment/739106) padhen — last date 03 December 2026 (11:55 PM).",
+    "Apni post ki qualification, age aur pay check karen (Class-II vs Class-III & IV alag hain).",
+    "Photo (JPG, 100-200 KB) aur signature (JPG, 80-150 KB) ready rakhen.",
+    "Verified DigiALM form par register karen aur form bharen.",
+    "Fee SBI gateway se online bhugtan karen aur application number sambhal kar rakhen."
    ],
-   "tagline": "1,501 pad — Chhattisgarh ki teeno power companies me Assistant Engineer, Junior Engineer, Data Entry Operator aur anya pad — antim tithi 26 November 2026."
+   "tagline": "Chhattisgarh State Power Companies me 1,501 posts — Assistant Engineer, Junior Engineer, Data Entry Operator aur anya; apply 6 November–3 December 2026 (extended)."
   },
   "links": {
-   "apply": "https://web.cspdcl.co.in/#/FrmViewRecruitment",
-   "notice": null,
-   "site": "https://www.cspc.co.in"
+   "apply": "https://cdn.digialm.com/EForms/configuredHtml/1258/102606/CA5JBy9lnHhL3sLrGu/Index.html",
+   "notice": "https://web.cspdcl.co.in/#/FrmViewRecruitment",
+   "site": "https://www.cspc.co.in/"
   },
   "note_en": null,
   "note_hi": null,
   "photo_kind": "upload",
   "portal": "cspc.co.in",
   "posts": 1501,
-  "slug": "cg-state-power-companies",
-  "stage": "result-awaited"
+  "slug": "cg-state-power-companies"
  },
  {
   "advt": "BCECEB/Health(SR)/2026(III)/01",
@@ -38946,7 +38934,7 @@
   "slug": "bhel-project-engineer-supervisor-fta-2026"
  },
  {
-  "advt": "Advt. Nos. GPRB/202627/1, GPRB/202627/2 & GPRB/202627/3",
+  "advt": "Advt. Nos. GPRB/202627/1, GPRB/202627/2, GPRB/202627/3 & GPRB/202627/4",
   "board_en": "Gujarat Police Recruitment Board (GPRB)",
   "board_hi": "गुजरात पुलिस भर्ती बोर्ड (GPRB)",
   "dates": {
@@ -38960,59 +38948,66 @@
   },
   "en": {
    "checklist": [
-    "Class 12 (HSC) mark sheet and certificate",
-    "ITI Motor Mechanic Vehicle Trade Certificate + apprenticeship certificate (technical posts only)",
+    "HSC (Class 12) marksheet and certificate — for Lokrakshak and Technical cadre",
+    "Bachelor's degree certificate and mark sheets — for PSI cadre",
+    "Motor Mechanic Vehicle Trade Certificate + apprenticeship certificate — for HCDM and MTS",
     "Date of birth proof",
-    "Category certificate, if applicable",
-    "Recent passport-size photo and signature scans",
-    "Valid email ID and mobile number for OJAS registration"
+    "Caste / category certificate, if applicable",
+    "Aadhaar card, mobile number and email ID",
+    "Recent passport-size photo and signature scans"
    ],
    "documents": [
-    "Class 12 mark sheet and certificate",
-    "ITI certificate + apprenticeship certificate (technical posts)",
-    "Date of birth proof and category certificate, if applicable",
+    "HSC (Class 12) marksheet and certificate, or Bachelor's degree (PSI)",
+    "Motor Mechanic Vehicle Trade Certificate + apprenticeship certificate (HCDM/MTS)",
+    "Date of birth proof",
+    "Caste / category certificate, if applicable",
+    "Aadhaar card",
     "Recent photo and signature"
    ],
    "donts": [
-    "Do not apply before 26 November 2026, 2:00 PM — the form opens then.",
-    "Do not use any age-limit or fee figure from aggregator sites — the short notice does not state them.",
-    "Do not file one application for two cadres — each cadre needs its own application.",
-    "Do not wait for the last date — the portal closes on 16 December 2026, 11:59 PM."
+    "Do not use the old 3,000-post figure — the detailed advertisements dated 26 November 2026 total 13,152 posts; the earlier figure came from the short notice.",
+    "Do not file one application for all cadres — a separate application is needed for each cadre.",
+    "Do not pay the fee by post-office or bank challan — fee is online only.",
+    "Do not miss the window — applications close 16 December 2026 at 11:59 PM."
    ],
    "dos": [
-    "Apply only on the official OJAS portal https://ojas.gujarat.gov.in — the Gujarat government's ONLINE JOB APPLICATION SYSTEM.",
-    "File a separate application for each cadre you apply to.",
-    "Read the detailed advertisement on 26 November 2026 before applying — it will carry the age limit, fee, physical standards and selection process.",
-    "Keep the application number and fee receipt safe."
+    "Read the detailed advertisement for your cadre on OJAS (GPRB/202627/1 for Lokrakshak, /2 for HCDM, /3 for MTS, /4 for PSI) before applying.",
+    "Check the age limit for your cadre as on 16 December 2026 — Lokrakshak 18-33, HCDM maximum 33, MTS 18-36, PSI maximum 35 years.",
+    "Apply on the verified OJAS portal — the Apply Now form was seen live on 27 November 2026.",
+    "Prepare for the Physical Test first — it is qualifying (men 5,000 m in max 25 min, women 1,600 m in max 8 min 30 sec, Ex-servicemen 2,400 m in max 12 min 30 sec).",
+    "Save the registration number and fee receipt after submission."
    ],
    "eligibility": [
     "Indian citizen.",
-    "Lokrakshak cadre (UPC, APC, SRPF): Higher Secondary School Certificate (Class 12/HSC) pass or equivalent recognised by the Government.",
-    "Head Constable Driver Mechanic (Grade-2) and Motor Transport Supervisor (Grade-2): Class 12 pass plus a Motor Mechanic Vehicle Trade Certificate with 1 year of ITI apprenticeship, or a 3-year NATS apprenticeship certificate in Motor Mechanic Vehicle Trade.",
-    "Age limit and physical standards will be in the detailed advertisement (26 November 2026) — this short notice does not state them."
+    "Lokrakshak cadre (Advt. /1): Higher Secondary School Certificate (Class 12/HSC) pass or equivalent recognised by the Government.",
+    "Head Constable Driver Mechanic (Grade-2) and Motor Transport Supervisor (Grade-2) (Advt. /2, /3): Class 12 pass plus a Motor Mechanic Vehicle Trade Certificate with 1 year of ITI apprenticeship, or a 3-year National Apprenticeship Training Scheme certificate in Motor Mechanic Vehicle Trade.",
+    "PSI cadre (Advt. /4): Bachelor's degree in any discipline.",
+    "Age as on 16 December 2026: Lokrakshak 18-33 years (born 16.12.1993–16.12.2008); HCDM maximum 33 years (born on/after 16.12.1993); MTS 18-36 years (born 16.12.1990–16.12.2008); PSI maximum 35 years (born on/after 16.12.1991). Relaxations: General women 5 years, reserved-category men 5 years, reserved-category women 10 years, PwBD 10-20 years, sportspersons 5 years, Ex-servicemen service period + 3 years; maximum age 45 years in most cases."
    ],
    "extra_faq": [
     {
-     "a": "Kul 3,000 Class-3 posts — Lokrakshak cadre 2,841 (Unarmed Police Constable 1,000, Armed Police Constable 1,000, Armed Police Constable SRPF 841), Head Constable Driver Mechanic (Grade-2) 133 aur Motor Transport Supervisor (Grade-2) 26.",
+     "a": "Kul 13,152 Class-3 posts, 4 advertisements me — Lokrakshak 12,752 (Unarmed Police Constable 8,233, Armed Police Constable 1,132, Armed Police Constable SRPF 3,107, Jail Sepoy Male 251, Jail Sepoy Female/Matron 29), Head Constable Driver Mechanic 133, Motor Transport Supervisor 26, PSI 241 (Unarmed PSI 225, Jailer Group-2 female 16). Pehle wala 3,000 ka figure short notice ka tha — detailed advts (26 Nov 2026) se sahi kul 13,152 hai.",
      "q": "Gujarat Police Bharti 2026 me kitni vacancy hai aur kaun se post hain?"
     },
     {
-     "a": "Apply 26 November 2026, dopahar 2 baje se 16 December 2026, raat 11:59 tak — sirf ojas.gujarat.gov.in par. Har cadre ke liye alag application bharni hai.",
+     "a": "Online application 26 November 2026 (2 PM) se 16 December 2026 (11:59 PM) tak, OJAS portal (ojas.gujarat.gov.in) par. Har cadre ke liye alag application bharni hogi. Fee bhi 16 December 2026 (11:59 PM) tak.",
      "q": "Gujarat Police Bharti ki last date aur apply kaise karen?"
     },
     {
-     "a": "Lokrakshak ke liye Class 12 (HSC) pass ya equivalent. Technical posts (Head Constable Driver Mechanic aur Motor Transport Supervisor) ke liye Class 12 ke saath Motor Mechanic Vehicle Trade Certificate + 1 saal ki ITI apprenticeship, ya NATS ke under 3 saal ki apprenticeship.",
+     "a": "Lokrakshak: HSC (Class 12) pass. HCDM aur MTS: HSC + Motor Mechanic Vehicle Trade Certificate + 1 saal ITI apprenticeship ya 3 saal ka National Apprenticeship Training Scheme certificate. PSI: kisi bhi discipline me Bachelor's degree.",
      "q": "Gujarat Police Bharti ke liye qualification kya hai?"
     },
     {
-     "a": "Short notice me age limit, fee, pay aur selection process NAHI diye gaye — ye sab detailed advertisement me hoga, jo 26 November 2026 ko OJAS par upload hoga. Tab tak koi bhi age ya fee ka figure aggregator sites se mat len.",
+     "a": "Age 16.12.2026 ko: Lokrakshak 18-33, HCDM maximum 33, MTS 18-36, PSI maximum 35 saal; relaxations (mahila +5, reserved +5/+10, PwBD 10-20, sportspersons +5, Ex-SM service+3; cap 45). Fee: General ₹100 (+ bank charges), EWS/SC/ST/SEBC/Ex-servicemen ko koi fee nahi (PwBD bhi exempt /2 aur /3 me). Selection: pehle Physical Test (qualifying), phir Objective MCQ Test (Lokrakshak 200 marks/3 ghante, -0.25 negative; PSI Mains 300 marks).",
      "q": "Gujarat Police Bharti ki age limit aur fee kya hai?"
     }
    ],
    "fees": [
-    "Fee is not stated in the short notice — the detailed advertisement (to be uploaded on OJAS on 26 November 2026) will carry the fee."
+    "Rs.100 for General-category candidates, plus bank service charges, online only.",
+    "No fee for EWS, SC, ST, SEBC and Ex-servicemen (PwBD also exempt in Advt. /2 and /3).",
+    "Bank charges: RuPay/UPI nil; credit card 2% + tax; INB-SBI Rs.25, INB HDFC/ICICI/AXIS/KOTAK Rs.40, INB-other Rs.30, NEFT Rs.30 per transaction."
    ],
-   "fees_short": "Not stated",
+   "fees_short": "₹100",
    "kit": [
     {
      "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
@@ -39026,32 +39021,35 @@
     }
    ],
    "mistakes": [
-    "26 November se pehle form dhoondhna (form tabhi khulta hai)",
-    "Aggregator sites ki age limit ya fee par bharosa karna",
-    "Do cadre ke liye ek hi application bharna",
-    "Detailed advertisement padhe bina apply karna"
+    "Purane 3,000-post figure par bharosa karna (sahi kul 13,152 hai)",
+    "Ek hi application se saare cadres ke liye apply karna (har cadre ke liye alag application)",
+    "Fee challan se bharne ki koshish karna (sirf online)",
+    "Physical Test ki taiyaari na karna (ye qualifying hai)"
    ],
-   "name": "Gujarat Police Lokrakshak & Technical Cadre Recruitment 2026",
-   "qual": "Lokrakshak cadre: Higher Secondary School Certificate (Class 12/HSC) pass or equivalent; Technical cadre: Class 12 pass plus Motor Mechanic Vehicle Trade Certificate with apprenticeship",
+   "name": "Gujarat Police Lokrakshak, Technical & PSI Cadre Recruitment 2026",
+   "qual": "Lokrakshak: HSC pass; Technical cadre: HSC + Motor Mechanic Vehicle Trade Certificate with apprenticeship; PSI: Bachelor's degree in any discipline",
    "specs": [
-    "3,000 Class-3 posts — Lokrakshak cadre 2,841: Unarmed Police Constable 1,000, Armed Police Constable 1,000 and Armed Police Constable (SRPF) 841 under Advt. GPRB/202627/1; Head Constable Driver Mechanic (Grade-2) 133 under Advt. GPRB/202627/2; Motor Transport Supervisor (Grade-2) 26 under Advt. GPRB/202627/3.",
-    "Regular (permanent) direct recruitment by the Gujarat Police Recruitment Board — NOT contractual.",
-    "Short notice / newspaper advertisement dated 19 November 2026 (published 20 November 2026). The detailed advertisement will be uploaded on OJAS on 26 November 2026.",
-    "Dates: online applications 26 November 2026, 2:00 PM to 16 December 2026, 11:59 PM, on ojas.gujarat.gov.in. A separate application is needed for each cadre.",
-    "Eligibility — Lokrakshak cadre: Higher Secondary School Certificate (Class 12/HSC) pass or equivalent recognised by the Government.",
-    "Eligibility — Technical cadre: Class 12 (HSC) pass or equivalent, PLUS a Motor Mechanic Vehicle Trade Certificate with 1 year of apprenticeship from a government-recognised ITI, OR a 3-year apprenticeship certificate in Motor Mechanic Vehicle Trade under the National Apprenticeship Training Scheme (NATS).",
-    "Age limit, physical standards, pay and selection process are NOT in the short notice — they will be in the detailed advertisement on 26 November 2026. Do not rely on any age or fee figure until then.",
-    "The vacancy count may change subject to Gujarat Government approval.",
-    "All facts above are from the official short notice (GPRB/202627/1, /2, /3) on gprb.gujarat.gov.in."
+    "13,152 Class-3 posts, 4 advertisements (all dated 26 November 2026) — Lokrakshak cadre 12,752, Head Constable Driver Mechanic (Grade-2) 133, Motor Transport Supervisor (Grade-2) 26, PSI cadre 241. Regular (permanent) direct recruitment by the Gujarat Police Recruitment Board, Home Department.",
+    "Lokrakshak breakup (Advt. GPRB/202627/1): Unarmed Police Constable 8,233; Armed Police Constable 1,132; Armed Police Constable (SRPF) 3,107; Jail Sepoy (Male) 251; Jail Sepoy (Female/Matron) 29; PwBD total 525.",
+    "Head Constable Driver Mechanic (Grade-2) 133 (PwBD 5) under Advt. GPRB/202627/2; Motor Transport Supervisor (Grade-2) 26 (PwBD 1) under Advt. GPRB/202627/3; PSI cadre 241 under Advt. GPRB/202627/4 — Unarmed Police Sub Inspector 225, Jailer Group-2 (female) 16.",
+    "CORRECTION (27 November 2026): the earlier 3,000-post figure (Lokrakshak 2,841) came from the 19 November 2026 short notice. GPRB's own 24 November notice flagged the Lokrakshak vacancy change and the new Unarmed PSI + Jailer Group-2 (female) advertisement; the four detailed advertisements dated 26 November 2026 on OJAS total 13,152 posts.",
+    "Dates: online applications 26 November 2026, 2:00 PM to 16 December 2026, 11:59 PM, on ojas.gujarat.gov.in. Online fee payment also closes 16 December 2026, 11:59 PM. A separate application is needed for each cadre.",
+    "Fee: Rs.100 for General-category candidates plus bank service charges, online only (no post-office/bank challan). No fee for EWS, SC, ST, SEBC and Ex-servicemen (PwBD also exempt in Advt. /2 and /3). Bank charges: RuPay/UPI nil; credit card 2% + tax; INB-SBI Rs.25, INB HDFC/ICICI/AXIS/KOTAK Rs.40, INB-other Rs.30, NEFT Rs.30 per transaction.",
+    "Age as on 16 December 2026: Lokrakshak 18-33 years (born 16.12.1993–16.12.2008); HCDM maximum 33 years (born on/after 16.12.1993); MTS 18-36 years (born 16.12.1990–16.12.2008); PSI maximum 35 years (born on/after 16.12.1991). Relaxations: General women 5 years, reserved-category men 5 years, reserved-category women 10 years, PwBD 10-20 years, sportspersons 5 years, Ex-servicemen service period + 3 years; maximum age 45 years in most cases.",
+    "Qualification: Lokrakshak — HSC passed; HCDM and MTS — HSC + Motor Mechanic Vehicle Trade Certificate + 1-year ITI apprenticeship or 3-year National Apprenticeship Training Scheme certificate; PSI — Bachelor's degree in any discipline. All Class-3, Home Department; 5-year probation/contract in the technical cadres.",
+    "Selection: Physical Test first (qualifying; men 5,000 m in max 25 min, women 1,600 m in max 8 min 30 sec, Ex-servicemen 2,400 m in max 12 min 30 sec), then Objective MCQ Test 200 marks, 3 hours, negative marking 0.25 (Lokrakshak); PSI Main Exam 300 marks (Paper 1 General Studies MCQ 200 marks/3 h; Paper 2 Gujarati and English Language Skill, descriptive, 100 marks/3 h); HCDM single-stage MCQ (Part A 90 + Part B 120 = 210 marks).",
+    "Pay (fixed contract): SRPF Lokrakshak Rs.25,000/month; Head Constable Driver Mechanic Rs.25,000/month; PSI Rs.49,500/month.",
+    "Detailed advertisements (OJAS PDFs): GPRB/202627/1 (Lokrakshak, 17 pp), GPRB/202627/2 (HCDM, 14 pp), GPRB/202627/3 (MTS, 13 pp), GPRB/202627/4 (PSI, 18 pp). The OJAS Apply Now form was seen live on 27 November 2026.",
+    "All facts above are from the four detailed advertisements dated 26 November 2026 (ojas.gujarat.gov.in / gprb.gujarat.gov.in)."
    ],
    "steps": [
-    "gprb.gujarat.gov.in par short notice (GPRB/202627/1, /2, /3) padhen — form 26 November 2026, dopahar 2 baje se.",
-    "26 November ko ojas.gujarat.gov.in par detailed advertisement padhen — age limit, fee aur physical standards usi me honge.",
-    "OJAS par register karen, cadre chunen aur form bharen — har cadre ke liye alag application.",
-    "Fee pay karke submit karen aur application number save karen.",
-    "PET/PST aur exam ki taiyari karen; updates ke liye gprb.gujarat.gov.in dekhte rahen."
+    "OJAS portal (ojas.gujarat.gov.in) par apne cadre ka detailed advertisement padhen — last date 16 December 2026 (11:59 PM).",
+    "Apne cadre ki age limit (16.12.2026 ko) aur qualification check karen.",
+    "Physical Test ki taiyaari karen — ye qualifying hai (men 5,000 m / women 1,600 m).",
+    "Verified OJAS form par register karen aur apne cadre ke liye alag application bharen.",
+    "Fee ₹100 online bhugtan karen (agar lagu ho) aur registration number sambhal kar rakhen."
    ],
-   "tagline": "3,000 Class-3 posts — Lokrakshak 2,841 (UPC 1,000, APC 1,000, SRPF 841), Head Constable Driver Mechanic 133, Motor Transport Supervisor 26 — apply 26 November–16 December 2026 on OJAS; 12th pass."
+   "tagline": "13,152 Class-3 posts — Lokrakshak 12,752, Head Constable Driver Mechanic 133, Motor Transport Supervisor 26, PSI 241 — apply 26 November–16 December 2026 on OJAS; fee ₹100."
   },
   "guide": {
    "en": null,
@@ -39059,59 +39057,66 @@
   },
   "hi": {
    "checklist": [
-    "Class 12 (HSC) mark sheet aur certificate",
-    "ITI Motor Mechanic Vehicle Trade Certificate + apprenticeship certificate (sirf technical posts ke liye)",
-    "Date of birth proof",
-    "Category certificate, agar applicable ho",
-    "Recent passport-size photo aur signature scans",
-    "OJAS registration ke liye valid email ID aur mobile number"
+    "HSC (Class 12) ki marksheet aur certificate — Lokrakshak aur Technical cadre ke liye",
+    "Bachelor's degree certificate aur mark sheets — PSI cadre ke liye",
+    "Motor Mechanic Vehicle Trade Certificate + apprenticeship certificate — HCDM aur MTS ke liye",
+    "Date of birth ka proof",
+    "Caste / category certificate, agar lagu ho",
+    "Aadhaar card, mobile number aur email ID",
+    "Recent passport-size photo aur signature ke scans"
    ],
    "documents": [
-    "Class 12 mark sheet aur certificate",
-    "ITI certificate + apprenticeship certificate (technical posts)",
-    "Date of birth proof aur category certificate, agar applicable ho",
+    "HSC (Class 12) ki marksheet aur certificate, ya Bachelor's degree (PSI)",
+    "Motor Mechanic Vehicle Trade Certificate + apprenticeship certificate (HCDM/MTS)",
+    "Date of birth ka proof",
+    "Caste / category certificate, agar lagu ho",
+    "Aadhaar card",
     "Recent photo aur signature"
    ],
    "donts": [
-    "26 November 2026, dopahar 2 baje se pehle apply mat karen — form tabhi khulta hai.",
-    "Aggregator sites ki koi bhi age-limit ya fee mat len — short notice me ye nahi diye gaye.",
-    "Do cadre ke liye ek hi application mat bharen — har cadre ke liye alag application chahiye.",
-    "Last date ka wait mat karen — portal 16 December 2026, raat 11:59 ko band hota hai."
+    "Purane 3,000-post figure par bharosa na karen — 26 November 2026 ke detailed advertisements ka kul 13,152 posts hai; pehla figure short notice ka tha.",
+    "Saare cadres ke liye ek hi application na bharen — har cadre ke liye alag application chahiye.",
+    "Fee post-office ya bank challan se na bharen — fee sirf online bharni hai.",
+    "Window miss na karen — applications 16 December 2026 raat 11:59 baje band hoti hain."
    ],
    "dos": [
-    "Apply sirf official OJAS portal https://ojas.gujarat.gov.in par karen — Gujarat sarkar ka ONLINE JOB APPLICATION SYSTEM.",
-    "Jis cadre ke liye apply kar rahe hain, uske liye alag application bharen.",
-    "Apply karne se pehle 26 November 2026 ka detailed advertisement padhen — usme age limit, fee, physical standards aur selection process honge.",
-    "Application number aur fee receipt safe rakhen."
+    "Apply karne se pehle OJAS par apne cadre ka detailed advertisement padhen (Lokrakshak ke liye GPRB/202627/1, HCDM ke liye /2, MTS ke liye /3, PSI ke liye /4).",
+    "Apne cadre ki age limit 16 December 2026 ko check karen — Lokrakshak 18-33, HCDM maximum 33, MTS 18-36, PSI maximum 35 saal.",
+    "Verified OJAS portal par hi apply karen — Apply Now form 27 November 2026 ko live verify hua tha.",
+    "Physical Test ki taiyaari pehle karen — ye qualifying hai (men 5,000 m max 25 min, women 1,600 m max 8 min 30 sec, Ex-servicemen 2,400 m max 12 min 30 sec).",
+    "Submit karne ke baad registration number aur fee receipt sambhal kar rakhen."
    ],
    "eligibility": [
-    "Bharatiya nagrik hon.",
-    "Lokrakshak cadre (UPC, APC, SRPF): Higher Secondary School Certificate (Class 12/HSC) pass ya Sarkar se recognised equivalent.",
-    "Head Constable Driver Mechanic (Grade-2) aur Motor Transport Supervisor (Grade-2): Class 12 pass ke saath Motor Mechanic Vehicle Trade Certificate + 1 saal ki ITI apprenticeship, ya NATS ke under Motor Mechanic Vehicle Trade me 3 saal ki apprenticeship certificate.",
-    "Age limit aur physical standards detailed advertisement (26 November 2026) me honge — short notice me ye nahi diye gaye."
+    "Indian citizen.",
+    "Lokrakshak cadre (Advt. /1): Higher Secondary School Certificate (Class 12/HSC) pass ya Government se recognised equivalent.",
+    "Head Constable Driver Mechanic (Grade-2) aur Motor Transport Supervisor (Grade-2) (Advt. /2, /3): Class 12 pass ke saath Motor Mechanic Vehicle Trade Certificate + 1 saal ITI apprenticeship, ya Motor Mechanic Vehicle Trade me 3 saal ka National Apprenticeship Training Scheme certificate.",
+    "PSI cadre (Advt. /4): kisi bhi discipline me Bachelor's degree.",
+    "Age 16 December 2026 ko: Lokrakshak 18-33 saal (janm 16.12.1993–16.12.2008); HCDM maximum 33 saal (janm 16.12.1993 ya baad); MTS 18-36 saal (janm 16.12.1990–16.12.2008); PSI maximum 35 saal (janm 16.12.1991 ya baad). Relaxations: General mahila 5 saal, reserved-category purush 5 saal, reserved-category mahila 10 saal, PwBD 10-20 saal, sportspersons 5 saal, Ex-servicemen service period + 3 saal; maximum age zyadatar cases me 45 saal."
    ],
    "extra_faq": [
     {
-     "a": "Kul 3,000 Class-3 posts — Lokrakshak cadre 2,841 (Unarmed Police Constable 1,000, Armed Police Constable 1,000, Armed Police Constable SRPF 841), Head Constable Driver Mechanic (Grade-2) 133 aur Motor Transport Supervisor (Grade-2) 26.",
+     "a": "Kul 13,152 Class-3 posts, 4 advertisements me — Lokrakshak 12,752 (Unarmed Police Constable 8,233, Armed Police Constable 1,132, Armed Police Constable SRPF 3,107, Jail Sepoy Male 251, Jail Sepoy Female/Matron 29), Head Constable Driver Mechanic 133, Motor Transport Supervisor 26, PSI 241 (Unarmed PSI 225, Jailer Group-2 female 16). Pehle wala 3,000 ka figure short notice ka tha — detailed advts (26 Nov 2026) se sahi kul 13,152 hai.",
      "q": "Gujarat Police Bharti 2026 me kitni vacancy hai aur kaun se post hain?"
     },
     {
-     "a": "Apply 26 November 2026, dopahar 2 baje se 16 December 2026, raat 11:59 tak — sirf ojas.gujarat.gov.in par. Har cadre ke liye alag application bharni hai.",
+     "a": "Online application 26 November 2026 (2 PM) se 16 December 2026 (11:59 PM) tak, OJAS portal (ojas.gujarat.gov.in) par. Har cadre ke liye alag application bharni hogi. Fee bhi 16 December 2026 (11:59 PM) tak.",
      "q": "Gujarat Police Bharti ki last date aur apply kaise karen?"
     },
     {
-     "a": "Lokrakshak ke liye Class 12 (HSC) pass ya equivalent. Technical posts (Head Constable Driver Mechanic aur Motor Transport Supervisor) ke liye Class 12 ke saath Motor Mechanic Vehicle Trade Certificate + 1 saal ki ITI apprenticeship, ya NATS ke under 3 saal ki apprenticeship.",
+     "a": "Lokrakshak: HSC (Class 12) pass. HCDM aur MTS: HSC + Motor Mechanic Vehicle Trade Certificate + 1 saal ITI apprenticeship ya 3 saal ka National Apprenticeship Training Scheme certificate. PSI: kisi bhi discipline me Bachelor's degree.",
      "q": "Gujarat Police Bharti ke liye qualification kya hai?"
     },
     {
-     "a": "Short notice me age limit, fee, pay aur selection process NAHI diye gaye — ye sab detailed advertisement me hoga, jo 26 November 2026 ko OJAS par upload hoga. Tab tak koi bhi age ya fee ka figure aggregator sites se mat len.",
+     "a": "Age 16.12.2026 ko: Lokrakshak 18-33, HCDM maximum 33, MTS 18-36, PSI maximum 35 saal; relaxations (mahila +5, reserved +5/+10, PwBD 10-20, sportspersons +5, Ex-SM service+3; cap 45). Fee: General ₹100 (+ bank charges), EWS/SC/ST/SEBC/Ex-servicemen ko koi fee nahi (PwBD bhi exempt /2 aur /3 me). Selection: pehle Physical Test (qualifying), phir Objective MCQ Test (Lokrakshak 200 marks/3 ghante, -0.25 negative; PSI Mains 300 marks).",
      "q": "Gujarat Police Bharti ki age limit aur fee kya hai?"
     }
    ],
    "fees": [
-    "Fee short notice me nahi di gayi hai — detailed advertisement (26 November 2026 ko OJAS par upload hoga) me fee hogi."
+    "General-category candidates ke liye ₹100, plus bank service charges, sirf online.",
+    "EWS, SC, ST, SEBC aur Ex-servicemen ko koi fee nahi (PwBD bhi exempt Advt. /2 aur /3 me).",
+    "Bank charges: RuPay/UPI nil; credit card 2% + tax; INB-SBI ₹25, INB HDFC/ICICI/AXIS/KOTAK ₹40, INB-other ₹30, NEFT ₹30 per transaction."
    ],
-   "fees_short": "Not stated",
+   "fees_short": "₹100",
    "kit": [
     {
      "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
@@ -39125,41 +39130,46 @@
     }
    ],
    "mistakes": [
-    "26 November se pehle form dhoondhna (form tabhi khulta hai)",
-    "Aggregator sites ki age limit ya fee par bharosa karna",
-    "Do cadre ke liye ek hi application bharna",
-    "Detailed advertisement padhe bina apply karna"
+    "Purane 3,000-post figure par bharosa karna (sahi kul 13,152 hai)",
+    "Ek hi application se saare cadres ke liye apply karna (har cadre ke liye alag application)",
+    "Fee challan se bharne ki koshish karna (sirf online)",
+    "Physical Test ki taiyaari na karna (ye qualifying hai)"
    ],
-   "name": "Gujarat Police Lokrakshak & Technical Cadre Recruitment 2026",
-   "qual": "Lokrakshak cadre: Higher Secondary School Certificate (Class 12/HSC) pass ya equivalent; Technical cadre: Class 12 pass ke saath Motor Mechanic Vehicle Trade Certificate + apprenticeship",
+   "name": "Gujarat Police Lokrakshak, Technical & PSI Cadre Recruitment 2026",
+   "qual": "Lokrakshak: HSC pass; Technical cadre: HSC + Motor Mechanic Vehicle Trade Certificate with apprenticeship; PSI: kisi bhi discipline me Bachelor's degree",
    "specs": [
-    "3,000 Class-3 posts — Lokrakshak cadre 2,841: Unarmed Police Constable 1,000, Armed Police Constable 1,000 aur Armed Police Constable (SRPF) 841 (Advt. GPRB/202627/1); Head Constable Driver Mechanic (Grade-2) 133 (Advt. GPRB/202627/2); Motor Transport Supervisor (Grade-2) 26 (Advt. GPRB/202627/3).",
-    "Gujarat Police Recruitment Board ki regular (permanent) direct recruitment hai — contractual NAHI hai.",
-    "Short notice / newspaper advertisement 19 November 2026 ka hai (20 November 2026 ko publish hua). Detailed advertisement 26 November 2026 ko OJAS par upload hoga.",
-    "Dates: online application 26 November 2026, dopahar 2:00 baje se 16 December 2026, raat 11:59 tak, ojas.gujarat.gov.in par. Har cadre ke liye alag application chahiye.",
-    "Eligibility — Lokrakshak cadre: Higher Secondary School Certificate (Class 12/HSC) pass ya Sarkar se recognised equivalent.",
-    "Eligibility — Technical cadre: Class 12 (HSC) pass ya equivalent, PLUS government-recognised ITI se Motor Mechanic Vehicle Trade Certificate + 1 saal ki apprenticeship, YA National Apprenticeship Training Scheme (NATS) ke under Motor Mechanic Vehicle Trade me 3 saal ki apprenticeship certificate.",
-    "Age limit, physical standards, pay aur selection process short notice me NAHI hain — ye 26 November 2026 ke detailed advertisement me honge. Tab tak kisi bhi age ya fee ke figure par bharosa mat karen.",
-    "Vacancy count Gujarat Government ki approval se badal sakta hai.",
-    "Upar ke saare facts official short notice (GPRB/202627/1, /2, /3, gprb.gujarat.gov.in) se liye gaye hain."
+    "13,152 Class-3 posts, 4 advertisements (sabhi dated 26 November 2026) — Lokrakshak cadre 12,752, Head Constable Driver Mechanic (Grade-2) 133, Motor Transport Supervisor (Grade-2) 26, PSI cadre 241. Gujarat Police Recruitment Board, Home Department dwara regular (permanent) direct recruitment.",
+    "Lokrakshak breakup (Advt. GPRB/202627/1): Unarmed Police Constable 8,233; Armed Police Constable 1,132; Armed Police Constable (SRPF) 3,107; Jail Sepoy (Male) 251; Jail Sepoy (Female/Matron) 29; PwBD kul 525.",
+    "Head Constable Driver Mechanic (Grade-2) 133 (PwBD 5), Advt. GPRB/202627/2; Motor Transport Supervisor (Grade-2) 26 (PwBD 1), Advt. GPRB/202627/3; PSI cadre 241, Advt. GPRB/202627/4 — Unarmed Police Sub Inspector 225, Jailer Group-2 (female) 16.",
+    "CORRECTION (27 November 2026): pehle wala 3,000-post figure (Lokrakshak 2,841) 19 November 2026 ke short notice se aaya tha. GPRB ke apne 24 November ke notice me Lokrakshak vacancy change aur naye Unarmed PSI + Jailer Group-2 (female) advertisement ki baat thi; 26 November 2026 ke chaar detailed advertisements (OJAS par) ka kul 13,152 posts hai.",
+    "Dates: online applications 26 November 2026, 2:00 PM se 16 December 2026, 11:59 PM tak, ojas.gujarat.gov.in par. Online fee payment bhi 16 December 2026, 11:59 PM tak. Har cadre ke liye alag application chahiye.",
+    "Fee: General-category candidates ke liye ₹100 plus bank service charges, sirf online (koi post-office/bank challan nahi). EWS, SC, ST, SEBC aur Ex-servicemen ko koi fee nahi (PwBD bhi exempt Advt. /2 aur /3 me). Bank charges: RuPay/UPI nil; credit card 2% + tax; INB-SBI ₹25, INB HDFC/ICICI/AXIS/KOTAK ₹40, INB-other ₹30, NEFT ₹30 per transaction.",
+    "Age 16 December 2026 ko: Lokrakshak 18-33 saal (janm 16.12.1993–16.12.2008); HCDM maximum 33 saal (janm 16.12.1993 ya baad); MTS 18-36 saal (janm 16.12.1990–16.12.2008); PSI maximum 35 saal (janm 16.12.1991 ya baad). Relaxations: General mahila 5 saal, reserved-category purush 5 saal, reserved-category mahila 10 saal, PwBD 10-20 saal, sportspersons 5 saal, Ex-servicemen service period + 3 saal; maximum age zyadatar cases me 45 saal.",
+    "Qualification: Lokrakshak — HSC pass; HCDM aur MTS — HSC + Motor Mechanic Vehicle Trade Certificate + 1 saal ITI apprenticeship ya 3 saal ka National Apprenticeship Training Scheme certificate; PSI — kisi bhi discipline me Bachelor's degree. Sabhi Class-3, Home Department; technical cadres me 5 saal probation/contract.",
+    "Selection: pehle Physical Test (qualifying; men 5,000 m max 25 min, women 1,600 m max 8 min 30 sec, Ex-servicemen 2,400 m max 12 min 30 sec), phir Objective MCQ Test 200 marks, 3 ghante, negative marking 0.25 (Lokrakshak); PSI Main Exam 300 marks (Paper 1 General Studies MCQ 200 marks/3 h; Paper 2 Gujarati and English Language Skill, descriptive, 100 marks/3 h); HCDM single-stage MCQ (Part A 90 + Part B 120 = 210 marks).",
+    "Pay (fixed contract): SRPF Lokrakshak ₹25,000/month; Head Constable Driver Mechanic ₹25,000/month; PSI ₹49,500/month.",
+    "Detailed advertisements (OJAS PDFs): GPRB/202627/1 (Lokrakshak, 17 pp), GPRB/202627/2 (HCDM, 14 pp), GPRB/202627/3 (MTS, 13 pp), GPRB/202627/4 (PSI, 18 pp). OJAS Apply Now form 27 November 2026 ko live verify hua tha.",
+    "Upar ke saare facts 26 November 2026 ke chaar detailed advertisements (ojas.gujarat.gov.in / gprb.gujarat.gov.in) se hain."
    ],
    "steps": [
-    "gprb.gujarat.gov.in par short notice (GPRB/202627/1, /2, /3) padhen — form 26 November 2026, dopahar 2 baje se.",
-    "26 November ko ojas.gujarat.gov.in par detailed advertisement padhen — age limit, fee aur physical standards usi me honge.",
-    "OJAS par register karen, cadre chunen aur form bharen — har cadre ke liye alag application.",
-    "Fee pay karke submit karen aur application number save karen.",
-    "PET/PST aur exam ki taiyari karen; updates ke liye gprb.gujarat.gov.in dekhte rahen."
+    "OJAS portal (ojas.gujarat.gov.in) par apne cadre ka detailed advertisement padhen — last date 16 December 2026 (11:59 PM).",
+    "Apne cadre ki age limit (16.12.2026 ko) aur qualification check karen.",
+    "Physical Test ki taiyaari karen — ye qualifying hai (men 5,000 m / women 1,600 m).",
+    "Verified OJAS form par register karen aur apne cadre ke liye alag application bharen.",
+    "Fee ₹100 online bhugtan karen (agar lagu ho) aur registration number sambhal kar rakhen."
    ],
-   "tagline": "3,000 Class-3 posts — Lokrakshak 2,841 (UPC 1,000, APC 1,000, SRPF 841), Head Constable Driver Mechanic 133, Motor Transport Supervisor 26 — 26 November–16 December 2026 tak OJAS par apply karen; 12th pass."
+   "tagline": "13,152 Class-3 posts — Lokrakshak 12,752, Head Constable Driver Mechanic 133, Motor Transport Supervisor 26, PSI 241 — apply 26 November–16 December 2026 on OJAS; fee ₹100."
   },
   "links": {
    "apply": "https://ojas.gujarat.gov.in/",
-   "notice": "https://gprb.gujarat.gov.in/writereaddata/portal/images/pdf/GPRB%20News%20Paper%20Advertisement%20Dt_19112026.pdf",
+   "notice": "https://ojas.gujarat.gov.in/ojas1/AdvtDetailFiles/GPRB_202627_1.pdf",
    "site": "https://gprb.gujarat.gov.in"
   },
+  "note_en": null,
+  "note_hi": null,
   "photo_kind": "upload",
   "portal": "ojas.gujarat.gov.in",
-  "posts": 3000,
+  "posts": 13152,
   "slug": "gujarat-police-constable-technical-2026"
  },
  {
@@ -44525,5 +44535,1401 @@
   "portal": "upanganwadibharti.in",
   "posts": 1338,
   "slug": "up-anganwadi-worker-2026"
+ },
+ {
+  "advt": "District notifications 2026-27 (GO dated 17 Sep 2025)",
+  "board_en": "Department of Women and Child Development, Government of Uttar Pradesh (ICDS)",
+  "board_hi": "महिला एवं बाल विकास विभाग, उत्तर प्रदेश सरकार (ICDS)",
+  "dates": {
+   "apply_end": "2026-12-16",
+   "apply_start": "2026-11-06",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-16"
+  },
+  "en": {
+   "checklist": [
+    "Intermediate (12th) marksheet and certificate",
+    "Date of birth proof",
+    "Residence proof of your own ward / gram sabha",
+    "Recent passport-size photo and signature scans",
+    "Aadhaar card, mobile number and email ID",
+    "Caste / category certificate, if applicable"
+   ],
+   "documents": [
+    "Intermediate (12th) marksheet and certificate",
+    "Date of birth proof",
+    "Residence proof of your own ward / gram sabha",
+    "Aadhaar card",
+    "Recent photo and signature",
+    "Category certificate, if applicable"
+   ],
+   "donts": [
+    "Do not apply for a centre outside your own ward / gram sabha — only residents of that ward / gram sabha are eligible.",
+    "Do not wait for a written exam — selection is merit-based on Intermediate percentage; there is no exam.",
+    "Do not miss your district's own last date — last dates are district-wise, not one common date.",
+    "Do not apply for Hardoi district — its window closed on 26 November 2026.",
+    "Do not treat this as a fixed government salary job — it is an honorarium-based post."
+   ],
+   "dos": [
+    "Check your district's own last date first — Mirzapur 16 December, Ballia 14 December, Ghazipur 12 December, Lucknow and Pilibhit 3 December, Sant Kabir Nagar 6 December 2026.",
+    "Apply only for the centre of your own ward / gram sabha.",
+    "Keep your Intermediate percentage ready — selection is on merit, with priority to BPL widows / divorced / abandoned women first, then BPL women, then APL widows / divorced / abandoned women, then APL women.",
+    "Register on the verified portal upanganwadibharti.in — the Helper registration form was seen live on 27 November 2026.",
+    "Note your registration number and password safely after submitting the form."
+   ],
+   "eligibility": [
+    "Women only.",
+    "Intermediate (12th) pass from a recognised board.",
+    "Age 18-35 years as on 01 July 2026.",
+    "Resident of the same ward / gram sabha as the centre applied for.",
+    "Only one woman from a family can hold an Anganwadi post."
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 1,750 Helper posts, 7 UP districts me — Ghazipur 161, Ballia 486, Pilibhit 153, Lucknow 356, Sant Kabir Nagar 112, Hardoi 315 aur Mirzapur 167. Last date district-wise alag hai — sabse aakhiri Mirzapur ki 16 December 2026 hai.",
+     "q": "UP Anganwadi Helper 2026 me kitni vacancy hai?"
+    },
+    {
+     "a": "Koi application fee nahi hai. Selection Intermediate ke percentage par merit-based hai — koi written exam nahi hota. Ye honorarium-based post hai, fixed government salary nahi.",
+     "q": "UP Anganwadi Helper ki fee aur selection process kya hai?"
+    },
+    {
+     "a": "Sirf mahilayein; recognised board se Intermediate (12th) pass; age 01/07/2026 ko 18-35 saal; apne hi ward/gram sabha ki resident honi chahiye; ek parivar se sirf ek mahila Anganwadi post le sakti hai.",
+     "q": "UP Anganwadi Helper ke liye eligibility kya hai?"
+    },
+    {
+     "a": "Verified portal upanganwadibharti.in par Helper registration form bharen (27 November 2026 ko live verify hua tha). Apne district ki last date check karen — Mirzapur 16 December, Ballia 14 December, Ghazipur 12 December, Lucknow aur Pilibhit 3 December, Sant Kabir Nagar 6 December 2026; Hardoi 26 November ko band ho chuka hai.",
+     "q": "UP Anganwadi Helper ke liye apply kaise karen?"
+    }
+   ],
+   "fees": [
+    "No application fee."
+   ],
+   "fees_short": "No fee",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Apne ward/gram sabha ke bahar ke centre ke liye apply karna",
+    "Written exam ka intezaar karna (selection merit-based hai)",
+    "Apne district ki last date miss karna",
+    "Hardoi (26 Nov) ke liye apply karna — wo band ho chuka hai"
+   ],
+   "name": "UP Anganwadi Helper Recruitment 2026",
+   "qual": "Intermediate (12th) pass from a recognised board",
+   "specs": [
+    "1,750 posts, 7 districts me — Ghazipur 161, Ballia 486, Pilibhit 153, Lucknow 356, Sant Kabir Nagar 112, Hardoi 315, Mirzapur 167. District notifications 2026-27, GO dated 17 September 2025 ke antargat.",
+    "Apply district-wise — last dates: Mirzapur 16 December 2026, Ballia 14 December 2026, Ghazipur 12 December 2026, Sant Kabir Nagar 6 December 2026, Lucknow 3 December 2026, Pilibhit 3 December 2026; Hardoi 26 November 2026 ko band ho chuka hai.",
+    "Sirf mahilayein; recognised board se Intermediate (12th) pass; age 01/07/2026 ko 18-35 saal; centre wale hi ward/gram sabha ki resident; ek parivar se sirf ek mahila Anganwadi post le sakti hai.",
+    "Selection: Intermediate ke percentage par merit-based — koi written exam nahi. Priority: BPL widows / divorced / abandoned women pehle, phir BPL women, phir APL widows / divorced / abandoned women, phir APL women.",
+    "Fee: koi application fee nahi hai. Honorarium-based post (fixed government salary nahi).",
+    "Photo/signature specifications: official notices me kahin nahi di gayi hain — portal jo maange, wahi upload karen.",
+    "Registration form 27 November 2026 ko upanganwadibharti.in/helper-v2/users/registration.php par live verify hua tha. Mirzapur notice (25.11.2026) se 167 posts confirm hue — portal par dikhaya gaya kul 1,583 us notice se pehle ka hai, isliye sahi kul 1,750 hai.",
+    "Upar ke saare facts official district notifications se liye gaye hain (Mirzapur notice: DPO Mirzapur, 25.11.2026)."
+   ],
+   "steps": [
+    "Apne district ka official notification padhen — vacancy aur last date district-wise alag hai.",
+    "Intermediate qualification, age (01/07/2026 ko 18-35) aur apne ward/gram sabha ki residence check karen.",
+    "Verified portal upanganwadibharti.in par Helper registration form bharen.",
+    "Documents upload karen aur form submit karen — koi fee nahi hai.",
+    "Merit list ka intezaar karen — koi exam nahi hota."
+   ],
+   "tagline": "1,750 Anganwadi Helper posts (7 UP districts) — apply till 16 December 2026; women only, Intermediate pass; merit-based, no exam, no fee."
+  },
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "hi": {
+   "checklist": [
+    "Intermediate (12th) ki marksheet aur certificate",
+    "Date of birth ka proof",
+    "Apne hi ward / gram sabha ki residence ka proof",
+    "Recent passport-size photo aur signature ke scans",
+    "Aadhaar card, mobile number aur email ID",
+    "Caste / category certificate, agar lagu ho"
+   ],
+   "documents": [
+    "Intermediate (12th) ki marksheet aur certificate",
+    "Date of birth ka proof",
+    "Apne hi ward / gram sabha ki residence ka proof",
+    "Aadhaar card",
+    "Recent photo aur signature",
+    "Category certificate, agar lagu ho"
+   ],
+   "donts": [
+    "Apne ward / gram sabha ke bahar ke centre ke liye apply na karen — sirf usi ward / gram sabha ki nivasi eligible hai.",
+    "Written exam ka intezaar na karen — selection Intermediate ke percentage par merit-based hai; koi exam nahi hota.",
+    "Apne district ki apni last date miss na karen — last dates district-wise alag hain, ek common date nahi hai.",
+    "Hardoi district ke liye apply na karen — uski window 26 November 2026 ko band ho chuki hai.",
+    "Ise fixed government salary wali naukri na samjhen — ye honorarium-based post hai."
+   ],
+   "dos": [
+    "Pehle apne district ki apni last date check karen — Mirzapur 16 December, Ballia 14 December, Ghazipur 12 December, Lucknow aur Pilibhit 3 December, Sant Kabir Nagar 6 December 2026.",
+    "Sirf apne hi ward / gram sabha ke centre ke liye apply karen.",
+    "Apna Intermediate percentage ready rakhen — selection merit par hota hai, priority BPL widows / divorced / abandoned women ko pehle, phir BPL women, phir APL widows / divorced / abandoned women, phir APL women.",
+    "Verified portal upanganwadibharti.in par hi Helper registration form bharen — form 27 November 2026 ko live verify hua tha.",
+    "Form submit karne ke baad apna registration number aur password safely note kar len."
+   ],
+   "eligibility": [
+    "Sirf mahilayein.",
+    "Recognised board se Intermediate (12th) pass.",
+    "Age 01 July 2026 ko 18-35 saal.",
+    "Jis centre ke liye apply kar rahi hain, usi ward / gram sabha ki nivasi honi chahiye.",
+    "Ek parivar se sirf ek mahila Anganwadi post le sakti hai."
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 1,750 Helper posts, 7 UP districts me — Ghazipur 161, Ballia 486, Pilibhit 153, Lucknow 356, Sant Kabir Nagar 112, Hardoi 315 aur Mirzapur 167. Last date district-wise alag hai — sabse aakhiri Mirzapur ki 16 December 2026 hai.",
+     "q": "UP Anganwadi Helper 2026 me kitni vacancy hai?"
+    },
+    {
+     "a": "Koi application fee nahi hai. Selection Intermediate ke percentage par merit-based hai — koi written exam nahi hota. Ye honorarium-based post hai, fixed government salary nahi.",
+     "q": "UP Anganwadi Helper ki fee aur selection process kya hai?"
+    },
+    {
+     "a": "Sirf mahilayein; recognised board se Intermediate (12th) pass; age 01/07/2026 ko 18-35 saal; apne hi ward/gram sabha ki resident honi chahiye; ek parivar se sirf ek mahila Anganwadi post le sakti hai.",
+     "q": "UP Anganwadi Helper ke liye eligibility kya hai?"
+    },
+    {
+     "a": "Verified portal upanganwadibharti.in par Helper registration form bharen (27 November 2026 ko live verify hua tha). Apne district ki last date check karen — Mirzapur 16 December, Ballia 14 December, Ghazipur 12 December, Lucknow aur Pilibhit 3 December, Sant Kabir Nagar 6 December 2026; Hardoi 26 November ko band ho chuka hai.",
+     "q": "UP Anganwadi Helper ke liye apply kaise karen?"
+    }
+   ],
+   "fees": [
+    "Koi application fee nahi hai."
+   ],
+   "fees_short": "No fee",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Apne ward/gram sabha ke bahar ke centre ke liye apply karna",
+    "Written exam ka intezaar karna (selection merit-based hai)",
+    "Apne district ki last date miss karna",
+    "Hardoi (26 Nov) ke liye apply karna — wo band ho chuka hai"
+   ],
+   "name": "UP Anganwadi Helper Recruitment 2026",
+   "qual": "Recognised board se Intermediate (12th) pass",
+   "specs": [
+    "1,750 posts, 7 districts me — Ghazipur 161, Ballia 486, Pilibhit 153, Lucknow 356, Sant Kabir Nagar 112, Hardoi 315, Mirzapur 167. District notifications 2026-27, GO dated 17 September 2025 ke antargat.",
+    "Apply district-wise — last dates: Mirzapur 16 December 2026, Ballia 14 December 2026, Ghazipur 12 December 2026, Sant Kabir Nagar 6 December 2026, Lucknow 3 December 2026, Pilibhit 3 December 2026; Hardoi 26 November 2026 ko band ho chuka hai.",
+    "Sirf mahilayein; recognised board se Intermediate (12th) pass; age 01/07/2026 ko 18-35 saal; centre wale hi ward/gram sabha ki resident; ek parivar se sirf ek mahila Anganwadi post le sakti hai.",
+    "Selection: Intermediate ke percentage par merit-based — koi written exam nahi. Priority: BPL widows / divorced / abandoned women pehle, phir BPL women, phir APL widows / divorced / abandoned women, phir APL women.",
+    "Fee: koi application fee nahi hai. Honorarium-based post (fixed government salary nahi).",
+    "Photo/signature specifications: official notices me kahin nahi di gayi hain — portal jo maange, wahi upload karen.",
+    "Registration form 27 November 2026 ko upanganwadibharti.in/helper-v2/users/registration.php par live verify hua tha. Mirzapur notice (25.11.2026) se 167 posts confirm hue — portal par dikhaya gaya kul 1,583 us notice se pehle ka hai, isliye sahi kul 1,750 hai.",
+    "Upar ke saare facts official district notifications se liye gaye hain (Mirzapur notice: DPO Mirzapur, 25.11.2026)."
+   ],
+   "steps": [
+    "Apne district ka official notification padhen — vacancy aur last date district-wise alag hai.",
+    "Intermediate qualification, age (01/07/2026 ko 18-35) aur apne ward/gram sabha ki residence check karen.",
+    "Verified portal upanganwadibharti.in par Helper registration form bharen.",
+    "Documents upload karen aur form submit karen — koi fee nahi hai.",
+    "Merit list ka intezaar karen — koi exam nahi hota."
+   ],
+   "tagline": "1,750 Anganwadi Helper posts (7 UP districts) — apply 16 December 2026 tak; sirf mahilayein, Intermediate pass; merit-based, koi exam nahi, koi fee nahi."
+  },
+  "links": {
+   "apply": "https://upanganwadibharti.in/helper-v2/users/registration.php",
+   "notice": null,
+   "site": "https://upanganwadibharti.in/"
+  },
+  "note_en": "Selection is merit-based — there is no written exam. This is an honorarium-based post, not a fixed government salary. Apply only for the centre of your own ward/gram sabha, and check your district's own last date.",
+  "note_hi": "Selection merit-based hai — koi written exam nahi hai. Ye honorarium-based post hai, fixed government salary nahi. Sirf apne hi ward/gram sabha ke centre ke liye apply karen, aur apne district ki apni last date check karen.",
+  "photo_kind": "upload",
+  "portal": "upanganwadibharti.in",
+  "posts": 1750,
+  "slug": "up-anganwadi-helper-2026"
+ },
+ {
+  "advt": "Advt. No. 16/2026",
+  "board_en": "Bihar Public Service Commission (BPSC)",
+  "board_hi": "बिहार लोक सेवा आयोग (BPSC)",
+  "dates": {
+   "apply_end": "2026-12-31",
+   "apply_start": "2026-12-01",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-30"
+  },
+  "en": {
+   "checklist": [
+    "Bachelor's degree certificate and mark sheets",
+    "One Time Registration (OTR) on bpsconline.bihar.gov.in — mandatory before applying",
+    "Aadhaar card (or be ready to pay the extra Rs.200 biometric fee)",
+    "Date of birth proof",
+    "Caste / category certificate, if applicable",
+    "Live photo capture ready (web camera) + English and Hindi signature scans (each not more than 20 KB)"
+   ],
+   "documents": [
+    "Bachelor's degree certificate and mark sheets",
+    "Aadhaar card",
+    "Date of birth proof",
+    "Caste / category certificate, if applicable",
+    "English and Hindi signature images (each not more than 20 KB)",
+    "Disability certificate, if applicable"
+   ],
+   "donts": [
+    "Do not apply before 01 December 2026 — online applications open on 01 December 2026, not before.",
+    "Do not miss the two different last dates — fee payment closes 30 December 2026, online application closes 31 December 2026.",
+    "Do not skip the One Time Registration (OTR) — it is mandatory on bpsconline.bihar.gov.in.",
+    "Do not confuse this with the cancelled Advt. No. 87/2025 — only Advt. No. 16/2026 (dated 26 November 2026) is valid."
+   ],
+   "dos": [
+    "Complete your One Time Registration (OTR) on bpsconline.bihar.gov.in first — applications open 01 December 2026.",
+    "Read Advt. No. 16/2026 (dated 26 November 2026) fully on bpsc.bihar.gov.in before applying.",
+    "Keep your Aadhaar number ready as identity proof — without it, an extra Rs.200 biometric fee applies.",
+    "Prepare for the two-stage selection — Preliminary Examination (General Studies, 150 marks) as a screening test, then the Main Examination (3 papers).",
+    "Save the application number and fee receipt after submission."
+   ],
+   "eligibility": [
+    "Indian citizen.",
+    "Bachelor's degree or equivalent from a recognised university.",
+    "Age: minimum 21 years as on 01 August 2026; maximum 37 years (UR Male), 40 years (BC/EBC Male & Female and UR Female), 42 years (SC/ST Male & Female), with further relaxations as per rules. Note: the advertisement prints the maximum-age cutoff date as 01.08.2025, which differs from the minimum-age cutoff (01.08.2026) — likely a misprint in the advertisement.",
+    "Only Advt. No. 16/2026 is valid — it cancels the earlier Advt. No. 87/2025 dated 22 August 2025."
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 935 posts — UR 374, EBC 93, SC 150, ST 10, Extremely Backward Class 168, Backward Class 112, BC Women 28. Mahilaon ke liye 35% horizontal reservation (kul 319); freedom-fighter descendant 2% (19 posts); Divyang horizontal 37 posts.",
+     "q": "BPSC AEDO 2026 me kitni vacancy hai?"
+    },
+    {
+     "a": "Online application 01 December 2026 se 31 December 2026 tak; fee payment 01 December se 30 December 2026 tak. Fee sirf ₹100 har candidate ke liye (plus bank charges); jo Aadhaar number identity proof ke roop me nahi dete, unhe extra ₹200 biometric fee deni hogi.",
+     "q": "BPSC AEDO ki last date aur fee kya hai?"
+    },
+    {
+     "a": "Recognised university se Bachelor's degree ya equivalent. Age minimum 21 saal (01.08.2026 ko); maximum UR (Male) 37, BC/EBC (Male & Female) aur UR (Female) 40, SC/ST (Male & Female) 42 saal.",
+     "q": "BPSC AEDO ke liye qualification aur age limit kya hai?"
+    },
+    {
+     "a": "Do stages: Preliminary Examination (General Studies, objective MCQ, 2 ghante, 150 marks, 1/3 negative marking) screening test ke roop me, phir Main Examination (3 papers, har ek 100 questions, 2 ghante, 100 marks — General Language, General Studies, General Aptitude). Pay Level-5, probation me basic ₹29,200.",
+     "q": "BPSC AEDO ka selection process kya hai?"
+    }
+   ],
+   "fees": [
+    "Rs.100 only for every candidate (plus bank charges).",
+    "Candidates who do not enter Aadhaar No. as identity proof pay an additional Rs.200 as biometric fee."
+   ],
+   "fees_short": "₹100",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "01 December se pehle apply karne ki koshish karna (applications tabhi khulti hain)",
+    "Fee ki last date (30 Dec) ko application ki last date (31 Dec) samajhna",
+    "OTR kiye bina seedha form bharna",
+    "Cancelled Advt. 87/2025 ko valid samajhna"
+   ],
+   "name": "BPSC Assistant Education Development Officer (AEDO) Recruitment 2026",
+   "qual": "Bachelor's degree or equivalent from a recognised university",
+   "specs": [
+    "935 Assistant Education Development Officer posts under the Education Department, Government of Bihar. Advt. No. 16/2026, dated 26 November 2026 — this advertisement cancels the earlier Advt. No. 87/2025 dated 22 August 2025.",
+    "Category breakup: UR 374 (women 131), EBC 93 (women 33), SC 150 (women 53), ST 10 (women 4), Extremely Backward Class 168 (women 59), Backward Class 112 (women 39), BC Women 28. Women total 319 (35% horizontal reservation); freedom-fighter descendant 2% = 19 posts; Divyang horizontal 37 posts (VI 10, DD 9, OH 9, MD 9).",
+    "Dates: online application 01 December 2026 to 31 December 2026; fee payment 01 December 2026 to 30 December 2026. One Time Registration (OTR) is mandatory at bpsconline.bihar.gov.in before applying.",
+    "Age: minimum 21 years as on 01 August 2026; maximum UR (Male) 37, BC/EBC (Male & Female) and UR (Female) 40, SC/ST (Male & Female) 42, with further relaxations as per rules. The advertisement prints the maximum-age cutoff date as 01.08.2025 (the minimum-age cutoff is 01.08.2026) — likely a misprint.",
+    "Qualification: Bachelor's degree or equivalent from a recognised university.",
+    "Selection: two stages — Preliminary Examination (General Studies, objective MCQ, 2 hours, 150 marks, 5 options, negative marking 1/3 per wrong answer including multiple/no answer; qualifying 40% General, 36.5% BC, 34% EBC, 32% SC/ST/women/Divyang) as a screening test, then Main Examination (3 papers, each 100 questions, 2 hours, 100 marks: General Language — General English 30 + General Hindi 70, qualifying 30% in each; General Studies; General Aptitude).",
+    "Pay: Level-5, basic Rs.29,200 during probation.",
+    "Fee: Rs.100 only for every candidate (plus bank charges); candidates who do not enter Aadhaar No. as identity proof pay an additional Rs.200 as biometric fee.",
+    "Photo/signature: live web-camera photo capture, then upload one English and one Hindi signature; each signature image not more than 20 KB, Width 160-220 pixels and Height 250-320 pixels (as printed in the advertisement).",
+    "All facts above are from Advt. No. 16/2026 (bpsc.bihar.gov.in). The apply portal is the official BPSC online application portal — the AEDO listing appears only after OTR login, so apply through the portal after completing OTR."
+   ],
+   "steps": [
+    "bpsc.bihar.gov.in par Advt. No. 16/2026 padhen — online application 01 December 2026 se shuru.",
+    "bpsconline.bihar.gov.in par One Time Registration (OTR) poora karen.",
+    "Aadhaar number identity proof ke roop me taiyaar rakhen (nahi to extra ₹200 biometric fee lagegi).",
+    "Live photo capture aur English + Hindi signature (har ek 20 KB se kam) ke saath form bharen.",
+    "Fee ₹100 bhugtan karen (30 December 2026 tak) aur form 31 December 2026 tak submit karen."
+   ],
+   "tagline": "935 Assistant Education Development Officer posts — apply 1–31 December 2026; Bachelor's degree; fee ₹100; Prelims + Mains."
+  },
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "hi": {
+   "checklist": [
+    "Bachelor's degree ka certificate aur mark sheets",
+    "bpsconline.bihar.gov.in par One Time Registration (OTR) — apply karne se pehle mandatory hai",
+    "Aadhaar card (ya extra ₹200 biometric fee ke liye taiyaar rahen)",
+    "Date of birth ka proof",
+    "Caste / category certificate, agar lagu ho",
+    "Live photo capture ke liye taiyaar rahen (web camera) + English aur Hindi signature ke scans (har ek 20 KB se kam)"
+   ],
+   "documents": [
+    "Bachelor's degree ka certificate aur mark sheets",
+    "Aadhaar card",
+    "Date of birth ka proof",
+    "Caste / category certificate, agar lagu ho",
+    "English aur Hindi signature images (har ek 20 KB se kam)",
+    "Disability certificate, agar lagu ho"
+   ],
+   "donts": [
+    "01 December 2026 se pehle apply karne ki koshish na karen — online applications 01 December 2026 ko hi khulti hain.",
+    "Do alag last dates ko confuse na karen — fee payment 30 December 2026 ko band hoti hai, online application 31 December 2026 ko.",
+    "One Time Registration (OTR) kiye bina seedha form na bharen — ye bpsconline.bihar.gov.in par mandatory hai.",
+    "Cancelled Advt. No. 87/2025 ko valid na samjhen — sirf Advt. No. 16/2026 (dated 26 November 2026) valid hai."
+   ],
+   "dos": [
+    "Pehle bpsconline.bihar.gov.in par One Time Registration (OTR) poora karen — applications 01 December 2026 ko khulti hain.",
+    "Apply karne se pehle Advt. No. 16/2026 (dated 26 November 2026) bpsc.bihar.gov.in par poora padhen.",
+    "Aadhaar number identity proof ke roop me ready rakhen — bina iske extra ₹200 biometric fee lagegi.",
+    "Do-stage selection ki taiyaari karen — Preliminary Examination (General Studies, 150 marks) screening test, phir Main Examination (3 papers).",
+    "Submit karne ke baad application number aur fee receipt sambhal kar rakhen."
+   ],
+   "eligibility": [
+    "Indian citizen.",
+    "Recognised university se Bachelor's degree ya equivalent.",
+    "Age: minimum 21 saal (01 August 2026 ko); maximum UR (Male) 37, BC/EBC (Male & Female) aur UR (Female) 40, SC/ST (Male & Female) 42 saal, rules ke anusaar aur relaxations ke saath. Note: advertisement me maximum-age ki cutoff date 01.08.2025 chhapi hai, jo minimum-age cutoff (01.08.2026) se alag hai — sambhavtah advertisement me misprint hai.",
+    "Sirf Advt. No. 16/2026 valid hai — ye pehle wale Advt. No. 87/2025 (dated 22 August 2025) ko cancel karta hai."
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 935 posts — UR 374, EBC 93, SC 150, ST 10, Extremely Backward Class 168, Backward Class 112, BC Women 28. Mahilaon ke liye 35% horizontal reservation (kul 319); freedom-fighter descendant 2% (19 posts); Divyang horizontal 37 posts.",
+     "q": "BPSC AEDO 2026 me kitni vacancy hai?"
+    },
+    {
+     "a": "Online application 01 December 2026 se 31 December 2026 tak; fee payment 01 December se 30 December 2026 tak. Fee sirf ₹100 har candidate ke liye (plus bank charges); jo Aadhaar number identity proof ke roop me nahi dete, unhe extra ₹200 biometric fee deni hogi.",
+     "q": "BPSC AEDO ki last date aur fee kya hai?"
+    },
+    {
+     "a": "Recognised university se Bachelor's degree ya equivalent. Age minimum 21 saal (01.08.2026 ko); maximum UR (Male) 37, BC/EBC (Male & Female) aur UR (Female) 40, SC/ST (Male & Female) 42 saal.",
+     "q": "BPSC AEDO ke liye qualification aur age limit kya hai?"
+    },
+    {
+     "a": "Do stages: Preliminary Examination (General Studies, objective MCQ, 2 ghante, 150 marks, 1/3 negative marking) screening test ke roop me, phir Main Examination (3 papers, har ek 100 questions, 2 ghante, 100 marks — General Language, General Studies, General Aptitude). Pay Level-5, probation me basic ₹29,200.",
+     "q": "BPSC AEDO ka selection process kya hai?"
+    }
+   ],
+   "fees": [
+    "Har candidate ke liye sirf ₹100 (plus bank charges).",
+    "Jo candidate Aadhaar No. identity proof ke roop me nahi dete, unhe extra ₹200 biometric fee deni hogi."
+   ],
+   "fees_short": "₹100",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "01 December se pehle apply karne ki koshish karna (applications tabhi khulti hain)",
+    "Fee ki last date (30 Dec) ko application ki last date (31 Dec) samajhna",
+    "OTR kiye bina seedha form bharna",
+    "Cancelled Advt. 87/2025 ko valid samajhna"
+   ],
+   "name": "BPSC Assistant Education Development Officer (AEDO) Recruitment 2026",
+   "qual": "Recognised university se Bachelor's degree ya equivalent",
+   "specs": [
+    "Bihar sarkar ke Education Department ke antargat 935 Assistant Education Development Officer posts. Advt. No. 16/2026, dated 26 November 2026 — ye advertisement pehle wale Advt. No. 87/2025 (dated 22 August 2025) ko cancel karta hai.",
+    "Category breakup: UR 374 (mahilayein 131), EBC 93 (mahilayein 33), SC 150 (mahilayein 53), ST 10 (mahilayein 4), Extremely Backward Class 168 (mahilayein 59), Backward Class 112 (mahilayein 39), BC Women 28. Mahilayein kul 319 (35% horizontal reservation); freedom-fighter descendant 2% = 19 posts; Divyang horizontal 37 posts (VI 10, DD 9, OH 9, MD 9).",
+    "Dates: online application 01 December 2026 se 31 December 2026 tak; fee payment 01 December 2026 se 30 December 2026 tak. Apply karne se pehle bpsconline.bihar.gov.in par One Time Registration (OTR) mandatory hai.",
+    "Age: minimum 21 saal (01 August 2026 ko); maximum UR (Male) 37, BC/EBC (Male & Female) aur UR (Female) 40, SC/ST (Male & Female) 42 saal, rules ke anusaar aur relaxations ke saath. Advertisement me maximum-age ki cutoff date 01.08.2025 chhapi hai (minimum-age cutoff 01.08.2026 hai) — sambhavtah misprint hai.",
+    "Qualification: recognised university se Bachelor's degree ya equivalent.",
+    "Selection: do stages — Preliminary Examination (General Studies, objective MCQ, 2 ghante, 150 marks, 5 options, galat jawab par 1/3 negative marking, multiple/no answer sahit; qualifying 40% General, 36.5% BC, 34% EBC, 32% SC/ST/mahila/Divyang) screening test ke roop me, phir Main Examination (3 papers, har ek 100 questions, 2 ghante, 100 marks: General Language — General English 30 + General Hindi 70, har ek me 30% qualifying; General Studies; General Aptitude).",
+    "Pay: Level-5, probation me basic ₹29,200.",
+    "Fee: har candidate ke liye sirf ₹100 (plus bank charges); jo Aadhaar No. identity proof ke roop me nahi dete, unhe extra ₹200 biometric fee deni hogi.",
+    "Photo/signature: live web-camera photo capture, phir ek English aur ek Hindi signature upload karen; har signature image 20 KB se kam, Width 160-220 pixels aur Height 250-320 pixels (advertisement me chhapa hua).",
+    "Upar ke saare facts Advt. No. 16/2026 (bpsc.bihar.gov.in) se hain. Apply portal official BPSC online application portal hai — AEDO listing OTR login ke baad hi dikhti hai, isliye OTR poora karke portal se apply karen."
+   ],
+   "steps": [
+    "bpsc.bihar.gov.in par Advt. No. 16/2026 padhen — online application 01 December 2026 se shuru.",
+    "bpsconline.bihar.gov.in par One Time Registration (OTR) poora karen.",
+    "Aadhaar number identity proof ke roop me taiyaar rakhen (nahi to extra ₹200 biometric fee lagegi).",
+    "Live photo capture aur English + Hindi signature (har ek 20 KB se kam) ke saath form bharen.",
+    "Fee ₹100 bhugtan karen (30 December 2026 tak) aur form 31 December 2026 tak submit karen."
+   ],
+   "tagline": "935 Assistant Education Development Officer posts — apply 1–31 December 2026; Bachelor's degree; fee ₹100; Prelims + Mains."
+  },
+  "links": {
+   "apply": "https://bpsconline.bihar.gov.in/candidate/login",
+   "notice": "https://bpsc.bihar.gov.in/wp-content/uploads/BPSC_content/Notices/AEDO-Advt-No.-16-2026_BPSC-20261126-d39c5b.pdf",
+   "site": "https://bpsc.bihar.gov.in/"
+  },
+  "note_en": null,
+  "note_hi": null,
+  "photo_kind": "live",
+  "portal": "bpsconline.bihar.gov.in",
+  "posts": 935,
+  "slug": "bpsc-aedo-2026"
+ },
+ {
+  "advt": "Advt. No. आस्था/प्रशा २(ब)/१५८०/२०२६",
+  "board_en": "Vasai Virar City Municipal Corporation (VVCMC)",
+  "board_hi": "वसई विरार शहर महानगरपालिका (VVCMC)",
+  "dates": {
+   "apply_end": "2026-12-17",
+   "apply_start": "2026-11-26",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-19"
+  },
+  "en": {
+   "checklist": [
+    "Post-wise qualification certificate and mark sheets (Diploma / Degree / ITI certificate as per your post)",
+    "Marathi typing certificate (30 wpm) and English typing certificate (40 wpm), if your post needs typing",
+    "MS-CIT certificate, if your post needs it",
+    "Caste / category certificate, if applicable",
+    "Aadhaar card, mobile number and email ID",
+    "Recent passport-size colour photo (4.5 x 3.5 cm, 10-200 KB) and signature (140 x 60 px, 10-100 KB)"
+   ],
+   "documents": [
+    "Qualification certificate and mark sheets",
+    "Typing certificates (Marathi 30 wpm / English 40 wpm), if applicable",
+    "MS-CIT certificate, if applicable",
+    "Caste / category certificate, if applicable",
+    "Aadhaar card",
+    "Recent photo (10-200 KB) and signature (10-100 KB)"
+   ],
+   "donts": [
+    "Do not miss the two different last dates — online application closes 17 December 2026 (11:55 PM), fee payment closes 19 December 2026.",
+    "Do not apply without Marathi knowledge — knowledge of Marathi is required for every post.",
+    "Do not pay the fee for more than one post in a single payment — a separate fee is charged per post if you apply for more than one post.",
+    "Do not expect an interview — Group C posts have NO interview; selection is through the online written examination and document verification only."
+   ],
+   "dos": [
+    "Read the official advertisement (Advt. No. आस्था/प्रशा २(ब)/१५८०/२०२६, dated 25 November 2026) fully on vvcmc.in before applying.",
+    "Check the post-wise qualification in Appendix Two of the advertisement — requirements differ sharply across the 18 posts.",
+    "Apply on the verified DigiALM form — it shows the dates (start 26 November 2026, closing 17 December 2026, 11:55 PM).",
+    "Keep your photo (4.5 x 3.5 cm, 10-200 KB) and signature (140 x 60 px, 10-100 KB) ready before starting the form.",
+    "Save the application number and fee receipt after submission."
+   ],
+   "eligibility": [
+    "Indian citizen.",
+    "Qualification is post-wise: JE (Electrical/Mechanical/Civil) — Diploma with 3 years experience OR Degree; Garden Inspector — B.Sc. Horticulture/Agriculture/Botany/Forestry or Botany degree; Assistant Chemical Technician — M.Sc. Chemistry/Microbiology/Environmental Science + 2 years experience; Aarakshak (Draftsman) — SSC/HSC + Draftsman certificate from a recognised ITI; Surveyor — Diploma in Civil OR SSC + 2-year Surveyor trade certificate + Marathi 30 wpm / English 40 wpm typing; Electrician — SSC + Electrician course certificate from a recognised ITI; Health/Sanitation Inspector — HSC + degree (Science preferred); Assistant Librarian — B.Lib. (M.Lib. preferred); Clerk-Typist — SSC + Marathi 30 wpm / English 40 wpm typing + MS-CIT or DOEACC CCC/O/A/B/C level; Assistant Law Officer — Law degree + 5 years court/advocate experience; Statistical Officer — Degree with Statistics; Laboratory Technician — Degree in Chemistry/Microbiology + D.M.L.T. diploma/degree + 3 years experience; Filter Inspector — B.Sc. (Chemistry) + 3 years experience in Filter Water Treatment Plant operation; Fire Station Officer — Degree + Station Officer course (NFSC Nagpur / Maharashtra Fire Service Academy / Grad-I IFE) + MS-CIT + physical standards + 3 years service; Deputy Fire Station Officer — Degree + Sub Fire Officer course + MS-CIT + physical standards + Leading Fireman experience; Leading Fireman — SSC + 6-month fireman training + MS-CIT + physical standards.",
+    "Knowledge of Marathi is required for every post.",
+    "Age as on 02 November 2026: minimum 18 years for all posts; maximum Open 38, Backward/Orphan 43, Divyang 45, Project-affected/Earthquake-affected 45 years; VVCMC establishment candidates Open 48 / Backward 53 years. Ex-serviceman: service period + 3 years. Fire posts have their own age limits (Fire Station Officer direct service not more than 40 years; Deputy Fire Station Officer direct not more than 35 years, government fire service employees relaxed to 45 years; Leading Fireman not more than 30 years)."
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 156 posts, 18 categories me — Junior Engineer (Civil) 50, Clerk-Typist 50, Electrician 10, Leading Fireman 10, JE (Electrical) 7, Surveyor 4, Aarakshak-Draftsman 4, Deputy Fire Station Officer 4, Garden Inspector 3, Filter Inspector 3, JE (Mechanical) 2, Assistant Chemical Technician 2, Fire Station Officer 2, aur Health/Sanitation Inspector, Assistant Librarian, Assistant Law Officer, Statistical Officer, Laboratory Technician — har ek 1.",
+     "q": "VVCMC Group C Recruitment 2026 me kitni vacancy hai?"
+    },
+    {
+     "a": "Online application 26 November 2026 se 17 December 2026 (11:55 PM) tak; fee payment 19 December 2026 tak. Fee: Open ₹1,000; Reserved/Backward, Orphan, Divyang, EWS ₹900; Ex-serviceman ₹0; non-refundable, sirf online.",
+     "q": "VVCMC Group C ki last date aur fee kya hai?"
+    },
+    {
+     "a": "Qualification post-wise hai — JE ke liye Diploma/Degree, Clerk-Typist ke liye SSC + typing (Marathi 30 wpm / English 40 wpm) + MS-CIT, Electrician ke liye SSC + ITI certificate, Fire posts ke liye degree + fire course + physical standards. Har post ke liye Marathi ka gyaan anivarya hai. Age 02/11/2026 ko: minimum 18, maximum Open 38, Backward/Orphan 43, Divyang 45 saal.",
+     "q": "VVCMC Group C ke liye qualification aur age limit kya hai?"
+    },
+    {
+     "a": "Online written examination (CBT); Group C posts ke liye KOI interview nahi hai (Government Resolution dated 04/05/2022). Merit list vvcmc.in par; selected candidates ki document verification hogi. Hall ticket exam se 7 din pehle milega. Photo 4.5x3.5 cm, 10-200 KB; signature 140x60 px, 10-100 KB.",
+     "q": "VVCMC Group C ka selection process kya hai?"
+    }
+   ],
+   "fees": [
+    "Open: Rs.1,000.",
+    "Reserved/Backward, Orphan, Divyang, EWS: Rs.900.",
+    "Ex-serviceman: Rs.0.",
+    "Fee is non-refundable and online only; a separate fee is charged per post if applying for more than one post."
+   ],
+   "fees_short": "₹900–₹1,000",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Application last date (17 Dec) ko fee last date (19 Dec) samajhna",
+    "Bina Marathi gyaan ke apply karna (har post ke liye anivarya hai)",
+    "Interview ki taiyaari karna (Group C me interview nahi hota)",
+    "Post-wise qualification check kiye bina apply karna"
+   ],
+   "name": "VVCMC Group C Recruitment 2026",
+   "qual": "Post-wise: SSC/HSC, ITI certificate, Diploma, Degree — see official advertisement; Marathi knowledge required for all posts",
+   "specs": [
+    "156 Group C posts in 18 categories. Advt. No. आस्था/प्रशा २(ब)/१५८०/२०२६, dated 25 November 2026 (Vasai Virar City Municipal Corporation).",
+    "Post-wise: Junior Engineer (Civil) 50, Clerk-Typist 50, Electrician 10, Leading Fireman 10, Junior Engineer (Electrical) 7, Surveyor 4, Aarakshak (Draftsman) 4, Deputy Fire Station Officer 4, Garden Inspector 3, Filter Inspector 3, Junior Engineer (Mechanical) 2, Assistant Chemical Technician 2, Fire Station Officer 2, Health/Sanitation Inspector 1, Assistant Librarian 1, Assistant Law Officer 1, Statistical Officer 1, Laboratory Technician 1.",
+    "Dates: online applications 26 November 2026 to 17 December 2026 (11:55 PM); fee payment last date 19 December 2026; hall ticket 7 days before the exam; exam date and venue in the hall ticket and on vvcmc.in.",
+    "Age as on 02 November 2026: minimum 18 years for all posts; maximum Open 38, Backward/Orphan 43, Divyang 45, Project-affected/Earthquake-affected 45 years; VVCMC establishment candidates Open 48 / Backward 53 years; ex-serviceman: service period + 3 years. Fire posts have their own age limits (see eligibility).",
+    "Qualification: post-wise as per Appendix Two of the advertisement (JE — Diploma + 3 years experience OR Degree; Clerk-Typist — SSC + typing + MS-CIT; Electrician — SSC + ITI; Fire posts — Degree + fire course + physical standards). Knowledge of Marathi is required for every post.",
+    "Selection: online written examination (CBT); NO interview for Group C posts (per Government Resolution dated 04/05/2022); merit list on vvcmc.in; document verification for selected candidates.",
+    "Fee: Open Rs.1,000; Reserved/Backward, Orphan, Divyang, EWS Rs.900; Ex-serviceman Rs.0; non-refundable, online only; separate fee per post if applying for more than one post.",
+    "Photo: 4.5 cm x 3.5 cm, recent passport-style colour, light background, face straight, no cap/sunglasses, preferred 200x230 pixels, 10 KB-200 KB, not older than 6 months from application date, scan at least 200 dpi. Signature: black ink ball pen on white paper, 140x60 pixels, 10 KB-100 KB.",
+    "All facts above are from the official 31-page advertisement (vvcmc.in). The 156 total was verified by re-reading the page-1 vacancy table and cross-checking every post against its annexure entry."
+   ],
+   "steps": [
+    "vvcmc.in par official advertisement (Advt. No. आस्था/प्रशा २(ब)/१५८०/२०२६) padhen — last date 17 December 2026 (11:55 PM).",
+    "Apni post ki qualification Appendix Two me check karen (har post ke liye Marathi gyaan anivarya hai).",
+    "Photo (4.5x3.5 cm, 10-200 KB) aur signature (140x60 px, 10-100 KB) ready rakhen.",
+    "Verified DigiALM form par register karen aur form bharen.",
+    "Fee online bhugtan karen (19 December 2026 tak) aur application number sambhal kar rakhen."
+   ],
+   "tagline": "156 Group C posts in 18 categories — Junior Engineer, Clerk-Typist and more; apply 26 November–17 December 2026; online exam, no interview."
+  },
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "hi": {
+   "checklist": [
+    "Post-wise qualification certificate aur mark sheets (Diploma / Degree / ITI certificate, post ke anusaar)",
+    "Marathi typing certificate (30 wpm) aur English typing certificate (40 wpm), agar post me typing chahiye",
+    "MS-CIT certificate, agar post me chahiye",
+    "Caste / category certificate, agar lagu ho",
+    "Aadhaar card, mobile number aur email ID",
+    "Recent passport-size colour photo (4.5 x 3.5 cm, 10-200 KB) aur signature (140 x 60 px, 10-100 KB)"
+   ],
+   "documents": [
+    "Qualification certificate aur mark sheets",
+    "Typing certificates (Marathi 30 wpm / English 40 wpm), agar lagu ho",
+    "MS-CIT certificate, agar lagu ho",
+    "Caste / category certificate, agar lagu ho",
+    "Aadhaar card",
+    "Recent photo (10-200 KB) aur signature (10-100 KB)"
+   ],
+   "donts": [
+    "Do alag last dates ko confuse na karen — online application 17 December 2026 (11:55 PM) ko band hoti hai, fee payment 19 December 2026 tak.",
+    "Bina Marathi gyaan ke apply na karen — Marathi ka gyaan har post ke liye anivarya hai.",
+    "Ek se zyada posts ke liye ek hi payment me fee na bharen — har post ke liye alag fee lagti hai.",
+    "Interview ki ummeed na karen — Group C posts me interview NAHI hota; selection sirf online written examination aur document verification se hota hai."
+   ],
+   "dos": [
+    "Apply karne se pehle official advertisement (Advt. No. आस्था/प्रशा २(ब)/१५८०/२०२६, dated 25 November 2026) vvcmc.in par poora padhen.",
+    "Post-wise qualification advertisement ke Appendix Two me check karen — 18 posts ki requirements kaafi alag hain.",
+    "Verified DigiALM form par hi apply karen — us par dates dikhti hain (start 26 November 2026, closing 17 December 2026, 11:55 PM).",
+    "Form shuru karne se pehle photo (4.5x3.5 cm, 10-200 KB) aur signature (140x60 px, 10-100 KB) ready rakhen.",
+    "Submit karne ke baad application number aur fee receipt sambhal kar rakhen."
+   ],
+   "eligibility": [
+    "Indian citizen.",
+    "Qualification post-wise hai: JE (Electrical/Mechanical/Civil) — 3 saal experience ke saath Diploma ya Degree; Garden Inspector — B.Sc. Horticulture/Agriculture/Botany/Forestry ya Botany degree; Assistant Chemical Technician — M.Sc. Chemistry/Microbiology/Environmental Science + 2 saal experience; Aarakshak (Draftsman) — SSC/HSC + recognised ITI se Draftsman certificate; Surveyor — Civil Diploma ya SSC + 2 saal ka Surveyor trade certificate + Marathi 30 wpm / English 40 wpm typing; Electrician — SSC + recognised ITI se Electrician course certificate; Health/Sanitation Inspector — HSC + degree (Science preferred); Assistant Librarian — B.Lib. (M.Lib. preferred); Clerk-Typist — SSC + Marathi 30 wpm / English 40 wpm typing + MS-CIT ya DOEACC CCC/O/A/B/C level; Assistant Law Officer — Law degree + 5 saal court/advocate experience; Statistical Officer — Statistics subject ke saath Degree; Laboratory Technician — Chemistry/Microbiology me Degree + D.M.L.T. diploma/degree + 3 saal experience; Filter Inspector — B.Sc. (Chemistry) + 3 saal Filter Water Treatment Plant operation experience; Fire Station Officer — Degree + Station Officer course (NFSC Nagpur / Maharashtra Fire Service Academy / Grad-I IFE) + MS-CIT + physical standards + 3 saal service; Deputy Fire Station Officer — Degree + Sub Fire Officer course + MS-CIT + physical standards + Leading Fireman experience; Leading Fireman — SSC + 6 mahine ka fireman training course + MS-CIT + physical standards.",
+    "Har post ke liye Marathi ka gyaan anivarya hai.",
+    "Age 02 November 2026 ko: sabhi posts ke liye minimum 18 saal; maximum Open 38, Backward/Orphan 43, Divyang 45, Project-affected/Earthquake-affected 45 saal; VVCMC establishment candidates Open 48 / Backward 53 saal. Ex-serviceman: service period + 3 saal. Fire posts ki apni age limits hain (Fire Station Officer direct service 40 saal se zyada nahi; Deputy Fire Station Officer direct 35 saal se zyada nahi, government fire service employees ko 45 saal tak chhoot; Leading Fireman 30 saal se zyada nahi)."
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 156 posts, 18 categories me — Junior Engineer (Civil) 50, Clerk-Typist 50, Electrician 10, Leading Fireman 10, JE (Electrical) 7, Surveyor 4, Aarakshak-Draftsman 4, Deputy Fire Station Officer 4, Garden Inspector 3, Filter Inspector 3, JE (Mechanical) 2, Assistant Chemical Technician 2, Fire Station Officer 2, aur Health/Sanitation Inspector, Assistant Librarian, Assistant Law Officer, Statistical Officer, Laboratory Technician — har ek 1.",
+     "q": "VVCMC Group C Recruitment 2026 me kitni vacancy hai?"
+    },
+    {
+     "a": "Online application 26 November 2026 se 17 December 2026 (11:55 PM) tak; fee payment 19 December 2026 tak. Fee: Open ₹1,000; Reserved/Backward, Orphan, Divyang, EWS ₹900; Ex-serviceman ₹0; non-refundable, sirf online.",
+     "q": "VVCMC Group C ki last date aur fee kya hai?"
+    },
+    {
+     "a": "Qualification post-wise hai — JE ke liye Diploma/Degree, Clerk-Typist ke liye SSC + typing (Marathi 30 wpm / English 40 wpm) + MS-CIT, Electrician ke liye SSC + ITI certificate, Fire posts ke liye degree + fire course + physical standards. Har post ke liye Marathi ka gyaan anivarya hai. Age 02/11/2026 ko: minimum 18, maximum Open 38, Backward/Orphan 43, Divyang 45 saal.",
+     "q": "VVCMC Group C ke liye qualification aur age limit kya hai?"
+    },
+    {
+     "a": "Online written examination (CBT); Group C posts ke liye KOI interview nahi hai (Government Resolution dated 04/05/2022). Merit list vvcmc.in par; selected candidates ki document verification hogi. Hall ticket exam se 7 din pehle milega. Photo 4.5x3.5 cm, 10-200 KB; signature 140x60 px, 10-100 KB.",
+     "q": "VVCMC Group C ka selection process kya hai?"
+    }
+   ],
+   "fees": [
+    "Open: ₹1,000.",
+    "Reserved/Backward, Orphan, Divyang, EWS: ₹900.",
+    "Ex-serviceman: ₹0.",
+    "Fee non-refundable hai aur sirf online bharni hai; ek se zyada posts ke liye apply karne par har post ke liye alag fee lagti hai."
+   ],
+   "fees_short": "₹900–₹1,000",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Application last date (17 Dec) ko fee last date (19 Dec) samajhna",
+    "Bina Marathi gyaan ke apply karna (har post ke liye anivarya hai)",
+    "Interview ki taiyaari karna (Group C me interview nahi hota)",
+    "Post-wise qualification check kiye bina apply karna"
+   ],
+   "name": "VVCMC Group C Recruitment 2026",
+   "qual": "Post-wise: SSC/HSC, ITI certificate, Diploma, Degree — official advertisement dekhen; har post ke liye Marathi ka gyaan anivarya hai",
+   "specs": [
+    "156 Group C posts, 18 categories me. Advt. No. आस्था/प्रशा २(ब)/१५८०/२०२६, dated 25 November 2026 (Vasai Virar City Municipal Corporation).",
+    "Post-wise: Junior Engineer (Civil) 50, Clerk-Typist 50, Electrician 10, Leading Fireman 10, Junior Engineer (Electrical) 7, Surveyor 4, Aarakshak (Draftsman) 4, Deputy Fire Station Officer 4, Garden Inspector 3, Filter Inspector 3, Junior Engineer (Mechanical) 2, Assistant Chemical Technician 2, Fire Station Officer 2, Health/Sanitation Inspector 1, Assistant Librarian 1, Assistant Law Officer 1, Statistical Officer 1, Laboratory Technician 1.",
+    "Dates: online applications 26 November 2026 se 17 December 2026 (11:55 PM) tak; fee payment ki last date 19 December 2026; hall ticket exam se 7 din pehle; exam date aur venue hall ticket aur vvcmc.in par.",
+    "Age 02 November 2026 ko: sabhi posts ke liye minimum 18 saal; maximum Open 38, Backward/Orphan 43, Divyang 45, Project-affected/Earthquake-affected 45 saal; VVCMC establishment candidates Open 48 / Backward 53 saal; ex-serviceman: service period + 3 saal. Fire posts ki apni age limits hain (eligibility dekhen).",
+    "Qualification: advertisement ke Appendix Two ke anusaar post-wise (JE — 3 saal experience ke saath Diploma ya Degree; Clerk-Typist — SSC + typing + MS-CIT; Electrician — SSC + ITI; Fire posts — Degree + fire course + physical standards). Har post ke liye Marathi ka gyaan anivarya hai.",
+    "Selection: online written examination (CBT); Group C posts ke liye KOI interview nahi hai (Government Resolution dated 04/05/2022 ke anusaar); merit list vvcmc.in par; selected candidates ki document verification hogi.",
+    "Fee: Open ₹1,000; Reserved/Backward, Orphan, Divyang, EWS ₹900; Ex-serviceman ₹0; non-refundable, sirf online; ek se zyada posts ke liye apply karne par har post ke liye alag fee.",
+    "Photo: 4.5 cm x 3.5 cm, recent passport-style colour, light background, face seedha, no cap/sunglasses, preferred 200x230 pixels, 10 KB-200 KB, application date se 6 mahine se purani nahi, kam se kam 200 dpi par scan karen. Signature: black ink ball pen, white paper par, 140x60 pixels, 10 KB-100 KB.",
+    "Upar ke saare facts official 31-page advertisement (vvcmc.in) se hain. 156 ka kul page-1 vacancy table ko dobara padhkar aur har post ko uske annexure entry se cross-check karke verify kiya gaya hai."
+   ],
+   "steps": [
+    "vvcmc.in par official advertisement (Advt. No. आस्था/प्रशा २(ब)/१५८०/२०२६) padhen — last date 17 December 2026 (11:55 PM).",
+    "Apni post ki qualification Appendix Two me check karen (har post ke liye Marathi gyaan anivarya hai).",
+    "Photo (4.5x3.5 cm, 10-200 KB) aur signature (140x60 px, 10-100 KB) ready rakhen.",
+    "Verified DigiALM form par register karen aur form bharen.",
+    "Fee online bhugtan karen (19 December 2026 tak) aur application number sambhal kar rakhen."
+   ],
+   "tagline": "18 categories me 156 Group C posts — Junior Engineer, Clerk-Typist aur anya; apply 26 November–17 December 2026; online exam, koi interview nahi."
+  },
+  "links": {
+   "apply": "https://cdn.digialm.com/EForms/configuredHtml/33226/102411/5vyIWOU202GUnXru64/Index.html",
+   "notice": "https://vvcmc.in/wp-content/uploads/2026/11/%E0%A4%9C%E0%A4%BE%E0%A4%B9%E0%A4%BF%E0%A4%B0%E0%A4%A4%20-%20FINAL.pdf",
+   "site": "https://vvcmc.in/"
+  },
+  "note_en": null,
+  "note_hi": null,
+  "photo_kind": "upload",
+  "portal": "vvcmc.in",
+  "posts": 156,
+  "slug": "vvcmc-group-c-2026"
+ },
+ {
+  "advt": "Advt. No. NH/Talent Acquisition/07/2026",
+  "board_en": "NHPC Limited",
+  "board_hi": "एनएचपीसी लिमिटेड",
+  "dates": {
+   "apply_end": "2026-12-26",
+   "apply_start": "2026-11-27",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-26"
+  },
+  "en": {
+   "checklist": [
+    "B.E./B.Tech degree certificate and mark sheets (minimum 60% marks)",
+    "Valid GATE-2025 or GATE-2026 score card with registration number",
+    "Aadhaar card, mobile number and email ID",
+    "Recent passport-size colour photo (JPEG, less than 50 KB) and signature (JPEG, less than 25 KB)",
+    "Caste / category certificate, if applicable",
+    "Scanned copies of certificates (PDF, 100-400 KB each) — Matriculation, XII, Graduation and Post-Graduation (if applicable)"
+   ],
+   "documents": [
+    "B.E./B.Tech degree certificate and mark sheets",
+    "GATE-2025 / GATE-2026 score card",
+    "Matriculation / Secondary School Certificate (date of birth proof)",
+    "Caste / category certificate, if applicable",
+    "Recent photo (JPEG, less than 50 KB) and signature (JPEG, less than 25 KB)",
+    "Scanned certificates (PDF, 100-400 KB each)"
+   ],
+   "donts": [
+    "Do not apply without a valid GATE-2025 or GATE-2026 score — only the GATE score (normalised marks out of 100) is valid for this recruitment.",
+    "Do not enter a wrong GATE registration number — applications registered with an invalid GATE registration number are rejected.",
+    "Do not use the portal's 'view full advertisement' button — it links to a stale 2023-24 advertisement; the correct notice is the Advt. 07/2026 PDF linked on this page.",
+    "Do not miss the window — applications close 26 December 2026 at 5:00 PM."
+   ],
+   "dos": [
+    "Read Advt. No. NH/Talent Acquisition/07/2026 (dated 24 November 2026) fully on nhpcindia.com before applying.",
+    "Enter your best GATE score if you appeared in both GATE-2025 and GATE-2026 — the best score is used.",
+    "Apply on the verified NHPC registration form (RECTT_47) — it was seen live on 27 November 2026 after 10:00 AM.",
+    "Keep your photo (JPEG, less than 50 KB) and signature (JPEG, less than 25 KB) ready before starting the form.",
+    "Save the registration number after submitting the form — all future correspondence is by email only."
+   ],
+   "eligibility": [
+    "Indian citizen.",
+    "Full-time regular Bachelor's Degree in Engineering / Technology / B.Sc. (Engineering) in Civil, Electrical or Mechanical discipline from a recognised Indian University / Institute approved by AICTE, with minimum 60% marks or equivalent grade; AMIE (enrolment up to 31.05.2013) with minimum 60% marks is also eligible.",
+    "Valid GATE-2025 or GATE-2026 score in the corresponding paper (best score if both). Only the GATE score (normalised marks out of 100) is valid.",
+    "Maximum age 30 years as on 26 December 2026 (last date of application). Ex-servicemen relaxation as per Government guidelines."
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 205 posts — Civil (NHPC) 64, Electrical (NHPC) 76 + (NHDC) 12, Mechanical (NHPC) 48 + (NHDC) 5. Category: UR 89, EWS 44, OBC 41, SC 20, ST 11; PwBD 8 reserved within the total.",
+     "q": "NHPC Trainee Engineer 2026 me kitni vacancy hai?"
+    },
+    {
+     "a": "Online application 27 November 2026 (10 AM) se 26 December 2026 (5 PM) tak. Fee ₹708 (₹600 + applicable taxes) UR/EWS/OBC ke liye; SC/ST/Women/PwBD/Ex-servicemen ko koi fee nahi.",
+     "q": "NHPC Trainee Engineer ki last date aur fee kya hai?"
+    },
+    {
+     "a": "Civil, Electrical ya Mechanical me full-time regular B.E./B.Tech (minimum 60% marks) + valid GATE-2025 ya GATE-2026 score (corresponding paper, best score). Maximum age 30 saal (26 December 2026 ko).",
+     "q": "NHPC Trainee Engineer ke liye qualification aur age limit kya hai?"
+    },
+    {
+     "a": "GATE-2025/GATE-2026 score 75% + Group Discussion 5% + Personal Interview 20%; shortlisting 5 times vacancies tak; GD+PI me combined qualifying marks 40% (UR/OBC/EWS) aur 30% (SC/ST/PwBD). Pay E2 scale ₹50,000–₹1,60,000 (IDA), kul ~₹16–17 lakh per year; 1 saal training + 1 saal probation; surety bond ₹4,00,000 (SC/ST/PwBD ₹2,00,000) + GST, minimum 4 saal service.",
+     "q": "NHPC Trainee Engineer ka selection process aur pay kya hai?"
+    }
+   ],
+   "fees": [
+    "Rs.708 (Rs.600 plus applicable taxes) for UR/EWS/OBC (NCL).",
+    "No fee for SC/ST/Women/PwBD/Ex-servicemen."
+   ],
+   "fees_short": "₹708",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Bina valid GATE score ke apply karna",
+    "GATE registration number galat bharna",
+    "Portal ke stale 2023-24 advertisement link ko sahi samajhna",
+    "26 December 5 PM ki last date miss karna"
+   ],
+   "name": "NHPC Trainee Engineer Recruitment 2026",
+   "qual": "B.E./B.Tech in Civil / Electrical / Mechanical with minimum 60% marks + valid GATE-2025 or GATE-2026 score",
+   "specs": [
+    "205 Trainee Engineer posts (Civil, Electrical, Mechanical) through GATE-2025 / GATE-2026 score. Advt. No. NH/Talent Acquisition/07/2026, dated 24 November 2026 (NHPC Limited, Navratna CPSE; NHDC Limited is a joint venture of NHPC and the Government of Madhya Pradesh).",
+    "Breakup: Trainee Engineer (Civil) 64 (NHPC); Trainee Engineer (Electrical) 76 (NHPC) + 12 (NHDC); Trainee Engineer (Mechanical) 48 (NHPC) + 5 (NHDC). Category totals: UR 89, EWS 44, OBC 41, SC 20, ST 11; PwBD 8 reserved within the total.",
+    "Dates: online applications 27 November 2026 (10:00 AM) to 26 December 2026 (5:00 PM). Maximum age 30 years as on 26 December 2026.",
+    "Qualification: full-time regular Bachelor's Degree in Engineering / Technology / B.Sc. (Engineering) in Civil, Electrical or Mechanical from a recognised Indian University / Institute approved by AICTE, with minimum 60% marks or equivalent grade; AMIE (enrolment up to 31.05.2013) with minimum 60% marks is also eligible.",
+    "Selection: GATE-2025 / GATE-2026 normalised score (best score if both) 75% + Group Discussion 5% + Personal Interview 20%; shortlisting up to 5 times the vacancies; minimum combined GD+PI qualifying marks 40% (UR/OBC (NCL)/EWS) and 30% (SC/ST/PwBD). Only the GATE score (normalised marks out of 100) is valid.",
+    "Pay: E2 scale Rs.50,000–3%–Rs.1,60,000 (IDA), about Rs.16–17 lakh total annual emoluments; 1 year training + 1 year probation.",
+    "Fee: Rs.708 (Rs.600 plus applicable taxes) for UR/EWS/OBC (NCL); no fee for SC/ST/Women/PwBD/Ex-servicemen. Bank charges/processing charges extra, to be borne by the candidate.",
+    "Surety bond: Rs.4,00,000 plus applicable GST (UR/OBC/EWS) and Rs.2,00,000 plus GST (SC/ST/PwBD), minimum 4 years' service including the training period.",
+    "Photo/signature: passport-size colour photograph and signature in JPEG format of less than 50 KB and 25 KB respectively. Scanned copies of certificates should be readable, PDF 100-400 KB each.",
+    "Note: the registration portal's 'view full advertisement' button links to a stale 2023-24 advertisement — the correct notice is the Advt. 07/2026 PDF linked on this page. The registration form was seen live on 27 November 2026 after 10:00 AM.",
+    "All facts above are from Advt. No. NH/Talent Acquisition/07/2026 (nhpcindia.com) and the live registration form."
+   ],
+   "steps": [
+    "nhpcindia.com par Advt. No. NH/Talent Acquisition/07/2026 padhen — last date 26 December 2026 (5 PM).",
+    "Apna GATE-2025 ya GATE-2026 score aur registration number taiyaar rakhen (dono me se best score use hota hai).",
+    "Photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam) ready rakhen.",
+    "Verified NHPC registration form (RECTT_47) par register karen aur form bharen.",
+    "Fee ₹708 online bhugtan karen (agar lagu ho) aur registration number sambhal kar rakhen."
+   ],
+   "tagline": "205 Trainee Engineer posts (Civil/Electrical/Mechanical) through GATE-2025/2026 — apply 27 November–26 December 2026; E2 pay ₹50,000–₹1,60,000; fee ₹708."
+  },
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "hi": {
+   "checklist": [
+    "B.E./B.Tech degree certificate aur mark sheets (minimum 60% marks)",
+    "Valid GATE-2025 ya GATE-2026 score card, registration number ke saath",
+    "Aadhaar card, mobile number aur email ID",
+    "Recent passport-size colour photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam)",
+    "Caste / category certificate, agar lagu ho",
+    "Certificates ke scanned copies (PDF, 100-400 KB each) — Matriculation, XII, Graduation aur Post-Graduation (agar lagu ho)"
+   ],
+   "documents": [
+    "B.E./B.Tech degree certificate aur mark sheets",
+    "GATE-2025 / GATE-2026 score card",
+    "Matriculation / Secondary School Certificate (date of birth proof)",
+    "Caste / category certificate, agar lagu ho",
+    "Recent photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam)",
+    "Scanned certificates (PDF, 100-400 KB each)"
+   ],
+   "donts": [
+    "Bina valid GATE-2025 ya GATE-2026 score ke apply na karen — is recruitment ke liye sirf GATE score (normalised marks out of 100) valid hai.",
+    "GATE registration number galat na bharen — invalid GATE registration number wali applications reject ho jati hain.",
+    "Portal ke 'view full advertisement' button ko use na karen — wo ek stale 2023-24 advertisement par le jata hai; sahi notice is page par link ki gayi Advt. 07/2026 PDF hai.",
+    "Window miss na karen — applications 26 December 2026 shaam 5:00 baje band hoti hain."
+   ],
+   "dos": [
+    "Apply karne se pehle Advt. No. NH/Talent Acquisition/07/2026 (dated 24 November 2026) nhpcindia.com par poora padhen.",
+    "Agar aapne GATE-2025 aur GATE-2026 dono diye hain to apna best GATE score darj karen — best score hi use hota hai.",
+    "Verified NHPC registration form (RECTT_47) par hi apply karen — form 27 November 2026 ko subah 10:00 baje ke baad live verify hua tha.",
+    "Form shuru karne se pehle photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam) ready rakhen.",
+    "Form submit karne ke baad registration number sambhal kar rakhen — aage ki saari correspondence sirf email se hoti hai."
+   ],
+   "eligibility": [
+    "Indian citizen.",
+    "Civil, Electrical ya Mechanical discipline me full-time regular Bachelor's Degree in Engineering / Technology / B.Sc. (Engineering), recognised Indian University / Institute (AICTE approved) se, minimum 60% marks ya equivalent grade; AMIE (enrolment 31.05.2013 tak) minimum 60% marks ke saath bhi eligible hai.",
+    "Corresponding paper me valid GATE-2025 ya GATE-2026 score (dono ho to best score). Sirf GATE score (normalised marks out of 100) valid hai.",
+    "Maximum age 30 saal (26 December 2026 ko, last date of application). Ex-servicemen ko Government guidelines ke anusaar relaxation."
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 205 posts — Civil (NHPC) 64, Electrical (NHPC) 76 + (NHDC) 12, Mechanical (NHPC) 48 + (NHDC) 5. Category: UR 89, EWS 44, OBC 41, SC 20, ST 11; PwBD 8 kul ke andar reserved.",
+     "q": "NHPC Trainee Engineer 2026 me kitni vacancy hai?"
+    },
+    {
+     "a": "Online application 27 November 2026 (10 AM) se 26 December 2026 (5 PM) tak. Fee ₹708 (₹600 + applicable taxes) UR/EWS/OBC ke liye; SC/ST/Women/PwBD/Ex-servicemen ko koi fee nahi.",
+     "q": "NHPC Trainee Engineer ki last date aur fee kya hai?"
+    },
+    {
+     "a": "Civil, Electrical ya Mechanical me full-time regular B.E./B.Tech (minimum 60% marks) + valid GATE-2025 ya GATE-2026 score (corresponding paper, best score). Maximum age 30 saal (26 December 2026 ko).",
+     "q": "NHPC Trainee Engineer ke liye qualification aur age limit kya hai?"
+    },
+    {
+     "a": "GATE-2025/GATE-2026 score 75% + Group Discussion 5% + Personal Interview 20%; shortlisting 5 times vacancies tak; GD+PI me combined qualifying marks 40% (UR/OBC/EWS) aur 30% (SC/ST/PwBD). Pay E2 scale ₹50,000–₹1,60,000 (IDA), kul ~₹16–17 lakh per year; 1 saal training + 1 saal probation; surety bond ₹4,00,000 (SC/ST/PwBD ₹2,00,000) + GST, minimum 4 saal service.",
+     "q": "NHPC Trainee Engineer ka selection process aur pay kya hai?"
+    }
+   ],
+   "fees": [
+    "UR/EWS/OBC (NCL) ke liye ₹708 (₹600 plus applicable taxes).",
+    "SC/ST/Women/PwBD/Ex-servicemen ko koi fee nahi."
+   ],
+   "fees_short": "₹708",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Bina valid GATE score ke apply karna",
+    "GATE registration number galat bharna",
+    "Portal ke stale 2023-24 advertisement link ko sahi samajhna",
+    "26 December 5 PM ki last date miss karna"
+   ],
+   "name": "NHPC Trainee Engineer Recruitment 2026",
+   "qual": "Civil / Electrical / Mechanical me B.E./B.Tech, minimum 60% marks + valid GATE-2025 ya GATE-2026 score",
+   "specs": [
+    "205 Trainee Engineer posts (Civil, Electrical, Mechanical), GATE-2025 / GATE-2026 score se. Advt. No. NH/Talent Acquisition/07/2026, dated 24 November 2026 (NHPC Limited, Navratna CPSE; NHDC Limited NHPC aur Madhya Pradesh sarkar ka joint venture hai).",
+    "Breakup: Trainee Engineer (Civil) 64 (NHPC); Trainee Engineer (Electrical) 76 (NHPC) + 12 (NHDC); Trainee Engineer (Mechanical) 48 (NHPC) + 5 (NHDC). Category totals: UR 89, EWS 44, OBC 41, SC 20, ST 11; PwBD 8 kul ke andar reserved.",
+    "Dates: online applications 27 November 2026 (10:00 AM) se 26 December 2026 (5:00 PM) tak. Maximum age 30 saal (26 December 2026 ko).",
+    "Qualification: Civil, Electrical ya Mechanical me full-time regular Bachelor's Degree in Engineering / Technology / B.Sc. (Engineering), recognised Indian University / Institute (AICTE approved) se, minimum 60% marks ya equivalent grade; AMIE (enrolment 31.05.2013 tak) minimum 60% marks ke saath bhi eligible hai.",
+    "Selection: GATE-2025 / GATE-2026 normalised score (dono ho to best score) 75% + Group Discussion 5% + Personal Interview 20%; shortlisting 5 times vacancies tak; GD+PI me combined qualifying marks 40% (UR/OBC (NCL)/EWS) aur 30% (SC/ST/PwBD). Sirf GATE score (normalised marks out of 100) valid hai.",
+    "Pay: E2 scale ₹50,000–3%–₹1,60,000 (IDA), kul lagbhag ₹16–17 lakh per year; 1 saal training + 1 saal probation.",
+    "Fee: UR/EWS/OBC (NCL) ke liye ₹708 (₹600 plus applicable taxes); SC/ST/Women/PwBD/Ex-servicemen ko koi fee nahi. Bank charges/processing charges extra, candidate ko bharne honge.",
+    "Surety bond: ₹4,00,000 plus applicable GST (UR/OBC/EWS) aur ₹2,00,000 plus GST (SC/ST/PwBD), training period sahit minimum 4 saal service.",
+    "Photo/signature: passport-size colour photograph aur signature JPEG format me, kramshah 50 KB aur 25 KB se kam. Certificates ke scanned copies readable hone chahiye, PDF 100-400 KB each.",
+    "Note: registration portal ka 'view full advertisement' button ek stale 2023-24 advertisement par le jata hai — sahi notice is page par link ki gayi Advt. 07/2026 PDF hai. Registration form 27 November 2026 ko subah 10:00 baje ke baad live verify hua tha.",
+    "Upar ke saare facts Advt. No. NH/Talent Acquisition/07/2026 (nhpcindia.com) aur live registration form se hain."
+   ],
+   "steps": [
+    "nhpcindia.com par Advt. No. NH/Talent Acquisition/07/2026 padhen — last date 26 December 2026 (5 PM).",
+    "Apna GATE-2025 ya GATE-2026 score aur registration number taiyaar rakhen (dono me se best score use hota hai).",
+    "Photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam) ready rakhen.",
+    "Verified NHPC registration form (RECTT_47) par register karen aur form bharen.",
+    "Fee ₹708 online bhugtan karen (agar lagu ho) aur registration number sambhal kar rakhen."
+   ],
+   "tagline": "205 Trainee Engineer posts (Civil/Electrical/Mechanical) GATE-2025/2026 se — apply 27 November–26 December 2026; E2 pay ₹50,000–₹1,60,000; fee ₹708."
+  },
+  "links": {
+   "apply": "https://intranet.nhpc.in/RecruitApp2026/RECTT_47/english/scripts/recruitappreg.aspx?id=47",
+   "notice": "https://www.nhpcindia.com/assests/pzi_public/job/details_hi_1795520940_3588.pdf",
+   "site": "https://www.nhpcindia.com/"
+  },
+  "note_en": null,
+  "note_hi": null,
+  "photo_kind": "upload",
+  "portal": "intranet.nhpc.in",
+  "posts": 205,
+  "slug": "nhpc-trainee-engineer-2026"
+ },
+ {
+  "advt": "Advt. No. NH/Talent Acquisition/08/2026",
+  "board_en": "NHPC Limited",
+  "board_hi": "एनएचपीसी लिमिटेड",
+  "dates": {
+   "apply_end": "2026-12-26",
+   "apply_start": "2026-11-27",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-26"
+  },
+  "en": {
+   "checklist": [
+    "Post Graduate Degree / Diploma certificate and mark sheets (minimum 60% marks) — HR / PR / Law as per your post",
+    "Valid UGC NET June-2026 score card (HR/PR) or CLAT (PG)-2026 score card (Law) with registration number",
+    "Aadhaar card, mobile number and email ID",
+    "Recent passport-size colour photo (JPEG, less than 50 KB) and signature (JPEG, less than 25 KB)",
+    "Caste / category certificate, if applicable",
+    "Scanned copies of certificates (PDF, 100-400 KB each) — Matriculation, XII, Graduation and Post-Graduation"
+   ],
+   "documents": [
+    "Post Graduate Degree / Diploma certificate and mark sheets",
+    "UGC NET June-2026 / CLAT (PG)-2026 score card",
+    "Matriculation / Secondary School Certificate (date of birth proof)",
+    "Caste / category certificate, if applicable",
+    "Recent photo (JPEG, less than 50 KB) and signature (JPEG, less than 25 KB)",
+    "Scanned certificates (PDF, 100-400 KB each)"
+   ],
+   "donts": [
+    "Do not apply with any other year's UGC NET or CLAT score — only UGC NET June-2026 (HR/PR) and CLAT (PG)-2026 (Law) scores are valid; scores of any other year are not valid.",
+    "Do not enter a wrong UGC NET / CLAT registration number — applications registered with an invalid registration number are rejected.",
+    "Do not use the portal's 'view full advertisement' button — it links to a stale 2023-24 advertisement; the correct notice is the Advt. 08/2026 PDF linked on this page. (The portal heading also wrongly says 'NET-(DEC-2025/JUNE-2026)' — the notice says UGC NET June-2026 only.)",
+    "Do not miss the window — applications close 26 December 2026 at 5:00 PM."
+   ],
+   "dos": [
+    "Read Advt. No. NH/Talent Acquisition/08/2026 (dated 25 November 2026) fully on nhpcindia.com before applying.",
+    "Check the UGC NET June-2026 paper codes (HR: Labour Welfare / Personnel Management / Industrial Relations / HRM, PR: Mass Communication & Journalism, code 63) and the CLAT (PG)-2026 requirement for Law in the advertisement.",
+    "Apply on the verified NHPC registration form (RECTT_49) — it was seen live on 27 November 2026 after 10:00 AM.",
+    "Keep your photo (JPEG, less than 50 KB) and signature (JPEG, less than 25 KB) ready before starting the form.",
+    "Save the registration number after submitting the form — all future correspondence is by email only."
+   ],
+   "eligibility": [
+    "Indian citizen.",
+    "Trainee Officer (HR): full-time regular two years Post Graduate Degree / Post Graduate Diploma / Post Graduate Program in Management with specialisation in Human Resource / HRM / HRM & Labour Relations / Industrial Relations / Personnel Management / Personnel Management & Industrial Relations / Industrial Relations & Personnel Management from a recognised Indian University / Institute approved by AICTE, with minimum 60% marks.",
+    "Trainee Officer (PR): full-time regular two years Post Graduate Degree in Communication / Mass Communication / Journalism / Public Relations from a recognised Indian University / Institute, with minimum 60% marks.",
+    "Trainee Officer (Law): full-time regular 3-year LLB or 5-year integrated LLB from a recognised Indian University / Institute, with minimum 60% marks.",
+    "Valid UGC NET June-2026 score (HR/PR) or CLAT (PG)-2026 score (Law). Scores of any other year are not valid.",
+    "Maximum age 30 years as on 26 December 2026 (last date of application). Ex-servicemen relaxation as per Government guidelines."
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 44 posts — Trainee Officer (HR) 25, Trainee Officer (PR) 2, Trainee Officer (Law) NHPC 12 + NHDC 2 = 14; regular kul 41 (1 backlog vacancy sahit) + 3 PwBD special-drive vacancies (HR 2, Law 1) = 44.",
+     "q": "NHPC Trainee Officer 2026 me kitni vacancy hai?"
+    },
+    {
+     "a": "Online application 27 November 2026 (10 AM) se 26 December 2026 (5 PM) tak. Fee ₹708 (₹600 + applicable taxes) UR/EWS/OBC ke liye; SC/ST/Women/PwBD/Ex-servicemen ko koi fee nahi.",
+     "q": "NHPC Trainee Officer ki last date aur fee kya hai?"
+    },
+    {
+     "a": "HR: 2 saal ka PG Management (HR specialisation) / MSW / MBA (HR); PR: 2 saal ka PG Communication / Mass Communication / Journalism / Public Relations; Law: 3 saal ka LLB ya 5 saal ka integrated LLB — sabhi me minimum 60% marks. HR/PR ke liye UGC NET June-2026 score, Law ke liye CLAT (PG)-2026 score chahiye. Maximum age 30 saal (26 December 2026 ko).",
+     "q": "NHPC Trainee Officer ke liye qualification aur age limit kya hai?"
+    },
+    {
+     "a": "UGC NET June-2026 / CLAT (PG)-2026 score 75% + Group Discussion 5% + Personal Interview 20%; shortlisting 5 times vacancies tak; GD+PI me combined qualifying marks 40% (UR/OBC/EWS) aur 30% (SC/ST/PwBD). Pay E2 scale ₹50,000–₹1,60,000 (IDA), kul ~₹16–17 lakh per year; 1 saal training + 1 saal probation; surety bond ₹4,00,000 (SC/ST/PwBD ₹2,00,000) + GST, minimum 4 saal service.",
+     "q": "NHPC Trainee Officer ka selection process aur pay kya hai?"
+    }
+   ],
+   "fees": [
+    "Rs.708 (Rs.600 plus applicable taxes) for UR/EWS/OBC (NCL).",
+    "No fee for SC/ST/Women/PwBD/Ex-servicemen."
+   ],
+   "fees_short": "₹708",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Kisi aur saal ke UGC NET/CLAT score se apply karna (sirf June-2026 / CLAT (PG)-2026 valid hai)",
+    "UGC NET / CLAT registration number galat bharna",
+    "Portal ke stale 2023-24 advertisement link ko sahi samajhna",
+    "26 December 5 PM ki last date miss karna"
+   ],
+   "name": "NHPC Trainee Officer (HR/PR/Law) Recruitment 2026",
+   "qual": "2-year PG (HR/PR) or LLB (Law) with minimum 60% marks + UGC NET June-2026 (HR/PR) / CLAT (PG)-2026 (Law) score",
+   "specs": [
+    "44 Trainee Officer posts (HR, PR, Law) through UGC NET June-2026 / CLAT (PG)-2026 score. Advt. No. NH/Talent Acquisition/08/2026, dated 25 November 2026 (NHPC Limited, Navratna CPSE).",
+    "Breakup: Trainee Officer (HR) 25; Trainee Officer (PR) 2; Trainee Officer (Law) 12 (NHPC) + 2 (NHDC) = 14. Regular total 41 (including 1 backlog vacancy) + 3 PwBD special-drive vacancies (HR 2, Law 1) = 44.",
+    "Dates: online applications 27 November 2026 (10:00 AM) to 26 December 2026 (5:00 PM). Maximum age 30 years as on 26 December 2026.",
+    "Qualification: HR — full-time regular 2-year PG Degree/Diploma/Program in Management with HR specialisation (HRM / HRM & Labour Relations / Industrial Relations / Personnel Management etc.) from an AICTE-approved institute, minimum 60% marks; PR — full-time regular 2-year PG Degree in Communication / Mass Communication / Journalism / Public Relations, minimum 60% marks; Law — full-time regular 3-year LLB or 5-year integrated LLB, minimum 60% marks.",
+    "Selection: UGC NET June-2026 score (HR/PR) / CLAT (PG)-2026 score (Law) 75% + Group Discussion 5% + Personal Interview 20%; shortlisting up to 5 times the vacancies; minimum combined GD+PI qualifying marks 40% (UR/OBC (NCL)/EWS) and 30% (SC/ST/PwBD). Only UGC NET June-2026 / CLAT (PG)-2026 scores are valid — scores of any other year are not valid.",
+    "Pay: E2 scale Rs.50,000–3%–Rs.1,60,000 (IDA), about Rs.16–17 lakh total annual emoluments; 1 year training + 1 year probation.",
+    "Fee: Rs.708 (Rs.600 plus applicable taxes) for UR/EWS/OBC (NCL); no fee for SC/ST/Women/PwBD/Ex-servicemen. Bank charges/processing charges extra, to be borne by the candidate.",
+    "Surety bond: Rs.4,00,000 plus applicable GST (UR/OBC/EWS) and Rs.2,00,000 plus GST (SC/ST/PwBD), minimum 4 years' service including the training period.",
+    "Photo/signature: passport-size colour photograph and signature in JPEG format of less than 50 KB and 25 KB respectively. Scanned copies of certificates should be readable, PDF 100-400 KB each.",
+    "Note: the registration portal's 'view full advertisement' button links to a stale 2023-24 advertisement — the correct notice is the Advt. 08/2026 PDF linked on this page. The portal registration page heading also says 'NET-(DEC-2025/JUNE-2026)' while the notice and job-list title say UGC NET June-2026 only. The registration form was seen live on 27 November 2026 after 10:00 AM.",
+    "All facts above are from Advt. No. NH/Talent Acquisition/08/2026 (nhpcindia.com) and the live registration form."
+   ],
+   "steps": [
+    "nhpcindia.com par Advt. No. NH/Talent Acquisition/08/2026 padhen — last date 26 December 2026 (5 PM).",
+    "Apna UGC NET June-2026 (HR/PR) ya CLAT (PG)-2026 (Law) score aur registration number taiyaar rakhen.",
+    "Photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam) ready rakhen.",
+    "Verified NHPC registration form (RECTT_49) par register karen aur form bharen.",
+    "Fee ₹708 online bhugtan karen (agar lagu ho) aur registration number sambhal kar rakhen."
+   ],
+   "tagline": "44 Trainee Officer posts (HR 25, PR 2, Law 14 + PwBD drive 3) through UGC NET June-2026 / CLAT (PG)-2026 — apply 27 November–26 December 2026; E2 pay ₹50,000–₹1,60,000; fee ₹708."
+  },
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "hi": {
+   "checklist": [
+    "Post Graduate Degree / Diploma certificate aur mark sheets (minimum 60% marks) — HR / PR / Law, apni post ke anusaar",
+    "Valid UGC NET June-2026 score card (HR/PR) ya CLAT (PG)-2026 score card (Law), registration number ke saath",
+    "Aadhaar card, mobile number aur email ID",
+    "Recent passport-size colour photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam)",
+    "Caste / category certificate, agar lagu ho",
+    "Certificates ke scanned copies (PDF, 100-400 KB each) — Matriculation, XII, Graduation aur Post-Graduation"
+   ],
+   "documents": [
+    "Post Graduate Degree / Diploma certificate aur mark sheets",
+    "UGC NET June-2026 / CLAT (PG)-2026 score card",
+    "Matriculation / Secondary School Certificate (date of birth proof)",
+    "Caste / category certificate, agar lagu ho",
+    "Recent photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam)",
+    "Scanned certificates (PDF, 100-400 KB each)"
+   ],
+   "donts": [
+    "Kisi aur saal ke UGC NET ya CLAT score se apply na karen — sirf UGC NET June-2026 (HR/PR) aur CLAT (PG)-2026 (Law) scores valid hain; kisi aur saal ka score valid nahi hai.",
+    "UGC NET / CLAT registration number galat na bharen — invalid registration number wali applications reject ho jati hain.",
+    "Portal ke 'view full advertisement' button ko use na karen — wo ek stale 2023-24 advertisement par le jata hai; sahi notice is page par link ki gayi Advt. 08/2026 PDF hai. (Portal heading me galat 'NET-(DEC-2025/JUNE-2026)' bhi likha hai — notice ke anusaar sirf UGC NET June-2026 valid hai.)",
+    "Window miss na karen — applications 26 December 2026 shaam 5:00 baje band hoti hain."
+   ],
+   "dos": [
+    "Apply karne se pehle Advt. No. NH/Talent Acquisition/08/2026 (dated 25 November 2026) nhpcindia.com par poora padhen.",
+    "UGC NET June-2026 paper codes (HR: Labour Welfare / Personnel Management / Industrial Relations / HRM, PR: Mass Communication & Journalism, code 63) aur Law ke liye CLAT (PG)-2026 ki requirement advertisement me check karen.",
+    "Verified NHPC registration form (RECTT_49) par hi apply karen — form 27 November 2026 ko subah 10:00 baje ke baad live verify hua tha.",
+    "Form shuru karne se pehle photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam) ready rakhen.",
+    "Form submit karne ke baad registration number sambhal kar rakhen — aage ki saari correspondence sirf email se hoti hai."
+   ],
+   "eligibility": [
+    "Indian citizen.",
+    "Trainee Officer (HR): AICTE-approved institute se full-time regular 2 saal ka Post Graduate Degree / Post Graduate Diploma / Post Graduate Program in Management, Human Resource specialisation (HRM / HRM & Labour Relations / Industrial Relations / Personnel Management / Personnel Management & Industrial Relations / Industrial Relations & Personnel Management) ke saath, minimum 60% marks.",
+    "Trainee Officer (PR): recognised institute se full-time regular 2 saal ka Post Graduate Degree in Communication / Mass Communication / Journalism / Public Relations, minimum 60% marks.",
+    "Trainee Officer (Law): recognised institute se full-time regular 3 saal ka LLB ya 5 saal ka integrated LLB, minimum 60% marks.",
+    "Valid UGC NET June-2026 score (HR/PR) ya CLAT (PG)-2026 score (Law). Kisi aur saal ka score valid nahi hai.",
+    "Maximum age 30 saal (26 December 2026 ko, last date of application). Ex-servicemen ko Government guidelines ke anusaar relaxation."
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 44 posts — Trainee Officer (HR) 25, Trainee Officer (PR) 2, Trainee Officer (Law) NHPC 12 + NHDC 2 = 14; regular kul 41 (1 backlog vacancy sahit) + 3 PwBD special-drive vacancies (HR 2, Law 1) = 44.",
+     "q": "NHPC Trainee Officer 2026 me kitni vacancy hai?"
+    },
+    {
+     "a": "Online application 27 November 2026 (10 AM) se 26 December 2026 (5 PM) tak. Fee ₹708 (₹600 + applicable taxes) UR/EWS/OBC ke liye; SC/ST/Women/PwBD/Ex-servicemen ko koi fee nahi.",
+     "q": "NHPC Trainee Officer ki last date aur fee kya hai?"
+    },
+    {
+     "a": "HR: 2 saal ka PG Management (HR specialisation) / MSW / MBA (HR); PR: 2 saal ka PG Communication / Mass Communication / Journalism / Public Relations; Law: 3 saal ka LLB ya 5 saal ka integrated LLB — sabhi me minimum 60% marks. HR/PR ke liye UGC NET June-2026 score, Law ke liye CLAT (PG)-2026 score chahiye. Maximum age 30 saal (26 December 2026 ko).",
+     "q": "NHPC Trainee Officer ke liye qualification aur age limit kya hai?"
+    },
+    {
+     "a": "UGC NET June-2026 / CLAT (PG)-2026 score 75% + Group Discussion 5% + Personal Interview 20%; shortlisting 5 times vacancies tak; GD+PI me combined qualifying marks 40% (UR/OBC/EWS) aur 30% (SC/ST/PwBD). Pay E2 scale ₹50,000–₹1,60,000 (IDA), kul ~₹16–17 lakh per year; 1 saal training + 1 saal probation; surety bond ₹4,00,000 (SC/ST/PwBD ₹2,00,000) + GST, minimum 4 saal service.",
+     "q": "NHPC Trainee Officer ka selection process aur pay kya hai?"
+    }
+   ],
+   "fees": [
+    "UR/EWS/OBC (NCL) ke liye ₹708 (₹600 plus applicable taxes).",
+    "SC/ST/Women/PwBD/Ex-servicemen ko koi fee nahi."
+   ],
+   "fees_short": "₹708",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Kisi aur saal ke UGC NET/CLAT score se apply karna (sirf June-2026 / CLAT (PG)-2026 valid hai)",
+    "UGC NET / CLAT registration number galat bharna",
+    "Portal ke stale 2023-24 advertisement link ko sahi samajhna",
+    "26 December 5 PM ki last date miss karna"
+   ],
+   "name": "NHPC Trainee Officer (HR/PR/Law) Recruitment 2026",
+   "qual": "2 saal ka PG (HR/PR) ya LLB (Law), minimum 60% marks + UGC NET June-2026 (HR/PR) / CLAT (PG)-2026 (Law) score",
+   "specs": [
+    "44 Trainee Officer posts (HR, PR, Law), UGC NET June-2026 / CLAT (PG)-2026 score se. Advt. No. NH/Talent Acquisition/08/2026, dated 25 November 2026 (NHPC Limited, Navratna CPSE).",
+    "Breakup: Trainee Officer (HR) 25; Trainee Officer (PR) 2; Trainee Officer (Law) 12 (NHPC) + 2 (NHDC) = 14. Regular kul 41 (1 backlog vacancy sahit) + 3 PwBD special-drive vacancies (HR 2, Law 1) = 44.",
+    "Dates: online applications 27 November 2026 (10:00 AM) se 26 December 2026 (5:00 PM) tak. Maximum age 30 saal (26 December 2026 ko).",
+    "Qualification: HR — AICTE-approved institute se full-time regular 2 saal ka PG Degree/Diploma/Program in Management, HR specialisation (HRM / HRM & Labour Relations / Industrial Relations / Personnel Management aadi) ke saath, minimum 60% marks; PR — full-time regular 2 saal ka PG Degree in Communication / Mass Communication / Journalism / Public Relations, minimum 60% marks; Law — full-time regular 3 saal ka LLB ya 5 saal ka integrated LLB, minimum 60% marks.",
+    "Selection: UGC NET June-2026 score (HR/PR) / CLAT (PG)-2026 score (Law) 75% + Group Discussion 5% + Personal Interview 20%; shortlisting 5 times vacancies tak; GD+PI me combined qualifying marks 40% (UR/OBC (NCL)/EWS) aur 30% (SC/ST/PwBD). Sirf UGC NET June-2026 / CLAT (PG)-2026 scores valid hain — kisi aur saal ka score valid nahi hai.",
+    "Pay: E2 scale ₹50,000–3%–₹1,60,000 (IDA), kul lagbhag ₹16–17 lakh per year; 1 saal training + 1 saal probation.",
+    "Fee: UR/EWS/OBC (NCL) ke liye ₹708 (₹600 plus applicable taxes); SC/ST/Women/PwBD/Ex-servicemen ko koi fee nahi. Bank charges/processing charges extra, candidate ko bharne honge.",
+    "Surety bond: ₹4,00,000 plus applicable GST (UR/OBC/EWS) aur ₹2,00,000 plus GST (SC/ST/PwBD), training period sahit minimum 4 saal service.",
+    "Photo/signature: passport-size colour photograph aur signature JPEG format me, kramshah 50 KB aur 25 KB se kam. Certificates ke scanned copies readable hone chahiye, PDF 100-400 KB each.",
+    "Note: registration portal ka 'view full advertisement' button ek stale 2023-24 advertisement par le jata hai — sahi notice is page par link ki gayi Advt. 08/2026 PDF hai. Portal registration page ki heading me 'NET-(DEC-2025/JUNE-2026)' bhi likha hai, jabki notice aur job-list title ke anusaar sirf UGC NET June-2026 valid hai. Registration form 27 November 2026 ko subah 10:00 baje ke baad live verify hua tha.",
+    "Upar ke saare facts Advt. No. NH/Talent Acquisition/08/2026 (nhpcindia.com) aur live registration form se hain."
+   ],
+   "steps": [
+    "nhpcindia.com par Advt. No. NH/Talent Acquisition/08/2026 padhen — last date 26 December 2026 (5 PM).",
+    "Apna UGC NET June-2026 (HR/PR) ya CLAT (PG)-2026 (Law) score aur registration number taiyaar rakhen.",
+    "Photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam) ready rakhen.",
+    "Verified NHPC registration form (RECTT_49) par register karen aur form bharen.",
+    "Fee ₹708 online bhugtan karen (agar lagu ho) aur registration number sambhal kar rakhen."
+   ],
+   "tagline": "44 Trainee Officer posts (HR 25, PR 2, Law 14 + PwBD drive 3) UGC NET June-2026 / CLAT (PG)-2026 se — apply 27 November–26 December 2026; E2 pay ₹50,000–₹1,60,000; fee ₹708."
+  },
+  "links": {
+   "apply": "https://intranet.nhpc.in/RecruitApp2026/RECTT_49_LOCDROPDOWN/english/scripts/recruitappreg.aspx?id=49",
+   "notice": "https://www.nhpcindia.com/assests/pzi_public/job/details_1795585942_2973.pdf",
+   "site": "https://www.nhpcindia.com/"
+  },
+  "note_en": null,
+  "note_hi": null,
+  "photo_kind": "upload",
+  "portal": "intranet.nhpc.in",
+  "posts": 44,
+  "slug": "nhpc-trainee-officer-2026"
+ },
+ {
+  "advt": "Advt. No. NH/Talent Acquisition/09/2026",
+  "board_en": "NHPC Limited",
+  "board_hi": "एनएचपीसी लिमिटेड",
+  "dates": {
+   "apply_end": "2026-12-26",
+   "apply_start": "2026-11-27",
+   "correction_end": null,
+   "correction_start": null,
+   "exam": null,
+   "exam_hi": null,
+   "fee_end": "2026-12-26"
+  },
+  "en": {
+   "checklist": [
+    "B.E./B.Tech or M.Sc./M.Tech degree certificate and mark sheets (minimum 60% marks) — E&C / Environment / IT / Geology / Geophysicist as per your post",
+    "Valid GATE-2026 score card with registration number (GATE-2026 only)",
+    "Aadhaar card, mobile number and email ID",
+    "Recent passport-size colour photo (JPEG, less than 50 KB) and signature (JPEG, less than 25 KB)",
+    "Caste / category certificate, if applicable",
+    "Scanned copies of certificates (PDF, 100-400 KB each) — Matriculation, XII, Graduation and Post-Graduation (if applicable)"
+   ],
+   "documents": [
+    "B.E./B.Tech or M.Sc./M.Tech degree certificate and mark sheets",
+    "GATE-2026 score card",
+    "Matriculation / Secondary School Certificate (date of birth proof)",
+    "Caste / category certificate, if applicable",
+    "Recent photo (JPEG, less than 50 KB) and signature (JPEG, less than 25 KB)",
+    "Scanned certificates (PDF, 100-400 KB each)"
+   ],
+   "donts": [
+    "Do not apply with any other year's GATE score — only the GATE-2026 score is valid for this recruitment.",
+    "Do not apply if you are a final-year appearing student — final-year students are NOT eligible for Advt. 09/2026.",
+    "Do not enter a wrong GATE registration number — applications registered with an invalid GATE registration number are rejected.",
+    "Do not use the portal's 'view full advertisement' button — it links to a stale 2023-24 advertisement; the correct notice is the Advt. 09/2026 PDF linked on this page.",
+    "Do not miss the window — applications close 26 December 2026 at 5:00 PM."
+   ],
+   "dos": [
+    "Read Advt. No. NH/Talent Acquisition/09/2026 (dated 25 November 2026) fully on nhpcindia.com before applying.",
+    "Check the GATE-2026 paper for your post in the advertisement (E&C: EC; Environment: ES; IT: CS; Geology: GG; Geophysicist: GG).",
+    "Apply on the verified NHPC registration form (RECTT_452026) — it was seen live on 27 November 2026 after 10:00 AM.",
+    "Keep your photo (JPEG, less than 50 KB) and signature (JPEG, less than 25 KB) ready before starting the form.",
+    "Save the registration number after submitting the form — all future correspondence is by email only."
+   ],
+   "eligibility": [
+    "Indian citizen.",
+    "Trainee Engineer (E&C): full-time regular Bachelor's Degree in Engineering / Technology / B.Sc. (Engineering) in Electronics & Communication discipline (Electronics & Communication / Electronics / Electronics & Tele-communication / Electronics & Power / Power Electronics / Electronics & Instrumentation / Instrumentation & Control) from a recognised Indian University / Institute approved by AICTE, with minimum 60% marks; AMIE (enrolment up to 31.05.2013) with minimum 60% marks is also eligible.",
+    "Trainee Engineer/Officer (Environment): B.E. in Environmental Engineering or M.Sc. in Environmental Science, with minimum 60% marks.",
+    "Trainee Engineer/Officer (IT): B.E. in IT / Computer Science / Computer Engineering or MCA, with minimum 60% marks.",
+    "Trainee Officer (Geology): M.Sc. in Geology / M.Tech in Applied Geology, with minimum 60% marks.",
+    "Trainee Officer (Geophysicist): M.Tech / M.Sc. (Tech) in Applied Geophysics / Exploration Geophysics, with minimum 60% marks.",
+    "Valid GATE-2026 score in the corresponding paper. Only the GATE-2026 score (normalised marks out of 100) is valid. Final-year appearing students are NOT eligible.",
+    "Maximum age 30 years as on 26 December 2026 (last date of application). Ex-servicemen relaxation as per Government guidelines."
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 47 posts — Trainee Engineer (E&C) 9 + 2 backlog, Trainee Engineer/Officer (Environment) 8 + 2 backlog, Trainee Engineer/Officer (IT) 11 + 2 backlog, Trainee Officer (Geology) 7, Trainee Officer (Geophysicist) 4; regular + backlog kul 45 + 2 PwBD special-drive vacancies (IT 1, Environment 1) = 47.",
+     "q": "NHPC Trainee Engineer/Officer 2026 me kitni vacancy hai?"
+    },
+    {
+     "a": "Online application 27 November 2026 (10 AM) se 26 December 2026 (5 PM) tak. Fee ₹708 (₹600 + applicable taxes) UR/EWS/OBC ke liye; SC/ST/Women/PwBD/Ex-servicemen ko koi fee nahi.",
+     "q": "NHPC Trainee Engineer/Officer ki last date aur fee kya hai?"
+    },
+    {
+     "a": "E&C: B.E. (listed branches); Environment: B.E. Environmental Engineering ya M.Sc. Environmental Science; IT: B.E. IT/CS/CE ya MCA; Geology: M.Sc. Geology / M.Tech Applied Geology; Geophysicist: M.Tech / M.Sc. (Tech) Applied/Exploration Geophysics — sabhi me minimum 60% marks + valid GATE-2026 score. Final-year students eligible NAHI hain. Maximum age 30 saal (26 December 2026 ko).",
+     "q": "NHPC Trainee Engineer/Officer ke liye qualification aur age limit kya hai?"
+    },
+    {
+     "a": "GATE-2026 score 75% + Group Discussion 5% + Personal Interview 20%; shortlisting 5 times vacancies tak; GD+PI me combined qualifying marks 40% (UR/OBC/EWS) aur 30% (SC/ST/PwBD). Pay E2 scale ₹50,000–₹1,60,000 (IDA), kul ~₹16–17 lakh per year; 1 saal training + 1 saal probation; surety bond ₹4,00,000 (SC/ST/PwBD ₹2,00,000) + GST, minimum 4 saal service.",
+     "q": "NHPC Trainee Engineer/Officer ka selection process aur pay kya hai?"
+    }
+   ],
+   "fees": [
+    "Rs.708 (Rs.600 plus applicable taxes) for UR/EWS/OBC (NCL).",
+    "No fee for SC/ST/Women/PwBD/Ex-servicemen."
+   ],
+   "fees_short": "₹708",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Kisi aur saal ke GATE score se apply karna (sirf GATE-2026 valid hai)",
+    "Final-year student hokar apply karna (eligible nahi hain)",
+    "GATE registration number galat bharna",
+    "Portal ke stale 2023-24 advertisement link ko sahi samajhna",
+    "26 December 5 PM ki last date miss karna"
+   ],
+   "name": "NHPC Trainee Engineer / Officer Recruitment 2026",
+   "qual": "B.E./B.Tech or M.Sc./M.Tech (E&C, Environment, IT, Geology, Geophysicist) with minimum 60% marks + valid GATE-2026 score; final-year students not eligible",
+   "specs": [
+    "47 Trainee Engineer / Officer posts (E&C, Environment, IT, Geology, Geophysicist) through GATE-2026 score. Advt. No. NH/Talent Acquisition/09/2026, dated 25 November 2026 (NHPC Limited, Navratna CPSE).",
+    "Breakup: Trainee Engineer (E&C) 9 + 2 backlog; Trainee Engineer/Officer (Environment) 8 + 2 backlog; Trainee Engineer/Officer (IT) 11 + 2 backlog; Trainee Officer (Geology) 7; Trainee Officer (Geophysicist) 4. Regular + backlog total 45 + 2 PwBD special-drive vacancies (IT 1, Environment 1) = 47.",
+    "Dates: online applications 27 November 2026 (10:00 AM) to 26 December 2026 (5:00 PM). Maximum age 30 years as on 26 December 2026.",
+    "Qualification: E&C — B.E. in Electronics & Communication / Electronics / Electronics & Tele-communication / Electronics & Power / Power Electronics / Electronics & Instrumentation / Instrumentation & Control, minimum 60% marks; Environment — B.E. in Environmental Engineering or M.Sc. in Environmental Science, minimum 60% marks; IT — B.E. in IT / Computer Science / Computer Engineering or MCA, minimum 60% marks; Geology — M.Sc. in Geology / M.Tech in Applied Geology, minimum 60% marks; Geophysicist — M.Tech / M.Sc. (Tech) in Applied Geophysics / Exploration Geophysics, minimum 60% marks. Final-year appearing students are NOT eligible.",
+    "Selection: GATE-2026 normalised score 75% + Group Discussion 5% + Personal Interview 20%; shortlisting up to 5 times the vacancies; minimum combined GD+PI qualifying marks 40% (UR/OBC (NCL)/EWS) and 30% (SC/ST/PwBD). Only the GATE-2026 score (normalised marks out of 100) is valid.",
+    "Pay: E2 scale Rs.50,000–3%–Rs.1,60,000 (IDA), about Rs.16–17 lakh total annual emoluments; 1 year training + 1 year probation.",
+    "Fee: Rs.708 (Rs.600 plus applicable taxes) for UR/EWS/OBC (NCL); no fee for SC/ST/Women/PwBD/Ex-servicemen. Bank charges/processing charges extra, to be borne by the candidate.",
+    "Surety bond: Rs.4,00,000 plus applicable GST (UR/OBC/EWS) and Rs.2,00,000 plus GST (SC/ST/PwBD), minimum 4 years' service including the training period.",
+    "Photo/signature: passport-size colour photograph and signature in JPEG format of less than 50 KB and 25 KB respectively. Scanned copies of certificates should be readable, PDF 100-400 KB each.",
+    "Note: the registration portal's 'view full advertisement' button links to a stale 2023-24 advertisement — the correct notice is the Advt. 09/2026 PDF linked on this page. The registration form was seen live on 27 November 2026 after 10:00 AM.",
+    "All facts above are from Advt. No. NH/Talent Acquisition/09/2026 (nhpcindia.com) and the live registration form."
+   ],
+   "steps": [
+    "nhpcindia.com par Advt. No. NH/Talent Acquisition/09/2026 padhen — last date 26 December 2026 (5 PM).",
+    "Apni post ke liye GATE-2026 paper check karen (E&C: EC; Environment: ES; IT: CS; Geology: GG; Geophysicist: GG).",
+    "Photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam) ready rakhen.",
+    "Verified NHPC registration form (RECTT_452026) par register karen aur form bharen.",
+    "Fee ₹708 online bhugtan karen (agar lagu ho) aur registration number sambhal kar rakhen."
+   ],
+   "tagline": "47 Trainee Engineer/Officer posts (E&C, Environment, IT, Geology, Geophysicist) through GATE-2026 — apply 27 November–26 December 2026; E2 pay ₹50,000–₹1,60,000; fee ₹708."
+  },
+  "guide": {
+   "en": null,
+   "hi": null
+  },
+  "hi": {
+   "checklist": [
+    "B.E./B.Tech ya M.Sc./M.Tech degree certificate aur mark sheets (minimum 60% marks) — E&C / Environment / IT / Geology / Geophysicist, apni post ke anusaar",
+    "Valid GATE-2026 score card, registration number ke saath (sirf GATE-2026)",
+    "Aadhaar card, mobile number aur email ID",
+    "Recent passport-size colour photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam)",
+    "Caste / category certificate, agar lagu ho",
+    "Certificates ke scanned copies (PDF, 100-400 KB each) — Matriculation, XII, Graduation aur Post-Graduation (agar lagu ho)"
+   ],
+   "documents": [
+    "B.E./B.Tech ya M.Sc./M.Tech degree certificate aur mark sheets",
+    "GATE-2026 score card",
+    "Matriculation / Secondary School Certificate (date of birth proof)",
+    "Caste / category certificate, agar lagu ho",
+    "Recent photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam)",
+    "Scanned certificates (PDF, 100-400 KB each)"
+   ],
+   "donts": [
+    "Kisi aur saal ke GATE score se apply na karen — is recruitment ke liye sirf GATE-2026 score valid hai.",
+    "Final-year appearing student hokar apply na karen — Advt. 09/2026 ke liye final-year students eligible NAHI hain.",
+    "GATE registration number galat na bharen — invalid GATE registration number wali applications reject ho jati hain.",
+    "Portal ke 'view full advertisement' button ko use na karen — wo ek stale 2023-24 advertisement par le jata hai; sahi notice is page par link ki gayi Advt. 09/2026 PDF hai.",
+    "Window miss na karen — applications 26 December 2026 shaam 5:00 baje band hoti hain."
+   ],
+   "dos": [
+    "Apply karne se pehle Advt. No. NH/Talent Acquisition/09/2026 (dated 25 November 2026) nhpcindia.com par poora padhen.",
+    "Apni post ke liye GATE-2026 paper advertisement me check karen (E&C: EC; Environment: ES; IT: CS; Geology: GG; Geophysicist: GG).",
+    "Verified NHPC registration form (RECTT_452026) par hi apply karen — form 27 November 2026 ko subah 10:00 baje ke baad live verify hua tha.",
+    "Form shuru karne se pehle photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam) ready rakhen.",
+    "Form submit karne ke baad registration number sambhal kar rakhen — aage ki saari correspondence sirf email se hoti hai."
+   ],
+   "eligibility": [
+    "Indian citizen.",
+    "Trainee Engineer (E&C): AICTE-approved institute se full-time regular Bachelor's Degree in Engineering / Technology / B.Sc. (Engineering), Electronics & Communication discipline (Electronics & Communication / Electronics / Electronics & Tele-communication / Electronics & Power / Power Electronics / Electronics & Instrumentation / Instrumentation & Control) me, minimum 60% marks; AMIE (enrolment 31.05.2013 tak) minimum 60% marks ke saath bhi eligible hai.",
+    "Trainee Engineer/Officer (Environment): B.E. in Environmental Engineering ya M.Sc. in Environmental Science, minimum 60% marks.",
+    "Trainee Engineer/Officer (IT): B.E. in IT / Computer Science / Computer Engineering ya MCA, minimum 60% marks.",
+    "Trainee Officer (Geology): M.Sc. in Geology / M.Tech in Applied Geology, minimum 60% marks.",
+    "Trainee Officer (Geophysicist): M.Tech / M.Sc. (Tech) in Applied Geophysics / Exploration Geophysics, minimum 60% marks.",
+    "Corresponding paper me valid GATE-2026 score. Sirf GATE-2026 score (normalised marks out of 100) valid hai. Final-year appearing students eligible NAHI hain.",
+    "Maximum age 30 saal (26 December 2026 ko, last date of application). Ex-servicemen ko Government guidelines ke anusaar relaxation."
+   ],
+   "extra_faq": [
+    {
+     "a": "Kul 47 posts — Trainee Engineer (E&C) 9 + 2 backlog, Trainee Engineer/Officer (Environment) 8 + 2 backlog, Trainee Engineer/Officer (IT) 11 + 2 backlog, Trainee Officer (Geology) 7, Trainee Officer (Geophysicist) 4; regular + backlog kul 45 + 2 PwBD special-drive vacancies (IT 1, Environment 1) = 47.",
+     "q": "NHPC Trainee Engineer/Officer 2026 me kitni vacancy hai?"
+    },
+    {
+     "a": "Online application 27 November 2026 (10 AM) se 26 December 2026 (5 PM) tak. Fee ₹708 (₹600 + applicable taxes) UR/EWS/OBC ke liye; SC/ST/Women/PwBD/Ex-servicemen ko koi fee nahi.",
+     "q": "NHPC Trainee Engineer/Officer ki last date aur fee kya hai?"
+    },
+    {
+     "a": "E&C: B.E. (listed branches); Environment: B.E. Environmental Engineering ya M.Sc. Environmental Science; IT: B.E. IT/CS/CE ya MCA; Geology: M.Sc. Geology / M.Tech Applied Geology; Geophysicist: M.Tech / M.Sc. (Tech) Applied/Exploration Geophysics — sabhi me minimum 60% marks + valid GATE-2026 score. Final-year students eligible NAHI hain. Maximum age 30 saal (26 December 2026 ko).",
+     "q": "NHPC Trainee Engineer/Officer ke liye qualification aur age limit kya hai?"
+    },
+    {
+     "a": "GATE-2026 score 75% + Group Discussion 5% + Personal Interview 20%; shortlisting 5 times vacancies tak; GD+PI me combined qualifying marks 40% (UR/OBC/EWS) aur 30% (SC/ST/PwBD). Pay E2 scale ₹50,000–₹1,60,000 (IDA), kul ~₹16–17 lakh per year; 1 saal training + 1 saal probation; surety bond ₹4,00,000 (SC/ST/PwBD ₹2,00,000) + GST, minimum 4 saal service.",
+     "q": "NHPC Trainee Engineer/Officer ka selection process aur pay kya hai?"
+    }
+   ],
+   "fees": [
+    "UR/EWS/OBC (NCL) ke liye ₹708 (₹600 plus applicable taxes).",
+    "SC/ST/Women/PwBD/Ex-servicemen ko koi fee nahi."
+   ],
+   "fees_short": "₹708",
+   "kit": [
+    {
+     "text": "Nayi safed-background wali colour photo scan karke rakho; badi file ko yahin chhoti kar sakte ho.",
+     "title": "Passport photo ready rakho",
+     "tool": "compress-image"
+    },
+    {
+     "text": "Saare documents ko ek saaf PDF me jodkar upload ke liye ready rakho.",
+     "title": "Certificates ek PDF me jodo",
+     "tool": "compress-pdf"
+    }
+   ],
+   "mistakes": [
+    "Kisi aur saal ke GATE score se apply karna (sirf GATE-2026 valid hai)",
+    "Final-year student hokar apply karna (eligible nahi hain)",
+    "GATE registration number galat bharna",
+    "Portal ke stale 2023-24 advertisement link ko sahi samajhna",
+    "26 December 5 PM ki last date miss karna"
+   ],
+   "name": "NHPC Trainee Engineer / Officer Recruitment 2026",
+   "qual": "B.E./B.Tech ya M.Sc./M.Tech (E&C, Environment, IT, Geology, Geophysicist), minimum 60% marks + valid GATE-2026 score; final-year students eligible nahi",
+   "specs": [
+    "47 Trainee Engineer / Officer posts (E&C, Environment, IT, Geology, Geophysicist), GATE-2026 score se. Advt. No. NH/Talent Acquisition/09/2026, dated 25 November 2026 (NHPC Limited, Navratna CPSE).",
+    "Breakup: Trainee Engineer (E&C) 9 + 2 backlog; Trainee Engineer/Officer (Environment) 8 + 2 backlog; Trainee Engineer/Officer (IT) 11 + 2 backlog; Trainee Officer (Geology) 7; Trainee Officer (Geophysicist) 4. Regular + backlog kul 45 + 2 PwBD special-drive vacancies (IT 1, Environment 1) = 47.",
+    "Dates: online applications 27 November 2026 (10:00 AM) se 26 December 2026 (5:00 PM) tak. Maximum age 30 saal (26 December 2026 ko).",
+    "Qualification: E&C — Electronics & Communication / Electronics / Electronics & Tele-communication / Electronics & Power / Power Electronics / Electronics & Instrumentation / Instrumentation & Control me B.E., minimum 60% marks; Environment — B.E. in Environmental Engineering ya M.Sc. in Environmental Science, minimum 60% marks; IT — B.E. in IT / Computer Science / Computer Engineering ya MCA, minimum 60% marks; Geology — M.Sc. in Geology / M.Tech in Applied Geology, minimum 60% marks; Geophysicist — M.Tech / M.Sc. (Tech) in Applied Geophysics / Exploration Geophysics, minimum 60% marks. Final-year appearing students eligible NAHI hain.",
+    "Selection: GATE-2026 normalised score 75% + Group Discussion 5% + Personal Interview 20%; shortlisting 5 times vacancies tak; GD+PI me combined qualifying marks 40% (UR/OBC (NCL)/EWS) aur 30% (SC/ST/PwBD). Sirf GATE-2026 score (normalised marks out of 100) valid hai.",
+    "Pay: E2 scale ₹50,000–3%–₹1,60,000 (IDA), kul lagbhag ₹16–17 lakh per year; 1 saal training + 1 saal probation.",
+    "Fee: UR/EWS/OBC (NCL) ke liye ₹708 (₹600 plus applicable taxes); SC/ST/Women/PwBD/Ex-servicemen ko koi fee nahi. Bank charges/processing charges extra, candidate ko bharne honge.",
+    "Surety bond: ₹4,00,000 plus applicable GST (UR/OBC/EWS) aur ₹2,00,000 plus GST (SC/ST/PwBD), training period sahit minimum 4 saal service.",
+    "Photo/signature: passport-size colour photograph aur signature JPEG format me, kramshah 50 KB aur 25 KB se kam. Certificates ke scanned copies readable hone chahiye, PDF 100-400 KB each.",
+    "Note: registration portal ka 'view full advertisement' button ek stale 2023-24 advertisement par le jata hai — sahi notice is page par link ki gayi Advt. 09/2026 PDF hai. Registration form 27 November 2026 ko subah 10:00 baje ke baad live verify hua tha.",
+    "Upar ke saare facts Advt. No. NH/Talent Acquisition/09/2026 (nhpcindia.com) aur live registration form se hain."
+   ],
+   "steps": [
+    "nhpcindia.com par Advt. No. NH/Talent Acquisition/09/2026 padhen — last date 26 December 2026 (5 PM).",
+    "Apni post ke liye GATE-2026 paper check karen (E&C: EC; Environment: ES; IT: CS; Geology: GG; Geophysicist: GG).",
+    "Photo (JPEG, 50 KB se kam) aur signature (JPEG, 25 KB se kam) ready rakhen.",
+    "Verified NHPC registration form (RECTT_452026) par register karen aur form bharen.",
+    "Fee ₹708 online bhugtan karen (agar lagu ho) aur registration number sambhal kar rakhen."
+   ],
+   "tagline": "47 Trainee Engineer/Officer posts (E&C, Environment, IT, Geology, Geophysicist) GATE-2026 se — apply 27 November–26 December 2026; E2 pay ₹50,000–₹1,60,000; fee ₹708."
+  },
+  "links": {
+   "apply": "https://intranet.nhpc.in/RecruitApp2026/RECTT_452026/english/scripts/recruitappreg.aspx?id=45",
+   "notice": "https://www.nhpcindia.com/assests/pzi_public/job/details_1795586047_7633.pdf",
+   "site": "https://www.nhpcindia.com/"
+  },
+  "note_en": null,
+  "note_hi": null,
+  "photo_kind": "upload",
+  "portal": "intranet.nhpc.in",
+  "posts": 47,
+  "slug": "nhpc-trainee-engineer-officer-2026"
  }
 ]

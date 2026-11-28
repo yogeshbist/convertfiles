@@ -13752,7 +13752,8 @@
   "photo_kind": "upload",
   "portal": "goashipyard.in",
   "posts": 91,
-  "slug": "goa-shipyard-non-executive"
+  "slug": "goa-shipyard-non-executive",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt SCL:DR:01/2026",
@@ -17120,7 +17121,8 @@
   "photo_kind": "upload",
   "portal": "itggoa.formsubmit.in",
   "posts": 94,
-  "slug": "goa-collectorate-group-c"
+  "slug": "goa-collectorate-group-c",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt No. Hartron/ICTET/2026-27/04",
@@ -18208,7 +18210,7 @@
   "board_en": "Maharashtra Public Service Commission (MPSC)",
   "board_hi": "महाराष्ट्र लोक सेवा आयोग (MPSC)",
   "dates": {
-   "apply_end": "2026-11-27",
+   "apply_end": "2026-11-29",
    "apply_start": "2026-11-13",
    "correction_end": null,
    "correction_start": null,
@@ -18240,7 +18242,7 @@
     "Do not pay by challan — that option has been withdrawn; pay online only."
    ],
    "dos": [
-    "Apply on mpsconline.gov.in between 13 and 27 November 2026 — inside your login, against Advt. No. 017/2026.",
+    "Apply on mpsconline.gov.in between 13 and 29 November 2026 — inside your login, against Advt. No. 017/2026.",
     "If you applied earlier, log in and choose the newly added cadres instead of filing a fresh application.",
     "Check the cadre-wise qualification in the notification before paying the fee — it changes completely from one cadre to the next.",
     "Pay the fee online by 30 November 2026, 11:59 PM — challan payment is no longer accepted.",
@@ -18248,7 +18250,7 @@
    ],
    "eligibility": [
     "16,717 Group C posts across 27 cadres under Advt. No. 017/2026 — the biggest cadres are Clerk-Typist 3,966, Staff Nurse (Adhiparicharika) 3,911, Talathi 1,840, Craft Instructor 1,388 and Assistant Agriculture Officer 1,203. Note honestly: the cadre-wise table printed in some summaries adds up to 16,256, not 16,717 — the Commission's corrigendum total of 16,717 governs, and more posts may still be added until the prelims result.",
-    "This is a re-opened window: the exam was first advertised on 25 June 2026 with 2,619 posts, then revised to 5,707, and a corrigendum dated 6 November 2026 (Ref. No. CMA-0426/P.K.42/2026/Jahirat) raised it to 16,717 with 11,010 newly requisitioned posts. Fresh candidates can apply, and already-registered candidates can opt for the new cadres, from 13 November 2026 (2 PM) to 27 November 2026 (11:59 PM).",
+    "This is a re-opened window: the exam was first advertised on 25 June 2026 with 2,619 posts, then revised to 5,707, and a corrigendum dated 6 November 2026 (Ref. No. CMA-0426/P.K.42/2026/Jahirat) raised it to 16,717 with 11,010 newly requisitioned posts. Fresh candidates can apply, and already-registered candidates can opt for the new cadres, from 13 November 2026 (2 PM) to 29 November 2026 (11:59 PM).",
     "Age 18–43 years, with a one-year upper-age relaxation granted by the General Administration Department's Government Resolution dated 5 November 2026. The age-reckoning date is 1 October 2026 for the cadres in the original advertisement, and 27 November 2026 for some newly added cadres such as Civil Engineering Assistant, Craft Instructor, Staff Nurse and Storekeeper.",
     "Qualification is cadre-wise: Clerk-Typist — Bachelor's degree from a recognised university plus the prescribed typing qualification; Staff Nurse — GNM or B.Sc Nursing; Talathi — Bachelor's degree; Craft Instructor — ITI in the trade; Assistant Agriculture Officer — degree in Agriculture. Check the cadre-wise qualification in the notification before paying the fee.",
     "Selection: Combined Preliminary Examination (offline, OMR) on 24 January 2027, followed by the Main Examination for shortlisted candidates. The prelims was earlier scheduled for 3 January 2027 and has been moved to 24 January 2027."
@@ -18263,7 +18265,7 @@
      "q": "I applied in the original MPSC Group C window. Do I need to apply again?"
     },
     {
-     "a": "Fresh applications and cadre options close on 27 November 2026 at 11:59 PM. The exam fee (₹394 General / ₹294 SC/ST) can be paid online until 30 November 2026 at 11:59 PM; challan payment has been withdrawn.",
+     "a": "Fresh applications and cadre options close on 29 November 2026 at 11:59 PM. The exam fee (₹394 General / ₹294 SC/ST) can be paid online until 30 November 2026 at 11:59 PM; challan payment has been withdrawn.",
      "q": "What is the last date to apply and pay the fee for MPSC Group C 2026?"
     },
     {
@@ -18307,9 +18309,9 @@
     "Apne cadre(s) chuno aur form bharo — purane aavedak sirf naye cadres ke options chunein.",
     "Photo aur signature upload karo, documents jodo.",
     "₹394 (General) ya ₹294 (SC/ST) fee online pay karo — 30 November 2026, raat 11:59 tak.",
-    "Form submit karo, printout nikalo aur 27 November 2026, raat 11:59 se pehle poora karo; prelims 24 January 2027 ko hai."
+    "Form submit karo, printout nikalo aur 29 November 2026, raat 11:59 se pehle poora karo; prelims 24 January 2027 ko hai."
    ],
-   "tagline": "16,717 Group C posts across 27 cadres — Clerk-Typist 3,966, Staff Nurse 3,911, Talathi 1,840 — fresh applications 13–27 November 2026, prelims 24 January 2027."
+   "tagline": "16,717 Group C posts across 27 cadres — Clerk-Typist 3,966, Staff Nurse 3,911, Talathi 1,840 — fresh applications 13–29 November 2026, prelims 24 January 2027."
   },
   "guide": {
    "en": null,
@@ -18339,7 +18341,7 @@
     "चालान से शुल्क भरने की कोशिश मत करो — वह option बंद है; सिर्फ़ ऑनलाइन भुगतान।"
    ],
    "dos": [
-    "13 से 27 नवंबर 2026 के बीच mpsconline.gov.in पर apply करो — अपने login के अंदर, Advt. No. 017/2026 के सामने।",
+    "13 से 29 नवंबर 2026 के बीच mpsconline.gov.in पर apply करो — अपने login के अंदर, Advt. No. 017/2026 के सामने।",
     "पहले apply कर चुके हो तो login करके नए cadres के options चुनो, fresh application मत भरो।",
     "शुल्क भरने से पहले अधिसूचना में अपने कैडर की योग्यता जाँचो — हर कैडर के नियम अलग हैं।",
     "शुल्क ऑनलाइन 30 नवंबर 2026, रात 11:59 तक भरो — चालान से भुगतान अब नहीं होता।",
@@ -18347,7 +18349,7 @@
    ],
    "eligibility": [
     "Advt. No. 017/2026 के तहत 27 कैडरों में 16,717 ग्रुप C पद — सबसे बड़े कैडर क्लर्क-टाइपिस्ट 3,966, स्टाफ नर्स (अधिपरिचारिका) 3,911, तलाठी 1,840, क्राफ्ट इंस्ट्रक्टर 1,388 और सहायक कृषि अधिकारी 1,203 हैं। ईमानदारी से नोट करें: कुछ summaries में छपी कैडर-वार तालिका का योग 16,256 होता है, 16,717 नहीं — आयोग का corrigendum वाला कुल 16,717 ही मान्य है, और prelims के result तक और पद जुड़ सकते हैं।",
-    "यह दोबारा खुली हुई window है: परीक्षा पहले 25 जून 2026 को 2,619 पदों के साथ विज्ञापित हुई थी, फिर 5,707 हुई, और 6 नवंबर 2026 के corrigendum (Ref. No. CMA-0426/P.K.42/2026/Jahirat) से 11,010 नए requisitioned पद जुड़कर कुल 16,717 हो गए। नए उम्मीदवार apply कर सकते हैं और पहले से registered उम्मीदवार नए cadres के options चुन सकते हैं — 13 नवंबर 2026 (दोपहर 2 बजे) से 27 नवंबर 2026 (रात 11:59) तक।",
+    "यह दोबारा खुली हुई window है: परीक्षा पहले 25 जून 2026 को 2,619 पदों के साथ विज्ञापित हुई थी, फिर 5,707 हुई, और 6 नवंबर 2026 के corrigendum (Ref. No. CMA-0426/P.K.42/2026/Jahirat) से 11,010 नए requisitioned पद जुड़कर कुल 16,717 हो गए। नए उम्मीदवार apply कर सकते हैं और पहले से registered उम्मीदवार नए cadres के options चुन सकते हैं — 13 नवंबर 2026 (दोपहर 2 बजे) से 29 नवंबर 2026 (रात 11:59) तक।",
     "उम्र 18–43 वर्ष, साथ में सामान्य प्रशासन विभाग के 5 नवंबर 2026 के शासनादेश से ऊपरी उम्र-सीमा में एक साल की छूट। उम्र गिनने की तारीख मूल विज्ञापन वाले कैडरों के लिए 1 अक्टूबर 2026 है, और कुछ नए कैडरों (सिविल इंजीनियरिंग असिस्टेंट, क्राफ्ट इंस्ट्रक्टर, स्टाफ नर्स, स्टोरकीपर) के लिए 27 नवंबर 2026 है।",
     "योग्यता कैडर के हिसाब से है: क्लर्क-टाइपिस्ट — मान्यता प्राप्त विश्वविद्यालय से स्नातक डिग्री + निर्धारित टाइपिंग योग्यता; स्टाफ नर्स — GNM या B.Sc नर्सिंग; तलाठी — स्नातक डिग्री; क्राफ्ट इंस्ट्रक्टर — ट्रेड में ITI; सहायक कृषि अधिकारी — कृषि में डिग्री। शुल्क भरने से पहले अधिसूचना में अपने कैडर की योग्यता ज़रूर जाँचो।",
     "चयन: संयुक्त प्रारंभिक परीक्षा (ऑफलाइन, OMR) 24 जनवरी 2027 को, फिर shortlisted उम्मीदवारों की मुख्य परीक्षा। Prelims पहले 3 जनवरी 2027 को थी, 6 नवंबर 2026 के corrigendum से 24 जनवरी 2027 कर दी गई है।"
@@ -18362,7 +18364,7 @@
      "q": "मैंने MPSC ग्रुप C की पुरानी window में apply किया था। क्या दोबारा apply करना होगा?"
     },
     {
-     "a": "Fresh application और cadre options 27 नवंबर 2026, रात 11:59 तक। परीक्षा शुल्क (₹394 सामान्य / ₹294 SC/ST) ऑनलाइन 30 नवंबर 2026, रात 11:59 तक भरा जा सकता है; चालान से भुगतान बंद है।",
+     "a": "Fresh application और cadre options 29 नवंबर 2026, रात 11:59 तक। परीक्षा शुल्क (₹394 सामान्य / ₹294 SC/ST) ऑनलाइन 30 नवंबर 2026, रात 11:59 तक भरा जा सकता है; चालान से भुगतान बंद है।",
      "q": "MPSC ग्रुप C 2026 के लिए apply और शुल्क की अंतिम तिथि क्या है?"
     },
     {
@@ -18406,9 +18408,9 @@
     "अपने cadre(s) चुनो और form भरो — पुराने aavedak सिर्फ़ नए cadres के options चुनें।",
     "फोटो और हस्ताक्षर upload करो, documents जोड़ो।",
     "₹394 (सामान्य) या ₹294 (SC/ST) शुल्क ऑनलाइन भरो — 30 नवंबर 2026, रात 11:59 तक।",
-    "Form submit करो, printout निकालो और 27 नवंबर 2026, रात 11:59 से पहले पूरा करो; prelims 24 जनवरी 2027 को है।"
+    "Form submit करो, printout निकालो और 29 नवंबर 2026, रात 11:59 से पहले पूरा करो; prelims 24 जनवरी 2027 को है।"
    ],
-   "tagline": "27 कैडरों में 16,717 ग्रुप C पद — क्लर्क-टाइपिस्ट 3,966, स्टाफ नर्स 3,911, तलाठी 1,840 — नए आवेदन 13–27 नवंबर 2026, प्रारंभिक परीक्षा 24 जनवरी 2027।"
+   "tagline": "27 कैडरों में 16,717 ग्रुप C पद — क्लर्क-टाइपिस्ट 3,966, स्टाफ नर्स 3,911, तलाठी 1,840 — नए आवेदन 13–29 नवंबर 2026, प्रारंभिक परीक्षा 24 जनवरी 2027।"
   },
   "links": {
    "apply": "https://mpsconline.gov.in",
@@ -19073,7 +19075,8 @@
   "photo_kind": "upload",
   "portal": "tgpsc.gov.in",
   "posts": 102,
-  "slug": "tgpsc-mpso-aso"
+  "slug": "tgpsc-mpso-aso",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advt No. 83/UKSSSC/2026",
@@ -19298,13 +19301,13 @@
   "board_en": "Jammu and Kashmir Services Selection Board (JKSSB)",
   "board_hi": "जम्मू और कश्मीर सेवा चयन बोर्ड (JKSSB)",
   "dates": {
-   "apply_end": "2026-11-27",
+   "apply_end": "2026-12-04",
    "apply_start": "2026-10-14",
    "correction_end": null,
    "correction_start": null,
    "exam": null,
    "exam_hi": null,
-   "fee_end": "2026-11-27"
+   "fee_end": "2026-12-04"
   },
   "en": {
    "checklist": [
@@ -19331,7 +19334,7 @@
     "Do not wait for the last day — the portal slows down badly in the final hours."
    ],
    "dos": [
-    "Apply on jkssb.nic.in before 27 November 2026 — the window was extended on 11 November 2026.",
+    "Apply on jkssb.nic.in before 4 December 2026 — the window was extended again on 27 November 2026.",
     "Check the maximum-qualification rule first — a qualification above 10+2 makes you ineligible, even with a Matric pass.",
     "Keep your J&K Domicile Certificate ready — it must be issued on or before the cut-off date.",
     "Choose the right item number (Annexure-A) for your cadre and department before applying.",
@@ -19355,7 +19358,7 @@
      "q": "What is the maximum qualification for JKSSB Class-IV MTS?"
     },
     {
-     "a": "27 November 2026 — the last date was extended from 12 November 2026 by a notice dated 11 November 2026. The fee should be paid along with the form, before the same date.",
+     "a": "4 December 2026 — the last date was extended from 27 November 2026 by a notice dated 27 November 2026. The fee should be paid along with the form, before the same date.",
      "q": "What is the last date to apply for JKSSB Class-IV 2026?"
     },
     {
@@ -19365,7 +19368,7 @@
    ],
    "fees": [
     "₹600 for General/OM, OBC, RBA and ALC/IB candidates.",
-    "₹500 for SC, ST-1, ST-2, EWS and PwBD candidates. The fee is non-refundable and payable online only (net banking, credit card or debit card). The 11 November extension notice confirms 27 November 2026 for submitting the form — pay the fee along with the form and do not leave it for the last day."
+    "₹500 for SC, ST-1, ST-2, EWS and PwBD candidates. The fee is non-refundable and payable online only (net banking, credit card or debit card). The 27 November extension notice confirms 4 December 2026 for submitting the form — pay the fee along with the form and do not leave it for the last day."
    ],
    "fees_short": "₹600 (SC/ST/EWS/PwBD: ₹500)",
    "kit": [
@@ -19399,9 +19402,9 @@
     "Form bharo — naam, date of birth aur parents' names Matriculation Certificate jaisi hi likho.",
     "Live photograph aur signature (10–20 KB each) upload karo.",
     "₹600 (General/OM/OBC/RBA/ALC-IB) ya ₹500 (SC/ST/EWS/PwBD) शुल्क ऑनलाइन भरो।",
-    "Form submit karo, printout nikalo — 27 November 2026 se pehle poora karo; likhit pariksha ki date alag se ghoshit hogi."
+    "Form submit karo, printout nikalo — 4 December 2026 se pehle poora karo; likhit pariksha ki date alag se ghoshit hogi."
    ],
-   "tagline": "2,863 Class-IV (MTS) and Sanitation Worker posts across J&K — Matric/8th pass can apply, maximum qualification 10+2 — last date extended to 27 November 2026."
+   "tagline": "2,863 Class-IV (MTS) and Sanitation Worker posts across J&K — Matric/8th pass can apply, maximum qualification 10+2 — last date extended to 4 December 2026."
   },
   "guide": {
    "en": null,
@@ -19432,7 +19435,7 @@
     "Aakhri din tak intezaar mat karo — portal aakhri ghanton me bahut slow हो जाता है।"
    ],
    "dos": [
-    "27 नवंबर 2026 से पहले jkssb.nic.in पर apply करो — window 11 नवंबर 2026 को बढ़ाई गई थी।",
+    "4 दिसंबर 2026 से पहले jkssb.nic.in पर apply करो — window 27 नवंबर 2026 को फिर से बढ़ाई गई थी।",
     "पहले maximum-qualification का नियम check करो — 10+2 से ऊपर की योग्यता होने पर तुम ineligible हो, मैट्रिक पास होने के बावजूद।",
     "अपना J&K Domicile Certificate ready रखो — यह cut-off date तक जारी होना चाहिए।",
     "Apply करने से पहले Annexure-A से अपने कैडर और विभाग का सही item number चुनो।",
@@ -19456,7 +19459,7 @@
      "q": "JKSSB क्लास-IV MTS के लिए अधिकतम योग्यता क्या है?"
     },
     {
-     "a": "27 नवंबर 2026 — अंतिम तिथि 11 नवंबर 2026 के notice से 12 नवंबर से बढ़ाकर 27 नवंबर कर दी गई थी। शुल्क form के साथ ही, उसी तारीख से पहले भरो।",
+     "a": "4 दिसंबर 2026 — अंतिम तिथि 27 नवंबर 2026 के notice से 27 नवंबर से बढ़ाकर 4 दिसंबर कर दी गई थी। शुल्क form के साथ ही, उसी तारीख से पहले भरो।",
      "q": "JKSSB क्लास-IV 2026 के लिए apply की अंतिम तिथि क्या है?"
     },
     {
@@ -19466,7 +19469,7 @@
    ],
    "fees": [
     "सामान्य/OM, OBC, RBA और ALC/IB उम्मीदवारों के लिए ₹600।",
-    "SC, ST-1, ST-2, EWS और PwBD उम्मीदवारों के लिए ₹500। शुल्क वापस नहीं होगा और सिर्फ़ ऑनलाइन भुगतान होगा (नेट बैंकिंग, क्रेडिट कार्ड या डेबिट कार्ड)। 11 नवंबर के extension notice में form जमा करने की तिथि 27 नवंबर 2026 confirm की गई है — शुल्क form के साथ ही भरो, aakhri din पर मत छोड़ो।"
+    "SC, ST-1, ST-2, EWS और PwBD उम्मीदवारों के लिए ₹500। शुल्क वापस नहीं होगा और सिर्फ़ ऑनलाइन भुगतान होगा (नेट बैंकिंग, क्रेडिट कार्ड या डेबिट कार्ड)। 27 नवंबर के extension notice में form जमा करने की तिथि 4 दिसंबर 2026 confirm की गई है — शुल्क form के साथ ही भरो, aakhri din पर मत छोड़ो।"
    ],
    "fees_short": "₹600 (SC/ST/EWS/PwBD: ₹500)",
    "kit": [
@@ -19500,9 +19503,9 @@
     "Form भरो — नाम, जन्म तिथि और माता-पिता के नाम Matriculation Certificate जैसे ही लिखो।",
     "Live photograph और signature (10–20 KB प्रत्येक) upload करो।",
     "₹600 (सामान्य/OM/OBC/RBA/ALC-IB) या ₹500 (SC/ST/EWS/PwBD) शुल्क ऑनलाइन भरो।",
-    "Form submit करो, printout निकालो — 27 नवंबर 2026 से पहले पूरा करो; लिखित परीक्षा की तारीख अलग से घोषित होगी।"
+    "Form submit करो, printout निकालो — 4 दिसंबर 2026 से पहले पूरा करो; लिखित परीक्षा की तारीख अलग से घोषित होगी।"
    ],
-   "tagline": "जम्मू-कश्मीर में 2,863 क्लास-IV (MTS) और सैनिटेशन वर्कर पद — मैट्रिक/8वीं पास apply कर सकते हैं, अधिकतम योग्यता 10+2 — अंतिम तिथि बढ़कर 27 नवंबर 2026।"
+   "tagline": "जम्मू-कश्मीर में 2,863 क्लास-IV (MTS) और सैनिटेशन वर्कर पद — मैट्रिक/8वीं पास apply कर सकते हैं, अधिकतम योग्यता 10+2 — अंतिम तिथि बढ़कर 4 दिसंबर 2026।"
   },
   "links": {
    "apply": "https://jkssb.nic.in",
@@ -22462,7 +22465,8 @@
   "photo_kind": "upload",
   "portal": "powergrid.in",
   "posts": 33,
-  "slug": "powergrid-trainee-engineer-electronics"
+  "slug": "powergrid-trainee-engineer-electronics",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advertisements 78–83/Estb.-2/Rectt./Dr.RMLIMS/2026",
@@ -23911,7 +23915,8 @@
   "photo_kind": "upload",
   "portal": "careers.ntpc.co.in",
   "posts": 12,
-  "slug": "ntpc-gm-executive-17-26"
+  "slug": "ntpc-gm-executive-17-26",
+  "stage": "result-awaited"
  },
  {
   "advt": "Advertisement No. 03/2026-2027",
@@ -36039,7 +36044,8 @@
   "photo_kind": "upload",
   "portal": "blasrecruit.in",
   "posts": 84,
-  "slug": "bihar-vidhan-sabha-aso-caretaker-2026"
+  "slug": "bihar-vidhan-sabha-aso-caretaker-2026",
+  "stage": "result-awaited"
  },
  {
   "advt": "SHRESHTA (NETS) – 2027 (Public Notice dated 14.11.2026)",
